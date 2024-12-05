@@ -1,0 +1,2 @@
+# finzor
+Fintech Application
