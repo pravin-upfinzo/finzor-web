@@ -9,9 +9,87 @@
         <link rel="icon" href="assets/images/finzor-fav.png">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/main.css">
+        <style>
+          div#loader {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #000;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+        }
+        #container {
+            width: 600px;
+            position: relative;
+        }
+        .path {
+            fill: none;
+            stroke: #fff;
+            stroke-width: 5px;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+        .path-1 {
+            stroke-dasharray: 1850;
+            stroke-dashoffset: 1850;
+            transition: stroke-dashoffset 5s linear;
+        }
+        .path-2 {
+            stroke-dasharray: 260;
+            stroke-dashoffset: 260;
+            transition: stroke-dashoffset 1.2s linear 5s;
+        }
+        .path-3 {
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+            transition: stroke-dashoffset 1s linear 6.2s;
+        }
+        .path-4 {
+            stroke-width: 0;
+            transition: stroke-width 0.1s linear 7.5s;
+        }
+        #container.fin .path-1 {
+            stroke-dashoffset: 0;
+        }
+        #container.fin .path-2 {
+            stroke-dashoffset: 0;
+        }
+        #container.fin .path-3 {
+            stroke-dashoffset: 0;
+        }
+        #container.fin .path-4 {
+            stroke-width: 5px;
+        }
+        </style>
     </head>
     <body>
-        <header style="height:100vh">
+      <div class="loader" id="loader">
+        <div id="container">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1889.08 596.11">
+              <g>
+                  <path class="path path-1" d="M1842.84,450.98h-60.18l-49.96-82.67h-34.06v82.67h-56.01v-235.23h107.87c56.01,0,90.45,28.9,90.45,75.95,0,33.94-18.92,59.82-51.85,70.91v.34l53.75,88.04ZM1743.68,322.94c26.87,0,41.25-11.09,41.25-31.59s-13.63-30.25-41.25-30.25h-45.04v61.83h45.04Z"/>
+                  <path class="path path-1" d="M601.1,215.74h170.69v45.7h-114.68v57.46h106.73v43.69h-106.73v88.38h-56.01v-235.23Z"/>
+                  <path class="path path-1" d="M810.74,215.74h56.01v235.23h-56.01v-235.23Z"/>
+                  <path class="path path-1" d="M919.34,215.74h57.53l89.69,149.54h.76v-149.54h56.01v235.23h-57.53l-89.69-149.54h-.76v149.54h-56.01v-235.23Z"/>
+                  <path class="path path-1" d="M1162.66,409.98l124.14-147.86v-.67h-120.36v-45.7h190.37v41l-124.14,147.86v.67h123.76v45.7h-193.78v-41Z"/>
+                  <path class="path path-1" d="M1492.32,205.73c-70.34,0-127.57,57.16-127.57,127.5,0,62.57,45.25,114.65,104.71,125.4v-55.67c-29.35-9.6-50.59-37.27-50.59-69.74,0-40.45,32.94-73.39,73.46-73.39s73.39,32.94,73.39,73.39c0,32.47-21.24,60.13-50.59,69.74v55.67c59.46-10.76,104.71-62.84,104.71-125.4,0-70.34-57.22-127.5-127.5-127.5Z"/>
+                  <circle class="path path-1" cx="1492.29" cy="333.23" r="33.58"/>
+                  <path class="path path-1" d="M357.26,368.75l-33.86,56.01s-.06.1-.09.14c-.26.44-.51.88-.79,1.32,0,0,0,.01,0,.02-8.28,13.27-23.01,22.11-39.81,22.11h-119.48l-51.68,85.49-.86,1.43c-13.21,21.24-36.64,35.48-63.41,35.85l122.31-202.36h187.68Z"/>
+                  <path class="path path-1" d="M377.08,335.96l-14.42,23.86h-187.67l5.58-9.24.6-.99h0c5.12-8.18,14.23-13.62,24.6-13.62h171.3Z"/>
+                  <path class="path path-1" d="M501.28,130.5l-88.37,146.18c-.24.4-.47.81-.72,1.21-8.25,13.4-23.06,22.34-39.96,22.34h-161.23l66.94-110.73c21.56-35.38,60.5-59,104.95-59h118.38Z"/>
+                  <path class="path path-1" d="M557.98,36.7l-.43.71c-21.75,34.46-60.17,57.36-103.94,57.36h-90.87c-44.26,0-83.06,23.42-104.67,58.55h0S79.72,448.35,79.72,448.35v-91.71c.12-14.27,4.18-27.61,11.15-38.98l.11-.18,111.33-184.18c34.74-57.87,98.11-96.6,170.52-96.6h185.16Z"/>
+              </g>
+          </svg>
+        </div>
+      </div>
+        <header>
           <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><img src="assets/images/finzor-logo.svg"></a>
@@ -54,24 +132,465 @@
             </div>
           </nav> 
         </header>
-        <section class="fz_dashboard">
-          <div class="container">
-            <img src="assets/images/dashboard.svg" class="fz_dashboard_img" alt="dashboard">
-          </div>
-        </section>
-        <section id="">
+        <section>
           <div class="container">
             <div class="row">
               <div class="col-lg-6">
 
               </div>
               <div class="col-lg-6">
-
+                <script id="webgl-noise" type="x-shader/x-vertex">
+  
+                  vec3 mod289(vec3 x) {
+                  return x - floor(x * (1.0 / 289.0)) * 289.0;
+                }
+                
+                vec4 mod289(vec4 x) {
+                  return x - floor(x * (1.0 / 289.0)) * 289.0;
+                }
+                
+                vec4 permute(vec4 x) {
+                  return mod289(((x*34.0)+10.0)*x);
+                }
+                
+                vec4 taylorInvSqrt(vec4 r)
+                {
+                  return 1.79284291400159 - 0.85373472095314 * r;
+                }
+                
+                float snoise(vec3 v)
+                {
+                  const vec2  C = vec2(1.0/6.0, 1.0/3.0) ;
+                  const vec4  D = vec4(0.0, 0.5, 1.0, 2.0);
+                
+                  // First corner
+                  vec3 i  = floor(v + dot(v, C.yyy) );
+                  vec3 x0 =   v - i + dot(i, C.xxx) ;
+                
+                  // Other corners
+                  vec3 g = step(x0.yzx, x0.xyz);
+                  vec3 l = 1.0 - g;
+                  vec3 i1 = min( g.xyz, l.zxy );
+                  vec3 i2 = max( g.xyz, l.zxy );
+                
+                  //   x0 = x0 - 0.0 + 0.0 * C.xxx;
+                  //   x1 = x0 - i1  + 1.0 * C.xxx;
+                  //   x2 = x0 - i2  + 2.0 * C.xxx;
+                  //   x3 = x0 - 1.0 + 3.0 * C.xxx;
+                  vec3 x1 = x0 - i1 + C.xxx;
+                  vec3 x2 = x0 - i2 + C.yyy; // 2.0*C.x = 1/3 = C.y
+                  vec3 x3 = x0 - D.yyy;      // -1.0+3.0*C.x = -0.5 = -D.y
+                
+                  // Permutations
+                  i = mod289(i);
+                  vec4 p = permute( permute( permute(
+                              i.z + vec4(0.0, i1.z, i2.z, 1.0 ))
+                            + i.y + vec4(0.0, i1.y, i2.y, 1.0 ))
+                            + i.x + vec4(0.0, i1.x, i2.x, 1.0 ));
+                
+                  // Gradients: 7x7 points over a square, mapped onto an octahedron.
+                  // The ring size 17*17 = 289 is close to a multiple of 49 (49*6 = 294)
+                  float n_ = 0.142857142857; // 1.0/7.0
+                  vec3  ns = n_ * D.wyz - D.xzx;
+                
+                  vec4 j = p - 49.0 * floor(p * ns.z * ns.z);  //  mod(p,7*7)
+                
+                  vec4 x_ = floor(j * ns.z);
+                  vec4 y_ = floor(j - 7.0 * x_ );    // mod(j,N)
+                
+                  vec4 x = x_ *ns.x + ns.yyyy;
+                  vec4 y = y_ *ns.x + ns.yyyy;
+                  vec4 h = 1.0 - abs(x) - abs(y);
+                
+                  vec4 b0 = vec4( x.xy, y.xy );
+                  vec4 b1 = vec4( x.zw, y.zw );
+                
+                  //vec4 s0 = vec4(lessThan(b0,0.0))*2.0 - 1.0;
+                  //vec4 s1 = vec4(lessThan(b1,0.0))*2.0 - 1.0;
+                  vec4 s0 = floor(b0)*2.0 + 1.0;
+                  vec4 s1 = floor(b1)*2.0 + 1.0;
+                  vec4 sh = -step(h, vec4(0.0));
+                
+                  vec4 a0 = b0.xzyw + s0.xzyw*sh.xxyy ;
+                  vec4 a1 = b1.xzyw + s1.xzyw*sh.zzww ;
+                
+                  vec3 p0 = vec3(a0.xy,h.x);
+                  vec3 p1 = vec3(a0.zw,h.y);
+                  vec3 p2 = vec3(a1.xy,h.z);
+                  vec3 p3 = vec3(a1.zw,h.w);
+                
+                  //Normalise gradients
+                  vec4 norm = taylorInvSqrt(vec4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));
+                  p0 *= norm.x;
+                  p1 *= norm.y;
+                  p2 *= norm.z;
+                  p3 *= norm.w;
+                
+                  // Mix final noise value
+                  vec4 m = max(0.5 - vec4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                  m = m * m;
+                  return 105.0 * dot( m*m, vec4( dot(p0,x0), dot(p1,x1),
+                                                dot(p2,x2), dot(p3,x3) ) );
+                }
+                
+                </script>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+                      <script id="rendered-js">
+                "use strict";
+                class World {
+                    constructor() {
+                        this.build();
+                        window.addEventListener("resize", this.resize.bind(this));
+                        this.animate = this.animate.bind(this);
+                        this.animate();
+                    }
+                    build() {
+                        this.scene = new THREE.Scene();
+                        this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+                        this.camera.position.z = 3;
+                        this.renderer = new THREE.WebGLRenderer({
+                            alpha: true,
+                            antialias: true
+                        });
+                        this.renderer.setPixelRatio(window.devicePixelRatio);
+                        this.renderer.setSize(window.innerWidth, window.innerHeight);
+                        document.body.appendChild(this.renderer.domElement);
+                        this.molecule = new Molecule();
+                        this.scene.add(this.molecule);
+                    }
+                    resize() {
+                        const w = window.innerWidth;
+                        const h = window.innerHeight;
+                        this.camera.aspect = w / h;
+                        this.camera.updateProjectionMatrix();
+                        this.renderer.setSize(w, h);
+                    }
+                    animate() {
+                        requestAnimationFrame(this.animate);
+                        const time = performance.now() * 0.0003;
+                        this.molecule.animate(time);
+                        this.renderer.render(this.scene, this.camera);
+                    }
+                }
+                class Molecule extends THREE.Object3D {
+                    constructor() {
+                        super();
+                        this.radius = 1.5;
+                        this.detail = 40;
+                        this.particleSizeMin = 0.01;
+                        this.particleSizeMax = 0.08;
+                        this.build();
+                    }
+                    build() {
+                        this.dot();
+                        this.geometry = new THREE.IcosahedronBufferGeometry(1, this.detail);
+                        this.material = new THREE.PointsMaterial({
+                            map: this.dot(),
+                            blending: THREE.AdditiveBlending,
+                            color: 0x3EAC91,
+                            depthTest: false
+                        });
+                        this.setupShader(this.material);
+                        this.mesh = new THREE.Points(this.geometry, this.material);
+                        this.add(this.mesh);
+                    }
+                    dot(size = 18, color = "#3EAC91") {
+                        const sizeH = size * 0.32;
+                        const canvas = document.createElement("canvas");
+                        canvas.width = canvas.height = size;
+                        const ctx = canvas.getContext("2d");
+                        const circle = new Path2D();
+                        circle.arc(sizeH, sizeH, sizeH, 0, 2 * Math.PI);
+                        ctx.fillStyle = color;
+                        ctx.fill(circle);
+                        // debug canvas
+                        // canvas.style.position = "fixed"
+                        // canvas.style.top = 0
+                        // canvas.style.left = 0
+                        // document.body.appendChild(canvas)
+                        return new THREE.CanvasTexture(canvas);
+                    }
+                    setupShader(material) {
+                        material.onBeforeCompile = (shader) => {
+                            shader.uniforms.time = { value: 0 };
+                            shader.uniforms.radius = { value: this.radius };
+                            shader.uniforms.particleSizeMin = { value: this.particleSizeMin };
+                            shader.uniforms.particleSizeMax = { value: this.particleSizeMax };
+                            shader.vertexShader =
+                                "uniform float particleSizeMax;\n" + shader.vertexShader;
+                            shader.vertexShader =
+                                "uniform float particleSizeMin;\n" + shader.vertexShader;
+                            shader.vertexShader = "uniform float radius;\n" + shader.vertexShader;
+                            shader.vertexShader = "uniform float time;\n" + shader.vertexShader;
+                            shader.vertexShader =
+                                document.getElementById("webgl-noise").textContent +
+                                    "\n" +
+                                    shader.vertexShader;
+                            shader.vertexShader = shader.vertexShader.replace("#include <begin_vertex>", `
+                          vec3 p = position;
+                          float n = snoise( vec3( p.x*.6 + time*0.2, p.y*0.4 + time*0.3, p.z*.2 + time*0.2) );
+                          p += n *0.4;
+                
+                          // constrain to sphere radius
+                          float l = radius / length(p);
+                          p *= l;
+                          float s = mix(particleSizeMin, particleSizeMax, n);
+                          vec3 transformed = vec3( p.x, p.y, p.z );
+                        `);
+                            shader.vertexShader = shader.vertexShader.replace("gl_PointSize = size;", "gl_PointSize = s;");
+                            material.userData.shader = shader;
+                        };
+                    }
+                    animate(time) {
+                        this.mesh.rotation.set(0, time * 0.2, 0);
+                        if (this.material.userData.shader)
+                            this.material.userData.shader.uniforms.time.value = time;
+                    }
+                }
+                new World();
+                     </script>
               </div>
             </div>
           </div>
         </section>
-      
+        <section class="fz_dashboard">
+          <div class="container">
+            <img src="assets/images/dashboard.svg" class="fz_dashboard_img" alt="dashboard">
+          </div>
+        </section>
+        <section id="fz_core_nexus">
+          <div class="container">
+            <div class="row align-items-lg-center">
+              <div class="col-lg-6">
+                <div class="fz_core_bg">
+                  <div class="fz_core_text">
+                    <h3>Discover the key to your fintech Future </h3>
+                    <img src="assets/images/core-nexus.svg" alt="corenexus"/>
+                    <div class="fz_box">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 fz_core_text_right">
+                <h2>Core Nexus</h2>
+                <h5>Empowering banks with seamless, efficient, and secure financial services</h5>
+                <p><span><img src="assets/images/finance-icon.svg" alt="finacne"/></span> Finzor Core Banking Services refers to the suite of services and solutions offered by Finzor to financial institutions.</p>
+                <p><span><img src="assets/images/park-icon.svg" alt="park"/></span> These services are designed to modernize and streamline banking operations by providing a robust core banking platform that integrates various functionalities.</p>
+                <div><button class="fz_learmore">Learn more</button><button class="fz_learmore_btn">Get Started</button></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="fz_features" class="panel spacer-y">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="panel__options">
+                    <span data-target="b" class="active" role="button">Traditional &amp; NGN Questions</span>
+                    <span data-target="c" role="button">Material Review</span>
+                    <span data-target="d" role="button">Custom &amp; Pre-built Flashcards</span>
+                    <span data-target="e" role="button">Performance Analysis</span>
+                  </div>
+          
+                  <div class="panel__stack">
+                    <div class="panel__card panel__card--one text-white bg-purple overflow-hidden">
+                      <h2>Business Banking</h2>
+                      <ul class="nav nav-pills" role="tablist">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" data-bs-toggle="pill" href="#home" aria-selected="true" role="tab">Top Products</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="pill" href="#menu1" aria-selected="false" tabindex="-1" role="tab">On Website/App</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="pill" href="#menu2" aria-selected="false" tabindex="-1" role="tab">Mobile Banking</a></li>
+                      </ul>
+                      <div class="tab-content">
+                        <div id="home" class="tab-pane active" role="tabpanel">
+                          <div class="fz-tab-card">
+                            <div class="item-pay">
+                              <img src="assets/images/feature1.svg">
+                              <div>
+                                <h3>Current Account</h3>
+                                <p>Automate your bank account with India’s top current account</p>
+                                <a href="#">Read More</a>
+                              </div>
+                            </div>
+                            <div class="item-pay">
+                              <img src="assets/images/feature2.svg">
+                              <div>
+                                <h3>Escrow Account</h3>
+                                <p>Automate Escrow money transfer with total safety and compliance</p>
+                                <a href="#">Read More</a>
+                              </div>
+                            </div>
+                            <div class="item-pay">
+                              <img src="assets/images/feature3.svg">
+                              <div>
+                                <h3>Forex Management</h3>
+                                <p>Get Effortless foreign funding management with expert support</p>
+                                <a href="#">Read More</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="menu1" class="tab-pane fade" role="tabpanel">
+                          <div class="fz-tab-card">
+                            <div class="item-pay">
+                              <img src="assets/images/feature1.svg">
+                              <div>
+                                <h3>Current Account</h3>
+                                <p>Automate your bank account with India’s top current account</p>
+                                <a href="#">Read More</a>
+                              </div>
+                            </div>
+                            <div class="item-pay">
+                              <img src="assets/images/feature2.svg">
+                              <div>
+                                <h3>Escrow Account</h3>
+                                <p>Automate Escrow money transfer with total safety and compliance</p>
+                                <a href="#">Read More</a>
+                              </div>
+                            </div>
+                            <div class="item-pay">
+                              <img src="assets/images/feature3.svg">
+                              <div>
+                                <h3>Forex Management</h3>
+                                <p>Get Effortless foreign funding management with expert support</p>
+                                <a href="#">Read More</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="menu2" class="tab-pane fade" role="tabpanel">
+                          <div class="fz-tab-card">
+                            <div class="item-pay">
+                              <img src="assets/images/feature1.svg">
+                              <div>
+                                <h3>Current Account</h3>
+                                <p>Automate your bank account with India’s top current account</p>
+                                <a href="#">Read More</a>
+                              </div>
+                            </div>
+                            <div class="item-pay">
+                              <img src="assets/images/feature2.svg">
+                              <div>
+                                <h3>Escrow Account</h3>
+                                <p>Automate Escrow money transfer with total safety and compliance</p>
+                                <a href="#">Read More</a>
+                              </div>
+                            </div>
+                            <div class="item-pay">
+                              <img src="assets/images/feature3.svg">
+                              <div>
+                                <h3>Forex Management</h3>
+                                <p>Get Effortless foreign funding management with expert support</p>
+                                <a href="#">Read More</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="panel__card panel__card--two bg-skyblue-light">
+                      <h2>Business Banking</h2>
+                      <div class="tab-content">
+                        <div class="fz-tab-card">
+                          <div class="item-pay">
+                            <img src="assets/images/feature1.svg">
+                            <div>
+                              <h3>Current Account</h3>
+                              <p>Automate your bank account with India’s top current account</p>
+                              <a href="#">Read More</a>
+                            </div>
+                          </div>
+                          <div class="item-pay">
+                            <img src="assets/images/feature2.svg">
+                            <div>
+                              <h3>Escrow Account</h3>
+                              <p>Automate Escrow money transfer with total safety and compliance</p>
+                              <a href="#">Read More</a>
+                            </div>
+                          </div>
+                          <div class="item-pay">
+                            <img src="assets/images/feature3.svg">
+                            <div>
+                              <h3>Forex Management</h3>
+                              <p>Get Effortless foreign funding management with expert support</p>
+                              <a href="#">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="panel__card panel__card--three bg-orange-light">
+                      <h2>Business </h2>
+                      <div class="tab-content">
+                        <div class="fz-tab-card">
+                          <div class="item-pay">
+                            <img src="assets/images/feature1.svg">
+                            <div>
+                              <h3>Current Account</h3>
+                              <p>Automate your bank account with India’s top current account</p>
+                              <a href="#">Read More</a>
+                            </div>
+                          </div>
+                          <div class="item-pay">
+                            <img src="assets/images/feature2.svg">
+                            <div>
+                              <h3>Escrow Account</h3>
+                              <p>Automate Escrow money transfer with total safety and compliance</p>
+                              <a href="#">Read More</a>
+                            </div>
+                          </div>
+                          <div class="item-pay">
+                            <img src="assets/images/feature3.svg">
+                            <div>
+                              <h3>Forex Management</h3>
+                              <p>Get Effortless foreign funding management with expert support</p>
+                              <a href="#">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="panel__card panel__card--four bg-green-light">
+                      <h2>Business Banking</h2>
+                      <div class="tab-content">
+                        <div class="fz-tab-card">
+                          <div class="item-pay">
+                            <img src="assets/images/feature1.svg">
+                            <div>
+                              <h3>Current Account</h3>
+                              <p>Automate your bank account with India’s top current account</p>
+                              <a href="#">Read More</a>
+                            </div>
+                          </div>
+                          <div class="item-pay">
+                            <img src="assets/images/feature2.svg">
+                            <div>
+                              <h3>Escrow Account</h3>
+                              <p>Automate Escrow money transfer with total safety and compliance</p>
+                              <a href="#">Read More</a>
+                            </div>
+                          </div>
+                          <div class="item-pay">
+                            <img src="assets/images/feature3.svg">
+                            <div>
+                              <h3>Forex Management</h3>
+                              <p>Get Effortless foreign funding management with expert support</p>
+                              <a href="#">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
     </body>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>

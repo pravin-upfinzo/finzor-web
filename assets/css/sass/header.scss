@@ -38,7 +38,7 @@ header {
                 &:last-child {
                     margin-left: 22px;
                     a {
-                        background-color: $sign-color;
+                        background-color: $tertiary-color;
                         padding: 12px 20px;
                         border-radius: 5px;
                         border: 1px solid $white;
@@ -48,3 +48,5 @@ header {
         }
     }
 }
+
+
