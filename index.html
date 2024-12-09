@@ -9,6 +9,8 @@
         <link rel="icon" href="assets/images/finzor-fav.png">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
         <style>
           div#loader {
             position: fixed;
@@ -132,232 +134,57 @@
             </div>
           </nav> 
         </header>
-        <section>
+        <!-- <section id="fz-hero-bg">
+          <canvas></canvas>
+          <div class="container">
+          <div class="content-wrapper">
+            <div class="text-content">
+              <h1>FUTURE OF FINANCE<br>DELIVERED TODAY</h1>
+              <p>Finzor Core Banking Services refers to the suite of services <br>and solutions offered by Finzor to
+                financial institutions.</p>
+              <div class="hero-section-button">
+                <button class="section-button-one">Explore</button>
+                <button class="section-button-two">Connect Us</button>
+              </div>
+            </div>
+            <div class="globe-container">
+            </div>
+          </div>
+          </div>
+        </section> -->
+        <section id="fz-hero-bg">
           <div class="container">
             <div class="row">
               <div class="col-lg-6">
-
+                <div class="content-wrapper">
+                  <div class="text-content">
+                    <h1>FUTURE OF FINANCE<br>DELIVERED <span>TODAY</span></h1>
+                    <p>Finzor Core Banking Services refers to the suite of services <br>and solutions offered by Finzor to
+                      financial institutions.</p>
+                    <div class="hero-section-button">
+                      <button class="section-button-one">Explore</button>
+                      <button class="section-button-two">Connect Us</button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-lg-6">
-                <script id="webgl-noise" type="x-shader/x-vertex">
-  
-                  vec3 mod289(vec3 x) {
-                  return x - floor(x * (1.0 / 289.0)) * 289.0;
-                }
+              <div class="col-lg-6" style="    display: inline-flex;
+                  align-items: center;
+                  justify-content: center;">
+                <iframe src='https://my.spline.design/techinspired3dassetsmoneybag-d0fba0c5685f033b3155169d54bd2ed7/' frameborder='0' width='100%' height='100vh' 
+                style="min-width: 800px;min-height: 858px;"></iframe>
                 
-                vec4 mod289(vec4 x) {
-                  return x - floor(x * (1.0 / 289.0)) * 289.0;
-                }
-                
-                vec4 permute(vec4 x) {
-                  return mod289(((x*34.0)+10.0)*x);
-                }
-                
-                vec4 taylorInvSqrt(vec4 r)
-                {
-                  return 1.79284291400159 - 0.85373472095314 * r;
-                }
-                
-                float snoise(vec3 v)
-                {
-                  const vec2  C = vec2(1.0/6.0, 1.0/3.0) ;
-                  const vec4  D = vec4(0.0, 0.5, 1.0, 2.0);
-                
-                  // First corner
-                  vec3 i  = floor(v + dot(v, C.yyy) );
-                  vec3 x0 =   v - i + dot(i, C.xxx) ;
-                
-                  // Other corners
-                  vec3 g = step(x0.yzx, x0.xyz);
-                  vec3 l = 1.0 - g;
-                  vec3 i1 = min( g.xyz, l.zxy );
-                  vec3 i2 = max( g.xyz, l.zxy );
-                
-                  //   x0 = x0 - 0.0 + 0.0 * C.xxx;
-                  //   x1 = x0 - i1  + 1.0 * C.xxx;
-                  //   x2 = x0 - i2  + 2.0 * C.xxx;
-                  //   x3 = x0 - 1.0 + 3.0 * C.xxx;
-                  vec3 x1 = x0 - i1 + C.xxx;
-                  vec3 x2 = x0 - i2 + C.yyy; // 2.0*C.x = 1/3 = C.y
-                  vec3 x3 = x0 - D.yyy;      // -1.0+3.0*C.x = -0.5 = -D.y
-                
-                  // Permutations
-                  i = mod289(i);
-                  vec4 p = permute( permute( permute(
-                              i.z + vec4(0.0, i1.z, i2.z, 1.0 ))
-                            + i.y + vec4(0.0, i1.y, i2.y, 1.0 ))
-                            + i.x + vec4(0.0, i1.x, i2.x, 1.0 ));
-                
-                  // Gradients: 7x7 points over a square, mapped onto an octahedron.
-                  // The ring size 17*17 = 289 is close to a multiple of 49 (49*6 = 294)
-                  float n_ = 0.142857142857; // 1.0/7.0
-                  vec3  ns = n_ * D.wyz - D.xzx;
-                
-                  vec4 j = p - 49.0 * floor(p * ns.z * ns.z);  //  mod(p,7*7)
-                
-                  vec4 x_ = floor(j * ns.z);
-                  vec4 y_ = floor(j - 7.0 * x_ );    // mod(j,N)
-                
-                  vec4 x = x_ *ns.x + ns.yyyy;
-                  vec4 y = y_ *ns.x + ns.yyyy;
-                  vec4 h = 1.0 - abs(x) - abs(y);
-                
-                  vec4 b0 = vec4( x.xy, y.xy );
-                  vec4 b1 = vec4( x.zw, y.zw );
-                
-                  //vec4 s0 = vec4(lessThan(b0,0.0))*2.0 - 1.0;
-                  //vec4 s1 = vec4(lessThan(b1,0.0))*2.0 - 1.0;
-                  vec4 s0 = floor(b0)*2.0 + 1.0;
-                  vec4 s1 = floor(b1)*2.0 + 1.0;
-                  vec4 sh = -step(h, vec4(0.0));
-                
-                  vec4 a0 = b0.xzyw + s0.xzyw*sh.xxyy ;
-                  vec4 a1 = b1.xzyw + s1.xzyw*sh.zzww ;
-                
-                  vec3 p0 = vec3(a0.xy,h.x);
-                  vec3 p1 = vec3(a0.zw,h.y);
-                  vec3 p2 = vec3(a1.xy,h.z);
-                  vec3 p3 = vec3(a1.zw,h.w);
-                
-                  //Normalise gradients
-                  vec4 norm = taylorInvSqrt(vec4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));
-                  p0 *= norm.x;
-                  p1 *= norm.y;
-                  p2 *= norm.z;
-                  p3 *= norm.w;
-                
-                  // Mix final noise value
-                  vec4 m = max(0.5 - vec4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
-                  m = m * m;
-                  return 105.0 * dot( m*m, vec4( dot(p0,x0), dot(p1,x1),
-                                                dot(p2,x2), dot(p3,x3) ) );
-                }
-                
-                </script>
-                  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-                      <script id="rendered-js">
-                "use strict";
-                class World {
-                    constructor() {
-                        this.build();
-                        window.addEventListener("resize", this.resize.bind(this));
-                        this.animate = this.animate.bind(this);
-                        this.animate();
-                    }
-                    build() {
-                        this.scene = new THREE.Scene();
-                        this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-                        this.camera.position.z = 3;
-                        this.renderer = new THREE.WebGLRenderer({
-                            alpha: true,
-                            antialias: true
-                        });
-                        this.renderer.setPixelRatio(window.devicePixelRatio);
-                        this.renderer.setSize(window.innerWidth, window.innerHeight);
-                        document.body.appendChild(this.renderer.domElement);
-                        this.molecule = new Molecule();
-                        this.scene.add(this.molecule);
-                    }
-                    resize() {
-                        const w = window.innerWidth;
-                        const h = window.innerHeight;
-                        this.camera.aspect = w / h;
-                        this.camera.updateProjectionMatrix();
-                        this.renderer.setSize(w, h);
-                    }
-                    animate() {
-                        requestAnimationFrame(this.animate);
-                        const time = performance.now() * 0.0003;
-                        this.molecule.animate(time);
-                        this.renderer.render(this.scene, this.camera);
-                    }
-                }
-                class Molecule extends THREE.Object3D {
-                    constructor() {
-                        super();
-                        this.radius = 1.5;
-                        this.detail = 40;
-                        this.particleSizeMin = 0.01;
-                        this.particleSizeMax = 0.08;
-                        this.build();
-                    }
-                    build() {
-                        this.dot();
-                        this.geometry = new THREE.IcosahedronBufferGeometry(1, this.detail);
-                        this.material = new THREE.PointsMaterial({
-                            map: this.dot(),
-                            blending: THREE.AdditiveBlending,
-                            color: 0x3EAC91,
-                            depthTest: false
-                        });
-                        this.setupShader(this.material);
-                        this.mesh = new THREE.Points(this.geometry, this.material);
-                        this.add(this.mesh);
-                    }
-                    dot(size = 18, color = "#3EAC91") {
-                        const sizeH = size * 0.32;
-                        const canvas = document.createElement("canvas");
-                        canvas.width = canvas.height = size;
-                        const ctx = canvas.getContext("2d");
-                        const circle = new Path2D();
-                        circle.arc(sizeH, sizeH, sizeH, 0, 2 * Math.PI);
-                        ctx.fillStyle = color;
-                        ctx.fill(circle);
-                        // debug canvas
-                        // canvas.style.position = "fixed"
-                        // canvas.style.top = 0
-                        // canvas.style.left = 0
-                        // document.body.appendChild(canvas)
-                        return new THREE.CanvasTexture(canvas);
-                    }
-                    setupShader(material) {
-                        material.onBeforeCompile = (shader) => {
-                            shader.uniforms.time = { value: 0 };
-                            shader.uniforms.radius = { value: this.radius };
-                            shader.uniforms.particleSizeMin = { value: this.particleSizeMin };
-                            shader.uniforms.particleSizeMax = { value: this.particleSizeMax };
-                            shader.vertexShader =
-                                "uniform float particleSizeMax;\n" + shader.vertexShader;
-                            shader.vertexShader =
-                                "uniform float particleSizeMin;\n" + shader.vertexShader;
-                            shader.vertexShader = "uniform float radius;\n" + shader.vertexShader;
-                            shader.vertexShader = "uniform float time;\n" + shader.vertexShader;
-                            shader.vertexShader =
-                                document.getElementById("webgl-noise").textContent +
-                                    "\n" +
-                                    shader.vertexShader;
-                            shader.vertexShader = shader.vertexShader.replace("#include <begin_vertex>", `
-                          vec3 p = position;
-                          float n = snoise( vec3( p.x*.6 + time*0.2, p.y*0.4 + time*0.3, p.z*.2 + time*0.2) );
-                          p += n *0.4;
-                
-                          // constrain to sphere radius
-                          float l = radius / length(p);
-                          p *= l;
-                          float s = mix(particleSizeMin, particleSizeMax, n);
-                          vec3 transformed = vec3( p.x, p.y, p.z );
-                        `);
-                            shader.vertexShader = shader.vertexShader.replace("gl_PointSize = size;", "gl_PointSize = s;");
-                            material.userData.shader = shader;
-                        };
-                    }
-                    animate(time) {
-                        this.mesh.rotation.set(0, time * 0.2, 0);
-                        if (this.material.userData.shader)
-                            this.material.userData.shader.uniforms.time.value = time;
-                    }
-                }
-                new World();
-                     </script>
               </div>
             </div>
           </div>
         </section>
+        <!-- Dashboard -->
         <section class="fz_dashboard">
-          <div class="container">
+          <div class="container text-center">
             <img src="assets/images/dashboard.svg" class="fz_dashboard_img" alt="dashboard">
           </div>
         </section>
+        <!-- About Finzor -->
         <section id="fz_core_nexus">
           <div class="container">
             <div class="row align-items-lg-center">
@@ -384,6 +211,144 @@
             </div>
           </div>
         </section>
+        <!-- Products -->
+        <section class="fz_product_sec panels-container">
+          <div class="fz_container" id="panels-container">
+              <div class="fz_product_panel">
+                  <div class="fz_sub_container">
+                      <div class="fz_content">
+                          <div class="fz_num">
+                              <h3>01</h3>
+                          </div>
+                          <div class="fz_title">Core Nexus</div>
+                          <div class="fz_subtitle">Core Banking Solution</div>
+                          <div class="fz_bank">Empowering banks with seamless, efficient, and secure financial services
+                          </div>
+                          <div class="fz_desc">Finzor Core Banking Services refers to the suite of services and solutions
+                              offered by Finzor (a technology provider) to financial institutions. These services are
+                              designed to modernize and streamline banking operations by providing a robust core banking
+                              platform that integrates various functionalities.</div>
+                          <div class="fz_btn">
+                              <button>Learn more</button>
+                          </div>
+                      </div>
+                      <div class="fz_img-sec">
+                          <div class="fz_img">
+                              <img class="image_1" src="./assets/images/vector_line.svg" alt="">
+                              <img class="core_img" src="./assets/images/core.gif"
+                                  alt="Computer man">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="fz_product_panel">
+                  <div class="fz_sub_container">
+                      <div class="fz_content">
+                          <div class="fz_num">
+                              <h3>02</h3>
+                          </div>
+                          <div class="fz_title">Bank Wave</div>
+                          <div class="fz_subtitle">Mobile Banking</div>
+                          <div class="fz_bank">Banking at your fingertips, anytime, anywhere, with secure and seamless
+                              mobile access.</div>
+                          <div class="fz_desc">Finzor's Mobile Banking is a seamless solution that empowers users to
+                              manage their finances and perform financial transactions directly from their mobile devices,
+                              such as smartphones or tablets. This innovative solution reflects Finzor's commitment to
+                              delivering cutting-edge, user-centric financial technology solutions.</div>
+                          <div class="fz_btn">
+                              <button>Learn more</button>
+                          </div>
+                      </div>
+                      <div class="fz_img-sec">
+                          <div class="fz_img">
+                              <img class="image_1" src="./assets/images/vector_line.svg" alt="">
+                              <img class="core_img" src="./assets/images/core.gif"
+                                  alt="Computer man">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="fz_product_panel">
+                  <div class="fz_sub_container">
+                      <div class="fz_content">
+                          <div class="fz_num">
+                              <h3>03</h3>
+                          </div>
+                          <div class="fz_title">Pay Unity</div>
+                          <div class="fz_subtitle">UPI</div>
+                          <div class="fz_bank">Revolutionizing Payments with Speed, Security, and Simplicity</div>
+                          <div class="fz_desc">Real-time payment system that enables fast, secure, and seamless financial
+                              transactions between bank accounts using mobile devices. It has revolutionized digital
+                              paymentsUPI should reflect its speed, convenience, security, and its role in transforming
+                              financial transactions.</div>
+                          <div class="fz_btn">
+                              <button>Learn more</button>
+                          </div>
+                      </div>
+                      <div class="fz_img-sec">
+                          <div class="fz_img">
+                              <img class="image_1" src="./assets/images/vector_line.svg" alt="">
+                              <img class="core_img" src="./assets/images/core.gif"
+                              alt="Computer man">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="fz_product_panel">
+                  <div class="fz_sub_container">
+                      <div class="fz_content">
+                          <div class="fz_num">
+                              <h3>04</h3>
+                          </div>
+                          <div class="fz_title">Translinker</div>
+                          <div class="fz_subtitle">UPI Switch</div>
+                          <div class="fz_bank">Unified Payments Interface (UPI) ecosystem designed to enable smooth
+                              interoperability between various UPI platforms and apps.</div>
+                          <div class="fz_desc">UPI Switch in Finzor enables the seamless routing of transactions between
+                              various UPI platforms, ensuring that payments can be processed regardless of the app or
+                              service being used.UPI Switch in Finzor utilizes advanced encryption and security protocols,
+                              making sure that sensitive financial data is securely transmitted and protected from fraud.
+                          </div>
+                          <div class="fz_btn">
+                              <button>Learn more</button>
+                          </div>
+                      </div>
+                      <div class="fz_img-sec">
+                          <div class="fz_img">
+                              <img class="image_1" src="./assets/images/vector_line.svg" alt="">
+                              <img class="core_img" src="./assets/images/core.gif"
+                              alt="Computer man">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="fz_product_panel">
+                  <div class="fz_sub_container">
+                      <div class="fz_content">
+                          <div class="fz_num">
+                              <h3>05</h3>
+                          </div>
+                          <div class="fz_title">FlowGate</div>
+                          <div class="fz_subtitle">Payment Gateways</div>
+                          <div class="fz_bank">Fast, Reliable, and Secure Payments.</div>
+                          <div class="fz_desc">Finzor’s Payment Gateway simplifies payments, securely connecting
+                              customers, merchants, and banks for seamless online and in-store transactions.</div>
+                          <div class="fz_btn">
+                              <button><span>Learn more</span></button>
+                          </div>
+                      </div>
+                      <div class="fz_img-sec">
+                          <div class="fz_img">
+                              <img class="image_1" src="./assets/images/vector_line.svg" alt="">
+                              <img class="core_img" src="./assets/images/core.gif"
+                                  alt="Computer man">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+        <!-- Feature -->
         <section id="fz_features" class="panel spacer-y">
             <div class="container">
               <div class="row">
@@ -591,6 +556,103 @@
               </div>
             </div>
         </section>
+        
+
+        <script src="index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"></script>
+        <script id="webgl-noise" type="x-shader/x-vertex">
+      
+          vec3 mod289(vec3 x) {
+          return x - floor(x * (1.0 / 289.0)) * 289.0;
+        }
+        
+        vec4 mod289(vec4 x) {
+          return x - floor(x * (1.0 / 289.0)) * 289.0;
+        }
+        
+        vec4 permute(vec4 x) {
+          return mod289(((x*34.0)+10.0)*x);
+        }
+        
+        vec4 taylorInvSqrt(vec4 r)
+        {
+          return 1.79284291400159 - 0.85373472095314 * r;
+        }
+        
+        float snoise(vec3 v)
+        {
+          const vec2  C = vec2(1.0/6.0, 1.0/3.0) ;
+          const vec4  D = vec4(0.0, 0.5, 1.0, 2.0);
+        
+          
+          vec3 i  = floor(v + dot(v, C.yyy) );
+          vec3 x0 =   v - i + dot(i, C.xxx) ;
+        
+         
+          vec3 g = step(x0.yzx, x0.xyz);
+          vec3 l = 1.0 - g;
+          vec3 i1 = min( g.xyz, l.zxy );
+          vec3 i2 = max( g.xyz, l.zxy );
+        
+          
+          vec3 x1 = x0 - i1 + C.xxx;
+          vec3 x2 = x0 - i2 + C.yyy; 
+          vec3 x3 = x0 - D.yyy;      
+        
+           
+          i = mod289(i);
+          vec4 p = permute( permute( permute(
+                      i.z + vec4(0.0, i1.z, i2.z, 1.0 ))
+                    + i.y + vec4(0.0, i1.y, i2.y, 1.0 ))
+                    + i.x + vec4(0.0, i1.x, i2.x, 1.0 ));
+        
+          // Gradients: 7x7 points over a square, mapped onto an octahedron.
+          // The ring size 17*17 = 289 is close to a multiple of 49 (49*6 = 294)
+          float n_ = 0.142857142857; // 1.0/7.0
+          vec3  ns = n_ * D.wyz - D.xzx;
+        
+          vec4 j = p - 49.0 * floor(p * ns.z * ns.z);  //  mod(p,7*7)
+        
+          vec4 x_ = floor(j * ns.z);
+          vec4 y_ = floor(j - 7.0 * x_ );    // mod(j,N)
+        
+          vec4 x = x_ *ns.x + ns.yyyy;
+          vec4 y = y_ *ns.x + ns.yyyy;
+          vec4 h = 1.0 - abs(x) - abs(y);
+        
+          vec4 b0 = vec4( x.xy, y.xy );
+          vec4 b1 = vec4( x.zw, y.zw );
+        
+          //vec4 s0 = vec4(lessThan(b0,0.0))*2.0 - 1.0;
+          //vec4 s1 = vec4(lessThan(b1,0.0))*2.0 - 1.0;
+          vec4 s0 = floor(b0)*2.0 + 1.0;
+          vec4 s1 = floor(b1)*2.0 + 1.0;
+          vec4 sh = -step(h, vec4(0.0));
+        
+          vec4 a0 = b0.xzyw + s0.xzyw*sh.xxyy ;
+          vec4 a1 = b1.xzyw + s1.xzyw*sh.zzww ;
+        
+          vec3 p0 = vec3(a0.xy,h.x);
+          vec3 p1 = vec3(a0.zw,h.y);
+          vec3 p2 = vec3(a1.xy,h.z);
+          vec3 p3 = vec3(a1.zw,h.w);
+        
+          //Normalise gradients
+          vec4 norm = taylorInvSqrt(vec4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));
+          p0 *= norm.x;
+          p1 *= norm.y;
+          p2 *= norm.z;
+          p3 *= norm.w;
+        
+          // Mix final noise value
+          vec4 m = max(0.5 - vec4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+          m = m * m;
+          return 105.0 * dot( m*m, vec4( dot(p0,x0), dot(p1,x1),
+                                        dot(p2,x2), dot(p3,x3) ) );
+        }
+        </script>
     </body>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>

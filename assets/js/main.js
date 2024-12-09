@@ -24,9 +24,24 @@
 //     }
 // );
 
+gsap.registerPlugin(ScrollTrigger);
+let sections = gsap.utils.toArray(".fz_product_panel");
+gsap.to(sections, {
+	xPercent: -100 * (sections.length - 1),
+	ease: "none",
+	scrollTrigger: {
+		trigger: ".panels-container",
+		pin: true,
+		scrub: 2,
+		snap: {
+			snapTo: 1 / (sections.length - 1),
+			duration: {min: 0.1, max: 3}
+		},
+		end: () => "+=" + document.querySelector("#panels-container").offsetWidth * 10
+	}
+});
+
 /* Feature */
-
-
 let sm = gsap.matchMedia();
 
 sm.add("(min-width: 1130px)", () => {
@@ -206,3 +221,296 @@ $(function() {
           document.getElementById('content').style.display = 'block';
         }, 3000); // Wait for 3 seconds before showing content
       });
+
+
+
+
+
+
+      // Banner script
+      const CANVAS = document.getElementsByTagName("canvas")[0],
+	CTX = CANVAS.getContext("2d"),
+	W = window.innerWidth,
+	H = window.innerHeight,
+	XO = W / 2,
+	YO = H / 2,
+	NUM_PARTICLES = 400,
+	MAX_Z = 2,
+	MAX_R = 1,
+	Z_SPD = 1,
+	PARTICLES = [];
+
+class Particle {
+	constructor(x, y, z) {
+		this.pos = new Vector(x, y, z);
+		const X_VEL = 0, Y_VEL = 0, Z_VEL = -Z_SPD;
+		this.vel = new Vector(X_VEL, Y_VEL, Z_VEL);
+		this.vel.scale(0.005);
+		this.fill = "#3EAB90";
+		this.stroke = this.fill;
+	}
+
+	update() {
+		this.pos.add(this.vel);
+	}
+
+	render() {
+		const PIXEL = to2d(this.pos),
+			X = PIXEL[0],
+			Y = PIXEL[1],
+			R = (MAX_Z - this.pos.z) / MAX_Z * MAX_R;
+
+		if (X < 0 || X > W || Y < 0 || Y > H) this.pos.z = MAX_Z;
+
+		this.update();
+		CTX.beginPath();
+		CTX.fillStyle = this.fill;
+		CTX.strokeStyle = this.stroke;
+		CTX.arc(X, PIXEL[1], R, 0, Math.PI * 2);
+		CTX.fill();
+		CTX.stroke();
+		CTX.closePath();
+	}
+}
+
+class Vector {
+	constructor(x, y, z) {
+		this.x = x;
+		this.y = y;
+		this.z = z;
+	}
+
+	add(v) {
+		this.x += v.x;
+		this.y += v.y;
+		this.z += v.z;
+	}
+
+	scale(n) {
+		this.x *= n;
+		this.y *= n;
+		this.z *= n;
+	}
+}
+
+function to2d(v) {
+	const X_COORD = v.x - XO,
+		Y_COORD = v.y - YO,
+		PX = X_COORD / v.z,
+		PY = Y_COORD / v.z;
+	return [PX + XO, PY + YO];
+}
+
+function render() {
+	for (let i = 0; i < PARTICLES.length; i++) {
+		PARTICLES[i].render();
+	}
+}
+
+function loop() {
+	requestAnimationFrame(loop);
+
+	// Clear and render background
+	CTX.clearRect(0, 0, W, H);
+	const backgroundImage = new Image();
+	backgroundImage.src = "image/Dotted.svg";
+	backgroundImage.onload = () => {
+		CTX.globalAlpha = 1;
+		CTX.drawImage(backgroundImage, 0, 0, W, H);
+	};
+
+	// Semi-transparent overlay for sparkle effect
+	// CTX.fillStyle = "rgba(0, 0, 0, 0.15)";
+	// CTX.fillRect(0, 0, W, H);
+
+	// Render particles
+	render();
+
+	// Ensure Three.js renders globe properly
+	if (typeof world !== "undefined") {
+		world.renderer.render(world.scene, world.camera);
+	}
+}
+
+
+function createParticles() {
+	for (let i = 0; i < NUM_PARTICLES; i++) {
+		const X = Math.random() * W, Y = Math.random() * H, Z = Math.random() * MAX_Z;
+		PARTICLES.push(new Particle(X, Y, Z));
+	}
+}
+
+function init() {
+	CANVAS.width = W;
+	CANVAS.height = H;
+	createParticles();
+	loop();
+}
+init();
+
+
+// globe 
+
+class World {
+	renderer;
+	scene;
+	camera;
+	molecule;
+
+	constructor() {
+		this.build();
+
+		window.addEventListener("resize", this.resize.bind(this));
+
+		this.animate = this.animate.bind(this);
+		this.animate();
+	}
+
+	build() {
+		this.scene = new THREE.Scene();
+		this.camera = new THREE.PerspectiveCamera(
+			75,
+			window.innerWidth / window.innerHeight,
+			0.1,
+			1000
+		);
+		this.camera.position.z = 3;
+
+		this.renderer = new THREE.WebGLRenderer({
+			alpha: true, // Ensures transparency
+			antialias: true,
+		});
+		this.renderer.setPixelRatio(window.devicePixelRatio);
+		this.renderer.setSize(window.innerWidth, window.innerHeight);
+
+		// Attach Three.js canvas to a specific container
+		const globeContainer = document.querySelector(".globe-container");
+		globeContainer.appendChild(this.renderer.domElement);
+
+		this.molecule = new Molecule();
+		this.scene.add(this.molecule);
+	}
+
+
+	resize() {
+		const w = window.innerWidth;
+		const h = window.innerHeight;
+		this.camera.aspect = w / h;
+		this.camera.updateProjectionMatrix();
+		this.renderer.setSize(w, h);
+	}
+
+	animate() {
+		requestAnimationFrame(this.animate);
+
+		const time = performance.now() * 0.001;
+
+		this.molecule.animate(time);
+
+		this.renderer.render(this.scene, this.camera);
+	}
+}
+
+class Molecule extends THREE.Object3D {
+	material;
+	geometry;
+	mesh;
+	radius = 1.3;
+	detail = 40;
+	particleSizeMin = 0.01;
+	particleSizeMax = 0.08;
+
+	constructor() {
+		super();
+
+		this.build();
+	}
+
+	build() {
+		this.dot();
+
+		this.geometry = new THREE.IcosahedronBufferGeometry(1, this.detail);
+
+		this.material = new THREE.PointsMaterial({
+			map: this.dot(),
+			blending: THREE.AdditiveBlending,
+			color: 0x67CBAF,
+			depthTest: false
+		});
+
+		this.setupShader(this.material);
+
+		this.mesh = new THREE.Points(this.geometry, this.material);
+		this.add(this.mesh);
+	}
+
+	dot(size = 32, color = "#3EAB90") {
+		const sizeH = size * 0.5;
+
+		const canvas = document.createElement("canvas");
+		canvas.width = canvas.height = size;
+
+		const ctx = canvas.getContext("2d");
+
+		const circle = new Path2D();
+		circle.arc(sizeH, sizeH, sizeH, 0, 2 * Math.PI);
+
+		ctx.fillStyle = color;
+		ctx.fill(circle);
+
+		// debug canvas
+		// canvas.style.position = "fixed"
+		// canvas.style.top = 0
+		// canvas.style.left = 0
+		// document.body.appendChild(canvas)
+
+		return new THREE.CanvasTexture(canvas);
+	}
+
+	setupShader(material) {
+		material.onBeforeCompile = (shader) => {
+			shader.uniforms.time = { value: 0 };
+			shader.uniforms.radius = { value: this.radius };
+			shader.uniforms.particleSizeMin = { value: this.particleSizeMin };
+			shader.uniforms.particleSizeMax = { value: this.particleSizeMax };
+			shader.vertexShader =
+				"uniform float particleSizeMax;\n" + shader.vertexShader;
+			shader.vertexShader =
+				"uniform float particleSizeMin;\n" + shader.vertexShader;
+			shader.vertexShader = "uniform float radius;\n" + shader.vertexShader;
+			shader.vertexShader = "uniform float time;\n" + shader.vertexShader;
+			shader.vertexShader =
+				document.getElementById("webgl-noise").textContent +
+				"\n" +
+				shader.vertexShader;
+			shader.vertexShader = shader.vertexShader.replace(
+				"#include <begin_vertex>",
+				`
+			vec3 p = position;
+			float n = snoise( vec3( p.x*.6 + time*0.2, p.y*0.4 + time*0.3, p.z*.2 + time*0.2) );
+			p += n *0.4;
+  
+			// constrain to sphere radius
+			float l = radius / length(p);
+			p *= l;
+			float s = mix(particleSizeMin, particleSizeMax, n);
+			vec3 transformed = vec3( p.x, p.y, p.z );
+		  `
+			);
+			shader.vertexShader = shader.vertexShader.replace(
+				"gl_PointSize = size;",
+				"gl_PointSize = s;"
+			);
+
+			material.userData.shader = shader;
+		};
+	}
+
+	animate(time) {
+		this.mesh.rotation.set(0, time * 0.2, 0);
+		if (this.material.userData.shader)
+			this.material.userData.shader.uniforms.time.value = time;
+	}
+}
+
+new World();
