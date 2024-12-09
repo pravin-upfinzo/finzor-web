@@ -1,0 +1,128 @@
+@import './variable.scss';
+#fz_core_nexus {
+    padding: 80px 0;
+    .fz_core_bg {
+        width: 558px;
+        background-color: $tertiary-color;
+        border-radius: 16px;
+        padding-top: 30px;
+        .fz_core_text {
+            background-color: $black;
+            border-top-left-radius: 32px;
+            border-top-right-radius: 32px;
+            transform: rotate(-8.5deg);
+            width: 422px;
+            height: 605px;
+            margin-left: 62px;
+            position: relative;
+            top: 35px;
+            overflow: hidden;
+            h3 {
+                font-size: 32px;
+                color: $white;
+                line-height: 45px;
+                padding: 50px 50px 0;
+            }
+            img {
+                transform: rotate(8.5deg);
+                position: relative;
+                z-index: 1;
+            }
+            .fz_box {
+                div {
+                    position: absolute;
+                    width: 90px;
+                    height: 90px;
+                    border-radius:50%;
+                    &:nth-child(1) {
+                        top: 38%;
+                        left: 10%;
+                        animation: animate 16s linear infinite;
+                        background: $secondary-color;
+                    }
+                    &:nth-child(2) {
+                        top: 80%;
+                        left: 70%;
+                        animation: animate 12s linear infinite;
+                        background: $primary-color;
+                    }
+                    &:nth-child(3) {
+                        top: 38%;
+                        right: 0%;
+                        animation: animate 10s linear infinite;
+                        background: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+    .fz_core_text_right {
+        h2 {
+            font-size: 36px;
+            color: $white;
+            line-height: 48px;
+            margin-bottom: 35px;
+        }
+        h5 {
+            font-size: 24px;
+            color: $white;
+            line-height: 40px;
+            margin-bottom: 50px;
+        }
+        p {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            color: $white;
+            line-height: 24px;
+            margin-bottom: 48px;
+            span {
+                background-color: $ternary-color;
+                border-radius: 50%;
+                width: 43px;
+                height: 43px;
+                display: inline-table;
+                text-align: center;
+                line-height: 38px;
+                margin-right: 25px;
+            }
+        }
+        div {
+            margin-left: 70px;
+            .fz_learmore {
+                @include primaryBg;
+                padding: 16px 60px;
+                border: 1px solid transparent;
+                margin-right: 35px;
+                transition: all 0.5s ease-in;
+                &:hover {
+                    background: transparent;
+                    border: 1px solid $primary-color;
+                }
+            }
+            .fz_learmore_btn {
+                @include primaryBg($theme: $black, $white-color: $primary-color);
+                padding: 18px 60px;
+                border: 1px solid $primary-color;
+                transition: all 0.3s ease-in;
+                &:hover {
+                    background: $primary-color;
+                    border: 1px solid transparent;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+@keyframes animate {
+    0% {
+      transform: scale(0) translateY(-90px) rotate(360deg);
+      opacity: 1;
+    }
+    
+    100% {
+      transform: scale(1.3) translateY(-90px) rotate(-180deg);
+      border-radius: 50%;
+      opacity: 0;
+    } 
+}

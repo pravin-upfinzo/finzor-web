@@ -1,0 +1,77 @@
+.features_posibilityies {
+  padding: 0;
+  background-color: #000 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0;
+}
+.features_posibilityies .container {
+  position: relative;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.features_posibilityies .container .text {
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.features_posibilityies .container .text img {
+  height: 100%;
+  width: 400px;
+}
+.features_posibilityies .container .inner-text {
+  position: absolute;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.features_posibilityies .container .inner-text .left.left, .features_posibilityies .container .inner-text .right.left {
+  text-align: right;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+}
+.features_posibilityies .container .inner-text .left.right, .features_posibilityies .container .inner-text .right.right {
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+}
+.features_posibilityies .container .dd {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  translate: none;
+  rotate: none;
+  scale: none;
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+.features_posibilityies .container h2 {
+  font-weight: bolder;
+  font-size: 50px;
+  color: #ddd;
+  text-transform: uppercase;
+}
+.features_posibilityies .container h3 {
+  font-weight: 200;
+  font-size: 75px;
+  color: #ddd;
+  text-transform: capitalize;
+}

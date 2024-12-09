@@ -1,0 +1,43 @@
+body {
+  background-color: #000000;
+}
+
+header {
+  padding: 30px 40px;
+}
+header .navbar-expand-lg .navbar-nav {
+  flex: 1;
+  justify-content: center;
+}
+header .navbar-expand-lg .navbar-nav li a.nav-link {
+  font-size: 16px;
+  padding: 0 38px;
+  color: #ffffff;
+  position: relative;
+}
+header .fz_sigin ul {
+  display: flex;
+  align-items: center;
+}
+header .fz_sigin ul li {
+  display: inline-block;
+}
+header .fz_sigin ul li a {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+header .fz_sigin ul li:nth-child(2) {
+  border-left: 1px solid #979797;
+  padding-left: 45px;
+  margin-left: 15px;
+}
+header .fz_sigin ul li:last-child {
+  margin-left: 22px;
+}
+header .fz_sigin ul li:last-child a {
+  background-color: #1A2C2A;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+}

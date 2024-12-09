@@ -1,0 +1,232 @@
+/* PANELS */
+.panel {
+  position: relative;
+  z-index: 9;
+}
+
+.panel__stack {
+  --spacer: 20px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-items: center;
+  justify-items: center;
+  overflow-y: visible;
+}
+
+.panel__stack .panel__card {
+  grid-area: 1/1/2/2;
+  border-radius: 8px;
+  padding: 2.5rem;
+  position: absolute;
+  height: 41.625rem;
+  will-change: transform;
+  background-color: #1A2C2A;
+}
+
+.panel__stack .panel__card:first-child {
+  top: calc(var(--spacer) * 1);
+  z-index: 1;
+}
+
+.panel__stack .panel__card:nth-child(2) {
+  top: calc(var(--spacer) * 2);
+  z-index: 2;
+}
+
+.panel__stack .panel__card:nth-child(3) {
+  top: calc(var(--spacer) * 3);
+  z-index: 3;
+}
+
+.panel__stack .panel__card:last-child {
+  top: calc(var(--spacer) * 4);
+  z-index: 4;
+}
+
+.panel__content {
+  width: 48%;
+}
+
+.panel__image {
+  width: 52%;
+}
+
+.panel__image img {
+  max-height: 30rem;
+}
+
+.panel__card__img {
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 48px;
+  max-width: 450px;
+  width: 100%;
+  margin-left: auto;
+  position: relative;
+}
+
+.sticky-notes {
+  width: 209px;
+  padding: 10px 15px;
+  position: absolute;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  left: -70px;
+  bottom: 30px;
+}
+
+.sticky-notes .draw-line {
+  position: absolute;
+  top: -70px;
+  left: -80px;
+}
+
+.sticky-notes__items {
+  gap: 10px;
+}
+
+.sticky-notes__items div {
+  padding: 10px 30px;
+  border-radius: 8px;
+}
+
+.sticky-notes__items div:first-child {
+  background-color: #fad1d1;
+  color: #d92d20;
+}
+
+.sticky-notes__items div:nth-child(2) {
+  background-color: #f4fad1;
+  color: #f79009;
+}
+
+.sticky-notes__items div:last-child {
+  background-color: #d1fadf;
+  color: #039855;
+}
+
+.sticky-card {
+  padding: 10px 15px;
+  position: absolute;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  right: -70px;
+  top: 30px;
+  max-width: 210px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-card .checkbox {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  border: 1px solid #d0d5dd;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+.sticky-cards__items {
+  gap: 10px;
+}
+
+.sticky-card.sticky-card-left {
+  bottom: 50px;
+  left: -100px;
+  top: initial;
+}
+
+.panel__card--one .panel__card__img {
+  background-color: #a9a3ff;
+}
+
+.panel__card--two .panel__card__img {
+  background-color: #d1f2ff;
+}
+
+.panel__card--three .panel__card__img {
+  background-color: #ffc183;
+}
+
+.panel__card--four .panel__card__img {
+  background-color: #98d89c;
+}
+
+.panel {
+  padding-top: 80px !important;
+}
+.panel .panel__options {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+.panel .panel__options span {
+  font-size: 16px;
+  color: #ffffff;
+  padding: 12px 0;
+  transition: all 0.5s ease;
+  margin-bottom: 20px;
+}
+.panel .panel__stack .panel__card h2 {
+  color: #ffffff;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+.panel .panel__stack .panel__card .nav.nav-pills {
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 35px;
+}
+.panel .panel__stack .panel__card .nav.nav-pills li {
+  margin-right: 30px;
+}
+.panel .panel__stack .panel__card .nav.nav-pills li .nav-link {
+  color: #ffffff;
+  font-size: 20px;
+  padding: 0;
+  padding-bottom: 10px;
+  border-radius: unset;
+  background-color: transparent;
+}
+.panel .panel__stack .panel__card .nav.nav-pills li .nav-link.active {
+  background-color: transparent;
+  border-bottom: 3px solid #3EAB90;
+}
+.panel .panel__stack .panel__card .tab-content .fz-tab-card {
+  display: flex;
+  gap: 40px;
+}
+.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
+  border-radius: 8px;
+}
+.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div {
+  padding: 20px;
+  background-color: #000000;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div h3 {
+  color: #F7C35F;
+  font-size: 20px;
+}
+.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div p {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 25px;
+}
+.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div a {
+  color: #3EAB90;
+  font-size: 18px;
+  text-decoration: none;
+}
