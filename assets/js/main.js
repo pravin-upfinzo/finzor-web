@@ -22,7 +22,6 @@
 //             scrub: true, // Smooth animation linked to the scroll
 //         }
 //     }
-<<<<<<< HEAD
 // );
 gsap.registerPlugin(ScrollTrigger);
     
@@ -640,6 +639,3 @@ class Molecule extends THREE.Object3D {
 }
 
 new World();
-=======
-// );
->>>>>>> c9c23226503a6f3f0fdd4e4752685bc57a25b3f8
