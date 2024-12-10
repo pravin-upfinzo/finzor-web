@@ -30,11 +30,7 @@ gsap.registerPlugin(ScrollTrigger);
                 opacity: 0, // Fade out the main text
                 duration: 1,
                 scrollTrigger: {
-<<<<<<< HEAD
-                    trigger: ".container", // Trigger animation when the container enters the viewport
-=======
                     trigger: ".features_posibilityies", // Trigger animation when the container enters the viewport
->>>>>>> e5a93e90c866e63a4b997521003fdc9f1ec0db44
                     start: "top 80%", // Start the fade-out when the container reaches 80% of the viewport
                     end: "top 50%", // End the fade-out when the container reaches 50% of the viewport
                     scrub: true, // Scrub smoothly as you scroll
@@ -51,11 +47,7 @@ gsap.registerPlugin(ScrollTrigger);
                 x: "-10vw", // Move to the center
                 duration: 1,
                 scrollTrigger: {
-<<<<<<< HEAD
-                    trigger: ".container",
-=======
                     trigger: ".features_posibilityies",
->>>>>>> e5a93e90c866e63a4b997521003fdc9f1ec0db44
                     start: "top 60%", // Start showing the inner text when the container reaches 60% of the viewport
                     end: "top 40%", // End the inner text animation when the container reaches 40% of the viewport
                     scrub: true, // Scrub smoothly with scroll
@@ -71,11 +63,7 @@ gsap.registerPlugin(ScrollTrigger);
                 x: "10vw", // Move to the center
                 duration: 1,
                 scrollTrigger: {
-<<<<<<< HEAD
-                    trigger: ".container",
-=======
                     trigger: ".features_posibilityies",
->>>>>>> e5a93e90c866e63a4b997521003fdc9f1ec0db44
                     start: "top 60%", // Start showing the right text when the container reaches 60% of the viewport
                     end: "top 40%", // End when the container is near the top
                     scrub: true, // Smoothly scrub
@@ -90,11 +78,7 @@ gsap.registerPlugin(ScrollTrigger);
                 x: "0", // Move to the center
                 duration: 1,
                 scrollTrigger: {
-<<<<<<< HEAD
-                    trigger: ".container",
-=======
                     trigger: ".features_posibilityies",
->>>>>>> e5a93e90c866e63a4b997521003fdc9f1ec0db44
                     start: "top 60%", // Start showing the right text when the container reaches 60% of the viewport
                     end: "top 40%", // End when the container is near the top
                     scrub: true, // Smoothly scrub
