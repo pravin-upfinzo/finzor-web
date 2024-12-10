@@ -19,6 +19,10 @@ header .navbar-expand-lg .navbar-nav li a.nav-link {
   font-size: 16px;
   padding: 0 38px;
   color: #ffffff;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e5a93e90c866e63a4b997521003fdc9f1ec0db44
   position: relative;
 }
 header .fz_sigin ul {
@@ -1033,4 +1037,36 @@ header .fz_sigin ul li:last-child a {
   .footer_section ul {
     margin-bottom: 20px;
   }
+<<<<<<< HEAD
+=======
+=======
+  position: relative;
+}
+header .fz_sigin ul {
+  display: flex;
+  align-items: center;
+}
+header .fz_sigin ul li {
+  display: inline-block;
+}
+header .fz_sigin ul li a {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+header .fz_sigin ul li:nth-child(2) {
+  border-left: 1px solid #979797;
+  padding-left: 45px;
+  margin-left: 15px;
+}
+header .fz_sigin ul li:last-child {
+  margin-left: 22px;
+}
+header .fz_sigin ul li:last-child a {
+  background-color: #1A2C2A;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+>>>>>>> c9c23226503a6f3f0fdd4e4752685bc57a25b3f8
+>>>>>>> e5a93e90c866e63a4b997521003fdc9f1ec0db44
 }
