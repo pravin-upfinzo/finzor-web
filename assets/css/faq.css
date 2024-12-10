@@ -1,0 +1,109 @@
+.faq_section {
+  background-color: #000000;
+  padding: 220px 0px;
+}
+@media screen and (max-width: 992px) {
+  .faq_section {
+    padding: 60px 0px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .faq_section .faq_header {
+    text-align: center;
+  }
+}
+.faq_section .accordion-item .accordion-header {
+  border-radius: 16px !important;
+  background: #000000 !important;
+  margin-bottom: 3px !important;
+  border-top: #3EAB90 !important;
+}
+.faq_section .accordion-item:first-of-type {
+  border-radius: 16px !important;
+}
+.faq_section .accordion-item:last-of-type > .accordion-header .accordion-button.collapsed {
+  border-radius: 16px !important;
+}
+.faq_section .accordion-item:last-of-type {
+  border-radius: 16px !important;
+}
+.faq_section .faq_section .accordion-button::after {
+  background-color: #ffffff;
+}
+.faq_section .accordion-item:not(:first-of-type) {
+  border-top: 1px solid #3EAB90 !important;
+}
+.faq_section .accordion-item .accordion-header .accordion-button {
+  position: relative;
+  top: 2px;
+  padding: 25px 42px;
+  background: #000000 !important;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 2px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #ffffff;
+  border-radius: 16px !important;
+}
+.faq_section .accordion-item {
+  margin-bottom: 20px;
+  border-radius: 16px;
+  border: 1px solid #3EAB90;
+  background-color: #000000 !important;
+}
+.faq_section .accordion-body {
+  font-size: 18px;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 16px !important;
+  padding-left: 43px;
+}
+.faq_section .accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+.faq_section .accordion-item:not(:first-of-type) {
+  border-top: #3EAB90;
+}
+.faq_section .accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: none;
+}
+.faq_section .accordion-button::after {
+  background-image: none;
+  font-family: "Font Awesome 6 Free";
+  content: "+";
+  height: 35px;
+  width: 35px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--secondary-color);
+  background: transparent !important;
+  color: var(--secondary-color);
+}
+.faq_section .accordion-button:not(.collapsed)::after {
+  background-image: none;
+  content: "_";
+  color: #ffffff;
+}
+.faq_section h4 {
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  color: #ffffff;
+}
+.faq_section h3 {
+  font-size: 40px;
+  color: #3EAB90;
+  font-weight: 600;
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 992px) {
+  .faq_section h3 br {
+    display: none;
+  }
+}

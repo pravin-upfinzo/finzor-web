@@ -1,0 +1,52 @@
+@import './variable.scss';
+body {
+    background-color: $bg-color;
+}
+header {
+    padding: 30px 40px;
+    .navbar-expand-lg {
+        .navbar-nav {
+            flex: 1;
+            justify-content: center;
+
+            li {
+                a.nav-link {
+                    font-size: 16px;
+                    padding: 0 38px;
+                    color: $white;
+                    position: relative;
+                }
+            }
+        }
+    }
+    .fz_sigin {
+        ul {
+            display: flex;
+            align-items: center;
+            li {
+                display: inline-block;
+                a {
+                    color: $white;
+                    font-size: 16px;
+                    text-decoration: none;
+                }
+                &:nth-child(2) {
+                    border-left: 1px solid $gray-color;
+                    padding-left: 45px;
+                    margin-left: 15px;
+                }
+                &:last-child {
+                    margin-left: 22px;
+                    a {
+                        background-color: $tertiary-color;
+                        padding: 12px 20px;
+                        border-radius: 5px;
+                        border: 1px solid $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

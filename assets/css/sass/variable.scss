@@ -1,0 +1,14 @@
+$primary-color: #3EAB90;
+$secondary-color: #F7C35F;
+$tertiary-color: #1A2C2A;
+$white: #ffffff;
+$black: #000000;
+$bg-color: #000000;
+$gray-color: #979797;
+$ternary-color: #2D4949;
+@mixin primaryBg($theme: $primary-color, $white-color: $white) {
+    background: $theme;
+    color: $white-color;
+    border-radius: 32px;
+    font-size: 16px;
+}
