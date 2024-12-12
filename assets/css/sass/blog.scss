@@ -1,0 +1,124 @@
+@import './variable.scss';
+.fz-blog {
+  background-color: $bg-color;
+
+  .container {
+    max-width: 85%;
+  }
+
+  .blog-carousel {
+    text-align: center;
+    padding: 66px 0 84px;
+
+    h3 {
+      color: $primary-color;
+      font-size: 50px;
+      line-height: 58px;
+    }
+
+    p {
+      color: $white;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  .item {
+    width: 100%;
+    background: $black;
+    color: $white;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 276px;
+    }
+
+    .card-body {
+      padding: 0px 28px 33px 27px;
+      width: 383px;
+      border-radius: 0 0 8px 8px;
+      border: 1px solid $tertiary-color;
+      margin: 0 auto;
+
+      h5 {
+        font-size: 22px;
+        line-height: 30px;
+        padding-bottom: 18px;
+        font-weight: bold;
+        color: $primary-color;
+      }
+
+      .card-text {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .card-top-title {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        line-height: 18px;
+        padding: 34px 0 28px 0;
+      }
+    }
+  }
+
+  .owl-carousel {
+    .owl-stage {
+      display: flex;
+      align-items: center;
+    }
+    .owl-nav {
+      display: flex;
+      justify-content: end; 
+      gap: 162px; 
+      position: relative;
+      margin-top: 50px;
+        .custom-prev,
+        .custom-next {
+          font-size: 16px;
+          font-weight: 500;
+          color:$white;
+          cursor: pointer;
+          transition: all 0.3s ease;
+      
+          &:hover {
+            color: $primary-color; 
+          }
+          
+        }
+        &::after {
+          content: '';
+          width: 80px; 
+          height: 2.27px; 
+         
+          position: absolute;
+          background:$white; 
+          top: 50%; 
+          transform: translateY(-50%); 
+          left: 88%; 
+          transform: translate(-50%, -50%);
+        }
+        
+        &::before {
+          content: '';
+          width: 80px; 
+          height: 2.27px; 
+          background:$primary-color; 
+          position: absolute;
+          top: 50%; 
+          transform: translateY(-50%); 
+          left: 93%; 
+          transform: translate(-50%, -50%);
+        }
+        .custom-prev {
+          color:$primary-color;
+        }
+        .custom-next {
+          color:$white;
+        }
+    }
+    
+  }
+}

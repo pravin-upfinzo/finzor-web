@@ -1,0 +1,196 @@
+.developer_section {
+  background-color: #000000;
+  padding: 60px 0px 100px;
+  /* Keywords */
+  /* Strings */
+  /* HTML tags */
+  /* Attributes */
+  /* Comments */
+}
+.developer_section h3 {
+  color: #ffffff;
+  font-size: 35px;
+}
+@media screen and (max-width: 992px) {
+  .developer_section h3 {
+    text-align: center;
+  }
+}
+.developer_section h5 {
+  color: #3EAB90;
+  font-size: 30px;
+  padding-bottom: 40px;
+}
+.developer_section .dev_left {
+  border-radius: 20px;
+  padding: 15px;
+}
+.developer_section .dev_left .row {
+  margin: 30px 0px;
+}
+.developer_section .dev_left .dev_card_1 {
+  justify-content: end;
+}
+.developer_section .dev_left .dev_card {
+  background-color: #1A2D2C;
+  padding: 25px;
+  border-radius: 12px;
+  transition: all 0.6s ease;
+  --border-angle: 0turn;
+  --main-bg: conic-gradient(
+      from var(--border-angle),
+      #1A2C2A 0%,
+      #1A2C2A 100%
+      );
+  border: solid 1px transparent;
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 50%, #F7C35F, #3EAB90 99%, transparent);
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+  background-position: center center;
+  animation: bg-spin 4s linear infinite;
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+@media screen and (max-width: 992px) {
+  .developer_section .dev_left .dev_card {
+    text-align: center;
+  }
+}
+.developer_section .dev_left .dev_card img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  background-color: #3EAB90;
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.developer_section .dev_left .dev_card h4 {
+  font-size: 20px;
+  color: #3EAB90;
+  padding-bottom: 10px;
+}
+.developer_section .dev_left .dev_card p {
+  color: #ffffff;
+  margin-bottom: 0px;
+  transition: all 0.6s ease;
+}
+.developer_section .dev_right {
+  position: relative;
+}
+@media screen and (max-width: 992px) {
+  .developer_section .dev_right {
+    margin-top: 20px;
+  }
+}
+.developer_section .dev_right video {
+  width: 47vw;
+  height: 100%;
+}
+@media screen and (max-width: 992px) {
+  .developer_section .dev_right video {
+    width: 100%;
+    height: 100%;
+  }
+}
+.developer_section #typingEffect {
+  color: #d7ba7d;
+  border-top: 1px solid rgba(100, 116, 139, 0.3019607843);
+  padding-top: 20px;
+  padding: 10px;
+  position: relative;
+}
+.developer_section #editor {
+  background-color: #1A2D2C; /* Editor background */
+  color: #d4d4d4; /* Text color */
+  border: 1px solid rgba(100, 116, 139, 0.3019607843); /* Border similar to VS Code */
+  border-radius: 8px;
+  padding: 30px 0px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  line-height: 1.5;
+  position: relative;
+  overflow: hidden;
+  --border-angle: 0turn;
+  --main-bg: conic-gradient(
+      from var(--border-angle),
+      #1A2C2A 0%,
+      #1A2C2A 100%
+      );
+  border: solid 1px transparent;
+  border-radius: 2em;
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 50%, #F7C35F, #3EAB90 99%, transparent);
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+  background-position: center center;
+  animation: bg-spin 4s linear infinite;
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+.developer_section .cursor {
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  background: #d4d4d4;
+  animation: blink 0.7s steps(1) infinite;
+}
+@keyframes blink {
+  50% {
+    background: transparent;
+  }
+}
+.developer_section .line {
+  display: block;
+}
+.developer_section .keyword {
+  color: #569cd6;
+}
+.developer_section .string {
+  color: #ce9178;
+}
+.developer_section .tag {
+  color: #d7ba7d;
+}
+.developer_section .attribute {
+  color: #9cdcfe;
+}
+.developer_section .comment {
+  color: #6a9955;
+  font-style: italic;
+}
+.developer_section ul {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.developer_section ul li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0px 3px;
+}
+.developer_section ul .btn_1 {
+  background-color: #f45450;
+}
+.developer_section ul .btn_2 {
+  background-color: #f4b63d;
+}
+.developer_section ul .btn_3 {
+  background-color: #30c145;
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}

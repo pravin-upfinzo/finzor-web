@@ -14,8 +14,42 @@
     display: block;
   }
 }
+@keyframes animateBg {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+.fz_product_sec .fz_container .item-1 {
+  animation: animateBg 11s linear infinite;
+  background-size: 100% 300%;
+  background-image: linear-gradient(0deg, #18273a, #003224, #18273a, #003224);
+}
+.fz_product_sec .fz_container .item-2 {
+  animation: animateBg 11s linear infinite;
+  background-size: 100% 300%;
+  background-image: linear-gradient(0deg, #01391f, #0b3638, #01391f, #0b3638);
+}
+.fz_product_sec .fz_container .item-3 {
+  animation: animateBg 11s linear infinite;
+  background-size: 100% 300%;
+  background-image: linear-gradient(0deg, #013a34, #2e3301, #013a34, #2e3301);
+}
+.fz_product_sec .fz_container .item-4 {
+  animation: animateBg 11s linear infinite;
+  background-size: 100% 300%;
+  background-image: linear-gradient(0deg, #373f01, #012949, #373f01, #012949);
+}
+.fz_product_sec .fz_container .item-5 {
+  animation: animateBg 11s linear infinite;
+  background-size: 100% 300%;
+  background-image: linear-gradient(0deg, #18273a, #003224, #18273a, #003224);
+}
 .fz_product_sec .fz_container .fz_sub_container {
   display: flex;
+  align-items: center;
   height: 100vh;
   gap: 260px;
   padding: 92px 100px;
@@ -51,19 +85,6 @@
   .fz_product_sec .fz_container .fz_sub_container .fz_content {
     width: 100%;
   }
-}
-.fz_product_sec .fz_container .fz_sub_container .fz_content:after {
-  content: "";
-  position: absolute;
-  width: 676px;
-  height: 676px;
-  top: 5px;
-  left: -12px;
-  background-color: rgba(32, 145, 129, 0.5098039216);
-  border-radius: 50%;
-  filter: blur(152px);
-  transform: translate3d(0, 0, 0);
-  z-index: -1;
 }
 .fz_product_sec .fz_container .fz_sub_container .fz_content .fz_num {
   padding-bottom: 16px;
@@ -118,17 +139,6 @@
 .fz_product_sec .fz_container .fz_sub_container .fz_img-sec {
   position: relative;
 }
-.fz_product_sec .fz_container .fz_sub_container .fz_img-sec::after {
-  content: "";
-  position: absolute;
-  width: 366px;
-  height: 330px;
-  top: 290px;
-  right: 50px;
-  background: #24a7af;
-  filter: blur(212px);
-  transform: translate3d(0, 0, 0);
-}
 .fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img {
   position: relative;
 }
@@ -140,62 +150,9 @@
     width: 100%;
   }
 }
-.fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img .core_img {
+.fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img img:last-child {
   position: absolute;
-  top: 0;
-  left: 42px;
-}
-@media only screen and (max-width: 720px) {
-  .fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img .core_img {
-    width: 100%;
-    left: 0px;
-  }
-}
-.fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img .bank_img {
-  position: absolute;
-  bottom: 54px;
-  left: 146px;
-}
-@media only screen and (max-width: 720px) {
-  .fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img .bank_img {
-    width: 100%;
-    left: 0px;
-    bottom: 0;
-  }
-}
-.fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img .payunity_img {
-  position: absolute;
-  bottom: 88px;
-  left: 144px;
-}
-@media only screen and (max-width: 720px) {
-  .fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img .payunity_img {
-    width: 100%;
-    left: 0px;
-    bottom: 0;
-  }
-}
-.fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img .translinker_img {
-  position: absolute;
-  bottom: 80px;
-  left: 142px;
-}
-@media only screen and (max-width: 720px) {
-  .fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img .translinker_img {
-    width: 100%;
-    left: 0px;
-    bottom: 0;
-  }
-}
-.fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img .flowgate_img {
-  position: absolute;
-  top: 100px;
-  left: 146px;
-}
-@media only screen and (max-width: 720px) {
-  .fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img .flowgate_img {
-    width: 100%;
-    left: 0px;
-    bottom: 0;
-  }
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

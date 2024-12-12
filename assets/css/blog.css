@@ -1,0 +1,106 @@
+.fz-blog {
+  background-color: #000000;
+}
+.fz-blog .container {
+  max-width: 85%;
+}
+.fz-blog .blog-carousel {
+  text-align: center;
+  padding: 66px 0 84px;
+}
+.fz-blog .blog-carousel h3 {
+  color: #3EAB90;
+  font-size: 50px;
+  line-height: 58px;
+}
+.fz-blog .blog-carousel p {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 30px;
+}
+.fz-blog .item {
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
+  overflow: hidden;
+}
+.fz-blog .item img {
+  width: 100%;
+  height: 276px;
+}
+.fz-blog .item .card-body {
+  padding: 0px 28px 33px 27px;
+  width: 383px;
+  border-radius: 0 0 8px 8px;
+  border: 1px solid #1A2C2A;
+  margin: 0 auto;
+}
+.fz-blog .item .card-body h5 {
+  font-size: 22px;
+  line-height: 30px;
+  padding-bottom: 18px;
+  font-weight: bold;
+  color: #3EAB90;
+}
+.fz-blog .item .card-body .card-text {
+  font-size: 16px;
+  line-height: 24px;
+}
+.fz-blog .item .card-body .card-top-title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 34px 0 28px 0;
+}
+.fz-blog .owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+}
+.fz-blog .owl-carousel .owl-nav {
+  display: flex;
+  justify-content: end;
+  gap: 162px;
+  position: relative;
+  margin-top: 50px;
+}
+.fz-blog .owl-carousel .owl-nav .custom-prev,
+.fz-blog .owl-carousel .owl-nav .custom-next {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.fz-blog .owl-carousel .owl-nav .custom-prev:hover,
+.fz-blog .owl-carousel .owl-nav .custom-next:hover {
+  color: #3EAB90;
+}
+.fz-blog .owl-carousel .owl-nav::after {
+  content: "";
+  width: 80px;
+  height: 2.27px;
+  position: absolute;
+  background: #ffffff;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 88%;
+  transform: translate(-50%, -50%);
+}
+.fz-blog .owl-carousel .owl-nav::before {
+  content: "";
+  width: 80px;
+  height: 2.27px;
+  background: #3EAB90;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 93%;
+  transform: translate(-50%, -50%);
+}
+.fz-blog .owl-carousel .owl-nav .custom-prev {
+  color: #3EAB90;
+}
+.fz-blog .owl-carousel .owl-nav .custom-next {
+  color: #ffffff;
+}

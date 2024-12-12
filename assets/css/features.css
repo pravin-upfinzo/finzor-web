@@ -1,9 +1,4 @@
 /* PANELS */
-.panel {
-  position: relative;
-  z-index: 9;
-}
-
 .panel__stack {
   --spacer: 20px;
   position: relative;
@@ -25,6 +20,10 @@
   height: 41.625rem;
   will-change: transform;
   background-color: #1A2C2A;
+}
+
+.panel__stack .panel__card.panel__card--one {
+  height: 43rem;
 }
 
 .panel__stack .panel__card:first-child {
@@ -165,6 +164,8 @@
 
 .panel {
   padding-top: 80px !important;
+  position: relative;
+  z-index: 9;
 }
 .panel .panel__options {
   display: flex;
@@ -213,6 +214,8 @@
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div {
   padding: 20px;
   background-color: #000000;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div h3 {
   color: #F7C35F;
@@ -222,6 +225,7 @@
   color: #ffffff;
   font-size: 18px;
   line-height: 25px;
+  min-height: 75px;
 }
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div a {
   color: #3EAB90;

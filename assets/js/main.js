@@ -1,30 +1,83 @@
-// gsap.registerPlugin(ScrollTrigger);
-
-// gsap.fromTo(".fz_dashboard_img", 
-//     { 
-//         width: "30%", 
-//         height: "30%", 
-//         scale: 1, // Initial scale
-//         y: 0, // Initial vertical position
-//     }, 
-//     { 
-//         width: "100vw", // Final width
-//         height: "100vh", // Final height
-//         scale: 1, // Keep scale at 1 for consistency
-//         y: "-10vh", // Center vertically within the viewport
-//         transformOrigin: "center center", // Ensure scaling happens from the center
-//         duration: 0.2, // Shorter duration for a faster animation
-//         ease: "power2.inOut", // Smooth easing function
-//         scrollTrigger: {
-//             trigger: ".fz_dashboard", // Trigger element
-//             start: "top 100%", // Animation starts when the top of the trigger hits the bottom of the viewport
-//             end: "bottom bottom", // Animation ends when the bottom of the trigger hits the bottom of the viewport
-//             scrub: true, // Smooth animation linked to the scroll
-//         }
-//     }
-// );
 
 gsap.registerPlugin(ScrollTrigger);
+// 1. Fade out the main text
+gsap.to(".texts", {
+	opacity: 0, // Fade out the main text
+	duration: 1,
+	scrollTrigger: {
+		trigger: ".features_posibilityies", // Trigger animation when the container enters the viewport
+		start: "top 80%", // Start the fade-out when the container reaches 80% of the viewport
+		end: "top 40%", // End the fade-out when the container reaches 50% of the viewport
+		scrub: true, // Scrub smoothly as you scroll
+		markers: false, // Optional: set to true if you want to see scroll trigger markers
+	}
+});
+
+// 2. Animate the inner text split from left and right
+gsap.fromTo(".inner-text .left", {
+	opacity: 0,
+	x: "0", // Starting from off-screen to the left
+}, {
+	opacity: 1,
+	x: "-5vw", // Move to the center
+	duration: 1,
+	scrollTrigger: {
+		trigger: ".features_posibilityies",
+		start: "top 60%", // Start showing the inner text when the container reaches 60% of the viewport
+		end: "top 0%", // End the inner text animation when the container reaches 40% of the viewport
+		scrub: true, // Scrub smoothly with scroll
+		markers: false, // Optional: set to true for scroll trigger markers
+	}
+});
+
+gsap.fromTo(".inner-text .right", {
+	opacity: 0,
+	x: "0", // Starting from off-screen to the right
+}, {
+	opacity: 1,
+	x: "5vw", // Move to the center
+	duration: 1,
+	scrollTrigger: {
+		trigger: ".features_posibilityies",
+		start: "top 60%", // Start showing the right text when the container reaches 60% of the viewport
+		end: "top 0%", // End when the container is near the top
+		scrub: true, // Smoothly scrub
+		markers: false, // Optional: set to true for scroll trigger markers
+	}
+});
+gsap.fromTo(".inner-text .dd", {
+	opacity: 0,
+	x: "0", // Starting from off-screen to the right
+}, {
+	opacity: 1,
+	x: "0", // Move to the center
+	duration: 1,
+	scrollTrigger: {
+		trigger: ".features_posibilityies",
+		start: "top 60%", // Start showing the right text when the container reaches 60% of the viewport
+		end: "top 0%", // End when the container is near the top
+		scrub: true, // Smoothly scrub
+		markers: false, // Optional: set to true for scroll trigger markers
+	}
+});
+
+
+TweenLite.fromTo(".fz_core_text img", {
+    opacity: 0.5,
+    scale: 0.7,
+    rotateX: "10deg",
+}, {
+    opacity: 1,
+    scale: 1,
+    rotateX: "0deg",
+    scrollTrigger: {
+        trigger: ".fz_core_text img",
+        start: "top bottom",
+        end: "bottom bottom-=10%",
+        scrub: 1,
+    }
+});
+
 let sections = gsap.utils.toArray(".fz_product_panel");
 gsap.to(sections, {
 	xPercent: -100 * (sections.length - 1),
@@ -37,7 +90,7 @@ gsap.to(sections, {
 			snapTo: 1 / (sections.length - 1),
 			duration: {min: 0.1, max: 3}
 		},
-		end: () => "+=" + document.querySelector("#panels-container").offsetWidth * 10
+		end: () => "+=" + document.querySelector("#panels-container").offsetWidth * 8
 	}
 });
 
@@ -82,7 +135,7 @@ sm.add("(min-width: 1130px)", () => {
   // add animations and labels to the timeline
 
   tl.set(".panel__options > span:nth-child(1)", {
-    borderBottom: "1px solid #3EAB90"
+    borderBottom: "2px solid #3EAB90"
   });
 
   tl.to(
@@ -94,11 +147,11 @@ sm.add("(min-width: 1130px)", () => {
   // second card move
 
   tl.set(".panel__options > span:nth-child(1)", {
-    borderBottom: "1px solid transparent"
+    borderBottom: "2px solid transparent"
   });
 
   tl.set(".panel__options > span:nth-child(2)", {
-    borderBottom: "1px solid #3EAB90"
+    borderBottom: "2px solid #3EAB90"
   });
 
   tl.from(".panel__card--two", { y: () => window.innerHeight });
@@ -118,11 +171,11 @@ sm.add("(min-width: 1130px)", () => {
   // third card move
 
   tl.set(".panel__options > span:nth-child(2)", {
-    borderBottom: "1px solid transparent"
+    borderBottom: "2px solid transparent"
   });
 
   tl.set(".panel__options > span:nth-child(3)", {
-    borderBottom: "1px solid #3EAB90"
+    borderBottom: "2px solid #3EAB90"
   });
 
   tl.from(".panel__card--three", { y: () => window.innerHeight });
@@ -149,12 +202,12 @@ sm.add("(min-width: 1130px)", () => {
 
   tl.set(
     ".panel__options > span:last-child",
-    { borderBottom: "1px solid #3EAB90" },
+    { borderBottom: "2px solid #3EAB90" },
     "f"
   );
   tl.set(
     ".panel__options > span:nth-child(3)",
-    { borderBottom: "1px solid transparent" },
+    { borderBottom: "2px solid transparent" },
     "f"
   );
 
@@ -162,12 +215,12 @@ sm.add("(min-width: 1130px)", () => {
 
   tl.set(
     ".panel__options > span:last-child",
-    { borderBottom: "1px solid #3EAB90" },
+    { borderBottom: "2px solid #3EAB90" },
     "e"
   );
   tl.set(
     ".panel__options > span:nth-child(3)",
-    { borderBottom: "1px solid transparent" },
+    { borderBottom: "2px solid transparent" },
     "e"
   );
 
@@ -194,35 +247,87 @@ sm.add("(min-width: 1130px)", () => {
 });
 
 
-
+// Page loader
 $(function() {
-            function animationStart() {
-                $('#container').addClass('fin');
-            }
-    
-            function resetAnimation() {
-                $('#container').removeClass('fin');
-                setTimeout(animationStart, 50); // Short delay to allow CSS to reset
-            }
-    
-            // Start the animation immediately
-            animationStart();
-    
-            // Total duration of the animation
-            const animationDuration = 7500; // 7.5 seconds
-    
-            // Use setInterval to reset the animation after it finishes
-            setInterval(resetAnimation, animationDuration);
-        });
-        window.addEventListener('load', function () {
-        setTimeout(function () {
-          // Hide the loader and show the content
-          document.getElementById('loader').style.display = 'none';
-          document.getElementById('content').style.display = 'block';
-        }, 3000); // Wait for 3 seconds before showing content
-      });
+	function animationStart() {
+		$('#container').addClass('fin');
+	}
+	function resetAnimation() {
+		$('#container').removeClass('fin');
+		setTimeout(animationStart, 50); // Short delay to allow CSS to reset
+	}
+	// Start the animation immediately
+	animationStart();
+	// Total duration of the animation
+	const animationDuration = 7500; // 7.5 seconds
+	// Use setInterval to reset the animation after it finishes
+	setInterval(resetAnimation, animationDuration);
+});
+window.addEventListener('load', function () {
+	setTimeout(function () {
+		// Hide the loader and show the content
+		document.getElementById('loader').style.display = 'none';
+		document.getElementById('content').style.display = 'block';
+	}, 3000); // Wait for 3 seconds before showing content
+});
+// Counter
+var counted = 0;
+$(window).scroll(function() {
 
+	var oTop = $('#counter').offset().top - window.innerHeight;
+	if (counted == 0 && $(window).scrollTop() > oTop) {
+		$('.count').each(function() {
+		var $this = $(this),
+			countTo = $this.attr('data-count');
+		$({
+			countNum: $this.text()
+		}).animate({
+			countNum: countTo
+			},
 
+			{
+
+			duration: 2000,
+			easing: 'swing',
+			step: function() {
+				$this.text(Math.floor(this.countNum));
+			},
+			complete: function() {
+				$this.text(this.countNum);
+				//alert('finished');
+			}
+
+			});
+		});
+		counted = 1;
+	}
+
+});
+
+// Testimonial
+const testimonial_items = document.querySelectorAll(".fz_testimonial_item")
+
+function clearActiveImage() {
+  testimonial_items.forEach(function (item) {
+	item.classList.remove("active");
+  });
+}
+
+testimonial_items.forEach(function (item, index) {
+  item.onclick = function () {
+	event.stopPropagation() //important to not call the clearActiveImage() on every click
+	if (testimonial_items[index].classList.contains("active")) {
+	  testimonial_items[index].classList.remove("active")
+	} else {
+	  clearActiveImage(index)
+	  testimonial_items[index].classList.add("active")
+	}
+  }
+})
+
+window.addEventListener("click", () => {
+  clearActiveImage()
+})
 
 
 
@@ -514,3 +619,6 @@ class Molecule extends THREE.Object3D {
 }
 
 new World();
+
+
+

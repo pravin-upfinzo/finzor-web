@@ -2,10 +2,7 @@
 
   
   /* PANELS */
-  .panel {
-    position: relative;
-    z-index: 9;
-  }
+ 
   .panel__stack {
     --spacer: 20px;
     position: relative;
@@ -26,6 +23,9 @@
     height: 41.625rem;
     will-change: transform;
     background-color: $tertiary-color;
+  }
+  .panel__stack .panel__card.panel__card--one {
+    height: 43rem;
   }
   .panel__stack .panel__card:first-child {
     top: calc(var(--spacer) * 1);
@@ -190,6 +190,8 @@
 
 .panel {
     padding-top: 80px !important;
+    position: relative;
+    z-index: 9;
     .panel__options {
         display: flex;
         justify-content: center;
@@ -238,6 +240,8 @@
                         div {
                             padding: 20px;
                             background-color: $black;
+                            border-bottom-left-radius: 8px;
+                            border-bottom-right-radius: 8px;
                             h3 {
                                 color: $secondary-color;
                                 font-size: 20px;
@@ -246,6 +250,7 @@
                                 color: $white;
                                 font-size: 18px;
                                 line-height: 25px;
+                                min-height: 75px;
                             }
                             a {
                                 color: $primary-color;

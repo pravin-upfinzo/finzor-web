@@ -1,0 +1,10 @@
+@import './variable.scss';
+#logo_marquee {
+  --space: 5px;
+  background-color: $tertiary-color;
+  padding: 20px 0;
+  img {
+    height: 40px;
+  }
+}
+  

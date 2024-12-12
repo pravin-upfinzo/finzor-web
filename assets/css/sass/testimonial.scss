@@ -1,0 +1,77 @@
+@import "./variable.scss";
+.fz_testimonial {
+  .fz_testimonial_top {
+    padding-bottom: 50px;
+    h2 {
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 64px;
+      color: $primary-color;
+      padding-bottom: 16px;
+    }
+    p {
+      width: 550px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 26px;
+      color: $white;
+    }
+  }
+  .fz_testimonial_items {
+    position: relative;
+    height: 642px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    gap: 16px;
+    .fz_testimonial_item {
+      position: relative;
+      width: calc(100% / 2.4);
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      border-radius: 18px;
+      transition: all 1s cubic-bezier(0.32, 0, 0.67, 0);
+      cursor: pointer;
+      &:not(.active) {
+        filter: grayscale(100%);
+      }
+      &:has(.active) {
+        filter: grayscale(100%);
+      }
+      &.active {
+        width: 200%;
+      }
+      &.active .fz_testimonial_item_content {
+        transition: all 1s cubic-bezier(0.32, 0, 0.67, 0);
+        bottom: 0;
+      }
+      .img {
+        width: 100%;
+        height: 642px;
+        object-fit: cover;
+      }
+      .fz_testimonial_item_content {
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        bottom: -262px;
+        padding: 16px;
+        background: linear-gradient(#00000001, #000000ad, $black);
+        h3 {
+          font-size: 28px;
+          font-weight: 600;
+          line-height: 38px;
+          color: $primary-color;
+          padding-bottom: 8px;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 18px;
+          color: $white;
+        }
+      }
+    }
+  }
+}

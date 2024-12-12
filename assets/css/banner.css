@@ -3,10 +3,6 @@
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background-image: url("image/Dotted.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 0;
 }
 #fz-hero-bg::before {
   content: "";
@@ -15,7 +11,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  height: 809px;
+  height: 100vh;
   opacity: 30%;
   mix-blend-mode: hard-light;
   background: radial-gradient(49.19% 50% at 50% 50%, #67CBAF 0%, #364849 95.5%);
@@ -32,6 +28,8 @@
 #fz-hero-bg .container {
   position: relative;
   z-index: 2;
+  height: 100%;
+  display: flex;
 }
 #fz-hero-bg .content-wrapper {
   display: flex;
@@ -48,17 +46,24 @@
 }
 #fz-hero-bg .text-content h1 {
   font-size: 60px;
-  line-height: 1.2;
-  margin-bottom: 40px;
+  line-height: 20px;
+  margin-bottom: 0px;
   text-transform: capitalize;
 }
-#fz-hero-bg .text-content h1 span {
-  color: #F7C35F;
+#fz-hero-bg .text-content h1 span .text-line text {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash 5s linear infinite, filling 4s ease-in forwards;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 #fz-hero-bg .text-content p {
   font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 30px;
+  line-height: 24px;
+  margin-bottom: 40px;
 }
 #fz-hero-bg .section-button-one {
   background: #3EAB90;
@@ -67,10 +72,11 @@
   font-size: 16px;
   padding: 15px 20px;
   border: 1px solid transparent;
-  margin-right: 35px;
+  margin-right: 20px;
   transition: all 0.5s ease-in;
   border-radius: 8px;
   width: 140px;
+  line-height: 21px;
 }
 #fz-hero-bg .section-button-one:hover {
   background: transparent;
@@ -86,6 +92,7 @@
   transition: all 0.3s ease-in;
   border-radius: 8px;
   width: 140px;
+  line-height: 21px;
 }
 #fz-hero-bg .section-button-two:hover {
   background: #3EAB90;

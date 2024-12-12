@@ -6,6 +6,23 @@
         background-color: $tertiary-color;
         border-radius: 16px;
         padding-top: 30px;
+        --border-angle: 0turn;
+        --main-bg: conic-gradient(
+            from var(--border-angle),
+            #1A2C2A 0%,  
+            #1A2C2A 100%
+            );
+        border: solid 1px transparent;
+        --gradient-border: conic-gradient(from var(--border-angle), transparent 50%, #F7C35F, #3EAB90 99%, transparent);
+        background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+        background-position: center center;
+        animation: bg-spin 4s linear infinite;
+        @keyframes bg-spin {
+            to {
+            --border-angle: 1turn;
+            }
+        }
+        
         .fz_core_text {
             background-color: $black;
             border-top-left-radius: 32px;
@@ -14,7 +31,8 @@
             width: 422px;
             height: 605px;
             margin-left: 62px;
-            margin-top: 30px;
+            position: relative;
+            top: 35px;
             overflow: hidden;
             h3 {
                 font-size: 32px;
@@ -124,4 +142,9 @@
       border-radius: 50%;
       opacity: 0;
     } 
+}
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
 }
