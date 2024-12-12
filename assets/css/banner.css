@@ -14,7 +14,7 @@
   height: 100vh;
   opacity: 30%;
   mix-blend-mode: hard-light;
-  background: radial-gradient(49.19% 50% at 50% 50%, #67CBAF 0%, #364849 95.5%);
+  background: radial-gradient(49.19% 50% at 50% 50%, #67cbaf 0%, #364849 95.5%);
   backdrop-filter: blur(137.73px);
   z-index: 2;
   pointer-events: none;

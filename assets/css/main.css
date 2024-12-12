@@ -68,7 +68,7 @@ header .fz_sigin ul li:last-child a {
   height: 100vh;
   opacity: 30%;
   mix-blend-mode: hard-light;
-  background: radial-gradient(49.19% 50% at 50% 50%, #67CBAF 0%, #364849 95.5%);
+  background: radial-gradient(49.19% 50% at 50% 50%, #67cbaf 0%, #364849 95.5%);
   backdrop-filter: blur(137.73px);
   z-index: 2;
   pointer-events: none;
@@ -173,12 +173,18 @@ header .fz_sigin ul li:last-child a {
   padding-top: 30px;
   --border-angle: 0turn;
   --main-bg: conic-gradient(
-      from var(--border-angle),
-      #1A2C2A 0%,
-      #1A2C2A 100%
-      );
+    from var(--border-angle),
+    #1a2c2a 0%,
+    #1a2c2a 100%
+  );
   border: solid 1px transparent;
-  --gradient-border: conic-gradient(from var(--border-angle), transparent 50%, #F7C35F, #3EAB90 99%, transparent);
+  --gradient-border: conic-gradient(
+    from var(--border-angle),
+    transparent 50%,
+    #f7c35f,
+    #3eab90 99%,
+    transparent
+  );
   background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
   background-position: center center;
   animation: bg-spin 4s linear infinite;
@@ -352,7 +358,8 @@ header .fz_sigin ul li:last-child a {
   align-items: center;
   justify-content: center;
 }
-.features_posibilityies .container .inner-text .left.left, .features_posibilityies .container .inner-text .right.left {
+.features_posibilityies .container .inner-text .left.left,
+.features_posibilityies .container .inner-text .right.left {
   text-align: right;
   display: inline-flex;
   align-items: center;
@@ -360,7 +367,8 @@ header .fz_sigin ul li:last-child a {
   margin: auto;
   position: relative;
 }
-.features_posibilityies .container .inner-text .left.right, .features_posibilityies .container .inner-text .right.right {
+.features_posibilityies .container .inner-text .left.right,
+.features_posibilityies .container .inner-text .right.right {
   text-align: left;
   display: inline-flex;
   align-items: center;
@@ -1044,7 +1052,7 @@ header .fz_sigin ul li:last-child a {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #3EAB90;
+  color: #3eab90;
   text-align: center;
 }
 .counter_section p {
@@ -1054,7 +1062,7 @@ header .fz_sigin ul li:last-child a {
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
 }
 @media screen and (max-width: 992px) {
@@ -1075,14 +1083,14 @@ header .fz_sigin ul li:last-child a {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .counter_section #counter .col-lg-3 {
   display: flex;
   justify-content: center;
   flex-direction: column;
   border-right: 1px solid;
-  border-color: -moz-linear-gradient(top, #FFFFFF, #3EAB90);
+  border-color: -moz-linear-gradient(top, #ffffff, #3eab90);
   position: relative;
 }
 .counter_section #counter .col-lg-3:last-child {
@@ -1098,7 +1106,7 @@ header .fz_sigin ul li:last-child a {
   right: 0; /* Position it to the right edge */
   width: 1.5px; /* Width of the border line */
   height: 100%; /* Full height */
-  background: linear-gradient(180deg, #3EAB90 0%, #FFFFFF 100%);
+  background: linear-gradient(180deg, #3eab90 0%, #ffffff 100%);
 }
 @media screen and (max-width: 992px) {
   .counter_section #counter .col-lg-3::before {
@@ -1110,8 +1118,8 @@ header .fz_sigin ul li:last-child a {
   text-align: center;
   font-size: 70px;
   font-weight: bolder;
-  color: #FFFFFF;
-  background-image: linear-gradient(180deg, #FFFFFF 0%, #3EAB90 100%);
+  color: #ffffff;
+  background-image: linear-gradient(180deg, #ffffff 0%, #3eab90 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
