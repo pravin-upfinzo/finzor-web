@@ -1,1390 +1,1477 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Finzor - The Zor of Fintech Innovations</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="assets/images/finzor-fav.png">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> -->
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Finzor - The Zor of Fintech Innovations</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="assets/images/finzor-fav.png">
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> -->
-
-  <style>
-    div#loader {
-      position: fixed;
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: #000;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      z-index: 999999;
-    }
-
-    #container {
-      width: 600px;
-      position: relative;
-    }
-
-    .path {
-      fill: none;
-      stroke: #3EAB90;
-      stroke-width: 5px;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .path-1 {
-      stroke-dasharray: 1850;
-      stroke-dashoffset: 1850;
-      transition: stroke-dashoffset 5s linear;
-    }
-
-    .path-2 {
-      stroke-dasharray: 260;
-      stroke-dashoffset: 260;
-      transition: stroke-dashoffset 1.2s linear 5s;
-    }
-
-    .path-3 {
-      stroke-dasharray: 100;
-      stroke-dashoffset: 100;
-      transition: stroke-dashoffset 1s linear 6.2s;
-    }
-
-    .path-4 {
-      stroke-width: 0;
-      transition: stroke-width 0.1s linear 7.5s;
-    }
-
-    #container.fin .path-1 {
-      stroke-dashoffset: 0;
-    }
-
-    #container.fin .path-2 {
-      stroke-dashoffset: 0;
-    }
-
-    #container.fin .path-3 {
-      stroke-dashoffset: 0;
-    }
-
-    #container.fin .path-4 {
-      stroke-width: 5px;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="loader" id="loader">
-    <div id="container">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1889.08 596.11">
-        <g>
-          <path class="path path-1"
-            d="M1842.84,450.98h-60.18l-49.96-82.67h-34.06v82.67h-56.01v-235.23h107.87c56.01,0,90.45,28.9,90.45,75.95,0,33.94-18.92,59.82-51.85,70.91v.34l53.75,88.04ZM1743.68,322.94c26.87,0,41.25-11.09,41.25-31.59s-13.63-30.25-41.25-30.25h-45.04v61.83h45.04Z" />
-          <path class="path path-1"
-            d="M601.1,215.74h170.69v45.7h-114.68v57.46h106.73v43.69h-106.73v88.38h-56.01v-235.23Z" />
-          <path class="path path-1" d="M810.74,215.74h56.01v235.23h-56.01v-235.23Z" />
-          <path class="path path-1"
-            d="M919.34,215.74h57.53l89.69,149.54h.76v-149.54h56.01v235.23h-57.53l-89.69-149.54h-.76v149.54h-56.01v-235.23Z" />
-          <path class="path path-1"
-            d="M1162.66,409.98l124.14-147.86v-.67h-120.36v-45.7h190.37v41l-124.14,147.86v.67h123.76v45.7h-193.78v-41Z" />
-          <path class="path path-1"
-            d="M1492.32,205.73c-70.34,0-127.57,57.16-127.57,127.5,0,62.57,45.25,114.65,104.71,125.4v-55.67c-29.35-9.6-50.59-37.27-50.59-69.74,0-40.45,32.94-73.39,73.46-73.39s73.39,32.94,73.39,73.39c0,32.47-21.24,60.13-50.59,69.74v55.67c59.46-10.76,104.71-62.84,104.71-125.4,0-70.34-57.22-127.5-127.5-127.5Z" />
-          <circle class="path path-1" cx="1492.29" cy="333.23" r="33.58" />
-          <path class="path path-1"
-            d="M357.26,368.75l-33.86,56.01s-.06.1-.09.14c-.26.44-.51.88-.79,1.32,0,0,0,.01,0,.02-8.28,13.27-23.01,22.11-39.81,22.11h-119.48l-51.68,85.49-.86,1.43c-13.21,21.24-36.64,35.48-63.41,35.85l122.31-202.36h187.68Z" />
-          <path class="path path-1"
-            d="M377.08,335.96l-14.42,23.86h-187.67l5.58-9.24.6-.99h0c5.12-8.18,14.23-13.62,24.6-13.62h171.3Z" />
-          <path class="path path-1"
-            d="M501.28,130.5l-88.37,146.18c-.24.4-.47.81-.72,1.21-8.25,13.4-23.06,22.34-39.96,22.34h-161.23l66.94-110.73c21.56-35.38,60.5-59,104.95-59h118.38Z" />
-          <path class="path path-1"
-            d="M557.98,36.7l-.43.71c-21.75,34.46-60.17,57.36-103.94,57.36h-90.87c-44.26,0-83.06,23.42-104.67,58.55h0S79.72,448.35,79.72,448.35v-91.71c.12-14.27,4.18-27.61,11.15-38.98l.11-.18,111.33-184.18c34.74-57.87,98.11-96.6,170.52-96.6h185.16Z" />
-        </g>
-      </svg>
-    </div>
-  </div>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="assets/images/finzor-logo.svg"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <ul class="navbar-nav livvic-medium">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Payments</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Insights</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Company</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contactus</a>
-            </li>
-          </ul>
-        </div>
-        <div class="d-flex fz_sigin">
-          <ul>
-            <li><a href="#"><img src="assets/images/country.svg"></a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Sign up</a></li>
-          </ul>
+        <style>
+          div#loader {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #000;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 999999;
+        }
+        #container {
+            width: 600px;
+            position: relative;
+        }
+        .path {
+            fill: none;
+            stroke: #3EAB90;
+            stroke-width: 5px;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+        .path-1 {
+            stroke-dasharray: 1850;
+            stroke-dashoffset: 1850;
+            transition: stroke-dashoffset 5s linear;
+        }
+        .path-2 {
+            stroke-dasharray: 260;
+            stroke-dashoffset: 260;
+            transition: stroke-dashoffset 1.2s linear 5s;
+        }
+        .path-3 {
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+            transition: stroke-dashoffset 1s linear 6.2s;
+        }
+        .path-4 {
+            stroke-width: 0;
+            transition: stroke-width 0.1s linear 7.5s;
+        }
+        #container.fin .path-1 {
+            stroke-dashoffset: 0;
+        }
+        #container.fin .path-2 {
+            stroke-dashoffset: 0;
+        }
+        #container.fin .path-3 {
+            stroke-dashoffset: 0;
+        }
+        #container.fin .path-4 {
+            stroke-width: 5px;
+        }
+        </style>
+    </head>
+    <body>
+      <div class="loader" id="loader">
+        <div id="container">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1889.08 596.11">
+              <g>
+                  <path class="path path-1" d="M1842.84,450.98h-60.18l-49.96-82.67h-34.06v82.67h-56.01v-235.23h107.87c56.01,0,90.45,28.9,90.45,75.95,0,33.94-18.92,59.82-51.85,70.91v.34l53.75,88.04ZM1743.68,322.94c26.87,0,41.25-11.09,41.25-31.59s-13.63-30.25-41.25-30.25h-45.04v61.83h45.04Z"/>
+                  <path class="path path-1" d="M601.1,215.74h170.69v45.7h-114.68v57.46h106.73v43.69h-106.73v88.38h-56.01v-235.23Z"/>
+                  <path class="path path-1" d="M810.74,215.74h56.01v235.23h-56.01v-235.23Z"/>
+                  <path class="path path-1" d="M919.34,215.74h57.53l89.69,149.54h.76v-149.54h56.01v235.23h-57.53l-89.69-149.54h-.76v149.54h-56.01v-235.23Z"/>
+                  <path class="path path-1" d="M1162.66,409.98l124.14-147.86v-.67h-120.36v-45.7h190.37v41l-124.14,147.86v.67h123.76v45.7h-193.78v-41Z"/>
+                  <path class="path path-1" d="M1492.32,205.73c-70.34,0-127.57,57.16-127.57,127.5,0,62.57,45.25,114.65,104.71,125.4v-55.67c-29.35-9.6-50.59-37.27-50.59-69.74,0-40.45,32.94-73.39,73.46-73.39s73.39,32.94,73.39,73.39c0,32.47-21.24,60.13-50.59,69.74v55.67c59.46-10.76,104.71-62.84,104.71-125.4,0-70.34-57.22-127.5-127.5-127.5Z"/>
+                  <circle class="path path-1" cx="1492.29" cy="333.23" r="33.58"/>
+                  <path class="path path-1" d="M357.26,368.75l-33.86,56.01s-.06.1-.09.14c-.26.44-.51.88-.79,1.32,0,0,0,.01,0,.02-8.28,13.27-23.01,22.11-39.81,22.11h-119.48l-51.68,85.49-.86,1.43c-13.21,21.24-36.64,35.48-63.41,35.85l122.31-202.36h187.68Z"/>
+                  <path class="path path-1" d="M377.08,335.96l-14.42,23.86h-187.67l5.58-9.24.6-.99h0c5.12-8.18,14.23-13.62,24.6-13.62h171.3Z"/>
+                  <path class="path path-1" d="M501.28,130.5l-88.37,146.18c-.24.4-.47.81-.72,1.21-8.25,13.4-23.06,22.34-39.96,22.34h-161.23l66.94-110.73c21.56-35.38,60.5-59,104.95-59h118.38Z"/>
+                  <path class="path path-1" d="M557.98,36.7l-.43.71c-21.75,34.46-60.17,57.36-103.94,57.36h-90.87c-44.26,0-83.06,23.42-104.67,58.55h0S79.72,448.35,79.72,448.35v-91.71c.12-14.27,4.18-27.61,11.15-38.98l.11-.18,111.33-184.18c34.74-57.87,98.11-96.6,170.52-96.6h185.16Z"/>
+              </g>
+          </svg>
         </div>
       </div>
-    </nav>
-  </header>
-  <!-- <section id="fz-hero-bg">
+        <header>
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="assets/images/finzor-logo.svg"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav livvic-medium">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Payments</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Insights</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Company</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contactus</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="d-flex fz_sigin">
+                <ul>
+                    <li><a href="#"><img src="assets/images/country.svg"></a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Onboard</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav> 
+        </header>
+        <section id="fz-hero-bg">
           <canvas></canvas>
           <div class="container">
-          <div class="content-wrapper">
-            <div class="text-content">
-              <h1>FUTURE OF FINANCE<br>DELIVERED TODAY</h1>
-              <p>Finzor Core Banking Services refers to the suite of services <br>and solutions offered by Finzor to
-                financial institutions.</p>
-              <div class="hero-section-button">
-                <button class="section-button-one">Explore</button>
-                <button class="section-button-two">Connect Us</button>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="content-wrapper">
+                  <div class="text-content">
+                    <h1>The Zor of <svg stroke="#F7C35F" stroke-width="2" class="text-line">
+                      <text x="0" y="90" fill="none">Fintech</text>
+                    </svg><br>Innovations</h1>
+                    <p>Finzor Core Banking Services refers to the suite of services <br>and solutions offered by Finzor to
+                      financial institutions.</p>
+                    <div class="hero-section-button">
+                      <button class="section-button-one">Explore</button>
+                      <button class="section-button-two">Connect Us</button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="globe-container">
-            </div>
-          </div>
-          </div>
-        </section> -->
-  <section id="fz-hero-bg">
-    <canvas></canvas>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="content-wrapper">
-            <div class="text-content">
-              <h1>FUTURE OF FINANCE<br>DELIVERED <span><svg stroke="#F7C35F" stroke-width="2" class="text-line">
-                    <text x="0" y="90" fill="none">TODAY</text>
-                  </svg></span></h1>
-              <p>Finzor Core Banking Services refers to the suite of services <br>and solutions offered by Finzor to
-                financial institutions.</p>
-              <div class="hero-section-button">
-                <button class="section-button-one">Explore</button>
-                <button class="section-button-two">Connect Us</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6" style="    display: inline-flex;
+              <div class="col-lg-6" style="    display: inline-flex;
                   align-items: center;
                   justify-content: center;">
-          <iframe src='https://my.spline.design/techinspired3dassetsmoneybag-d0fba0c5685f033b3155169d54bd2ed7/'
-            frameborder='0' width='100%' height='100vh' style="min-width: 800px;min-height: 858px;"></iframe>
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Dashboard -->
-  <section class="fz_dashboard">
-    <div class="container text-center">
-      <!-- <iframe src="https://cdn.lottielab.com/l/7bbKaQpBwLaWQ2.html" width="100%" height="610" frameborder="0"></iframe> -->
-      <img src="assets/images/dashboard.svg" class="fz_dashboard_img" alt="dashboard">
-    </div>
-  </section>
-  <!-- About Finzor -->
-  <section id="fz_core_nexus">
-    <div class="container">
-      <div class="row align-items-lg-center">
-        <div class="col-lg-6">
-          <div class="fz_core_bg">
-            <div class="fz_core_text">
-              <h3>Discover the key to your fintech Future </h3>
-              <img src="assets/images/core-nexus.svg" alt="corenexus" />
-              <div class="fz_box">
-                <div></div>
-                <div></div>
-                <div></div>
+                <iframe src='https://my.spline.design/techinspired3dassetsmoneybag-d0fba0c5685f033b3155169d54bd2ed7/' frameborder='0' width='100%' height='100vh' 
+                style="min-width: 800px;min-height: 858px;"></iframe>
+                
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-6 fz_core_text_right">
-          <h2>Core Nexus</h2>
-          <h5>Empowering banks with seamless, efficient, and secure financial services</h5>
-          <p><span><img src="assets/images/finance-icon.svg" alt="finacne" /></span> Finzor Core Banking Services refers
-            to the suite of services and solutions offered by Finzor to financial institutions.</p>
-          <p><span><img src="assets/images/park-icon.svg" alt="park" /></span> These services are designed to modernize
-            and streamline banking operations by providing a robust core banking platform that integrates various
-            functionalities.</p>
-          <div><button class="fz_learmore">Learn more</button><button class="fz_learmore_btn">Get Started</button></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Product Intro -->
-  <section class="features_posibilityies">
-    <div class="container">
-      <!-- Main Text -->
-      <div class="texts">
-        <img src="./assets/images/feature_eff_1.svg" alt="">
-      </div>
-      <div class="inner-text">
-        <div class="left">
-          <img src="./assets/images/feature_left_eff.svg" alt="">
-        </div>
-        <div class="dd" style="
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                    ">
-          <img src="./assets/images/fz_feature.svg" alt="">
-          <h3>Empowering <br> Financial Journey <br> with Trust</h3>
-        </div>
-        <div class="right">
-          <img src="./assets/images/feature_right_eff.svg" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Products -->
-  <section class="fz_product_sec panels-container">
-    <div class="fz_container" id="panels-container">
-      <div class="fz_product_panel item-1">
-        <div class="fz_sub_container">
-          <div class="fz_content">
-            <div class="fz_num">
-              <h3>01</h3>
-            </div>
-            <div class="fz_title">Core Nexus</div>
-            <div class="fz_subtitle">Core Banking Solution</div>
-            <div class="fz_bank">Empowering banks with seamless, efficient, and secure financial services
-            </div>
-            <div class="fz_desc">Finzor Core Banking Services refers to the suite of services and solutions
-              offered by Finzor (a technology provider) to financial institutions. These services are
-              designed to modernize and streamline banking operations by providing a robust core banking
-              platform that integrates various functionalities.</div>
-            <div class="fz_btn">
-              <button>Learn more</button>
-            </div>
+        </section>
+        <!-- Dashboard -->
+        <section class="fz_dashboard">
+          <div class="container text-center">
+            <!-- <iframe src="https://cdn.lottielab.com/l/7bbKaQpBwLaWQ2.html" width="100%" height="610" frameborder="0"></iframe> -->
+            <img src="assets/images/dashboard.svg" class="fz_dashboard_img" style="max-width: 100%;" alt="dashboard">
           </div>
-          <div class="fz_img-sec">
-            <div class="fz_img">
-              <img class="image_1" src="./assets/images/vector_line.svg" alt="">
-              <img class="core_img" src="./assets/images/core.gif" alt="Computer man">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="fz_product_panel item-2">
-        <div class="fz_sub_container">
-          <div class="fz_content">
-            <div class="fz_num">
-              <h3>02</h3>
-            </div>
-            <div class="fz_title">Bank Wave</div>
-            <div class="fz_subtitle">Mobile Banking</div>
-            <div class="fz_bank">Banking at your fingertips, anytime, anywhere, with secure and seamless
-              mobile access.</div>
-            <div class="fz_desc">Finzor's Mobile Banking is a seamless solution that empowers users to
-              manage their finances and perform financial transactions directly from their mobile devices,
-              such as smartphones or tablets. This innovative solution reflects Finzor's commitment to
-              delivering cutting-edge, user-centric financial technology solutions.</div>
-            <div class="fz_btn">
-              <button>Learn more</button>
-            </div>
-          </div>
-          <div class="fz_img-sec">
-            <div class="fz_img">
-              <img class="image_1" src="./assets/images/vector_line.svg" alt="">
-              <img class="core_img" src="./assets/images/Bank_Wave.svg" alt="Computer man" class="bank_img">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="fz_product_panel item-3">
-        <div class="fz_sub_container">
-          <div class="fz_content">
-            <div class="fz_num">
-              <h3>03</h3>
-            </div>
-            <div class="fz_title">Pay Unity</div>
-            <div class="fz_subtitle">UPI</div>
-            <div class="fz_bank">Revolutionizing Payments with Speed, Security, and Simplicity</div>
-            <div class="fz_desc">Real-time payment system that enables fast, secure, and seamless financial
-              transactions between bank accounts using mobile devices. It has revolutionized digital
-              paymentsUPI should reflect its speed, convenience, security, and its role in transforming
-              financial transactions.</div>
-            <div class="fz_btn">
-              <button>Learn more</button>
-            </div>
-          </div>
-          <div class="fz_img-sec">
-            <div class="fz_img">
-              <img class="image_1" src="./assets/images/vector_line.svg" alt="">
-              <img class="core_img" src="./assets/images/Pay_Unity.svg" alt="Computer man" class="payunity_img">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="fz_product_panel item-4">
-        <div class="fz_sub_container">
-          <div class="fz_content">
-            <div class="fz_num">
-              <h3>04</h3>
-            </div>
-            <div class="fz_title">Translinker</div>
-            <div class="fz_subtitle">UPI Switch</div>
-            <div class="fz_bank">Unified Payments Interface (UPI) ecosystem designed to enable smooth
-              interoperability between various UPI platforms and apps.</div>
-            <div class="fz_desc">UPI Switch in Finzor enables the seamless routing of transactions between
-              various UPI platforms, ensuring that payments can be processed regardless of the app or
-              service being used.UPI Switch in Finzor utilizes advanced encryption and security protocols,
-              making sure that sensitive financial data is securely transmitted and protected from fraud.
-            </div>
-            <div class="fz_btn">
-              <button>Learn more</button>
-            </div>
-          </div>
-          <div class="fz_img-sec">
-            <div class="fz_img">
-              <img class="image_1" src="./assets/images/vector_line.svg" alt="">
-              <img class="core_img" src="./assets/images/Translinker.svg" alt="Computer man" class="translinker_img">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="fz_product_panel item-5">
-        <div class="fz_sub_container">
-          <div class="fz_content">
-            <div class="fz_num">
-              <h3>05</h3>
-            </div>
-            <div class="fz_title">FlowGate</div>
-            <div class="fz_subtitle">Payment Gateways</div>
-            <div class="fz_bank">Fast, Reliable, and Secure Payments.</div>
-            <div class="fz_desc">Finzor’s Payment Gateway simplifies payments, securely connecting
-              customers, merchants, and banks for seamless online and in-store transactions.</div>
-            <div class="fz_btn">
-              <button><span>Learn more</span></button>
-            </div>
-          </div>
-          <div class="fz_img-sec">
-            <div class="fz_img">
-              <img class="image_1" src="./assets/images/vector_line.svg" alt="">
-              <img class="core_img" src="./assets/images/FlowGate.svg" alt="Computer man" class="flowgate_img">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Feature -->
-  <section id="fz_features" class="panel spacer-y">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="panel__options">
-            <span data-target="b" class="active" role="button">Core Banking Features</span>
-            <span data-target="c" role="button">Material Review</span>
-            <span data-target="d" role="button">Custom &amp; Pre-built Flashcards</span>
-            <span data-target="e" role="button">Performance Analysis</span>
-          </div>
-
-          <div class="panel__stack">
-            <div class="panel__card panel__card--one text-white bg-purple overflow-hidden">
-              <h2>Core Banking Features</h2>
-              <ul class="nav nav-pills" role="tablist">
-                <li class="nav-item" role="presentation"><a class="nav-link active" data-bs-toggle="pill" href="#home"
-                    aria-selected="true" role="tab">Top Products</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="pill" href="#menu1"
-                    aria-selected="false" tabindex="-1" role="tab">On Website/App</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="pill" href="#menu2"
-                    aria-selected="false" tabindex="-1" role="tab">Mobile Banking</a></li>
-              </ul>
-              <div class="tab-content">
-                <div id="home" class="tab-pane fade show active" role="tabpanel">
-                  <div class="fz-tab-card">
-                    <div class="item-pay">
-                      <img src="assets/images/feature1.svg">
-                      <div>
-                        <h3>Cash Management</h3>
-                        <p>Cash Management Solution would focus on optimizing cash flow, ensuring liquidity, and
-                          improving financial efficiency.</p>
-                        <a href="#">Read More</a>
-                      </div>
-                    </div>
-                    <div class="item-pay">
-                      <img src="assets/images/feature2.svg">
-                      <div>
-                        <h3>Payments</h3>
-                        <p>Consolidate, simplify and reduce costs with a single platform for your business </p>
-                        <a href="#">Read More</a>
-                      </div>
-                    </div>
-                    <div class="item-pay">
-                      <img src="assets/images/feature3.svg">
-                      <div>
-                        <h3>Cloud Based Solutions</h3>
-                        <p>Finzor offers innovative cloud-based solutions designed to enhance business agility,
-                          scalability, and efficiency.</p>
-                        <a href="#">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="menu1" class="tab-pane fade" role="tabpanel">
-                  <div class="fz-tab-card">
-                    <div class="item-pay">
-                      <img src="assets/images/feature1.svg">
-                      <div>
-                        <h3>Current Account</h3>
-                        <p>Automate your bank account with India’s top current account</p>
-                        <a href="#">Read More</a>
-                      </div>
-                    </div>
-                    <div class="item-pay">
-                      <img src="assets/images/feature2.svg">
-                      <div>
-                        <h3>Escrow Account</h3>
-                        <p>Automate Escrow money transfer with total safety and compliance</p>
-                        <a href="#">Read More</a>
-                      </div>
-                    </div>
-                    <div class="item-pay">
-                      <img src="assets/images/feature3.svg">
-                      <div>
-                        <h3>Forex Management</h3>
-                        <p>Get Effortless foreign funding management with expert support</p>
-                        <a href="#">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="menu2" class="tab-pane fade" role="tabpanel">
-                  <div class="fz-tab-card">
-                    <div class="item-pay">
-                      <img src="assets/images/feature1.svg">
-                      <div>
-                        <h3>Current Account</h3>
-                        <p>Automate your bank account with India’s top current account</p>
-                        <a href="#">Read More</a>
-                      </div>
-                    </div>
-                    <div class="item-pay">
-                      <img src="assets/images/feature2.svg">
-                      <div>
-                        <h3>Escrow Account</h3>
-                        <p>Automate Escrow money transfer with total safety and compliance</p>
-                        <a href="#">Read More</a>
-                      </div>
-                    </div>
-                    <div class="item-pay">
-                      <img src="assets/images/feature3.svg">
-                      <div>
-                        <h3>Forex Management</h3>
-                        <p>Get Effortless foreign funding management with expert support</p>
-                        <a href="#">Read More</a>
-                      </div>
+        </section>
+        <!-- About Finzor -->
+        <section id="fz_core_nexus">
+          <div class="container">
+            <div class="row align-items-lg-center">
+              <div class="col-lg-6">
+                <div class="fz_core_bg">
+                  <div class="fz_core_text">
+                    <h3>Discover the key to your fintech Future </h3>
+                    <img src="assets/images/core-nexus.svg" alt="corenexus"/>
+                    <div class="fz_box">
+                      <div></div>
+                      <div></div>
+                      <div></div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="panel__card panel__card--two bg-skyblue-light">
-              <h2>Business Banking</h2>
-              <div class="tab-content">
-                <div class="fz-tab-card">
-                  <div class="item-pay">
-                    <img src="assets/images/feature1.svg">
-                    <div>
-                      <h3>Current Account</h3>
-                      <p>Automate your bank account with India’s top current account</p>
-                      <a href="#">Read More</a>
-                    </div>
-                  </div>
-                  <div class="item-pay">
-                    <img src="assets/images/feature2.svg">
-                    <div>
-                      <h3>Escrow Account</h3>
-                      <p>Automate Escrow money transfer with total safety and compliance</p>
-                      <a href="#">Read More</a>
-                    </div>
-                  </div>
-                  <div class="item-pay">
-                    <img src="assets/images/feature3.svg">
-                    <div>
-                      <h3>Forex Management</h3>
-                      <p>Get Effortless foreign funding management with expert support</p>
-                      <a href="#">Read More</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="panel__card panel__card--three bg-orange-light">
-              <h2>Business </h2>
-              <div class="tab-content">
-                <div class="fz-tab-card">
-                  <div class="item-pay">
-                    <img src="assets/images/feature1.svg">
-                    <div>
-                      <h3>Current Account</h3>
-                      <p>Automate your bank account with India’s top current account</p>
-                      <a href="#">Read More</a>
-                    </div>
-                  </div>
-                  <div class="item-pay">
-                    <img src="assets/images/feature2.svg">
-                    <div>
-                      <h3>Escrow Account</h3>
-                      <p>Automate Escrow money transfer with total safety and compliance</p>
-                      <a href="#">Read More</a>
-                    </div>
-                  </div>
-                  <div class="item-pay">
-                    <img src="assets/images/feature3.svg">
-                    <div>
-                      <h3>Forex Management</h3>
-                      <p>Get Effortless foreign funding management with expert support</p>
-                      <a href="#">Read More</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="panel__card panel__card--four bg-green-light">
-              <h2>Business Banking</h2>
-              <div class="tab-content">
-                <div class="fz-tab-card">
-                  <div class="item-pay">
-                    <img src="assets/images/feature1.svg">
-                    <div>
-                      <h3>Current Account</h3>
-                      <p>Automate your bank account with India’s top current account</p>
-                      <a href="#">Read More</a>
-                    </div>
-                  </div>
-                  <div class="item-pay">
-                    <img src="assets/images/feature2.svg">
-                    <div>
-                      <h3>Escrow Account</h3>
-                      <p>Automate Escrow money transfer with total safety and compliance</p>
-                      <a href="#">Read More</a>
-                    </div>
-                  </div>
-                  <div class="item-pay">
-                    <img src="assets/images/feature3.svg">
-                    <div>
-                      <h3>Forex Management</h3>
-                      <p>Get Effortless foreign funding management with expert support</p>
-                      <a href="#">Read More</a>
-                    </div>
-                  </div>
-                </div>
+              <div class="col-lg-6 fz_core_text_right">
+                <h2>How our Technology thrives the Future</h2>
+                <h5>Empowering banks with seamless, efficient, and secure financial services</h5>
+                <p><span><img src="assets/images/finance-icon.svg" alt="finacne"/></span>At Finzor, Artificial Intelligence (AI) and Machine Learning (ML) are the essential drivers of innovation in financial technology. By utilizing these transformative technologies, we provide intelligent, efficient, and highly secure solutions that empower businesses, optimize operations, and enhance customer experiences. </p>
+                <p><span><img src="assets/images/park-icon.svg" alt="park"/></span> Our dedication to maximizing the potential of AI and ML keeps us at the forefront of industry trends, enabling us to deliver advanced systems that reshape the future of finance.</p>
+                <div><button class="fz_learmore">Learn more</button><button class="fz_learmore_btn">Get Started</button></div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
+        <!-- Product Intro -->
+        <audio id="sectionAudio" src="assets/images/loading.mp3"></audio>
+      <!-- <div style="height: 150vh;">Scroll Down to Play Audio</div> -->
+        <div id="targetSection" >
+          
+      
+        <section class="features_posibilityies">
+          <div class="container">
+              <!-- Main Text -->
+              <div class="texts" >
+                  <img src="./assets/images/feature_eff_1.svg" alt="">
+              </div>
+              <div class="inner-text">
+                  <div class="left">
+                    <img src="./assets/images/feature_left_eff.svg" alt="">
+                  </div>  
+                  <div class="dd">
+                    <!-- <img src="./assets/images/fz_feature.svg" alt=""> -->
+                    <img src="./assets/images/Vector.png" alt="" width="100px" height="100px">
+                    <!-- <div id="containers">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1889.08 596.11">
+                          <g>
+                              <path class="path path-1" d="M1842.84,450.98h-60.18l-49.96-82.67h-34.06v82.67h-56.01v-235.23h107.87c56.01,0,90.45,28.9,90.45,75.95,0,33.94-18.92,59.82-51.85,70.91v.34l53.75,88.04ZM1743.68,322.94c26.87,0,41.25-11.09,41.25-31.59s-13.63-30.25-41.25-30.25h-45.04v61.83h45.04Z"/>
+                              <path class="path path-1" d="M601.1,215.74h170.69v45.7h-114.68v57.46h106.73v43.69h-106.73v88.38h-56.01v-235.23Z"/>
+                              <path class="path path-1" d="M810.74,215.74h56.01v235.23h-56.01v-235.23Z"/>
+                              <path class="path path-1" d="M919.34,215.74h57.53l89.69,149.54h.76v-149.54h56.01v235.23h-57.53l-89.69-149.54h-.76v149.54h-56.01v-235.23Z"/>
+                              <path class="path path-1" d="M1162.66,409.98l124.14-147.86v-.67h-120.36v-45.7h190.37v41l-124.14,147.86v.67h123.76v45.7h-193.78v-41Z"/>
+                              <path class="path path-1" d="M1492.32,205.73c-70.34,0-127.57,57.16-127.57,127.5,0,62.57,45.25,114.65,104.71,125.4v-55.67c-29.35-9.6-50.59-37.27-50.59-69.74,0-40.45,32.94-73.39,73.46-73.39s73.39,32.94,73.39,73.39c0,32.47-21.24,60.13-50.59,69.74v55.67c59.46-10.76,104.71-62.84,104.71-125.4,0-70.34-57.22-127.5-127.5-127.5Z"/>
+                              <circle class="path path-1" cx="1492.29" cy="333.23" r="33.58"/>
+                              <path class="path path-1" d="M357.26,368.75l-33.86,56.01s-.06.1-.09.14c-.26.44-.51.88-.79,1.32,0,0,0,.01,0,.02-8.28,13.27-23.01,22.11-39.81,22.11h-119.48l-51.68,85.49-.86,1.43c-13.21,21.24-36.64,35.48-63.41,35.85l122.31-202.36h187.68Z"/>
+                              <path class="path path-1" d="M377.08,335.96l-14.42,23.86h-187.67l5.58-9.24.6-.99h0c5.12-8.18,14.23-13.62,24.6-13.62h171.3Z"/>
+                              <path class="path path-1" d="M501.28,130.5l-88.37,146.18c-.24.4-.47.81-.72,1.21-8.25,13.4-23.06,22.34-39.96,22.34h-161.23l66.94-110.73c21.56-35.38,60.5-59,104.95-59h118.38Z"/>
+                              <path class="path path-1" d="M557.98,36.7l-.43.71c-21.75,34.46-60.17,57.36-103.94,57.36h-90.87c-44.26,0-83.06,23.42-104.67,58.55h0S79.72,448.35,79.72,448.35v-91.71c.12-14.27,4.18-27.61,11.15-38.98l.11-.18,111.33-184.18c34.74-57.87,98.11-96.6,170.52-96.6h185.16Z"/>
+                          </g>
+                      </svg>
+                    </div> -->
+                    <h3>Empowering <br> Financial Journey <br> with Trust</h3> 
+                  </div>
+                  <div class="right">
+                    <img src="./assets/images/feature_right_eff.svg" alt="">
+                  </div>
+              </div>
+          </div>
+        </section>
       </div>
-    </div>
-  </section>
-  <!-- Code -->
-  <section class="developer_section">
-    <div class="container">
-      <div class="row">
-        <h3>Finzor is built </h3>
-        <h5>for developers by developers</h5>
-        <div class="col-lg-6">
-          <div class="dev_left">
-
+        <!-- Products -->
+        <section class="fz_product_sec panels-container">
+          <div class="fz_container" id="panels-container">
+              <div class="fz_product_panel item-1">
+                  <div class="fz_sub_container">
+                      <div class="fz_content">
+                          <div class="fz_num">
+                              <h3>01</h3>
+                          </div>
+                          <div class="fz_title">FinbankZ</div>
+                          <div class="fz_subtitle">Core Banking Solution</div>
+                          <div class="fz_bank">Empowering banks with seamless, efficient, and secure financial services
+                          </div>
+                          <div class="fz_desc">Finzor Core Banking Services refers to the suite of services and solutions
+                              offered by Finzor (a technology provider) to financial institutions. These services are
+                              designed to modernize and streamline banking operations by providing a robust core banking
+                              platform that integrates various functionalities.</div>
+                          <div class="fz_btn">
+                              <button>Learn more</button>
+                          </div>
+                      </div>
+                      <div class="fz_img-sec">
+                          <div class="fz_img">
+                              <img class="image_1" src="./assets/images/vector_line.svg" alt="">
+                              <img class="core_img" src="./assets/images/core.gif"
+                                  alt="Computer man">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="fz_product_panel item-2">
+                  <div class="fz_sub_container">
+                      <div class="fz_content">
+                          <div class="fz_num">
+                              <h3>02</h3>
+                          </div>
+                          <div class="fz_title">UPIZor</div>
+                          <div class="fz_subtitle">Payment Solutions</div>
+                          <div class="fz_bank">Empowering Seamless, Secure, and Instant Transactions for a Connected World  </div>
+                          <div class="fz_desc">FINZOR’s Digital Payment Solutions deliver secure, fast, and seamless transaction capabilities across platforms. With advanced encryption and fraud protection, our solution ensures a smooth payment experience for both merchants and customers. Designed for scalability, it integrates effortlessly into existing systems, empowering businesses to thrive in the digital economy with real-time, borderless payments.</div>
+                          <div class="fz_btn">
+                              <button>Learn more</button>
+                          </div>
+                      </div>
+                      <div class="fz_img-sec">
+                          <div class="fz_img">
+                              <img class="image_1" src="./assets/images/vector_line.svg" alt="">
+                              <img class="core_img" src="./assets/images/Bank_Wave.svg"
+                                  alt="Computer man" class="bank_img">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="fz_product_panel item-3">
+                  <div class="fz_sub_container">
+                      <div class="fz_content">
+                          <div class="fz_num">
+                              <h3>03</h3>
+                          </div>
+                          <div class="fz_title">FinzOpZ</div>
+                          <div class="fz_subtitle">Financial Operations</div>
+                          <div class="fz_bank">Streamlining and Optimizing Processes to Enhance Efficiency and Accuracy</div>
+                          <div class="fz_desc">FINZOR’s Financial Operations solutions optimize and automate key financial processes, enhancing accuracy, efficiency, and control. Our platform integrates seamlessly to streamline transaction management, compliance reporting, and financial visibility, empowering businesses to reduce errors, improve decision-making, and drive operational excellence.</div>
+                          <div class="fz_btn">
+                              <button>Learn more</button>
+                          </div>
+                      </div>
+                      <div class="fz_img-sec">
+                          <div class="fz_img">
+                              <img class="image_1" src="./assets/images/vector_line.svg" alt="">
+                              <img class="core_img" src="./assets/images/Pay_Unity.svg"
+                              alt="Computer man" class="payunity_img">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="fz_product_panel item-4">
+                  <div class="fz_sub_container">
+                      <div class="fz_content">
+                          <div class="fz_num">
+                              <h3>04</h3>
+                          </div>
+                          <div class="fz_title">FinZro</div>
+                          <div class="fz_subtitle">Merchant Solution</div>
+                          <div class="fz_bank">Fueling Business Growth with Smart, Scalable Payment Tools</div>
+                          <div class="fz_desc">FINZOR’s Merchant Solutions offer secure, scalable payment tools that streamline transactions and fuel business growth. With seamless integration across online, in-store, and mobile payments, our platform enhances efficiency through real-time reporting, fraud protection, and customizable features, empowering merchants to optimize operations and improve customer experiences.
+                          </div>
+                          <div class="fz_btn">
+                              <button>Learn more</button>
+                          </div>
+                      </div>
+                      <div class="fz_img-sec">
+                          <div class="fz_img">
+                              <img class="image_1" src="./assets/images/vector_line.svg" alt="">
+                              <img class="core_img" src="./assets/images/Translinker.svg"
+                              alt="Computer man" class="translinker_img">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="fz_product_panel item-5">
+                  <div class="fz_sub_container">
+                      <div class="fz_content">
+                          <div class="fz_num">
+                              <h3>05</h3>
+                          </div>
+                          <div class="fz_title">FinlyticZ</div>
+                          <div class="fz_subtitle">Data & Analytics</div>
+                          <div class="fz_bank">Transforming Data into Actionable Insights for Smarter, Data-Driven Decisions</div>
+                          <div class="fz_desc">Fueling Business Growth with Smart, Scalable Payment ToolsFINZOR’s Data & Analytics solutions empower businesses to transform data into actionable insights. With advanced analytics, real-time reporting, and predictive tools, we help optimize performance, identify trends, and drive informed decision-making. Our solutions enable businesses to unlock new opportunities and stay ahead in a data-driven world.</div>
+                          <div class="fz_btn">
+                              <button><span>Learn more</span></button>
+                          </div>
+                      </div>
+                      <div class="fz_img-sec">
+                          <div class="fz_img">
+                              <img class="image_1" src="./assets/images/vector_line.svg" alt="">
+                              <img class="core_img" src="./assets/images/FlowGate.svg"
+                                  alt="Computer man" class="flowgate_img">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+        <!-- Feature -->
+        <section id="fz_features" class="panel spacer-y">
+          <div class="container">
             <div class="row">
-              <div class="col-lg-8">
-                <div class="dev_card fz_intergration">
-                  <div class="dev_card_logo">
-                    <img src="./assets/images/integration.png" alt="">
-                  </div>
-                  <h4>Integrations</h4>
-                  <p>Find all popular platform SDKs, plugin, server integrations in our integration stack.</p>
+              <div class="col-md-12">
+                <div class="panel__options">
+                  <span data-target="b" class="active" role="button">Core Banking Features</span>
+                  <span data-target="c" role="button">Mobile Banking </span>
+                  <span data-target="d" role="button">Internet Banking</span>
+                  <span data-target="e" role="button">UPI</span>
                 </div>
-              </div>
-            </div>
-            <div class="row dev_card_1">
-              <div class="col-lg-8">
-                <div class="dev_card fz_api">
-                  <div class="dev_card_logo">
-                    <img src="./assets/images/Api.png" alt="">
+      
+                <div class="panel__stack">
+                  <div class="panel__card panel__card--one text-white bg-purple overflow-hidden">
+                    <h2>Core Banking Features</h2>
+                    <!-- <ul class="nav nav-pills" role="tablist">
+                      <li class="nav-item" role="presentation"><a class="nav-link active" data-bs-toggle="pill" href="#home"
+                          aria-selected="true" role="tab">Top Products</a></li>
+                      <li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="pill" href="#menu1"
+                          aria-selected="false" tabindex="-1" role="tab">On Website/App</a></li>
+                      <li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="pill" href="#menu2"
+                          aria-selected="false" tabindex="-1" role="tab">Mobile Banking</a></li>
+                    </ul> -->
+                    <div class="tab-content">
+                      <div id="home" class="tab-pane fade show active" role="tabpanel">
+                        <div class="fz-tab-card">
+                          <div class="item-pay">
+                            <!-- <img src="assets/images/feature1.svg"> -->
+                            <dotlottie-player src="https://lottie.host/806d5cd0-e468-4e6f-be32-6d8483fcf675/IbbWORgAvg.json"
+                            background="#fff" speed="1" style="width: 378px; height: 275px" loop
+                            autoplay></dotlottie-player>
+                            <div>
+                              <h3>AI Tools</h3>
+                              <p>In Payments Reconciliation, Predective Analysis &Customer Service.</p>
+                              <a href="#">Read More</a>
+                            </div>
+                          </div>
+                          <div class="item-pay">
+                            <img src="assets/images/feature2.svg">
+                            <div>
+                              <h3>Payments</h3>
+                              <p>Consolidate, simplify and reduce costs with a single platform for your business.</p>
+                              <a href="#">Read More</a>
+                            </div>
+                          </div>
+                          <div class="item-pay">
+                            <img src="assets/images/feature3.svg">
+                            <div>
+                              <h3>Cloud Based Solutions</h3>
+                              <p>Finzor offers innovative cloud-based solutions designed to enhance business agility,
+                                scalability, and efficiency.</p>
+                              <a href="#">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="menu1" class="tab-pane fade" role="tabpanel">
+                        <div class="fz-tab-card">
+                          <div class="item-pay">
+                            <img src="assets/images/feature1.svg">
+                            <div>
+                              <h3>Current Account</h3>
+                              <p>Automate your bank account with India’s top current account</p>
+                              <a href="#">Read More</a>
+                            </div>
+                          </div>
+                          <div class="item-pay">
+                            <img src="assets/images/feature2.svg">
+                            <div>
+                              <h3>Escrow Account</h3>
+                              <p>Automate Escrow money transfer with total safety and compliance</p>
+                              <a href="#">Read More</a>
+                            </div>
+                          </div>
+                          <div class="item-pay">
+                            <img src="assets/images/feature3.svg">
+                            <div>
+                              <h3>Forex Management</h3>
+                              <p>Get Effortless foreign funding management with expert support</p>
+                              <a href="#">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="menu2" class="tab-pane fade" role="tabpanel">
+                        <div class="fz-tab-card">
+                          <div class="item-pay">
+                            <img src="assets/images/feature1.svg">
+                            <div>
+                              <h3>Current Account</h3>
+                              <p>Automate your bank account with India’s top current account</p>
+                              <a href="#">Read More</a>
+                            </div>
+                          </div>
+                          <div class="item-pay">
+                            <img src="assets/images/feature2.svg">
+                            <div>
+                              <h3>Escrow Account</h3>
+                              <p>Automate Escrow money transfer with total safety and compliance</p>
+                              <a href="#">Read More</a>
+                            </div>
+                          </div>
+                          <div class="item-pay">
+                            <img src="assets/images/feature3.svg">
+                            <div>
+                              <h3>Forex Management</h3>
+                              <p>Get Effortless foreign funding management with expert support</p>
+                              <a href="#">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <h4>API Reference</h4>
-                  <p>Comprehensive documentation to build powerful payment solutions.</p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-8">
-                <div class="dev_card fz_webhook">
-                  <div class="dev_card_logo">
-                    <img src="./assets/images/plug.png" alt="">
+      
+                  <div class="panel__card panel__card--two bg-skyblue-light">
+                    <h2>Mobile Banking</h2>
+                    <div class="tab-content">
+                      <div class="fz-tab-card">
+                        <div class="item-pay">
+                          <img src="assets/images/feature1.svg">
+                          <div>
+                            <h3>Convenience</h3>
+                            <p>Banking anytime, anywhere.</p>
+                            <a href="#">Read More</a>
+                          </div>
+                        </div>
+                        <div class="item-pay">
+                          <img src="assets/images/feature2.svg">
+                          <div>
+                            <h3>Account Management</h3>
+                            <p>Automate Escrow money transfer with total safety and compliance</p>
+                            <a href="#">Read More</a>
+                          </div>
+                        </div>
+                        <div class="item-pay">
+                          <img src="assets/images/feature3.svg">
+                          <div>
+                            <h3>View transaction history</h3>
+                            <p>Get Effortless foreign funding management with expert support</p>
+                            <a href="#">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <h4>Webhooks</h4>
-                  <p>Receive real-time notifications for all payment related transactions and events.</p>
+      
+                  <div class="panel__card panel__card--three bg-orange-light">
+                    <h2>Internet Banking</h2>
+                    <div class="tab-content">
+                      <div class="fz-tab-card">
+                        <div class="item-pay">
+                          <img src="assets/images/feature1.svg">
+                          <div>
+                            <h3>Money Transfers </h3>
+                            <p>Automate your bank account with India’s top current account</p>
+                            <a href="#">Read More</a>
+                          </div>
+                        </div>
+                        <div class="item-pay">
+                          <img src="assets/images/feature2.svg">
+                          <div>
+                            <h3>Mobile Banking</h3>
+                            <p>Smart Financial Tools</p>
+                            <a href="#">Read More</a>
+                          </div>
+                        </div>
+                        <div class="item-pay">
+                          <img src="assets/images/feature3.svg">
+                          <div>
+                            <h3>Real-Time Alerts </h3>
+                            <p>Get Effortless foreign funding management with expert support</p>
+                            <a href="#">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="panel__card panel__card--four bg-green-light">
+                    <h2>UPI</h2>
+                    <div class="tab-content">
+                      <div class="fz-tab-card">
+                        <div class="item-pay">
+                          <img src="assets/images/feature1.svg">
+                          <div>
+                            <h3>Interbank Transfers</h3>
+                            <p>Automate your bank account with India’s top current account</p>
+                            <a href="#">Read More</a>
+                          </div>
+                        </div>
+                        <div class="item-pay">
+                          <img src="assets/images/feature2.svg">
+                          <div>
+                            <h3>QR Code Payments</h3>
+                            <p>Automate Escrow money transfer with total safety and compliance</p>
+                            <a href="#">Read More</a>
+                          </div>
+                        </div>
+                        <div class="item-pay">
+                          <img src="assets/images/feature3.svg">
+                          <div>
+                            <h3>Scheduled Payments</h3>
+                            <p>Get Effortless foreign funding management with expert support</p>
+                            <a href="#">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </section>
+        <!-- Code -->
+        <section class="developer_section">
+          <div class="container">
+              <div class="row">
+                  <h3>Finzor is built </h3>
+                  <h5>for developers by developers</h5>
+                  <div class="col-lg-6">
+                      <div class="dev_left">
+                         
+                          <div class="row">
+                              <div class="col-lg-8">
+                                  <div class="dev_card fz_intergration">
+                                      <div class="dev_card_logo">
+                                        <h4>Integrations</h4>
+                                         <span><img src="./assets/images/integration.png" alt=""></span> 
+                                      </div>
+                                      <p>Find all popular platform SDKs, plugin, server integrations in our integration stack.</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row dev_card_1">
+                              <div class="col-lg-8">
+                                  <div class="dev_card fz_api">
+                                      <div class="dev_card_logo">
+                                        <h4>API Reference</h4>
+                                        <span><img src="./assets/images/Api.png" alt=""></span>
+                                      </div>
+                                      <p>Comprehensive documentation to build powerful payment solutions.</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-lg-8">
+                                  <div class="dev_card fz_webhook">
+                                      <div class="dev_card_logo">
+                                        <h4>Webhooks</h4>
+                                        <span><img src="./assets/images/plug.png" alt=""></span>
+                                       </div>
+                                      <p>Receive real-time notifications for all payment related transactions and events.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="col-lg-6" id="typingSection">
+                    <div id="editor">
+                        <div id="typingEffect" class="code-container"></div>
+                        <ul>
+                            <li class="btn_1"></li>
+                            <li class="btn_2"></li>
+                            <li class="btn_3"></li>
+                        </ul>
+                        <span class="cursor"></span>
+                    </div>
+                </div>
+              </div>
+             
+          </div>
+       </section>
+        <!-- Video -->
+        <div class="videos" style="position: relative;height: 100vh;display: flex;justify-content: center;">
+          <video class="video_anim" poster="assets/images/promo-poster-lg.webp" autoplay loop playsinline muted
+              id="myVideoDesk">
+              <source src="https://videocdn.cdnpk.net/videos/05ceff95-797e-539c-b34b-cdd20541863a/horizontal/previews/watermarked/large.mp4" type="video/mp4" id="sourceElementPromo">
+          </video>
         </div>
-        <div class="col-lg-6">
-          <div id="editor">
-            <div id="typingEffect"></div>
-            <ul>
-              <li class="btn_1"></li>
-              <li class="btn_2"></li>
-              <li class="btn_3"></li>
+        <!-- Counter -->
+        <section class="counter_section">
+          <div class="container">
+            <iframe src="https://lottie.host/embed/b3bba18e-9e0f-4de6-8ce4-342df5718ab8/mEDuQEZBOr.lottie"></iframe>
+              <h2>Achievement of Finzor</h2>
+              <p>"We take pride in our journey, marked by milestones that reflect our <br> commitment to excellence, innovation, and customer satisfaction."</p>
+              <div id="counter">
+                <div class="row" id="counter-section">
+                    <div class="col-lg-3">
+                        <div class="count percent percent_1 js-count-up" data-value="98">
+                            0 
+                          </div>
+                          <span>Satisfied Customers</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="count percent plus_counter js-count-up" data-value="100">
+                            0 M
+                          </div>
+                          <span>Dedicated Experts</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="count percent plus_counter js-count-up" data-value="60">
+                            0
+                          </div>
+                          <span>Employees</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="count percent plus_counter js-count-up" data-value="95">
+                            0
+                          </div>
+                          <span>Client Retention</span>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <!-- Blog -->
+        <section class="fz-blog">
+          <div class="container">
+            <div class="blog-carousel">
+               <h3>Latest Blog</h3>
+               <p>Read the blogs to know more about us >></p>
+            </div>
+            <div class="owl-carousel owl-theme" id="owl-carousel">
+              <!-- Card 1 -->
+              <div class="item">
+                <img src="./assets/images/img-courl-1.svg" alt="Image 1">
+                <div class="card-body">
+                  <div class="card-top-title">
+                    <p>Recent Blogs</p>
+                    <p>20/08/2024</p>
+                  </div>
+                  <h5 class="card-title">Security and Fraud Prevention</h5>
+                  <p class="card-text">
+                    "The Future of Cybersecurity in Fintech: Safeguarding Customer Data in a Digital-First World."
+                  </p>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="item">
+                <img src="./assets/images/img-courl-2.svg" alt="Image 2">
+                <div class="card-body">
+                  <div class="card-top-title">
+                    <p>Recent Blogs</p>
+                    <p>20/08/2024</p>
+                  </div>
+                  <h5 class="card-title">Security and Fraud Prevention</h5>
+                  <p class="card-text">
+                    "The Future of Cybersecurity in Fintech: Safeguarding Customer Data in a Digital-First World."
+                  </p>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="item">
+                <img src="./assets/images/img-courl-3.svg" alt="Image 3">
+                <div class="card-body">
+                  <div class="card-top-title">
+                    <p>Recent Blogs</p>
+                    <p>20/08/2024</p>
+                  </div>
+                  <h5 class="card-title">Security and Fraud Prevention</h5>
+                  <p class="card-text">
+                    "The Future of Cybersecurity in Fintech: Safeguarding Customer Data in a Digital-First World."
+                  </p>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="item">
+                <img src="./assets/images/img-courl-2.svg" alt="Image 4">
+                <div class="card-body">
+      
+                  <div class="card-top-title">
+                    <p>Recent Blogs</p>
+                    <p>20/08/2024</p>
+                  </div>
+                  <h5 class="card-title">Security and Fraud Prevention</h5>
+                  <p class="card-text">
+                    "The Future of Cybersecurity in Fintech: Safeguarding Customer Data in a Digital-First World."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Testimonial -->
+        <!-- Testimonial -->
+        <section class="fz_testimonial">
+          <div class="container">
+            <div class="fz_testimonial_top">
+              <h2>Lorem ipsum</h2>
+              <p>How we make finances easy
+              </p>
+            </div>
+            <ul class="fz_testimonial_items">
+              <li class="fz_testimonial_item">
+                <img class="img" src="./assets/images/testimonial_1.jpeg" alt="Edward Johnson">
+                <div class="fz_testimonial_item_content">
+                  <h3>Lorem ipsum</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare a arcu quis ornare. Aliquam a diam nunc. Etiam augue augue, sagittis nec bibendum vel, pretium nec nunc.</p>
+                </div>
+              </li>
+              <li class="fz_testimonial_item">
+                <img class="img" src="./assets/images/testimonial_2.jpeg" alt="Emma">
+
+                <div class="fz_testimonial_item_content">
+                  <h3>Lorem ipsum</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare a arcu quis ornare. Aliquam a diam nunc. Etiam augue augue, sagittis nec bibendum vel, pretium nec nunc.</p>
+                </div>
+              </li>
+              <li class="fz_testimonial_item active">
+                <img class="img" src="./assets/images/testimonial_3.jpeg" alt="tom">
+                <div class="fz_testimonial_item_content">
+                  <h3>Lorem ipsum</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare a arcu quis ornare. Aliquam a diam nunc. Etiam augue augue, sagittis nec bibendum vel, pretium nec nunc.</p>
+                </div>
+              </li>
+              <li class="fz_testimonial_item">
+                <img class="img" src="./assets/images/testimonial_4.jpeg" alt="John">
+                <div class="fz_testimonial_item_content">
+                  <h3>Lorem ipsum</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare a arcu quis ornare. Aliquam a diam nunc. Etiam augue augue, sagittis nec bibendum vel, pretium nec nunc.</p>
+                </div>
+              </li>
+              <li class="fz_testimonial_item">
+                <img class="img" src="./assets/images/testimonial_5.jpeg" alt="Sam">
+                <div class="fz_testimonial_item_content">
+                  <h3>Lorem ipsum</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare a arcu quis ornare. Aliquam a diam nunc. Etiam augue augue, sagittis nec bibendum vel, pretium nec nunc.</p>
+                </div>
+              </li>
+              <li class="fz_testimonial_item">
+                <img class="img" src="./assets/images/testimonial_6.jpeg" alt="aravind">
+                <div class="fz_testimonial_item_content">
+                  <h3>Lorem ipsum</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare a arcu quis ornare. Aliquam a diam nunc. Etiam augue augue, sagittis nec bibendum vel, pretium nec nunc.</p>
+                </div>
+              </li>
             </ul>
-            <span class="cursor"></span>
           </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <!-- Video -->
-  <div class="videos" style="position: relative;height: 100vh;display: flex;justify-content: center;">
-    <video class="video_anim" poster="assets/images/promo-poster-lg.webp" autoplay loop playsinline muted
-      id="myVideoDesk">
-      <source
-        src="https://videocdn.cdnpk.net/videos/c3d940f6-8a79-56a3-9452-793f54e71b54/horizontal/previews/watermarked/large.mp4"
-        type="video/mp4" id="sourceElementPromo">
-    </video>
-  </div>
-  <!-- Counter -->
-  <section class="counter_section">
-    <div class="container">
-      <iframe src="https://lottie.host/embed/b3bba18e-9e0f-4de6-8ce4-342df5718ab8/mEDuQEZBOr.lottie"></iframe>
-      <h2>Achievement of Finzor</h2>
-      <p>"We take pride in our journey, marked by milestones that reflect our <br> commitment to excellence, innovation,
-        and customer satisfaction."</p>
-      <div id="counter">
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="count percent percent_1" data-count="98">
-              0
-            </div>
-            <span>Satisfied Customers</span>
+        </section>
+        <!-- FAQ -->
+        <section class="faq_section">
+          <div class="container">
+              <div class="faq_header">
+                  <h4>FAQ</h4>
+                  <h3>You have questions? We have <br>
+                      answers.</h3>
+              </div>
+              <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                              aria-expanded="true" aria-controls="collapseOne">
+                              How secure is my financial data on your platform?
+                          </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              Can I access your services on mobile devices?
+                              How can I contact customer support for assistance?
+                              How about my data safety?
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Will Finzor suit my business size and industry?
+                          </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              Can I access your services on mobile devices?
+                              How can I contact customer support for assistance?
+                              How about my data safety?
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Can I access your services on mobile devices?
+                          </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              Can I access your services on mobile devices?
+                              How can I contact customer support for assistance?
+                              How about my data safety?
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwoo" aria-expanded="false" aria-controls="collapseTwo">
+                              Will Finzor suit my business size and industry?
+                          </button>
+                      </h2>
+                      <div id="collapseTwoo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              Can I access your services on mobile devices?
+                              How can I contact customer support for assistance?
+                              How about my data safety?
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseThreee" aria-expanded="false" aria-controls="collapseThree">
+                              Can I access your services on mobile devices?
+                          </button>
+                      </h2>
+                      <div id="collapseThreee" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              Can I access your services on mobile devices?
+                              How can I contact customer support for assistance?
+                              How about my data safety?
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="col-lg-3">
-            <div class="count percent plus_counter" data-count="100">
-              0 M
-            </div>
-            <span>Dedicated Experts</span>
-          </div>
-          <div class="col-lg-3">
-            <div class="count percent plus_counter" data-count="60">
-              0
-            </div>
-            <span>Employees</span>
-          </div>
-          <div class="col-lg-3">
-            <div class="count percent plus_counter" data-count="95">
-              0
-            </div>
-            <span>Client Retention</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Blog -->
-  <section class="fz-blog">
-    <div class="container">
-      <div class="blog-carousel">
-        <h3>Latest Blog</h3>
-        <p>Read the blogs to know more about us >></p>
-      </div>
-      <div class="owl-carousel owl-theme" id="owl-carousel">
-        <!-- Card 1 -->
-        <div class="item">
-          <img src="./assets/images/img-courl-1.svg" alt="Image 1">
-          <div class="card-body">
-            <div class="card-top-title">
-              <p>Recent Blogs</p>
-              <p>20/08/2024</p>
-            </div>
-            <h5 class="card-title">Security and Fraud Prevention</h5>
-            <p class="card-text">
-              "The Future of Cybersecurity in Fintech: Safeguarding Customer Data in a Digital-First World."
-            </p>
-          </div>
-        </div>
-        <!-- Card 2 -->
-        <div class="item">
-          <img src="./assets/images/img-courl-2.svg" alt="Image 2">
-          <div class="card-body">
-            <div class="card-top-title">
-              <p>Recent Blogs</p>
-              <p>20/08/2024</p>
-            </div>
-            <h5 class="card-title">Security and Fraud Prevention</h5>
-            <p class="card-text">
-              "The Future of Cybersecurity in Fintech: Safeguarding Customer Data in a Digital-First World."
-            </p>
-          </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="item">
-          <img src="./assets/images/img-courl-3.svg" alt="Image 3">
-          <div class="card-body">
-            <div class="card-top-title">
-              <p>Recent Blogs</p>
-              <p>20/08/2024</p>
-            </div>
-            <h5 class="card-title">Security and Fraud Prevention</h5>
-            <p class="card-text">
-              "The Future of Cybersecurity in Fintech: Safeguarding Customer Data in a Digital-First World."
-            </p>
-          </div>
-        </div>
-        <!-- Card 4 -->
-        <div class="item">
-          <img src="./assets/images/img-courl-2.svg" alt="Image 4">
-          <div class="card-body">
-
-            <div class="card-top-title">
-              <p>Recent Blogs</p>
-              <p>20/08/2024</p>
-            </div>
-            <h5 class="card-title">Security and Fraud Prevention</h5>
-            <p class="card-text">
-              "The Future of Cybersecurity in Fintech: Safeguarding Customer Data in a Digital-First World."
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Testimonial -->
-  <section class="fz_testimonial">
-    <div class="container">
-      <div class="fz_testimonial_top">
-        <h2>USER STORIES</h2>
-        <p>How we make finances easy
-        </p>
-      </div>
-      <ul class="fz_testimonial_items">
-        <li class="fz_testimonial_item">
-          <img class="img" src="./assets/images/testimonial_1.svg" alt="Edward Johnson">
-          <div class="fz_testimonial_item_content">
-            <h3>Edward Johnson</h3>
-            <p>Using this fintech platform has revolutionized how I manage my finances. It's intuitive, secure, and has
-              truly simplified my banking experience</p>
-          </div>
-        </li>
-        <li class="fz_testimonial_item">
-          <img class="img" src="./assets/images/testimonial_2.svg" alt="Emma">
-
-          <div class="fz_testimonial_item_content">
-            <h3>Emma</h3>
-            <p>I never thought handling transactions could be this seamless until I started using this fintech service.
-              It's reliable, efficient, and a game-changer for my business</p>
-          </div>
-        </li>
-        <li class="fz_testimonial_item active">
-          <img class="img" src="./assets/images/testimonial_3.svg" alt="tom">
-          <div class="fz_testimonial_item_content">
-            <h3>Tom</h3>
-            <p>The fraud detection features offered by Finzor are top-notch. I feel more secure knowing my assets are
-              protected with their advanced monitoring tools</p>
-          </div>
-        </li>
-        <li class="fz_testimonial_item">
-          <img class="img" src="./assets/images/testimonial_4.svg" alt="John">
-          <div class="fz_testimonial_item_content">
-            <h3>John</h3>
-            <p>From transaction settlements to reporting, this service covers all aspects flawlessly. It's a one-stop
-              solution that has saved me time and improved my financial management</p>
-          </div>
-        </li>
-        <li class="fz_testimonial_item">
-          <img class="img" src="./assets/images/testimonial_5.svg" alt="Sam">
-          <div class="fz_testimonial_item_content">
-            <h3>Sam</h3>
-            <p>The analytics provided by this fintech platform have given me invaluable insights into my spending
-              habits. It's helped me make smarter decisions and plan for the future</p>
-          </div>
-        </li>
-        <li class="fz_testimonial_item">
-          <img class="img" src="./assets/images/testimonial_6.svg" alt="aravind">
-          <div class="fz_testimonial_item_content">
-            <h3>Aravind</h3>
-            <p> can't imagine my financial routine without the user-friendly interface of this solution. It's like
-              having a personal finance assistant guiding me towards better management</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <!-- FAQ -->
-  <section class="faq_section">
-    <div class="container">
-      <div class="faq_header">
-        <h4>FAQ</h4>
-        <h3>You have questions? We have <br>
-          answers.</h3>
-      </div>
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              How secure is my financial data on your platform?
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Can I access your services on mobile devices?
-              How can I contact customer support for assistance?
-              How about my data safety?
+        </section>
+        <!-- LOgo -->
+        <section id="logo_marquee">
+          <div class="container">
+            <div class="owl-carousel owl-theme" id="owl-logo">
+              <div class="item">
+                <img src='./assets/images/sphe-img.svg' alt=''>
+              </div>
+              <div class="item">
+                  <img src='./assets/images/samsug-img.svg' alt=''>
+              </div>
+              <div class="item">
+                  <img src='./assets/images/visa-img.svg' alt=''>
+              </div>
+              <div class="item">
+                  <img src='./assets/images/Paypal-img.svg' alt=''>
+              </div>
+              <div class="item">
+                  <img src='./assets/images/amezon-img.svg' alt=''>
+              </div>
+              <div class="item">
+                  <img src='./assets/images/alipay-img.svg' alt=''>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Will Finzor suit my business size and industry?
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Can I access your services on mobile devices?
-              How can I contact customer support for assistance?
-              How about my data safety?
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Can I access your services on mobile devices?
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Can I access your services on mobile devices?
-              How can I contact customer support for assistance?
-              How about my data safety?
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseTwoo" aria-expanded="false" aria-controls="collapseTwo">
-              Will Finzor suit my business size and industry?
-            </button>
-          </h2>
-          <div id="collapseTwoo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Can I access your services on mobile devices?
-              How can I contact customer support for assistance?
-              How about my data safety?
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseThreee" aria-expanded="false" aria-controls="collapseThree">
-              Can I access your services on mobile devices?
-            </button>
-          </h2>
-          <div id="collapseThreee" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Can I access your services on mobile devices?
-              How can I contact customer support for assistance?
-              How about my data safety?
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- LOgo -->
-  <section id="logo_marquee">
-    <div class="container">
-      <div class="owl-carousel owl-theme" id="owl-logo">
-        <div class="item">
-          <img src='./assets/images/sphe-img.svg' alt=''>
-        </div>
-        <div class="item">
-          <img src='./assets/images/samsug-img.svg' alt=''>
-        </div>
-        <div class="item">
-          <img src='./assets/images/visa-img.svg' alt=''>
-        </div>
-        <div class="item">
-          <img src='./assets/images/Paypal-img.svg' alt=''>
-        </div>
-        <div class="item">
-          <img src='./assets/images/amezon-img.svg' alt=''>
-        </div>
-        <div class="item">
-          <img src='./assets/images/alipay-img.svg' alt=''>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Newsletter -->
-  <section class="newsletter_section">
-    <div class="container">
-      <h3>Subscribe Newsletter</h3>
-      <h5>& latest Update of Company</h5>
-      <div class="input-group input-group-lg mb-3">
-        <input type="text" class="form-control" placeholder="Enter email address
+        </section>
+        <!-- Newsletter -->
+        <section class="newsletter_section">
+          <div class="container">
+              <h3>Subscribe Newsletter</h3>
+              <h5>& latest Update of Company</h5>
+              <div class="input-group input-group-lg mb-3">
+                  <input type="text" class="form-control" placeholder="Enter email address
                   " aria-label="Username" aria-describedby="basic-addon1">
-        <button class="btn" type="button" id="button-addon2">Subscribe</button>
-      </div>
-    </div>
-  </section>
-  <section class="play_store_section">
-    <div class="container">
-      <div class="play_store_container">
-        <div class="row">
-          <div class="col-lg-7">
-            <div class="play_store_left">
-              <h2>Are you ready to <br> start?</h2>
-              <p>Personalize your settings, follow your progress, archive your</br> highlights and notes automatically
-                Glose is the ultimate reading </p>
-              <div class="store_images">
-                <img src="./assets/images/play_store.svg" alt="">
-                <img src="./assets/images/appstore.svg" alt="">
-              </div>
-              <div class="start_now_btn">
-                <div class="hover-box">
-                  <a class="dedcription-btn" href="#">
-                    <span class="name-descripeion">Download Now</span>
-                    <div class="btn-icon">
-                      <img src="./assets/images/appstore_arrow.svg" alt="">
-                    </div>
-                  </a>
+                  <button class="btn" type="button" id="button-addon2">Subscribe</button>
                 </div>
+          </div>
+        </section>
+        <section class="play_store_section">
+          <div class="container">
+            <div class="play_store_container">
+                  <div class="row">
+                      <div class="col-lg-7">
+                          <div class="play_store_left">
+                              <h2>Are you ready to <br> start?</h2>
+                              <p>Personalize your settings, follow your progress, archive your</br> highlights and notes automatically Glose is the ultimate reading </p>
+                              <div class="store_images">
+                                 <img src="./assets/images/play_store.svg" alt="">
+                                 <img src="./assets/images/appstore.svg" alt="">
+                              </div>
+                              <div class="start_now_btn">
+                                  <div class="hover-box">
+                                      <a class="dedcription-btn" href="#">
+                                        <span class="name-descripeion">Download Now</span>
+                                        <div class="btn-icon">
+                                          <img src="./assets/images/appstore_arrow.svg" alt=""> 
+                                        </div>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-5">
+                          <div class="play_store_right">
+                              <img src="./assets/images/playstore1.svg" alt="" class="fz_playstore1">
+                              <img src="./assets/images/playstore2.svg" alt="" class="fz_playstore2">
+                          </div>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-          <div class="col-lg-5">
-            <div class="play_store_right">
-              <img src="./assets/images/playstore1.svg" alt="" class="fz_playstore1">
-              <img src="./assets/images/playstore2.svg" alt="" class="fz_playstore2">
-            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="footer_section">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-4 col-md-12 col-12">
+                      <div class="footer_logo">
+                          <img src="./assets/images/finzor-logo.svg" alt="" title="Footer_logo">
+                      </div>
+                      <p>We blend cutting-edge technology with
+                          Financial expertise to revolutionize the way businesses manage their finances. we focus on innovation as well as security</p>
+                          <div class="footer_num_email">
+                              <a href="mailto:support@finzor.com" title="support@finzor.com">support@finzor.com</a>
+                          </div>
+                          <div class="footer_num_email">
+                              <a href="tel:+91- 90566-27840" title="+91- 90566-27840">+91- 90566-27840</a>
+                          </div>
+                  </div>
+                  <div class="col-lg-2 col-md-6 col-6">
+                      <h5>Product</h5>
+                      <ul>
+                          <li>
+                              <a href="#" title="Payment">Payment</a>
+                          </li>
+                          <li>
+                              <a href="#" title="Payment pages">Payment pages</a>
+                          </li>
+                          <li>
+                              <a href="#" title="Subscriptions">Subscriptions</a>
+                          </li>
+                          <li>
+                              <a href="#" title="Invoices">Invoices</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-2 col-md-6 col-6">
+                      <h5>Features</h5>
+                      <ul>
+                          <li>
+                              <a href="#" title="Website Development">Website Development</a>
+                          </li>
+                          <li>
+                              <a href="#" title="Application Development">Application Development</a>
+                          </li>
+                          <li>
+                              <a href="#" title="Seamless checkout">Seamless checkout</a>
+                          </li>
+                          <li>
+                              <a href="#" title="Customizable">Customizable</a>
+                          </li>
+                          <li>
+                              <a href="#" title="Multiple Payment">Multiple Payment</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-2 col-md-6 col-6">
+                      <h5>Services</h5>
+                      <ul>
+                          <li>
+                              <a href="#" title="Payouts">Payouts</a>
+                          </li>
+                          <li>
+                              <a href="#" title="Vendor Payments">Vendor Payments</a>
+                          </li>
+                          <li>
+                              <a href="#" title="Payment Links">Payment Links</a>
+                          </li>
+                          <li>
+                              <a href="#" title="Payment Gateway">Payment Gateway</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-2 col-md-6 col-6">
+                      <h5>Support</h5>
+                      <ul>
+                          <li>
+                              <a href="#" title="About us">About us</a>
+                          </li>
+                          <li>
+                              <a href="#" title="Contact us">Contact us</a>
+                          </li>
+                          <li>
+                              <a href="#" title="Carrers">Carrers</a>
+                          </li>
+                          <li>
+                              <a href="#" title="FAQ’s">FAQ’s</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="copy_rights">
+                  <div class="copy_rights_1">
+                      <p>© <span id="year"></span> Finzor.All rights reserved</p>
+                  </div>
+                  <div class="copy_rights_1">
+                      <ul>
+                          <li>
+                              <a href="#" title="Privacy Policy"> Privacy Policy </a>
+                          </li>
+                          <li>
+                              |
+                          </li>
+                          <li>
+                              <a href="#" title="Terms & Conditions">Terms & Conditions</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="copy_rights_1">
+                      <ul>
+                          <li>
+                              <a href="#" title="Facebook"><img src="assets/images/facebook.svg" alt="Facebook"></a>
+                          </li>
+                          <li>
+                              |
+                          </li>
+                          <li>
+                              <a href="#" title="Linked-In">
+                                 <img src="assets/images/linkedin.svg" alt="Linked">
+                              </a>
+                          </li>
+                          <li>
+                              |
+                          </li>
+                          <li>
+                              <a href="#" title="Playstore"><img src="assets/images/playstore.svg" alt="Playstore"></a>
+                          </li>
+                          <li>
+                              |
+                          </li>
+                          <li>
+                              <a href="#" title="Youtube"><img src="assets/images/youtube.svg" alt="youtube"></a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
           </div>
+        </footer>
+        <div class="chat-bot">
+          <img src="assets/images/FinzorBot1.gif" alt="chat-bot">
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- Footer -->
-  <footer class="footer_section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-12 col-12">
-          <div class="footer_logo">
-            <img src="./assets/images/finzor-logo.svg" alt="" title="Footer_logo">
-          </div>
-          <p>We blend cutting-edge technology with
-            Financial expertise to revolutionize the way businesses manage their finances. we focus on innovation as
-            well as security</p>
-          <div class="footer_num_email">
-            <a href="mailto:support@finzor.com" title="support@finzor.com">support@finzor.com</a>
-          </div>
-          <div class="footer_num_email">
-            <a href="tel:+91- 90566-27840" title="+91- 90566-27840">+91- 90566-27840</a>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-6 col-6">
-          <h5>Product</h5>
-          <ul>
-            <li>
-              <a href="#" title="Payment">Payment</a>
-            </li>
-            <li>
-              <a href="#" title="Payment pages">Payment pages</a>
-            </li>
-            <li>
-              <a href="#" title="Subscriptions">Subscriptions</a>
-            </li>
-            <li>
-              <a href="#" title="Invoices">Invoices</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-2 col-md-6 col-6">
-          <h5>Features</h5>
-          <ul>
-            <li>
-              <a href="#" title="Website Development">Website Development</a>
-            </li>
-            <li>
-              <a href="#" title="Application Development">Application Development</a>
-            </li>
-            <li>
-              <a href="#" title="Seamless checkout">Seamless checkout</a>
-            </li>
-            <li>
-              <a href="#" title="Customizable">Customizable</a>
-            </li>
-            <li>
-              <a href="#" title="Multiple Payment">Multiple Payment</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-2 col-md-6 col-6">
-          <h5>Services</h5>
-          <ul>
-            <li>
-              <a href="#" title="Payouts">Payouts</a>
-            </li>
-            <li>
-              <a href="#" title="Vendor Payments">Vendor Payments</a>
-            </li>
-            <li>
-              <a href="#" title="Payment Links">Payment Links</a>
-            </li>
-            <li>
-              <a href="#" title="Payment Gateway">Payment Gateway</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-2 col-md-6 col-6">
-          <h5>Support</h5>
-          <ul>
-            <li>
-              <a href="#" title="About us">About us</a>
-            </li>
-            <li>
-              <a href="#" title="Contact us">Contact us</a>
-            </li>
-            <li>
-              <a href="#" title="Carrers">Carrers</a>
-            </li>
-            <li>
-              <a href="#" title="FAQ’s">FAQ’s</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="copy_rights">
-        <div class="copy_rights_1">
-          <p>© <span id="year"></span> Finzor.All rights reserved</p>
-        </div>
-        <div class="copy_rights_1">
-          <ul>
-            <li>
-              <a href="#" title="Privacy Policy"> Privacy Policy </a>
-            </li>
-            <li>
-              |
-            </li>
-            <li>
-              <a href="#" title="Terms & Conditions">Terms & Conditions</a>
-            </li>
-          </ul>
-        </div>
-        <div class="copy_rights_1">
-          <ul>
-            <li>
-              <a href="#" title="Facebook"><img src="assets/images/facebook.svg" alt="Facebook"></a>
-            </li>
-            <li>
-              |
-            </li>
-            <li>
-              <a href="#" title="Linked-In">
-                <img src="assets/images/linkedin.svg" alt="Linked">
-              </a>
-            </li>
-            <li>
-              |
-            </li>
-            <li>
-              <a href="#" title="Twitter"><img src="assets/images/facebook.svg" alt="Facebook"></a>
-            </li>
-            <li>
-              |
-            </li>
-            <li>
-              <a href="#" title="Instagram"><img src="assets/images/instagram.svg" alt="Instagram"></a>
-            </li>
-            <li>
-              |
-            </li>
-            <li>
-              <a href="#" title="Playstore"><img src="assets/images/playstore.svg" alt="Playstore"></a>
-            </li>
-            <li>
-              |
-            </li>
-            <li>
-              <a href="#" title="Youtube"><img src="assets/images/youtube.svg" alt="youtube"></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </body>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <script>
+      // Page loader
+      $(function() {
+        function animationStart() {
+          $('#container').addClass('fin');
+        }
+        function resetAnimation() {
+          $('#container').removeClass('fin');
+          setTimeout(animationStart, 50); // Short delay to allow CSS to reset
+        }
+        // Start the animation immediately
+        animationStart();
+        // Total duration of the animation
+        const animationDuration = 7500; // 7.5 seconds
+        // Use setInterval to reset the animation after it finishes
+        setInterval(resetAnimation, animationDuration);
+      });
+      window.addEventListener('load', function () {
+        setTimeout(function () {
+          // Hide the loader and show the content
+          document.getElementById('loader').style.display = 'none';
+          document.getElementById('content').style.display = 'block';
+        }, 3000); // Wait for 3 seconds before showing content
+      });
+      $(document).ready(function () {
+        $("#owl-carousel").owlCarousel({
+          loop: true, /* Allows infinite scrolling */
+          margin: 32, /* Adds spacing between cards */
+          nav: true, /* Shows previous and next arrows */
+          dots: false,
+          autoplay: true,
+          smartSpeed: 1500,
+          navText: [
+          '<span class="custom-prev">PREV</span>', 
+          '<span class="custom-next">NEXT</span>'
+          ],
+          responsive: {
+          0: {
+            items: 1, /* Shows 1 card on small screens */
+          },
+          768: {
+            items: 2, /* Shows 2 cards on medium screens */
+          },
+          1024: {
+            items: 3, /* Shows 3 cards on large screens */
+          },
+          },
+        });
 
-</body>
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/gsap.min.js"></script>
-<script src="assets/js/ScrollTrigger.min.js"></script>
-<script src="assets/js/ScrollToPlugin.min.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/main.js"></script>
-<script>
-  $(document).ready(function () {
-    $("#owl-carousel").owlCarousel({
-      loop: true, /* Allows infinite scrolling */
-      margin: 32, /* Adds spacing between cards */
-      nav: true, /* Shows previous and next arrows */
-      dots: false,
-      autoplay: true,
-      smartSpeed: 1500,
-      navText: [
-        '<span class="custom-prev">PREV</span>',
-        '<span class="custom-next">NEXT</span>'
-      ],
-      responsive: {
-        0: {
-          items: 1, /* Shows 1 card on small screens */
-        },
-        768: {
-          items: 2, /* Shows 2 cards on medium screens */
-        },
-        1024: {
-          items: 3, /* Shows 3 cards on large screens */
-        },
-      },
-    });
+        $("#owl-logo").owlCarousel({
+          loop: true,  
+          margin: 90, 
+          nav: false,  
+          dots: false,
+          autoplay: true,
+          autoplayTimeout: 2000, // Set interval for auto-scrolling (in ms)
+          autoplayHoverPause: true,
+          smartSpeed: 1500,        // Smooth transition speed (in ms)
+          responsive: {
+          0: {
+            items: 1,  
+          },
+          768: {
+            items: 2, 
+          },
+          1024: {
+            items: 6, 
+          },
+          },
+        });
+      });
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.fromTo(".video_anim", 
+        { 
+          width: "30%", 
+          height: "30%",
+          scale: 1, // Initial scale
+          y: 0 // Initial vertical position
+        }, 
+        { 
+          width: "100vw", // Final width
+          height: "100vh", // Final height
+          scale: 1, // Keep the scale at 1 (default) if you adjust the width and height directly
+          y: "-10vh", // Center vertically within the viewport
+          transformOrigin: "center center", // Ensure scaling happens from the center
+          duration: 0.2, // Shorter duration for a faster animation
+          ease: "power2.inOut", // Smooth easing function
+          scrollTrigger: {
+            trigger: ".videos",
+            start: "top 100%",
+            end: "bottom bottom",
+            scrub: true, // Smooth animation
+          }
+        }
+      );
+      // Playstore
+      gsap.fromTo(".fz_playstore1", {
+          opacity: 0.5,
+          scale: 0.7,
+          rotateX: "10deg",
+          x: "-30vw",  // Start from the left side (off-screen)
+      }, {
+          opacity: 1,
+          scale: 1,
+          rotateX: "0deg",
+          x: "0vw",  // Move to its original position (center)
+          scrollTrigger: {
+              trigger: ".play_store_section",
+              start: "top bottom",      // Start when the section top reaches the bottom of the viewport
+              end: "bottom bottom-=10%",  // End when the section bottom is 10% before the bottom of the viewport
+              scrub: 1,                 // Sync the animation with the scroll position
+          }
+      });
+      gsap.fromTo(".fz_playstore2", {
+          opacity: 0.5,
+          scale: 0.7,
+          rotateX: "10deg",
+          x: "50vw",  // Start from the right side (off-screen)
+      }, {
+          opacity: 1,
+          scale: 1,
+          rotateX: "0deg",
+          x: "0vw",  // Move to its original position (center)
+          scrollTrigger: {
+              trigger: ".play_store_section",
+              start: "top bottom",      // Start when the section top reaches the bottom of the viewport
+              end: "bottom bottom-=10%",  // End when the section bottom is 10% before the bottom of the viewport
+              scrub: 1,                 // Sync the animation with the scroll position
+          }
+      });
+      // FAQ
+      TweenLite.fromTo("#accordionExample", {
+          opacity: 0.5,
+          scale: 0.7,
+          rotateX: "10deg",
+      }, {
+          opacity: 1,
+          scale: 1,
+          rotateX: "0deg",
+          scrollTrigger: {
+              trigger: "#accordionExample",
+              start: "top bottom",
+              end: "bottom bottom-=10%",
+              scrub: 1,
+          }
+      });
+      // Developers
+      gsap.fromTo(".fz_intergration", {
+          opacity: 0.5,
+          scale: 0.7,
+          rotateX: "10deg",
+          x: "-30vw",  // Start from the left side (off-screen)
+      }, {
+          opacity: 1,
+          scale: 1,
+          rotateX: "0deg",
+          x: "0vw",  // Move to its original position (center)
+          scrollTrigger: {
+              trigger: ".fz_intergration",
+              start: "top bottom",      // Start when the section top reaches the bottom of the viewport
+              end: "bottom bottom-=10%",  // End when the section bottom is 10% before the bottom of the viewport
+              scrub: 1,                 // Sync the animation with the scroll position
+          }
+      });
+      gsap.fromTo(".fz_api", {
+          opacity: 0.5,
+          scale: 0.7,
+          rotateX: "10deg",
+          x: "30vw",  // Start from the right side (off-screen)
+      }, {
+          opacity: 1,
+          scale: 1,
+          rotateX: "0deg",
+          x: "0vw",  // Move to its original position (center)
+          scrollTrigger: {
+              trigger: ".fz_api",
+              start: "top bottom",      // Start when the section top reaches the bottom of the viewport
+              end: "bottom bottom-=10%",  // End when the section bottom is 10% before the bottom of the viewport
+              scrub: 1,                 // Sync the animation with the scroll position
+          }
+      });
+      gsap.fromTo(".fz_webhook", {
+          opacity: 0.5,
+          scale: 0.7,
+          rotateX: "10deg",
+          x: "-30vw",  // Start from the left side (off-screen)
+      }, {
+          opacity: 1,
+          scale: 1,
+          rotateX: "0deg",
+          x: "0vw",  // Move to its original position (center)
+          scrollTrigger: {
+              trigger: ".fz_webhook",
+              start: "top bottom",      // Start when the section top reaches the bottom of the viewport
+              end: "bottom bottom-=10%",  // End when the section bottom is 10% before the bottom of the viewport
+              scrub: 1,                 // Sync the animation with the scroll position
+          }
+      });
+      
+      const codeLines = [
+        
+      `<section class="developer_section">`,
+          `<div class="container">`,
+             ` <div class="row">`,
+                  `<h3>Finzor is built </h3>`,
+                 ` <h5>for developers by developers</h5>`,
+                 ` <div class="col-lg-6">`,
+                     ` <div class="dev_left">`,
+                         
+                          `<div class="row">`,
+                              `<div class="col-lg-8">`,
+                                  `<div class="dev_card fz_intergration">`,
+                                      `<div class="dev_card_logo">`,
+                                          `<img src="./assets/images/integration.png" alt="">`,
+                                      `</div>`,
+                                      `<h4>Integrations</h4>`,
+                                      `<p>Find all popular platform SDKs, plugin, server integrations in our integration stack.</p>`,
+                                  `</div>`,
+                              `</div>`,
+                          `</div>`
+      //                     <div class="row dev_card_1">
+      //                         <div class="col-lg-8">
+      //                             <div class="dev_card fz_api">
+      //                                 <div class="dev_card_logo">
+      //                                   <img src="./assets/images/Api.png" alt="">
+      //                                 </div>
+      //                                 <h4>API Reference</h4>
+      //                                 <p>Comprehensive documentation to build powerful payment solutions.</p>
+      //                             </div>
+      //                         </div>
+      //                     </div>
+      //                     <div class="row">
+      //                         <div class="col-lg-8">
+      //                             <div class="dev_card fz_webhook">
+      //                                 <div class="dev_card_logo">
+      //                                   <img src="./assets/images/plug.png" alt="">
+      //                                  </div>
+      //                                 <h4>Webhooks</h4>
+      //                                 <p>Receive real-time notifications for all payment related transactions and events.</p>
+      //                             </div>
+      //                         </div>
+      //                     </div>
+      //                 </div>
+      //             </div>
+                  
+      //             <div class="col-lg-6" id="typingSection">
+      //               <div id="editor">
+      //                   <div id="typingEffect" class="code-container"></div>
+      //                   <ul>
+      //                       <li class="btn_1"></li>
+      //                       <li class="btn_2"></li>
+      //                       <li class="btn_3"></li>
+      //                   </ul>
+      //                   <span class="cursor"></span>
+      //               </div>
+      //           </div>
+      //         </div>
+             
+      //     </div>
+      //  </section>
+       
+      ];
 
-    $("#owl-logo").owlCarousel({
-      loop: true,
-      margin: 90,
-      nav: false,
-      dots: false,
-      autoplay: true,
-      autoplayTimeout: 2000, // Set interval for auto-scrolling (in ms)
-      autoplayHoverPause: true,
-      smartSpeed: 1500,        // Smooth transition speed (in ms)
-      responsive: {
-        0: {
-          items: 1,
-        },
-        768: {
-          items: 2,
-        },
-        1024: {
-          items: 6,
-        },
-      },
-    });
-  });
-  gsap.registerPlugin(ScrollTrigger);
-  gsap.fromTo(".video_anim",
-    {
-      width: "30%",
-      height: "30%",
-      scale: 1, // Initial scale
-      y: 0 // Initial vertical position
-    },
-    {
-      width: "100vw", // Final width
-      height: "100vh", // Final height
-      scale: 1, // Keep the scale at 1 (default) if you adjust the width and height directly
-      y: "-10vh", // Center vertically within the viewport
-      transformOrigin: "center center", // Ensure scaling happens from the center
-      duration: 0.2, // Shorter duration for a faster animation
-      ease: "power2.inOut", // Smooth easing function
-      scrollTrigger: {
-        trigger: ".videos",
-        start: "top 100%",
-        end: "bottom bottom",
-        scrub: true, // Smooth animation
+      const processingText = "Processing..."; // Text to show while 'processing'
+      const typingEffect = document.getElementById('typingEffect');
+      const cursor = document.querySelector('.cursor');
+
+      let lineIndex = 0;
+      let charIndex = 0;
+
+      // Typing function
+      function typeCode() {
+          if (lineIndex < codeLines.length) {
+              if (charIndex < codeLines[lineIndex].length) {
+                  typingEffect.innerHTML += codeLines[lineIndex][charIndex];
+                  charIndex++;
+                  setTimeout(typeCode, 50); // Adjust typing speed here
+              } else {
+                  typingEffect.innerHTML += '<br>'; // Add a new line after each line
+                  charIndex = 0; // Reset character index for the next line
+                  lineIndex++;
+
+                  // Add a "processing" pause after 3 lines
+                  if (lineIndex === 3) {
+                      showProcessing();
+                  } else {
+                      setTimeout(typeCode, 200); // Pause between lines
+                  }
+              }
+          } else {
+              setTimeout(resetTypingEffect, 1000); // Wait before restarting the typing effect
+          }
       }
-    }
-  );
-  // Playstore
-  gsap.fromTo(".fz_playstore1", {
-    opacity: 0.5,
-    scale: 0.7,
-    rotateX: "10deg",
-    x: "-30vw",  // Start from the left side (off-screen)
-  }, {
-    opacity: 1,
-    scale: 1,
-    rotateX: "0deg",
-    x: "0vw",  // Move to its original position (center)
-    scrollTrigger: {
-      trigger: ".play_store_section",
-      start: "top bottom",      // Start when the section top reaches the bottom of the viewport
-      end: "bottom bottom-=10%",  // End when the section bottom is 10% before the bottom of the viewport
-      scrub: 1,                 // Sync the animation with the scroll position
-    }
-  });
-  gsap.fromTo(".fz_playstore2", {
-    opacity: 0.5,
-    scale: 0.7,
-    rotateX: "10deg",
-    x: "50vw",  // Start from the right side (off-screen)
-  }, {
-    opacity: 1,
-    scale: 1,
-    rotateX: "0deg",
-    x: "0vw",  // Move to its original position (center)
-    scrollTrigger: {
-      trigger: ".play_store_section",
-      start: "top bottom",      // Start when the section top reaches the bottom of the viewport
-      end: "bottom bottom-=10%",  // End when the section bottom is 10% before the bottom of the viewport
-      scrub: 1,                 // Sync the animation with the scroll position
-    }
-  });
-  // FAQ
-  TweenLite.fromTo("#accordionExample", {
-    opacity: 0.5,
-    scale: 0.7,
-    rotateX: "10deg",
-  }, {
-    opacity: 1,
-    scale: 1,
-    rotateX: "0deg",
-    scrollTrigger: {
-      trigger: "#accordionExample",
-      start: "top bottom",
-      end: "bottom bottom-=10%",
-      scrub: 1,
-    }
-  });
-  // Playstore
-  gsap.fromTo(".fz_intergration", {
-    opacity: 0.5,
-    scale: 0.7,
-    rotateX: "10deg",
-    x: "-30vw",  // Start from the left side (off-screen)
-  }, {
-    opacity: 1,
-    scale: 1,
-    rotateX: "0deg",
-    x: "0vw",  // Move to its original position (center)
-    scrollTrigger: {
-      trigger: ".fz_intergration",
-      start: "top bottom",      // Start when the section top reaches the bottom of the viewport
-      end: "bottom bottom-=10%",  // End when the section bottom is 10% before the bottom of the viewport
-      scrub: 1,                 // Sync the animation with the scroll position
-    }
-  });
-  gsap.fromTo(".fz_api", {
-    opacity: 0.5,
-    scale: 0.7,
-    rotateX: "10deg",
-    x: "30vw",  // Start from the right side (off-screen)
-  }, {
-    opacity: 1,
-    scale: 1,
-    rotateX: "0deg",
-    x: "0vw",  // Move to its original position (center)
-    scrollTrigger: {
-      trigger: ".fz_api",
-      start: "top bottom",      // Start when the section top reaches the bottom of the viewport
-      end: "bottom bottom-=10%",  // End when the section bottom is 10% before the bottom of the viewport
-      scrub: 1,                 // Sync the animation with the scroll position
-    }
-  });
-  gsap.fromTo(".fz_webhook", {
-    opacity: 0.5,
-    scale: 0.7,
-    rotateX: "10deg",
-    x: "-30vw",  // Start from the left side (off-screen)
-  }, {
-    opacity: 1,
-    scale: 1,
-    rotateX: "0deg",
-    x: "0vw",  // Move to its original position (center)
-    scrollTrigger: {
-      trigger: ".fz_webhook",
-      start: "top bottom",      // Start when the section top reaches the bottom of the viewport
-      end: "bottom bottom-=10%",  // End when the section bottom is 10% before the bottom of the viewport
-      scrub: 1,                 // Sync the animation with the scroll position
-    }
-  });
 
-  const codeLines = [
-    `<span class="tag">&lt;section</span> <span class="attribute">class</span>="developer_section"<span class="tag">&gt;</span>`,
-    `    <span class="tag">&lt;div</span> <span class="attribute">class</span>="container"<span class="tag">&gt;</span>`,
-    `        <span class="tag">&lt;div</span> <span class="attribute">class</span>="row"<span class="tag">&gt;</span>`,
-    `            <span class="tag">&lt;h3&gt;</span>Finzor is built<span class="tag">&lt;/h3&gt;</span>`,
-    `            <span class="tag">&lt;h5&gt;</span>for developers by developers<span class="tag">&lt;/h5&gt;</span>`,
-    `            <span class="tag">&lt;div</span> <span class="attribute">class</span>="col-lg-6"<span class="tag">&gt;</span>`,
-    `                <span class="tag">&lt;div</span> <span class="attribute">class</span>="dev_left"<span class="tag">&gt;</span>`,
-    `                    <span class="tag">&lt;div</span> <span class="attribute">class</span>="row"<span class="tag">&gt;</span>`,
-    `                        <span class="tag">&lt;div</span> <span class="attribute">class</span>="col-lg-8"<span class="tag">&gt;</span>`,
-    `                            <span class="tag">&lt;div</span> <span class="attribute">class</span>="dev_card"<span class="tag">&gt;</span>`,
-    `                                <span class="tag">&lt;img</span> <span class="attribute">src</span>="./assets/images/facebook.svg" <span class="attribute">alt</span>=""<span class="tag">/&gt;</span>`,
-    `                                <span class="tag">&lt;h4&gt;</span>Integrations<span class="tag">&lt;/h4&gt;</span>`,
-    `                                <span class="tag">&lt;p&gt;</span>Find all popular platform SDKs, plugin, server integrations in our integration stack.<span class="tag">&lt;/p&gt;</span>`,
-    `                            <span class="tag">&lt;/div&gt;</span>`,
-    // `                        <span class="tag">&lt;/div&gt;</span>`,
-    // `                    <span class="tag">&lt;/div&gt;</span>`,
-    // `                <span class="tag">&lt;/div&gt;</span>`,
-    // `            <span class="tag">&lt;/div&gt;</span>`,
-    // `        <span class="tag">&lt;/div&gt;</span>`,
-    // `    <span class="tag">&lt;/div&gt;</span>`,
-    `<span class="tag">&lt;/section&gt;</span>`
-  ];
+      // Show "Processing..." text and pause typing
+      function showProcessing() {
+    cursor.style.display = 'none'; // Hide cursor temporarily
+    const processingSpan = document.createElement('span'); // Create a span for processing text
+    processingSpan.id = 'processingText';
+    processingSpan.innerText = 'Processing...';
+    typingEffect.appendChild(processingSpan); // Append the processing text directly
 
-  const typingEffect = document.getElementById('typingEffect');
-  const cursor = document.querySelector('.cursor');
+    setTimeout(() => {
+        // Remove "Processing..." text
+        processingSpan.remove();
+        cursor.style.display = 'inline-block'; // Show cursor again
+        typeCode(); // Resume typing
+    }, 2000); // Duration of "Processing..." message
+}
 
-  let lineIndex = 0;
-  let charIndex = 0;
-
-  function typeCode() {
-    if (lineIndex < codeLines.length) {
-      if (charIndex < codeLines[lineIndex].length) {
-        typingEffect.innerHTML += codeLines[lineIndex][charIndex];
-        charIndex++;
-        setTimeout(typeCode, 20); // Adjust speed here
-      } else {
-        typingEffect.innerHTML += '<br>';
-        charIndex = 0;
-        lineIndex++;
-        setTimeout(typeCode, 300); // Pause between lines
+      // Function to reset and restart the typing effect
+      function resetTypingEffect() {
+          typingEffect.innerHTML = ''; // Clear the content
+          lineIndex = 0; // Reset line index
+          charIndex = 0; // Reset character index
+          cursor.style.display = 'inline-block'; // Ensure the cursor is visible
+          typeCode(); // Restart the typing effect
       }
-    } else {
-      cursor.style.display = 'none'; // Hide cursor after typing is complete
+
+      // Start typing
+      typeCode();
+  </script>
+  
+   <style>
+    .chat-bot{
+      position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    display: inline-flex;
+    width: 100px;
+    z-index: 99;
     }
+    .chat-bot img {
+    width: 100%;
+    height: 100%;
+}
+    @media screen and (max-width: 1440px) {
+  .features_posibilityies .container .inner-text .left img {
+    height: 1200px;
   }
+}
+@media screen and (max-width: 1440px) {
+  .features_posibilityies .container .inner-text .right img {
+    height: 1150px;
+  }
+}
+.fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img img:last-child {
+  min-width: 70%;
+}
 
-  typeCode();
-</script>
+.fz-tab-card .animation {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+  </style>
 
+  
 </html>
