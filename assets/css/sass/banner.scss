@@ -1,4 +1,4 @@
-@import "./variable.scss";
+@import './variable.scss';
 #fz-hero-bg {
   position: relative;
   width: 100%;
@@ -10,7 +10,7 @@
   // z-index: 0;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 50%;
     left: 50%;
@@ -19,11 +19,7 @@
     height: 100vh;
     opacity: 30%;
     mix-blend-mode: hard-light;
-    background: radial-gradient(
-      49.19% 50% at 50% 50%,
-      #67cbaf 0%,
-      #364849 95.5%
-    );
+    background: radial-gradient(49.19% 50% at 50% 50%, #67CBAF 0%, #364849 95.5%);
     backdrop-filter: blur(137.73px);
     z-index: 2;
     pointer-events: none;
@@ -58,24 +54,38 @@
     color: $white;
     max-width: 100%;
     flex: 1;
-
+    @media screen and (max-width: 1440px) {
+      margin-top: -200px;
+    }
     h1 {
-      font-size: 60px;
-      line-height: 20px;
-      margin-bottom: 0px;
-      text-transform: capitalize;
-      span {
+      font-size: 65px;
+      font-weight: 600;
+      line-height: 0px;
+      margin-bottom: 80px;
         .text-line text {
           stroke-dasharray: 500;
           stroke-dashoffset: 500;
           animation: dash 5s linear infinite, filling 4s ease-in forwards;
         }
-
+        
         @keyframes dash {
           to {
             stroke-dashoffset: 0;
           }
         }
+        @media screen and (max-width: 1300px) {
+          font-size: 50px;
+          line-height: 0px;
+        }
+        @media screen and (max-width: 1190px) {
+          font-size: 40px;
+          line-height: 0px;
+        }
+        svg{
+          @media screen and (max-width: 1300px) {
+            width: 170px;
+            height: 150px;
+          }
       }
     }
 
@@ -109,8 +119,8 @@
     width: 140px;
     line-height: 21px;
     &:hover {
-      background: transparent;
-      border: 1px solid $primary-color;
+        background: transparent;
+        border: 1px solid $primary-color;
     }
   }
 
@@ -123,9 +133,9 @@
     width: 140px;
     line-height: 21px;
     &:hover {
-      background: $primary-color;
-      border: 1px solid transparent;
-      color: $white;
+        background: $primary-color;
+        border: 1px solid transparent;
+        color: $white;
     }
   }
 

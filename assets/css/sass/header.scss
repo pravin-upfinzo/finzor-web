@@ -16,7 +16,7 @@ header {
             li {
                 a.nav-link {
                     font-size: 16px;
-                    padding: 0 38px;
+                    padding: 0 20px;
                     color: $white;
                     position: relative;
                 }
@@ -46,6 +46,27 @@ header {
                         padding: 12px 20px;
                         border-radius: 5px;
                         border: 1px solid $white;
+                        --border-angle: 0turn;
+                        --main-bg: conic-gradient(
+                            from var(--border-angle),
+                            #1A2C2A 0%,  
+                            #1A2C2A 100%
+                            );
+                        border: solid 1px transparent;
+                        --gradient-border: conic-gradient(from var(--border-angle), transparent 50%, #F7C35F, #3EAB90 99%, transparent);
+                        background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+                        background-position: center center;
+                        animation: bg-spin 4s linear infinite;
+                        @keyframes bg-spin {
+                            to {
+                            --border-angle: 1turn;
+                            }
+                        }
+                    }
+                    @property --border-angle {
+                        syntax: "<angle>";
+                        inherits: true;
+                        initial-value: 0turn;
                     }
                 }
             }
