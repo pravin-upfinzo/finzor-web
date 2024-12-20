@@ -43,7 +43,7 @@
     }
     h2{
         font-size: 48px;
-        font-weight: bold;
+        font-weight: 400;
         text-transform: uppercase;
         line-height: 72px;
         text-align: left;
@@ -124,6 +124,7 @@
         .name-descripeion {
             position: relative;
             z-index: 9999;
+            font-weight: 600;
         }
         .btn-icon::after {
             content: "";

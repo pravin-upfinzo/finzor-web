@@ -11,4 +11,29 @@ $ternary-color: #2D4949;
     color: $white-color;
     border-radius: 32px;
     font-size: 16px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    svg {
+        animation: moveAnimation 2s linear infinite;
+    }
+}
+@mixin hero-join {
+    line-height: 1.5;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    bottom: -72%;
+    left: 35px;
+    flex-direction: column;
+    transition: bottom .5s;
+}
+@keyframes moveAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50%);
+    } 
 }

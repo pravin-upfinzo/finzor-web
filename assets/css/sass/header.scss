@@ -3,36 +3,119 @@ body {
     background-color: $bg-color;
 }
 header {
-    padding: 30px 40px;
+    padding: 0px 40px;
     position: absolute;
     top: 0;
     z-index: 9999;
     width: 100%;
+    background: #d6ca8a;
+    
+  @media (min-width: 993px) and (max-width: 1400px) {
+    padding:30px 15px;
+}
+
+
+@media screen and (max-width: 992px) {
+    padding: 15px 10px;
+    background-color: $primary-color;
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .navbar-toggler {
+        background-color: $white;
+      }
+
+      .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: $bg-color;
+        z-index: 999;
+        padding: 15px 0;
+        border-top: 1px solid $gray-color;
+
+        ul.navbar-nav {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 0;
+
+          li {
+            width: 100%;
+            text-align: left;
+
+            a {
+              display: block;
+              padding: 10px 20px;
+              color: $white;
+              font-size: 16px;
+              text-transform: capitalize;
+
+              &:hover {
+                background-color: $tertiary-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
     .navbar-expand-lg {
         .navbar-nav {
             flex: 1;
             justify-content: center;
+            padding:10px;
 
             li {
                 a.nav-link {
                     font-size: 16px;
                     padding: 0 20px;
-                    color: $white;
+                    color:#364849;
                     position: relative;
+                    transition: all 0.6s ease;
+                    &:hover {
+                      color: $white;
+                      }
+                    
+          @media (min-width: 993px) and (max-width: 1400px) {
+
+            padding: 0 12px;
+            font-size: 14px;
+ 
+   }
                 }
             }
         }
     }
     .fz_sigin {
+
+        @media screen and (max-width: 992px) {
+            width: 100%;
+          }
         ul {
             display: flex;
             align-items: center;
+
+            @media screen and (max-width: 992px) {
+                display: none;
+              }
             li {
                 display: inline-block;
                 a {
                     color: $white;
                     font-size: 16px;
                     text-decoration: none;
+
+                    
+          @media (min-width: 993px) and (max-width: 1400px) {
+
+            font-size: 14px;
+ 
+   }
                 }
                 &:nth-child(2) {
                     border-left: 1px solid $gray-color;
@@ -74,4 +157,37 @@ header {
     }
 }
 
+
+
+
+.offcanvas-header {
+  border-bottom: 1px solid #ddd;
+}
+
+// .offcanvas-body ul.navbar-nav {
+//   margin-bottom: 1rem;
+// }
+
+.fz_sigin ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.fz_sigin ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.fz_sigin ul li img {
+  max-width: 20px;
+}
+#offcanvasNavbar{
+  background-color: #000;
+}
+.btn-close{
+   background-color: white;
+}
 

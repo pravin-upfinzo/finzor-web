@@ -1,19 +1,27 @@
-ul, li {
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
-@import './header.scss';
-@import './banner.scss';
-@import './core.scss';
-@import './product_intro.scss';
-@import './features.scss';
-@import './product.scss';
-@import './developer.scss';
-@import './counter.scss';
-@import './blog.scss';
-@import './testimonial.scss';
-@import './faq.scss';
-@import './marquee.scss';
-@import './newsletter.scss';
-@import './playstore.scss';
-@import './footer.scss';
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+@import "./font.scss";
+@import "./header.scss";
+@import "./banner.scss";
+@import "./core.scss";
+@import "./product_intro.scss";
+@import "./features.scss";
+@import "./product.scss";
+@import "./developer.scss";
+@import "./counter.scss";
+@import "./blog.scss";
+@import "./testimonial.scss";
+@import "./faq.scss";
+@import "./marquee.scss";
+@import "./newsletter.scss";
+@import "./playstore.scss";
+@import "./rising-stars.scss";
+@import "./footer.scss";
