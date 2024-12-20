@@ -1,27 +1,105 @@
+@keyframes moveAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+}
 body {
   background-color: #000000;
 }
 
 header {
-  padding: 30px 40px;
+  padding: 0px 40px;
   position: absolute;
   top: 0;
   z-index: 9999;
   width: 100%;
+  background: #d6ca8a;
+}
+@media (min-width: 993px) and (max-width: 1400px) {
+  header {
+    padding: 30px 15px;
+  }
+}
+@media screen and (max-width: 992px) {
+  header {
+    padding: 15px 10px;
+    background-color: #3EAB90;
+  }
+  header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .navbar .navbar-toggler {
+    background-color: #ffffff;
+  }
+  header .navbar .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    z-index: 999;
+    padding: 15px 0;
+    border-top: 1px solid #979797;
+  }
+  header .navbar .navbar-collapse ul.navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+  header .navbar .navbar-collapse ul.navbar-nav li {
+    width: 100%;
+    text-align: left;
+  }
+  header .navbar .navbar-collapse ul.navbar-nav li a {
+    display: block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+  header .navbar .navbar-collapse ul.navbar-nav li a:hover {
+    background-color: #1A2C2A;
+  }
 }
 header .navbar-expand-lg .navbar-nav {
   flex: 1;
   justify-content: center;
+  padding: 10px;
 }
 header .navbar-expand-lg .navbar-nav li a.nav-link {
   font-size: 16px;
-  padding: 0 38px;
-  color: #ffffff;
+  padding: 0 20px;
+  color: #364849;
   position: relative;
+  transition: all 0.6s ease;
+}
+header .navbar-expand-lg .navbar-nav li a.nav-link:hover {
+  color: #ffffff;
+}
+@media (min-width: 993px) and (max-width: 1400px) {
+  header .navbar-expand-lg .navbar-nav li a.nav-link {
+    padding: 0 12px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .fz_sigin {
+    width: 100%;
+  }
 }
 header .fz_sigin ul {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 992px) {
+  header .fz_sigin ul {
+    display: none;
+  }
 }
 header .fz_sigin ul li {
   display: inline-block;
@@ -30,6 +108,11 @@ header .fz_sigin ul li a {
   color: #ffffff;
   font-size: 16px;
   text-decoration: none;
+}
+@media (min-width: 993px) and (max-width: 1400px) {
+  header .fz_sigin ul li a {
+    font-size: 14px;
+  }
 }
 header .fz_sigin ul li:nth-child(2) {
   border-left: 1px solid #979797;
@@ -44,4 +127,56 @@ header .fz_sigin ul li:last-child a {
   padding: 12px 20px;
   border-radius: 5px;
   border: 1px solid #ffffff;
+  --border-angle: 0turn;
+  --main-bg: conic-gradient(
+      from var(--border-angle),
+      #1A2C2A 0%,
+      #1A2C2A 100%
+      );
+  border: solid 1px transparent;
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 50%, #F7C35F, #3EAB90 99%, transparent);
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+  background-position: center center;
+  animation: bg-spin 4s linear infinite;
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+@property --border-angle {
+  header .fz_sigin ul li:last-child {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
+}
+
+.offcanvas-header {
+  border-bottom: 1px solid #ddd;
+}
+
+.fz_sigin ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.fz_sigin ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.fz_sigin ul li img {
+  max-width: 20px;
+}
+
+#offcanvasNavbar {
+  background-color: #000;
+}
+
+.btn-close {
+  background-color: white;
 }

@@ -12,6 +12,14 @@
   right: 30px;
   top: 50px;
 }
+@media screen and (max-width: 999px) {
+  .counter_section iframe {
+    position: relative;
+    top: 0;
+    width: 100%;
+    right: 0;
+  }
+}
 .counter_section .waves > use {
   animation: move-forever 2s -2s linear infinite;
 }
@@ -61,7 +69,7 @@
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #3eab90;
+  color: #3EAB90;
   text-align: center;
 }
 .counter_section p {
@@ -71,7 +79,7 @@
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #ffffff;
+  color: #FFFFFF;
   text-align: center;
 }
 @media screen and (max-width: 992px) {
@@ -86,20 +94,20 @@
 .counter_section #counter span {
   font-size: 24px;
   font-weight: 500;
-  line-height: 31.25px;
+  line-height: 60px;
   letter-spacing: 1px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  font-weight: 600;
-  color: #ffffff;
+  color: #FFFFFF;
+  padding-bottom: 20px;
 }
 .counter_section #counter .col-lg-3 {
   display: flex;
   justify-content: center;
   flex-direction: column;
   border-right: 1px solid;
-  border-color: -moz-linear-gradient(top, #ffffff, #3eab90);
+  border-color: -moz-linear-gradient(top, #FFFFFF, #3EAB90);
   position: relative;
 }
 .counter_section #counter .col-lg-3:last-child {
@@ -115,7 +123,7 @@
   right: 0; /* Position it to the right edge */
   width: 1.5px; /* Width of the border line */
   height: 100%; /* Full height */
-  background: linear-gradient(180deg, #3eab90 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #3EAB90 0%, #FFFFFF 100%);
 }
 @media screen and (max-width: 992px) {
   .counter_section #counter .col-lg-3::before {
@@ -125,16 +133,18 @@
 .counter_section #counter .count {
   flex: 1;
   text-align: center;
-  font-size: 70px;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 700;
   font-weight: bolder;
-  color: #ffffff;
-  background-image: linear-gradient(180deg, #ffffff 0%, #3eab90 100%);
+  color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF 0%, #3EAB90 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .counter_section #counter .count.percent_1:after {
-  content: "%";
+  content: "+";
   display: inline-block;
 }
 .counter_section #counter .count.m_letter:after {

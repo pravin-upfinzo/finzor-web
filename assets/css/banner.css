@@ -1,8 +1,23 @@
+@keyframes moveAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+}
 #fz-hero-bg {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
+}
+@media screen and (max-width: 991px) {
+  #fz-hero-bg {
+    padding: 130px 10px 40px 10px;
+    text-align: center;
+    height: auto;
+  }
 }
 #fz-hero-bg::before {
   content: "";
@@ -14,7 +29,7 @@
   height: 100vh;
   opacity: 30%;
   mix-blend-mode: hard-light;
-  background: radial-gradient(49.19% 50% at 50% 50%, #67cbaf 0%, #364849 95.5%);
+  background: radial-gradient(49.19% 50% at 50% 50%, #67CBAF 0%, #364849 95.5%);
   backdrop-filter: blur(137.73px);
   z-index: 2;
   pointer-events: none;
@@ -31,6 +46,12 @@
   height: 100%;
   display: flex;
 }
+@media screen and (max-width: 991px) {
+  #fz-hero-bg .container {
+    text-align: center;
+    display: block;
+  }
+}
 #fz-hero-bg .content-wrapper {
   display: flex;
   align-items: center;
@@ -45,12 +66,23 @@
   flex: 1;
 }
 #fz-hero-bg .text-content h1 {
-  font-size: 60px;
-  line-height: 20px;
-  margin-bottom: 0px;
-  text-transform: capitalize;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 0px;
+  margin-bottom: 40px;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  line-height: 70px;
 }
-#fz-hero-bg .text-content h1 span .text-line text {
+@media screen and (max-width: 991px) {
+  #fz-hero-bg .text-content h1 {
+    font-size: 40px;
+    justify-content: center;
+    line-height: 50px;
+  }
+}
+#fz-hero-bg .text-content h1 .text-line text {
   stroke-dasharray: 500;
   stroke-dashoffset: 500;
   animation: dash 5s linear infinite, filling 4s ease-in forwards;
@@ -60,41 +92,88 @@
     stroke-dashoffset: 0;
   }
 }
+@media screen and (max-width: 1300px) {
+  #fz-hero-bg .text-content h1 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  #fz-hero-bg .text-content h1 svg {
+    width: 170px;
+    height: auto;
+  }
+}
 #fz-hero-bg .text-content p {
-  font-size: 1rem;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 200;
   margin-bottom: 40px;
 }
-#fz-hero-bg .section-button-one {
+@media screen and (max-width: 1024px) {
+  #fz-hero-bg .text-content p {
+    margin-bottom: 20px;
+  }
+  #fz-hero-bg .text-content p .desktop-break {
+    display: none;
+  }
+}
+#fz-hero-bg .hero-section-button {
+  display: flex;
+}
+#fz-hero-bg .hero-section-button .section-button-one, #fz-hero-bg .hero-section-button .section-button-two {
+  padding: 15px 20px;
+  transition: all 0.3s ease-in;
+  width: 25%;
+  line-height: 21px;
+}
+#fz-hero-bg .hero-section-button .section-button-one .hero-join, #fz-hero-bg .hero-section-button .section-button-two .hero-join {
+  line-height: 1.5;
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  bottom: -72%;
+  left: 35px;
+  flex-direction: column;
+  transition: bottom 0.5s;
+}
+#fz-hero-bg .hero-section-button .section-button-one:hover .hero-join, #fz-hero-bg .hero-section-button .section-button-two:hover .hero-join {
+  bottom: 12px;
+}
+#fz-hero-bg .hero-section-button .section-button-one {
   background: #3EAB90;
   color: #ffffff;
   border-radius: 32px;
   font-size: 16px;
-  padding: 15px 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
   border: 1px solid transparent;
   margin-right: 20px;
-  transition: all 0.5s ease-in;
-  border-radius: 8px;
-  width: 140px;
-  line-height: 21px;
 }
-#fz-hero-bg .section-button-one:hover {
+#fz-hero-bg .hero-section-button .section-button-one svg {
+  animation: moveAnimation 2s linear infinite;
+}
+#fz-hero-bg .hero-section-button .section-button-one:hover {
   background: transparent;
   border: 1px solid #3EAB90;
 }
-#fz-hero-bg .section-button-two {
+#fz-hero-bg .hero-section-button .section-button-two {
   background: #000000;
   color: #3EAB90;
   border-radius: 32px;
   font-size: 16px;
-  padding: 15px 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
   border: 1px solid #3EAB90;
-  transition: all 0.3s ease-in;
-  border-radius: 8px;
-  width: 140px;
-  line-height: 21px;
 }
-#fz-hero-bg .section-button-two:hover {
+#fz-hero-bg .hero-section-button .section-button-two svg {
+  animation: moveAnimation 2s linear infinite;
+}
+#fz-hero-bg .hero-section-button .section-button-two:hover {
   background: #3EAB90;
   border: 1px solid transparent;
   color: #ffffff;
@@ -107,4 +186,98 @@
   height: 100%;
   max-width: 50%;
   position: relative;
+}
+
+.preload svg {
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.preload svg #p1 {
+  stroke-dasharray: 109px;
+  stroke-dashoffset: 109px;
+}
+
+.preload svg #p2 {
+  stroke-width: 1;
+  stroke-dasharray: 311px;
+  stroke-dashoffset: 311px;
+}
+
+.preload svg #p3 {
+  stroke-dasharray: 359px;
+  stroke-dashoffset: 359px;
+}
+
+.preload svg #p1, section.preload svg #p2, section.preload svg #p3 {
+  fill: transparent;
+  stroke: #000;
+  stroke-width: 1;
+  -webkit-animation-name: draw;
+  -moz-animation-name: draw;
+  -o-animation-name: draw;
+  animation-name: draw;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes draw {
+  95% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+    stroke: #000;
+  }
+  100% {
+    fill: #000;
+    stroke: transparent;
+  }
+}
+@-moz-keyframes draw {
+  95% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+    stroke: #000;
+  }
+  100% {
+    fill: #000;
+    stroke: transparent;
+  }
+}
+@-o-keyframes draw {
+  95% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+    stroke: #000;
+  }
+  100% {
+    fill: #000;
+    stroke: transparent;
+  }
+}
+@keyframes draw {
+  95% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+    stroke: #000;
+  }
+  100% {
+    fill: #000;
+    stroke: transparent;
+  }
 }

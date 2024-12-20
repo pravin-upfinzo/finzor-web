@@ -1,3 +1,11 @@
+@keyframes moveAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+}
 .features_posibilityies {
   padding: 0;
   background-color: #000 !important;
@@ -8,6 +16,11 @@
   overflow: hidden;
   height: 100vh;
 }
+@media screen and (max-width: 768px) {
+  .features_posibilityies {
+    height: auto;
+  }
+}
 .features_posibilityies .container {
   position: relative;
   text-align: center;
@@ -17,6 +30,11 @@
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .features_posibilityies .container {
+    width: 100%;
+  }
+}
 .features_posibilityies .container .texts {
   height: 100vh;
   width: 100%;
@@ -25,7 +43,12 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 100px;
+  top: 125px;
+}
+@media screen and (max-width: 1440px) {
+  .features_posibilityies .container .texts img {
+    height: 1100px;
+  }
 }
 .features_posibilityies .container .inner-text {
   position: absolute;
@@ -37,8 +60,17 @@
   align-items: center;
   justify-content: center;
 }
-.features_posibilityies .container .inner-text .left.left,
-.features_posibilityies .container .inner-text .right.left {
+@media screen and (max-width: 1440px) {
+  .features_posibilityies .container .inner-text .left img {
+    height: 1200px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .features_posibilityies .container .inner-text .right img {
+    height: 1150px;
+  }
+}
+.features_posibilityies .container .inner-text .left.left, .features_posibilityies .container .inner-text .right.left {
   text-align: right;
   display: inline-flex;
   align-items: center;
@@ -46,8 +78,7 @@
   margin: auto;
   position: relative;
 }
-.features_posibilityies .container .inner-text .left.right,
-.features_posibilityies .container .inner-text .right.right {
+.features_posibilityies .container .inner-text .left.right, .features_posibilityies .container .inner-text .right.right {
   text-align: left;
   display: inline-flex;
   align-items: center;
@@ -73,7 +104,24 @@
 }
 .features_posibilityies .container h3 {
   font-weight: 200;
-  font-size: 75px;
+  font-size: 65px;
   color: #ddd;
   text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+}
+.features_posibilityies .container h3 p {
+  width: 600px;
+  text-shadow: 0 0 15px rgba(0, 255, 227, 0.14), 0 0 20px rgba(0, 255, 227, 0.11), 0 0 40px rgba(0, 255, 203, 0.52), 0 0 10px rgba(0, 255, 211, 0.51);
+  color: #4dd0b1;
+}
+@media screen and (max-width: 768px) {
+  .features_posibilityies .container h3 p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .features_posibilityies .container h3 {
+    font-size: 40px;
+  }
 }

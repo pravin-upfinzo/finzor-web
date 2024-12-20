@@ -1,5 +1,21 @@
+@keyframes moveAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+}
+.fz_testimonial {
+  padding: 80px 0 0;
+}
 .fz_testimonial .fz_testimonial_top {
   padding-bottom: 50px;
+}
+@media screen and (max-width: 992px) {
+  .fz_testimonial .fz_testimonial_top {
+    text-align: center;
+  }
 }
 .fz_testimonial .fz_testimonial_top h2 {
   font-size: 48px;
@@ -9,7 +25,6 @@
   padding-bottom: 16px;
 }
 .fz_testimonial .fz_testimonial_top p {
-  width: 550px;
   font-size: 16px;
   font-weight: 600;
   line-height: 26px;

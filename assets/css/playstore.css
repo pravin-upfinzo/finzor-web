@@ -1,3 +1,11 @@
+@keyframes moveAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+}
 .play_store_section {
   background-color: #000000;
   padding: 20px 0px;
@@ -44,7 +52,7 @@
 }
 .play_store_section h2 {
   font-size: 48px;
-  font-weight: bold;
+  font-weight: 400;
   text-transform: uppercase;
   line-height: 72px;
   text-align: left;
@@ -70,6 +78,7 @@
 }
 .play_store_section .play_store_right {
   display: flex;
+  border-bottom-right-radius: 40px;
 }
 .play_store_section .play_store_right img {
   position: relative;
@@ -129,6 +138,7 @@
 .play_store_section .play_store_left .start_now_btn .name-descripeion {
   position: relative;
   z-index: 9999;
+  font-weight: 600;
 }
 .play_store_section .play_store_left .start_now_btn .btn-icon::after {
   content: "";

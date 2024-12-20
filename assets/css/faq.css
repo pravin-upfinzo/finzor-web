@@ -1,3 +1,11 @@
+@keyframes moveAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+}
 .faq_section {
   background-color: #000000;
   padding: 80px 0px;
@@ -36,17 +44,24 @@
 .faq_section .accordion-item .accordion-header .accordion-button {
   position: relative;
   top: 2px;
-  padding: 25px 42px;
+  padding: 10px 20px;
   background: #000000 !important;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
   line-height: 48px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #ffffff;
   border-radius: 16px !important;
+}
+@media screen and (max-width: 768px) {
+  .faq_section .accordion-item .accordion-header .accordion-button {
+    line-height: 24px;
+    padding: 14px 24px;
+    font-size: 16px;
+  }
 }
 .faq_section .accordion-item {
   margin-bottom: 20px;
@@ -55,11 +70,11 @@
   background-color: #000000 !important;
 }
 .faq_section .accordion-body {
-  font-size: 18px;
+  font-size: 14px;
   background-color: #000000;
   color: #ffffff;
   border-radius: 16px !important;
-  padding: 0px 43px 40px;
+  padding: 0px 20px 20px;
 }
 .faq_section .accordion-button:not(.collapsed) {
   box-shadow: none;
@@ -83,8 +98,13 @@
 .faq_section h3 {
   font-size: 40px;
   color: #3EAB90;
-  font-weight: 600;
-  padding-bottom: 50px;
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .faq_section h3 {
+    font-size: 35px;
+    padding-bottom: 25px;
+  }
 }
 @media screen and (max-width: 992px) {
   .faq_section h3 br {

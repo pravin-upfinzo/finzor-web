@@ -1,3 +1,11 @@
+@keyframes moveAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+}
 #fz_core_nexus {
   padding: 80px 0;
 }
@@ -8,18 +16,12 @@
   padding-top: 30px;
   --border-angle: 0turn;
   --main-bg: conic-gradient(
-    from var(--border-angle),
-    #1a2c2a 0%,
-    #1a2c2a 100%
-  );
+      from var(--border-angle),
+      #1A2C2A 0%,
+      #1A2C2A 100%
+      );
   border: solid 1px transparent;
-  --gradient-border: conic-gradient(
-    from var(--border-angle),
-    transparent 50%,
-    #f7c35f,
-    #3eab90 99%,
-    transparent
-  );
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 50%, #F7C35F, #3EAB90 99%, transparent);
   background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
   background-position: center center;
   animation: bg-spin 4s linear infinite;
@@ -41,16 +43,40 @@
   top: 35px;
   overflow: hidden;
 }
+@media (min-width: 992px) and (max-width: 1200px) {
+  #fz_core_nexus .fz_core_bg .fz_core_text {
+    width: 375px;
+    height: auto;
+  }
+}
 #fz_core_nexus .fz_core_bg .fz_core_text h3 {
   font-size: 32px;
   color: #ffffff;
+  font-weight: 700;
   line-height: 45px;
   padding: 50px 50px 0;
+}
+@media screen and (max-width: 991px) {
+  #fz_core_nexus .fz_core_bg .fz_core_text h3 {
+    font-size: 23px;
+    padding: 25px 25px 0;
+    line-height: 30px;
+  }
 }
 #fz_core_nexus .fz_core_bg .fz_core_text img {
   transform: rotate(8.5deg);
   position: relative;
   z-index: 1;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  #fz_core_nexus .fz_core_bg .fz_core_text img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  #fz_core_nexus .fz_core_bg .fz_core_text img {
+    width: 100%;
+  }
 }
 #fz_core_nexus .fz_core_bg .fz_core_text .fz_box div {
   position: absolute;
@@ -76,66 +102,171 @@
   animation: animate 10s linear infinite;
   background: #3EAB90;
 }
+@media screen and (max-width: 991px) {
+  #fz_core_nexus .fz_core_bg .fz_core_text {
+    width: 80%;
+    transform: none;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1400px) {
+  #fz_core_nexus .fz_core_bg {
+    width: 100%;
+  }
+}
 #fz_core_nexus .fz_core_text_right h2 {
   font-size: 36px;
   color: #ffffff;
+  font-weight: 700;
   line-height: 48px;
   margin-bottom: 35px;
+}
+@media screen and (max-width: 991px) {
+  #fz_core_nexus .fz_core_text_right h2 {
+    margin-top: 45px;
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
 }
 #fz_core_nexus .fz_core_text_right h5 {
   font-size: 24px;
   color: #ffffff;
+  font-weight: 600;
   line-height: 40px;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 991px) {
+  #fz_core_nexus .fz_core_text_right h5 {
+    margin-bottom: 25px;
+    line-height: 30px;
+  }
+}
 #fz_core_nexus .fz_core_text_right p {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   font-size: 16px;
+  font-weight: 300;
   color: #ffffff;
   line-height: 24px;
   margin-bottom: 48px;
 }
+@media screen and (max-width: 991px) {
+  #fz_core_nexus .fz_core_text_right p {
+    margin-bottom: 30px;
+    line-height: 22px;
+  }
+}
 #fz_core_nexus .fz_core_text_right p span {
   background-color: #2D4949;
   border-radius: 50%;
-  width: 43px;
   height: 43px;
-  display: inline-table;
-  text-align: center;
-  line-height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 25px;
+  min-width: 43px;
 }
 #fz_core_nexus .fz_core_text_right div {
   margin-left: 70px;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  #fz_core_nexus .fz_core_text_right div {
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  #fz_core_nexus .fz_core_text_right div {
+    margin-left: 0;
+    justify-content: center;
+  }
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore {
   background: #3EAB90;
   color: #ffffff;
   border-radius: 32px;
   font-size: 16px;
-  padding: 16px 60px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px 20px;
   border: 1px solid transparent;
   margin-right: 35px;
+  font-weight: 400;
   transition: all 0.5s ease-in;
+  width: 180px;
+}
+#fz_core_nexus .fz_core_text_right div .fz_learmore svg {
+  animation: moveAnimation 2s linear infinite;
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore:hover {
   background: transparent;
   border: 1px solid #3EAB90;
+}
+#fz_core_nexus .fz_core_text_right div .fz_learmore .hero-join {
+  line-height: 1.5;
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  bottom: -72%;
+  left: 35px;
+  flex-direction: column;
+  transition: bottom 0.5s;
+}
+#fz_core_nexus .fz_core_text_right div .fz_learmore:hover .hero-join {
+  bottom: 12px;
+}
+@media screen and (max-width: 992px) {
+  #fz_core_nexus .fz_core_text_right div .fz_learmore {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore_btn {
   background: #000000;
   color: #3EAB90;
   border-radius: 32px;
   font-size: 16px;
-  padding: 18px 60px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px 20px;
+  font-weight: 400;
   border: 1px solid #3EAB90;
   transition: all 0.3s ease-in;
+  width: 180px;
+}
+#fz_core_nexus .fz_core_text_right div .fz_learmore_btn svg {
+  animation: moveAnimation 2s linear infinite;
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore_btn:hover {
   background: #3EAB90;
   border: 1px solid transparent;
   color: #ffffff;
+}
+#fz_core_nexus .fz_core_text_right div .fz_learmore_btn .hero-join {
+  line-height: 1.5;
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  bottom: -72%;
+  left: 35px;
+  flex-direction: column;
+  transition: bottom 0.5s;
+}
+#fz_core_nexus .fz_core_text_right div .fz_learmore_btn:hover .hero-join {
+  bottom: 12px;
+}
+@media screen and (max-width: 992px) {
+  #fz_core_nexus .fz_core_text_right div .fz_learmore_btn {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
 }
 
 @keyframes animate {
