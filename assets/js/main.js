@@ -74,20 +74,22 @@ gsap.fromTo(
 
 // Aboutus
 TweenLite.fromTo(
-  ".fz_core_text img",
+  ".fz_core_text",
   {
     opacity: 0.5,
+    y: 200,
     scale: 0.7,
     rotateX: "10deg",
   },
   {
     opacity: 1,
+    y: 0,
     scale: 1,
     rotateX: "0deg",
     scrollTrigger: {
-      trigger: ".fz_core_text img",
+      trigger: ".fz_core_text",
       start: "top bottom",
-      end: "bottom bottom-=10%",
+      end: "bottom bottom",
       scrub: 1,
     },
   }
@@ -110,7 +112,7 @@ gsap.to(".typing_text", {
 let sections = gsap.utils.toArray(".fz_product_panel");
 let mobile_view = gsap.matchMedia();
 
-mobile_view.add("(min-width: 1200px)", () => {
+mobile_view.add("(min-width: 1201px)", () => {
   gsap.to(sections, {
     xPercent: -100 * (sections.length - 1),
     ease: "none",
