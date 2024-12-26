@@ -1390,6 +1390,38 @@ header .fz_sigin ul li:last-child a {
   background-size: 100% 300%;
   background: linear-gradient(rgb(0, 0, 0) 0%, rgb(18, 116, 117) 100%);
 }
+.fz_product_sec .fz_container .dot-nav-position-right {
+  position: absolute;
+  bottom: 18px;
+  z-index: 9999;
+}
+@media only screen and (max-width: 1200px) {
+  .fz_product_sec .fz_container .dot-nav-position-right {
+    display: none;
+  }
+}
+.fz_product_sec .fz_container .dot-nav-position-right .dot-nav {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.fz_product_sec .fz_container .dot-nav-position-right .dot-nav li {
+  list-style: none;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.fz_product_sec .fz_container .dot-nav-position-right .dot-nav li.is-active span {
+  background: gray;
+}
+.fz_product_sec .fz_container .dot-nav-position-right .dot-nav li span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
 .fz_product_sec .fz_container .fz_sub_container {
   display: flex;
   align-items: center;
@@ -1533,7 +1565,11 @@ header .fz_sigin ul li:last-child a {
     width: 100%;
   }
 }
-.fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img img:last-child, .fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img object:last-child, .fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img svg:last-child, .fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img embed:last-child, .fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img video:last-child {
+.fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img img:last-child,
+.fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img object:last-child,
+.fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img svg:last-child,
+.fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img embed:last-child,
+.fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img video:last-child {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1542,7 +1578,11 @@ header .fz_sigin ul li:last-child a {
   width: 75%;
 }
 @media only screen and (max-width: 1200px) {
-  .fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img img:last-child, .fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img object:last-child, .fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img svg:last-child, .fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img embed:last-child, .fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img video:last-child {
+  .fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img img:last-child,
+  .fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img object:last-child,
+  .fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img svg:last-child,
+  .fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img embed:last-child,
+  .fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img video:last-child {
     width: 100%;
     margin-top: 10px;
   }

@@ -79,6 +79,36 @@
       //   #003224
       // );
     }
+    .dot-nav-position-right {
+      position: absolute;
+      bottom: 18px;
+      z-index: 9999;
+      @media only screen and (max-width: 1200px) {
+        display: none;
+      }
+      .dot-nav {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        li {
+          list-style: none;
+          margin: 0 10px;
+          cursor: pointer;
+          &.is-active span {
+            background: gray;
+          }
+          span {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+          }
+        }
+      }
+    }
     .fz_sub_container {
       display: flex;
       align-items: center;
@@ -122,7 +152,6 @@
         //   z-index: -1;
         // }
         .fz_num {
-        
           h3 {
             line-height: 100px;
             font-size: 128px;
@@ -178,7 +207,7 @@
           overflow: hidden;
           display: flex;
           width: 180px;
-          &:hover{
+          &:hover {
             background-image: linear-gradient(180deg, #3eab90 0%, #003224 100%);
           }
           .hero-join {
@@ -216,13 +245,17 @@
               // height: 100%;
             }
           }
-          img, object,svg, embed, video {
+          img,
+          object,
+          svg,
+          embed,
+          video {
             &:last-child {
               position: absolute;
               left: 50%;
               top: 50%;
               transform: translate(-50%, -50%);
-              min-width:75%;
+              min-width: 75%;
               width: 75%;
 
               @media only screen and (max-width: 1200px) {
@@ -236,8 +269,6 @@
     }
   }
 }
-
-
 
 .bnt-glow a {
   position: relative;
@@ -258,10 +289,10 @@
 }
 
 .bnt-glow a:hover {
-color: #000;
-background-color: #1dc0dd;
-border-radius: 10px;
-box-shadow: 0 0 40px 10px #1dc0dd;
+  color: #000;
+  background-color: #1dc0dd;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 10px #1dc0dd;
 }
 
 .bnt-glow a::after {
@@ -278,5 +309,5 @@ box-shadow: 0 0 40px 10px #1dc0dd;
   transition: linear 0.3s;
 }
 .bnt-glow a:hover::after {
-opacity: 1;
+  opacity: 1;
 }

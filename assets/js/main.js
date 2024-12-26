@@ -95,43 +95,69 @@ TweenLite.fromTo(
   }
 );
 // product intro
-let textElem = document.querySelector('.text')
+let textElem = document.querySelector(".text");
 gsap.to(".typing_text", {
   text: {
-    value: textElem.innerText
+    value: textElem.innerText,
   },
   scrollTrigger: {
     trigger: ".dd",
     start: "bottom bottom",
     end: "center center",
     scrub: 1,
-    markers: false
-  }
+    markers: false,
+  },
 });
 // Product
 let sections = gsap.utils.toArray(".fz_product_panel");
 let mobile_view = gsap.matchMedia();
+const numSections = sections.length - 1;
+const snapVal = 1 / numSections;
+let lastIndex = 0;
+const navLis = document.querySelectorAll("#panels-container nav li");
 
-mobile_view.add("(min-width: 1201px)", () => {
-  gsap.to(sections, {
-    xPercent: -100 * (sections.length - 1),
+mobile_view.add("(min-width: 1200px)", () => {
+  let tween = gsap.to(sections, {
+    xPercent: -100 * numSections,
     ease: "none",
     scrollTrigger: {
       trigger: ".panels-container",
       pin: true,
-      scrub: 2,
-      // snap: {
-      //   snapTo: 1 / (sections.length - 1),
-      //   duration: { min: 0.1, max: 3 },
-      // },
+      scrub: true,
       snap: (progress) => {
         // Custom starting snap position
         if (progress < 0.1) return 0; // Start from the first panel
-        return Math.round(progress * (sections.length - 1)) / (sections.length - 1);
-        },
+        return Math.round(progress * numSections) / numSections;
+      },
+      // snap: {
+      //   snapTo: snapVal,
+      //   duration: { min: 0.1, max: 3 },
+      // },
       end: () =>
-        "+=" + document.querySelector("#panels-container").offsetWidth * 2,
+        "+=" +
+        document.querySelector("#panels-container").offsetWidth * numSections,
+      onUpdate: (self) => {
+        const newIndex = Math.round(self.progress / snapVal);
+        if (newIndex !== lastIndex) {
+          navLis[lastIndex].classList.remove("is-active");
+          navLis[newIndex].classList.add("is-active");
+          lastIndex = newIndex;
+        }
+      },
     },
+  });
+  navLis.forEach((anchor, i) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      gsap.to(window, {
+        scrollTo: {
+          y: tween.scrollTrigger.start + i * innerWidth,
+          autoKill: false,
+        },
+        duration: 1,
+        ease: "power2.inOut",
+      });
+    });
   });
 });
 
