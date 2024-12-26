@@ -49,31 +49,18 @@
             width: 600px;
             position: relative;
         }
-        /* #containers {
-            width: 600px;
-            position: relative;
-        } */
-        #fz-hero-bg .text-content h1{
+       
+        /* #fz-hero-bg .text-content h1{
           display: inline-flex;
           flex-direction: row;
           flex-wrap: wrap;
           line-height: 70px;
-         }
-        em#containers {
-          width: 220px;
-          display: inline-flex;
-          margin-left: 20px;
-          margin-top: 0px;
-      }
+         } */
+       
       @media screen and (max-width: 991px) {
   #fz-hero-bg .text-content h1 {
     line-height: 50px;
     font-size: 2rem; 
-  }
-
-  em#containers {
-    max-width: 180px; 
-    margin-left: 15px;
   }
 }
 
@@ -97,17 +84,6 @@
             stroke-dashoffset: 1850;
             transition: stroke-dashoffset 5s linear;
         }
-        #containers path{
-          stroke:#F7C35F;
-          stroke-width: 0.5px;
-          stroke-linecap: round;
-            stroke-linejoin: round;
-        }
-        #containers .path-11 {
-            stroke-dasharray: 850;
-            stroke-dashoffset: 1850;
-            transition: stroke-dashoffset 5s linear;
-        }
         .path-2 {
             stroke-dasharray: 260;
             stroke-dashoffset: 260;
@@ -125,10 +101,7 @@
         #container.fin .path-1 {
             stroke-dashoffset: 0;
         }
-        #containers.fin .path-11 {
-            stroke-dashoffset: 0;
-            /* transition: stroke-dashoffset 5s linear; */
-        }
+      
         #container.fin .path-2 {
             stroke-dashoffset: 0;
         }
@@ -137,6 +110,36 @@
         }
         #container.fin .path-4 {
             stroke-width: 5px;
+        }
+
+
+
+
+        .text-line1 {
+          width: auto;
+          height: 55px;
+        }       
+        /* Animation Setup */
+        .text-line1 .path {
+          stroke-dasharray: 1000; /* Large number to ensure path length is enough */
+          stroke-dashoffset: 1000;
+          animation: draws 8s ease forwards;
+          animation-iteration-count: infinite;
+        }
+
+        /* Staggered Animation */
+        .text-line1 .path {
+          animation-delay: 1s;
+          fill: none;
+            stroke: #f7c35f;
+            stroke-width: 0.5;
+        }
+        
+        /* Keyframes for Animation */
+        @keyframes draws {
+          to {
+            stroke-dashoffset: 0; /* Animate to reveal the path */
+          }
         }
         </style>
     </head>
@@ -269,21 +272,18 @@
                   <div class="text-content">
                     <h1>
                       <span>The Zor of</span>
-                      <em id="containers" >
-                        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 117 28" class="text-line" >
-                        <path class="path path-11" d="M25.2305 4.44458H28.9874V22.3713H25.2305V4.44458Z" />
-                        <path class="path path-11" d="M32.5156 4.44458H36.3745L42.3907 15.8409H42.4416V4.44458H46.1986V22.3713H42.3397L36.3236 10.975H36.2726V22.3713H32.5156V4.44458Z" />
-                        <path class="path path-11" d="M14.0527 17.1033L12.5177 19.9882C12.5177 19.9882 12.515 19.9934 12.5136 19.9954C12.5018 20.0181 12.4905 20.0407 12.4778 20.0634C12.4778 20.0634 12.4778 20.0639 12.4778 20.0644C12.1024 20.7479 11.4346 21.2032 10.673 21.2032H5.2565L2.91363 25.6065L2.87464 25.6802C2.27578 26.7742 1.2136 27.5076 0 27.5267L5.54482 17.1038L14.0527 17.1033Z" />
-                        <path class="path path-11" d="M14.9512 15.4135L14.2975 16.6425H5.78965L6.04261 16.1665L6.06981 16.1156C6.30192 15.6942 6.71492 15.414 7.18503 15.414L14.9512 15.4135Z"/>
-                        <path class="path path-11" d="M20.5834 4.8311L16.5773 12.3603C16.5664 12.3809 16.556 12.402 16.5446 12.4226C16.1706 13.1128 15.4992 13.5733 14.7331 13.5733H7.42384L10.4585 7.86999C11.4359 6.04768 13.2012 4.8311 15.2163 4.8311H20.5834Z" />
-                        <path class="path path-11" d="M23.152 0L23.1325 0.0365696C22.1465 1.81148 20.4048 2.99098 18.4205 2.99098H14.301C12.2945 2.99098 10.5355 4.19727 9.55586 6.00669L1.47051 21.2027V16.479C1.47595 15.744 1.66001 15.0569 1.97599 14.4713L1.98098 14.462L7.02803 4.97553C8.60294 1.99485 11.4758 0 14.7584 0H23.152Z" />
-                        <path class="path path-11" d="M63.743 4.74799V8.30999H58.907V23H54.461V8.30999H49.625V4.74799H63.743Z"/>
-                        <path class="path path-11" d="M79.8594 13.848C79.8594 12.0453 80.2494 10.442 81.0294 9.03798C81.8094 7.61665 82.8927 6.51598 84.2794 5.73598C85.6834 4.93864 87.2694 4.53998 89.0374 4.53998C91.204 4.53998 93.0587 5.11198 94.6014 6.25598C96.144 7.39998 97.1754 8.95998 97.6954 10.936H92.8074C92.4434 10.1733 91.9234 9.59265 91.2474 9.19398C90.5887 8.79531 89.8347 8.59598 88.9854 8.59598C87.616 8.59598 86.5067 9.07264 85.6574 10.026C84.808 10.9793 84.3834 12.2533 84.3834 13.848C84.3834 15.4426 84.808 16.7166 85.6574 17.67C86.5067 18.6233 87.616 19.1 88.9854 19.1C89.8347 19.1 90.5887 18.9006 91.2474 18.502C91.9234 18.1033 92.4434 17.5226 92.8074 16.76H97.6954C97.1754 18.736 96.144 20.296 94.6014 21.44C93.0587 22.5666 91.204 23.13 89.0374 23.13C87.2694 23.13 85.6834 22.74 84.2794 21.96C82.8927 21.1626 81.8094 20.062 81.0294 18.658C80.2494 17.254 79.8594 15.6506 79.8594 13.848Z" />
-                        <path class="path path-11" d="M116.421 4.74799V23H111.975V15.486H105.059V23H100.613V4.74799H105.059V11.898H111.975V4.74799H116.421Z"/>
-                        <path class="path path-11" d="M71.0593 8.30999V12.002H77.0133V15.434H71.0593V19.438H77.7933V23H66.6133V4.74799H77.7933V8.30999H71.0593Z" />
-                       
-                        </svg>
-                      </em>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117 28" class="text-line1">
+                        <path class="path" d="M25.2305 4.44458H28.9874V22.3713H25.2305V4.44458Z"></path>
+                        <path class="path" d="M32.5156 4.44458H36.3745L42.3907 15.8409H42.4416V4.44458H46.1986V22.3713H42.3397L36.3236 10.975H36.2726V22.3713H32.5156V4.44458Z"></path>
+                        <path class="path" d="M14.0527 17.1033L12.5177 19.9882C12.5177 19.9882 12.515 19.9934 12.5136 19.9954C12.5018 20.0181 12.4905 20.0407 12.4778 20.0634C12.4778 20.0634 12.4778 20.0639 12.4778 20.0644C12.1024 20.7479 11.4346 21.2032 10.673 21.2032H5.2565L2.91363 25.6065L2.87464 25.6802C2.27578 26.7742 1.2136 27.5076 0 27.5267L5.54482 17.1038L14.0527 17.1033Z"></path>
+                        <path class="path" d="M14.9512 15.4135L14.2975 16.6425H5.78965L6.04261 16.1665L6.06981 16.1156C6.30192 15.6942 6.71492 15.414 7.18503 15.414L14.9512 15.4135Z"></path>
+                        <path class="path" d="M20.5834 4.8311L16.5773 12.3603C16.5664 12.3809 16.556 12.402 16.5446 12.4226C16.1706 13.1128 15.4992 13.5733 14.7331 13.5733H7.42384L10.4585 7.86999C11.4359 6.04768 13.2012 4.8311 15.2163 4.8311H20.5834Z"></path>
+                        <path class="path" d="M23.152 0L23.1325 0.0365696C22.1465 1.81148 20.4048 2.99098 18.4205 2.99098H14.301C12.2945 2.99098 10.5355 4.19727 9.55586 6.00669L1.47051 21.2027V16.479C1.47595 15.744 1.66001 15.0569 1.97599 14.4713L1.98098 14.462L7.02803 4.97553C8.60294 1.99485 11.4758 0 14.7584 0H23.152Z"></path>
+                        <path class="path" d="M63.743 4.74799V8.30999H58.907V23H54.461V8.30999H49.625V4.74799H63.743Z"></path>
+                        <path class="path" d="M79.8594 13.848C79.8594 12.0453 80.2494 10.442 81.0294 9.03798C81.8094 7.61665 82.8927 6.51598 84.2794 5.73598C85.6834 4.93864 87.2694 4.53998 89.0374 4.53998C91.204 4.53998 93.0587 5.11198 94.6014 6.25598C96.144 7.39998 97.1754 8.95998 97.6954 10.936H92.8074C92.4434 10.1733 91.9234 9.59265 91.2474 9.19398C90.5887 8.79531 89.8347 8.59598 88.9854 8.59598C87.616 8.59598 86.5067 9.07264 85.6574 10.026C84.808 10.9793 84.3834 12.2533 84.3834 13.848C84.3834 15.4426 84.808 16.7166 85.6574 17.67C86.5067 18.6233 87.616 19.1 88.9854 19.1C89.8347 19.1 90.5887 18.9006 91.2474 18.502C91.9234 18.1033 92.4434 17.5226 92.8074 16.76H97.6954C97.1754 18.736 96.144 20.296 94.6014 21.44C93.0587 22.5666 91.204 23.13 89.0374 23.13C87.2694 23.13 85.6834 22.74 84.2794 21.96C82.8927 21.1626 81.8094 20.062 81.0294 18.658C80.2494 17.254 79.8594 15.6506 79.8594 13.848Z"></path>
+                        <path class="path" d="M116.421 4.74799V23H111.975V15.486H105.059V23H100.613V4.74799H105.059V11.898H111.975V4.74799H116.421Z"></path>
+                        <path class="path" d="M71.0593 8.30999V12.002H77.0133V15.434H71.0593V19.438H77.7933V23H66.6133V4.74799H77.7933V8.30999H71.0593Z"></path>
+                      </svg>
                       <!-- <svg stroke="#F7C35F" stroke-width="2" class="text-line">
                       <text x="0" y="90" fill="none">Fintech</text>
                     </svg> -->
@@ -1480,36 +1480,36 @@
                       <h5>Product</h5>
                       <ul>
                           <li>
-                              <a href="#" title="Payment">Payment</a>
+                              <a href="#" title="FinbankZ">FinbankZ</a>
                           </li>
                           <li>
-                              <a href="#" title="Payment pages">Payment pages</a>
+                              <a href="#" title="UPIZor">UPIZor</a>
                           </li>
                           <li>
-                              <a href="#" title="Subscriptions">Subscriptions</a>
+                              <a href="#" title="FinOps360">FinOps360</a>
                           </li>
                           <li>
-                              <a href="#" title="Invoices">Invoices</a>
+                              <a href="#" title="FinZro">FinZro</a>
                           </li>
+                          <li>
+                            <a href="#" title="FinlyticZ">FinlyticZ</a>
+                        </li>
                       </ul>
                   </div>
                   <div class="col-lg-2 col-md-6 col-12">
                       <h5>Features</h5>
                       <ul>
                           <li>
-                              <a href="#" title="Website Development">Website Development</a>
+                              <a href="#" title="Website Development">Core Banking Features</a>
                           </li>
                           <li>
-                              <a href="#" title="Application Development">Application Development</a>
+                              <a href="#" title="Application Development">Payment Gateways</a>
                           </li>
                           <li>
-                              <a href="#" title="Seamless checkout">Seamless checkout</a>
+                              <a href="#" title="Seamless checkout">Neo Banking</a>
                           </li>
                           <li>
-                              <a href="#" title="Customizable">Customizable</a>
-                          </li>
-                          <li>
-                              <a href="#" title="Multiple Payment">Multiple Payment</a>
+                              <a href="#" title="Customizable">UPI</a>
                           </li>
                       </ul>
                   </div>
@@ -1648,22 +1648,6 @@
         }
         function resetAnimation() {
           $('#container').removeClass('fin');
-          setTimeout(animationStart, 50); // Short delay to allow CSS to reset
-        }
-        // Start the animation immediately
-        animationStart();
-        // Total duration of the animation
-        const animationDuration = 7500; // 7.5 seconds
-        // Use setInterval to reset the animation after it finishes
-        setInterval(resetAnimation, animationDuration);
-      });
-      $(function() {
-        function animationStart() {
-          $('#containers').addClass('fin');
-
-        }
-        function resetAnimation() {
-          $('#containers').removeClass('fin');
           setTimeout(animationStart, 50); // Short delay to allow CSS to reset
         }
         // Start the animation immediately
@@ -1997,7 +1981,7 @@ const editor = CodeMirror.fromTextArea(document.getElementById('code'), {
     bottom: 0px;
     cursor: pointer;
     display: inline-flex;
-    width: 100px;
+    width: 70px;
     z-index: 99;
     }
     .chat-bot img {
