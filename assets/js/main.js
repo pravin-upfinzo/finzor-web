@@ -130,7 +130,7 @@ mobile_view.add("(min-width: 1201px)", () => {
         return Math.round(progress * (sections.length - 1)) / (sections.length - 1);
         },
       end: () =>
-        "+=" + document.querySelector("#panels-container").offsetWidth * 8,
+        "+=" + document.querySelector("#panels-container").offsetWidth * 2,
     },
   });
 });
