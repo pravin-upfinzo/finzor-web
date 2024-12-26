@@ -2,8 +2,8 @@
 .newsletter_section{
     background-color: $black;
     text-align: center;
-    padding: 90px 0px 0;
-    @media screen and (max-width:992px) {
+    padding:0px 0px 0;
+    @media screen and (max-width:991px) {
         padding-bottom: 30px;
        }
     h3{
@@ -12,9 +12,9 @@
         font-weight: 500;
         line-height: 70.31px;
         margin-bottom: 0px;
-        @media screen and (max-width:992px) {
-          font-size: 50px;
-          line-height: 55px;
+        @media screen and (max-width:991px) {
+          font-size: 35px;
+          line-height: 42px;
          }
     }
     h5{
@@ -25,7 +25,7 @@
     text-align: center;
     margin-bottom: 0px;
     padding-top: 15px;
-    @media screen and (max-width:992px) {
+    @media screen and (max-width:991px) {
       font-size: 30px;
       line-height: 40px;
      }
@@ -40,7 +40,7 @@
     margin: 0 auto;
     margin-top: 72px;
     border: none;
-    @media screen and (max-width:992px) {
+    @media screen and (max-width:991px) {
       width: auto;
       margin-top: 40px;
     }
@@ -51,9 +51,13 @@
         gap: 0px;
         border-radius: 0px 8px 8px 0px;
         opacity: 0px;
-        @media screen and (max-width:992px) {
+        @media screen and (max-width:991px) {
             width: auto;
+            font-size: 16px;
           }
+    }
+    .form-control{
+      font-size: 16px;
     }
     }
 }

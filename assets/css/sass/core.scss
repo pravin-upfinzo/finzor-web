@@ -149,6 +149,8 @@
             @media screen and (max-width:991px) {
                 margin-bottom: 30px;
                 line-height: 22px;
+                font-size: 14px;
+                align-items: start;
                
             }
             span {
@@ -168,17 +170,10 @@
             align-items:center;
 
                     
-            @media (min-width: 993px) and (max-width: 1200px) {
+            @media (max-width: 1400px) {
                 margin-left: 0;
                 justify-content: center;
-}
-
-
-@media screen and (max-width:992px) {
-    margin-left: 0;
-    justify-content: center;
-   
- }
+            }
             .fz_learmore {
                 @include primaryBg;
                 padding: 15px 20px;
@@ -200,9 +195,10 @@
                     }
                   }
 
-                @media screen and (max-width:992px) {
-                    padding:10px 30px;
+                @media screen and (max-width:1300px) {
+                    padding: 13px 20px;
                     font-size: 14px;
+                    margin-right: 24px;
                   }
             }
             .fz_learmore_btn {
@@ -226,8 +222,8 @@
                     }
                   }
 
-                @media screen and (max-width:992px) {
-                    padding:10px 30px;
+                @media screen and (max-width:1300px) {
+                    padding: 13px 20px;
                     font-size: 14px;
                   }
             }

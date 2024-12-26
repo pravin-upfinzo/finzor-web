@@ -2,12 +2,15 @@
 .faq_section{
     background-color: $black;
     padding: 80px 0px;
-    @media screen and (max-width:992px) {
+    @media screen and (max-width:991px) {
       padding: 60px 0px;
     }
-    @media screen and (max-width:992px) {
+    @media screen and (max-width:991px) {
       .faq_header{
         text-align: center;
+        video {
+          width: 100%;
+        }
       }
     }
     
@@ -97,7 +100,7 @@
         padding-bottom: 25px;
       }
        br{
-        @media screen and (max-width:992px) {
+        @media screen and (max-width:991px) {
           display: none;
         }
       }

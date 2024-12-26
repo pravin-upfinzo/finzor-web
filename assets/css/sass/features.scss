@@ -56,6 +56,8 @@
     @media screen and (max-width: 1199px) {
       grid-area:unset;
       position: unset;
+      margin-top: 20px;
+      padding:1.5rem;
       height: auto !important;
       width: 100%;
      
@@ -214,6 +216,9 @@
     padding-top: 80px !important;
     position: relative;
     z-index: 9;
+    @media screen and (max-width: 767px) {
+      padding-top: 20px !important;
+    }
     .panel__options {
         display: flex;
         justify-content: center;
@@ -240,6 +245,10 @@
                 font-weight: 600;
                 line-height: 32px;
                 margin-bottom: 30px;
+                @media screen and (max-width: 991px) {
+                  font-size: 30px;
+                  line-height: 36px;
+                }
             }
             .nav.nav-pills {
                 border-bottom: 1px solid $white;

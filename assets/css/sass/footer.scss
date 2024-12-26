@@ -8,8 +8,8 @@
     }
     .col-lg-4 {
         .footer_logo{
-            width: 135px;
-            height: 40px;
+            width: 150px;
+            height: 50px;
 
             @media screen and (max-width:992px) {
                 margin: 0 auto;
@@ -24,8 +24,8 @@
             color: $white;
             padding: 20px 0px 10px;
             font-weight: 400;
-            font-size: 16px;
-            @media screen and (max-width:992px) {
+            font-size: 14px;
+            @media screen and (max-width:991px) {
                 text-align: center;
             }
         }
@@ -33,10 +33,10 @@
             color: $white;
             text-decoration: none;
             padding-top: 10px;
-            font-size: 17px;
-            line-height: 19px;
+            font-size: 14px;
+            line-height: 22px;
             font-weight: 400;
-            @media screen and (max-width:992px) {
+            @media screen and (max-width:991px) {
                 text-align: center;
                 display: inline-block;
                 width: 100%;
@@ -46,7 +46,7 @@
             }
         }
         .footer_num_email{
-            @media screen and (max-width:992px) {
+            @media screen and (max-width:991px) {
                 padding-top: 5px;
                 padding-bottom: 10px;
             }
@@ -61,8 +61,10 @@
         font-size: 22px;
         line-height: 24px;
         font-weight: 500;
-        @media screen and (max-width:992px) {
-          padding-top: 20px;
+        padding-bottom: 20px;
+        @media screen and (max-width:991px) {
+            padding-top: 20px;
+            padding-bottom: 0px;
         }
     }
     ul{
@@ -71,28 +73,33 @@
         list-style-type: none;
     }
     li{
-        padding: 10px 0px;
+        padding: 5px 0px;
+        @media screen and (max-width: 991px) {
+            padding: 0px;
+          }
         a{
             color: $white;
-            font-size: 17px;
+            font-size: 14px;
             font-weight: 400;
-            line-height: 36px;
+            line-height: 22px;
             text-decoration: none;
-            transition: all 0.6s ease;
+            transition: all 0.5s ease;
                     &:hover {
+                        margin-left: 4px;
                       color: $secondary-color;
-                      }
+                    }
         }
     }
     .copy_rights{
         display: flex;
         justify-content: space-between;
-        padding: 80px 0px 70px;
+        padding: 60px 0px;
         align-items: center;
         .copy_rights_1{
             color: $white;
             p{
                 margin: 0;
+                font-size: 14px;
             }
             ul{
                 li{
@@ -114,9 +121,20 @@
                     }
                 }
             }
+            &:nth-child(2),  &:nth-child(3) {
+                ul {
+                    li {
+                        a {
+                            &:hover{
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
-    @media screen and (max-width:992px) {
+    @media screen and (max-width:991px) {
         .copy_rights{
             flex-direction: column;
             text-align: center;
@@ -131,5 +149,55 @@
 }
 
 
-
-
+/* =======scroll====top===== */
+#scroll_top {
+	display: inline-block;
+	background-color: #3EAB90;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 100px;
+	right: 30px;
+	transition: background-color .3s,
+		opacity .5s, visibility .5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&::after {
+		display: none;
+	}
+	.black_arrow{
+		display: none;
+	  }
+	&:hover {
+		cursor: pointer;
+		background-color: #FFFFFF;
+		border: 2px solid #3EAB90;
+		.black_arrow{
+			display: block;
+		}
+		.white_arrow{
+			display: none;
+		}
+	}
+	
+	&:active {
+		background-color: #FFFFFF;
+	}
+	&.show {
+		opacity: 0.3;
+		visibility: visible;
+        &:hover{
+            opacity: 1;
+        }
+	}
+    svg {
+        width: 20px;
+    }
+}

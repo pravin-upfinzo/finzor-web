@@ -2,6 +2,9 @@
 .developer_section{
     background-color: $black;
     padding: 60px 0px 100px;
+    @media screen and (max-width: 767px) {
+        padding: 40px 0px;
+    }
     .dev_api_images{
         // width:500px;
         // height:500px;
@@ -16,7 +19,7 @@
         color: $white;
         font-size: 40px;
         font-weight: 700;
-        @media screen and (max-width:992px) {
+        @media screen and (max-width:991px) {
             text-align: center;
         }
     }
@@ -26,13 +29,16 @@
         padding-bottom:40px;
         font-weight: 400;
 
-        @media screen and (max-width:992px) {
+        @media screen and (max-width:991px) {
             text-align: center;
         }
     }
     .dev_left{
         border-radius: 20px;
         padding: 15px;
+        @media screen and (max-width: 767px) {
+            padding: 15px 0;
+        }
         .row{
             margin:30px 0px;
         }
@@ -45,39 +51,28 @@
         border-radius: 12px;
         border: solid 1px transparent;
         --border-angle: 0turn;
-            --main-bg: conic-gradient(
-                from var(--border-angle),
-                #1A2C2A 0%,  
-                #1A2C2A 100%
-                );
+            --main-bg: linear-gradient(rgb(0, 0, 0) 0%, rgb(18, 116, 117) 100%);
             --gradient-border: conic-gradient(from var(--border-angle), transparent 10%, #05311d, #3EAB90 49%, transparent);
             background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
             background-position: center center;
             animation: bg-spin 8s linear infinite;
 
         &:hover {
-            --border-angle: 0turn;
-            --main-bg: conic-gradient(
-                from var(--border-angle),
-                #1A2C2A 0%,  
-                #1A2C2A 100%
-                );
+            // --border-angle: 0turn;
+            // --main-bg: conic-gradient(
+            //     from var(--border-angle),
+            //     #1A2C2A 0%,  
+            //     #1A2C2A 100%
+            //     );
             --gradient-border: conic-gradient(from var(--border-angle), transparent 50%, #F7C35F, #3EAB90 99%, transparent);
-            background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
-            background-position: center center;
-            animation: bg-spin 4s linear infinite;
-            @keyframes bg-spin {
-                to {
-                --border-angle: 1turn;
-                }
-            }
+            
 
-            @media screen and (max-width:992px) {
+            @media screen and (max-width:991px) {
                 text-align: center;
             }
         }
        
-        @media screen and (max-width:992px) {
+        @media screen and (max-width:991px) {
             text-align: center;
         }
         .dev_card_logo {
@@ -237,3 +232,4 @@
     inherits: true;
     initial-value: 0turn;
 }
+
