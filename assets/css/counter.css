@@ -52,35 +52,31 @@
     top: 68%;
   }
 }
-@media screen and (max-width: 992px) {
-  .counter_section svg {
-    top: 84%;
-  }
-}
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .counter_section svg {
     top: 88%;
   }
 }
 .counter_section h2 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 500;
   line-height: 60px;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
   color: #3EAB90;
   text-align: center;
 }
 .counter_section p {
   font-size: 16px;
-  font-weight: 600;
-  line-height: 30px;
+  font-weight: 300;
+  line-height: 26px;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
   color: #FFFFFF;
   text-align: center;
+}
+@media screen and (max-width: 999px) {
+  .counter_section p {
+    line-height: 24px;
+  }
 }
 @media screen and (max-width: 992px) {
   .counter_section p br {
@@ -95,12 +91,13 @@
   font-size: 24px;
   font-weight: 500;
   line-height: 60px;
-  letter-spacing: 1px;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
   color: #FFFFFF;
-  padding-bottom: 20px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .counter_section #counter span {
+    font-size: 20px;
+  }
 }
 .counter_section #counter .col-lg-3 {
   display: flex;
@@ -125,7 +122,7 @@
   height: 100%; /* Full height */
   background: linear-gradient(180deg, #3EAB90 0%, #FFFFFF 100%);
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .counter_section #counter .col-lg-3::before {
     display: none;
   }

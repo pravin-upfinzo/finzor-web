@@ -10,6 +10,11 @@
   background-color: #000000;
   padding: 60px 0px 100px;
 }
+@media screen and (max-width: 767px) {
+  .developer_section {
+    padding: 40px 0px;
+  }
+}
 .developer_section .dev_api_images {
   margin: 0 auto;
   padding: 50px;
@@ -23,7 +28,7 @@
   font-size: 40px;
   font-weight: 700;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .developer_section h3 {
     text-align: center;
   }
@@ -34,7 +39,7 @@
   padding-bottom: 40px;
   font-weight: 400;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .developer_section h5 {
     text-align: center;
   }
@@ -42,6 +47,11 @@
 .developer_section .dev_left {
   border-radius: 20px;
   padding: 15px;
+}
+@media screen and (max-width: 767px) {
+  .developer_section .dev_left {
+    padding: 15px 0;
+  }
 }
 .developer_section .dev_left .row {
   margin: 30px 0px;
@@ -55,39 +65,21 @@
   border-radius: 12px;
   border: solid 1px transparent;
   --border-angle: 0turn;
-  --main-bg: conic-gradient(
-      from var(--border-angle),
-      #1A2C2A 0%,
-      #1A2C2A 100%
-      );
+  --main-bg: linear-gradient(rgb(0, 0, 0) 0%, rgb(18, 116, 117) 100%);
   --gradient-border: conic-gradient(from var(--border-angle), transparent 10%, #05311d, #3EAB90 49%, transparent);
   background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
   background-position: center center;
   animation: bg-spin 8s linear infinite;
 }
 .developer_section .dev_left .dev_card:hover {
-  --border-angle: 0turn;
-  --main-bg: conic-gradient(
-      from var(--border-angle),
-      #1A2C2A 0%,
-      #1A2C2A 100%
-      );
   --gradient-border: conic-gradient(from var(--border-angle), transparent 50%, #F7C35F, #3EAB90 99%, transparent);
-  background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
-  background-position: center center;
-  animation: bg-spin 4s linear infinite;
 }
-@keyframes bg-spin {
-  to {
-    --border-angle: 1turn;
-  }
-}
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .developer_section .dev_left .dev_card:hover {
     text-align: center;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .developer_section .dev_left .dev_card {
     text-align: center;
   }

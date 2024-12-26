@@ -16,6 +16,9 @@
     overflow-y: visible;
   }
   .panel__stack .panel__card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     grid-area: 1/1/2/2;
     border-radius: 8px;
     padding: 2.5rem;
@@ -241,7 +244,7 @@
         .panel__card {
             h2 {
                 color: $white;
-                font-size: 36px;
+                font-size: 26px;
                 font-weight: 600;
                 line-height: 32px;
                 margin-bottom: 30px;
@@ -305,12 +308,12 @@
                             h3 {
                                 color: $secondary-color;
                                 font-size: 20px;
-                                font-weight: 700;
+                                font-weight: 500;
                                 line-height: 36px;
                             }
                             p {
                                 color: $white;
-                                font-size: 18px;
+                                font-size: 16px;
                                 font-weight: 400;
                                 line-height: 25px;
                                 min-height: 75px;

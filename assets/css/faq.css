@@ -10,14 +10,17 @@
   background-color: #000000;
   padding: 80px 0px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .faq_section {
     padding: 60px 0px;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .faq_section .faq_header {
     text-align: center;
+  }
+  .faq_section .faq_header video {
+    width: 100%;
   }
 }
 .faq_section .accordion-item .accordion-header {
@@ -106,7 +109,7 @@
     padding-bottom: 25px;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .faq_section h3 br {
     display: none;
   }

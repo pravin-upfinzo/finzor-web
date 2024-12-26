@@ -16,16 +16,16 @@
 
     h3 {
       color: $primary-color;
-      font-size: 50px;
+      font-size: 40px;
       font-weight: 500;
       line-height: 58px;
     }
 
     p {
       color: $white;
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 30px;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 26px;
       @media screen and (max-width: 991px) {
         line-height: 25px;
       }

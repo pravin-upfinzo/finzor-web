@@ -23,30 +23,51 @@
 }
 .fz-blog .blog-carousel h3 {
   color: #3EAB90;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 500;
   line-height: 58px;
 }
 .fz-blog .blog-carousel p {
   color: #ffffff;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
 }
 @media screen and (max-width: 991px) {
   .fz-blog .blog-carousel p {
     line-height: 25px;
   }
 }
+.fz-blog .owl-item {
+  transform: scale(0.9);
+  transition: all 0.7s ease-in;
+}
+.fz-blog .owl-item.center {
+  transform: scale(1);
+  transition: all 0.7s ease-in;
+}
 .fz-blog .item {
-  width: 100%;
-  background: #000000;
+  width: 389px;
+  height: 483px;
   color: #ffffff;
   overflow: hidden;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 21px;
+  background: linear-gradient(150.11deg, #002C21 3.16%, #86E1CB 94.92%) border-box;
+}
+.fz-blog .item:hover .card-body {
+  bottom: 0px;
+}
+.fz-blog .item:hover img {
+  transform: scale(1.1);
 }
 .fz-blog .item img {
   width: 100%;
-  height: 276px;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 21px;
+  transition: all 1s ease-out;
 }
 @media screen and (max-width: 991px) {
   .fz-blog .item img {
@@ -54,11 +75,14 @@
   }
 }
 .fz-blog .item .card-body {
-  padding: 0px 28px 33px 27px;
+  padding: 10px 20px;
   width: 100%;
   border-radius: 0 0 8px 8px;
-  border: 1px solid #1A2C2A;
   margin: 0 auto;
+  position: absolute;
+  bottom: -46px;
+  transition: all 0.6s ease-out;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.69), #000000);
 }
 @media screen and (max-width: 991px) {
   .fz-blog .item .card-body {
@@ -70,9 +94,9 @@
   font-size: 22px;
   line-height: 30px;
   font-weight: 500;
-  padding-bottom: 18px;
-  font-weight: bold;
-  color: #3EAB90;
+  padding-bottom: 12px;
+  color: #F7C35F;
+  margin-bottom: 0px;
 }
 .fz-blog .item .card-body .card-text {
   font-size: 16px;
@@ -92,6 +116,18 @@
     padding: 15px 0 10px 0;
   }
 }
+.fz-blog .item .card-body button {
+  color: #3EAB90;
+  border-radius: 32px;
+  font-size: 14px;
+  padding: 0;
+  margin-bottom: 10px;
+  background: transparent !important;
+  border: none;
+}
+.fz-blog .item .card-body button:hover {
+  color: #F7C35F;
+}
 .fz-blog .owl-carousel .owl-stage {
   display: flex;
   align-items: center;
@@ -99,7 +135,7 @@
 .fz-blog .owl-carousel .owl-nav {
   display: flex;
   justify-content: end;
-  gap: 162px;
+  gap: 190px;
   position: relative;
   margin-top: 50px;
 }
@@ -115,15 +151,17 @@
 .fz-blog .owl-carousel .owl-nav .custom-next:hover {
   color: #3EAB90;
 }
-.fz-blog .owl-carousel .owl-nav::after {
+.fz-blog .owl-carousel .owl-nav::after, .fz-blog .owl-carousel .owl-nav::before {
   content: "";
   width: 80px;
   height: 2.27px;
   position: absolute;
+}
+.fz-blog .owl-carousel .owl-nav::after {
   background: #ffffff;
   top: 50%;
-  transform: translateY(-50%);
   transform: translate(-50%, -50%);
+  right: 8px;
 }
 @media screen and (max-width: 991px) {
   .fz-blog .owl-carousel .owl-nav::after {
@@ -131,13 +169,8 @@
   }
 }
 .fz-blog .owl-carousel .owl-nav::before {
-  content: "";
-  width: 80px;
-  height: 2.27px;
   background: #3EAB90;
-  position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   left: 87%;
   transform: translate(-50%, -50%);
 }

@@ -155,6 +155,8 @@
   #fz_core_nexus .fz_core_text_right p {
     margin-bottom: 30px;
     line-height: 22px;
+    font-size: 14px;
+    align-items: start;
   }
 }
 #fz_core_nexus .fz_core_text_right p span {
@@ -172,13 +174,7 @@
   display: flex;
   align-items: center;
 }
-@media (min-width: 993px) and (max-width: 1200px) {
-  #fz_core_nexus .fz_core_text_right div {
-    margin-left: 0;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 992px) {
+@media (max-width: 1400px) {
   #fz_core_nexus .fz_core_text_right div {
     margin-left: 0;
     justify-content: center;
@@ -220,10 +216,11 @@
 #fz_core_nexus .fz_core_text_right div .fz_learmore:hover .hero-join {
   bottom: 12px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1300px) {
   #fz_core_nexus .fz_core_text_right div .fz_learmore {
-    padding: 10px 30px;
+    padding: 13px 20px;
     font-size: 14px;
+    margin-right: 24px;
   }
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore_btn {
@@ -262,9 +259,9 @@
 #fz_core_nexus .fz_core_text_right div .fz_learmore_btn:hover .hero-join {
   bottom: 12px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1300px) {
   #fz_core_nexus .fz_core_text_right div .fz_learmore_btn {
-    padding: 10px 30px;
+    padding: 13px 20px;
     font-size: 14px;
   }
 }

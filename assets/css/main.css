@@ -332,9 +332,6 @@ header .fz_sigin ul li:last-child a {
   font-weight: 700;
   line-height: 0px;
   margin-bottom: 40px;
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   line-height: 70px;
 }
 @media screen and (max-width: 991px) {
@@ -993,6 +990,9 @@ header .fz_sigin ul li:last-child a {
 }
 
 .panel__stack .panel__card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   grid-area: 1/1/2/2;
   border-radius: 8px;
   padding: 2.5rem;
@@ -1240,7 +1240,7 @@ header .fz_sigin ul li:last-child a {
 }
 .panel .panel__stack .panel__card h2 {
   color: #ffffff;
-  font-size: 36px;
+  font-size: 26px;
   font-weight: 600;
   line-height: 32px;
   margin-bottom: 30px;
@@ -1316,12 +1316,12 @@ header .fz_sigin ul li:last-child a {
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div h3 {
   color: #F7C35F;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 36px;
 }
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div p {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 25px;
   min-height: 75px;
@@ -2062,7 +2062,7 @@ header .fz_sigin ul li:last-child a {
   }
 }
 .counter_section h2 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 500;
   line-height: 60px;
   text-align: left;
@@ -2070,9 +2070,9 @@ header .fz_sigin ul li:last-child a {
   text-align: center;
 }
 .counter_section p {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
   text-align: center;
   color: #FFFFFF;
   text-align: center;
@@ -2182,15 +2182,15 @@ header .fz_sigin ul li:last-child a {
 }
 .fz-blog .blog-carousel h3 {
   color: #3EAB90;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 500;
   line-height: 58px;
 }
 .fz-blog .blog-carousel p {
   color: #ffffff;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
 }
 @media screen and (max-width: 991px) {
   .fz-blog .blog-carousel p {
@@ -2739,7 +2739,7 @@ header .fz_sigin ul li:last-child a {
 }
 .play_store_section ul {
   padding: 0;
-  margin: 10px 20px;
+  margin: 10px 20px 20px;
 }
 .play_store_section ul li {
   line-height: 25px;

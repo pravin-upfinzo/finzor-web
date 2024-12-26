@@ -12,7 +12,7 @@
 .fz_testimonial .fz_testimonial_top {
   padding-bottom: 50px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .fz_testimonial .fz_testimonial_top {
     text-align: center;
   }

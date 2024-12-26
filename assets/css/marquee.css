@@ -10,6 +10,7 @@
   --space: 5px;
   background-color: #1A2C2A;
   padding: 20px 0;
+  display: none;
 }
 #logo_marquee img {
   height: 40px;

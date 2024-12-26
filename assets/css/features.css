@@ -21,6 +21,9 @@
 }
 
 .panel__stack .panel__card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   grid-area: 1/1/2/2;
   border-radius: 8px;
   padding: 2.5rem;
@@ -63,6 +66,8 @@
   .panel__stack .panel__card {
     grid-area: unset;
     position: unset;
+    margin-top: 20px;
+    padding: 1.5rem;
     height: auto !important;
     width: 100%;
   }
@@ -239,6 +244,11 @@
   position: relative;
   z-index: 9;
 }
+@media screen and (max-width: 767px) {
+  .panel {
+    padding-top: 20px !important;
+  }
+}
 .panel .panel__options {
   display: flex;
   justify-content: center;
@@ -261,10 +271,16 @@
 }
 .panel .panel__stack .panel__card h2 {
   color: #ffffff;
-  font-size: 36px;
+  font-size: 26px;
   font-weight: 600;
   line-height: 32px;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 991px) {
+  .panel .panel__stack .panel__card h2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
 }
 .panel .panel__stack .panel__card .nav.nav-pills {
   border-bottom: 1px solid #ffffff;
@@ -331,12 +347,12 @@
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div h3 {
   color: #F7C35F;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 36px;
 }
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div p {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 25px;
   min-height: 75px;

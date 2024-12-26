@@ -70,9 +70,6 @@
   font-weight: 700;
   line-height: 0px;
   margin-bottom: 40px;
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   line-height: 70px;
 }
 @media screen and (max-width: 991px) {
@@ -121,11 +118,26 @@
 #fz-hero-bg .hero-section-button {
   display: flex;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  #fz-hero-bg .hero-section-button {
+    justify-content: center;
+  }
+}
 #fz-hero-bg .hero-section-button .section-button-one, #fz-hero-bg .hero-section-button .section-button-two {
   padding: 15px 20px;
   transition: all 0.3s ease-in;
   width: 25%;
   line-height: 21px;
+}
+@media (min-width: 992px) and (max-width: 1400px) {
+  #fz-hero-bg .hero-section-button .section-button-one, #fz-hero-bg .hero-section-button .section-button-two {
+    width: 34%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #fz-hero-bg .hero-section-button .section-button-one, #fz-hero-bg .hero-section-button .section-button-two {
+    width: 100%;
+  }
 }
 #fz-hero-bg .hero-section-button .section-button-one .hero-join, #fz-hero-bg .hero-section-button .section-button-two .hero-join {
   line-height: 1.5;

@@ -9,24 +9,24 @@
 .newsletter_section {
   background-color: #000000;
   text-align: center;
-  padding: 90px 0px 0;
+  padding: 0px 0px 0;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .newsletter_section {
     padding-bottom: 30px;
   }
 }
 .newsletter_section h3 {
   color: #3EAB90;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 500;
   line-height: 70.31px;
   margin-bottom: 0px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .newsletter_section h3 {
-    font-size: 50px;
-    line-height: 55px;
+    font-size: 35px;
+    line-height: 42px;
   }
 }
 .newsletter_section h5 {
@@ -38,7 +38,7 @@
   margin-bottom: 0px;
   padding-top: 15px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .newsletter_section h5 {
     font-size: 30px;
     line-height: 40px;
@@ -55,7 +55,7 @@
   margin-top: 72px;
   border: none;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .newsletter_section .input-group {
     width: auto;
     margin-top: 40px;
@@ -69,8 +69,12 @@
   border-radius: 0px 8px 8px 0px;
   opacity: 0px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .newsletter_section .input-group button {
     width: auto;
+    font-size: 16px;
   }
+}
+.newsletter_section .input-group .form-control {
+  font-size: 16px;
 }
