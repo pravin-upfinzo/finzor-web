@@ -1413,14 +1413,16 @@ header .fz_sigin ul li:last-child a {
   cursor: pointer;
 }
 .fz_product_sec .fz_container .dot-nav-position-right .dot-nav li.is-active span {
-  background: gray;
+  background: rgba(255, 193, 7, 0.5411764706);
+  transition: all 0.5s ease-in;
+  border: 0px;
 }
 .fz_product_sec .fz_container .dot-nav-position-right .dot-nav li span {
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 1px solid #fff;
+  width: 40px;
+  height: 5px;
+  border: 1px solid rgba(62, 171, 144, 0.231372549);
+  transition: all 0.5s ease-in;
 }
 .fz_product_sec .fz_container .fz_sub_container {
   display: flex;
