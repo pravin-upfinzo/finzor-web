@@ -155,7 +155,7 @@
   }
 }
 .play_store_section .play_store_left .start_now_btn {
-  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .play_store_section .play_store_left .start_now_btn .dedcription-btn {
   position: relative;
@@ -165,7 +165,7 @@
   color: #3EAB90;
   text-align: center;
   font-size: 18px;
-  padding: 9px 56px 9px 20px;
+  padding: 10px 20px;
   transition: all 0.3s;
   box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.06);
   text-decoration: none;
@@ -185,7 +185,10 @@
 .play_store_section .play_store_left .start_now_btn .name-descripeion {
   position: relative;
   z-index: 9999;
-  font-weight: 600;
+  font-weight: 200;
+}
+.play_store_section .play_store_left .start_now_btn .name-descripeion:hover {
+  color: #fff;
 }
 .play_store_section .play_store_left .start_now_btn .btn-icon::after {
   content: "";

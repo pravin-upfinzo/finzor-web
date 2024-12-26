@@ -130,7 +130,7 @@
             }
         }
         .start_now_btn{
-            margin-top:50px;
+            margin-bottom:50px;
 
         .dedcription-btn {
             position: relative;
@@ -140,7 +140,7 @@
             color: $primary-color;
             text-align: center;
             font-size: 18px;
-            padding: 9px 56px 9px 20px;
+            padding: 10px 20px;
             transition: all 0.3s;
             box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.06);
             text-decoration: none;
@@ -160,7 +160,10 @@
         .name-descripeion {
             position: relative;
             z-index: 9999;
-            font-weight: 600;
+            font-weight: 200;
+            &:hover{
+                color: #fff;
+            }
         }
         .btn-icon::after {
             content: "";

@@ -74,20 +74,23 @@
 }
 .fz_product_sec .fz_container .dot-nav-position-right .dot-nav li {
   list-style: none;
-  margin: 0 10px;
+  margin: 0 5px;
   cursor: pointer;
 }
 .fz_product_sec .fz_container .dot-nav-position-right .dot-nav li.is-active span {
-  background: rgba(255, 193, 7, 0.5411764706);
   transition: all 0.5s ease-in;
   border: 0px;
+  background: rgb(21, 221, 172);
+  opacity: 1;
 }
 .fz_product_sec .fz_container .dot-nav-position-right .dot-nav li span {
   display: inline-block;
-  width: 40px;
-  height: 5px;
-  border: 1px solid rgba(62, 171, 144, 0.231372549);
+  width: 25px;
+  height: 4px;
+  border-radius: 3px;
   transition: all 0.5s ease-in;
+  background: rgb(21, 221, 172);
+  opacity: 0.2;
 }
 .fz_product_sec .fz_container .fz_sub_container {
   display: flex;
