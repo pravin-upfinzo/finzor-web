@@ -2595,7 +2595,7 @@ header .fz_sigin ul li:last-child a {
 }
 .newsletter_section h3 {
   color: #3EAB90;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 500;
   line-height: 70.31px;
   margin-bottom: 0px;
@@ -2737,8 +2737,18 @@ header .fz_sigin ul li:last-child a {
     text-align: center;
   }
 }
+.play_store_section ul {
+  padding: 0;
+  margin: 10px 20px;
+}
+.play_store_section ul li {
+  line-height: 25px;
+  color: #dfb946;
+  font-size: 14px;
+  font-weight: 400;
+}
 .play_store_section p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
@@ -2778,7 +2788,7 @@ header .fz_sigin ul li:last-child a {
 .play_store_section .play_store_left {
   position: relative;
   z-index: 2;
-  padding: 112px 70px 20px;
+  padding: 70px 70px 20px;
 }
 @media screen and (max-width: 992px) {
   .play_store_section .play_store_left {
