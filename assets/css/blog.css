@@ -16,16 +16,22 @@
   text-align: center;
   padding: 66px 0 84px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .fz-blog .blog-carousel {
     padding: 66px 0 30px;
   }
 }
 .fz-blog .blog-carousel h3 {
-  color: #3EAB90;
+  color: #3eab90;
   font-size: 40px;
   font-weight: 500;
   line-height: 58px;
+}
+@media screen and (max-width: 991px) {
+  .fz-blog .blog-carousel h3 {
+    line-height: 40px;
+    font-size: 30px;
+  }
 }
 .fz-blog .blog-carousel p {
   color: #ffffff;
@@ -56,6 +62,12 @@
   border-radius: 21px;
   background: linear-gradient(150.11deg, #002C21 3.16%, #86E1CB 94.92%) border-box;
 }
+@media screen and (max-width: 1400px) {
+  .fz-blog .item {
+    width: auto;
+    height: auto;
+  }
+}
 .fz-blog .item:hover .card-body {
   bottom: 0px;
 }
@@ -82,26 +94,27 @@
   position: absolute;
   bottom: -46px;
   transition: all 0.6s ease-out;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.69), #000000);
+  background: linear-gradient(rgba(0, 0, 0, 0.04), rgb(0, 0, 0), #000000);
 }
 @media screen and (max-width: 991px) {
   .fz-blog .item .card-body {
     width: 100%;
     padding: 0px 25px 30px 24px;
+    bottom: -67px;
   }
 }
 .fz-blog .item .card-body h5 {
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 22px;
   font-weight: 500;
   padding-bottom: 12px;
-  color: #F7C35F;
+  color: #f7c35f;
   margin-bottom: 0px;
 }
 .fz-blog .item .card-body .card-text {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 300;
 }
 .fz-blog .item .card-body .card-top-title {
   display: flex;
@@ -126,7 +139,7 @@
   border: none;
 }
 .fz-blog .item .card-body button:hover {
-  color: #F7C35F;
+  color: #f7c35f;
 }
 .fz-blog .owl-carousel .owl-stage {
   display: flex;
@@ -134,8 +147,8 @@
 }
 .fz-blog .owl-carousel .owl-nav {
   display: flex;
-  justify-content: end;
-  gap: 190px;
+  justify-content: center;
+  gap: 170px;
   position: relative;
   margin-top: 50px;
 }
@@ -146,47 +159,33 @@
   color: #ffffff;
   cursor: pointer;
   transition: all 0.3s ease;
+  justify-content: center;
 }
 .fz-blog .owl-carousel .owl-nav .custom-prev:hover,
 .fz-blog .owl-carousel .owl-nav .custom-next:hover {
-  color: #3EAB90;
+  color: #3eab90;
 }
 .fz-blog .owl-carousel .owl-nav::after, .fz-blog .owl-carousel .owl-nav::before {
   content: "";
   width: 80px;
   height: 2.27px;
+  justify-content: center;
   position: absolute;
 }
 .fz-blog .owl-carousel .owl-nav::after {
   background: #ffffff;
   top: 50%;
   transform: translate(-50%, -50%);
-  right: 8px;
-}
-@media screen and (max-width: 991px) {
-  .fz-blog .owl-carousel .owl-nav::after {
-    justify-content: center;
-  }
+  left: 53%;
 }
 .fz-blog .owl-carousel .owl-nav::before {
-  background: #3EAB90;
+  background: #3eab90;
   top: 50%;
-  left: 87%;
   transform: translate(-50%, -50%);
 }
-@media screen and (max-width: 991px) {
-  .fz-blog .owl-carousel .owl-nav::before {
-    left: 60%;
-  }
-}
 .fz-blog .owl-carousel .owl-nav .custom-prev {
-  color: #3EAB90;
+  color: #3eab90;
 }
 .fz-blog .owl-carousel .owl-nav .custom-next {
   color: #ffffff;
-}
-@media screen and (max-width: 991px) {
-  .fz-blog .owl-carousel .owl-nav {
-    justify-content: center;
-  }
 }
