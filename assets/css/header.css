@@ -111,6 +111,12 @@ header .navbar-expand-lg .navbar-nav li a.nav-link {
   position: relative;
   transition: all 0.7s ease;
 }
+@media screen and (max-width: 991px) {
+  header .navbar-expand-lg .navbar-nav li a.nav-link {
+    padding: 20px 5px;
+    color: #ffffff;
+  }
+}
 header .navbar-expand-lg .navbar-nav li a.nav-link:hover {
   color: #ffffff;
 }

@@ -116,9 +116,14 @@ header {
           font-size: 14px;
           font-weight: 400;
           padding: 0px 15px;
-          color: $tertiary-color;
+          color:$tertiary-color;
           position: relative;
           transition: all 0.7s ease;
+
+          @media screen and (max-width: 991px) {
+            padding: 20px 5px;
+            color:$white;
+         }
 
           &:hover {
             color: $white;

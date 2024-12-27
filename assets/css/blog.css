@@ -16,7 +16,7 @@
   text-align: center;
   padding: 66px 0 84px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .fz-blog .blog-carousel {
     padding: 66px 0 30px;
   }
@@ -26,6 +26,12 @@
   font-size: 40px;
   font-weight: 500;
   line-height: 58px;
+}
+@media screen and (max-width: 991px) {
+  .fz-blog .blog-carousel h3 {
+    line-height: 40px;
+    font-size: 30px;
+  }
 }
 .fz-blog .blog-carousel p {
   color: #ffffff;
@@ -55,6 +61,12 @@
   border: 1px solid transparent;
   border-radius: 21px;
   background: linear-gradient(150.11deg, #002C21 3.16%, #86E1CB 94.92%) border-box;
+}
+@media screen and (max-width: 1400px) {
+  .fz-blog .item {
+    width: auto;
+    height: auto;
+  }
 }
 .fz-blog .item:hover .card-body {
   bottom: 0px;
@@ -88,6 +100,7 @@
   .fz-blog .item .card-body {
     width: 100%;
     padding: 0px 25px 30px 24px;
+    bottom: -67px;
   }
 }
 .fz-blog .item .card-body h5 {
@@ -134,8 +147,8 @@
 }
 .fz-blog .owl-carousel .owl-nav {
   display: flex;
-  justify-content: end;
-  gap: 190px;
+  justify-content: center;
+  gap: 170px;
   position: relative;
   margin-top: 50px;
 }
@@ -146,6 +159,7 @@
   color: #ffffff;
   cursor: pointer;
   transition: all 0.3s ease;
+  justify-content: center;
 }
 .fz-blog .owl-carousel .owl-nav .custom-prev:hover,
 .fz-blog .owl-carousel .owl-nav .custom-next:hover {
@@ -155,38 +169,23 @@
   content: "";
   width: 80px;
   height: 2.27px;
+  justify-content: center;
   position: absolute;
 }
 .fz-blog .owl-carousel .owl-nav::after {
   background: #ffffff;
   top: 50%;
   transform: translate(-50%, -50%);
-  right: 8px;
-}
-@media screen and (max-width: 991px) {
-  .fz-blog .owl-carousel .owl-nav::after {
-    justify-content: center;
-  }
+  left: 53%;
 }
 .fz-blog .owl-carousel .owl-nav::before {
   background: #3EAB90;
   top: 50%;
-  left: 87%;
   transform: translate(-50%, -50%);
-}
-@media screen and (max-width: 991px) {
-  .fz-blog .owl-carousel .owl-nav::before {
-    left: 60%;
-  }
 }
 .fz-blog .owl-carousel .owl-nav .custom-prev {
   color: #3EAB90;
 }
 .fz-blog .owl-carousel .owl-nav .custom-next {
   color: #ffffff;
-}
-@media screen and (max-width: 991px) {
-  .fz-blog .owl-carousel .owl-nav {
-    justify-content: center;
-  }
 }

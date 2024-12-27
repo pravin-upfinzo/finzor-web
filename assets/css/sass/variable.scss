@@ -1,39 +1,39 @@
-$primary-color: #3EAB90;
-$secondary-color: #F7C35F;
-$tertiary-color: #1A2C2A;
+$primary-color: #3eab90;
+$secondary-color: #f7c35f;
+$tertiary-color: #1a2c2a;
 $white: #ffffff;
 $black: #000000;
 $bg-color: #000000;
 $gray-color: #979797;
-$ternary-color: #2D4949;
+$ternary-color: #2d4949;
 @mixin primaryBg($theme: $primary-color, $white-color: $white) {
-    background: $theme;
-    color: $white-color;
-    border-radius: 32px;
-    font-size: 16px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: flex-end;
-    svg {
-        animation: moveAnimation 2s linear infinite;
-    }
+  background: $theme;
+  color: $white-color;
+  border-radius: 32px;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  svg {
+    animation: moveAnimation 2s linear infinite;
+  }
 }
 @mixin hero-join {
-    line-height: 1.5;
-    display: flex;
-    gap: 20px;
-    position: absolute;
-    bottom: -72%;
-    left: 35px;
-    flex-direction: column;
-    transition: bottom .5s;
+  line-height: 1.5;
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  bottom: -72%;
+  left: 35px;
+  flex-direction: column;
+  transition: bottom 0.5s;
 }
 @keyframes moveAnimation {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(50%);
-    } 
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%);
+  }
 }

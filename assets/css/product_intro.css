@@ -18,13 +18,13 @@
 }
 @media screen and (max-width: 768px) {
   .features_posibilityies {
-    height: auto;
+    height: auto; /* Allow content to adjust height based on content */
   }
 }
 .features_posibilityies .container {
   position: relative;
   text-align: center;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   display: inline-flex;
   align-items: center;
@@ -33,6 +33,7 @@
 @media screen and (max-width: 768px) {
   .features_posibilityies .container {
     width: 100%;
+    flex-direction: column; /* Stack content vertically */
   }
 }
 .features_posibilityies .container .texts {
@@ -45,7 +46,18 @@
   position: relative;
   top: 125px;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 768px) {
+  .features_posibilityies .container .texts {
+    height: auto; /* Allow for dynamic height */
+  }
+}
+@media screen and (max-width: 768px) {
+  .features_posibilityies .container .texts img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+@media (min-width: 769px) and (max-width: 1400px) {
   .features_posibilityies .container .texts img {
     height: 1100px;
   }
@@ -60,17 +72,30 @@
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 1440px) {
-  .features_posibilityies .container .inner-text .left img {
-    height: 1200px;
+@media screen and (max-width: 768px) {
+  .features_posibilityies .container .inner-text {
+    flex-direction: column; /* Stack content */
+    height: auto;
+    padding: 20px; /* Add some spacing for smaller screens */
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 768px) {
+  .features_posibilityies .container .inner-text .left img,
   .features_posibilityies .container .inner-text .right img {
-    height: 1150px;
+    display: none; /* Hide images for small screens */
   }
 }
-.features_posibilityies .container .inner-text .left.left, .features_posibilityies .container .inner-text .right.left {
+@media screen and (min-width: 769px) {
+  .features_posibilityies .container .inner-text .left img,
+  .features_posibilityies .container .inner-text .right img {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+.features_posibilityies .container .inner-text .left.left,
+.features_posibilityies .container .inner-text .right.left {
   text-align: right;
   display: inline-flex;
   align-items: center;
@@ -78,13 +103,28 @@
   margin: auto;
   position: relative;
 }
-.features_posibilityies .container .inner-text .left.right, .features_posibilityies .container .inner-text .right.right {
+@media screen and (max-width: 768px) {
+  .features_posibilityies .container .inner-text .left.left,
+  .features_posibilityies .container .inner-text .right.left {
+    width: 100%;
+    text-align: center;
+  }
+}
+.features_posibilityies .container .inner-text .left.right,
+.features_posibilityies .container .inner-text .right.right {
   text-align: left;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   margin: auto;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .features_posibilityies .container .inner-text .left.right,
+  .features_posibilityies .container .inner-text .right.right {
+    width: 100%;
+    text-align: center;
+  }
 }
 .features_posibilityies .container .dd {
   position: absolute;
@@ -96,11 +136,11 @@
   transform: translate(0px, 0px);
   opacity: 1;
 }
-.features_posibilityies .container h2 {
-  font-weight: bolder;
-  font-size: 50px;
-  color: #ddd;
-  text-transform: uppercase;
+@media screen and (max-width: 768px) {
+  .features_posibilityies .container .dd {
+    position: static; /* Adjust positioning for mobile */
+    margin-top: 20px; /* Add spacing below content */
+  }
 }
 .features_posibilityies .container h3 {
   font-weight: 200;
@@ -123,5 +163,6 @@
 @media screen and (max-width: 768px) {
   .features_posibilityies .container h3 {
     font-size: 40px;
+    padding: 10px; /* Add spacing for smaller viewports */
   }
 }

@@ -10,7 +10,7 @@
     text-align: center;
     padding: 66px 0 84px;
 
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 991px) {
       padding: 66px 0 30px;
     }
 
@@ -19,6 +19,10 @@
       font-size: 40px;
       font-weight: 500;
       line-height: 58px;
+      @media screen and (max-width: 991px) {
+        line-height: 40px;
+        font-size: 30px;
+      }
     }
 
     p {
@@ -49,6 +53,11 @@
     border: 1px solid transparent; 
     border-radius:21px;
     background: linear-gradient(150.11deg, #002C21 3.16%, #86E1CB 94.92%) border-box;
+
+    @media screen and (max-width: 1400px) {
+      width:auto;
+      height:auto;
+    }
     
     
     &:hover {
@@ -84,6 +93,7 @@
       @media screen and (max-width: 991px) {
         width: 100%;
         padding: 0px 25px 30px 24px;
+        bottom:-67px;
       }
 
       h5 {
@@ -135,8 +145,8 @@
     }
     .owl-nav {
       display: flex;
-      justify-content: end;
-      gap: 190px;
+      justify-content: center;
+      gap: 170px;
       position: relative;
       margin-top: 50px;
       .custom-prev,
@@ -146,6 +156,7 @@
         color: $white;
         cursor: pointer;
         transition: all 0.3s ease;
+        justify-content: center;
 
         &:hover {
           color: $primary-color;
@@ -155,26 +166,27 @@
         content: "";
         width: 80px;
         height: 2.27px;
+        justify-content: center;
         position: absolute;
       }
       &::after {
         background: $white;
         top: 50%;
         transform: translate(-50%, -50%);
-        right: 8px;
-        @media screen and (max-width: 991px) {
-          justify-content: center;
-        }
+        left: 53%;
+        // @media screen and (max-width: 991px) {
+        //   justify-content: center;
+        // }
       }
 
       &::before {
         background: $primary-color;
         top: 50%;
-        left: 87%;
+        // left: 87%;
         transform: translate(-50%, -50%);
-        @media screen and (max-width: 991px) {
-          left:60%;
-        }
+        // @media screen and (max-width: 991px) {
+        //   left:60%;
+        // }
       }
       .custom-prev {
         color: $primary-color;
@@ -183,9 +195,9 @@
         color: $white;
       }
 
-      @media screen and (max-width: 991px) {
-        justify-content: center;
-      }
+      // @media screen and (max-width: 991px) {
+      //   justify-content: center;
+      // }
     }
   }
 }

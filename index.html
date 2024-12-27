@@ -227,7 +227,7 @@
                   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                  <ul class="navbar-nav livvic-medium">
+                  <ul class="navbar-nav">
                     <li class="nav-item">
                       <a class="nav-link" href="#">Home</a>
                     </li>
@@ -1753,7 +1753,7 @@
           margin: 32, /* Adds spacing between cards */
           nav: true, /* Shows previous and next arrows */
           dots: false,
-          autoplay: false,
+          autoplay: true,
           smartSpeed: 2000,
           center:true,
           autoplayTimeout: 4000,
@@ -1763,10 +1763,14 @@
           ],
           responsive: {
           0: {
-            items: 1, /* Shows 1 card on small screens */
+            items: 1, 
+            center:false,
+            /* Shows 1 card on small screens */
           },
           768: {
-            items: 2, /* Shows 2 cards on medium screens */
+            items: 2,
+            center:false,
+             /* Shows 2 cards on medium screens */
           },
           1024: {
             items: 3, /* Shows 3 cards on large screens */
@@ -2071,7 +2075,7 @@ const editor = CodeMirror.fromTextArea(document.getElementById('code'), {
     width: 100%;
     height: 100%;
 }
-    @media screen and (max-width: 1440px) {
+    /* @media screen and (max-width: 1440px) {
   .features_posibilityies .container .inner-text .left img {
     height: 1200px;
   }
@@ -2080,7 +2084,7 @@ const editor = CodeMirror.fromTextArea(document.getElementById('code'), {
   .features_posibilityies .container .inner-text .right img {
     height: 1150px;
   }
-}
+} */
 .fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img img:last-child {
   min-width: 70%;
 }

@@ -75,7 +75,7 @@
       line-height: 24px;
    }
     br{
-      @media screen and (max-width:992px) {
+      @media screen and (max-width:991px) {
         display: none;
       }
     }
@@ -98,7 +98,7 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
-      border-right: 1px solid;
+      // border-right: 1px solid;
       border-color: -moz-linear-gradient(top, #FFFFFF, #3EAB90);
       position: relative;
       &:last-child {

@@ -78,7 +78,7 @@
     line-height: 24px;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .counter_section p br {
     display: none;
   }
@@ -103,7 +103,6 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border-right: 1px solid;
   border-color: -moz-linear-gradient(top, #FFFFFF, #3EAB90);
   position: relative;
 }
