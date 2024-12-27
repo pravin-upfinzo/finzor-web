@@ -26,7 +26,8 @@
     }
     .item-1 {
       @include anim-global;
-      background: linear-gradient(rgb(0, 0, 0) 0%, rgb(18, 116, 117) 100%);
+      // background: linear-gradient(rgb(0, 0, 0) 0%, rgb(18, 116, 117) 100%);
+      background: linear-gradient(rgb(0, 0, 0) 0%, rgb(10 57 58) 100%);
       // background-image: linear-gradient(
       //   0deg,
       //   #18273a,
@@ -37,7 +38,9 @@
     }
     .item-2 {
       @include anim-global;
-      background: linear-gradient(rgb(0, 0, 0) 0%, rgb(18, 116, 117) 100%);
+      // background: linear-gradient(rgb(0, 0, 0) 0%, rgb(18, 116, 117) 100%);
+      background: linear-gradient(rgb(0, 0, 0) 0%, rgb(10 57 58) 100%);
+
       // background-image: linear-gradient(
       //   0deg,
       //   #01391f,
@@ -48,7 +51,9 @@
     }
     .item-3 {
       @include anim-global;
-      background: linear-gradient(rgb(0, 0, 0) 0%, rgb(18, 116, 117) 100%);
+      // background: linear-gradient(rgb(0, 0, 0) 0%, rgb(18, 116, 117) 100%);
+      background: linear-gradient(rgb(0, 0, 0) 0%, rgb(10 57 58) 100%);
+
       // background-image: linear-gradient(
       //   0deg,
       //   #013a34,
@@ -59,7 +64,8 @@
     }
     .item-4 {
       @include anim-global;
-      background: linear-gradient(rgb(0, 0, 0) 0%, rgb(18, 116, 117) 100%);
+      // background: linear-gradient(rgb(0, 0, 0) 0%, rgb(18, 116, 117) 100%);
+      background: linear-gradient(rgb(0, 0, 0) 0%, rgb(10 57 58) 100%);
       // background-image: linear-gradient(
       //   0deg,
       //   #373f01,
@@ -70,7 +76,8 @@
     }
     .item-5 {
       @include anim-global;
-      background: linear-gradient(rgb(0, 0, 0) 0%, rgb(18, 116, 117) 100%);
+      // background: linear-gradient(rgb(0, 0, 0) 0%, rgb(18, 116, 117) 100%);
+      background: linear-gradient(rgb(0, 0, 0) 0%, rgb(10 57 58) 100%);
       // background-image: linear-gradient(
       //   0deg,
       //   #18273a,
@@ -157,11 +164,19 @@
         //   z-index: -1;
         // }
         .fz_num {
+              display: inline-flex;
+              align-items: flex-start;
+              justify-content: flex-start;
+              flex-direction: column;
           h3 {
-            line-height: 100px;
+            line-height: 75px;
             font-size: 128px;
             font-weight: 600;
-            color: $white;
+            color: #ffffff;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
 
             @media screen and (max-width: 1200px) {
               font-size: 80px;
@@ -172,15 +187,22 @@
           font-size: 36px;
           font-weight: 700;
           line-height: 49px;
-          color: $secondary-color;
+          color: #34b195;
           padding-bottom: 2px;
         }
         .fz_subtitle {
-          font-size: 26px;
+          font-size: 12px;
           font-weight: 200;
           line-height: 26px;
-          color: $primary-color;
-          padding-bottom: 10px;
+          color: #f8d796;
+          border: 1px solid #f7c35f3b;
+          border-radius: 20px;
+          background: #19875408;
+          display: inline-flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+          padding: 5px 20px;
+          margin-bottom: 0px;
 
           @media screen and (max-width: 1200px) {
             line-height: 40px;
@@ -188,17 +210,19 @@
         }
         .fz_bank {
           font-size: 20px;
-          font-weight: 500;
-          color: $white;
-          padding-bottom: 20px;
+          font-weight: 400;
+          color: #ffffff;
+          padding-bottom: 15px;
           line-height: 30px;
+          letter-spacing: 0.25px;
         }
         .fz_desc {
-          font-size: 16px;
-          font-weight: 400;
-          color: $white;
+          font-size: 14px;
+          font-weight: 300;
+          color: #ffffff;
           padding-bottom: 26px;
           line-height: 26px;
+          letter-spacing: 0.25px;
         }
         .fz_btn button {
           @include primaryBg;

@@ -103,7 +103,7 @@ header {
   }
   header .navbar .btn-close::before {
     content: "✕";
-    color: #3EAB90;
+    color: #3eab90;
     font-size: 1.5rem;
     display: inline-block;
     line-height: 1;
@@ -135,7 +135,7 @@ header {
     text-transform: capitalize;
   }
   header .navbar .navbar-collapse ul.navbar-nav li a:hover {
-    background-color: #1A2C2A;
+    background-color: #1a2c2a;
   }
   header .navbar .navbar-toggler {
     background-color: transparent;
@@ -167,7 +167,7 @@ header .navbar-expand-lg .navbar-nav li a.nav-link {
   font-size: 14px;
   font-weight: 400;
   padding: 0px 15px;
-  color: #1A2C2A;
+  color: #1a2c2a;
   position: relative;
   transition: all 0.7s ease;
 }
@@ -233,7 +233,7 @@ header .fz_sigin ul li:last-child {
   }
 }
 header .fz_sigin ul li:last-child a {
-  background-color: #1A2C2A;
+  background-color: #1a2c2a;
   padding: 10px 15px;
   border-radius: 5px;
   border: 1px solid #ffffff;
@@ -422,7 +422,7 @@ header .fz_sigin ul li:last-child a {
   bottom: 12px;
 }
 #fz-hero-bg .hero-section-button .section-button-one {
-  background: #3EAB90;
+  background: #3eab90;
   color: #ffffff;
   border-radius: 32px;
   font-size: 16px;
@@ -438,24 +438,24 @@ header .fz_sigin ul li:last-child a {
 }
 #fz-hero-bg .hero-section-button .section-button-one:hover {
   background: transparent;
-  border: 1px solid #3EAB90;
+  border: 1px solid #3eab90;
 }
 #fz-hero-bg .hero-section-button .section-button-two {
   background: #000000;
-  color: #3EAB90;
+  color: #3eab90;
   border-radius: 32px;
   font-size: 16px;
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: flex-end;
-  border: 1px solid #3EAB90;
+  border: 1px solid #3eab90;
 }
 #fz-hero-bg .hero-section-button .section-button-two svg {
   animation: moveAnimation 2s linear infinite;
 }
 #fz-hero-bg .hero-section-button .section-button-two:hover {
-  background: #3EAB90;
+  background: #3eab90;
   border: 1px solid transparent;
   color: #ffffff;
 }
@@ -575,7 +575,7 @@ header .fz_sigin ul li:last-child a {
 }
 #fz_core_nexus .fz_core_bg {
   width: 558px;
-  background-color: #1A2C2A;
+  background-color: #1a2c2a;
   border-radius: 16px;
   padding-top: 30px;
   --border-angle: 0turn;
@@ -652,19 +652,19 @@ header .fz_sigin ul li:last-child a {
   top: 38%;
   left: 10%;
   animation: animate 16s linear infinite;
-  background: #F7C35F;
+  background: #f7c35f;
 }
 #fz_core_nexus .fz_core_bg .fz_core_text .fz_box div:nth-child(2) {
   top: 80%;
   left: 70%;
   animation: animate 12s linear infinite;
-  background: #3EAB90;
+  background: #3eab90;
 }
 #fz_core_nexus .fz_core_bg .fz_core_text .fz_box div:nth-child(3) {
   top: 38%;
   right: 0%;
   animation: animate 10s linear infinite;
-  background: #3EAB90;
+  background: #3eab90;
 }
 @media screen and (max-width: 991px) {
   #fz_core_nexus .fz_core_bg .fz_core_text {
@@ -724,7 +724,7 @@ header .fz_sigin ul li:last-child a {
   }
 }
 #fz_core_nexus .fz_core_text_right p span {
-  background-color: #2D4949;
+  background-color: #2d4949;
   border-radius: 50%;
   height: 43px;
   display: flex;
@@ -745,7 +745,7 @@ header .fz_sigin ul li:last-child a {
   }
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore {
-  background: #3EAB90;
+  background: #3eab90;
   color: #ffffff;
   border-radius: 32px;
   font-size: 16px;
@@ -765,7 +765,7 @@ header .fz_sigin ul li:last-child a {
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore:hover {
   background: transparent;
-  border: 1px solid #3EAB90;
+  border: 1px solid #3eab90;
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore .hero-join {
   line-height: 1.5;
@@ -789,7 +789,7 @@ header .fz_sigin ul li:last-child a {
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore_btn {
   background: #000000;
-  color: #3EAB90;
+  color: #3eab90;
   border-radius: 32px;
   font-size: 16px;
   position: relative;
@@ -798,7 +798,7 @@ header .fz_sigin ul li:last-child a {
   justify-content: flex-end;
   padding: 15px 20px;
   font-weight: 400;
-  border: 1px solid #3EAB90;
+  border: 1px solid #3eab90;
   transition: all 0.3s ease-in;
   width: 180px;
 }
@@ -806,7 +806,7 @@ header .fz_sigin ul li:last-child a {
   animation: moveAnimation 2s linear infinite;
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore_btn:hover {
-  background: #3EAB90;
+  background: #3eab90;
   border: 1px solid transparent;
   color: #ffffff;
 }
@@ -845,6 +845,14 @@ header .fz_sigin ul li:last-child a {
   syntax: "<angle>";
   inherits: true;
   initial-value: 0turn;
+}
+@keyframes moveAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%);
+  }
 }
 .features_posibilityies {
   padding: 0;
@@ -968,9 +976,12 @@ header .fz_sigin ul li:last-child a {
 }
 .features_posibilityies .container .dd {
   position: absolute;
-  left: 0;
-  right: 0;
-  transform: translate(0, 0);
+  left: 0px;
+  right: 0px;
+  translate: none;
+  rotate: none;
+  scale: none;
+  transform: translate(0px, 0px);
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
@@ -1036,7 +1047,7 @@ header .fz_sigin ul li:last-child a {
   position: absolute;
   height: 41.625rem;
   will-change: transform;
-  background-color: #1A2C2A;
+  background-color: #1a2c2a;
   box-shadow: 0px 0px 8px rgba(16, 106, 64, 0.3607843137);
   --border-angle: 0turn;
   --main-bg: conic-gradient(
@@ -1305,7 +1316,7 @@ header .fz_sigin ul li:last-child a {
 }
 .panel .panel__stack .panel__card .nav.nav-pills li .nav-link.active {
   background-color: transparent;
-  border-bottom: 3px solid #3EAB90;
+  border-bottom: 3px solid #3eab90;
 }
 .panel .panel__stack .panel__card .tab-content .fz-tab-card {
   display: flex;
@@ -1351,7 +1362,7 @@ header .fz_sigin ul li:last-child a {
   border-bottom-right-radius: 8px;
 }
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div h3 {
-  color: #F7C35F;
+  color: #f7c35f;
   font-size: 20px;
   font-weight: 500;
   line-height: 36px;
@@ -1365,7 +1376,7 @@ header .fz_sigin ul li:last-child a {
 }
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div a {
   display: none;
-  color: #3EAB90;
+  color: #3eab90;
   font-size: 18px;
   text-decoration: none;
 }
@@ -1383,7 +1394,7 @@ header .fz_sigin ul li:last-child a {
   z-index: 0;
 }
 .fz_product_sec .fz_container {
-  background-color: #1A2C2A;
+  background-color: #1a2c2a;
   display: flex;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -1405,27 +1416,27 @@ header .fz_sigin ul li:last-child a {
 .fz_product_sec .fz_container .item-1 {
   animation: animateBg 11s linear infinite;
   background-size: 100% 300%;
-  background: linear-gradient(rgb(0, 0, 0) 0%, rgb(18, 116, 117) 100%);
+  background: linear-gradient(rgb(0, 0, 0) 0%, rgb(10, 57, 58) 100%);
 }
 .fz_product_sec .fz_container .item-2 {
   animation: animateBg 11s linear infinite;
   background-size: 100% 300%;
-  background: linear-gradient(rgb(0, 0, 0) 0%, rgb(18, 116, 117) 100%);
+  background: linear-gradient(rgb(0, 0, 0) 0%, rgb(10, 57, 58) 100%);
 }
 .fz_product_sec .fz_container .item-3 {
   animation: animateBg 11s linear infinite;
   background-size: 100% 300%;
-  background: linear-gradient(rgb(0, 0, 0) 0%, rgb(18, 116, 117) 100%);
+  background: linear-gradient(rgb(0, 0, 0) 0%, rgb(10, 57, 58) 100%);
 }
 .fz_product_sec .fz_container .item-4 {
   animation: animateBg 11s linear infinite;
   background-size: 100% 300%;
-  background: linear-gradient(rgb(0, 0, 0) 0%, rgb(18, 116, 117) 100%);
+  background: linear-gradient(rgb(0, 0, 0) 0%, rgb(10, 57, 58) 100%);
 }
 .fz_product_sec .fz_container .item-5 {
   animation: animateBg 11s linear infinite;
   background-size: 100% 300%;
-  background: linear-gradient(rgb(0, 0, 0) 0%, rgb(18, 116, 117) 100%);
+  background: linear-gradient(rgb(0, 0, 0) 0%, rgb(10, 57, 58) 100%);
 }
 .fz_product_sec .fz_container .dot-nav-position-right {
   position: absolute;
@@ -1505,11 +1516,21 @@ header .fz_sigin ul li:last-child a {
     width: 100%;
   }
 }
+.fz_product_sec .fz_container .fz_sub_container .fz_content .fz_num {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
 .fz_product_sec .fz_container .fz_sub_container .fz_content .fz_num h3 {
-  line-height: 100px;
+  line-height: 75px;
   font-size: 128px;
   font-weight: 600;
   color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
 }
 @media screen and (max-width: 1200px) {
   .fz_product_sec .fz_container .fz_sub_container .fz_content .fz_num h3 {
@@ -1520,15 +1541,22 @@ header .fz_sigin ul li:last-child a {
   font-size: 36px;
   font-weight: 700;
   line-height: 49px;
-  color: #F7C35F;
+  color: #34b195;
   padding-bottom: 2px;
 }
 .fz_product_sec .fz_container .fz_sub_container .fz_content .fz_subtitle {
-  font-size: 26px;
+  font-size: 12px;
   font-weight: 200;
   line-height: 26px;
-  color: #3EAB90;
-  padding-bottom: 10px;
+  color: #f8d796;
+  border: 1px solid rgba(247, 195, 95, 0.231372549);
+  border-radius: 20px;
+  background: rgba(25, 135, 84, 0.031372549);
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 5px 20px;
+  margin-bottom: 0px;
 }
 @media screen and (max-width: 1200px) {
   .fz_product_sec .fz_container .fz_sub_container .fz_content .fz_subtitle {
@@ -1537,20 +1565,22 @@ header .fz_sigin ul li:last-child a {
 }
 .fz_product_sec .fz_container .fz_sub_container .fz_content .fz_bank {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   color: #ffffff;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   line-height: 30px;
+  letter-spacing: 0.25px;
 }
 .fz_product_sec .fz_container .fz_sub_container .fz_content .fz_desc {
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 300;
   color: #ffffff;
   padding-bottom: 26px;
   line-height: 26px;
+  letter-spacing: 0.25px;
 }
 .fz_product_sec .fz_container .fz_sub_container .fz_content .fz_btn button {
-  background: #3EAB90;
+  background: #3eab90;
   color: #ffffff;
   border-radius: 32px;
   font-size: 16px;
@@ -1709,7 +1739,7 @@ header .fz_sigin ul li:last-child a {
   }
 }
 .developer_section h5 {
-  color: #3EAB90;
+  color: #3eab90;
   font-size: 30px;
   padding-bottom: 40px;
   font-weight: 400;
@@ -1769,7 +1799,7 @@ header .fz_sigin ul li:last-child a {
   width: 60px;
   height: 60px;
   object-fit: contain;
-  background-color: #3EAB90;
+  background-color: #3eab90;
   padding: 10px;
   border-radius: 50%;
   margin-bottom: 10px;
@@ -1781,7 +1811,7 @@ header .fz_sigin ul li:last-child a {
 .developer_section .dev_left .dev_card h4 {
   font-size: 20px;
   font-weight: 500;
-  color: #3EAB90;
+  color: #3eab90;
   padding-bottom: 10px;
   color: #d7ba7d;
 }
@@ -1944,7 +1974,7 @@ header .fz_sigin ul li:last-child a {
   }
 }
 #fz_mobile_section .fz_mobile_text_left .fz_sub_title {
-  color: #3EAB90;
+  color: #3eab90;
   font-size: 30px;
   padding-bottom: 40px;
   font-weight: 400;
@@ -1973,7 +2003,7 @@ header .fz_sigin ul li:last-child a {
   }
 }
 #fz_mobile_section .fz_mobile_text_left .fz_description span {
-  background-color: #2D4949;
+  background-color: #2d4949;
   border-radius: 50%;
   height: 43px;
   display: flex;
@@ -1999,7 +2029,7 @@ header .fz_sigin ul li:last-child a {
   }
 }
 #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore {
-  background: #3EAB90;
+  background: #3eab90;
   color: #ffffff;
   border-radius: 32px;
   font-size: 16px;
@@ -2019,7 +2049,7 @@ header .fz_sigin ul li:last-child a {
 }
 #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore:hover {
   background: transparent;
-  border: 1px solid #3EAB90;
+  border: 1px solid #3eab90;
 }
 #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore .hero-join {
   line-height: 1.5;
@@ -2043,7 +2073,7 @@ header .fz_sigin ul li:last-child a {
 }
 #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore_btn {
   background: #000000;
-  color: #3EAB90;
+  color: #3eab90;
   border-radius: 32px;
   font-size: 16px;
   position: relative;
@@ -2052,7 +2082,7 @@ header .fz_sigin ul li:last-child a {
   justify-content: flex-end;
   padding: 15px 20px;
   font-weight: 400;
-  border: 1px solid #3EAB90;
+  border: 1px solid #3eab90;
   transition: all 0.3s ease-in;
   width: 180px;
 }
@@ -2060,7 +2090,7 @@ header .fz_sigin ul li:last-child a {
   animation: moveAnimation 2s linear infinite;
 }
 #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore_btn:hover {
-  background: #3EAB90;
+  background: #3eab90;
   border: 1px solid transparent;
   color: #ffffff;
 }
@@ -2262,7 +2292,7 @@ header .fz_sigin ul li:last-child a {
   }
 }
 .fz-blog .blog-carousel h3 {
-  color: #3EAB90;
+  color: #3eab90;
   font-size: 40px;
   font-weight: 500;
   line-height: 58px;
@@ -2348,7 +2378,7 @@ header .fz_sigin ul li:last-child a {
   line-height: 30px;
   font-weight: 500;
   padding-bottom: 12px;
-  color: #F7C35F;
+  color: #f7c35f;
   margin-bottom: 0px;
 }
 .fz-blog .item .card-body .card-text {
@@ -2379,7 +2409,7 @@ header .fz_sigin ul li:last-child a {
   border: none;
 }
 .fz-blog .item .card-body button:hover {
-  color: #F7C35F;
+  color: #f7c35f;
 }
 .fz-blog .owl-carousel .owl-stage {
   display: flex;
@@ -2403,7 +2433,7 @@ header .fz_sigin ul li:last-child a {
 }
 .fz-blog .owl-carousel .owl-nav .custom-prev:hover,
 .fz-blog .owl-carousel .owl-nav .custom-next:hover {
-  color: #3EAB90;
+  color: #3eab90;
 }
 .fz-blog .owl-carousel .owl-nav::after, .fz-blog .owl-carousel .owl-nav::before {
   content: "";
@@ -2419,12 +2449,12 @@ header .fz_sigin ul li:last-child a {
   left: 53%;
 }
 .fz-blog .owl-carousel .owl-nav::before {
-  background: #3EAB90;
+  background: #3eab90;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 .fz-blog .owl-carousel .owl-nav .custom-prev {
-  color: #3EAB90;
+  color: #3eab90;
 }
 .fz-blog .owl-carousel .owl-nav .custom-next {
   color: #ffffff;
@@ -2453,7 +2483,7 @@ header .fz_sigin ul li:last-child a {
   font-size: 48px;
   font-weight: 600;
   line-height: 64px;
-  color: #3EAB90;
+  color: #3eab90;
   padding-bottom: 16px;
 }
 .fz_testimonial .fz_testimonial_top p {
@@ -2510,7 +2540,7 @@ header .fz_sigin ul li:last-child a {
   font-size: 28px;
   font-weight: 600;
   line-height: 38px;
-  color: #3EAB90;
+  color: #3eab90;
   padding-bottom: 8px;
 }
 .fz_testimonial .fz_testimonial_items .fz_testimonial_item .fz_testimonial_item_content p {
@@ -2549,7 +2579,7 @@ header .fz_sigin ul li:last-child a {
   border-radius: 16px !important;
   background: #000000 !important;
   margin-bottom: 3px !important;
-  border-top: #3EAB90 !important;
+  border-top: #3eab90 !important;
 }
 .faq_section .accordion-item:first-of-type {
   border-radius: 16px !important;
@@ -2564,7 +2594,7 @@ header .fz_sigin ul li:last-child a {
   background-color: #ffffff;
 }
 .faq_section .accordion-item:not(:first-of-type) {
-  border-top: 1px solid #3EAB90 !important;
+  border-top: 1px solid #3eab90 !important;
 }
 .faq_section .accordion-item .accordion-header .accordion-button {
   position: relative;
@@ -2591,7 +2621,7 @@ header .fz_sigin ul li:last-child a {
 .faq_section .accordion-item {
   margin-bottom: 20px;
   border-radius: 16px;
-  border: 1px solid #3EAB90;
+  border: 1px solid #3eab90;
   background-color: #000000 !important;
 }
 .faq_section .accordion-body {
@@ -2605,7 +2635,7 @@ header .fz_sigin ul li:last-child a {
   box-shadow: none;
 }
 .faq_section .accordion-item:not(:first-of-type) {
-  border-top: #3EAB90;
+  border-top: #3eab90;
 }
 .faq_section .accordion-item .accordion-header .accordion-button:focus {
   box-shadow: none;
@@ -2622,7 +2652,7 @@ header .fz_sigin ul li:last-child a {
 }
 .faq_section h3 {
   font-size: 40px;
-  color: #3EAB90;
+  color: #3eab90;
   font-weight: 500;
 }
 @media screen and (max-width: 768px) {
@@ -2647,7 +2677,7 @@ header .fz_sigin ul li:last-child a {
 }
 #logo_marquee {
   --space: 5px;
-  background-color: #1A2C2A;
+  background-color: #1a2c2a;
   padding: 20px 0;
   display: none;
 }
@@ -2674,7 +2704,7 @@ header .fz_sigin ul li:last-child a {
   }
 }
 .newsletter_section h3 {
-  color: #3EAB90;
+  color: #3eab90;
   font-size: 50px;
   font-weight: 500;
   line-height: 70.31px;
@@ -2719,7 +2749,7 @@ header .fz_sigin ul li:last-child a {
   }
 }
 .newsletter_section .input-group button {
-  background-color: #3EAB90 !important;
+  background-color: #3eab90 !important;
   width: 165px;
   height: 71px;
   gap: 0px;
@@ -2900,14 +2930,14 @@ header .fz_sigin ul li:last-child a {
   display: inline-block;
   border-radius: 30px;
   background-color: #000000;
-  color: #3EAB90;
+  color: #3eab90;
   text-align: center;
   font-size: 18px;
   padding: 10px 20px;
   transition: all 0.3s;
   box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.06);
   text-decoration: none;
-  border: 1px solid #3EAB90;
+  border: 1px solid #3eab90;
 }
 .play_store_section .play_store_left .start_now_btn .dedcription-btn .btn-icon {
   background-color: #ffffff;
@@ -2953,7 +2983,7 @@ header .fz_sigin ul li:last-child a {
   color: #ffffff;
 }
 .play_store_section .play_store_left .start_now_btn .dedcription-btn:hover {
-  color: #3EAB90 !important;
+  color: #3eab90 !important;
 }
 .play_store_section .play_store_left .start_now_btn .hover-box {
   display: flex;
@@ -3225,7 +3255,7 @@ header .fz_sigin ul li:last-child a {
 }
 .footer_section li a:hover {
   margin-left: 4px;
-  color: #F7C35F;
+  color: #f7c35f;
 }
 .footer_section .copy_rights {
   display: flex;
@@ -3250,11 +3280,11 @@ header .fz_sigin ul li:last-child a {
   display: inline-block;
   text-align: center;
   border-radius: 50%;
-  background: #1A2C2A;
+  background: #1a2c2a;
   line-height: 35px;
 }
 .footer_section .copy_rights .copy_rights_1.fz_social_icon a:hover {
-  background: #F7C35F;
+  background: #f7c35f;
 }
 .footer_section .copy_rights .copy_rights_1:nth-child(2) ul li a:hover, .footer_section .copy_rights .copy_rights_1:nth-child(3) ul li a:hover {
   margin-left: 0;
