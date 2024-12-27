@@ -992,14 +992,14 @@ header .fz_sigin ul li:last-child a {
 }
 .features_posibilityies .container h3 {
   font-weight: 200;
-  font-size: 65px;
+  font-size: 45px;
   color: #ddd;
   text-transform: capitalize;
   display: flex;
   justify-content: center;
 }
 .features_posibilityies .container h3 p {
-  width: 600px;
+  width: 30%;
   text-shadow: 0 0 15px rgba(0, 255, 227, 0.14), 0 0 20px rgba(0, 255, 227, 0.11), 0 0 40px rgba(0, 255, 203, 0.52), 0 0 10px rgba(0, 255, 211, 0.51);
   color: #4dd0b1;
 }
