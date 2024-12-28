@@ -64,6 +64,13 @@
   }
 }
 
+@media screen and (max-width: 1300px) {
+  .video_anim {
+    height:100% !important;
+    padding: 40px 0px 20px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #fz-hero-bg .text-content h1 {
     line-height: 40px;
@@ -290,7 +297,7 @@
                     <span>Innovations
                     </span>
                     </h1>
-                    <p>Finzor Core Banking Services refers to the suite of services <br>and solutions offered by Finzor to
+                    <p>Finzor Core Banking Services refers to the suite of services <br class="mobile-break">and solutions offered by Finzor to
                       financial institutions.</p>
                     <!-- <div class="hero-section-button">
                       <button class="section-button-one">Explore <svg width="15" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -1807,7 +1814,7 @@
           margin: 32, /* Adds spacing between cards */
           nav: true, /* Shows previous and next arrows */
           dots: false,
-          autoplay: false,
+          autoplay: true,
           smartSpeed: 2000,
           center:true,
           autoplayTimeout: 4000,
@@ -2152,6 +2159,8 @@ const editor = CodeMirror.fromTextArea(document.getElementById('code'), {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
+
+
   </style>
 
   

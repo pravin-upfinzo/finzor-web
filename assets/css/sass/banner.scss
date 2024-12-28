@@ -108,11 +108,14 @@
       @media screen and (max-width: 1024px) {
         margin-bottom: 20px;
 
-        .desktop-break {
-          display: none;
-        }
       }
     }
+    
+    @media screen and (max-width: 1300px) {
+      .mobile-break {
+         display: none;
+       }
+     }
   }
 
   // .hero-section-button{

@@ -173,7 +173,7 @@ header .navbar-expand-lg .navbar-nav li a.nav-link {
 }
 @media screen and (max-width: 991px) {
   header .navbar-expand-lg .navbar-nav li a.nav-link {
-    padding: 20px 5px;
+    padding: 10px 5px;
     color: #ffffff;
   }
 }
@@ -183,7 +183,7 @@ header .navbar-expand-lg .navbar-nav li a.nav-link:hover {
 @media (min-width: 992px) and (max-width: 1300px) {
   header .navbar-expand-lg .navbar-nav li a.nav-link {
     font-size: 14px;
-    padding: 10px 12px;
+    padding: 10px 10px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -380,7 +380,9 @@ header .fz_sigin ul li:last-child a {
   #fz-hero-bg .text-content p {
     margin-bottom: 20px;
   }
-  #fz-hero-bg .text-content p .desktop-break {
+}
+@media screen and (max-width: 1300px) {
+  #fz-hero-bg .text-content .mobile-break {
     display: none;
   }
 }
@@ -1116,7 +1118,7 @@ header .fz_sigin ul li:last-child a {
   animation-delay: 1.5s;
 }
 
-.panel__stack .panel__card.panel__card--one {
+.panel__stack .panel__card.panel__card {
   height: 43rem;
 }
 
@@ -1327,9 +1329,15 @@ header .fz_sigin ul li:last-child a {
     flex-direction: column;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .panel .panel__stack .panel__card .tab-content .fz-tab-card {
     flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .panel .panel__stack .panel__card .tab-content .fz-tab-card {
+    width: 100%;
   }
 }
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
@@ -1337,7 +1345,7 @@ header .fz_sigin ul li:last-child a {
   min-width: 30%;
   background: #fff;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
     width: calc(50% - 20px);
   }
@@ -1350,9 +1358,15 @@ header .fz_sigin ul li:last-child a {
   width: 100%;
   height: 270px;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay img {
     width: 100%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay img {
+    width: 100%;
+    height: auto;
   }
 }
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div {
@@ -1361,11 +1375,22 @@ header .fz_sigin ul li:last-child a {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div {
+    min-height: 225px;
+  }
+}
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div h3 {
   color: #f7c35f;
   font-size: 20px;
   font-weight: 500;
   line-height: 36px;
+}
+@media screen and (max-width: 767px) {
+  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div p {
   color: #ffffff;
@@ -1373,6 +1398,12 @@ header .fz_sigin ul li:last-child a {
   font-weight: 400;
   line-height: 25px;
   min-height: 75px;
+}
+@media screen and (max-width: 767px) {
+  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div p {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div a {
   display: none;
@@ -1747,6 +1778,7 @@ header .fz_sigin ul li:last-child a {
 @media screen and (max-width: 991px) {
   .developer_section h5 {
     text-align: center;
+    padding-bottom: 0px;
   }
 }
 .developer_section .dev_left {
@@ -1986,6 +2018,7 @@ header .fz_sigin ul li:last-child a {
 @media screen and (max-width: 991px) {
   #fz_mobile_section .fz_mobile_text_left .fz_sub_title {
     text-align: center;
+    line-height: 38px;
   }
 }
 #fz_mobile_section .fz_mobile_text_left .fz_description {
@@ -2184,6 +2217,12 @@ header .fz_sigin ul li:last-child a {
   color: #3EAB90;
   text-align: center;
 }
+@media screen and (max-width: 991px) {
+  .counter_section h2 {
+    font-size: 30px;
+    line-height: 44px;
+  }
+}
 .counter_section p {
   font-size: 16px;
   font-weight: 300;
@@ -2213,6 +2252,12 @@ header .fz_sigin ul li:last-child a {
   text-align: center;
   color: #FFFFFF;
 }
+@media screen and (max-width: 991px) {
+  .counter_section #counter span {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
 @media (min-width: 992px) and (max-width: 1199px) {
   .counter_section #counter span {
     font-size: 20px;
@@ -2230,6 +2275,12 @@ header .fz_sigin ul li:last-child a {
 }
 .counter_section #counter .col-lg-3:last-child:before {
   background: unset;
+}
+@media screen and (max-width: 991px) {
+  .counter_section #counter .col-lg-3 {
+    width: 50%;
+    padding: 15px 0px;
+  }
 }
 .counter_section #counter .col-lg-3::before {
   content: "";
@@ -2257,6 +2308,11 @@ header .fz_sigin ul li:last-child a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 991px) {
+  .counter_section #counter .count {
+    font-size: 30px;
+  }
 }
 .counter_section #counter .count.percent_1:after {
   content: "+";
@@ -2291,7 +2347,7 @@ header .fz_sigin ul li:last-child a {
 }
 @media screen and (max-width: 991px) {
   .fz-blog .blog-carousel {
-    padding: 66px 0 30px;
+    padding: 20px 0 30px;
   }
 }
 .fz-blog .blog-carousel h3 {
@@ -2377,17 +2433,29 @@ header .fz_sigin ul li:last-child a {
   }
 }
 .fz-blog .item .card-body h5 {
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 22px;
+  line-height: 30px;
   font-weight: 500;
   padding-bottom: 12px;
   color: #f7c35f;
   margin-bottom: 0px;
 }
+@media screen and (max-width: 991px) {
+  .fz-blog .item .card-body h5 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
 .fz-blog .item .card-body .card-text {
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+@media screen and (max-width: 991px) {
+  .fz-blog .item .card-body .card-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 .fz-blog .item .card-body .card-top-title {
   display: flex;
@@ -2576,6 +2644,7 @@ header .fz_sigin ul li:last-child a {
   }
   .faq_section .faq_header video {
     width: 100%;
+    height: 150px;
   }
 }
 .faq_section .accordion-item .accordion-header {
@@ -2621,6 +2690,11 @@ header .fz_sigin ul li:last-child a {
     font-size: 16px;
   }
 }
+@media (min-width: 769px) and (max-width: 1200px) {
+  .faq_section .accordion-item .accordion-header .accordion-button {
+    line-height: 28px;
+  }
+}
 .faq_section .accordion-item {
   margin-bottom: 20px;
   border-radius: 16px;
@@ -2658,10 +2732,9 @@ header .fz_sigin ul li:last-child a {
   color: #3eab90;
   font-weight: 500;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .faq_section h3 {
     font-size: 35px;
-    padding-bottom: 25px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -2736,18 +2809,24 @@ header .fz_sigin ul li:last-child a {
 }
 .newsletter_section .input-group {
   width: 636.71px;
-  height: 71px;
+  height: 70px;
   gap: 0px;
   border-radius: 0px 8px 8px 0px;
   border: 1px 0px 0px 0px;
   opacity: 0px;
   margin: 0 auto;
-  margin-top: 72px;
+  margin-top: 30px;
   border: none;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .newsletter_section .input-group {
     width: auto;
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .newsletter_section .input-group {
+    width: 60%;
     margin-top: 40px;
   }
 }
@@ -2850,9 +2929,17 @@ header .fz_sigin ul li:last-child a {
     text-align: center;
   }
 }
+@media (min-width: 992px) and (max-width: 1300px) {
+  .play_store_section h2 {
+    font-size: 36px;
+    line-height: 46px;
+    text-align: left;
+  }
+}
 .play_store_section ul {
   padding: 0;
   margin: 10px 20px 20px;
+  list-style: none;
 }
 .play_store_section ul li {
   line-height: 25px;

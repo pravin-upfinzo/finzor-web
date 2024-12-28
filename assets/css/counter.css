@@ -65,6 +65,12 @@
   color: #3EAB90;
   text-align: center;
 }
+@media screen and (max-width: 991px) {
+  .counter_section h2 {
+    font-size: 30px;
+    line-height: 44px;
+  }
+}
 .counter_section p {
   font-size: 16px;
   font-weight: 300;
@@ -78,7 +84,7 @@
     line-height: 24px;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .counter_section p br {
     display: none;
   }
@@ -94,6 +100,12 @@
   text-align: center;
   color: #FFFFFF;
 }
+@media screen and (max-width: 991px) {
+  .counter_section #counter span {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
 @media (min-width: 992px) and (max-width: 1199px) {
   .counter_section #counter span {
     font-size: 20px;
@@ -103,7 +115,6 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border-right: 1px solid;
   border-color: -moz-linear-gradient(top, #FFFFFF, #3EAB90);
   position: relative;
 }
@@ -112,6 +123,12 @@
 }
 .counter_section #counter .col-lg-3:last-child:before {
   background: unset;
+}
+@media screen and (max-width: 991px) {
+  .counter_section #counter .col-lg-3 {
+    width: 50%;
+    padding: 15px 0px;
+  }
 }
 .counter_section #counter .col-lg-3::before {
   content: "";
@@ -139,6 +156,11 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 991px) {
+  .counter_section #counter .count {
+    font-size: 30px;
+  }
 }
 .counter_section #counter .count.percent_1:after {
   content: "+";

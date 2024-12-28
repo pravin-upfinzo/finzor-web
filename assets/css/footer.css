@@ -101,7 +101,7 @@
 }
 .footer_section li a:hover {
   margin-left: 4px;
-  color: #F7C35F;
+  color: #f7c35f;
 }
 .footer_section .copy_rights {
   display: flex;
@@ -126,11 +126,11 @@
   display: inline-block;
   text-align: center;
   border-radius: 50%;
-  background: #1A2C2A;
+  background: #1a2c2a;
   line-height: 35px;
 }
 .footer_section .copy_rights .copy_rights_1.fz_social_icon a:hover {
-  background: #F7C35F;
+  background: #f7c35f;
 }
 .footer_section .copy_rights .copy_rights_1:nth-child(2) ul li a:hover, .footer_section .copy_rights .copy_rights_1:nth-child(3) ul li a:hover {
   margin-left: 0;

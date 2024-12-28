@@ -43,7 +43,7 @@ header {
   }
   header .navbar .btn-close::before {
     content: "✕";
-    color: #3EAB90;
+    color: #3eab90;
     font-size: 1.5rem;
     display: inline-block;
     line-height: 1;
@@ -75,7 +75,7 @@ header {
     text-transform: capitalize;
   }
   header .navbar .navbar-collapse ul.navbar-nav li a:hover {
-    background-color: #1A2C2A;
+    background-color: #1a2c2a;
   }
   header .navbar .navbar-toggler {
     background-color: transparent;
@@ -107,9 +107,15 @@ header .navbar-expand-lg .navbar-nav li a.nav-link {
   font-size: 14px;
   font-weight: 400;
   padding: 0px 15px;
-  color: #1A2C2A;
+  color: #1a2c2a;
   position: relative;
   transition: all 0.7s ease;
+}
+@media screen and (max-width: 991px) {
+  header .navbar-expand-lg .navbar-nav li a.nav-link {
+    padding: 10px 5px;
+    color: #ffffff;
+  }
 }
 header .navbar-expand-lg .navbar-nav li a.nav-link:hover {
   color: #ffffff;
@@ -117,7 +123,7 @@ header .navbar-expand-lg .navbar-nav li a.nav-link:hover {
 @media (min-width: 992px) and (max-width: 1300px) {
   header .navbar-expand-lg .navbar-nav li a.nav-link {
     font-size: 14px;
-    padding: 10px 12px;
+    padding: 10px 10px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -167,7 +173,7 @@ header .fz_sigin ul li:last-child {
   }
 }
 header .fz_sigin ul li:last-child a {
-  background-color: #1A2C2A;
+  background-color: #1a2c2a;
   padding: 10px 15px;
   border-radius: 5px;
   border: 1px solid #ffffff;

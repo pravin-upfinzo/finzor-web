@@ -42,6 +42,7 @@
 @media screen and (max-width: 991px) {
   .developer_section h5 {
     text-align: center;
+    padding-bottom: 0px;
   }
 }
 .developer_section .dev_left {

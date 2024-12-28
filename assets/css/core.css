@@ -11,7 +11,7 @@
 }
 #fz_core_nexus .fz_core_bg {
   width: 558px;
-  background-color: #1A2C2A;
+  background-color: #1a2c2a;
   border-radius: 16px;
   padding-top: 30px;
   --border-angle: 0turn;
@@ -88,19 +88,19 @@
   top: 38%;
   left: 10%;
   animation: animate 16s linear infinite;
-  background: #F7C35F;
+  background: #f7c35f;
 }
 #fz_core_nexus .fz_core_bg .fz_core_text .fz_box div:nth-child(2) {
   top: 80%;
   left: 70%;
   animation: animate 12s linear infinite;
-  background: #3EAB90;
+  background: #3eab90;
 }
 #fz_core_nexus .fz_core_bg .fz_core_text .fz_box div:nth-child(3) {
   top: 38%;
   right: 0%;
   animation: animate 10s linear infinite;
-  background: #3EAB90;
+  background: #3eab90;
 }
 @media screen and (max-width: 991px) {
   #fz_core_nexus .fz_core_bg .fz_core_text {
@@ -160,7 +160,7 @@
   }
 }
 #fz_core_nexus .fz_core_text_right p span {
-  background-color: #2D4949;
+  background-color: #2d4949;
   border-radius: 50%;
   height: 43px;
   display: flex;
@@ -181,7 +181,7 @@
   }
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore {
-  background: #3EAB90;
+  background: #3eab90;
   color: #ffffff;
   border-radius: 32px;
   font-size: 16px;
@@ -201,7 +201,7 @@
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore:hover {
   background: transparent;
-  border: 1px solid #3EAB90;
+  border: 1px solid #3eab90;
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore .hero-join {
   line-height: 1.5;
@@ -225,7 +225,7 @@
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore_btn {
   background: #000000;
-  color: #3EAB90;
+  color: #3eab90;
   border-radius: 32px;
   font-size: 16px;
   position: relative;
@@ -234,7 +234,7 @@
   justify-content: flex-end;
   padding: 15px 20px;
   font-weight: 400;
-  border: 1px solid #3EAB90;
+  border: 1px solid #3eab90;
   transition: all 0.3s ease-in;
   width: 180px;
 }
@@ -242,7 +242,7 @@
   animation: moveAnimation 2s linear infinite;
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore_btn:hover {
-  background: #3EAB90;
+  background: #3eab90;
   border: 1px solid transparent;
   color: #ffffff;
 }

@@ -121,7 +121,7 @@ header {
           transition: all 0.7s ease;
 
           @media screen and (max-width: 991px) {
-            padding: 20px 5px;
+            padding: 10px 5px;
             color:$white;
          }
 
@@ -131,7 +131,7 @@ header {
 
           @media (min-width: 992px) and (max-width: 1300px) {
             font-size: 14px;
-            padding: 10px 12px;
+            padding: 10px 10px;
           }
         }
       }

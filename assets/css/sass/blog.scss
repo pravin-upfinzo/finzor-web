@@ -11,7 +11,7 @@
     padding: 66px 0 84px;
 
     @media screen and (max-width: 991px) {
-      padding: 66px 0 30px;
+      padding: 20px 0 30px;
     }
 
     h3 {
@@ -97,18 +97,27 @@
       }
 
       h5 {
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 22px;
+        line-height: 30px;
         font-weight: 500;
         padding-bottom: 12px;
         color:$secondary-color;
         margin-bottom: 0px;
+        @media screen and (max-width: 991px) {
+         font-size: 18px;
+         line-height: 24px;
+        }
+
       }
 
       .card-text {
-        font-size: 13px;
-        line-height: 18px;
-        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        @media screen and (max-width: 991px) {
+          font-size: 14px;
+          line-height: 20px;
+         }
       }
 
       .card-top-title {
