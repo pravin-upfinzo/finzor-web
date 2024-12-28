@@ -1484,7 +1484,6 @@ header .fz_sigin ul li:last-child a {
   align-items: flex-end;
   justify-content: center;
   width: 100vw;
-  height: 100vh;
 }
 .fz_product_sec .fz_container .dot-nav-position-right .dot-nav li {
   list-style: none;
@@ -1790,6 +1789,7 @@ header .fz_sigin ul li:last-child a {
 @media screen and (max-width: 767px) {
   .developer_section .dev_left {
     padding: 15px 0;
+    flex-direction: column;
   }
 }
 .developer_section .dev_left .row {
@@ -1804,14 +1804,11 @@ header .fz_sigin ul li:last-child a {
   border-radius: 12px;
   border: solid 1px transparent;
   --border-angle: 0turn;
-  --main-bg: linear-gradient(rgb(0, 0, 0) 0%, rgb(18, 116, 117) 100%);
+  --main-bg:conic-gradient(from var(--border-angle), #0c0d0d 0%, #0d0e0e 100%);
   --gradient-border: conic-gradient(from var(--border-angle), transparent 10%, #05311d, #3EAB90 49%, transparent);
   background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
   background-position: center center;
   animation: bg-spin 8s linear infinite;
-  background: radial-gradient(113.04% 100% at 50% 0, #181818 0%, rgb(25, 25, 25) 0.01%, hsla(0, 0%, 3%, 0.81) 100%);
-  border-radius: 20px;
-  box-shadow: inset 1.2px 0 rgba(255, 255, 255, 0.0392156863), inset -1.2px 0 rgba(255, 255, 255, 0.0392156863), inset 0 1.2px rgba(255, 255, 255, 0.1019607843), inset 0 0.6px rgba(255, 255, 255, 0.1019607843);
 }
 .developer_section .dev_left .dev_card:hover {
   --gradient-border: conic-gradient(from var(--border-angle), transparent 50%, #F7C35F, #3EAB90 99%, transparent);
@@ -1857,6 +1854,7 @@ header .fz_sigin ul li:last-child a {
   font-weight: 300;
   margin-bottom: 0px;
   transition: all 0.6s ease;
+  text-align: left;
 }
 .developer_section .code-container {
   white-space: pre; /* Preserve code formatting */
@@ -2433,8 +2431,8 @@ header .fz_sigin ul li:last-child a {
   }
 }
 .fz-blog .item .card-body h5 {
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 22px;
   font-weight: 500;
   padding-bottom: 12px;
   color: #f7c35f;
@@ -2442,14 +2440,14 @@ header .fz_sigin ul li:last-child a {
 }
 @media screen and (max-width: 991px) {
   .fz-blog .item .card-body h5 {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 .fz-blog .item .card-body .card-text {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 300;
 }
 @media screen and (max-width: 991px) {
   .fz-blog .item .card-body .card-text {
@@ -2939,13 +2937,17 @@ header .fz_sigin ul li:last-child a {
 .play_store_section ul {
   padding: 0;
   margin: 10px 20px 20px;
-  list-style: none;
 }
 .play_store_section ul li {
   line-height: 25px;
   color: #dfb946;
   font-size: 14px;
   font-weight: 400;
+}
+@media (max-width: 991px) {
+  .play_store_section ul {
+    list-style: none;
+  }
 }
 .play_store_section p {
   font-size: 14px;

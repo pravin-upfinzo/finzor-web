@@ -37,7 +37,6 @@
 #fz-hero-bg canvas {
   position: absolute;
   width: 100%;
-  display: flex;
   height: 100%;
   z-index: 1;
 }
@@ -112,9 +111,7 @@
   #fz-hero-bg .text-content p {
     margin-bottom: 20px;
   }
-}
-@media screen and (max-width: 1300px) {
-  #fz-hero-bg .text-content .mobile-break {
+  #fz-hero-bg .text-content p .desktop-break {
     display: none;
   }
 }
@@ -156,7 +153,7 @@
   bottom: 12px;
 }
 #fz-hero-bg .hero-section-button .section-button-one {
-  background: #3eab90;
+  background: #3EAB90;
   color: #ffffff;
   border-radius: 32px;
   font-size: 16px;
@@ -172,24 +169,24 @@
 }
 #fz-hero-bg .hero-section-button .section-button-one:hover {
   background: transparent;
-  border: 1px solid #3eab90;
+  border: 1px solid #3EAB90;
 }
 #fz-hero-bg .hero-section-button .section-button-two {
   background: #000000;
-  color: #3eab90;
+  color: #3EAB90;
   border-radius: 32px;
   font-size: 16px;
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: flex-end;
-  border: 1px solid #3eab90;
+  border: 1px solid #3EAB90;
 }
 #fz-hero-bg .hero-section-button .section-button-two svg {
   animation: moveAnimation 2s linear infinite;
 }
 #fz-hero-bg .hero-section-button .section-button-two:hover {
-  background: #3eab90;
+  background: #3EAB90;
   border: 1px solid transparent;
   color: #ffffff;
 }

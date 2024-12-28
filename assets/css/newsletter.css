@@ -17,7 +17,7 @@
   }
 }
 .newsletter_section h3 {
-  color: #3eab90;
+  color: #3EAB90;
   font-size: 50px;
   font-weight: 500;
   line-height: 70.31px;
@@ -46,29 +46,23 @@
 }
 .newsletter_section .input-group {
   width: 636.71px;
-  height: 70px;
+  height: 71px;
   gap: 0px;
   border-radius: 0px 8px 8px 0px;
   border: 1px 0px 0px 0px;
   opacity: 0px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 72px;
   border: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .newsletter_section .input-group {
     width: auto;
     margin-top: 40px;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 991px) {
-  .newsletter_section .input-group {
-    width: 60%;
-    margin-top: 40px;
-  }
-}
 .newsletter_section .input-group button {
-  background-color: #3eab90 !important;
+  background-color: #3EAB90 !important;
   width: 165px;
   height: 71px;
   gap: 0px;

@@ -18,7 +18,7 @@
 }
 @media screen and (max-width: 991px) {
   .fz-blog .blog-carousel {
-    padding: 20px 0 30px;
+    padding: 66px 0 30px;
   }
 }
 .fz-blog .blog-carousel h3 {
@@ -104,29 +104,17 @@
   }
 }
 .fz-blog .item .card-body h5 {
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 22px;
   font-weight: 500;
   padding-bottom: 12px;
   color: #f7c35f;
   margin-bottom: 0px;
 }
-@media screen and (max-width: 991px) {
-  .fz-blog .item .card-body h5 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-}
 .fz-blog .item .card-body .card-text {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-}
-@media screen and (max-width: 991px) {
-  .fz-blog .item .card-body .card-text {
-    font-size: 14px;
-    line-height: 20px;
-  }
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 300;
 }
 .fz-blog .item .card-body .card-top-title {
   display: flex;

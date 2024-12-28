@@ -753,7 +753,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="panel__options">
-                  <span data-target="b" class="active" role="button">Core Banking Features</span>
+                  <span data-target="b" class="active" role="button">Core Banking Solution</span>
                   <span data-target="c" role="button">Payment Gateway </span>
                   <span data-target="d" role="button">Neo Banking</span>
                   <span data-target="e" role="button">UPI</span>
@@ -761,7 +761,7 @@
       
                 <div class="panel__stack">
                   <div class="panel__card panel__card--one text-white bg-purple overflow-hidden">
-                    <h2>Core Banking Features</h2>
+                    <h2>Core Banking Solution</h2>
                     <!-- <ul class="nav nav-pills" role="tablist">
                       <li class="nav-item" role="presentation"><a class="nav-link active" data-bs-toggle="pill" href="#home"
                           aria-selected="true" role="tab">Top Products</a></li>
@@ -1644,7 +1644,7 @@
                       <h5>Features</h5>
                       <ul>
                           <li>
-                              <a href="#" title="Website Development">Core Banking Features</a>
+                              <a href="#" title="Website Development">Core Banking Solution</a>
                           </li>
                           <li>
                               <a href="#" title="Application Development">Payment Gateways</a>
@@ -1941,11 +1941,11 @@
 
 sm1.add("(min-width: 1200px)", () => {
       // Animation for .fz_intergration (left to center)
-gsap.fromTo(".fz_intergration", {
+      gsap.fromTo(".fz_intergration", {
   opacity: 0.5,
   scale: 0.7,
   rotateX: "10deg",
-  x: "-30vw",  // Start from left side (off-screen)
+  x: "-10vw",  // Start from left side (off-screen)
 }, {
   opacity: 1,
   scale: 1,
@@ -1959,31 +1959,32 @@ gsap.fromTo(".fz_intergration", {
   }
 });
 
-// Animation for .fz_api (zoom effect)
+// Bottom to top scroll animation for .fz_api
 gsap.fromTo(".fz_api", {
   opacity: 0.5,
   scale: 0.7,
   rotateX: "10deg",
-  x: "30vw",  // Start from right side (off-screen)
+  y: "10vh",  // Start 30% of viewport height below (off-screen)
 }, {
   opacity: 1,
   scale: 1,
   rotateX: "0deg",
-  x: "0vw",  // Move to original position (center)
+  y: "0",  // Move to original position (center)
   scrollTrigger: {
     trigger: ".fz_api",
-    start: "top bottom",  // Starts when the section top reaches the bottom of the viewport
-    end: "bottom bottom-=10%",  // Ends when the section bottom is 10% before the bottom
-    scrub: 1,  // Syncs animation with scroll position
+    start: "top bottom",  // Start when the bottom of the element reaches the bottom of the viewport
+    end: "bottom bottom-=10%",  // End when the top of the element reaches the top of the viewport
+    scrub: 1,  // Sync the animation with scroll position
   }
 });
+
 
 // Animation for .fz_webhook (right to center)
 gsap.fromTo(".fz_webhook", {
   opacity: 0.5,
   scale: 0.7,
   rotateX: "10deg",
-  x: "30vw",  // Start from right side (off-screen)
+  x: "10vw",  // Start from right side (off-screen)
 }, {
   opacity: 1,
   scale: 1,
@@ -2159,8 +2160,6 @@ const editor = CodeMirror.fromTextArea(document.getElementById('code'), {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
-
-
   </style>
 
   

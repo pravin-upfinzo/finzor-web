@@ -37,7 +37,7 @@
   }
 }
 #fz_mobile_section .fz_mobile_text_left .fz_sub_title {
-  color: #3eab90;
+  color: #3EAB90;
   font-size: 30px;
   padding-bottom: 40px;
   font-weight: 400;
@@ -46,7 +46,6 @@
 @media screen and (max-width: 991px) {
   #fz_mobile_section .fz_mobile_text_left .fz_sub_title {
     text-align: center;
-    line-height: 38px;
   }
 }
 #fz_mobile_section .fz_mobile_text_left .fz_description {
@@ -67,7 +66,7 @@
   }
 }
 #fz_mobile_section .fz_mobile_text_left .fz_description span {
-  background-color: #2d4949;
+  background-color: #2D4949;
   border-radius: 50%;
   height: 43px;
   display: flex;
@@ -93,7 +92,7 @@
   }
 }
 #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore {
-  background: #3eab90;
+  background: #3EAB90;
   color: #ffffff;
   border-radius: 32px;
   font-size: 16px;
@@ -113,7 +112,7 @@
 }
 #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore:hover {
   background: transparent;
-  border: 1px solid #3eab90;
+  border: 1px solid #3EAB90;
 }
 #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore .hero-join {
   line-height: 1.5;
@@ -137,7 +136,7 @@
 }
 #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore_btn {
   background: #000000;
-  color: #3eab90;
+  color: #3EAB90;
   border-radius: 32px;
   font-size: 16px;
   position: relative;
@@ -146,7 +145,7 @@
   justify-content: flex-end;
   padding: 15px 20px;
   font-weight: 400;
-  border: 1px solid #3eab90;
+  border: 1px solid #3EAB90;
   transition: all 0.3s ease-in;
   width: 180px;
 }
@@ -154,7 +153,7 @@
   animation: moveAnimation 2s linear infinite;
 }
 #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore_btn:hover {
-  background: #3eab90;
+  background: #3EAB90;
   border: 1px solid transparent;
   color: #ffffff;
 }
