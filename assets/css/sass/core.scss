@@ -1,232 +1,226 @@
-@import './variable.scss';
+@import "./variable.scss";
 #fz_core_nexus {
-    padding: 80px 0;
-    .fz_core_bg {
-        width: 558px;
-        background-color: $tertiary-color;
-        border-radius: 16px;
-        padding-top: 30px;
-        @include neon-border;
-        .fz_core_text {
-            background-color: $black;
-            border-top-left-radius: 32px;
-            border-top-right-radius: 32px;
-            // transform: rotate(-8.5deg);
-            width: 422px;
-            // height: 605px;
-            // position: relative;
-            // top: 35px;
-            margin: 0 auto;
-            overflow: hidden;
-            
-            @media (min-width: 992px) and (max-width: 1200px) {
-                width:375px;
-}
-            h3 {
-                font-size: 32px;
-                color: $white;
-                font-weight: 700;
-                line-height: 45px;
-                padding: 50px 50px 0;
+  padding: 80px 0;
+  .fz_core_bg {
+    width: 558px;
+    background-color: $tertiary-color;
+    border-radius: 16px;
+    padding-top: 30px;
+    @include neon-border;
+    .fz_core_text {
+      background-color: $black;
+      border-top-left-radius: 32px;
+      border-top-right-radius: 32px;
+      // transform: rotate(-8.5deg);
+      width: 422px;
+      // height: 605px;
+      // position: relative;
+      // top: 35px;
+      margin: 0 auto;
+      overflow: hidden;
 
-                @media screen and (max-width:991px) {
-                    font-size: 23px;
-                    padding: 25px 25px 0;
-                    line-height: 30px;
-                }
-            }
-            img {
-                position: relative;
-                z-index: 1;
+      @media (min-width: 992px) and (max-width: 1200px) {
+        width: 375px;
+      }
+      h3 {
+        font-size: 32px;
+        color: $white;
+        font-weight: 700;
+        line-height: 45px;
+        padding: 50px 50px 0;
 
-                @media (min-width: 992px) and (max-width: 1200px) {
-                    width:100%;
-                    
-    
-    }
+        @media screen and (max-width: 991px) {
+          font-size: 23px;
+          padding: 25px 25px 0;
+          line-height: 30px;
+        }
+      }
+      img {
+        position: relative;
+        z-index: 1;
 
-    
-    @media screen and (max-width:991px) {
-        width:100%;
-    }
-            }
-            .fz_box {
-                div {
-                    position: absolute;
-                    width: 90px;
-                    height: 90px;
-                    border-radius:50%;
-                    &:nth-child(1) {
-                        top: 35%;
-                        left: 5%;
-                        animation: animate 16s linear infinite;
-                    }
-                    &:nth-child(2) {
-                        top: 32%;
-                        left: 35%;
-                        animation: animate 12s linear infinite;
-                    }
-                    &:nth-child(3) {
-                        top: 40%;
-                        right: 8%;
-                        animation: animate 10s linear infinite;
-                    }
-                    &:nth-child(4) {
-                        bottom: 0;
-                        right: 0;
-                        animation: animate 8s linear infinite;
-                    }
-                }
-            }
-
-            @media screen and (max-width:991px) {
-                width: 80%;
-                transform: none;
-                height: auto;
-                margin: 0 auto;
-            }
+        @media (min-width: 992px) and (max-width: 1200px) {
+          width: 100%;
         }
 
-        @media screen and (max-width:1400px) {
-            width:100%;
+        @media screen and (max-width: 991px) {
+          width: 100%;
         }
-    }
-    .fz_core_text_right {
-        h2 {
-            font-size: 36px;
-            color: $white;
-            font-weight: 700;
-            line-height: 48px;
-            margin-bottom: 35px;
-
-            @media screen and (max-width:991px) {
-                margin-top: 45px;
-                margin-bottom: 20px;
-                font-size: 32px;
-                // text-align: center;
-            }
-        }
-        h5 {
-            font-size: 24px;
-            color: $white;
-            font-weight: 600;
-            line-height: 40px;
-            margin-bottom: 50px;
-
-            @media screen and (max-width:991px) {
-                margin-bottom: 25px;
-                line-height: 30px;
-                // text-align: center;
-            }
-        }
-        p {
-            display: flex;
-            align-items: flex-start;
-            font-size: 16px;
-            font-weight: 300;
-            color: $white;
-            line-height: 24px;
-            margin-bottom: 48px;
-
-            
-            @media screen and (max-width:991px) {
-                margin-bottom: 30px;
-                line-height: 22px;
-                font-size: 14px;
-                align-items: start;
-               
-            }
-            span {
-                background-color: $ternary-color;
-                border-radius: 50%;
-                height: 43px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-right: 25px;
-                min-width: 43px;
-            }
-        }
+      }
+      .fz_box {
         div {
-            margin-left: 70px;
-            display: flex;
-            align-items:center;
-
-                    
-            @media (max-width: 1400px) {
-                margin-left: 0;
-                justify-content: center;
-            }
-            .fz_learmore {
-                @include primaryBg;
-                padding: 15px 20px;
-                border: 1px solid transparent;
-                margin-right: 35px;
-                font-weight: 400;
-                transition: all 0.5s ease-in;
-                width: 180px;
-                &:hover {
-                    background: transparent;
-                    border: 1px solid $primary-color;
-                }
-                .hero-join {
-                    @include hero-join;
-                  }
-                  &:hover {
-                    .hero-join {
-                      bottom: 12px;
-                    }
-                  }
-
-                @media screen and (max-width:1300px) {
-                    padding: 13px 20px;
-                    font-size: 14px;
-                    margin-right: 24px;
-                  }
-            }
-            .fz_learmore_btn {
-                @include primaryBg($theme: $black, $white-color: $primary-color);
-                padding: 15px 20px;
-                font-weight: 400;
-                border: 1px solid $primary-color;
-                transition: all 0.3s ease-in;
-                width: 180px;
-                &:hover {
-                    background: $primary-color;
-                    border: 1px solid transparent;
-                    color: $white;
-                }
-                .hero-join {
-                    @include hero-join;
-                  }
-                  &:hover {
-                    .hero-join {
-                      bottom: 12px;
-                    }
-                  }
-
-                @media screen and (max-width:1300px) {
-                    padding: 13px 20px;
-                    font-size: 14px;
-                  }
-            }
+          position: absolute;
+          width: 90px;
+          height: 90px;
+          border-radius: 50%;
+          &:nth-child(1) {
+            top: 35%;
+            left: 5%;
+            animation: animate 16s linear infinite;
+          }
+          &:nth-child(2) {
+            top: 32%;
+            left: 35%;
+            animation: animate 12s linear infinite;
+          }
+          &:nth-child(3) {
+            top: 40%;
+            right: 8%;
+            animation: animate 10s linear infinite;
+          }
+          &:nth-child(4) {
+            bottom: 0;
+            right: 0;
+            animation: animate 8s linear infinite;
+          }
         }
+      }
+
+      @media screen and (max-width: 991px) {
+        width: 80%;
+        transform: none;
+        height: auto;
+        margin: 0 auto;
+      }
     }
+
+    @media screen and (max-width: 1400px) {
+      width: 100%;
+    }
+  }
+  .fz_core_text_right {
+    h2 {
+      font-size: 36px;
+      color: $white;
+      font-weight: 700;
+      line-height: 48px;
+      margin-bottom: 35px;
+
+      @media screen and (max-width: 991px) {
+        margin-top: 45px;
+        margin-bottom: 20px;
+        font-size: 32px;
+        // text-align: center;
+      }
+    }
+    h5 {
+      font-size: 24px;
+      color: $white;
+      font-weight: 600;
+      line-height: 40px;
+      margin-bottom: 50px;
+
+      @media screen and (max-width: 991px) {
+        margin-bottom: 25px;
+        line-height: 30px;
+        // text-align: center;
+      }
+    }
+    p {
+      display: flex;
+      align-items: flex-start;
+      font-size: 16px;
+      font-weight: 300;
+      color: $white;
+      line-height: 24px;
+      margin-bottom: 48px;
+
+      @media screen and (max-width: 991px) {
+        margin-bottom: 30px;
+        line-height: 22px;
+        font-size: 14px;
+        align-items: start;
+      }
+      span {
+        background-color: $ternary-color;
+        border-radius: 50%;
+        height: 43px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 25px;
+        min-width: 43px;
+      }
+    }
+    div {
+      margin-left: 70px;
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 1400px) {
+        margin-left: 0;
+        justify-content: center;
+      }
+      .fz_learmore {
+        @include primaryBg;
+        padding: 15px 20px;
+        border: 1px solid transparent;
+        margin-right: 35px;
+        font-weight: 400;
+        transition: all 0.5s ease-in;
+        width: 180px;
+        &:hover {
+          background: transparent;
+          border: 1px solid $primary-color;
+        }
+        .hero-join {
+          @include hero-join;
+        }
+        &:hover {
+          .hero-join {
+            bottom: 12px;
+          }
+        }
+
+        @media screen and (max-width: 1300px) {
+          padding: 13px 20px;
+          font-size: 14px;
+          margin-right: 24px;
+        }
+      }
+      .fz_learmore_btn {
+        @include primaryBg($theme: $black, $white-color: $primary-color);
+        padding: 15px 20px;
+        font-weight: 400;
+        border: 1px solid $primary-color;
+        transition: all 0.3s ease-in;
+        width: 180px;
+        &:hover {
+          background: $primary-color;
+          border: 1px solid transparent;
+          color: $white;
+        }
+        .hero-join {
+          @include hero-join;
+        }
+        &:hover {
+          .hero-join {
+            bottom: 12px;
+          }
+        }
+
+        @media screen and (max-width: 1300px) {
+          padding: 13px 20px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }
 @keyframes animate {
-    0% {
-      transform: scale(0) translateY(-80px);
-      opacity: 1;
-    }
-    
-    100% {
-      transform: scale(1) translateY(-90px);
-      border-radius: 50%;
-      opacity: 0;
-    } 
+  0% {
+    transform: scale(0) translateY(-80px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) translateY(-90px);
+    border-radius: 50%;
+    opacity: 0;
+  }
 }
 @property --border-angle {
-    syntax: "<angle>";
-    inherits: true;
-    initial-value: 0turn;
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }

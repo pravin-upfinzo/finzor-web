@@ -87,33 +87,21 @@
   top: 35%;
   left: 5%;
   animation: animate 16s linear infinite;
-<<<<<<< HEAD
-  background: #f7c35f;
-=======
->>>>>>> fc884f9bc675a0be2b564a76b40cfc44bdd56be4
 }
 #fz_core_nexus .fz_core_bg .fz_core_text .fz_box div:nth-child(2) {
   top: 32%;
   left: 35%;
   animation: animate 12s linear infinite;
-<<<<<<< HEAD
-  background: #3eab90;
-=======
->>>>>>> fc884f9bc675a0be2b564a76b40cfc44bdd56be4
 }
 #fz_core_nexus .fz_core_bg .fz_core_text .fz_box div:nth-child(3) {
   top: 40%;
   right: 8%;
   animation: animate 10s linear infinite;
-<<<<<<< HEAD
-  background: #3eab90;
-=======
 }
 #fz_core_nexus .fz_core_bg .fz_core_text .fz_box div:nth-child(4) {
   bottom: 0;
   right: 0;
   animation: animate 8s linear infinite;
->>>>>>> fc884f9bc675a0be2b564a76b40cfc44bdd56be4
 }
 @media screen and (max-width: 991px) {
   #fz_core_nexus .fz_core_bg .fz_core_text {
