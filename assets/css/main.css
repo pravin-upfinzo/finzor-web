@@ -67,6 +67,11 @@ li {
     transform: translateX(50%);
   }
 }
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 body {
   background-color: #000000;
   overflow-x: hidden;
@@ -377,6 +382,11 @@ header .fz_sigin ul li:last-child a {
     transform: translateX(50%);
   }
 }
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 #fz-hero-bg {
   position: relative;
   width: 100%;
@@ -675,6 +685,11 @@ header .fz_sigin ul li:last-child a {
     transform: translateX(50%);
   }
 }
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 #fz_core_nexus {
   padding: 80px 0;
 }
@@ -690,7 +705,7 @@ header .fz_sigin ul li:last-child a {
       #1A2C2A 100%
       );
   border: solid 1px transparent;
-  --gradient-border: conic-gradient(from var(--border-angle), transparent 50%, #F7C35F, #3EAB90 99%, transparent);
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 5%, #F7C35F, #3EAB90 99%);
   background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
   background-position: center center;
   animation: bg-spin 4s linear infinite;
@@ -704,18 +719,13 @@ header .fz_sigin ul li:last-child a {
   background-color: #000000;
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
-  transform: rotate(-8.5deg);
   width: 422px;
-  height: 605px;
-  margin-left: 62px;
-  position: relative;
-  top: 35px;
+  margin: 0 auto;
   overflow: hidden;
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   #fz_core_nexus .fz_core_bg .fz_core_text {
     width: 375px;
-    height: auto;
   }
 }
 #fz_core_nexus .fz_core_bg .fz_core_text h3 {
@@ -733,7 +743,6 @@ header .fz_sigin ul li:last-child a {
   }
 }
 #fz_core_nexus .fz_core_bg .fz_core_text img {
-  transform: rotate(8.5deg);
   position: relative;
   z-index: 1;
 }
@@ -754,22 +763,24 @@ header .fz_sigin ul li:last-child a {
   border-radius: 50%;
 }
 #fz_core_nexus .fz_core_bg .fz_core_text .fz_box div:nth-child(1) {
-  top: 38%;
-  left: 10%;
+  top: 35%;
+  left: 5%;
   animation: animate 16s linear infinite;
-  background: #f7c35f;
 }
 #fz_core_nexus .fz_core_bg .fz_core_text .fz_box div:nth-child(2) {
-  top: 80%;
-  left: 70%;
+  top: 32%;
+  left: 35%;
   animation: animate 12s linear infinite;
-  background: #3eab90;
 }
 #fz_core_nexus .fz_core_bg .fz_core_text .fz_box div:nth-child(3) {
-  top: 38%;
-  right: 0%;
+  top: 40%;
+  right: 8%;
   animation: animate 10s linear infinite;
-  background: #3eab90;
+}
+#fz_core_nexus .fz_core_bg .fz_core_text .fz_box div:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  animation: animate 8s linear infinite;
 }
 @media screen and (max-width: 991px) {
   #fz_core_nexus .fz_core_bg .fz_core_text {
@@ -937,11 +948,11 @@ header .fz_sigin ul li:last-child a {
 
 @keyframes animate {
   0% {
-    transform: scale(0) translateY(-90px) rotate(360deg);
+    transform: scale(0) translateY(-80px);
     opacity: 1;
   }
   100% {
-    transform: scale(1.3) translateY(-90px) rotate(-180deg);
+    transform: scale(1) translateY(-90px);
     border-radius: 50%;
     opacity: 0;
   }
@@ -958,6 +969,11 @@ header .fz_sigin ul li:last-child a {
   50% {
     transform: translateX(50%);
   }
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }
 .features_posibilityies {
   padding: 0;
@@ -1127,6 +1143,11 @@ header .fz_sigin ul li:last-child a {
   50% {
     transform: translateX(50%);
   }
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }
 /* PANELS */
 .panel__stack {
@@ -1523,6 +1544,11 @@ header .fz_sigin ul li:last-child a {
     transform: translateX(50%);
   }
 }
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 .fz_product_sec {
   position: relative;
   z-index: 0;
@@ -1844,6 +1870,11 @@ header .fz_sigin ul li:last-child a {
     transform: translateX(50%);
   }
 }
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 .developer_section {
   background-color: #000000;
   padding: 60px 0px 100px;
@@ -2078,6 +2109,11 @@ header .fz_sigin ul li:last-child a {
   50% {
     transform: translateX(50%);
   }
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }
 #fz_mobile_section .fz_mobile_right {
   display: flex;
@@ -2436,6 +2472,11 @@ header .fz_sigin ul li:last-child a {
     transform: translateX(50%);
   }
 }
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 .fz-blog {
   background-color: #000000;
 }
@@ -2640,6 +2681,11 @@ header .fz_sigin ul li:last-child a {
     transform: translateX(50%);
   }
 }
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 .fz_testimonial {
   padding: 80px 0 0;
 }
@@ -2729,6 +2775,11 @@ header .fz_sigin ul li:last-child a {
   50% {
     transform: translateX(50%);
   }
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }
 .faq_section {
   background-color: #000000;
@@ -2852,6 +2903,11 @@ header .fz_sigin ul li:last-child a {
     transform: translateX(50%);
   }
 }
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 #logo_marquee {
   --space: 5px;
   background-color: #1a2c2a;
@@ -2869,6 +2925,11 @@ header .fz_sigin ul li:last-child a {
   50% {
     transform: translateX(50%);
   }
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }
 .newsletter_section {
   background-color: #000000;
@@ -2956,6 +3017,11 @@ header .fz_sigin ul li:last-child a {
   50% {
     transform: translateX(50%);
   }
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }
 .play_store_section {
   background-color: #000000;
@@ -3354,6 +3420,11 @@ header .fz_sigin ul li:last-child a {
   50% {
     transform: translateX(50%);
   }
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }
 .footer_section {
   background: linear-gradient(359.8deg, rgba(26, 50, 48, 0.46) 5.16%, rgba(62, 171, 144, 0.22) 99.83%);

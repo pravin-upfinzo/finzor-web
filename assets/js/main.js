@@ -79,13 +79,13 @@ TweenLite.fromTo(
     opacity: 0.5,
     y: 200,
     scale: 0.7,
-    rotateX: "10deg",
+    //rotateX: "10deg",
   },
   {
     opacity: 1,
     y: 0,
     scale: 1,
-    rotateX: "0deg",
+    //rotateX: "0deg",
     scrollTrigger: {
       trigger: ".fz_core_text",
       start: "top bottom",
