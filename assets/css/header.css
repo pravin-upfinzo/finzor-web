@@ -14,11 +14,14 @@ body {
 
 header {
   padding: 0px 40px;
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 9999;
   width: 100%;
   background: #d6ca8a;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  background: rgba(3, 0, 20, 0.08);
 }
 @media (max-width: 991px) {
   header {
@@ -29,6 +32,9 @@ header {
   header {
     padding: 0px;
   }
+}
+header .navbar-brand svg path {
+  fill: #22feb3;
 }
 @media screen and (max-width: 991px) {
   header .navbar {
@@ -43,7 +49,7 @@ header {
   }
   header .navbar .btn-close::before {
     content: "✕";
-    color: #3EAB90;
+    color: #3eab90;
     font-size: 1.5rem;
     display: inline-block;
     line-height: 1;
@@ -75,7 +81,7 @@ header {
     text-transform: capitalize;
   }
   header .navbar .navbar-collapse ul.navbar-nav li a:hover {
-    background-color: #1A2C2A;
+    background-color: #1a2c2a;
   }
   header .navbar .navbar-toggler {
     background-color: transparent;
@@ -107,17 +113,23 @@ header .navbar-expand-lg .navbar-nav li a.nav-link {
   font-size: 14px;
   font-weight: 400;
   padding: 0px 15px;
-  color: #1A2C2A;
+  color: #ffffff;
   position: relative;
   transition: all 0.7s ease;
 }
+@media screen and (max-width: 991px) {
+  header .navbar-expand-lg .navbar-nav li a.nav-link {
+    padding: 10px 5px;
+    color: #ffffff;
+  }
+}
 header .navbar-expand-lg .navbar-nav li a.nav-link:hover {
-  color: #ffffff;
+  color: #f7c35f;
 }
 @media (min-width: 992px) and (max-width: 1300px) {
   header .navbar-expand-lg .navbar-nav li a.nav-link {
     font-size: 14px;
-    padding: 10px 12px;
+    padding: 10px 10px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -167,7 +179,7 @@ header .fz_sigin ul li:last-child {
   }
 }
 header .fz_sigin ul li:last-child a {
-  background-color: #1A2C2A;
+  background-color: #1a2c2a;
   padding: 10px 15px;
   border-radius: 5px;
   border: 1px solid #ffffff;
@@ -198,4 +210,101 @@ header .fz_sigin ul li:last-child a {
   header .fz_sigin ul img {
     display: none;
   }
+}
+
+.buttons {
+  --w: 180px;
+  --h: 60px;
+  --icon-size: 25px;
+  --text-color: rgb(210 210 240);
+  --box-glow-color: transparent;
+  --box-glow-blur: 20px;
+  --color: #00afaf;
+  position: relative;
+  min-width: var(--w);
+  min-height: var(--h);
+  border-radius: var(--h);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: var(--text-color);
+  background: rgba(4, 8, 20, 0.8);
+  box-shadow: 0px 5px 0 0px rgba(191, 191, 202, 0.22), 0 0 var(--box-glow-blur) var(--box-glow-color), inset 0 0 26px -10px var(--box-glow-color);
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 500ms ease;
+  z-index: 2;
+  font-size: 15px;
+}
+
+.buttons::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(200, 200, 220, 0.1);
+  box-shadow: inset 0 0px 24px 0 rgba(170, 230, 250, 0.12);
+  border-radius: var(--h);
+  z-index: 1;
+  transition: transform 500ms ease, box-shadow 500ms ease;
+}
+
+.buttons .text,
+.buttons .icon {
+  z-index: 2;
+}
+
+.buttons .text {
+  transform: translateX(-30%);
+  transition: transform 500ms ease;
+}
+
+.buttons .icon {
+  position: absolute;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  left: 0;
+  transform: translateX(calc((var(--w)) / 2 + 40px));
+  transition: transform 500ms ease, color 500ms ease;
+}
+
+.buttons svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.buttons:active {
+  --box-glow-blur: 36px;
+}
+
+.buttons:hover,
+.buttons:active {
+  --box-glow-color: var(--color);
+}
+
+.buttons:hover::before,
+.buttons:active::before {
+  transform: translateX(65%);
+  box-shadow: inset 0 0px 0px 0 transparent;
+}
+
+.buttons:hover .text,
+.buttons:active .text {
+  transform: translateX(-40%);
+  animation-play-state: running;
+}
+
+.buttons:hover .icon,
+.buttons:active .icon {
+  transform: translateX(calc(var(--w) - var(--icon-size) - 19px));
+  color: var(--color);
+}
+
+.buttons:focus-visible {
+  outline: none;
+}
+
+.buttons:focus-visible:not(:hover, :active) {
+  --box-glow-color: rgb(114 114 114 / 0.5);
 }
