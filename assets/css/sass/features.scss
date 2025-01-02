@@ -39,22 +39,7 @@
     background-position: center center;
     animation: bg-spin 12s linear infinite;
     &.active {
-      --border-angle: 0turn;
-    --main-bg: conic-gradient(
-        from var(--border-angle),
-        #1A2C2A 0%,  
-        #1A2C2A 100%
-        );
-    border: solid 1px transparent;
-    --gradient-border: conic-gradient(from var(--border-angle), transparent 50%, #F7C35F, #3EAB90 99%, transparent);
-    background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
-    background-position: center center;
-    animation: bg-spin 4s linear infinite;
-    @keyframes bg-spin {
-        to {
-        --border-angle: 1turn;
-        }
-    }
+      @include neon-border;
     }
     @media screen and (max-width: 1199px) {
       grid-area:unset;

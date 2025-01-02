@@ -6,6 +6,11 @@
     transform: translateX(50%);
   }
 }
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 /* PANELS */
 .panel__stack {
   --spacer: 20px;
@@ -52,7 +57,7 @@
       #1A2C2A 100%
       );
   border: solid 1px transparent;
-  --gradient-border: conic-gradient(from var(--border-angle), transparent 50%, #F7C35F, #3EAB90 99%, transparent);
+  --gradient-border: conic-gradient(from var(--border-angle), rgba(2, 237, 104, 0) 7.95474deg, rgb(34 254 179) 77.822552deg, rgba(10, 10, 10, 0) 182.574207deg, rgba(10, 10, 10, 0) 204.015297deg, #f7c35f 258.393755deg, rgba(0, 157, 255, 0) 354.246679deg);
   background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
   background-position: center center;
   animation: bg-spin 4s linear infinite;
