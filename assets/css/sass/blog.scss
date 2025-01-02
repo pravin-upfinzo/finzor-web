@@ -35,14 +35,14 @@
       }
     }
   }
-.owl-item{
-  transform: scale(0.9);
-  transition: all 0.7s ease-in;
-  &.center{
-    transform: scale(1);
+  .owl-item {
+    transform: scale(0.9);
     transition: all 0.7s ease-in;
+    &.center {
+      transform: scale(1);
+      transition: all 0.7s ease-in;
+    }
   }
-}
 
   .item {
     width: 389px;
@@ -50,25 +50,24 @@
     color: $white;
     overflow: hidden;
     position: relative;
-    border: 1px solid transparent; 
-    border-radius:21px;
-    background: linear-gradient(150.11deg, #002C21 3.16%, #86E1CB 94.92%) border-box;
+    border: 1px solid transparent;
+    border-radius: 21px;
+    background: linear-gradient(150.11deg, #002c21 3.16%, #86e1cb 94.92%)
+      border-box;
 
     @media screen and (max-width: 1400px) {
-      width:auto;
-      height:auto;
+      width: auto;
+      height: auto;
     }
-    
-    
+
     &:hover {
-      .card-body{
-        bottom:0px;
+      .card-body {
+        bottom: 0px;
       }
       img {
         transform: scale(1.1);
       }
     }
-    
 
     img {
       width: 100%;
@@ -82,7 +81,7 @@
     }
 
     .card-body {
-      padding:10px 20px;
+      padding: 10px 20px;
       width: 100%;
       border-radius: 0 0 8px 8px;
       margin: 0 auto;
@@ -93,7 +92,7 @@
       @media screen and (max-width: 991px) {
         width: 100%;
         padding: 0px 25px 30px 24px;
-        bottom:-67px;
+        bottom: -67px;
       }
 
       h5 {
@@ -101,23 +100,32 @@
         line-height: 22px;
         font-weight: 500;
         padding-bottom: 12px;
-        color:$secondary-color;
+        color: $secondary-color;
         margin-bottom: 0px;
         @media screen and (max-width: 991px) {
-         font-size: 16px;
-         line-height: 22px;
+          font-size: 16px;
+          line-height: 22px;
         }
-
       }
 
       .card-text {
-        font-size: 13px;
-        line-height: 18px;
+        font-size: 16px;
+        line-height: 24px;
         font-weight: 300;
-	@media screen and (max-width: 991px) {
+        margin-bottom: 2rem;
+        @media screen and (max-width: 991px) {
           font-size: 14px;
-          line-height: 20px;
-         }
+          line-height: 22px;
+        }
+      }
+      .collapsible {
+        max-height: 46px;
+        overflow: hidden;
+        transition: all 0.8s ease-out;
+      }
+
+      .collapsible.expanded {
+        max-height: 220px;
       }
 
       .card-top-title {
@@ -132,15 +140,21 @@
           padding: 15px 0 10px 0;
         }
       }
-      button{
-        color: #3EAB90;
+      button {
+        color: $primary-color;
         border-radius: 32px;
         font-size: 14px;
         padding: 0;
         margin-bottom: 10px;
         background: transparent !important;
         border: none;
-        &:hover{
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+      .read-more-btn.less {
+        color: $primary-color; /* Green color for "Read less" */
+        &:hover {
           color: $secondary-color;
         }
       }
@@ -148,6 +162,12 @@
   }
 
   .owl-carousel {
+    .owl-item {
+      pointer-events: none; /* Prevent interactions on non-visible slides */
+    }
+    .owl-item.active {
+      pointer-events: auto; /* Allow interactions on visible slides */
+    }
     .owl-stage {
       display: flex;
       align-items: center;
@@ -166,47 +186,37 @@
         cursor: pointer;
         transition: all 0.3s ease;
         justify-content: center;
-
-        &:hover {
-          color: $primary-color;
+        &::after,
+        &::before {
+          content: "";
+          width: 80px;
+          height: 2.27px;
+          justify-content: center;
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%, -50%);
         }
-      }
-      &::after, &::before {
-        content: "";
-        width: 80px;
-        height: 2.27px;
-        justify-content: center;
-        position: absolute;
-      }
-      &::after {
-        background: $white;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        left: 53%;
-        // @media screen and (max-width: 991px) {
-        //   justify-content: center;
-        // }
-      }
-
-      &::before {
-        background: $primary-color;
-        top: 50%;
-        // left: 87%;
-        transform: translate(-50%, -50%);
-        // @media screen and (max-width: 991px) {
-        //   left:60%;
-        // }
       }
       .custom-prev {
         color: $primary-color;
+        &:hover {
+          color: $white;
+        }
+        &::after {
+          background: $primary-color;
+          left: 47%;
+        }
       }
       .custom-next {
         color: $white;
+        &:hover {
+          color: $primary-color;
+        }
+        &::before {
+          background: $white;;
+          left: 53%;
+        }
       }
-
-      // @media screen and (max-width: 991px) {
-      //   justify-content: center;
-      // }
     }
   }
 }

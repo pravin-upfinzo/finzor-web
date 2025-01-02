@@ -317,8 +317,8 @@
                             background-color: $black;
                             border-bottom-left-radius: 8px;
                             border-bottom-right-radius: 8px;
-                            @media screen and (min-width: 992px) and (max-width: 1400px) {
-                              min-height: 225px;
+                            @media screen and (min-width: 991px) and (max-width: 1400px) {
+                              min-height: 236px;
                             }
                             h3 {
                                 color: $secondary-color;

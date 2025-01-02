@@ -67,6 +67,11 @@ li {
     transform: translateX(50%);
   }
 }
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 body {
   background-color: #000000;
   overflow-x: hidden;
@@ -377,6 +382,11 @@ header .fz_sigin ul li:last-child a {
     transform: translateX(50%);
   }
 }
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 #fz-hero-bg {
   position: relative;
   width: 100%;
@@ -675,6 +685,11 @@ header .fz_sigin ul li:last-child a {
     transform: translateX(50%);
   }
 }
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 #fz_core_nexus {
   padding: 80px 0;
 }
@@ -690,7 +705,7 @@ header .fz_sigin ul li:last-child a {
       #1A2C2A 100%
       );
   border: solid 1px transparent;
-  --gradient-border: conic-gradient(from var(--border-angle), transparent 50%, #F7C35F, #3EAB90 99%, transparent);
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 5%, #F7C35F, #3EAB90 99%);
   background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
   background-position: center center;
   animation: bg-spin 4s linear infinite;
@@ -704,18 +719,13 @@ header .fz_sigin ul li:last-child a {
   background-color: #000000;
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
-  transform: rotate(-8.5deg);
   width: 422px;
-  height: 605px;
-  margin-left: 62px;
-  position: relative;
-  top: 35px;
+  margin: 0 auto;
   overflow: hidden;
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   #fz_core_nexus .fz_core_bg .fz_core_text {
     width: 375px;
-    height: auto;
   }
 }
 #fz_core_nexus .fz_core_bg .fz_core_text h3 {
@@ -733,7 +743,6 @@ header .fz_sigin ul li:last-child a {
   }
 }
 #fz_core_nexus .fz_core_bg .fz_core_text img {
-  transform: rotate(8.5deg);
   position: relative;
   z-index: 1;
 }
@@ -754,22 +763,24 @@ header .fz_sigin ul li:last-child a {
   border-radius: 50%;
 }
 #fz_core_nexus .fz_core_bg .fz_core_text .fz_box div:nth-child(1) {
-  top: 38%;
-  left: 10%;
+  top: 35%;
+  left: 5%;
   animation: animate 16s linear infinite;
-  background: #f7c35f;
 }
 #fz_core_nexus .fz_core_bg .fz_core_text .fz_box div:nth-child(2) {
-  top: 80%;
-  left: 70%;
+  top: 32%;
+  left: 35%;
   animation: animate 12s linear infinite;
-  background: #3eab90;
 }
 #fz_core_nexus .fz_core_bg .fz_core_text .fz_box div:nth-child(3) {
-  top: 38%;
-  right: 0%;
+  top: 40%;
+  right: 8%;
   animation: animate 10s linear infinite;
-  background: #3eab90;
+}
+#fz_core_nexus .fz_core_bg .fz_core_text .fz_box div:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  animation: animate 8s linear infinite;
 }
 @media screen and (max-width: 991px) {
   #fz_core_nexus .fz_core_bg .fz_core_text {
@@ -937,11 +948,11 @@ header .fz_sigin ul li:last-child a {
 
 @keyframes animate {
   0% {
-    transform: scale(0) translateY(-90px) rotate(360deg);
+    transform: scale(0) translateY(-80px);
     opacity: 1;
   }
   100% {
-    transform: scale(1.3) translateY(-90px) rotate(-180deg);
+    transform: scale(1) translateY(-90px);
     border-radius: 50%;
     opacity: 0;
   }
@@ -958,6 +969,11 @@ header .fz_sigin ul li:last-child a {
   50% {
     transform: translateX(50%);
   }
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }
 .features_posibilityies {
   padding: 0;
@@ -1127,6 +1143,11 @@ header .fz_sigin ul li:last-child a {
   50% {
     transform: translateX(50%);
   }
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }
 /* PANELS */
 .panel__stack {
@@ -1478,9 +1499,9 @@ header .fz_sigin ul li:last-child a {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
-@media screen and (min-width: 992px) and (max-width: 1400px) {
+@media screen and (min-width: 991px) and (max-width: 1400px) {
   .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div {
-    min-height: 225px;
+    min-height: 236px;
   }
 }
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div h3 {
@@ -1522,6 +1543,11 @@ header .fz_sigin ul li:last-child a {
   50% {
     transform: translateX(50%);
   }
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }
 .fz_product_sec {
   position: relative;
@@ -1844,6 +1870,11 @@ header .fz_sigin ul li:last-child a {
     transform: translateX(50%);
   }
 }
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 .developer_section {
   background-color: #000000;
   padding: 60px 0px 100px;
@@ -2078,6 +2109,11 @@ header .fz_sigin ul li:last-child a {
   50% {
     transform: translateX(50%);
   }
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }
 #fz_mobile_section .fz_mobile_right {
   display: flex;
@@ -2351,7 +2387,8 @@ header .fz_sigin ul li:last-child a {
   font-weight: 500;
   line-height: 60px;
   text-align: center;
-  color: #FFFFFF;
+  color: #3eab90;
+  text-shadow: 0 0 15px rgba(0, 255, 227, 0.14), 0 0 20px rgba(0, 255, 227, 0.11), 0 0 40px rgba(0, 255, 203, 0.52), 0 0 10px rgba(0, 255, 211, 0.51);
 }
 @media screen and (max-width: 991px) {
   .counter_section #counter span {
@@ -2376,6 +2413,7 @@ header .fz_sigin ul li:last-child a {
 }
 .counter_section #counter .col-lg-3:last-child:before {
   background: unset;
+  box-shadow: none;
 }
 @media screen and (max-width: 991px) {
   .counter_section #counter .col-lg-3 {
@@ -2387,10 +2425,11 @@ header .fz_sigin ul li:last-child a {
   content: "";
   position: absolute;
   top: 0;
-  right: 0; /* Position it to the right edge */
-  width: 1.5px; /* Width of the border line */
-  height: 100%; /* Full height */
-  background: linear-gradient(180deg, #3EAB90 0%, #FFFFFF 100%);
+  right: 0;
+  width: 1.5px;
+  height: 100%;
+  background-color: #3eab90;
+  box-shadow: 0 0 15px rgba(0, 255, 227, 0.14), 0 0 20px rgba(0, 255, 227, 0.11), 0 0 40px rgba(0, 255, 203, 0.52), 0 0 10px rgba(0, 255, 211, 0.51);
 }
 @media screen and (max-width: 991px) {
   .counter_section #counter .col-lg-3::before {
@@ -2405,7 +2444,8 @@ header .fz_sigin ul li:last-child a {
   font-weight: 700;
   font-weight: bolder;
   color: #FFFFFF;
-  background-image: linear-gradient(180deg, #FFFFFF 0%, #3EAB90 100%);
+  background-color: #3eab90;
+  text-shadow: 0 0 15px rgba(0, 255, 227, 0.14), 0 0 20px rgba(0, 255, 227, 0.11), 0 0 40px rgba(0, 255, 203, 0.52), 0 0 10px rgba(0, 255, 211, 0.51);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2435,6 +2475,11 @@ header .fz_sigin ul li:last-child a {
   50% {
     transform: translateX(50%);
   }
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }
 .fz-blog {
   background-color: #000000;
@@ -2490,7 +2535,7 @@ header .fz_sigin ul li:last-child a {
   position: relative;
   border: 1px solid transparent;
   border-radius: 21px;
-  background: linear-gradient(150.11deg, #002C21 3.16%, #86E1CB 94.92%) border-box;
+  background: linear-gradient(150.11deg, #002c21 3.16%, #86e1cb 94.92%) border-box;
 }
 @media screen and (max-width: 1400px) {
   .fz-blog .item {
@@ -2548,15 +2593,24 @@ header .fz_sigin ul li:last-child a {
   }
 }
 .fz-blog .item .card-body .card-text {
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 300;
+  margin-bottom: 2rem;
 }
 @media screen and (max-width: 991px) {
   .fz-blog .item .card-body .card-text {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 22px;
   }
+}
+.fz-blog .item .card-body .collapsible {
+  max-height: 46px;
+  overflow: hidden;
+  transition: all 0.8s ease-out;
+}
+.fz-blog .item .card-body .collapsible.expanded {
+  max-height: 220px;
 }
 .fz-blog .item .card-body .card-top-title {
   display: flex;
@@ -2572,7 +2626,7 @@ header .fz_sigin ul li:last-child a {
   }
 }
 .fz-blog .item .card-body button {
-  color: #3EAB90;
+  color: #3eab90;
   border-radius: 32px;
   font-size: 14px;
   padding: 0;
@@ -2582,6 +2636,18 @@ header .fz_sigin ul li:last-child a {
 }
 .fz-blog .item .card-body button:hover {
   color: #f7c35f;
+}
+.fz-blog .item .card-body .read-more-btn.less {
+  color: #3eab90; /* Green color for "Read less" */
+}
+.fz-blog .item .card-body .read-more-btn.less:hover {
+  color: #f7c35f;
+}
+.fz-blog .owl-carousel .owl-item {
+  pointer-events: none; /* Prevent interactions on non-visible slides */
+}
+.fz-blog .owl-carousel .owl-item.active {
+  pointer-events: auto; /* Allow interactions on visible slides */
 }
 .fz-blog .owl-carousel .owl-stage {
   display: flex;
@@ -2603,33 +2669,36 @@ header .fz_sigin ul li:last-child a {
   transition: all 0.3s ease;
   justify-content: center;
 }
-.fz-blog .owl-carousel .owl-nav .custom-prev:hover,
-.fz-blog .owl-carousel .owl-nav .custom-next:hover {
-  color: #3eab90;
-}
-.fz-blog .owl-carousel .owl-nav::after, .fz-blog .owl-carousel .owl-nav::before {
+.fz-blog .owl-carousel .owl-nav .custom-prev::after, .fz-blog .owl-carousel .owl-nav .custom-prev::before,
+.fz-blog .owl-carousel .owl-nav .custom-next::after,
+.fz-blog .owl-carousel .owl-nav .custom-next::before {
   content: "";
   width: 80px;
   height: 2.27px;
   justify-content: center;
   position: absolute;
-}
-.fz-blog .owl-carousel .owl-nav::after {
-  background: #ffffff;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: 53%;
-}
-.fz-blog .owl-carousel .owl-nav::before {
-  background: #3eab90;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 .fz-blog .owl-carousel .owl-nav .custom-prev {
   color: #3eab90;
 }
+.fz-blog .owl-carousel .owl-nav .custom-prev:hover {
+  color: #ffffff;
+}
+.fz-blog .owl-carousel .owl-nav .custom-prev::after {
+  background: #3eab90;
+  left: 47%;
+}
 .fz-blog .owl-carousel .owl-nav .custom-next {
   color: #ffffff;
+}
+.fz-blog .owl-carousel .owl-nav .custom-next:hover {
+  color: #3eab90;
+}
+.fz-blog .owl-carousel .owl-nav .custom-next::before {
+  background: #ffffff;
+  left: 53%;
 }
 
 @keyframes moveAnimation {
@@ -2639,6 +2708,11 @@ header .fz_sigin ul li:last-child a {
   50% {
     transform: translateX(50%);
   }
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }
 .fz_testimonial {
   padding: 80px 0 0;
@@ -2729,6 +2803,11 @@ header .fz_sigin ul li:last-child a {
   50% {
     transform: translateX(50%);
   }
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }
 .faq_section {
   background-color: #000000;
@@ -2852,6 +2931,11 @@ header .fz_sigin ul li:last-child a {
     transform: translateX(50%);
   }
 }
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 #logo_marquee {
   --space: 5px;
   background-color: #1a2c2a;
@@ -2869,6 +2953,11 @@ header .fz_sigin ul li:last-child a {
   50% {
     transform: translateX(50%);
   }
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }
 .newsletter_section {
   background-color: #000000;
@@ -2956,6 +3045,11 @@ header .fz_sigin ul li:last-child a {
   50% {
     transform: translateX(50%);
   }
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }
 .play_store_section {
   background-color: #000000;
@@ -3354,6 +3448,11 @@ header .fz_sigin ul li:last-child a {
   50% {
     transform: translateX(50%);
   }
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }
 .footer_section {
   background: linear-gradient(359.8deg, rgba(26, 50, 48, 0.46) 5.16%, rgba(62, 171, 144, 0.22) 99.83%);

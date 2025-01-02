@@ -18,7 +18,7 @@
 }
 @media screen and (max-width: 991px) {
   .fz-blog .blog-carousel {
-    padding: 66px 0 30px;
+    padding: 20px 0 30px;
   }
 }
 .fz-blog .blog-carousel h3 {
@@ -60,7 +60,7 @@
   position: relative;
   border: 1px solid transparent;
   border-radius: 21px;
-  background: linear-gradient(150.11deg, #002C21 3.16%, #86E1CB 94.92%) border-box;
+  background: linear-gradient(150.11deg, #002c21 3.16%, #86e1cb 94.92%) border-box;
 }
 @media screen and (max-width: 1400px) {
   .fz-blog .item {
@@ -111,10 +111,31 @@
   color: #f7c35f;
   margin-bottom: 0px;
 }
+@media screen and (max-width: 991px) {
+  .fz-blog .item .card-body h5 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
 .fz-blog .item .card-body .card-text {
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 300;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 991px) {
+  .fz-blog .item .card-body .card-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+.fz-blog .item .card-body .collapsible {
+  max-height: 46px;
+  overflow: hidden;
+  transition: all 0.8s ease-out;
+}
+.fz-blog .item .card-body .collapsible.expanded {
+  max-height: 220px;
 }
 .fz-blog .item .card-body .card-top-title {
   display: flex;
@@ -130,7 +151,7 @@
   }
 }
 .fz-blog .item .card-body button {
-  color: #3EAB90;
+  color: #3eab90;
   border-radius: 32px;
   font-size: 14px;
   padding: 0;
@@ -140,6 +161,18 @@
 }
 .fz-blog .item .card-body button:hover {
   color: #f7c35f;
+}
+.fz-blog .item .card-body .read-more-btn.less {
+  color: #3eab90; /* Green color for "Read less" */
+}
+.fz-blog .item .card-body .read-more-btn.less:hover {
+  color: #f7c35f;
+}
+.fz-blog .owl-carousel .owl-item {
+  pointer-events: none; /* Prevent interactions on non-visible slides */
+}
+.fz-blog .owl-carousel .owl-item.active {
+  pointer-events: auto; /* Allow interactions on visible slides */
 }
 .fz-blog .owl-carousel .owl-stage {
   display: flex;
@@ -161,31 +194,34 @@
   transition: all 0.3s ease;
   justify-content: center;
 }
-.fz-blog .owl-carousel .owl-nav .custom-prev:hover,
-.fz-blog .owl-carousel .owl-nav .custom-next:hover {
-  color: #3eab90;
-}
-.fz-blog .owl-carousel .owl-nav::after, .fz-blog .owl-carousel .owl-nav::before {
+.fz-blog .owl-carousel .owl-nav .custom-prev::after, .fz-blog .owl-carousel .owl-nav .custom-prev::before,
+.fz-blog .owl-carousel .owl-nav .custom-next::after,
+.fz-blog .owl-carousel .owl-nav .custom-next::before {
   content: "";
   width: 80px;
   height: 2.27px;
   justify-content: center;
   position: absolute;
-}
-.fz-blog .owl-carousel .owl-nav::after {
-  background: #ffffff;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: 53%;
-}
-.fz-blog .owl-carousel .owl-nav::before {
-  background: #3eab90;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 .fz-blog .owl-carousel .owl-nav .custom-prev {
   color: #3eab90;
 }
+.fz-blog .owl-carousel .owl-nav .custom-prev:hover {
+  color: #ffffff;
+}
+.fz-blog .owl-carousel .owl-nav .custom-prev::after {
+  background: #3eab90;
+  left: 47%;
+}
 .fz-blog .owl-carousel .owl-nav .custom-next {
   color: #ffffff;
+}
+.fz-blog .owl-carousel .owl-nav .custom-next:hover {
+  color: #3eab90;
+}
+.fz-blog .owl-carousel .owl-nav .custom-next::before {
+  background: #ffffff;
+  left: 53%;
 }

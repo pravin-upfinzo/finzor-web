@@ -6,12 +6,17 @@
     transform: translateX(50%);
   }
 }
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 #fz_core_nexus {
   padding: 80px 0;
 }
 #fz_core_nexus .fz_core_bg {
   width: 558px;
-  background-color: #1A2C2A;
+  background-color: #1a2c2a;
   border-radius: 16px;
   padding-top: 30px;
   --border-angle: 0turn;
@@ -21,7 +26,7 @@
       #1A2C2A 100%
       );
   border: solid 1px transparent;
-  --gradient-border: conic-gradient(from var(--border-angle), transparent 50%, #F7C35F, #3EAB90 99%, transparent);
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 5%, #F7C35F, #3EAB90 99%);
   background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
   background-position: center center;
   animation: bg-spin 4s linear infinite;
@@ -35,18 +40,13 @@
   background-color: #000000;
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
-  transform: rotate(-8.5deg);
   width: 422px;
-  height: 605px;
-  margin-left: 62px;
-  position: relative;
-  top: 35px;
+  margin: 0 auto;
   overflow: hidden;
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   #fz_core_nexus .fz_core_bg .fz_core_text {
     width: 375px;
-    height: auto;
   }
 }
 #fz_core_nexus .fz_core_bg .fz_core_text h3 {
@@ -64,7 +64,6 @@
   }
 }
 #fz_core_nexus .fz_core_bg .fz_core_text img {
-  transform: rotate(8.5deg);
   position: relative;
   z-index: 1;
 }
@@ -85,22 +84,36 @@
   border-radius: 50%;
 }
 #fz_core_nexus .fz_core_bg .fz_core_text .fz_box div:nth-child(1) {
-  top: 38%;
-  left: 10%;
+  top: 35%;
+  left: 5%;
   animation: animate 16s linear infinite;
-  background: #F7C35F;
+<<<<<<< HEAD
+  background: #f7c35f;
+=======
+>>>>>>> fc884f9bc675a0be2b564a76b40cfc44bdd56be4
 }
 #fz_core_nexus .fz_core_bg .fz_core_text .fz_box div:nth-child(2) {
-  top: 80%;
-  left: 70%;
+  top: 32%;
+  left: 35%;
   animation: animate 12s linear infinite;
-  background: #3EAB90;
+<<<<<<< HEAD
+  background: #3eab90;
+=======
+>>>>>>> fc884f9bc675a0be2b564a76b40cfc44bdd56be4
 }
 #fz_core_nexus .fz_core_bg .fz_core_text .fz_box div:nth-child(3) {
-  top: 38%;
-  right: 0%;
+  top: 40%;
+  right: 8%;
   animation: animate 10s linear infinite;
-  background: #3EAB90;
+<<<<<<< HEAD
+  background: #3eab90;
+=======
+}
+#fz_core_nexus .fz_core_bg .fz_core_text .fz_box div:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  animation: animate 8s linear infinite;
+>>>>>>> fc884f9bc675a0be2b564a76b40cfc44bdd56be4
 }
 @media screen and (max-width: 991px) {
   #fz_core_nexus .fz_core_bg .fz_core_text {
@@ -160,7 +173,7 @@
   }
 }
 #fz_core_nexus .fz_core_text_right p span {
-  background-color: #2D4949;
+  background-color: #2d4949;
   border-radius: 50%;
   height: 43px;
   display: flex;
@@ -181,7 +194,7 @@
   }
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore {
-  background: #3EAB90;
+  background: #3eab90;
   color: #ffffff;
   border-radius: 32px;
   font-size: 16px;
@@ -201,7 +214,7 @@
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore:hover {
   background: transparent;
-  border: 1px solid #3EAB90;
+  border: 1px solid #3eab90;
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore .hero-join {
   line-height: 1.5;
@@ -225,7 +238,7 @@
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore_btn {
   background: #000000;
-  color: #3EAB90;
+  color: #3eab90;
   border-radius: 32px;
   font-size: 16px;
   position: relative;
@@ -234,7 +247,7 @@
   justify-content: flex-end;
   padding: 15px 20px;
   font-weight: 400;
-  border: 1px solid #3EAB90;
+  border: 1px solid #3eab90;
   transition: all 0.3s ease-in;
   width: 180px;
 }
@@ -242,7 +255,7 @@
   animation: moveAnimation 2s linear infinite;
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore_btn:hover {
-  background: #3EAB90;
+  background: #3eab90;
   border: 1px solid transparent;
   color: #ffffff;
 }
@@ -268,11 +281,11 @@
 
 @keyframes animate {
   0% {
-    transform: scale(0) translateY(-90px) rotate(360deg);
+    transform: scale(0) translateY(-80px);
     opacity: 1;
   }
   100% {
-    transform: scale(1.3) translateY(-90px) rotate(-180deg);
+    transform: scale(1) translateY(-90px);
     border-radius: 50%;
     opacity: 0;
   }
