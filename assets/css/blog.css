@@ -74,7 +74,10 @@
   }
 }
 .fz-blog .item:hover .card-body {
-  bottom: 0px;
+  height: 100%;
+}
+.fz-blog .item:hover .card-body .card-text {
+  max-height: 220px;
 }
 .fz-blog .item:hover img {
   transform: scale(1.1);
@@ -97,9 +100,13 @@
   border-radius: 0 0 8px 8px;
   margin: 0 auto;
   position: absolute;
-  bottom: -46px;
-  transition: all 0.6s ease-out;
+  height: 28%;
+  bottom: 0px;
+  transition: all 1s ease;
   background: linear-gradient(rgba(0, 0, 0, 0.04), rgb(0, 0, 0), #000000);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 @media screen and (max-width: 991px) {
   .fz-blog .item .card-body {
@@ -127,57 +134,15 @@
   line-height: 24px;
   font-weight: 300;
   margin-bottom: 2rem;
+  max-height: 46px;
+  overflow: hidden;
+  transition: all 1s ease;
 }
 @media screen and (max-width: 991px) {
   .fz-blog .item .card-body .card-text {
     font-size: 14px;
     line-height: 22px;
   }
-}
-.fz-blog .item .card-body .collapsible {
-  max-height: 46px;
-  overflow: hidden;
-  transition: all 0.8s ease-out;
-}
-.fz-blog .item .card-body .collapsible.expanded {
-  max-height: 220px;
-}
-.fz-blog .item .card-body .card-top-title {
-  display: flex;
-  justify-content: space-between;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18px;
-  padding: 34px 0 28px 0;
-}
-@media screen and (max-width: 991px) {
-  .fz-blog .item .card-body .card-top-title {
-    padding: 15px 0 10px 0;
-  }
-}
-.fz-blog .item .card-body button {
-  color: #3eab90;
-  border-radius: 32px;
-  font-size: 14px;
-  padding: 0;
-  margin-bottom: 10px;
-  background: transparent !important;
-  border: none;
-}
-.fz-blog .item .card-body button:hover {
-  color: #f7c35f;
-}
-.fz-blog .item .card-body .read-more-btn.less {
-  color: #3eab90; /* Green color for "Read less" */
-}
-.fz-blog .item .card-body .read-more-btn.less:hover {
-  color: #f7c35f;
-}
-.fz-blog .owl-carousel .owl-item {
-  pointer-events: none; /* Prevent interactions on non-visible slides */
-}
-.fz-blog .owl-carousel .owl-item.active {
-  pointer-events: auto; /* Allow interactions on visible slides */
 }
 .fz-blog .owl-carousel .owl-stage {
   display: flex;

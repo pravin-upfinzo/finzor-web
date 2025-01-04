@@ -599,20 +599,20 @@ init();
 
 // caurosal section
 
-document.addEventListener("click", function (event) {
-  // Check if the clicked element is a "Read More" button
-  if (event.target.classList.contains("read-more-btn")) {
-    const button = event.target;
-    const text = button.previousElementSibling; // Select the <p> element
-    text.classList.toggle("expanded");
+// document.addEventListener("click", function (event) {
+//   // Check if the clicked element is a "Read More" button
+//   if (event.target.classList.contains("read-more-btn")) {
+//     const button = event.target;
+//     const text = button.previousElementSibling; // Select the <p> element
+//     text.classList.toggle("expanded");
 
-    // Toggle text and class
-    if (text.classList.contains("expanded")) {
-      button.textContent = "Read less";
-      button.classList.add("less"); // Add "less" class
-    } else {
-      button.textContent = "Read more";
-      button.classList.remove("less"); // Remove "less" class
-    }
-  }
-});
+//     // Toggle text and class
+//     if (text.classList.contains("expanded")) {
+//       button.textContent = "Read less";
+//       button.classList.add("less"); // Add "less" class
+//     } else {
+//       button.textContent = "Read more";
+//       button.classList.remove("less"); // Remove "less" class
+//     }
+//   }
+// });

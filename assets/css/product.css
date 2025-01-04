@@ -57,8 +57,8 @@
   color: #000000;
   padding-top: 10px;
   margin: 0;
-  -webkit-text-stroke: 1px #ffffff;
-  text-stroke: 1px #ffffff;
+  -webkit-text-stroke: 1px #1ca999;
+  text-stroke: 1px #1ca999;
 }
 @media only screen and (max-width: 1200px) {
   .fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .fz_num h2 {

@@ -206,11 +206,7 @@ header .fz_sigin ul li:last-child a {
   border-radius: 5px;
   border: 1px solid #ffffff;
   --border-angle: 0turn;
-  --main-bg: conic-gradient(
-    from var(--border-angle),
-    #1a2c2a 0%,
-    #1a2c2a 100%
-  );
+  --main-bg:conic-gradient(from var(--border-angle), #007164 0%, #007264 100%);
   border: solid 1px transparent;
   --gradient-border: conic-gradient(
     from var(--border-angle),
