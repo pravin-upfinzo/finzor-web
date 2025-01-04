@@ -17,7 +17,6 @@
   }
   .panel__stack .panel__card {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     grid-area: 1/1/2/2;
     border-radius: 8px;
@@ -30,8 +29,7 @@
     --border-angle: 0turn;
     --main-bg: conic-gradient(
         from var(--border-angle),
-        #1A2C2A 0%,  
-        #1A2C2A 100%
+        #151616 0%, #151616 100%
         );
     border: solid 1px transparent;
     --gradient-border: conic-gradient(from var(--border-angle), transparent 10%, #05311d, #3EAB90 49%, transparent);
@@ -40,6 +38,13 @@
     animation: bg-spin 12s linear infinite;
     &.active {
       @include neon-border;
+      --main-bg: conic-gradient(
+        from var(--border-angle),
+        #151616 0%, #151616 100%
+        );
+    }
+    @media screen and (min-width: 1600px) {
+      justify-content: center;
     }
     @media screen and (max-width: 1199px) {
       grid-area:unset;
@@ -276,8 +281,11 @@
                     }
                     .item-pay {
                         border-radius: 8px;
-                        min-width: 30%;
-                        background: #fff;
+                        width: 33.3%;
+                        background: url('/assets/images/subtract.svg');
+                        background-repeat: no-repeat;
+                        min-height: 480px;
+                        
                         @media screen and (min-width: 768px) and (max-width: 991px) {
                           width: calc(50% - 20px);
                         }
@@ -285,7 +293,7 @@
                           width: 100%;
                           height: 270px!important;
                         }
-                        img {
+                        > img {
                           width: 100%;
                           height: 270px;
                           @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -299,14 +307,13 @@
                         }
                         div {
                             padding: 20px;
-                            background-color: $black;
                             border-bottom-left-radius: 8px;
                             border-bottom-right-radius: 8px;
                             @media screen and (min-width: 991px) and (max-width: 1400px) {
                               min-height: 236px;
                             }
                             h3 {
-                                color: $secondary-color;
+                                color: $primary-color;
                                 font-size: 20px;
                                 font-weight: 500;
                                 line-height: 36px;
@@ -331,6 +338,12 @@
                                 color: $primary-color;
                                 font-size: 18px;
                                 text-decoration: none;
+                            }
+                            div {
+                              display: flex;
+                              justify-content: space-between;
+                              padding-left: 0;
+                              padding-right: 0;
                             }
                         }
                     }

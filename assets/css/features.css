@@ -27,7 +27,6 @@
 
 .panel__stack .panel__card {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   grid-area: 1/1/2/2;
   border-radius: 8px;
@@ -40,8 +39,7 @@
   --border-angle: 0turn;
   --main-bg: conic-gradient(
       from var(--border-angle),
-      #1A2C2A 0%,
-      #1A2C2A 100%
+      #151616 0%, #151616 100%
       );
   border: solid 1px transparent;
   --gradient-border: conic-gradient(from var(--border-angle), transparent 10%, #05311d, #3EAB90 49%, transparent);
@@ -61,10 +59,19 @@
   background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
   background-position: center center;
   animation: bg-spin 4s linear infinite;
+  --main-bg: conic-gradient(
+    from var(--border-angle),
+    #151616 0%, #151616 100%
+    );
 }
 @keyframes bg-spin {
   to {
     --border-angle: 1turn;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .panel__stack .panel__card {
+    justify-content: center;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -328,8 +335,10 @@
 }
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
   border-radius: 8px;
-  min-width: 30%;
-  background: #fff;
+  width: 33.3%;
+  background: url("/assets/images/subtract.svg");
+  background-repeat: no-repeat;
+  min-height: 480px;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
@@ -340,24 +349,23 @@
   width: 100%;
   height: 270px !important;
 }
-.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay img {
+.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay > img {
   width: 100%;
   height: 270px;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay img {
+  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay > img {
     width: 100%;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay img {
+  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay > img {
     width: 100%;
     height: auto;
   }
 }
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div {
   padding: 20px;
-  background-color: #000000;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
@@ -367,7 +375,7 @@
   }
 }
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div h3 {
-  color: #f7c35f;
+  color: #3eab90;
   font-size: 20px;
   font-weight: 500;
   line-height: 36px;
@@ -396,4 +404,10 @@
   color: #3eab90;
   font-size: 18px;
   text-decoration: none;
+}
+.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div div {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  padding-right: 0;
 }
