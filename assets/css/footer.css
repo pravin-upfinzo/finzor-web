@@ -12,7 +12,7 @@
   initial-value: 0turn;
 }
 .footer_section {
-  background: linear-gradient(359.8deg, rgba(26, 50, 48, 0.46) 5.16%, rgba(62, 171, 144, 0.22) 99.83%);
+  background: linear-gradient(359.8deg, rgba(0, 0, 0, 0.46) 5.16%, rgba(97, 97, 97, 0.22) 99.83%);
   background-color: #000000;
   padding: 200px 0px 0;
 }
@@ -33,6 +33,9 @@
 .footer_section .col-lg-4 .footer_logo img {
   width: 100%;
   height: 100%;
+}
+.footer_section .col-lg-4 .footer_logo svg path {
+  fill: #3eab90;
 }
 .footer_section .col-lg-4 p {
   color: #ffffff;
@@ -161,7 +164,7 @@
   border-radius: 50%;
   position: fixed;
   bottom: 100px;
-  right: 30px;
+  right: 10px;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
   visibility: hidden;

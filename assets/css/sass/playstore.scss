@@ -15,6 +15,14 @@
         top: 100px;
          z-index: 0;
          overflow: hidden;
+         border-radius: 12px;
+         border: solid 1px transparent;
+         --border-angle: 0turn;
+         --main-bg: conic-gradient(from var(--border-angle), #000 0%, rgb(0, 0, 0) 100%);
+         --gradient-border: conic-gradient(from var(--border-angle), transparent 10%, #05311d, #3EAB90 49%, transparent);
+         background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+         background-position: center center;
+         animation: bg-spin 8s linear infinite;
         @media screen and (max-width:992px) {
             padding: 60px 0px;
             top: 0px;
@@ -30,7 +38,7 @@
             height: 400px;
             top: 225px;
             left: -78px;
-            background-color: #209181;
+            background-color: #1a2c2a;
             border-radius: 50%;
             filter: blur(152px);
             transform: translate3d(0, 0, 0);
@@ -43,7 +51,7 @@
             height: 525px;
             top: 150px;
             right: 113px;
-            background-color: #209181;
+            background-color: #1a2c2a;
             border-radius: 50%;
             filter: blur(152px);
             transform: translate3d(0, 0, 0);
@@ -85,12 +93,13 @@
         
     }
     p{
-        font-size: 14px;
-        font-weight: 400;
+        font-size: 15px;
+        font-weight: 300;
         line-height: 24px;
         text-align: left;
         color: $white;
-        margin: 0 0px 40px;
+        color: #889795;
+        margin: 0 0px 20px;
         @media screen and (max-width:991px) {
             text-align: center;
         }
@@ -98,6 +107,10 @@
     .play_store_right{
         display: flex;
         border-bottom-right-radius: 40px;
+        svg{
+            height: 100%;
+            z-index: 1;
+        }
            
     @media (min-width: 768px) and (max-width: 1300px) {
         justify-content: center;
@@ -109,7 +122,7 @@
             z-index: 9;
            }
            &:last-child {
-            right: 152px;
+            right: 38px;
            }
            @media screen and (max-width: 991px) {
             height: 460px;
@@ -120,7 +133,7 @@
     .play_store_left{
         position: relative;
         z-index: 2;
-        padding: 70px 70px 20px;
+        padding: 40px 70px 40px;
         @media screen and (max-width:992px) {
             padding: 0px;
             text-align: center;

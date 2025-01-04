@@ -77,6 +77,23 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #000000;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #000000;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
 header {
   padding: 0px 40px;
   position: fixed;
@@ -279,7 +296,7 @@ header .fz_sigin ul li:last-child a {
 
 .buttons {
   --w: 180px;
-  --h: 60px;
+  --h: 50px;
   --icon-size: 25px;
   --text-color: rgb(210 210 240);
   --box-glow-color: transparent;
@@ -295,19 +312,20 @@ header .fz_sigin ul li:last-child a {
   border: none;
   color: var(--text-color);
   background: rgba(4, 8, 20, 0.8);
-  box-shadow: 0px 5px 0 0px rgba(191, 191, 202, 0.22), 0 0 var(--box-glow-blur) var(--box-glow-color), inset 0 0 26px -10px var(--box-glow-color);
+  box-shadow: 0px 5px 0 0px rgba(62, 171, 144, 0.431372549), 0 0 var(--box-glow-blur) var(--box-glow-color), inset 0 0 26px -10px rgba(29, 77, 45, 0.3607843137);
   overflow: hidden;
   cursor: pointer;
   transition: box-shadow 500ms ease;
   z-index: 2;
   font-size: 15px;
+  border: 1px solid rgba(62, 171, 144, 0.568627451);
 }
 
 .buttons::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(200, 200, 220, 0.1);
+  background: #1a2c2a;
   box-shadow: inset 0 0px 24px 0 rgba(170, 230, 250, 0.12);
   border-radius: var(--h);
   z-index: 1;
@@ -320,7 +338,7 @@ header .fz_sigin ul li:last-child a {
 }
 
 .buttons .text {
-  transform: translateX(-30%);
+  transform: translateX(-20%);
   transition: transform 500ms ease;
 }
 
@@ -334,7 +352,7 @@ header .fz_sigin ul li:last-child a {
 }
 
 .buttons svg {
-  width: 100%;
+  width: 70%;
   height: 100%;
   fill: currentColor;
 }
@@ -350,19 +368,19 @@ header .fz_sigin ul li:last-child a {
 
 .buttons:hover::before,
 .buttons:active::before {
-  transform: translateX(65%);
+  transform: translateX(72%);
   box-shadow: inset 0 0px 0px 0 transparent;
 }
 
 .buttons:hover .text,
 .buttons:active .text {
-  transform: translateX(-40%);
+  transform: translateX(-25%);
   animation-play-state: running;
 }
 
 .buttons:hover .icon,
 .buttons:active .icon {
-  transform: translateX(calc(var(--w) - var(--icon-size) - 19px));
+  transform: translateX(calc(var(--w) - var(--icon-size) - 15px));
   color: var(--color);
 }
 
@@ -2169,8 +2187,20 @@ header .fz_sigin ul li:last-child a {
   }
 }
 
+@keyframes moveAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 .counter_section {
-  background-color: #080d0e;
   height: auto;
   display: flex;
   justify-content: center;
@@ -2842,8 +2872,7 @@ header .fz_sigin ul li:last-child a {
   initial-value: 0turn;
 }
 .newsletter_section {
-  background-color: #000000;
-  text-align: center;
+  text-align: left;
   padding: 0px 0px 0;
 }
 @media screen and (max-width: 991px) {
@@ -2852,10 +2881,10 @@ header .fz_sigin ul li:last-child a {
   }
 }
 .newsletter_section h3 {
-  color: #3eab90;
-  font-size: 50px;
-  font-weight: 500;
-  line-height: 70.31px;
+  color: #ffffff;
+  font-size: 96px;
+  font-weight: 300;
+  line-height: 96px;
   margin-bottom: 0px;
 }
 @media screen and (max-width: 991px) {
@@ -2866,11 +2895,11 @@ header .fz_sigin ul li:last-child a {
 }
 .newsletter_section h5 {
   font-size: 35px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 30px;
-  color: #ffffff;
-  text-align: center;
-  margin-bottom: 0px;
+  color: #3eab90;
+  text-align: left;
+  margin-bottom: 20px;
   padding-top: 15px;
 }
 @media screen and (max-width: 991px) {
@@ -2880,14 +2909,11 @@ header .fz_sigin ul li:last-child a {
   }
 }
 .newsletter_section .input-group {
-  width: 636.71px;
-  height: 70px;
+  width: 100%;
+  height: 55px;
   gap: 0px;
   border-radius: 0px 8px 8px 0px;
-  border: 1px 0px 0px 0px;
-  opacity: 0px;
-  margin: 0 auto;
-  margin-top: 30px;
+  margin: 25px auto 30px;
   border: none;
 }
 @media screen and (max-width: 768px) {
@@ -2918,6 +2944,13 @@ header .fz_sigin ul li:last-child a {
 }
 .newsletter_section .input-group .form-control {
   font-size: 16px;
+  background: transparent;
+  border: solid 1px transparent;
+  color: #ddd;
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+}
+.newsletter_section .input-group .form-control::placeholder {
+  color: #3a3a3a;
 }
 
 @keyframes moveAnimation {
@@ -2952,6 +2985,14 @@ header .fz_sigin ul li:last-child a {
   top: 100px;
   z-index: 0;
   overflow: hidden;
+  border-radius: 12px;
+  border: solid 1px transparent;
+  --border-angle: 0turn;
+  --main-bg: conic-gradient(from var(--border-angle), #000 0%, rgb(0, 0, 0) 100%);
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 10%, #05311d, #3EAB90 49%, transparent);
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+  background-position: center center;
+  animation: bg-spin 8s linear infinite;
 }
 @media screen and (max-width: 992px) {
   .play_store_section .play_store_container {
@@ -2972,7 +3013,7 @@ header .fz_sigin ul li:last-child a {
   height: 400px;
   top: 225px;
   left: -78px;
-  background-color: #209181;
+  background-color: #1a2c2a;
   border-radius: 50%;
   filter: blur(152px);
   transform: translate3d(0, 0, 0);
@@ -2985,7 +3026,7 @@ header .fz_sigin ul li:last-child a {
   height: 525px;
   top: 150px;
   right: 113px;
-  background-color: #209181;
+  background-color: #1a2c2a;
   border-radius: 50%;
   filter: blur(152px);
   transform: translate3d(0, 0, 0);
@@ -3029,12 +3070,13 @@ header .fz_sigin ul li:last-child a {
   }
 }
 .play_store_section p {
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 300;
   line-height: 24px;
   text-align: left;
   color: #ffffff;
-  margin: 0 0px 40px;
+  color: #889795;
+  margin: 0 0px 20px;
 }
 @media screen and (max-width: 991px) {
   .play_store_section p {
@@ -3044,6 +3086,10 @@ header .fz_sigin ul li:last-child a {
 .play_store_section .play_store_right {
   display: flex;
   border-bottom-right-radius: 40px;
+}
+.play_store_section .play_store_right svg {
+  height: 100%;
+  z-index: 1;
 }
 @media (min-width: 768px) and (max-width: 1300px) {
   .play_store_section .play_store_right {
@@ -3058,7 +3104,7 @@ header .fz_sigin ul li:last-child a {
   z-index: 9;
 }
 .play_store_section .play_store_right img:last-child {
-  right: 152px;
+  right: 38px;
 }
 @media screen and (max-width: 991px) {
   .play_store_section .play_store_right img {
@@ -3069,7 +3115,7 @@ header .fz_sigin ul li:last-child a {
 .play_store_section .play_store_left {
   position: relative;
   z-index: 2;
-  padding: 70px 70px 20px;
+  padding: 40px 70px 40px;
 }
 @media screen and (max-width: 992px) {
   .play_store_section .play_store_left {
@@ -3337,7 +3383,7 @@ header .fz_sigin ul li:last-child a {
   initial-value: 0turn;
 }
 .footer_section {
-  background: linear-gradient(359.8deg, rgba(26, 50, 48, 0.46) 5.16%, rgba(62, 171, 144, 0.22) 99.83%);
+  background: linear-gradient(359.8deg, rgba(0, 0, 0, 0.46) 5.16%, rgba(97, 97, 97, 0.22) 99.83%);
   background-color: #000000;
   padding: 200px 0px 0;
 }
@@ -3358,6 +3404,9 @@ header .fz_sigin ul li:last-child a {
 .footer_section .col-lg-4 .footer_logo img {
   width: 100%;
   height: 100%;
+}
+.footer_section .col-lg-4 .footer_logo svg path {
+  fill: #3eab90;
 }
 .footer_section .col-lg-4 p {
   color: #ffffff;
@@ -3486,7 +3535,7 @@ header .fz_sigin ul li:last-child a {
   border-radius: 50%;
   position: fixed;
   bottom: 100px;
-  right: 30px;
+  right: 10px;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
   visibility: hidden;
