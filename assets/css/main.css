@@ -301,7 +301,7 @@ header .fz_sigin ul li:last-child a {
   --text-color: rgb(210 210 240);
   --box-glow-color: transparent;
   --box-glow-blur: 20px;
-  --color: #00afaf;
+  --color: #00afaf85;
   position: relative;
   min-width: var(--w);
   min-height: var(--h);
@@ -312,7 +312,7 @@ header .fz_sigin ul li:last-child a {
   border: none;
   color: var(--text-color);
   background: rgba(4, 8, 20, 0.8);
-  box-shadow: 0px 5px 0 0px rgba(62, 171, 144, 0.431372549), 0 0 var(--box-glow-blur) var(--box-glow-color), inset 0 0 26px -10px rgba(29, 77, 45, 0.3607843137);
+  box-shadow: 0px 3px 0 0px #017f53, 0 0 var(--box-glow-blur) var(--box-glow-color), inset 0 0 26px -10px rgba(29, 77, 45, 0.3607843137);
   overflow: hidden;
   cursor: pointer;
   transition: box-shadow 500ms ease;
@@ -325,7 +325,7 @@ header .fz_sigin ul li:last-child a {
   content: "";
   position: absolute;
   inset: 0;
-  background: #1a2c2a;
+  background: #0d1918;
   box-shadow: inset 0 0px 24px 0 rgba(170, 230, 250, 0.12);
   border-radius: var(--h);
   z-index: 1;
@@ -1186,9 +1186,9 @@ header .fz_sigin ul li:last-child a {
   flex-direction: column;
   grid-area: 1/1/2/2;
   border-radius: 8px;
-  padding: 2.5rem;
+  padding: 0rem;
   position: absolute;
-  height: 41.625rem;
+  height: 43rem;
   will-change: transform;
   background-color: #1a2c2a;
   box-shadow: 0px 0px 8px rgba(16, 106, 64, 0.3607843137);
@@ -1240,9 +1240,9 @@ header .fz_sigin ul li:last-child a {
     width: 100%;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1600px) {
   .panel__stack .panel__card {
-    height: 36rem;
+    height: 34rem;
   }
 }
 
@@ -1265,10 +1265,6 @@ header .fz_sigin ul li:last-child a {
 
 .panel__stack .panel__card:nth-child(4) {
   animation-delay: 1.5s;
-}
-
-.panel__stack .panel__card.panel__card {
-  height: 43rem;
 }
 
 .panel__stack .panel__card:first-child {
@@ -1424,13 +1420,18 @@ header .fz_sigin ul li:last-child a {
   align-items: center;
 }
 .panel .panel__options span {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 22px;
+  font-weight: 400;
   line-height: 36px;
   color: #ffffff;
   padding: 12px 0;
   transition: all 0.5s ease;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 1600px) {
+  .panel .panel__options span {
+    margin-bottom: 0;
+  }
 }
 @media screen and (max-width: 1199px) {
   .panel .panel__options {
@@ -1439,10 +1440,10 @@ header .fz_sigin ul li:last-child a {
 }
 .panel .panel__stack .panel__card h2 {
   color: #ffffff;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 32px;
-  margin-bottom: 30px;
+  margin: 20px 35px;
 }
 @media screen and (max-width: 991px) {
   .panel .panel__stack .panel__card h2 {
@@ -1492,9 +1493,9 @@ header .fz_sigin ul li:last-child a {
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
   border-radius: 8px;
   width: 33.3%;
-  background: url("/assets/images/subtract.svg");
   background-repeat: no-repeat;
-  min-height: 480px;
+  padding: 0px 50px;
+  position: relative;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
@@ -1521,7 +1522,7 @@ header .fz_sigin ul li:last-child a {
   }
 }
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div {
-  padding: 20px;
+  padding: 0px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
@@ -1545,9 +1546,9 @@ header .fz_sigin ul li:last-child a {
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div p {
   color: #ffffff;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 25px;
-  min-height: 75px;
+  font-weight: 200;
+  line-height: 22px;
+  min-height: 60px;
 }
 @media screen and (max-width: 767px) {
   .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div p {
@@ -1558,7 +1559,7 @@ header .fz_sigin ul li:last-child a {
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div a {
   display: none;
   color: #3eab90;
-  font-size: 18px;
+  font-size: 14px;
   text-decoration: none;
 }
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div div {
@@ -1566,6 +1567,10 @@ header .fz_sigin ul li:last-child a {
   justify-content: space-between;
   padding-left: 0;
   padding-right: 0;
+}
+.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div div img {
+  width: 30px;
+  height: 50px;
 }
 
 @keyframes moveAnimation {
@@ -1593,7 +1598,7 @@ header .fz_sigin ul li:last-child a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 120px;
+  padding-top: 178px;
   gap: 24px;
 }
 .fz_product_sec .container .fz_product_left .fz_sub_container {
@@ -1622,16 +1627,18 @@ header .fz_sigin ul li:last-child a {
 }
 .fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .fz_num h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 128px;
+  font-size: 60px;
   font-weight: 600;
-  color: #ffffff;
-  padding-top: 18px;
+  color: #000000;
+  padding-top: 10px;
   margin: 0;
+  -webkit-text-stroke: 1px #ffffff;
+  text-stroke: 1px #ffffff;
 }
 @media only screen and (max-width: 1200px) {
   .fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .fz_num h2 {
-    font-size: 104px;
-    padding-top: 13px;
+    font-size: 30px;
+    padding-top: 5px;
   }
 }
 .fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .fz_title_content {
@@ -1747,7 +1754,12 @@ header .fz_sigin ul li:last-child a {
 .fz_product_sec .container .fz_product_right {
   display: flex;
   justify-content: flex-end;
-  padding-top: 120px;
+  padding-top: 178px !important;
+}
+@media screen and (max-height: 768px) {
+  .fz_product_sec .container .fz_product_right {
+    padding-top: 110px !important;
+  }
 }
 @media screen and (max-width: 1200px) {
   .fz_product_sec .container .fz_product_right {
@@ -2309,12 +2321,11 @@ header .fz_sigin ul li:last-child a {
   margin: 0 auto;
 }
 .counter_section #counter span {
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
   line-height: 60px;
   text-align: center;
-  color: #3eab90;
-  text-shadow: 0 0 15px rgba(0, 255, 227, 0.14), 0 0 20px rgba(0, 255, 227, 0.11), 0 0 40px rgba(0, 255, 203, 0.52), 0 0 10px rgba(0, 255, 211, 0.51);
+  color: #ffffff;
 }
 @media screen and (max-width: 991px) {
   .counter_section #counter span {
@@ -2354,8 +2365,10 @@ header .fz_sigin ul li:last-child a {
   right: 0;
   width: 1.5px;
   height: 100%;
-  background-color: #3eab90;
-  box-shadow: 0 0 15px rgba(0, 255, 227, 0.14), 0 0 20px rgba(0, 255, 227, 0.11), 0 0 40px rgba(0, 255, 203, 0.52), 0 0 10px rgba(0, 255, 211, 0.51);
+  background-color: #3EAB90;
+  border-radius: 80px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #3EAB90 50%, rgba(0, 0, 0, 0) 100%);
+  animation: gradient-hue 6s infinite linear;
 }
 @media screen and (max-width: 991px) {
   .counter_section #counter .col-lg-3::before {
@@ -2369,16 +2382,28 @@ header .fz_sigin ul li:last-child a {
   line-height: 60px;
   font-weight: 700;
   font-weight: bolder;
-  color: #FFFFFF;
-  background-color: #3eab90;
-  text-shadow: 0 0 15px rgba(0, 255, 227, 0.14), 0 0 20px rgba(0, 255, 227, 0.11), 0 0 40px rgba(0, 255, 203, 0.52), 0 0 10px rgba(0, 255, 211, 0.51);
+  color: #00B2B1;
+  background-image: linear-gradient(92deg, #f7c35f, #22feb3, #006468);
   background-clip: text;
-  -webkit-background-clip: text;
+  background-size: 300%;
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: gradient-hue 6s infinite linear;
 }
 @media screen and (max-width: 991px) {
   .counter_section #counter .count {
     font-size: 30px;
+  }
+}
+@keyframes gradient-hue {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 .counter_section #counter .count.percent_1:after {
@@ -2771,9 +2796,6 @@ header .fz_sigin ul li:last-child a {
 .faq_section .faq_section .accordion-button::after {
   background-color: #ffffff;
 }
-.faq_section .accordion-item:not(:first-of-type) {
-  border-top: 1px solid #3eab90 !important;
-}
 .faq_section .accordion-item .accordion-header .accordion-button {
   position: relative;
   top: 2px;
@@ -2804,8 +2826,17 @@ header .fz_sigin ul li:last-child a {
 .faq_section .accordion-item {
   margin-bottom: 20px;
   border-radius: 16px;
-  border: 1px solid #3eab90;
+  border: 1px solid #1a2c2a;
   background-color: #000000 !important;
+}
+.faq_section .accordion-item:hover {
+  border: solid 1px transparent;
+  --border-angle: 0turn;
+  --main-bg: conic-gradient(from var(--border-angle), #000 0%, rgb(0, 0, 0) 100%);
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 10%, #05311d, #3EAB90 49%, transparent);
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+  background-position: center center;
+  animation: bg-spin 5s linear infinite;
 }
 .faq_section .accordion-body {
   font-size: 14px;
@@ -2816,9 +2847,6 @@ header .fz_sigin ul li:last-child a {
 }
 .faq_section .accordion-button:not(.collapsed) {
   box-shadow: none;
-}
-.faq_section .accordion-item:not(:first-of-type) {
-  border-top: #3eab90;
 }
 .faq_section .accordion-item .accordion-header .accordion-button:focus {
   box-shadow: none;
@@ -3423,7 +3451,7 @@ header .fz_sigin ul li:last-child a {
   fill: #3eab90;
 }
 .footer_section .col-lg-4 p {
-  color: #ffffff;
+  color: #5c5c5c;
   padding: 20px 0px 10px;
   font-weight: 400;
   font-size: 14px;
@@ -3434,7 +3462,7 @@ header .fz_sigin ul li:last-child a {
   }
 }
 .footer_section .col-lg-4 a {
-  color: #ffffff;
+  color: #5c5c5c;
   text-decoration: none;
   padding-top: 10px;
   font-size: 14px;
@@ -3459,7 +3487,7 @@ header .fz_sigin ul li:last-child a {
   padding-left: 20px;
 }
 .footer_section h5 {
-  color: #ffffff;
+  color: #5c5c5c;
   font-size: 22px;
   line-height: 24px;
   font-weight: 500;
@@ -3485,7 +3513,7 @@ header .fz_sigin ul li:last-child a {
   }
 }
 .footer_section li a {
-  color: #ffffff;
+  color: #5c5c5c;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -3503,7 +3531,7 @@ header .fz_sigin ul li:last-child a {
   align-items: center;
 }
 .footer_section .copy_rights .copy_rights_1 {
-  color: #ffffff;
+  color: #5c5c5c;
 }
 .footer_section .copy_rights .copy_rights_1 p {
   margin: 0;
@@ -3519,7 +3547,7 @@ header .fz_sigin ul li:last-child a {
   display: inline-block;
   text-align: center;
   border-radius: 50%;
-  background: #1a2c2a;
+  background: rgba(32, 39, 44, 0.4117647059);
   line-height: 35px;
 }
 .footer_section .copy_rights .copy_rights_1.fz_social_icon a:hover {

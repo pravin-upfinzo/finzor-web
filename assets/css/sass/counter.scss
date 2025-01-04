@@ -90,12 +90,11 @@
       padding: 35px 0 25px;
       margin: 0 auto;
     span{
-      font-size: 24px;
-      font-weight: 500;
+      font-size: 20px;
+      font-weight: 400;
       line-height: 60px;
       text-align: center;
-      color: $primary-color; 
-      text-shadow: 0 0 15px rgba(0, 255, 227, 0.14), 0 0 20px rgba(0, 255, 227, 0.11), 0 0 40px rgba(0, 255, 203, 0.52), 0 0 10px rgba(0, 255, 211, 0.51);
+      color: $white; 
       @media screen and (max-width:991px) {
         font-size: 18px;
         line-height: 26px;
@@ -129,12 +128,13 @@
       content: '';
       position: absolute;
       top: 0;
-      right: 0; 
-      width: 1.5px; 
+      right: 0;
+      width: 1.5px;
       height: 100%;
-      background-color: $primary-color; 
-      box-shadow: 0 0 15px rgba(0, 255, 227, 0.14), 0 0 20px rgba(0, 255, 227, 0.11), 0 0 40px rgba(0, 255, 203, 0.52), 0 0 10px rgba(0, 255, 211, 0.51);
-      // background: linear-gradient(180deg, #3EAB90 0%, #FFFFFF 100%);
+      background-color: #3EAB90; 
+      border-radius: 80px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #3EAB90 50%, rgba(0, 0, 0, 0) 100%);
+      animation: gradient-hue 6s infinite linear;
       @media screen and (max-width:991px) {
         display: none;
       }
@@ -147,15 +147,27 @@
         line-height: 60px;
         font-weight: 700;
         font-weight: bolder;
-        color: #FFFFFF; 
-        background-color: $primary-color; 
-        // background-image: linear-gradient(180deg, #3EAB90 0%, #3EAB90 100%); 
-        text-shadow: 0 0 15px rgba(0, 255, 227, 0.14), 0 0 20px rgba(0, 255, 227, 0.11), 0 0 40px rgba(0, 255, 203, 0.52), 0 0 10px rgba(0, 255, 211, 0.51);
+        color: #00B2B1;
+        background-image: linear-gradient(92deg, #f7c35f, #22feb3, #006468);
         background-clip: text; 
-        -webkit-background-clip: text; 
+        background-size: 300%;
         -webkit-text-fill-color: transparent; 
+        -webkit-background-clip: text;
+        // -webkit-animation: gradient-hue 6s infinite linear;
+        animation: gradient-hue 6s infinite linear;
         @media screen and (max-width:991px) {
           font-size: 30px;
+        }
+      }
+      @keyframes gradient-hue {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
         }
       }
       .count.percent_1:after {

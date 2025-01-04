@@ -121,8 +121,8 @@ let hash_sm = gsap.matchMedia();
 let onStart_font_size = '', onComplete_font_size = '';
 
 hash_sm.add("(min-width: 1200px)", () => {
-  onStart_font_size = '15rem'
-  onComplete_font_size = '128px';
+  onStart_font_size = '8rem'
+  onComplete_font_size = '60px';
 });
 
 // Flip animation for snapping effect
@@ -131,17 +131,17 @@ const doFlip = (target) => {
   const state = Flip.getState(bar);
   target.appendChild(bar);
   flipTween = flipTween = Flip.from(state, { 
-    duration: 1.5, 
+    duration: 1, 
     ease: "power1.inOut",
     rotationY: "+=360", // Apply a 3D rotation around the Y-axis
     transformPerspective: 10000, // Ensure proper 3D perspective
     onStart: () => {
       // Add color change on start
-      gsap.to(bar, { color: "#f7c35f", duration: 1.5, fontSize: onStart_font_size? onStart_font_size : "8rem",  }); // Change color to red
+      gsap.to(bar, { color: "#f7c35f", duration: 1, fontSize: onStart_font_size? onStart_font_size : "5rem",  }); // Change color to red
     },
     onComplete: () => {
       // Reset color after animation completes
-      gsap.to(bar, { color: "#3eab90", duration: 1.5, fontSize: onComplete_font_size ? onComplete_font_size : '104px', }); // Change back to blue
+      gsap.to(bar, { color: "#3eab90", duration: 1, fontSize: onComplete_font_size ? onComplete_font_size : '30px', }); // Change back to blue
     }
   });
 };

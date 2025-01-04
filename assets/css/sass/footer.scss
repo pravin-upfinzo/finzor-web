@@ -25,7 +25,7 @@
         }
         
         p{
-            color: $white;
+            color: #5c5c5c;
             padding: 20px 0px 10px;
             font-weight: 400;
             font-size: 14px;
@@ -34,7 +34,7 @@
             }
         }
         a{
-            color: $white;
+            color: #5c5c5c;
             text-decoration: none;
             padding-top: 10px;
             font-size: 14px;
@@ -61,7 +61,7 @@
         padding-left:20px;
     }
     h5{
-        color: $white;
+        color: #5c5c5c;
         font-size: 22px;
         line-height: 24px;
         font-weight: 500;
@@ -82,7 +82,7 @@
             padding: 0px;
           }
         a{
-            color: $white;
+            color: #5c5c5c;
             font-size: 14px;
             font-weight: 400;
             line-height: 22px;
@@ -100,7 +100,7 @@
         padding: 60px 0px;
         align-items: center;
         .copy_rights_1{
-            color: $white;
+            color: #5c5c5c;
             p{
                 margin: 0;
                 font-size: 14px;
@@ -118,7 +118,7 @@
                     display: inline-block;
                     text-align: center;
                     border-radius: 50%;
-                    background: $tertiary-color;
+                    background: #20272c69;
                     line-height: 35px;
                     &:hover{
                         background: $secondary-color;

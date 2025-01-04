@@ -33,9 +33,9 @@
       .faq_section .accordion-button::after{
         background-color: $white;
       }
-      .accordion-item:not(:first-of-type){
-        border-top: 1px solid $primary-color !important;
-      }
+      // .accordion-item:not(:first-of-type){
+      //   border-top: 1px solid #1a2c2a !important;
+      // }
       .accordion-item .accordion-header .accordion-button{
         position: relative;
         top: 2px;
@@ -65,8 +65,17 @@
       .accordion-item{
         margin-bottom:20px;
         border-radius:16px;
-        border:1px solid  $primary-color;
+        border:1px solid  #1a2c2a;
         background-color: $black !important;
+        &:hover{
+          border: solid 1px transparent;
+          --border-angle: 0turn;
+          --main-bg: conic-gradient(from var(--border-angle), #000 0%, rgb(0, 0, 0) 100%);
+          --gradient-border: conic-gradient(from var(--border-angle), transparent 10%, #05311d, #3EAB90 49%, transparent);
+          background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+          background-position: center center;
+          animation: bg-spin 5s linear infinite;
+        }
       }
       .accordion-body{
         font-size: 14px;
@@ -78,9 +87,9 @@
       .accordion-button:not(.collapsed){
         box-shadow: none;
       }
-      .accordion-item:not(:first-of-type){
-        border-top:$primary-color;
-      }
+      // .accordion-item:not(:first-of-type){
+      //   border-top:$primary-color;
+      // }
       .accordion-item .accordion-header .accordion-button:focus{
         box-shadow: none;
       }
