@@ -6,6 +6,11 @@
     transform: translateX(50%);
   }
 }
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 .features_posibilityies {
   padding: 0;
   background-color: #000 !important;

@@ -7,6 +7,11 @@
     transform: translateX(50%);
   }
 }
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 body {
   background-color: #000000;
   overflow-x: hidden;

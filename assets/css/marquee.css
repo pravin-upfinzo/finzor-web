@@ -6,6 +6,11 @@
     transform: translateX(50%);
   }
 }
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 #logo_marquee {
   --space: 5px;
   background-color: #1a2c2a;

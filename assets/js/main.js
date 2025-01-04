@@ -108,57 +108,76 @@ gsap.to(".typing_text", {
     markers: false,
   },
 });
-// Product
-let sections = gsap.utils.toArray(".fz_product_panel");
-let mobile_view = gsap.matchMedia();
-const numSections = sections.length - 1;
-const snapVal = 1 / numSections;
-let lastIndex = 0;
-const navLis = document.querySelectorAll("#panels-container nav li");
 
-mobile_view.add("(min-width: 1200px)", () => {
-  let tween = gsap.to(sections, {
-    xPercent: -100 * numSections,
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".panels-container",
-      pin: true,
-      scrub: true,
-      snap: (progress) => {
-        // Custom starting snap position
-        if (progress < 0.1) return 0; // Start from the first panel
-        return Math.round(progress * numSections) / numSections;
-      },
-      // snap: {
-      //   snapTo: snapVal,
-      //   duration: { min: 0.1, max: 3 },
-      // },
-      end: () =>
-        "+=" +
-        document.querySelector("#panels-container").offsetWidth * numSections,
-      onUpdate: (self) => {
-        const newIndex = Math.round(self.progress / snapVal);
-        if (newIndex !== lastIndex) {
-          navLis[lastIndex].classList.remove("is-active");
-          navLis[newIndex].classList.add("is-active");
-          lastIndex = newIndex;
-        }
-      },
+// Hash Transition
+
+gsap.registerPlugin(Flip, ScrollTrigger);
+
+const bar = document.querySelector(".hash_bar");
+const bar_sections = gsap.utils.toArray(".hash_tag_con");
+const contents = gsap.utils.toArray(".hash_content");
+let flipTween;
+let hash_sm = gsap.matchMedia();
+let onStart_font_size = '', onComplete_font_size = '';
+
+hash_sm.add("(min-width: 1200px)", () => {
+  onStart_font_size = '15rem'
+  onComplete_font_size = '128px';
+});
+
+// Flip animation for snapping effect
+const doFlip = (target) => {
+  flipTween && flipTween.kill();
+  const state = Flip.getState(bar);
+  target.appendChild(bar);
+  flipTween = flipTween = Flip.from(state, { 
+    duration: 1.5, 
+    ease: "power1.inOut",
+    rotationY: "+=360", // Apply a 3D rotation around the Y-axis
+    transformPerspective: 10000, // Ensure proper 3D perspective
+    onStart: () => {
+      // Add color change on start
+      gsap.to(bar, { color: "#f7c35f", duration: 1.5, fontSize: onStart_font_size? onStart_font_size : "8rem",  }); // Change color to red
     },
+    onComplete: () => {
+      // Reset color after animation completes
+      gsap.to(bar, { color: "#3eab90", duration: 1.5, fontSize: onComplete_font_size ? onComplete_font_size : '104px', }); // Change back to blue
+    }
   });
-  navLis.forEach((anchor, i) => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      gsap.to(window, {
-        scrollTo: {
-          y: tween.scrollTrigger.start + i * innerWidth,
-          autoKill: false,
-        },
-        duration: 1,
-        ease: "power2.inOut",
-      });
-    });
+};
+
+// Smoothly move the bar strictly downward while scrolling
+bar_sections.forEach((section, i) => {
+  const scrollTrigger = ScrollTrigger.create({
+    trigger: section,
+    start: "top 80%",
+    end: "bottom 80%",
+    id: i + 1,
+    // markers: { indent: 150 * i }, // Debugging markers
+    onEnter: () => doFlip(contents[i]),
+    onEnterBack: () => doFlip(contents[i]),
+    
   });
+});
+
+
+// Product
+
+gsap.set(".fz_product_image:not(:first-child)", { opacity: 0, scale: 0.5 });
+
+const animation = gsap.to(".fz_product_image:not(:first-child)", {
+  opacity: 1,
+  scale: 1,
+  duration: 1,
+  stagger: 1,
+});
+ScrollTrigger.create({
+  trigger: "#panels-container",
+  start: "top top",
+  end: "bottom bottom",
+  pin: ".fz_product_right",
+  animation: animation,
+  scrub: true,
 });
 
 /* Feature */

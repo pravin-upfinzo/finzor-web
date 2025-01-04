@@ -6,6 +6,11 @@
     transform: translateX(50%);
   }
 }
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 #fz-hero-bg {
   position: relative;
   width: 100%;

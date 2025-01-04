@@ -6,6 +6,11 @@
     transform: translateX(50%);
   }
 }
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 #fz_mobile_section .fz_mobile_right {
   display: flex;
   border-bottom-right-radius: 40px;
