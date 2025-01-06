@@ -626,3 +626,155 @@ $('.accordion-button').on('click', function() {
 //     }
 //   }
 // });
+
+// Lottie animation assets files
+document.addEventListener("DOMContentLoaded", function () {
+  // Load the Lottie animation
+  lottie.loadAnimation({
+    container: document.getElementById('lottie-animation'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/Finzor-Dashboard-V2.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('lottie-animation1'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/mouse-down.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('uipizor-icon'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/upizor-icon.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('finops360-icon'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/finops360-icon.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('finzro-icon'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/finzro-icon.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('finlyticz-icon'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/finlyticz-icon.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('feature-core1-icon'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/feature-core1-icon.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('feature-core2-icon'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/feature-core2-icon.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('feature-core3-icon'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/feature-core3-icon.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('feature-pay1-icon'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/feature-pay1-icon.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('feature-pay2-icon'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/feature-pay2-icon.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('feature-pay3-icon'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/feature-pay3-icon.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('feature-neo1-icon'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/feature-neo1-icon.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('feature-neo2-icon'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/feature-neo2-icon.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('feature-neo3-icon'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/feature-neo3-icon.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('feature-upi1-icon'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/feature-upi1-icon.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('feature-upi2-icon'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/feature-upi2-icon.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('feature-upi3-icon'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/feature-upi3-icon.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('api-dev'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/api-dev.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('mob-app-animate'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/mob-app-animate.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('faq-animate'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/faq-animate.json' // Path to the Lottie JSON file
+  });
+});

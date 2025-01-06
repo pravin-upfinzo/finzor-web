@@ -193,6 +193,44 @@
         }
 
         </style>
+        <style>
+          /* Styling for the animation container */
+          #lottie-animation {
+            width: 100%;
+            height: 100%;
+            margin: auto; /* Center it horizontally */
+          }
+          .visual-desktop {
+            position: relative;
+            display: block;
+            overflow: hidden;
+          }
+          #lottie-animation1 svg {
+            width: 35px!important;
+            height: 35px!important;
+          }
+          div.product-icon {
+              width: 70px;
+              height: 70px;
+              display: inline-flex;
+              align-items: center;
+              margin-left: -20px;
+          }
+          div#api-dev {
+              width: 100%;
+              height: 300px;
+          }
+          div#faq-animate {
+              width: 100%;
+              height: 400px;
+              display: inline-flex;
+              justify-content: start;
+          }
+
+          div#faq-animate svg {
+              width: auto!important;
+          }
+        </style>
     </head>
     <body>
       <!-- <div class="videoss" style="position: fixed;left:0;right:0px;top:0;display: flex;justify-content: center;z-index:-1;opacity:0.3;">
@@ -204,7 +242,7 @@
 
       <div class="loader" id="loader">
         <div id="container">
-          <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1889.08 596.11">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1889.08 596.11">
               <g>
                   <path class="path path-1" d="M1842.84,450.98h-60.18l-49.96-82.67h-34.06v82.67h-56.01v-235.23h107.87c56.01,0,90.45,28.9,90.45,75.95,0,33.94-18.92,59.82-51.85,70.91v.34l53.75,88.04ZM1743.68,322.94c26.87,0,41.25-11.09,41.25-31.59s-13.63-30.25-41.25-30.25h-45.04v61.83h45.04Z"/>
                   <path class="path path-1" d="M601.1,215.74h170.69v45.7h-114.68v57.46h106.73v43.69h-106.73v88.38h-56.01v-235.23Z"/>
@@ -218,8 +256,8 @@
                   <path class="path path-1" d="M501.28,130.5l-88.37,146.18c-.24.4-.47.81-.72,1.21-8.25,13.4-23.06,22.34-39.96,22.34h-161.23l66.94-110.73c21.56-35.38,60.5-59,104.95-59h118.38Z"/>
                   <path class="path path-1" d="M557.98,36.7l-.43.71c-21.75,34.46-60.17,57.36-103.94,57.36h-90.87c-44.26,0-83.06,23.42-104.67,58.55h0S79.72,448.35,79.72,448.35v-91.71c.12-14.27,4.18-27.61,11.15-38.98l.11-.18,111.33-184.18c34.74-57.87,98.11-96.6,170.52-96.6h185.16Z"/>
               </g>
-          </svg> -->
-          <img src="./assets/images/finzor-loading.gif" alt="finzor"/>
+          </svg>  -->
+           <img src="./assets/images/finzor-loading.gif" alt="finzor"/> 
         </div>
       </div>
         <!-- <header>
@@ -401,8 +439,11 @@
           <div class="container text-center">
             <!-- <iframe src="https://cdn.lottielab.com/l/7bbKaQpBwLaWQ2.html" width="100%" height="610" frameborder="0"></iframe> -->
             <!-- <img src="assets/images/dashboard.svg" class="fz_dashboard_img" style="max-width: 100%;" alt="dashboard"> -->
-            
-            <canvas id="icon8" width="100%" height="600px" style="width: 100%; height: 600px"></canvas>
+            <div id="lottie-animation" class="visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div> 
+
+            <!-- Lottie Animation Loader Script -->
+
+            <!-- <canvas id="icon8" width="100%" height="600px" style="width: 100%; height: 600px"></canvas>
             <script type="module">
               import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
 
@@ -410,9 +451,9 @@
                 autoplay: true,
                 loop: true,
                 canvas: document.getElementById("icon8"),
-                src: "https://lottie.host/ee11734d-2c35-4de1-a85a-f0aeb2096aa4/HcRqIWRUgQ.lottie", // replace with your .lottie or .json file URL
+                src: "./assets/audio/Finzor-Dashboard - V2.lottie", // replace with your .lottie or .json file URL
               });
-            </script>
+            </script> -->
           </div>
         </section>
         <!-- About Finzor -->
@@ -502,8 +543,9 @@
                       <div style="height:2px;width:2px" q:key="1"></div>
                       <div style="height:1px;width:1px" q:key="2"></div>
                   </div>
-                  <canvas id="icon6" width="35px" height="35px" style="width: 35px; height: 35px;"></canvas>
-                                <script type="module">
+                  <div id="lottie-animation1" class="visual-desktop hidden lg:block w-1454 h-1258 relative z-[1] mouse-down"></div> 
+                  <!-- <canvas id="icon6" width="35px" height="35px" style="width: 35px; height: 35px;"></canvas>
+                        <script type="module">
                                   import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
     
                                   new DotLottie({
@@ -512,7 +554,7 @@
                                     canvas: document.getElementById("icon6"),
                                     src: "https://lottie.host/0bd7a457-2d8e-4663-ba7a-6f6e6868e422/JCJnRMw3DK.lottie", // replace with your .lottie or .json file URL
                                   });
-                                </script>
+                          </script> -->
                   </div>
                   <div class="right">
                     <img src="./assets/images/feature_right_eff.svg" alt="">
@@ -594,7 +636,8 @@
                           <div class="fz_title_content">
                               <div class="fz_subtitle">Payment Solutions</div>
                               <h3>
-                                <canvas id="icon2" width="75px" height="75px" style="width: 75px; height: 75px;
+                                <div id="uipizor-icon" class="product-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div> 
+                                <!-- <canvas id="icon2" width="75px" height="75px" style="width: 75px; height: 75px;
                                 margin-left: -20px;"></canvas>
                             <script type="module">
                               import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
@@ -605,7 +648,7 @@
                                 canvas: document.getElementById("icon2"),
                                 src: "https://lottie.host/5d393898-fe13-4f85-8323-3b6976d71832/lqUA7Mlvs1.lottie", // replace with your .lottie or .json file URL
                               });
-                            </script>
+                            </script> -->
                              <div class="fz_title">UPIZor</div>
                               </h3>
                           </div>
@@ -643,7 +686,8 @@
                           <div class="fz_title_content">
                               <div class="fz_subtitle">End to End Operational Suite</div>
                               <h3>
-                                <canvas id="icon3" width="75px" height="75px" style="width: 75px; height: 75px;
+                                <div id="finops360-icon" class="product-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div> 
+                                <!-- <canvas id="icon3" width="75px" height="75px" style="width: 75px; height: 75px;
                                 margin-left: -20px;"></canvas>
                             <script type="module">
                               import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
@@ -654,7 +698,7 @@
                                 canvas: document.getElementById("icon3"),
                                 src: "https://lottie.host/3af2dc47-af89-4d58-93e9-732ad9f270e4/8kPMa3vh2o.lottie", // replace with your .lottie or .json file URL
                               });
-                            </script>
+                            </script> -->
                             <div class="fz_title">FinOps360<sup >°</sup></div>
                               </h3>
                           </div>
@@ -700,7 +744,8 @@
                           <div class="fz_title_content">
                               <div class="fz_subtitle">Merchant Solution</div>
                               <h3>
-                                <canvas id="icon4" width="75px" height="75px" style="width: 75px; height: 75px;
+                                <div id="finzro-icon" class="product-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div> 
+                                <!-- <canvas id="icon4" width="75px" height="75px" style="width: 75px; height: 75px;
                                 margin-left: -20px;"></canvas>
                                 <script type="module">
                                   import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
@@ -711,7 +756,7 @@
                                     canvas: document.getElementById("icon4"),
                                     src: "https://lottie.host/67ec405b-9a16-4423-9240-41b9d7065409/oWQQjShdLE.lottie", // replace with your .lottie or .json file URL
                                   });
-                                </script>
+                                </script> -->
                                 <div class="fz_title">FinZro</div>
                               </h3>
                           </div>
@@ -750,7 +795,8 @@
                           <div class="fz_title_content">
                               <div class="fz_subtitle">Data & Analytics</div>
                               <h3>
-                                <canvas id="icon5" width="75px" height="75px" style="width: 75px; height: 75px;
+                                <div id="finlyticz-icon" class="product-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div> 
+                                <!-- <canvas id="icon5" width="75px" height="75px" style="width: 75px; height: 75px;
                                 margin-left: -20px;"></canvas>
                                 <script type="module">
                                   import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
@@ -761,7 +807,7 @@
                                     canvas: document.getElementById("icon5"),
                                     src: "https://lottie.host/2be3ca8f-c411-4114-807d-80ac0f840ea7/OseMJ7jiot.lottie", // replace with your .lottie or .json file URL
                                   });
-                                </script>
+                                </script> -->
                                 <div class="fz_title">FinlyticZ</div>
                               </h3>
                           </div>
@@ -881,7 +927,9 @@
                                 </linearGradient>
                                 </defs>
                             </svg>
-                            <canvas id="fea1" width="374px" height="270px" style="width: 100%; height: 240px;"></canvas>
+                            <div id="feature-core1-icon" class="feature-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div> 
+
+                            <!-- <canvas id="fea1" width="374px" height="270px" style="width: 100%; height: 240px;"></canvas>
                             <script type="module">
                               import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
 
@@ -891,7 +939,7 @@
                                 canvas: document.getElementById("fea1"),
                                 src: "https://lottie.host/806d5cd0-e468-4e6f-be32-6d8483fcf675/IbbWORgAvg.json", // replace with your .lottie or .json file URL
                               });
-                            </script>
+                            </script> -->
                             <div>
                               <h3>AI Tools</h3>
                               <p>Enhance CX, efficiency, and security via automation, predictive analytics, and fraud detection.</p>
@@ -926,7 +974,8 @@
                                 </linearGradient>
                                 </defs>
                             </svg>
-                            <canvas id="fea2" width="374px" height="270px" style="width: 100%; height: 240px;"></canvas>
+                            <div id="feature-core2-icon" class="feature-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div> 
+                            <!-- <canvas id="fea2" width="374px" height="270px" style="width: 100%; height: 240px;"></canvas>
                                 <script type="module">
                                   import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
 
@@ -936,7 +985,7 @@
                                     canvas: document.getElementById("fea2"),//https://lottie.host/6ba62747-0a9b-4dfc-a8f7-5032371284ff/uHp0mxQ2oD.lottie
                                     src: "./assets/audio/animate1.lottie", // replace with your .lottie or .json file URL
                                   });
-                                </script>
+                                </script> -->
                             <div>
                               <h3>Payments</h3>
                               <p>Complete payments lifecycle with Cloud-Native, XAI, API-enabled, and end-to-end payment tech.</p>
@@ -971,7 +1020,8 @@
                                 </linearGradient>
                                 </defs>
                             </svg>
-                            <canvas id="fea3" width="374px" height="270px" style="width: 100%; height: 240px;"></canvas>
+                            <div id="feature-core3-icon" class="feature-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div> 
+                            <!-- <canvas id="fea3" width="374px" height="270px" style="width: 100%; height: 240px;"></canvas>
                             <script type="module">
                               import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
 
@@ -981,7 +1031,7 @@
                                 canvas: document.getElementById("fea3"),
                                 src: "https://lottie.host/80e91db7-e913-40b6-80ec-601e25c56dbe/ZTERmF3AI2.lottie", // replace with your .lottie or .json file URL
                               });
-                            </script>
+                            </script> -->
                             <div>
                               <h3>Cloud Based Solutions</h3>
                               <p>Scalable, secure, cost-efficient CBS with disaster recovery and multi-tenant support.</p>
@@ -1081,7 +1131,8 @@
                             </linearGradient>
                             </defs>
                         </svg>
-                          <canvas id="fea4" width="374px" height="270px" style="width: 100%; height: 240px;"></canvas>
+                        <div id="feature-pay1-icon" class="feature-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div> 
+                          <!-- <canvas id="fea4" width="374px" height="270px" style="width: 100%; height: 240px;"></canvas>
                           <script type="module">
                             import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
 
@@ -1091,7 +1142,7 @@
                               canvas: document.getElementById("fea4"),
                               src: "https://lottie.host/9e385624-dadd-4f01-9700-8de395d3ad88/l0pDpmFB6f.lottie", // replace with your .lottie or .json file URL
                             });
-                          </script>
+                          </script> -->
                           <div>
                             <h3>High Scalability</h3>
                             <p>Ensures reliable payments with optimized infrastructure, cloud tech, and seamless transactions.</p>
@@ -1126,7 +1177,8 @@
                                 </linearGradient>
                                 </defs>
                             </svg>
-                          <canvas id="fea5" width="374px" height="270px" style="width: 100%; height: 240px;"></canvas>
+                            <div id="feature-pay2-icon" class="feature-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div> 
+                          <!-- <canvas id="fea5" width="374px" height="270px" style="width: 100%; height: 240px;"></canvas>
                             <script type="module">
                               import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
 
@@ -1136,7 +1188,7 @@
                                 canvas: document.getElementById("fea5"),
                                 src: "https://lottie.host/1c6aa701-a26e-42e1-afbb-ded64d72b573/ymNhWF8WcN.lottie", // replace with your .lottie or .json file URL
                               });
-                            </script>
+                            </script> -->
                           <div>
                             <h3>Fraud Prevention</h3>
                             <p>AI-driven fraud detection ensures secure transactions, anomaly alerts, and advanced tools.</p>
@@ -1169,7 +1221,8 @@
                           </linearGradient>
                           </defs>
                         </svg>
-                          <canvas id="fea6" width="374px" height="270px" style="width: 100%; height: 240px;"></canvas>
+                        <div id="feature-pay3-icon" class="feature-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div> 
+                          <!-- <canvas id="fea6" width="374px" height="270px" style="width: 100%; height: 240px;"></canvas>
                           <script type="module">
                             import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
 
@@ -1179,7 +1232,7 @@
                               canvas: document.getElementById("fea6"),
                               src: "https://lottie.host/034bcd29-b2c5-47db-94c0-10f58c191c9d/Xwl9RCtej7.lottie", // replace with your .lottie or .json file URL
                             });
-                          </script>
+                          </script> -->
                           <div>
                             <h3>Developer-Friendly APIs</h3>
                             <p>Easy APIs for seamless payment integration, supported by docs, SDKs, and customization tools.</p>
@@ -1220,7 +1273,8 @@
                           </linearGradient>
                           </defs>
                       </svg>
-                          <canvas id="fea7" width="374px" height="270px" style="width: 100%; height: 240px;"></canvas>
+                      <div id="feature-neo1-icon" class="feature-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div> 
+                          <!-- <canvas id="fea7" width="374px" height="270px" style="width: 100%; height: 240px;"></canvas>
                             <script type="module">
                               import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
 
@@ -1230,7 +1284,7 @@
                                 canvas: document.getElementById("fea7"),
                                 src: "https://lottie.host/29b42b8e-8ace-4a81-b534-437c8858b7a9/VIu7LvrHGc.lottie", // replace with your .lottie or .json file URL
                               });
-                            </script>
+                            </script> -->
                           <div>
                             <h3>Multichannel Banking</h3>
                             <p>Access banking across platforms with consistent and unified user experiences.</p>
@@ -1265,7 +1319,8 @@
                                 </linearGradient>
                                 </defs>
                             </svg>
-                            <canvas id="fea8" width="374px" height="270px" style="width: 100%; height: 240px;"></canvas>
+                            <div id="feature-neo2-icon" class="feature-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
+                            <!-- <canvas id="fea8" width="374px" height="270px" style="width: 100%; height: 240px;"></canvas>
                             <script type="module">
                               import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
 
@@ -1275,7 +1330,7 @@
                                 canvas: document.getElementById("fea8"),
                                 src: "https://lottie.host/ca03b85c-efe9-4ee1-995b-031f49cab02f/1Cwvdrg8tk.lottie", // replace with your .lottie or .json file URL
                               });
-                            </script>
+                            </script> -->
                           <div>
                             <h3>Smart Insights & Alerts</h3>
                             <p>AI analyzes spending, gives savings advice, and offers instant transaction and balance alerts.</p>
@@ -1308,7 +1363,8 @@
                           </linearGradient>
                           </defs>
                       </svg>
-                          <canvas id="fea9" width="374px" height="270px" style="width: 100%; height: 240px;"></canvas>
+                      <div id="feature-neo3-icon" class="feature-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
+                          <!-- <canvas id="fea9" width="374px" height="270px" style="width: 100%; height: 240px;"></canvas>
                           <script type="module">
                             import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
 
@@ -1318,7 +1374,7 @@
                               canvas: document.getElementById("fea9"),
                               src: "https://lottie.host/dbf03fd1-1930-4914-be81-7562d03e28c1/jdyNwk6XdT.lottie", // replace with your .lottie or .json file URL
                             });
-                          </script>
+                          </script> -->
                           <div>
                             <h3>Round-the-Clock Support</h3>
                             <p>24/7 customer support via chatbots and live agents for quick issue resolution.</p>
@@ -1359,7 +1415,8 @@
                           </linearGradient>
                           </defs>
                       </svg>
-                          <canvas id="fea10" width="374px" height="270px" style="width: 100%; height: 240px;"></canvas>
+                      <div id="feature-upi1-icon" class="feature-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
+                          <!-- <canvas id="fea10" width="374px" height="270px" style="width: 100%; height: 240px;"></canvas>
                           <script type="module">
                             import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
 
@@ -1369,7 +1426,7 @@
                               canvas: document.getElementById("fea10"),
                               src: "https://lottie.host/a815412c-a217-4c1a-b226-463ac353004e/KE94QpJpNz.lottie", // replace with your .lottie or .json file URL
                             });
-                          </script>
+                          </script> -->
                           <div>
                             <h3>Interbank Instant Transfers</h3>
                             <p>Real-time UPI transfers eliminate delays, ensuring fast and secure payments.</p>
@@ -1402,7 +1459,8 @@
                           </linearGradient>
                           </defs>
                       </svg>
-                          <canvas id="fea11" width="374px" height="270px" style="width: 100%; height: 240px;"></canvas>
+                      <div id="feature-upi2-icon" class="feature-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
+                          <!-- <canvas id="fea11" width="374px" height="270px" style="width: 100%; height: 240px;"></canvas>
                           <script type="module">
                             import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
 
@@ -1412,7 +1470,7 @@
                               canvas: document.getElementById("fea11"),
                               src: "https://lottie.host/65253b0d-8900-475a-abc3-7a3ea9203c54/jBAoU9gHEr.lottie", // replace with your .lottie or .json file URL
                             });
-                          </script>
+                          </script> -->
                           <div>
                             <h3>QR Scan & Pay</h3>
                             <p>Simple QR-based payments allow instant, secure UPI transactions for merchants and customers.</p>
@@ -1445,7 +1503,8 @@
                           </linearGradient>
                           </defs>
                       </svg>
-                          <canvas id="fea12" width="374px" height="270px" style="width: 100%; height: 240px;"></canvas>
+                      <div id="feature-upi3-icon" class="feature-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
+                          <!-- <canvas id="fea12" width="374px" height="270px" style="width: 100%; height: 240px;"></canvas>
                           <script type="module">
                             import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
 
@@ -1455,7 +1514,7 @@
                               canvas: document.getElementById("fea12"),
                               src: "https://lottie.host/3b9d8995-d918-4ae2-ab9f-7f60e94f4f26/OJZj1gB8e6.lottie", // replace with your .lottie or .json file URL
                             });
-                          </script>
+                          </script> -->
                           <div>
                             <h3>Scheduled Payments</h3>
                             <p>Automate bills, loans, and subscriptions to ensure hassle-free payments and manage cash flow.</p>
@@ -1484,7 +1543,8 @@
                     
                     <div class="dev_api_images" style="padding: 0;">
                       <!-- <img src="./assets/images/api_img.svg" alt="api_images"/> -->
-                      <canvas id="api" width="600px" height="300px" style="width: 100%; height: 300px;"></canvas>
+                      <div id="api-dev" class="api-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
+                      <!-- <canvas id="api" width="600px" height="300px" style="width: 100%; height: 300px;"></canvas>
                       <script type="module">
                         import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
 
@@ -1494,7 +1554,7 @@
                           canvas: document.getElementById("api"),
                           src: "https://lottie.host/c6c0f7c1-35b3-4e0e-8019-1be5e514d8d5/ebi0dymb21.lottie", // replace with your .lottie or .json file URL
                         });
-                      </script>
+                      </script> -->
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -1554,20 +1614,21 @@
           </div>
        </section>
         <!-- Video -->
-        <div class="videos" style="position: relative;display: flex;justify-content: center;display: none;">
+        <!-- <div class="videos" style="position: relative;display: flex;justify-content: center;display: none;">
           <video class="video_anim"  autoplay loop playsinline muted
               id="myVideoDesk">
               <source src="./assets/audio/finzor-pro.mp4" type="video/mp4" id="sourceElementPromo">
           </video>
-        </div>
+        </div> -->
         <!-- BankZor Section -->
         <section id="fz_mobile_section">
           <div class="container">
             <div class="row align-items-lg-center">
               <div class="col-lg-6">
                 <div class="fz_mobile_right justify-content-sm-end">
-                  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-                  <dotlottie-player src="https://lottie.host/a4e44425-729c-4bcd-9ad6-0e9f8fca5541/2PF7MhJGyP.lottie" background="transparent" speed="1" style="width: 100%; height:100%" loop autoplay></dotlottie-player>
+                  <!-- <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                  <dotlottie-player src="https://lottie.host/a4e44425-729c-4bcd-9ad6-0e9f8fca5541/2PF7MhJGyP.lottie" background="transparent" speed="1" style="width: 100%; height:100%" loop autoplay></dotlottie-player> -->
+                  <div id="mob-app-animate" class="mob-app-animate visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
                   <!-- <img src="./assets/images/playstore1.svg" alt="" class="fz_mobile1">
                   <img src="./assets/images/playstore2.svg" alt="" class="fz_mobile2"> -->
                   
@@ -1785,10 +1846,12 @@
                   <h4>FAQ</h4>
                   <h3>You have questions? <br> We have 
                       answers.</h3>
-                      <video width="400" height="400" muted loop autoplay>
+                      <div id="faq-animate" class="faq-animate visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
+                      
+                      <!-- <video width="400" height="400" muted loop autoplay>
                         <source src="./assets/images/Main_Scene.webm" type="video/webm">
                         Your browser does not support the video tag.
-                      </video>
+                      </video> -->
                     <!--<script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.3.0/dist/dotlottie-wc.js" type="module"></script>
                       <dotlottie-wc src="https://lottie.host/2a50bc44-3ce6-4c75-bca9-41dfee85a164/9JaKOVgIDW.lottie" autoplay loop></dotlottie-wc> -->
               </div>
@@ -2302,49 +2365,56 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/main.js"></script>
    
-    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
     
     
     <audio id="typing-sound" src="assets/audio/typingsound.mp3" type="audio/mp3"></audio>
     
     
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.9/codemirror.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.9/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.9/mode/javascript/javascript.min.js"></script>
-    <script src="https://static.svgator.com/player/3.0.2/svgator-player.min.js"></script>
+      <!--<script src="https://static.svgator.com/player/3.0.2/svgator-player.min.js"></script> -->
 
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script> -->
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
-  
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script> -->
+
     <script>
        
       // Page loader
-      $(function() {
-        function animationStart() {
-          $('#container').addClass('fin');
+      $(function () {
+      function animationStart() {
+        $('#container').addClass('fin');
+      }
 
-        }
-        function resetAnimation() {
-          $('#container').removeClass('fin');
-          setTimeout(animationStart, 50); // Short delay to allow CSS to reset
-        }
-        // Start the animation immediately
-        animationStart();
-        // Total duration of the animation
-        const animationDuration = 7500; // 7.5 seconds
-        // Use setInterval to reset the animation after it finishes
-        setInterval(resetAnimation, animationDuration);
-      });
-      window.addEventListener('load', function () {
-        setTimeout(function () {
-          // Hide the loader and show the content
-          document.getElementById('loader').style.display = 'none';
-          document.getElementById('content').style.display = 'block';
-        }, 3000); // Wait for 3 seconds before showing content
-      });
+      function resetAnimation() {
+        $('#container').removeClass('fin');
+        setTimeout(animationStart, 50); // Short delay to reset animation
+      }
+
+      // Start the animation immediately
+      animationStart();
+
+      // Total duration of the animation
+      const animationDuration = 7500; // 7.5 seconds
+
+      // Use setInterval to reset the animation after it finishes
+      setInterval(resetAnimation, animationDuration);
+    });
+
+    // Hide loader and show content after page load
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        // Hide the loader
+        document.getElementById('loader').style.display = 'none';
+        // Show the content
+        document.getElementById('content').style.display = 'block';
+      }, 3000); // Wait for 3 seconds before showing the content
+    });
       $(document).ready(function () {
         $("#owl-carousel").owlCarousel({
           loop: true, /* Allows infinite scrolling */
@@ -2623,25 +2693,25 @@ const editor = CodeMirror.fromTextArea(document.getElementById('code'), {
       document.addEventListener("DOMContentLoaded", function () {
   const object1 = document.getElementById("animated-svg");
 
-  // Wait for the SVG object to load
-  object1.addEventListener("load", function () {
-    const svgDocument = object1.contentDocument; // Access the SVG document
-    const svg = svgDocument.getElementById("3b3edd2423144dc58f9b7bf6dfdc99e6"); // Update with correct ID
+  // // Wait for the SVG object to load
+  // object1.addEventListener("load", function () {
+  //   const svgDocument = object1.contentDocument; // Access the SVG document
+  //   const svg = svgDocument.getElementById("3b3edd2423144dc58f9b7bf6dfdc99e6"); // Update with correct ID
 
-    if (svg && svg.svgatorPlayer) {
-      svg.svgatorPlayer.ready(function (player) {
-        player.play(); // Start the animation
-      });
-    } else {
-      console.error("SVG or SVGator player not found!");
-    }
-  });
+  //   if (svg && svg.svgatorPlayer) {
+  //     svg.svgatorPlayer.ready(function (player) {
+  //       player.play(); // Start the animation
+  //     });
+  //   } else {
+  //     console.error("SVG or SVGator player not found!");
+  //   }
+  // });
 });
 
 
   </script>
   
-  <script>
+  <!-- <script>
     lottie.loadAnimation({
       container: document.getElementById('lottie'),
       renderer: 'svg',
@@ -2649,7 +2719,7 @@ const editor = CodeMirror.fromTextArea(document.getElementById('code'), {
       autoplay: true,
       path: 'https://lottie.host/a4e44425-729c-4bcd-9ad6-0e9f8fca5541/2PF7MhJGyP.lottie' // Replace with the correct path
     });
-  </script>
+  </script> -->
   <script>
     var btn = $('#scroll_top');
         $(window).scroll(function() {
