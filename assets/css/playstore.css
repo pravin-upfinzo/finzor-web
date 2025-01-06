@@ -92,6 +92,13 @@
     text-align: center;
   }
 }
+@media (min-width: 992px) and (max-width: 1300px) {
+  .play_store_section h2 {
+    font-size: 36px;
+    line-height: 46px;
+    text-align: left;
+  }
+}
 .play_store_section ul {
   padding: 0;
   margin: 10px 20px 20px;
@@ -101,6 +108,11 @@
   color: #dfb946;
   font-size: 14px;
   font-weight: 400;
+}
+@media (max-width: 991px) {
+  .play_store_section ul {
+    list-style: none;
+  }
 }
 .play_store_section p {
   font-size: 15px;

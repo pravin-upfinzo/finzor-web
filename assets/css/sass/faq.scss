@@ -67,7 +67,7 @@
         border-radius:16px;
         border:1px solid  #1a2c2a;
         background-color: $black !important;
-        &:hover{
+        &:hover, &.active{
           border: solid 1px transparent;
           --border-angle: 0turn;
           --main-bg: conic-gradient(from var(--border-angle), #000 0%, rgb(0, 0, 0) 100%);

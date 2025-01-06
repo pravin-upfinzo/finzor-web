@@ -597,6 +597,16 @@ function init() {
 }
 init();
 
+//FAQ Active class
+$('.accordion-button').on('click', function() {
+  // Add 'active' class to the clicked accordion item
+  $(this).closest('.accordion-item').toggleClass('active'); 
+  
+  // Optionally, close other accordion items
+  $('.accordion-item').not($(this).closest('.accordion-item')).removeClass('active');
+});
+
+
 // caurosal section
 
 // document.addEventListener("click", function (event) {

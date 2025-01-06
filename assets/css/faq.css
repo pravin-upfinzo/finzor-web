@@ -80,7 +80,7 @@
   border: 1px solid #1a2c2a;
   background-color: #000000 !important;
 }
-.faq_section .accordion-item:hover {
+.faq_section .accordion-item:hover, .faq_section .accordion-item.active {
   border: solid 1px transparent;
   --border-angle: 0turn;
   --main-bg: conic-gradient(from var(--border-angle), #000 0%, rgb(0, 0, 0) 100%);
