@@ -135,28 +135,36 @@ header {
       }
 
       li {
+        padding: 0px 15px;
+        font-size: 14px;
         a.nav-link {
-          font-size: 14px;
           font-weight: 400;
-          padding: 0px 15px;
           color:$white;
           position: relative;
-          transition: all 0.7s ease;
-
-          @media screen and (max-width: 991px) {
-            padding: 10px 5px;
-            color:$white;
-         }
-
+          transition: all 0.5s ease;
+          &::after {
+            display: block;
+            content: '';
+            border-bottom: solid 2px $secondary-color;
+            transform: scaleX(0);
+            transition: transform 500ms ease-in-out;
+          }
           &:hover {
             color: $secondary-color;
-          }
-
-          @media (min-width: 992px) and (max-width: 1300px) {
-            font-size: 14px;
-            padding: 10px 10px;
+            &:after {
+              transform: scaleX(1);
+            }
           }
         }
+        @media (min-width: 992px) and (max-width: 1300px) {
+          font-size: 14px;
+          padding: 10px 10px;
+        }
+        @media screen and (max-width: 991px) {
+          padding: 10px 5px;
+          color:$white;
+       }
+
       }
     }
   }
