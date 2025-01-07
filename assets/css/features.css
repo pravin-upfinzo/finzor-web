@@ -341,9 +341,20 @@
   padding: 0px 50px;
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
     width: calc(50% - 20px);
+    padding: 0px 30px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
+    padding: 0px 30px;
   }
 }
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay svg {
@@ -370,21 +381,22 @@
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
-@media screen and (min-width: 991px) and (max-width: 1400px) {
-  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div {
-    min-height: 236px;
-  }
-}
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div h3 {
   color: #3eab90;
   font-size: 20px;
   font-weight: 500;
   line-height: 36px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div h3 {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div h3 {
+    font-size: 16px;
+    line-height: 18px;
   }
 }
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div p {
@@ -394,10 +406,10 @@
   line-height: 22px;
   min-height: 60px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1400px) {
   .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div p {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 13px;
+    line-height: 18px;
   }
 }
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div a {
@@ -415,4 +427,15 @@
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div div img {
   width: 30px;
   height: 50px;
+}
+@media screen and (max-width: 767px) {
+  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div div img {
+    height: auto;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div div {
+    position: relative;
+    top: -26px;
+  }
 }
