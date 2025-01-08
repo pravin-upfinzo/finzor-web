@@ -1504,6 +1504,11 @@ header .fz_sigin ul li:last-child a {
   background-repeat: no-repeat;
   padding: 0px 50px;
   position: relative;
+  transform: perspective(600px) rotateY(0deg);
+  transition: all ease-in-out 0.6s;
+}
+.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay:hover {
+  transform: perspective(600px) rotateY(5deg);
 }
 @media screen and (max-width: 767px) {
   .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
@@ -2797,7 +2802,7 @@ header .fz_sigin ul li:last-child a {
   top: 2px;
   padding: 5px 20px;
   background: #000000 !important;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 35px;
   letter-spacing: 0.25px;
@@ -2838,7 +2843,7 @@ header .fz_sigin ul li:last-child a {
   font-size: 14px;
   background-color: #000000;
   font-weight: 300;
-  color: rgba(163, 163, 163, 0.568627451);
+  color: #c7c3c3;
   border-radius: 16px !important;
   padding: 0px 20px 20px;
 }
@@ -3448,7 +3453,7 @@ header .fz_sigin ul li:last-child a {
   fill: #3eab90;
 }
 .footer_section .col-lg-4 p {
-  color: #5c5c5c;
+  color: #c7c3c3;
   padding: 20px 0px 10px;
   font-weight: 400;
   font-size: 14px;
@@ -3459,7 +3464,7 @@ header .fz_sigin ul li:last-child a {
   }
 }
 .footer_section .col-lg-4 a {
-  color: #5c5c5c;
+  color: #c7c3c3;
   text-decoration: none;
   padding-top: 10px;
   font-size: 14px;
@@ -3484,7 +3489,7 @@ header .fz_sigin ul li:last-child a {
   padding-left: 20px;
 }
 .footer_section h5 {
-  color: #5c5c5c;
+  color: #c7c3c3;
   font-size: 22px;
   line-height: 24px;
   font-weight: 500;
@@ -3510,7 +3515,7 @@ header .fz_sigin ul li:last-child a {
   }
 }
 .footer_section li a {
-  color: #5c5c5c;
+  color: #c7c3c3;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -3528,7 +3533,7 @@ header .fz_sigin ul li:last-child a {
   align-items: center;
 }
 .footer_section .copy_rights .copy_rights_1 {
-  color: #5c5c5c;
+  color: #c7c3c3;
 }
 .footer_section .copy_rights .copy_rights_1 p {
   margin: 0;
