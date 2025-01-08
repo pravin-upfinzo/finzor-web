@@ -163,21 +163,54 @@ bar_sections.forEach((section, i) => {
 
 // Product
 
-gsap.set(".fz_product_image:not(:first-child)", { opacity: 0, scale: 0.5 });
+const details = gsap.utils.toArray(".fz_product_panel");
+const photos = gsap.utils.toArray(".fz_product_image");
 
-const animation = gsap.to(".fz_product_image:not(:first-child)", {
-  opacity: 1,
-  scale: 1,
-  duration: 1,
-  stagger: 1,
-});
-ScrollTrigger.create({
-  trigger: "#panels-container",
-  start: "top top",
-  end: "bottom bottom",
-  pin: ".fz_product_right",
-  animation: animation,
-  scrub: true,
+gsap.set(photos, { opacity: 0, scale: 0.1 }); // Set initial scale and opacity
+
+const allPhotos = gsap.utils.toArray(".fz_product_image");
+
+// Create matchMedia instance
+let mm = gsap.matchMedia();
+
+// Add a media query for screens at least 600px wide
+mm.add("(min-width: 600px)", () => {
+  console.log("desktop");
+
+  ScrollTrigger.create({
+    trigger: "#panels-container",
+    start: "top top",
+    end: "bottom bottom",
+    pin: ".fz_product_right"
+  });
+
+  details.forEach((detail, index) => {
+    let headline = detail.querySelector("h2");
+    let animation = gsap.timeline()
+      // Zoom in and fade in
+      .to(photos[index], { 
+        opacity: 1, 
+        scale: 1, 
+        duration: 1, 
+        ease: "power1.out" 
+      })
+      // Fade out smoothly while scrolling further
+      .to(photos[index], { 
+        opacity: 0, 
+        scale: 1.2, // Optional zoom out or maintain scale
+        duration: 1, 
+        ease: "power1.in" 
+      });
+
+    ScrollTrigger.create({
+      trigger: headline,
+      start: "top bottom", // Adjust the start point as needed
+      end: "top top", 
+      animation: animation,
+      scrub: true,
+      markers: false
+    });
+  });
 });
 
 /* Feature */
@@ -776,5 +809,40 @@ document.addEventListener("DOMContentLoaded", function () {
     loop: true,           // Animation will loop continuously
     autoplay: true,       // Animation will play automatically
     path: './assets/json/faq-animate.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('finbankz-product'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/product-1.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('upizor-product'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/product-2.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('finops360-product'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/product-3.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('finzro-product'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/product-4.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('finlyticz-product'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/product-5.json' // Path to the Lottie JSON file
   });
 });
