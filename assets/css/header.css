@@ -131,39 +131,27 @@ header .navbar-expand-lg .navbar-nav {
     padding: 10px 10px;
   }
 }
-header .navbar-expand-lg .navbar-nav li {
-  padding: 0px 15px;
-  font-size: 14px;
-}
 header .navbar-expand-lg .navbar-nav li a.nav-link {
+  font-size: 14px;
   font-weight: 400;
+  padding: 0px 15px;
   color: #ffffff;
   position: relative;
-  transition: all 0.5s ease;
+  transition: all 0.7s ease;
 }
-header .navbar-expand-lg .navbar-nav li a.nav-link::after {
-  display: block;
-  content: "";
-  border-bottom: solid 2px #f7c35f;
-  transform: scaleX(0);
-  transition: transform 500ms ease-in-out;
+@media screen and (max-width: 991px) {
+  header .navbar-expand-lg .navbar-nav li a.nav-link {
+    padding: 10px 5px;
+    color: #ffffff;
+  }
 }
 header .navbar-expand-lg .navbar-nav li a.nav-link:hover {
   color: #f7c35f;
 }
-header .navbar-expand-lg .navbar-nav li a.nav-link:hover:after {
-  transform: scaleX(1);
-}
 @media (min-width: 992px) and (max-width: 1300px) {
-  header .navbar-expand-lg .navbar-nav li {
+  header .navbar-expand-lg .navbar-nav li a.nav-link {
     font-size: 14px;
     padding: 10px 10px;
-  }
-}
-@media screen and (max-width: 991px) {
-  header .navbar-expand-lg .navbar-nav li {
-    padding: 10px 5px;
-    color: #ffffff;
   }
 }
 @media screen and (max-width: 991px) {
@@ -240,6 +228,10 @@ header .fz_sigin ul li:last-child a {
   header .fz_sigin ul img {
     display: none;
   }
+}
+
+.offcanvas-backdrop {
+  position: relative;
 }
 
 .buttons {

@@ -290,14 +290,17 @@
                         // min-height: 480px;
                         padding: 0px 50px;
                         position: relative;
-                        transform: perspective(600px) rotateY(0deg);
-                        transition: all ease-in-out 0.6s;
-                        &:hover {
-                          transform: perspective(600px) rotateY(5deg);
-                        }
-                        @media screen and (max-width: 767px) {
+                        @media screen and (min-width: 0px) and (max-width: 419px) {
                           width:100%;
-                          //  padding:0px 80px;
+                          padding: 0px 24px;
+                        }
+                        @media screen and (min-width: 420px) and (max-width: 490px) {
+                          width:100%;
+                          padding: 0px 70px;
+                        }
+                        @media screen and (min-width: 490px) and (max-width: 767px) {
+                          width:100%;
+                          padding: 0px 100px;
                         }
                         @media screen and (min-width: 768px) and (max-width: 991px) {
                           width: calc(50% - 20px);
@@ -306,9 +309,15 @@
                         @media screen and (min-width: 992px) and (max-width: 1199px) {
                           padding: 0px 30px;
                         }
-                        svg{
+                        .feature-animate-icon svg{
                           width: 100%;
                           height: 270px!important;
+                          @media screen and (max-width: 767px) {
+                            height:auto;
+                          }
+                          @media screen and (min-width: 991px) and (max-width: 1200px) {
+                          height:224px !important;
+                          }
                         }
                         > img {
                           width: 100%;
@@ -322,7 +331,7 @@
                           }
             
                         }
-                        div {
+                       .item-pay-text {
                             padding: 0px;
                             border-bottom-left-radius: 8px;
                             border-bottom-right-radius: 8px;
@@ -349,7 +358,7 @@
                                 font-weight: 200;
                                 line-height: 22px;
                                 min-height: 60px;
-                                
+                               
                                 @media screen and (max-width: 1400px) {
                                   font-size: 13px;
                                   line-height: 18px;
@@ -362,11 +371,13 @@
                                 font-size: 14px;
                                 text-decoration: none;
                             }
-                            div {
+                            .bottom-img {
                               display: flex;
                               justify-content: space-between;
                               padding-left: 0;
                               padding-right: 0;
+                              position: relative;
+                              top: -8px;
                               img {
                                 width: 30px;
                                 height: 50px;
@@ -375,8 +386,8 @@
                                 }
                               }
                                @media screen and (min-width: 991px) and (max-width: 1199px) {
-                                 position: relative;
-                                 top:-26px;
+                               
+                                 top:-15px;
                             }
                             }
                         }
@@ -385,5 +396,6 @@
             }
         }
     }
+            
 }
 

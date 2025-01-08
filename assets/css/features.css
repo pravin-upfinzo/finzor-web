@@ -340,15 +340,23 @@
   background-repeat: no-repeat;
   padding: 0px 50px;
   position: relative;
-  transform: perspective(600px) rotateY(0deg);
-  transition: all ease-in-out 0.6s;
 }
-.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay:hover {
-  transform: perspective(600px) rotateY(5deg);
-}
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 419px) {
   .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
     width: 100%;
+    padding: 0px 24px;
+  }
+}
+@media screen and (min-width: 420px) and (max-width: 490px) {
+  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
+    width: 100%;
+    padding: 0px 70px;
+  }
+}
+@media screen and (min-width: 490px) and (max-width: 767px) {
+  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
+    width: 100%;
+    padding: 0px 100px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -362,9 +370,19 @@
     padding: 0px 30px;
   }
 }
-.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay svg {
+.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .feature-animate-icon svg {
   width: 100%;
   height: 270px !important;
+}
+@media screen and (max-width: 767px) {
+  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .feature-animate-icon svg {
+    height: auto;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .feature-animate-icon svg {
+    height: 224px !important;
+  }
 }
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay > img {
   width: 100%;
@@ -381,30 +399,30 @@
     height: auto;
   }
 }
-.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div {
+.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text {
   padding: 0px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
-.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div h3 {
+.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text h3 {
   color: #3eab90;
   font-size: 20px;
   font-weight: 500;
   line-height: 36px;
 }
 @media screen and (max-width: 1199px) {
-  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div h3 {
+  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text h3 {
     font-size: 16px;
     line-height: 18px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
-  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div h3 {
+  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text h3 {
     font-size: 16px;
     line-height: 18px;
   }
 }
-.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div p {
+.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text p {
   color: #ffffff;
   font-size: 16px;
   font-weight: 200;
@@ -412,35 +430,36 @@
   min-height: 60px;
 }
 @media screen and (max-width: 1400px) {
-  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div p {
+  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text p {
     font-size: 13px;
     line-height: 18px;
   }
 }
-.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div a {
+.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text a {
   display: none;
   color: #3eab90;
   font-size: 14px;
   text-decoration: none;
 }
-.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div div {
+.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text .bottom-img {
   display: flex;
   justify-content: space-between;
   padding-left: 0;
   padding-right: 0;
+  position: relative;
+  top: -8px;
 }
-.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div div img {
+.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text .bottom-img img {
   width: 30px;
   height: 50px;
 }
 @media screen and (max-width: 767px) {
-  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div div img {
+  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text .bottom-img img {
     height: auto;
   }
 }
 @media screen and (min-width: 991px) and (max-width: 1199px) {
-  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay div div {
-    position: relative;
-    top: -26px;
+  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text .bottom-img {
+    top: -15px;
   }
 }
