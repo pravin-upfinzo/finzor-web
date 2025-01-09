@@ -132,71 +132,84 @@
   }
 }
 #fz-hero-bg .hero-section-button .section-button-one, #fz-hero-bg .hero-section-button .section-button-two {
-  padding: 15px 20px;
-  transition: all 0.3s ease-in;
-  width: 25%;
-  line-height: 21px;
-}
-@media (min-width: 992px) and (max-width: 1400px) {
-  #fz-hero-bg .hero-section-button .section-button-one, #fz-hero-bg .hero-section-button .section-button-two {
-    width: 34%;
-  }
-}
-@media screen and (max-width: 767px) {
-  #fz-hero-bg .hero-section-button .section-button-one, #fz-hero-bg .hero-section-button .section-button-two {
-    width: 100%;
-  }
-}
-#fz-hero-bg .hero-section-button .section-button-one .hero-join, #fz-hero-bg .hero-section-button .section-button-two .hero-join {
-  line-height: 1.5;
+  height: 50px;
+  border-radius: 32px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #fff;
+  font-size: 16px;
+  color: #fff;
   display: flex;
-  gap: 20px;
-  position: absolute;
-  bottom: -72%;
-  left: 35px;
-  flex-direction: column;
-  transition: bottom 0.5s;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  transition: all 1s ease;
+  padding: 0px 20px 0 25px;
 }
-#fz-hero-bg .hero-section-button .section-button-one:hover .hero-join, #fz-hero-bg .hero-section-button .section-button-two:hover .hero-join {
-  bottom: 12px;
+#fz-hero-bg .hero-section-button .section-button-one .text, #fz-hero-bg .hero-section-button .section-button-two .text {
+  position: relative;
+  left: 10px;
+  transition: all 1s ease;
+}
+#fz-hero-bg .hero-section-button .section-button-one img, #fz-hero-bg .hero-section-button .section-button-two img {
+  opacity: 0;
+  transition: all 1s ease;
+}
+#fz-hero-bg .hero-section-button .section-button-one .icon, #fz-hero-bg .hero-section-button .section-button-two .icon {
+  margin-left: 10px;
+}
+#fz-hero-bg .hero-section-button .section-button-one:hover, #fz-hero-bg .hero-section-button .section-button-two:hover {
+  padding: 0px 20px 0 25px;
+  --text-color: rgb(210 210 240);
+  --box-glow-color: transparent;
+  --box-glow-blur: 20px;
+  --color: #00afaf85;
+  position: relative;
+  border: none;
+  box-shadow: 0px 3px 0 0px #31b2b2, 0 0 var(--box-glow-blur) var(--box-glow-color), inset 0 0 26px -10px rgba(29, 77, 45, 0.3607843137);
+  transition: box-shadow 1s ease;
+  z-index: 2;
+  font-size: 16px;
+  border: 1px solid rgba(62, 171, 144, 0.568627451);
+  background: linear-gradient(0deg, rgb(45, 73, 73) 0%, rgb(49, 178, 178) 100%);
+}
+#fz-hero-bg .hero-section-button .section-button-one:hover img, #fz-hero-bg .hero-section-button .section-button-two:hover img {
+  opacity: 1;
+}
+#fz-hero-bg .hero-section-button .section-button-one:hover .icon, #fz-hero-bg .hero-section-button .section-button-two:hover .icon {
+  margin-left: 10px;
+}
+#fz-hero-bg .hero-section-button .section-button-one:hover .text, #fz-hero-bg .hero-section-button .section-button-two:hover .text {
+  position: relative;
+  left: 0px;
 }
 #fz-hero-bg .hero-section-button .section-button-one {
-  background: #3eab90;
-  color: #ffffff;
-  border-radius: 32px;
-  font-size: 16px;
+  padding: 0px 20px 0 25px;
+  --text-color: rgb(210 210 240);
+  --box-glow-color: transparent;
+  --box-glow-blur: 20px;
+  --color: #00afaf85;
   position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: flex-end;
-  border: 1px solid transparent;
-  margin-right: 20px;
+  border: none;
+  box-shadow: 0px 3px 0 0px #31b2b2, 0 0 var(--box-glow-blur) var(--box-glow-color), inset 0 0 26px -10px rgba(29, 77, 45, 0.3607843137);
+  transition: box-shadow 1s ease;
+  z-index: 2;
+  font-size: 16px;
+  border: 1px solid rgba(62, 171, 144, 0.568627451);
+  background: linear-gradient(0deg, rgb(45, 73, 73) 0%, rgb(49, 178, 178) 100%);
 }
-#fz-hero-bg .hero-section-button .section-button-one svg {
-  animation: moveAnimation 2s linear infinite;
+#fz-hero-bg .hero-section-button .section-button-one img {
+  opacity: 1;
 }
-#fz-hero-bg .hero-section-button .section-button-one:hover {
-  background: transparent;
-  border: 1px solid #3eab90;
+#fz-hero-bg .hero-section-button .section-button-one .icon {
+  margin-left: 10px;
+}
+#fz-hero-bg .hero-section-button .section-button-one .text {
+  position: relative;
+  left: 0px;
 }
 #fz-hero-bg .hero-section-button .section-button-two {
-  background: #000000;
-  color: #3eab90;
-  border-radius: 32px;
-  font-size: 16px;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: flex-end;
-  border: 1px solid #3eab90;
-}
-#fz-hero-bg .hero-section-button .section-button-two svg {
-  animation: moveAnimation 2s linear infinite;
-}
-#fz-hero-bg .hero-section-button .section-button-two:hover {
-  background: #3eab90;
-  border: 1px solid transparent;
-  color: #ffffff;
+  margin-left: 20px;
 }
 #fz-hero-bg .globe-container {
   flex: 3;

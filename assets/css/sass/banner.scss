@@ -131,45 +131,17 @@
       justify-content: center;
     }
     .section-button-one, .section-button-two {
-      padding: 15px 20px;
-      transition: all 0.3s ease-in;
-      width:25%;
-      line-height: 21px;
-      @media (min-width: 992px) and (max-width: 1400px) {
-        width: 34%;
-      }
-      @media screen and (max-width: 767px) {
-        width: 100%;
-      }
-      .hero-join {
-        @include hero-join;
-      }
-      &:hover {
-        .hero-join {
-          bottom: 12px;
-        }
-      }
+      @include btn-effect;
+     
     }
-    .section-button-one {
-      @include primaryBg;
-      border: 1px solid transparent;
-      margin-right: 20px;
-      &:hover {
-          background: transparent;
-          border: 1px solid $primary-color;
-      }
+    .section-button-one{
+      @include  active_btn;
     }
-  
-    .section-button-two {
-      @include primaryBg($theme: $black, $white-color: $primary-color);
-      border: 1px solid $primary-color;
-      &:hover {
-          background: $primary-color;
-          border: 1px solid transparent;
-          color: $white;
-      }
+    .section-button-two{
+      margin-left: 20px;
     }
   }
+
   // .section-button-one {
   //   @include primaryBg;
   //   padding: 15px 20px;
