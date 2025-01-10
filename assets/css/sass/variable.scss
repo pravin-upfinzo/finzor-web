@@ -61,3 +61,85 @@ $ternary-color: #2d4949;
   inherits: true;
   initial-value: 0turn;
 }
+@mixin active_btn{
+    padding: 0px 20px 0 25px;
+    --text-color: rgb(210 210 240);
+    --box-glow-color: transparent;
+    --box-glow-blur: 20px;
+    --color: #00afaf85;
+    position: relative;
+    border: none;
+    box-shadow: 0px 3px 0 0px #31b2b2, 0 0 var(--box-glow-blur) var(--box-glow-color), inset 0 0 26px -10px rgba(29, 77, 45, 0.3607843137);
+    transition: box-shadow 1s ease;  
+    z-index: 2;
+    font-size:16px;
+    border: 1px solid #3eab9091;
+    background: linear-gradient(0deg, rgba(45,73,73,1) 0%, rgb(49, 178, 178) 100%);
+    img{
+      opacity: 1;
+    }
+    .icon{
+      margin-left: 10px;
+    }
+    .text{
+      position: relative;
+      left: 0px;
+    }
+    &:hover{
+      --box-glow-color: var(--color);
+    }
+}
+
+@mixin btn-effect {
+  height: 50px;
+  border-radius: 32px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #309393;
+  font-size: 16px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  transition: all 1s ease;
+  padding: 0px 20px 0 25px;
+  .text{
+    position: relative;
+    left: 10px;
+    transition: all 1s ease;
+  }
+  img{
+    opacity: 0;
+    transition: all 1s ease;
+  }
+  .icon{
+    margin-left: 10px;
+  }
+  &:hover{
+    padding: 0px 20px 0 25px;
+    --text-color: rgb(210 210 240);
+    --box-glow-color: transparent;
+    --box-glow-blur: 32px;
+    --color: #00afaf85;
+    position: relative;
+    border: none;
+    box-shadow: 0px 3px 0 0px #31b2b2, 0 0 var(--box-glow-blur) var(--box-glow-color), inset 0 0 26px -10px rgba(29, 77, 45, 0.3607843137);
+    transition: box-shadow 1s ease; 
+    --box-glow-color: var(--color); 
+    z-index: 2;
+    font-size:16px;
+    border: 1px solid #3eab9091;
+    background: linear-gradient(0deg, rgba(45,73,73,1) 0%, rgb(49, 178, 178) 100%);
+    img{
+      opacity: 1;
+    }
+    .icon{
+      margin-left: 10px;
+    }
+    .text{
+      position: relative;
+      left: 0px;
+    }
+  }
+}

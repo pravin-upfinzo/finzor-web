@@ -95,7 +95,7 @@ TweenLite.fromTo(
   }
 );
 // product intro
-let textElem = document.querySelector(".text");
+let textElem = document.querySelector(".product_intro_text");
 gsap.to(".typing_text", {
   text: {
     value: textElem.innerText,

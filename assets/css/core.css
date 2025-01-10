@@ -169,6 +169,15 @@
   align-items: center;
   margin-right: 25px;
   min-width: 43px;
+  animation: ripple 0.7s linear infinite;
+}
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(45, 73, 73, 0.1), 0 0 0 1em rgba(45, 73, 73, 0.1), 0 0 0 2em rgba(45, 73, 73, 0.1), 0 0 0 3em rgba(45, 73, 73, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 1em rgba(45, 73, 73, 0.1), 0 0 0 2em rgba(45, 73, 73, 0.1), 0 0 0 3em rgba(45, 73, 73, 0.1), 0 0 0 4em rgba(45, 73, 73, 0);
+  }
 }
 #fz_core_nexus .fz_core_text_right div {
   margin-left: 70px;
@@ -182,89 +191,137 @@
   }
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore {
-  background: #3eab90;
-  color: #ffffff;
+  height: 50px;
   border-radius: 32px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #309393;
   font-size: 16px;
-  position: relative;
-  overflow: hidden;
+  color: #fff;
   display: flex;
-  justify-content: flex-end;
-  padding: 15px 20px;
-  border: 1px solid transparent;
-  margin-right: 35px;
-  font-weight: 400;
-  transition: all 0.5s ease-in;
-  width: 180px;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  transition: all 1s ease;
+  padding: 0px 20px 0 25px;
+  padding: 0px 20px 0 25px;
+  --text-color: rgb(210 210 240);
+  --box-glow-color: transparent;
+  --box-glow-blur: 20px;
+  --color: #00afaf85;
+  position: relative;
+  border: none;
+  box-shadow: 0px 3px 0 0px #31b2b2, 0 0 var(--box-glow-blur) var(--box-glow-color), inset 0 0 26px -10px rgba(29, 77, 45, 0.3607843137);
+  transition: box-shadow 1s ease;
+  z-index: 2;
+  font-size: 16px;
+  border: 1px solid rgba(62, 171, 144, 0.568627451);
+  background: linear-gradient(0deg, rgb(45, 73, 73) 0%, rgb(49, 178, 178) 100%);
 }
-#fz_core_nexus .fz_core_text_right div .fz_learmore svg {
-  animation: moveAnimation 2s linear infinite;
+#fz_core_nexus .fz_core_text_right div .fz_learmore .text {
+  position: relative;
+  left: 10px;
+  transition: all 1s ease;
+}
+#fz_core_nexus .fz_core_text_right div .fz_learmore img {
+  opacity: 0;
+  transition: all 1s ease;
+}
+#fz_core_nexus .fz_core_text_right div .fz_learmore .icon {
+  margin-left: 10px;
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore:hover {
-  background: transparent;
-  border: 1px solid #3eab90;
+  padding: 0px 20px 0 25px;
+  --text-color: rgb(210 210 240);
+  --box-glow-color: transparent;
+  --box-glow-blur: 32px;
+  --color: #00afaf85;
+  position: relative;
+  border: none;
+  box-shadow: 0px 3px 0 0px #31b2b2, 0 0 var(--box-glow-blur) var(--box-glow-color), inset 0 0 26px -10px rgba(29, 77, 45, 0.3607843137);
+  transition: box-shadow 1s ease;
+  --box-glow-color: var(--color);
+  z-index: 2;
+  font-size: 16px;
+  border: 1px solid rgba(62, 171, 144, 0.568627451);
+  background: linear-gradient(0deg, rgb(45, 73, 73) 0%, rgb(49, 178, 178) 100%);
 }
-#fz_core_nexus .fz_core_text_right div .fz_learmore .hero-join {
-  line-height: 1.5;
-  display: flex;
-  gap: 20px;
-  position: absolute;
-  bottom: -72%;
-  left: 35px;
-  flex-direction: column;
-  transition: bottom 0.5s;
+#fz_core_nexus .fz_core_text_right div .fz_learmore:hover img {
+  opacity: 1;
 }
-#fz_core_nexus .fz_core_text_right div .fz_learmore:hover .hero-join {
-  bottom: 12px;
+#fz_core_nexus .fz_core_text_right div .fz_learmore:hover .icon {
+  margin-left: 10px;
 }
-@media screen and (max-width: 1300px) {
-  #fz_core_nexus .fz_core_text_right div .fz_learmore {
-    padding: 13px 20px;
-    font-size: 14px;
-    margin-right: 24px;
-  }
+#fz_core_nexus .fz_core_text_right div .fz_learmore:hover .text {
+  position: relative;
+  left: 0px;
+}
+#fz_core_nexus .fz_core_text_right div .fz_learmore img {
+  opacity: 1;
+}
+#fz_core_nexus .fz_core_text_right div .fz_learmore .icon {
+  margin-left: 10px;
+}
+#fz_core_nexus .fz_core_text_right div .fz_learmore .text {
+  position: relative;
+  left: 0px;
+}
+#fz_core_nexus .fz_core_text_right div .fz_learmore:hover {
+  --box-glow-color: var(--color);
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore_btn {
-  background: #000000;
-  color: #3eab90;
+  height: 50px;
   border-radius: 32px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #309393;
   font-size: 16px;
-  position: relative;
-  overflow: hidden;
+  color: #fff;
   display: flex;
-  justify-content: flex-end;
-  padding: 15px 20px;
-  font-weight: 400;
-  border: 1px solid #3eab90;
-  transition: all 0.3s ease-in;
-  width: 180px;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  transition: all 1s ease;
+  padding: 0px 20px 0 25px;
+  margin-left: 20px;
 }
-#fz_core_nexus .fz_core_text_right div .fz_learmore_btn svg {
-  animation: moveAnimation 2s linear infinite;
+#fz_core_nexus .fz_core_text_right div .fz_learmore_btn .text {
+  position: relative;
+  left: 10px;
+  transition: all 1s ease;
+}
+#fz_core_nexus .fz_core_text_right div .fz_learmore_btn img {
+  opacity: 0;
+  transition: all 1s ease;
+}
+#fz_core_nexus .fz_core_text_right div .fz_learmore_btn .icon {
+  margin-left: 10px;
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore_btn:hover {
-  background: #3eab90;
-  border: 1px solid transparent;
-  color: #ffffff;
+  padding: 0px 20px 0 25px;
+  --text-color: rgb(210 210 240);
+  --box-glow-color: transparent;
+  --box-glow-blur: 32px;
+  --color: #00afaf85;
+  position: relative;
+  border: none;
+  box-shadow: 0px 3px 0 0px #31b2b2, 0 0 var(--box-glow-blur) var(--box-glow-color), inset 0 0 26px -10px rgba(29, 77, 45, 0.3607843137);
+  transition: box-shadow 1s ease;
+  --box-glow-color: var(--color);
+  z-index: 2;
+  font-size: 16px;
+  border: 1px solid rgba(62, 171, 144, 0.568627451);
+  background: linear-gradient(0deg, rgb(45, 73, 73) 0%, rgb(49, 178, 178) 100%);
 }
-#fz_core_nexus .fz_core_text_right div .fz_learmore_btn .hero-join {
-  line-height: 1.5;
-  display: flex;
-  gap: 20px;
-  position: absolute;
-  bottom: -72%;
-  left: 35px;
-  flex-direction: column;
-  transition: bottom 0.5s;
+#fz_core_nexus .fz_core_text_right div .fz_learmore_btn:hover img {
+  opacity: 1;
 }
-#fz_core_nexus .fz_core_text_right div .fz_learmore_btn:hover .hero-join {
-  bottom: 12px;
+#fz_core_nexus .fz_core_text_right div .fz_learmore_btn:hover .icon {
+  margin-left: 10px;
 }
-@media screen and (max-width: 1300px) {
-  #fz_core_nexus .fz_core_text_right div .fz_learmore_btn {
-    padding: 13px 20px;
-    font-size: 14px;
-  }
+#fz_core_nexus .fz_core_text_right div .fz_learmore_btn:hover .text {
+  position: relative;
+  left: 0px;
 }
 
 @keyframes animate {

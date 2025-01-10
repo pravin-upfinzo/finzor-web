@@ -340,6 +340,11 @@
   background-repeat: no-repeat;
   padding: 0px 50px;
   position: relative;
+  transform: perspective(600px) rotateY(0deg);
+  transition: all ease-in-out 0.6s;
+}
+.panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay:hover {
+  transform: perspective(600px) rotateY(5deg);
 }
 @media screen and (min-width: 0px) and (max-width: 419px) {
   .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {

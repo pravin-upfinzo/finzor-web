@@ -116,33 +116,33 @@
             letter-spacing: 0.25px;
           }
 
-          .fz_btn button {
-            @include primaryBg;
-            font-size: 16px;
-            font-weight: 400;
-            padding: 15px 20px;
-            border-radius: 32px;
-            border: none;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            width: 180px;
+          // .fz_btn button {
+          //   @include primaryBg;
+          //   font-size: 16px;
+          //   font-weight: 400;
+          //   padding: 15px 20px;
+          //   border-radius: 32px;
+          //   border: none;
+          //   cursor: pointer;
+          //   position: relative;
+          //   overflow: hidden;
+          //   display: flex;
+          //   width: 180px;
 
-            &:hover {
-              background-image: linear-gradient(180deg, #3eab90 0%, #003224 100%);
-            }
+          //   &:hover {
+          //     background-image: linear-gradient(180deg, #3eab90 0%, #003224 100%);
+          //   }
 
-            .hero-join {
-              @include hero-join;
-            }
+          //   .hero-join {
+          //     @include hero-join;
+          //   }
 
-            &:hover {
-              .hero-join {
-                bottom: 12px;
-              }
-            }
-          }
+          //   &:hover {
+          //     .hero-join {
+          //       bottom: 12px;
+          //     }
+          //   }
+          // }
         }
       }
 
