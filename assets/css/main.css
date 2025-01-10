@@ -291,30 +291,6 @@ header .fz_sigin ul li:last-child {
     padding-left: 10px;
   }
 }
-header .fz_sigin ul li:last-child a {
-  background-color: #1a2c2a;
-  padding: 10px 15px;
-  border-radius: 35px;
-  border: 1px solid #ffffff;
-  --border-angle: 0turn;
-  --main-bg:conic-gradient(from var(--border-angle), #007164 0%, #007264 100%);
-  border: solid 1px transparent;
-  --gradient-border: conic-gradient(
-    from var(--border-angle),
-    transparent 50%,
-    #f7c35f,
-    #3eab90 99%,
-    transparent
-  );
-  background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
-  background-position: center center;
-  animation: bg-spin 4s linear infinite;
-}
-@keyframes bg-spin {
-  to {
-    --border-angle: 1turn;
-  }
-}
 header .fz_sigin ul .unlock a:hover {
   color: #f7c35f;
 }
@@ -383,6 +359,72 @@ header .fz_sigin ul .unlock a:hover svg path {
 .buttons:hover .text {
   position: relative;
   left: 0px;
+}
+
+.onboard_btn .buttons {
+  z-index: 2;
+  font-size: 14px;
+  border: 1px solid rgba(62, 171, 144, 0.568627451);
+  background: linear-gradient(83.46deg, #00B2B1 -13.99%, #008283 31.77%, #006468 73.27%);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 135px;
+  height: 40px;
+  --w: 135px;
+  --h: 40px;
+  --icon-size: 25px;
+  padding: 0px 15px !important;
+}
+.onboard_btn .buttons::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #0d1918;
+  border-radius: var(--h);
+  z-index: 1;
+  transition: transform 500ms ease;
+}
+.onboard_btn .buttons .text,
+.onboard_btn .buttons .icon {
+  z-index: 2;
+  margin-left: 0px !important;
+}
+.onboard_btn .buttons .text {
+  transform: translateX(-20%);
+  transition: transform 500ms ease;
+}
+.onboard_btn .buttons .icon {
+  position: absolute;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  left: 0;
+  transform: translateX(calc((var(--w)) / 2 + 32px));
+  transition: transform 500ms ease, color 500ms ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.onboard_btn .buttons img {
+  opacity: 1 !important;
+}
+.onboard_btn .buttons:hover,
+.onboard_btn .buttons:active {
+  box-shadow: none !important;
+}
+.onboard_btn .buttons:hover::before,
+.onboard_btn .buttons:active::before {
+  transform: translateX(0%);
+  box-shadow: inset 0 0px 0px 0 transparent;
+}
+.onboard_btn .buttons::before,
+.onboard_btn .buttons:active::before {
+  transform: translateX(72%);
+  box-shadow: inset 0 0px 0px 0 transparent;
+}
+.onboard_btn .buttons:hover .text {
+  left: 10px !important;
 }
 
 @keyframes moveAnimation {
