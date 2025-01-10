@@ -174,7 +174,7 @@ const allPhotos = gsap.utils.toArray(".fz_product_image");
 let mm = gsap.matchMedia();
 
 // Add a media query for screens at least 600px wide
-mm.add("(min-width: 600px)", () => {
+mm.add("(min-width: 992px)", () => {
   console.log("desktop");
 
   ScrollTrigger.create({
@@ -185,12 +185,12 @@ mm.add("(min-width: 600px)", () => {
   });
 
   details.forEach((detail, index) => {
-    let headline = detail.querySelector("h2");
+    let headline = detail.querySelector(".fz_subtitle");
     let animation = gsap.timeline()
       // Zoom in and fade in
       .to(photos[index], { 
         opacity: 1, 
-        scale: 1, 
+        scale: 1.2, 
         duration: 1, 
         ease: "power1.out" 
       })
@@ -205,7 +205,7 @@ mm.add("(min-width: 600px)", () => {
     ScrollTrigger.create({
       trigger: headline,
       start: "top bottom", // Adjust the start point as needed
-      end: "top top", 
+      end: "top -40%", 
       animation: animation,
       scrub: true,
       markers: false
@@ -810,39 +810,49 @@ document.addEventListener("DOMContentLoaded", function () {
     autoplay: true,       // Animation will play automatically
     path: './assets/json/faq-animate.json' // Path to the Lottie JSON file
   });
-  lottie.loadAnimation({
-    container: document.getElementById('finbankz-product'), // HTML container for the animation
-    renderer: 'svg',      // Render as SVG
-    loop: true,           // Animation will loop continuously
-    autoplay: true,       // Animation will play automatically
-    path: './assets/json/product-1.json' // Path to the Lottie JSON file
+  document.querySelectorAll('.finbankz-product').forEach((container) => {
+    lottie.loadAnimation({
+      container: container, // HTML container for the animation
+      renderer: 'svg',      // Render as SVG
+      loop: true,           // Animation will loop continuously
+      autoplay: true,       // Animation will play automatically
+      path: './assets/json/product-1.json' // Path to the Lottie JSON file
+    });
   });
-  lottie.loadAnimation({
-    container: document.getElementById('upizor-product'), // HTML container for the animation
-    renderer: 'svg',      // Render as SVG
-    loop: true,           // Animation will loop continuously
-    autoplay: true,       // Animation will play automatically
-    path: './assets/json/product-2.json' // Path to the Lottie JSON file
+  document.querySelectorAll('.upizor-product').forEach((container) => {
+    lottie.loadAnimation({
+      container: container, // HTML container for the animation
+      renderer: 'svg',      // Render as SVG
+      loop: true,           // Animation will loop continuously
+      autoplay: true,       // Animation will play automatically
+      path: './assets/json/product-2.json' // Path to the Lottie JSON file
+    });
   });
-  lottie.loadAnimation({
-    container: document.getElementById('finops360-product'), // HTML container for the animation
-    renderer: 'svg',      // Render as SVG
-    loop: true,           // Animation will loop continuously
-    autoplay: true,       // Animation will play automatically
-    path: './assets/json/product-3.json' // Path to the Lottie JSON file
+  document.querySelectorAll('.finops360-product').forEach((container) => {
+    lottie.loadAnimation({
+      container: container, // HTML container for the animation
+      renderer: 'svg',      // Render as SVG
+      loop: true,           // Animation will loop continuously
+      autoplay: true,       // Animation will play automatically
+      path: './assets/json/product-3.json' // Path to the Lottie JSON file
+    });
   });
-  lottie.loadAnimation({
-    container: document.getElementById('finzro-product'), // HTML container for the animation
-    renderer: 'svg',      // Render as SVG
-    loop: true,           // Animation will loop continuously
-    autoplay: true,       // Animation will play automatically
-    path: './assets/json/product-4.json' // Path to the Lottie JSON file
+  document.querySelectorAll('.finzro-product').forEach((container) => {
+    lottie.loadAnimation({
+      container: container, // HTML container for the animation
+      renderer: 'svg',      // Render as SVG
+      loop: true,           // Animation will loop continuously
+      autoplay: true,       // Animation will play automatically
+      path: './assets/json/product-4.json' // Path to the Lottie JSON file
+    });
   });
-  lottie.loadAnimation({
-    container: document.getElementById('finlyticz-product'), // HTML container for the animation
-    renderer: 'svg',      // Render as SVG
-    loop: true,           // Animation will loop continuously
-    autoplay: true,       // Animation will play automatically
-    path: './assets/json/product-5.json' // Path to the Lottie JSON file
+  document.querySelectorAll('.finlyticz-product').forEach((container) => {
+    lottie.loadAnimation({
+      container: container, // HTML container for the animation
+      renderer: 'svg',      // Render as SVG
+      loop: true,           // Animation will loop continuously
+      autoplay: true,       // Animation will play automatically
+      path: './assets/json/product-5.json' // Path to the Lottie JSON file
+    });
   });
 });
