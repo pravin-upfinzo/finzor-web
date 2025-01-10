@@ -136,7 +136,7 @@
   border-radius: 32px;
   background-color: transparent;
   outline: none;
-  border: 1px solid #fff;
+  border: 1px solid #309393;
   font-size: 16px;
   color: #fff;
   display: flex;
@@ -162,12 +162,13 @@
   padding: 0px 20px 0 25px;
   --text-color: rgb(210 210 240);
   --box-glow-color: transparent;
-  --box-glow-blur: 20px;
+  --box-glow-blur: 32px;
   --color: #00afaf85;
   position: relative;
   border: none;
   box-shadow: 0px 3px 0 0px #31b2b2, 0 0 var(--box-glow-blur) var(--box-glow-color), inset 0 0 26px -10px rgba(29, 77, 45, 0.3607843137);
   transition: box-shadow 1s ease;
+  --box-glow-color: var(--color);
   z-index: 2;
   font-size: 16px;
   border: 1px solid rgba(62, 171, 144, 0.568627451);
@@ -207,6 +208,9 @@
 #fz-hero-bg .hero-section-button .section-button-one .text {
   position: relative;
   left: 0px;
+}
+#fz-hero-bg .hero-section-button .section-button-one:hover {
+  --box-glow-color: var(--color);
 }
 #fz-hero-bg .hero-section-button .section-button-two {
   margin-left: 20px;
