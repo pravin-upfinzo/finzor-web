@@ -138,6 +138,10 @@
             display: flex;
             justify-content: center;
 
+            @media (min-width: 769px) and (max-width: 991px) {
+               font-size: 25px;
+            }
+
             p {
                 width: 30%;
                 text-shadow: 0 0 15px rgba(0, 255, 227, 0.14),

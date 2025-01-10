@@ -72,14 +72,15 @@
             --gradient-border: conic-gradient(from var(--border-angle), transparent 50%, #F7C35F, #3EAB90 99%, transparent);
             
 
-            @media screen and (max-width:991px) {
-                text-align: center;
-            }
+            // @media screen and (max-width:991px) {
+            //     text-align: center;
+               
+            // }
         }
        
-        @media screen and (max-width:991px) {
-            text-align: center;
-        }
+        // @media screen and (max-width:991px) {
+        //     text-align: center;
+        // }
         .dev_card_logo {
             display: inline-flex;
             align-items: center;
@@ -106,6 +107,9 @@
             color: $primary-color;
             // padding-bottom:10px;
             color: #d7ba7d;
+            @media screen and (max-width:991px) {
+                font-size: 16px;
+             }
         }
         p{
             color: $white;
@@ -114,6 +118,9 @@
             margin-bottom: 0px;
             transition: all 0.6s ease;
             text-align: left;
+            @media screen and (max-width:991px) {
+               font-size: 12px;
+            }
         }
        }
     }

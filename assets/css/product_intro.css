@@ -155,6 +155,11 @@
   display: flex;
   justify-content: center;
 }
+@media (min-width: 769px) and (max-width: 991px) {
+  .features_posibilityies .container h3 {
+    font-size: 25px;
+  }
+}
 .features_posibilityies .container h3 p {
   width: 30%;
   text-shadow: 0 0 15px rgba(0, 255, 227, 0.14), 0 0 20px rgba(0, 255, 227, 0.11), 0 0 40px rgba(0, 255, 203, 0.52), 0 0 10px rgba(0, 255, 211, 0.51);

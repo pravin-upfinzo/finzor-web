@@ -18,18 +18,19 @@
 @media screen and (max-width: 991px) {
   .newsletter_section {
     padding-bottom: 30px;
+    text-align: center;
   }
 }
 .newsletter_section h3 {
   color: #ffffff;
   font-size: 96px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 96px;
   margin-bottom: 0px;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1400px) {
   .newsletter_section h3 {
-    font-size: 35px;
+    font-size: 44px;
     line-height: 42px;
   }
 }
@@ -38,7 +39,6 @@
   font-weight: 300;
   line-height: 30px;
   color: #3eab90;
-  text-align: left;
   margin-bottom: 20px;
   padding-top: 15px;
 }

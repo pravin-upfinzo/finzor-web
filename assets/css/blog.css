@@ -108,11 +108,18 @@
   flex-direction: column;
   justify-content: end;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   .fz-blog .item .card-body {
     width: 100%;
     padding: 0px 25px 30px 24px;
-    bottom: -67px;
+    bottom: -30px;
+    height: 40%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  .fz-blog .item .card-body {
+    bottom: -20px;
+    height: 50%;
   }
 }
 .fz-blog .item .card-body h5 {
@@ -123,9 +130,10 @@
   color: #f7c35f;
   margin-bottom: 0px;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1400px) {
   .fz-blog .item .card-body h5 {
     font-size: 16px;
+    padding-bottom: 7px;
     line-height: 22px;
   }
 }
@@ -138,9 +146,10 @@
   overflow: hidden;
   transition: all 1s ease;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1400px) {
   .fz-blog .item .card-body .card-text {
     font-size: 14px;
+    margin-bottom: 20px;
     line-height: 22px;
   }
 }
@@ -154,6 +163,12 @@
   gap: 170px;
   position: relative;
   margin-top: 50px;
+}
+@media screen and (max-width: 767px) {
+  .fz-blog .owl-carousel .owl-nav {
+    gap: 70px;
+    margin-top: 10px;
+  }
 }
 .fz-blog .owl-carousel .owl-nav .custom-prev,
 .fz-blog .owl-carousel .owl-nav .custom-next {
@@ -185,6 +200,11 @@
   background: #3eab90;
   left: 47%;
 }
+@media screen and (max-width: 767px) {
+  .fz-blog .owl-carousel .owl-nav .custom-prev::after {
+    display: none;
+  }
+}
 .fz-blog .owl-carousel .owl-nav .custom-next {
   color: #ffffff;
 }
@@ -194,4 +214,9 @@
 .fz-blog .owl-carousel .owl-nav .custom-next::before {
   background: #ffffff;
   left: 53%;
+}
+@media screen and (max-width: 767px) {
+  .fz-blog .owl-carousel .owl-nav .custom-next::before {
+    display: none;
+  }
 }

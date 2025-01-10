@@ -129,6 +129,45 @@
   line-height: 26px;
   letter-spacing: 0.25px;
 }
+.fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .fz_btn button {
+  background: #3eab90;
+  color: #ffffff;
+  border-radius: 32px;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 20px;
+  border-radius: 32px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  width: 180px;
+}
+.fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .fz_btn button svg {
+  animation: moveAnimation 2s linear infinite;
+}
+.fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .fz_btn button:hover {
+  background-image: linear-gradient(180deg, #3eab90 0%, #003224 100%);
+}
+.fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .fz_btn button .hero-join {
+  line-height: 1.5;
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  bottom: -72%;
+  left: 35px;
+  flex-direction: column;
+  transition: bottom 0.5s;
+}
+.fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .fz_btn button:hover .hero-join {
+  bottom: 12px;
+}
 .fz_product_sec .container .fz_product_left .fz_img {
   display: none;
 }

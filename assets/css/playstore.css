@@ -17,7 +17,7 @@
 }
 @media screen and (max-width: 767px) {
   .play_store_section {
-    padding: 0px;
+    padding: 0px 20px;
   }
   .play_store_section .container {
     padding: 0;
@@ -41,14 +41,14 @@
 }
 @media screen and (max-width: 992px) {
   .play_store_section .play_store_container {
-    padding: 60px 0px;
+    padding: 60px 0px 0px 0px;
     top: 0px;
   }
 }
 @media screen and (max-width: 767px) {
   .play_store_section .play_store_container {
-    padding: 30px 0px;
-    border-radius: 0;
+    padding: 30px 0px 0px 0px;
+    border-radius: 20px;
   }
 }
 .play_store_section .play_store_container:after {
@@ -138,7 +138,7 @@
 }
 @media (min-width: 768px) and (max-width: 1300px) {
   .play_store_section .play_store_right {
-    justify-content: center;
+    justify-content: right;
   }
 }
 .play_store_section .play_store_right img {
