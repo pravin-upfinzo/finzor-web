@@ -156,8 +156,12 @@ header {
             }
           }
         }
-        @media (min-width: 992px) and (max-width: 1300px) {
-          font-size: 14px;
+        @media (min-width: 992px) and (max-width: 1051px) {
+          font-size: 12px;
+          padding:0;
+        }
+        @media (min-width: 1052px) and (max-width: 1300px) {
+          // font-size: 14px;
           // padding: 10px 10px;
         padding: 10px 4px;
         line-height: 0px;
@@ -178,7 +182,7 @@ header {
     ul {
       display: flex;
       align-items: center;
-
+    
       li {
         display: inline-block;
         .tele_img{
@@ -204,10 +208,12 @@ header {
           font-size: 14px;
 
           text-decoration: none;
-
-          @media (min-width: 992px) and (max-width: 1300px) {
-            font-size: 14px;
+          @media (min-width: 992px) and (max-width: 1051px) {
+            font-size: 12px;
           }
+          // @media (min-width: 992px) and (max-width: 1300px) {
+          //   font-size: 14px;
+          // }
         }
 
         &:nth-child(2) {
@@ -281,7 +287,7 @@ header {
        
       }
       @media screen and (max-width: 991px) {
-          img{
+        .flag-img{
             display: none;
           }
       }
@@ -311,6 +317,9 @@ header {
       --h: 40px;
       --icon-size: 25px;
       padding: 0px 15px !important;
+      @media (min-width: 992px) and (max-width: 1051px) {
+        font-size: 12px;
+      }
   }
   
   .buttons::before {

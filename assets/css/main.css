@@ -214,9 +214,14 @@ header .navbar-expand-lg .navbar-nav li a.nav-link:hover {
 header .navbar-expand-lg .navbar-nav li a.nav-link:hover:after {
   transform: scaleX(1);
 }
-@media (min-width: 992px) and (max-width: 1300px) {
+@media (min-width: 992px) and (max-width: 1051px) {
   header .navbar-expand-lg .navbar-nav li {
-    font-size: 14px;
+    font-size: 12px;
+    padding: 0;
+  }
+}
+@media (min-width: 1052px) and (max-width: 1300px) {
+  header .navbar-expand-lg .navbar-nav li {
     padding: 10px 4px;
     line-height: 0px;
   }
@@ -262,9 +267,9 @@ header .fz_sigin ul li a span svg {
 header .fz_sigin ul li a span svg path {
   fill: #fff;
 }
-@media (min-width: 992px) and (max-width: 1300px) {
+@media (min-width: 992px) and (max-width: 1051px) {
   header .fz_sigin ul li a {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 header .fz_sigin ul li:nth-child(2) {
@@ -298,7 +303,7 @@ header .fz_sigin ul .unlock a:hover svg path {
   fill: #f7c35f;
 }
 @media screen and (max-width: 991px) {
-  header .fz_sigin ul img {
+  header .fz_sigin ul .flag-img {
     display: none;
   }
 }
@@ -376,6 +381,11 @@ header .fz_sigin ul .unlock a:hover svg path {
   --h: 40px;
   --icon-size: 25px;
   padding: 0px 15px !important;
+}
+@media (min-width: 992px) and (max-width: 1051px) {
+  .onboard_btn .buttons {
+    font-size: 12px;
+  }
 }
 .onboard_btn .buttons::before {
   content: "";
@@ -555,7 +565,7 @@ header .fz_sigin ul .unlock a:hover svg path {
 #fz-hero-bg .hero-section-button {
   display: flex;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 991px) {
   #fz-hero-bg .hero-section-button {
     justify-content: center;
   }
@@ -639,7 +649,7 @@ header .fz_sigin ul .unlock a:hover svg path {
   left: 0px;
 }
 #fz-hero-bg .hero-section-button .section-button-one:hover {
-  --box-glow-color: var(--color);
+  --box-glow-color: #06eed5;
 }
 #fz-hero-bg .hero-section-button .section-button-two {
   margin-left: 20px;
@@ -1016,7 +1026,7 @@ header .fz_sigin ul .unlock a:hover svg path {
   left: 0px;
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore:hover {
-  --box-glow-color: var(--color);
+  --box-glow-color: #06eed5;
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore_btn {
   height: 50px;
@@ -2335,7 +2345,7 @@ header .fz_sigin ul .unlock a:hover svg path {
   left: 0px;
 }
 #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore:hover {
-  --box-glow-color: var(--color);
+  --box-glow-color: #06eed5;
 }
 #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore_btn {
   height: 50px;

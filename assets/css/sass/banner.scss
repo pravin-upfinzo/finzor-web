@@ -127,8 +127,12 @@
   // }
   .hero-section-button {
     display: flex;
-    @media (min-width: 768px) and (max-width: 991px) {
-      justify-content: center;
+    // @media (min-width: 768px) and (max-width: 991px) {
+    //   justify-content: center;
+    // }
+
+    @media screen and (max-width: 991px) {
+    justify-content: center;
     }
     .section-button-one, .section-button-two {
       @include btn-effect;
