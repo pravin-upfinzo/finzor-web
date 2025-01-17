@@ -160,63 +160,66 @@
 .fz-blog .owl-carousel .owl-nav {
   display: flex;
   justify-content: center;
-  gap: 170px;
+  gap: 20px;
   position: relative;
   margin-top: 50px;
 }
 @media screen and (max-width: 767px) {
   .fz-blog .owl-carousel .owl-nav {
-    gap: 70px;
     margin-top: 10px;
   }
 }
-.fz-blog .owl-carousel .owl-nav .custom-prev,
-.fz-blog .owl-carousel .owl-nav .custom-next {
-  font-size: 16px;
-  font-weight: 500;
+.fz-blog .owl-carousel .owl-nav .owl-prev,
+.fz-blog .owl-carousel .owl-nav .owl-next {
   color: #ffffff;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 10px !important;
+  transition: all 0.5s ease;
+  border: 1px solid #6e6e6e;
+  overflow: hidden;
 }
-.fz-blog .owl-carousel .owl-nav .custom-prev::after, .fz-blog .owl-carousel .owl-nav .custom-prev::before,
-.fz-blog .owl-carousel .owl-nav .custom-next::after,
-.fz-blog .owl-carousel .owl-nav .custom-next::before {
-  content: "";
-  width: 80px;
-  height: 2.27px;
-  justify-content: center;
+.fz-blog .owl-carousel .owl-nav .owl-prev .custom-prev, .fz-blog .owl-carousel .owl-nav .owl-prev .custom-next,
+.fz-blog .owl-carousel .owl-nav .owl-next .custom-prev,
+.fz-blog .owl-carousel .owl-nav .owl-next .custom-next {
+  position: relative;
+}
+.fz-blog .owl-carousel .owl-nav .owl-prev:hover,
+.fz-blog .owl-carousel .owl-nav .owl-next:hover {
+  background: #006468;
+  border: 1px solid #006468;
+}
+.fz-blog .owl-carousel .owl-nav .owl-prev:hover svg:first-child,
+.fz-blog .owl-carousel .owl-nav .owl-next:hover svg:first-child {
+  margin-left: -65px;
+}
+.fz-blog .owl-carousel .owl-nav .owl-prev:hover svg:last-child,
+.fz-blog .owl-carousel .owl-nav .owl-next:hover svg:last-child {
+  left: -32px;
+}
+.fz-blog .owl-carousel .owl-nav .owl-prev svg,
+.fz-blog .owl-carousel .owl-nav .owl-next svg {
+  transition: all 0.2s ease;
+  width: 28px;
+  height: 28px;
+}
+.fz-blog .owl-carousel .owl-nav .owl-prev svg:last-child,
+.fz-blog .owl-carousel .owl-nav .owl-next svg:last-child {
   position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  left: 35px;
 }
-.fz-blog .owl-carousel .owl-nav .custom-prev {
-  color: #3eab90;
+.fz-blog .owl-carousel .owl-nav .owl-prev:before,
+.fz-blog .owl-carousel .owl-nav .owl-next:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #0d1918;
+  border-radius: var(--h);
+  z-index: 1;
+  transform: translateX(72%);
+  transition: transform 500ms ease;
 }
-.fz-blog .owl-carousel .owl-nav .custom-prev:hover {
-  color: #ffffff;
-}
-.fz-blog .owl-carousel .owl-nav .custom-prev::after {
-  background: #3eab90;
-  left: 47%;
-}
-@media screen and (max-width: 767px) {
-  .fz-blog .owl-carousel .owl-nav .custom-prev::after {
-    display: none;
-  }
-}
-.fz-blog .owl-carousel .owl-nav .custom-next {
-  color: #ffffff;
-}
-.fz-blog .owl-carousel .owl-nav .custom-next:hover {
-  color: #3eab90;
-}
-.fz-blog .owl-carousel .owl-nav .custom-next::before {
-  background: #ffffff;
-  left: 53%;
-}
-@media screen and (max-width: 767px) {
-  .fz-blog .owl-carousel .owl-nav .custom-next::before {
-    display: none;
-  }
+.fz-blog .owl-carousel .owl-nav .owl-prev svg {
+  transform: rotate(180deg);
 }

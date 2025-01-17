@@ -195,56 +195,79 @@
     .owl-nav {
       display: flex;
       justify-content: center;
-      gap: 170px;
+      gap: 20px;
       position: relative;
       margin-top: 50px;
       @media screen and (max-width: 767px) {
-        gap:70px;
         margin-top: 10px;
-       }
-      .custom-prev,
-      .custom-next {
-        font-size: 16px;
-        font-weight: 500;
-        color: $white;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        justify-content: center;
-        &::after,
-        &::before {
-          content: "";
-          width: 80px;
-          height: 2.27px;
-          justify-content: center;
-          position: absolute;
-          top: 50%;
-          transform: translate(-50%, -50%);
-        }
       }
-      .custom-prev {
-        color: $primary-color;
-        &:hover {
-          color: $white;
+      .owl-prev,
+      .owl-next {
+        color: $white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding: 10px !important;
+        transition: all 0.5s ease;
+        border: 1px solid #6e6e6e;
+        overflow: hidden;
+        .custom-prev,.custom-next {
+          position: relative;
         }
-        &::after {
-          background: $primary-color;
-          left: 47%;
-          @media screen and (max-width: 767px) {
-            display: none;
+        &:hover {
+          background: #006468;
+          border: 1px solid #006468;
+        }
+        &:hover {
+          svg {
+            &:first-child {
+              margin-left: -65px;
+            }
+            &:last-child {
+              left: -32px;
+            }
           }
         }
-      }
-      .custom-next {
-        color: $white;
-        &:hover {
-          color: $primary-color;
+        svg {
+          transition: all 0.2s ease;
+          width: 28px;
+          height: 28px;
+          &:last-child {
+            position: absolute;
+            left: 35px;
+          }
         }
-        &::before {
-          background: $white;;
-          left: 53%;
-          @media screen and (max-width: 767px) {
-            display: none;
-           }
+        &:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: #0d1918;
+            border-radius: var(--h);
+            z-index: 1;
+            transform: translateX(72%);
+            transition: transform 500ms ease;
+        }
+      }
+      .owl-prev {
+        // &:hover {
+        //   svg {
+        //     &:first-child {
+        //       margin-left: -55px;
+        //     }
+        //     &:last-child {
+        //       left: -28px;
+        //     }
+        //   }
+        // }
+        svg {
+          transform: rotate(180deg);
+          // transition: all 0.4s ease;
+          // width: 28px;
+          // height: 28px;
+          // &:last-child {
+          //   position: absolute;
+          //   left: 35px;
+          // }
         }
       }
     }

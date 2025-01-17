@@ -154,9 +154,14 @@ header .navbar-expand-lg .navbar-nav li a.nav-link:hover {
 header .navbar-expand-lg .navbar-nav li a.nav-link:hover:after {
   transform: scaleX(1);
 }
-@media (min-width: 992px) and (max-width: 1300px) {
+@media (min-width: 992px) and (max-width: 1051px) {
   header .navbar-expand-lg .navbar-nav li {
-    font-size: 14px;
+    font-size: 12px;
+    padding: 0;
+  }
+}
+@media (min-width: 1052px) and (max-width: 1300px) {
+  header .navbar-expand-lg .navbar-nav li {
     padding: 10px 4px;
     line-height: 0px;
   }
@@ -179,20 +184,38 @@ header .fz_sigin ul {
 header .fz_sigin ul li {
   display: inline-block;
 }
+header .fz_sigin ul li .tele_img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  padding-left: 3px;
+}
 header .fz_sigin ul li a {
   color: #ffffff;
   font-size: 14px;
   text-decoration: none;
 }
-@media (min-width: 992px) and (max-width: 1300px) {
+header .fz_sigin ul li a span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+header .fz_sigin ul li a span svg {
+  width: 15px;
+  margin-left: 7px;
+}
+header .fz_sigin ul li a span svg path {
+  fill: #fff;
+}
+@media (min-width: 992px) and (max-width: 1051px) {
   header .fz_sigin ul li a {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 header .fz_sigin ul li:nth-child(2) {
-  border-left: 1px solid #979797;
-  padding-left: 30px;
-  margin-left: 10px;
+  border-left: 1px solid #3eab90;
+  padding-left: 15px;
+  margin-left: 15px;
 }
 @media screen and (max-width: 991px) {
   header .fz_sigin ul li:nth-child(2) {
@@ -213,32 +236,14 @@ header .fz_sigin ul li:last-child {
     padding-left: 10px;
   }
 }
-header .fz_sigin ul li:last-child a {
-  background-color: #1a2c2a;
-  padding: 10px 15px;
-  border-radius: 5px;
-  border: 1px solid #ffffff;
-  --border-angle: 0turn;
-  --main-bg:conic-gradient(from var(--border-angle), #007164 0%, #007264 100%);
-  border: solid 1px transparent;
-  --gradient-border: conic-gradient(
-    from var(--border-angle),
-    transparent 50%,
-    #f7c35f,
-    #3eab90 99%,
-    transparent
-  );
-  background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
-  background-position: center center;
-  animation: bg-spin 4s linear infinite;
+header .fz_sigin ul .unlock a:hover {
+  color: #f7c35f;
 }
-@keyframes bg-spin {
-  to {
-    --border-angle: 1turn;
-  }
+header .fz_sigin ul .unlock a:hover svg path {
+  fill: #f7c35f;
 }
 @media screen and (max-width: 991px) {
-  header .fz_sigin ul img {
+  header .fz_sigin ul .flag-img {
     display: none;
   }
 }
@@ -248,99 +253,126 @@ header .fz_sigin ul li:last-child a {
 }
 
 .buttons {
-  --w: 180px;
-  --h: 50px;
-  --icon-size: 25px;
+  height: 50px;
+  border-radius: 32px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #309393;
+  font-size: 16px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  transition: all 1s ease;
+  padding: 0px 20px 0 25px;
+}
+.buttons .text {
+  position: relative;
+  left: 10px;
+  transition: all 1s ease;
+}
+.buttons img {
+  opacity: 0;
+  transition: all 1s ease;
+}
+.buttons .icon {
+  margin-left: 10px;
+}
+.buttons:hover {
+  padding: 0px 20px 0 25px;
   --text-color: rgb(210 210 240);
   --box-glow-color: transparent;
-  --box-glow-blur: 20px;
+  --box-glow-blur: 32px;
   --color: #00afaf85;
   position: relative;
-  min-width: var(--w);
-  min-height: var(--h);
-  border-radius: var(--h);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border: none;
-  color: var(--text-color);
-  background: rgba(4, 8, 20, 0.8);
-  box-shadow: 0px 3px 0 0px #017f53, 0 0 var(--box-glow-blur) var(--box-glow-color), inset 0 0 26px -10px rgba(29, 77, 45, 0.3607843137);
-  overflow: hidden;
-  cursor: pointer;
-  transition: box-shadow 500ms ease;
+  box-shadow: 0px 3px 0 0px #31b2b2, 0 0 var(--box-glow-blur) var(--box-glow-color), inset 0 0 26px -10px rgba(29, 77, 45, 0.3607843137);
+  transition: box-shadow 1s ease;
+  --box-glow-color: var(--color);
   z-index: 2;
-  font-size: 15px;
+  font-size: 16px;
   border: 1px solid rgba(62, 171, 144, 0.568627451);
+  background: linear-gradient(0deg, rgb(45, 73, 73) 0%, rgb(49, 178, 178) 100%);
+}
+.buttons:hover img {
+  opacity: 1;
+}
+.buttons:hover .icon {
+  margin-left: 10px;
+}
+.buttons:hover .text {
+  position: relative;
+  left: 0px;
 }
 
-.buttons::before {
+.onboard_btn .buttons {
+  z-index: 2;
+  font-size: 14px;
+  border: 1px solid rgba(62, 171, 144, 0.568627451);
+  background: linear-gradient(83.46deg, #00B2B1 -13.99%, #008283 31.77%, #006468 73.27%);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 135px;
+  height: 40px;
+  --w: 135px;
+  --h: 40px;
+  --icon-size: 25px;
+  padding: 0px 15px !important;
+}
+@media (min-width: 992px) and (max-width: 1051px) {
+  .onboard_btn .buttons {
+    font-size: 12px;
+  }
+}
+.onboard_btn .buttons::before {
   content: "";
   position: absolute;
   inset: 0;
   background: #0d1918;
-  box-shadow: inset 0 0px 24px 0 rgba(170, 230, 250, 0.12);
   border-radius: var(--h);
   z-index: 1;
-  transition: transform 500ms ease, box-shadow 500ms ease;
+  transition: transform 500ms ease;
 }
-
-.buttons .text,
-.buttons .icon {
+.onboard_btn .buttons .text,
+.onboard_btn .buttons .icon {
   z-index: 2;
+  margin-left: 0px !important;
 }
-
-.buttons .text {
+.onboard_btn .buttons .text {
   transform: translateX(-20%);
   transition: transform 500ms ease;
 }
-
-.buttons .icon {
+.onboard_btn .buttons .icon {
   position: absolute;
   width: var(--icon-size);
   height: var(--icon-size);
   left: 0;
-  transform: translateX(calc((var(--w)) / 2 + 40px));
+  transform: translateX(calc((var(--w)) / 2 + 32px));
   transition: transform 500ms ease, color 500ms ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.buttons svg {
-  width: 70%;
-  height: 100%;
-  fill: currentColor;
+.onboard_btn .buttons img {
+  opacity: 1 !important;
 }
-
-.buttons:active {
-  --box-glow-blur: 36px;
+.onboard_btn .buttons:hover,
+.onboard_btn .buttons:active {
+  box-shadow: none !important;
 }
-
-.buttons:hover,
-.buttons:active {
-  --box-glow-color: var(--color);
+.onboard_btn .buttons:hover::before,
+.onboard_btn .buttons:active::before {
+  transform: translateX(0%);
+  box-shadow: inset 0 0px 0px 0 transparent;
 }
-
-.buttons:hover::before,
-.buttons:active::before {
+.onboard_btn .buttons::before,
+.onboard_btn .buttons:active::before {
   transform: translateX(72%);
   box-shadow: inset 0 0px 0px 0 transparent;
 }
-
-.buttons:hover .text,
-.buttons:active .text {
-  transform: translateX(-25%);
-  animation-play-state: running;
-}
-
-.buttons:hover .icon,
-.buttons:active .icon {
-  transform: translateX(calc(var(--w) - var(--icon-size) - 15px));
-  color: var(--color);
-}
-
-.buttons:focus-visible {
-  outline: none;
-}
-
-.buttons:focus-visible:not(:hover, :active) {
-  --box-glow-color: rgb(114 114 114 / 0.5);
+.onboard_btn .buttons:hover .text {
+  left: 10px !important;
 }
