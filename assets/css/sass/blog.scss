@@ -237,16 +237,16 @@
             left: 35px;
           }
         }
-        &:before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: #0d1918;
-            border-radius: var(--h);
-            z-index: 1;
-            transform: translateX(72%);
-            transition: transform 500ms ease;
-        }
+        // &:before {
+        //     content: "";
+        //     position: absolute;
+        //     inset: 0;
+        //     background: #0d1918;
+        //     border-radius: var(--h);
+        //     z-index: 1;
+        //     transform: translateX(72%);
+        //     transition: transform 500ms ease;
+        // }
       }
       .owl-prev {
         // &:hover {

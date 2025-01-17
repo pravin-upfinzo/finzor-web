@@ -2183,23 +2183,9 @@ header .fz_sigin ul .unlock a:hover svg path {
 }
 #fz_mobile_section .fz_mobile_right {
   display: flex;
-  border-bottom-right-radius: 40px;
 }
 #fz_mobile_section .fz_mobile_right img {
-  position: relative;
-  z-index: 2;
-}
-#fz_mobile_section .fz_mobile_right img:first-child {
-  z-index: 9;
-}
-#fz_mobile_section .fz_mobile_right img:last-child {
-  right: 152px;
-}
-@media screen and (max-width: 991px) {
-  #fz_mobile_section .fz_mobile_right img {
-    height: 460px;
-    margin: 15px;
-  }
+  width: 100%;
 }
 #fz_mobile_section .fz_mobile_text_left h2 {
   color: #ffffff;
@@ -2776,7 +2762,6 @@ header .fz_sigin ul .unlock a:hover svg path {
 }
 @media screen and (max-width: 767px) {
   .fz-blog .owl-carousel .owl-nav {
-    gap: 70px;
     margin-top: 10px;
   }
 }

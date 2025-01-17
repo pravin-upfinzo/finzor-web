@@ -3,21 +3,9 @@
   // padding: 80px 0;
   .fz_mobile_right {
     display: flex;
-    border-bottom-right-radius: 40px;
     img {
-      position: relative;
-      z-index: 2;
-      &:first-child {
-        z-index: 9;
-      }
-      &:last-child {
-        right: 152px;
-      }
-
-      @media screen and (max-width: 991px) {
-        height: 460px;
-        margin: 15px;
-      }
+      width: 100%;
+      
     }
   }
   .fz_mobile_text_left {
