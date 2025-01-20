@@ -376,3 +376,20 @@ header .fz_sigin ul .unlock a:hover svg path {
 .onboard_btn .buttons:hover .text {
   left: 10px !important;
 }
+
+#lottie-animation {
+  width: 100%;
+  height: 100%;
+  margin: auto; /* Center it horizontally */
+}
+
+.visual-desktop {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+#lottie-animation1 svg {
+  width: 35px !important;
+  height: 35px !important;
+}

@@ -128,3 +128,18 @@
     display: none;
   }
 }
+
+div#faq-animate {
+  width: 100%;
+  height: 400px;
+  display: inline-flex;
+  justify-content: start;
+}
+div#faq-animate svg {
+  width: auto !important;
+}
+@media screen and (max-width: 991px) {
+  div#faq-animate {
+    display: block;
+  }
+}
