@@ -225,7 +225,7 @@ header .fz_sigin ul {
   align-items: center;
 }
 header .fz_sigin ul li {
-  display: inline-block;
+  display: inline-flex;
 }
 header .fz_sigin ul li .tele_img {
   width: 20px;
@@ -236,6 +236,7 @@ header .fz_sigin ul li .tele_img {
 header .fz_sigin ul li a {
   color: #ffffff;
   font-size: 14px;
+  display: inline-flex;
   text-decoration: none;
 }
 header .fz_sigin ul li a span {
@@ -256,9 +257,8 @@ header .fz_sigin ul li a span svg path {
   }
 }
 header .fz_sigin ul li:nth-child(2) {
-  border-left: 1px solid #3eab90;
-  padding-left: 15px;
-  margin-left: 15px;
+  padding-left: 10px;
+  margin-left: 10px;
 }
 @media screen and (max-width: 991px) {
   header .fz_sigin ul li:nth-child(2) {
@@ -385,7 +385,7 @@ header .fz_sigin ul .unlock a:hover svg path {
   margin-left: 0px !important;
 }
 .onboard_btn .buttons .text {
-  transform: translateX(-20%);
+  transform: translateX(-15%);
   transition: transform 500ms ease;
 }
 .onboard_btn .buttons .icon {

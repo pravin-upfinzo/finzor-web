@@ -184,7 +184,7 @@ header {
       align-items: center;
     
       li {
-        display: inline-block;
+            display: inline-flex;
         .tele_img{
           width: 20px;
           height: 20px;
@@ -206,7 +206,7 @@ header {
           }
           color: $white;
           font-size: 14px;
-
+          display: inline-flex;
           text-decoration: none;
           @media (min-width: 992px) and (max-width: 1051px) {
             font-size: 12px;
@@ -217,9 +217,9 @@ header {
         }
 
         &:nth-child(2) {
-          border-left: 1px solid $primary-color;
-          padding-left: 15px;
-          margin-left: 15px;
+          // border-left: 1px solid $primary-color;
+          padding-left: 10px;
+          margin-left: 10px;
           @media screen and (max-width: 991px) {
            border: none;
         }
@@ -339,7 +339,7 @@ header {
   }
   
   .buttons .text {
-    transform: translateX(-20%);
+    transform: translateX(-15%);
     transition: transform 500ms ease;
   }
   
