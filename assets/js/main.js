@@ -2,6 +2,7 @@
 $(window).on('load', function() {
   setTimeout(function() {
     $("#page-loader").fadeOut("slow");
+    $('.hero').fadeIn();
   }, 2000);
 }); 
 var btn = $('#scroll_top');

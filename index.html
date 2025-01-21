@@ -12,16 +12,33 @@
         <link rel="stylesheet" href="assets/css/main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.9/codemirror.min.css">
       <style>
+          #fz-hero-bg{
+            position: relative;
+          }
         #fz-hero-bg img.hero {
           width: 75%;
           position: absolute;
           right: -200px;
           top: 50%;
           transform: translate(0%, -50%);
+          /* opacity: 0.5; */
+          display: none;
         }
         #fz-hero-bg::before{
           display: none;
         }
+        /* section#fz-hero-bg:after {
+          content: "";
+          background: url(./assets/images/hero-bg.jpg) no-repeat;
+          background-size: 100% 100%;
+          background-position: top;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          opacity: 0.3;
+      } */
         @media screen and (max-width:991px) {
           #fz-hero-bg {
             display: flex;

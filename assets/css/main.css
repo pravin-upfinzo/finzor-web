@@ -785,7 +785,7 @@ header .fz_sigin ul .unlock a:hover svg path {
   animation-delay: 1s;
   fill: none;
   stroke: #f7c35f;
-  stroke-width: 0.5;
+  stroke-width: 0.7;
 }
 
 /* Keyframes for Animation */
@@ -1864,12 +1864,6 @@ header .fz_sigin ul .unlock a:hover svg path {
 .fz_product_sec .container {
   display: flex;
   justify-content: space-between;
-}
-@media (min-width: 1200px) and (max-width: 1400px) {
-  .fz_product_sec .container {
-    display: inline-flex;
-    padding-left: 30px;
-  }
 }
 .fz_product_sec .container .fz_product_left {
   display: flex;

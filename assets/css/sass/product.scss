@@ -7,10 +7,10 @@
   .container {
     display: flex;
     justify-content: space-between;
-    @media (min-width: 1200px) and (max-width: 1400px) {
-      display: inline-flex;
-      padding-left: 30px;
-   }
+  //   @media (min-width: 1200px) and (max-width: 1400px) {
+  //     display: inline-flex;
+  //     padding-left: 30px;
+  //  }
     .fz_product_left {
       display: flex;
       flex-direction: column;
