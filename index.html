@@ -11,6 +11,32 @@
         <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
         <link rel="stylesheet" href="assets/css/main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.9/codemirror.min.css">
+      <style>
+        #fz-hero-bg img.hero {
+          width: 75%;
+          position: absolute;
+          right: -200px;
+          top: 50%;
+          transform: translate(0%, -50%);
+        }
+        #fz-hero-bg::before{
+          display: none;
+        }
+        @media screen and (max-width:991px) {
+          #fz-hero-bg {
+            display: flex;
+            flex-direction: column;
+          }
+          #fz-hero-bg img.hero {
+            display: flex;
+            order: 1;
+            margin: 40px 0;
+            position: unset;
+            transform: unset;
+            width: 100%;
+          }
+        }
+      </style>
     </head>
     <body>
         <div id="page-loader"></div>
@@ -97,9 +123,10 @@
         </header>
         <section id="fz-hero-bg">
           <canvas></canvas>
+          <img src="assets/images/signal-1.gif" class="hero"/>
           <div class="container">
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-lg-8">
                 <div class="content-wrapper">
                   <div class="text-content">
                     <h1>
@@ -138,12 +165,12 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6" style="    display: inline-flex;
+              <!-- <div class="col-lg-6" style="    display: inline-flex;
                   align-items: center;
                   justify-content: center; height: 100vh;">
                 <iframe src='https://my.spline.design/techinspired3dassetsmoneybag-f38d3d817f7387f214aa7a2ba8733225/' frameborder='0' width='100%' height='100%'></iframe>
                
-              </div>
+              </div> -->
             </div>
           </div>
         </section>
