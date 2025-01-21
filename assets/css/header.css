@@ -125,12 +125,6 @@ header .navbar-expand-lg .navbar-nav {
   justify-content: flex-end;
   padding: 10px;
 }
-@media (min-width: 992px) and (max-width: 1300px) {
-  header .navbar-expand-lg .navbar-nav {
-    justify-content: space-between;
-    padding: 10px 10px;
-  }
-}
 header .navbar-expand-lg .navbar-nav li {
   padding: 0px 15px;
   font-size: 14px;
@@ -153,18 +147,6 @@ header .navbar-expand-lg .navbar-nav li a.nav-link:hover {
 }
 header .navbar-expand-lg .navbar-nav li a.nav-link:hover:after {
   transform: scaleX(1);
-}
-@media (min-width: 992px) and (max-width: 1051px) {
-  header .navbar-expand-lg .navbar-nav li {
-    font-size: 12px;
-    padding: 0;
-  }
-}
-@media (min-width: 1052px) and (max-width: 1300px) {
-  header .navbar-expand-lg .navbar-nav li {
-    padding: 10px 4px;
-    line-height: 0px;
-  }
 }
 @media screen and (max-width: 991px) {
   header .navbar-expand-lg .navbar-nav li {
@@ -392,4 +374,91 @@ header .fz_sigin ul .unlock a:hover svg path {
 #lottie-animation1 svg {
   width: 35px !important;
   height: 35px !important;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  min-width: 960px;
+  transform: translateX(-50%);
+  top: 39px;
+  padding: 30px;
+  margin: 0 auto;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+@media screen and (max-width: 1200px) {
+  .dropdown {
+    display: none;
+  }
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+}
+
+.column {
+  width: 40%;
+}
+
+.column ul {
+  list-style-type: none;
+  padding: 0;
+  display: block;
+}
+
+.column ul li a {
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+.content-box {
+  display: flex;
+  gap: 40px;
+}
+
+.column ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-text:hover li a {
+  cursor: pointer;
+  color: #f7c35f;
+}
+
+.image-text {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+
+.fz_header_svg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.image-text:hover .fz_header_svg {
+  background: #f7c35f;
+  border: 1px solid #f7c35f;
 }

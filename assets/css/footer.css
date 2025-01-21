@@ -42,10 +42,12 @@
   padding: 20px 0px 10px;
   font-weight: 400;
   font-size: 14px;
+  padding-right: 100px;
 }
 @media screen and (max-width: 991px) {
   .footer_section .col-lg-4 p {
     text-align: center;
+    padding-right: 0px;
   }
 }
 .footer_section .col-lg-4 a {
@@ -69,9 +71,6 @@
     padding-top: 5px;
     padding-bottom: 10px;
   }
-}
-.footer_section .col-lg-2 {
-  padding-left: 20px;
 }
 .footer_section h5 {
   color: #c7c3c3;

@@ -3,6 +3,7 @@ body {
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 ul,
@@ -185,12 +186,6 @@ header .navbar-expand-lg .navbar-nav {
   justify-content: flex-end;
   padding: 10px;
 }
-@media (min-width: 992px) and (max-width: 1300px) {
-  header .navbar-expand-lg .navbar-nav {
-    justify-content: space-between;
-    padding: 10px 10px;
-  }
-}
 header .navbar-expand-lg .navbar-nav li {
   padding: 0px 15px;
   font-size: 14px;
@@ -213,18 +208,6 @@ header .navbar-expand-lg .navbar-nav li a.nav-link:hover {
 }
 header .navbar-expand-lg .navbar-nav li a.nav-link:hover:after {
   transform: scaleX(1);
-}
-@media (min-width: 992px) and (max-width: 1051px) {
-  header .navbar-expand-lg .navbar-nav li {
-    font-size: 12px;
-    padding: 0;
-  }
-}
-@media (min-width: 1052px) and (max-width: 1300px) {
-  header .navbar-expand-lg .navbar-nav li {
-    padding: 10px 4px;
-    line-height: 0px;
-  }
 }
 @media screen and (max-width: 991px) {
   header .navbar-expand-lg .navbar-nav li {
@@ -454,6 +437,93 @@ header .fz_sigin ul .unlock a:hover svg path {
   height: 35px !important;
 }
 
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  min-width: 960px;
+  transform: translateX(-50%);
+  top: 39px;
+  padding: 30px;
+  margin: 0 auto;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+@media screen and (max-width: 1200px) {
+  .dropdown {
+    display: none;
+  }
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+}
+
+.column {
+  width: 40%;
+}
+
+.column ul {
+  list-style-type: none;
+  padding: 0;
+  display: block;
+}
+
+.column ul li a {
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+.content-box {
+  display: flex;
+  gap: 40px;
+}
+
+.column ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-text:hover li a {
+  cursor: pointer;
+  color: #f7c35f;
+}
+
+.image-text {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+
+.fz_header_svg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.image-text:hover .fz_header_svg {
+  background: #f7c35f;
+  border: 1px solid #f7c35f;
+}
+
 @keyframes moveAnimation {
   0% {
     transform: translateX(0);
@@ -582,7 +652,7 @@ header .fz_sigin ul .unlock a:hover svg path {
 #fz-hero-bg .text-content p {
   font-size: 18px;
   line-height: 26px;
-  font-weight: 200;
+  font-weight: 300;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 1024px) {
@@ -1216,7 +1286,7 @@ header .fz_sigin ul .unlock a:hover svg path {
   }
 }
 .features_posibilityies .container h3 {
-  font-weight: 200;
+  font-weight: 300;
   font-size: 45px;
   color: #ddd;
   text-transform: capitalize;
@@ -1383,6 +1453,11 @@ header .fz_sigin ul .unlock a:hover svg path {
 @media screen and (max-width: 1600px) {
   .panel__stack .panel__card {
     height: 34rem;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .panel__stack .panel__card {
+    padding: 0px 20px;
   }
 }
 
@@ -1728,7 +1803,7 @@ header .fz_sigin ul .unlock a:hover svg path {
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text p {
   color: #ffffff;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 22px;
   min-height: 60px;
   margin-bottom: 1rem;
@@ -1789,6 +1864,12 @@ header .fz_sigin ul .unlock a:hover svg path {
 .fz_product_sec .container {
   display: flex;
   justify-content: space-between;
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .fz_product_sec .container {
+    display: inline-flex;
+    padding-left: 30px;
+  }
 }
 .fz_product_sec .container .fz_product_left {
   display: flex;
@@ -1872,7 +1953,7 @@ header .fz_sigin ul .unlock a:hover svg path {
 }
 .fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .fz_subtitle {
   font-size: 12px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 26px;
   color: #f8d796;
   border: 1px solid rgba(247, 195, 95, 0.231372549);
@@ -1942,6 +2023,16 @@ header .fz_sigin ul .unlock a:hover svg path {
 .fz_product_sec .container .fz_product_right .fz_product_images .fz_product_image svg {
   width: 100%;
   height: 100%;
+}
+@media (min-width: 992px) and (max-width: 1400px) {
+  .fz_product_sec .container .fz_product_right .fz_product_images .fz_product_image .finbankz-product svg {
+    width: 80% !important;
+    margin-left: 30px;
+  }
+  .fz_product_sec .container .fz_product_right .fz_product_images .fz_product_image .finlyticz-product svg {
+    width: 80% !important;
+    margin-left: 40px;
+  }
 }
 
 div.product-icon {
@@ -3414,7 +3505,7 @@ div#faq-animate svg {
 .play_store_section .play_store_left .start_now_btn .name-descripeion {
   position: relative;
   z-index: 9999;
-  font-weight: 200;
+  font-weight: 300;
 }
 .play_store_section .play_store_left .start_now_btn .name-descripeion:hover {
   color: #fff;
@@ -3657,10 +3748,12 @@ div#faq-animate svg {
   padding: 20px 0px 10px;
   font-weight: 400;
   font-size: 14px;
+  padding-right: 100px;
 }
 @media screen and (max-width: 991px) {
   .footer_section .col-lg-4 p {
     text-align: center;
+    padding-right: 0px;
   }
 }
 .footer_section .col-lg-4 a {
@@ -3684,9 +3777,6 @@ div#faq-animate svg {
     padding-top: 5px;
     padding-bottom: 10px;
   }
-}
-.footer_section .col-lg-2 {
-  padding-left: 20px;
 }
 .footer_section h5 {
   color: #c7c3c3;

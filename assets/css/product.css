@@ -19,6 +19,12 @@
   display: flex;
   justify-content: space-between;
 }
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .fz_product_sec .container {
+    display: inline-flex;
+    padding-left: 30px;
+  }
+}
 .fz_product_sec .container .fz_product_left {
   display: flex;
   flex-direction: column;
@@ -101,7 +107,7 @@
 }
 .fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .fz_subtitle {
   font-size: 12px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 26px;
   color: #f8d796;
   border: 1px solid rgba(247, 195, 95, 0.231372549);
@@ -171,6 +177,16 @@
 .fz_product_sec .container .fz_product_right .fz_product_images .fz_product_image svg {
   width: 100%;
   height: 100%;
+}
+@media (min-width: 992px) and (max-width: 1400px) {
+  .fz_product_sec .container .fz_product_right .fz_product_images .fz_product_image .finbankz-product svg {
+    width: 80% !important;
+    margin-left: 30px;
+  }
+  .fz_product_sec .container .fz_product_right .fz_product_images .fz_product_image .finlyticz-product svg {
+    width: 80% !important;
+    margin-left: 40px;
+  }
 }
 
 div.product-icon {

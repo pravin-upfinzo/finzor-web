@@ -26,6 +26,10 @@
             width: 100%;
             flex-direction: column; /* Stack content vertically */
         }
+        // @media screen and (min-width: 1200px) {
+        //     width: 90%;
+            
+        // }
 
         .texts {
             height: 100vh;
@@ -131,7 +135,7 @@
         }
 
         h3 {
-            font-weight: 200;
+            font-weight: 300;
             font-size: 45px;
             color: #ddd;
             text-transform: capitalize;
