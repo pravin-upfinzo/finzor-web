@@ -58,6 +58,10 @@
     @media screen and (max-width: 1600px) {
       height: 34rem;
     }
+
+    @media screen and (min-width: 1200px) and (max-width: 1400px) {
+      padding:0px 20px;
+    }
   }
   @property --border-angle {
       syntax: "<angle>";
@@ -362,7 +366,7 @@
                             p {
                                 color: $white;
                                 font-size: 16px;
-                                font-weight: 200;
+                                font-weight: 300;
                                 line-height: 22px;
                                 min-height: 60px;
                                 margin-bottom: 1rem;

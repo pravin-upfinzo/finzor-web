@@ -89,6 +89,11 @@
     height: 34rem;
   }
 }
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .panel__stack .panel__card {
+    padding: 0px 20px;
+  }
+}
 
 @property --border-angle {
   syntax: "<angle>";
@@ -432,7 +437,7 @@
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text p {
   color: #ffffff;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 22px;
   min-height: 60px;
   margin-bottom: 1rem;

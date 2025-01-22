@@ -1,3 +1,54 @@
+// Page loader
+$(window).on('load', function() {
+  setTimeout(function() {
+    $("#page-loader").fadeOut("slow");
+    $('.hero').fadeIn();
+  }, 2000);
+}); 
+var btn = $('#scroll_top');
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+  } else {
+      btn.removeClass('show');
+  }
+});
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+$(document).ready(function () {
+  $("#owl-carousel").owlCarousel({
+    loop: true, /* Allows infinite scrolling */
+    margin: 32, /* Adds spacing between cards */
+    nav: true, /* Shows previous and next arrows */
+    dots: false,
+    autoplay: false,
+    smartSpeed: 2000,
+    center:true,
+    autoplayTimeout: 4000,
+    navText: [
+      '<span class="custom-prev"><svg aria-hidden="true" role="img" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%"><path d="M9.293 5.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 12 9.293 6.707a1 1 0 0 1 0-1.414Z"></path></svg><svg aria-hidden="true" role="img" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%"><path d="M9.293 5.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 12 9.293 6.707a1 1 0 0 1 0-1.414Z"></path></svg></span>',
+      '<span class="custom-next"><svg aria-hidden="true" role="img" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%"><path d="M9.293 5.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 12 9.293 6.707a1 1 0 0 1 0-1.414Z"></path></svg><svg aria-hidden="true" role="img" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%"><path d="M9.293 5.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 12 9.293 6.707a1 1 0 0 1 0-1.414Z"></path></svg></span>'
+    ],
+    responsive: {
+    0: {
+      items: 1, 
+      center:false,
+      /* Shows 1 card on small screens */
+    },
+    768: {
+      items: 2,
+      center:false,
+       /* Shows 2 cards on medium screens */
+    },
+    1024: {
+      items: 3, /* Shows 3 cards on large screens */
+    },
+    },
+  });
+});
+
 gsap.registerPlugin(ScrollTrigger);
 // 1. Fade out the main text
 gsap.to(".texts", {
@@ -387,7 +438,101 @@ sm.add("(min-width: 1200px)", () => {
     });
   });
 });
+// Playstore
+gsap.fromTo(".fz_playstore2", {
+  opacity: 0.5,
+  scale: 0.7,
+  rotateX: "10deg",
+  x: "50vw",  // Start from the right side (off-screen)
+}, {
+  opacity: 1,
+  scale: 1,
+  rotateX: "0deg",
+  x: "0vw",  // Move to its original position (center)
+  scrollTrigger: {
+      trigger: ".play_store_section",
+      start: "top bottom",      // Start when the section top reaches the bottom of the viewport
+      end: "bottom bottom-=10%",  // End when the section bottom is 10% before the bottom of the viewport
+      scrub: 1,                 // Sync the animation with the scroll position
+  }
+});
+// FAQ
+TweenLite.fromTo("#accordionExample", {
+  opacity: 0.5,
+  scale: 0.7,
+  rotateX: "10deg",
+}, {
+  opacity: 1,
+  scale: 1,
+  rotateX: "0deg",
+  scrollTrigger: {
+      trigger: "#accordionExample",
+      start: "top bottom",
+      end: "bottom bottom-=10%",
+      scrub: 1,
+  }
+});
+// Developers
+let sm1 = gsap.matchMedia();
 
+sm1.add("(min-width: 1200px)", () => {
+      // Animation for .fz_intergration (left to center)
+      gsap.fromTo(".fz_intergration", {
+  opacity: 0.5,
+  scale: 0.7,
+  rotateX: "10deg",
+  x: "-10vw",  // Start from left side (off-screen)
+}, {
+  opacity: 1,
+  scale: 1,
+  rotateX: "0deg",
+  x: "0vw",  // Move to original position (center)
+  scrollTrigger: {
+    trigger: ".fz_intergration",
+    start: "top bottom",  // Starts when the top of the section reaches the bottom of the viewport
+    end: "bottom bottom-=10%",  // Ends when the section bottom is 10% before the bottom
+    scrub: 1,  // Syncs animation with scroll position
+  }
+});
+
+// Bottom to top scroll animation for .fz_api
+gsap.fromTo(".fz_api", {
+  opacity: 0.5,
+  scale: 0.7,
+  rotateX: "10deg",
+  y: "10vh",  // Start 30% of viewport height below (off-screen)
+}, {
+  opacity: 1,
+  scale: 1,
+  rotateX: "0deg",
+  y: "0",  // Move to original position (center)
+  scrollTrigger: {
+    trigger: ".fz_api",
+    start: "top bottom",  // Start when the bottom of the element reaches the bottom of the viewport
+    end: "bottom bottom-=10%",  // End when the top of the element reaches the top of the viewport
+    scrub: 1,  // Sync the animation with scroll position
+  }
+});
+
+// Animation for .fz_webhook (right to center)
+gsap.fromTo(".fz_webhook", {
+  opacity: 0.5,
+  scale: 0.7,
+  rotateX: "10deg",
+  x: "10vw",  // Start from right side (off-screen)
+}, {
+  opacity: 1,
+  scale: 1,
+  rotateX: "0deg",
+  x: "0vw",  // Move to original position (center)
+  scrollTrigger: {
+    trigger: ".fz_webhook",
+    start: "top bottom",  // Starts when the section top reaches the bottom of the viewport
+    end: "bottom bottom-=10%",  // Ends when the section bottom is 10% before the bottom
+    scrub: 1,  // Syncs animation with scroll position
+  }
+});
+});
 // Counter
 // var counted = 0;
 // $(window).scroll(function() {
@@ -460,26 +605,109 @@ const observer = new IntersectionObserver(
 // Observe the target section
 observer.observe(document.querySelector("#counter-section"));
 
-// Testimonial
-const testimonial_items = document.querySelectorAll(".fz_testimonial_item");
+//Typing
 
-function clearActiveImage() {
-  testimonial_items.forEach(function (item) {
-    item.classList.remove("active");
-  });
+const code = `
+const finzor = require('finzor')('fz_test_BQokikJOvBi2Hl4olfQ2');
+await finzor.paymentIntents.create({
+  amount: 2000,
+  currency: 'usd'
+});
+`;
+
+const editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+  lineNumbers: true,
+  mode: 'javascript',
+  theme: 'default',
+  readOnly: true
+});
+
+const typingSound = document.getElementById('typing-sound');
+let index = 0;
+let typingInterval;
+let isTyping = false;
+
+function playTypingSound() {
+  if (typingSound.paused) {
+    typingSound.currentTime = 0;
+    typingSound.play();
+  }
 }
 
-testimonial_items.forEach(function (item, index) {
-  item.onclick = function () {
-    event.stopPropagation(); //important to not call the clearActiveImage() on every click
-    if (testimonial_items[index].classList.contains("active")) {
-      testimonial_items[index].classList.remove("active");
+function stopTypingSound() {
+  typingSound.pause();
+  typingSound.currentTime = 0;
+}
+
+function startTyping() {
+  if (isTyping) return; // Prevent multiple intervals
+  isTyping = true;
+
+  playTypingSound();
+  typingInterval = setInterval(() => {
+    if (index < code.length) {
+      editor.setValue(code.slice(0, index));
+      index++;
     } else {
-      clearActiveImage(index);
-      testimonial_items[index].classList.add("active");
+      clearInterval(typingInterval);
+      typingInterval = null;
+      stopTypingSound();
+
+      // Reset index and restart after a short delay
+      setTimeout(() => {
+        if (isTyping) {
+          index = 0;
+          startTyping();
+        }
+      }, 1000); // Adjust delay before restarting
     }
-  };
+  }, 100); // Adjust typing speed
+}
+
+function stopTyping() {
+  if (typingInterval) {
+    clearInterval(typingInterval); // Stop typing animation
+    typingInterval = null;
+  }
+  stopTypingSound(); // Stop typing sound
+  index = 0; // Reset typing index
+  editor.setValue(''); // Clear the editor
+  isTyping = false; // Mark as not typing
+}
+
+// IntersectionObserver to start/stop typing
+const observer_1 = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      startTyping(); // Start typing when visible
+    } else {
+      stopTyping(); // Stop typing when not visible
+    }
+  });
 });
+
+// Observe the container of the CodeMirror editor
+observer_1.observe(document.querySelector('#code').closest('div'));
+// Testimonial
+// const testimonial_items = document.querySelectorAll(".fz_testimonial_item");
+
+// function clearActiveImage() {
+//   testimonial_items.forEach(function (item) {
+//     item.classList.remove("active");
+//   });
+// }
+
+// testimonial_items.forEach(function (item, index) {
+//   item.onclick = function () {
+//     event.stopPropagation(); //important to not call the clearActiveImage() on every click
+//     if (testimonial_items[index].classList.contains("active")) {
+//       testimonial_items[index].classList.remove("active");
+//     } else {
+//       clearActiveImage(index);
+//       testimonial_items[index].classList.add("active");
+//     }
+//   };
+// });
 
 // window.addEventListener("click", () => {
 //   clearActiveImage()
@@ -494,7 +722,7 @@ document.addEventListener("DOMContentLoaded", function () {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         audio.play().catch((error) => {
-          console.log("Audio playback was blocked by the browser:", error);
+          // console.log("Audio playback was blocked by the browser:", error);
         });
       } else {
         audio.pause(); // Pause audio when the section is out of view

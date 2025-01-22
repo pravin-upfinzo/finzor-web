@@ -215,7 +215,7 @@
 .play_store_section .play_store_left .start_now_btn .name-descripeion {
   position: relative;
   z-index: 9999;
-  font-weight: 200;
+  font-weight: 300;
 }
 .play_store_section .play_store_left .start_now_btn .name-descripeion:hover {
   color: #fff;

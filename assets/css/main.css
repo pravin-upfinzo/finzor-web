@@ -3,6 +3,7 @@ body {
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 ul,
@@ -185,12 +186,6 @@ header .navbar-expand-lg .navbar-nav {
   justify-content: flex-end;
   padding: 10px;
 }
-@media (min-width: 992px) and (max-width: 1300px) {
-  header .navbar-expand-lg .navbar-nav {
-    justify-content: space-between;
-    padding: 10px 10px;
-  }
-}
 header .navbar-expand-lg .navbar-nav li {
   padding: 0px 15px;
   font-size: 14px;
@@ -214,18 +209,6 @@ header .navbar-expand-lg .navbar-nav li a.nav-link:hover {
 header .navbar-expand-lg .navbar-nav li a.nav-link:hover:after {
   transform: scaleX(1);
 }
-@media (min-width: 992px) and (max-width: 1051px) {
-  header .navbar-expand-lg .navbar-nav li {
-    font-size: 12px;
-    padding: 0;
-  }
-}
-@media (min-width: 1052px) and (max-width: 1300px) {
-  header .navbar-expand-lg .navbar-nav li {
-    padding: 10px 4px;
-    line-height: 0px;
-  }
-}
 @media screen and (max-width: 991px) {
   header .navbar-expand-lg .navbar-nav li {
     padding: 10px 5px;
@@ -242,7 +225,7 @@ header .fz_sigin ul {
   align-items: center;
 }
 header .fz_sigin ul li {
-  display: inline-block;
+  display: inline-flex;
 }
 header .fz_sigin ul li .tele_img {
   width: 20px;
@@ -253,6 +236,7 @@ header .fz_sigin ul li .tele_img {
 header .fz_sigin ul li a {
   color: #ffffff;
   font-size: 14px;
+  display: inline-flex;
   text-decoration: none;
 }
 header .fz_sigin ul li a span {
@@ -273,9 +257,8 @@ header .fz_sigin ul li a span svg path {
   }
 }
 header .fz_sigin ul li:nth-child(2) {
-  border-left: 1px solid #3eab90;
-  padding-left: 15px;
-  margin-left: 15px;
+  padding-left: 10px;
+  margin-left: 10px;
 }
 @media screen and (max-width: 991px) {
   header .fz_sigin ul li:nth-child(2) {
@@ -402,7 +385,7 @@ header .fz_sigin ul .unlock a:hover svg path {
   margin-left: 0px !important;
 }
 .onboard_btn .buttons .text {
-  transform: translateX(-20%);
+  transform: translateX(-15%);
   transition: transform 500ms ease;
 }
 .onboard_btn .buttons .icon {
@@ -437,6 +420,110 @@ header .fz_sigin ul .unlock a:hover svg path {
   left: 10px !important;
 }
 
+#lottie-animation {
+  width: 100%;
+  height: 100%;
+  margin: auto; /* Center it horizontally */
+}
+
+.visual-desktop {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+#lottie-animation1 svg {
+  width: 35px !important;
+  height: 35px !important;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  min-width: 960px;
+  transform: translateX(-50%);
+  top: 39px;
+  padding: 30px;
+  margin: 0 auto;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+@media screen and (max-width: 1200px) {
+  .dropdown {
+    display: none;
+  }
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+}
+
+.column {
+  width: 40%;
+}
+
+.column ul {
+  list-style-type: none;
+  padding: 0;
+  display: block;
+}
+
+.column ul li a {
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+.content-box {
+  display: flex;
+  gap: 40px;
+}
+
+.column ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-text:hover li a {
+  cursor: pointer;
+  color: #f7c35f;
+}
+
+.image-text {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+
+.fz_header_svg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.image-text:hover .fz_header_svg {
+  background: #f7c35f;
+  border: 1px solid #f7c35f;
+}
+
 @keyframes moveAnimation {
   0% {
     transform: translateX(0);
@@ -461,6 +548,16 @@ header .fz_sigin ul .unlock a:hover svg path {
     padding: 130px 10px 40px 10px;
     text-align: center;
     height: auto;
+  }
+}
+#fz-hero-bg iframe {
+  height: 120vh !important;
+  transform: scale(0.8);
+}
+@media screen and (max-width: 991px) {
+  #fz-hero-bg iframe {
+    height: 117vh !important;
+    transform: scale(0.5);
   }
 }
 #fz-hero-bg::before {
@@ -513,15 +610,27 @@ header .fz_sigin ul .unlock a:hover svg path {
 #fz-hero-bg .text-content h1 {
   font-size: 65px;
   font-weight: 700;
-  line-height: 0px;
   margin-bottom: 40px;
   line-height: 70px;
+}
+@media screen and (max-width: 1300px) {
+  #fz-hero-bg .text-content h1 {
+    font-size: 38px;
+    line-height: 40px;
+  }
 }
 @media screen and (max-width: 991px) {
   #fz-hero-bg .text-content h1 {
     font-size: 40px;
     justify-content: center;
     line-height: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #fz-hero-bg .text-content h1 {
+    line-height: 40px;
+    font-size: 1.75rem;
+    text-align: center;
   }
 }
 #fz-hero-bg .text-content h1 .text-line text {
@@ -535,12 +644,6 @@ header .fz_sigin ul .unlock a:hover svg path {
   }
 }
 @media screen and (max-width: 1300px) {
-  #fz-hero-bg .text-content h1 {
-    font-size: 38px;
-    line-height: 40px;
-  }
-}
-@media screen and (max-width: 1300px) {
   #fz-hero-bg .text-content h1 svg {
     width: 170px;
     height: auto;
@@ -549,7 +652,7 @@ header .fz_sigin ul .unlock a:hover svg path {
 #fz-hero-bg .text-content p {
   font-size: 18px;
   line-height: 26px;
-  font-weight: 200;
+  font-weight: 300;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 1024px) {
@@ -664,97 +767,31 @@ header .fz_sigin ul .unlock a:hover svg path {
   position: relative;
 }
 
-.preload svg {
-  max-width: 200px;
-  height: auto;
-  margin: 0 auto;
-  display: block;
+.text-line1 {
+  width: auto;
+  height: 55px;
 }
 
-.preload svg #p1 {
-  stroke-dasharray: 109px;
-  stroke-dashoffset: 109px;
+/* Animation Setup */
+.text-line1 .path {
+  stroke-dasharray: 1000; /* Large number to ensure path length is enough */
+  stroke-dashoffset: 1000;
+  animation: draws 8s ease forwards;
+  animation-iteration-count: infinite;
 }
 
-.preload svg #p2 {
-  stroke-width: 1;
-  stroke-dasharray: 311px;
-  stroke-dashoffset: 311px;
+/* Staggered Animation */
+.text-line1 .path {
+  animation-delay: 1s;
+  fill: none;
+  stroke: #f7c35f;
+  stroke-width: 0.7;
 }
 
-.preload svg #p3 {
-  stroke-dasharray: 359px;
-  stroke-dashoffset: 359px;
-}
-
-.preload svg #p1, section.preload svg #p2, section.preload svg #p3 {
-  fill: transparent;
-  stroke: #000;
-  stroke-width: 1;
-  -webkit-animation-name: draw;
-  -moz-animation-name: draw;
-  -o-animation-name: draw;
-  animation-name: draw;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  -o-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  -o-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-  -o-animation-timing-function: linear;
-  animation-timing-function: linear;
-}
-
-@-webkit-keyframes draw {
-  95% {
-    stroke-dashoffset: 0;
-    fill: transparent;
-    stroke: #000;
-  }
-  100% {
-    fill: #000;
-    stroke: transparent;
-  }
-}
-@-moz-keyframes draw {
-  95% {
-    stroke-dashoffset: 0;
-    fill: transparent;
-    stroke: #000;
-  }
-  100% {
-    fill: #000;
-    stroke: transparent;
-  }
-}
-@-o-keyframes draw {
-  95% {
-    stroke-dashoffset: 0;
-    fill: transparent;
-    stroke: #000;
-  }
-  100% {
-    fill: #000;
-    stroke: transparent;
-  }
-}
-@keyframes draw {
-  95% {
-    stroke-dashoffset: 0;
-    fill: transparent;
-    stroke: #000;
-  }
-  100% {
-    fill: #000;
-    stroke: transparent;
+/* Keyframes for Animation */
+@keyframes draws {
+  to {
+    stroke-dashoffset: 0; /* Animate to reveal the path */
   }
 }
 @keyframes moveAnimation {
@@ -1249,7 +1286,7 @@ header .fz_sigin ul .unlock a:hover svg path {
   }
 }
 .features_posibilityies .container h3 {
-  font-weight: 200;
+  font-weight: 300;
   font-size: 45px;
   color: #ddd;
   text-transform: capitalize;
@@ -1275,6 +1312,55 @@ header .fz_sigin ul .unlock a:hover svg path {
   .features_posibilityies .container h3 {
     font-size: 40px;
     padding: 10px; /* Add spacing for smaller viewports */
+  }
+}
+
+.features_posibilityies .hash_content {
+  width: 36px;
+  height: 40px;
+  position: absolute;
+  left: 380px;
+}
+@media screen and (min-width: 1400px) {
+  .features_posibilityies .hash_content {
+    left: 472px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .features_posibilityies .hash_content {
+    left: 295px;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .features_posibilityies .hash_content {
+    left: 247px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .features_posibilityies .hash_content {
+    left: 0px;
+  }
+}
+
+.hash_content {
+  position: relative;
+  z-index: 1;
+  width: 62px;
+  height: 90px;
+}
+@media screen and (max-width: 1200px) {
+  .hash_content {
+    width: 30px;
+    height: 60px;
+  }
+}
+
+.features_posibilityies .hash_bar {
+  font-size: 45px !important;
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .features_posibilityies .hash_bar {
+    font-size: 30px !important;
   }
 }
 
@@ -1367,6 +1453,11 @@ header .fz_sigin ul .unlock a:hover svg path {
 @media screen and (max-width: 1600px) {
   .panel__stack .panel__card {
     height: 34rem;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .panel__stack .panel__card {
+    padding: 0px 20px;
   }
 }
 
@@ -1712,7 +1803,7 @@ header .fz_sigin ul .unlock a:hover svg path {
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text p {
   color: #ffffff;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 22px;
   min-height: 60px;
   margin-bottom: 1rem;
@@ -1856,7 +1947,7 @@ header .fz_sigin ul .unlock a:hover svg path {
 }
 .fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .fz_subtitle {
   font-size: 12px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 26px;
   color: #f8d796;
   border: 1px solid rgba(247, 195, 95, 0.231372549);
@@ -1926,6 +2017,24 @@ header .fz_sigin ul .unlock a:hover svg path {
 .fz_product_sec .container .fz_product_right .fz_product_images .fz_product_image svg {
   width: 100%;
   height: 100%;
+}
+@media (min-width: 992px) and (max-width: 1400px) {
+  .fz_product_sec .container .fz_product_right .fz_product_images .fz_product_image .finbankz-product svg {
+    width: 80% !important;
+    margin-left: 30px;
+  }
+  .fz_product_sec .container .fz_product_right .fz_product_images .fz_product_image .finlyticz-product svg {
+    width: 80% !important;
+    margin-left: 40px;
+  }
+}
+
+div.product-icon {
+  width: 70px;
+  height: 70px;
+  display: inline-flex;
+  align-items: center;
+  margin-left: -20px;
 }
 
 @keyframes moveAnimation {
@@ -2168,6 +2277,11 @@ header .fz_sigin ul .unlock a:hover svg path {
   inherits: true;
   initial-value: 0turn;
 }
+div#api-dev {
+  width: 100%;
+  height: 300px;
+}
+
 @keyframes moveAnimation {
   0% {
     transform: translateX(0);
@@ -3035,6 +3149,21 @@ header .fz_sigin ul .unlock a:hover svg path {
   }
 }
 
+div#faq-animate {
+  width: 100%;
+  height: 400px;
+  display: inline-flex;
+  justify-content: start;
+}
+div#faq-animate svg {
+  width: auto !important;
+}
+@media screen and (max-width: 991px) {
+  div#faq-animate {
+    display: block;
+  }
+}
+
 @keyframes moveAnimation {
   0% {
     transform: translateX(0);
@@ -3370,7 +3499,7 @@ header .fz_sigin ul .unlock a:hover svg path {
 .play_store_section .play_store_left .start_now_btn .name-descripeion {
   position: relative;
   z-index: 9999;
-  font-weight: 200;
+  font-weight: 300;
 }
 .play_store_section .play_store_left .start_now_btn .name-descripeion:hover {
   color: #fff;
@@ -3613,10 +3742,12 @@ header .fz_sigin ul .unlock a:hover svg path {
   padding: 20px 0px 10px;
   font-weight: 400;
   font-size: 14px;
+  padding-right: 100px;
 }
 @media screen and (max-width: 991px) {
   .footer_section .col-lg-4 p {
     text-align: center;
+    padding-right: 0px;
   }
 }
 .footer_section .col-lg-4 a {
@@ -3640,9 +3771,6 @@ header .fz_sigin ul .unlock a:hover svg path {
     padding-top: 5px;
     padding-bottom: 10px;
   }
-}
-.footer_section .col-lg-2 {
-  padding-left: 20px;
 }
 .footer_section h5 {
   color: #c7c3c3;
@@ -3774,4 +3902,37 @@ header .fz_sigin ul .unlock a:hover svg path {
 }
 #scroll_top svg {
   width: 20px;
+}
+
+#page-loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background: url("/assets/images/finzor-loading.gif") center no-repeat #000;
+}
+@media screen and (max-width: 767px) {
+  #page-loader {
+    background-size: contain;
+  }
+}
+
+.footer-bg img {
+  width: 100%;
+}
+
+.chat-bot {
+  position: fixed;
+  right: -5px;
+  bottom: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  width: 120px;
+  z-index: 99;
+}
+.chat-bot img {
+  width: 100%;
+  height: 100%;
 }

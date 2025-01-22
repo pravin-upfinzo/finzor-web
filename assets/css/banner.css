@@ -24,6 +24,16 @@
     height: auto;
   }
 }
+#fz-hero-bg iframe {
+  height: 120vh !important;
+  transform: scale(0.8);
+}
+@media screen and (max-width: 991px) {
+  #fz-hero-bg iframe {
+    height: 117vh !important;
+    transform: scale(0.5);
+  }
+}
 #fz-hero-bg::before {
   content: "";
   position: absolute;
@@ -74,15 +84,27 @@
 #fz-hero-bg .text-content h1 {
   font-size: 65px;
   font-weight: 700;
-  line-height: 0px;
   margin-bottom: 40px;
   line-height: 70px;
+}
+@media screen and (max-width: 1300px) {
+  #fz-hero-bg .text-content h1 {
+    font-size: 38px;
+    line-height: 40px;
+  }
 }
 @media screen and (max-width: 991px) {
   #fz-hero-bg .text-content h1 {
     font-size: 40px;
     justify-content: center;
     line-height: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #fz-hero-bg .text-content h1 {
+    line-height: 40px;
+    font-size: 1.75rem;
+    text-align: center;
   }
 }
 #fz-hero-bg .text-content h1 .text-line text {
@@ -96,12 +118,6 @@
   }
 }
 @media screen and (max-width: 1300px) {
-  #fz-hero-bg .text-content h1 {
-    font-size: 38px;
-    line-height: 40px;
-  }
-}
-@media screen and (max-width: 1300px) {
   #fz-hero-bg .text-content h1 svg {
     width: 170px;
     height: auto;
@@ -110,7 +126,7 @@
 #fz-hero-bg .text-content p {
   font-size: 18px;
   line-height: 26px;
-  font-weight: 200;
+  font-weight: 300;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 1024px) {
@@ -225,96 +241,30 @@
   position: relative;
 }
 
-.preload svg {
-  max-width: 200px;
-  height: auto;
-  margin: 0 auto;
-  display: block;
+.text-line1 {
+  width: auto;
+  height: 55px;
 }
 
-.preload svg #p1 {
-  stroke-dasharray: 109px;
-  stroke-dashoffset: 109px;
+/* Animation Setup */
+.text-line1 .path {
+  stroke-dasharray: 1000; /* Large number to ensure path length is enough */
+  stroke-dashoffset: 1000;
+  animation: draws 8s ease forwards;
+  animation-iteration-count: infinite;
 }
 
-.preload svg #p2 {
-  stroke-width: 1;
-  stroke-dasharray: 311px;
-  stroke-dashoffset: 311px;
+/* Staggered Animation */
+.text-line1 .path {
+  animation-delay: 1s;
+  fill: none;
+  stroke: #f7c35f;
+  stroke-width: 0.5;
 }
 
-.preload svg #p3 {
-  stroke-dasharray: 359px;
-  stroke-dashoffset: 359px;
-}
-
-.preload svg #p1, section.preload svg #p2, section.preload svg #p3 {
-  fill: transparent;
-  stroke: #000;
-  stroke-width: 1;
-  -webkit-animation-name: draw;
-  -moz-animation-name: draw;
-  -o-animation-name: draw;
-  animation-name: draw;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  -o-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  -o-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-  -o-animation-timing-function: linear;
-  animation-timing-function: linear;
-}
-
-@-webkit-keyframes draw {
-  95% {
-    stroke-dashoffset: 0;
-    fill: transparent;
-    stroke: #000;
-  }
-  100% {
-    fill: #000;
-    stroke: transparent;
-  }
-}
-@-moz-keyframes draw {
-  95% {
-    stroke-dashoffset: 0;
-    fill: transparent;
-    stroke: #000;
-  }
-  100% {
-    fill: #000;
-    stroke: transparent;
-  }
-}
-@-o-keyframes draw {
-  95% {
-    stroke-dashoffset: 0;
-    fill: transparent;
-    stroke: #000;
-  }
-  100% {
-    fill: #000;
-    stroke: transparent;
-  }
-}
-@keyframes draw {
-  95% {
-    stroke-dashoffset: 0;
-    fill: transparent;
-    stroke: #000;
-  }
-  100% {
-    fill: #000;
-    stroke: transparent;
+/* Keyframes for Animation */
+@keyframes draws {
+  to {
+    stroke-dashoffset: 0; /* Animate to reveal the path */
   }
 }

@@ -42,10 +42,12 @@
   padding: 20px 0px 10px;
   font-weight: 400;
   font-size: 14px;
+  padding-right: 100px;
 }
 @media screen and (max-width: 991px) {
   .footer_section .col-lg-4 p {
     text-align: center;
+    padding-right: 0px;
   }
 }
 .footer_section .col-lg-4 a {
@@ -69,9 +71,6 @@
     padding-top: 5px;
     padding-bottom: 10px;
   }
-}
-.footer_section .col-lg-2 {
-  padding-left: 20px;
 }
 .footer_section h5 {
   color: #c7c3c3;
@@ -203,4 +202,37 @@
 }
 #scroll_top svg {
   width: 20px;
+}
+
+#page-loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background: url("/assets/images/finzor-loading.gif") center no-repeat #000;
+}
+@media screen and (max-width: 767px) {
+  #page-loader {
+    background-size: contain;
+  }
+}
+
+.footer-bg img {
+  width: 100%;
+}
+
+.chat-bot {
+  position: fixed;
+  right: -5px;
+  bottom: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  width: 120px;
+  z-index: 99;
+}
+.chat-bot img {
+  width: 100%;
+  height: 100%;
 }
