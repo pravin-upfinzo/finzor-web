@@ -54,7 +54,6 @@
     margin-bottom: 30px;
     line-height: 22px;
     font-size: 14px;
-    align-items: start;
   }
 }
 #fz_mobile_section .fz_mobile_text_left .fz_description span {
@@ -72,13 +71,7 @@
   display: flex;
   margin-left: 70px;
 }
-@media (min-width: 992px) and (max-width: 1400px) {
-  #fz_mobile_section .fz_mobile_text_left .fz_btn {
-    margin-left: 0;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1400px) {
   #fz_mobile_section .fz_mobile_text_left .fz_btn {
     margin-left: 0;
     justify-content: center;
@@ -150,6 +143,16 @@
   position: relative;
   left: 0px;
 }
+@media screen and (max-width: 375px) {
+  #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore:hover {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore {
+    font-size: 13px;
+  }
+}
 #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore img {
   opacity: 1;
 }
@@ -162,6 +165,11 @@
 }
 #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore:hover {
   --box-glow-color: #06eed5;
+}
+@media screen and (max-width: 375px) {
+  #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore {
+    font-size: 13px;
+  }
 }
 #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore_btn {
   height: 50px;
@@ -216,4 +224,14 @@
 #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore_btn:hover .text {
   position: relative;
   left: 0px;
+}
+@media screen and (max-width: 375px) {
+  #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore_btn:hover {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore_btn {
+    font-size: 13px;
+  }
 }

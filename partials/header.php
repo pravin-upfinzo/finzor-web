@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?php echo (isset($page_title) && $page_title != '') ? $page_title : 'Finzor - The Zor of Fintech Innovations'; ?></title>
-    <?php echo isset($meta_lines) ?? ''; ?>
+    <?php echo isset($meta_lines) ? $meta_lines . "\n" : ''; ?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="assets/images/finzor-fav.png">
+    <link rel="icon" href="assets/images/finzor-fav.png" type="image/png">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -136,7 +136,8 @@
                                                     </div>
 
                                                     <div class="text">
-                                                        <li><a href="">Core Banking System</a>
+                                                        <li><a href="core-banking-solution.html">FinbankZ</a>
+                                                            <p>Banking Core and Digital Platform</p>
                                                         </li>
                                                     </div>
                                                 </div>
@@ -151,7 +152,8 @@
                                                         </svg>
                                                     </div>
                                                     <div class="text">
-                                                        <li><a href="">Merchant Onboarding</a>
+                                                        <li><a href="">UPIZor</a>
+                                                            <p>Payment Solutions</p>
                                                         </li>
                                                     </div>
                                                 </div>
@@ -169,7 +171,8 @@
                                                         </svg>
                                                     </div>
                                                     <div class="text">
-                                                        <li><a href="">Payment Gateway</a>
+                                                        <li><a href="">FinzOpZ 360</a>
+                                                            <p>End to End Operational Suite</p>
 
                                                         </li>
                                                     </div>
@@ -195,7 +198,8 @@
                                                     </div>
 
                                                     <div class="text">
-                                                        <li><a href="">UPI & UPI Switch</a>
+                                                        <li><a href="">FinZro</a>
+                                                            <p>Merchant Solution</p>
 
                                                         </li>
                                                     </div>
@@ -211,7 +215,8 @@
                                                         </svg>
                                                     </div>
                                                     <div class="text">
-                                                        <li><a href="">Data Analytics</a>
+                                                        <li><a href="">FinlyticZ</a>
+                                                            <p>Data & Analytics </p>
 
                                                         </li>
                                                     </div>
@@ -225,10 +230,10 @@
                                 <a class="nav-link" href="#">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Company</a>
+                                <a class="nav-link" href="about-us.html">Company</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./contact_us.html">Contact</a>
+                                <a class="nav-link" href="./contact-us.html">Contact</a>
                             </li>
                         </ul>
                         <div class="d-flex fz_sigin">
@@ -236,9 +241,8 @@
                                 <li><a href="#"><img class="flag-img" src="assets/images/flag.gif" alt="Country" width="40px"></a></li>
                                 <li class="unlock"><a href="#">Unlock
                                         <span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                                <path d="M144 144c0-44.2 35.8-80 80-80c31.9 0 59.4 18.6 72.3 45.7c7.6 16 26.7 22.8 42.6 15.2s22.8-26.7 15.2-42.6C331 33.7 281.5 0 224 0C144.5 0 80 64.5 80 144l0 48-16 0c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-192c0-35.3-28.7-64-64-64l-240 0 0-48z" />
-                                            </svg>
+                                            
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M144 144c0-44.2 35.8-80 80-80c31.9 0 59.4 18.6 72.3 45.7c7.6 16 26.7 22.8 42.6 15.2s22.8-26.7 15.2-42.6C331 33.7 281.5 0 224 0C144.5 0 80 64.5 80 144l0 48-16 0c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-192c0-35.3-28.7-64-64-64l-240 0 0-48z"/></svg>
                                         </span>
                                     </a></li>
                                 <li>

@@ -45,12 +45,7 @@ header {
   backdrop-filter: blur(16px);
   background: rgba(3, 0, 20, 0.08);
 }
-@media (max-width: 991px) {
-  header {
-    padding: 0px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1300px) {
+@media (max-width: 1199px) {
   header {
     padding: 0px;
   }
@@ -113,7 +108,7 @@ header .navbar-brand svg path {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
   header .navbar #offcanvasNavbar {
-    background-color: #000;
+    background-color: #000000;
     width: 100%;
   }
   header .navbar #offcanvasNavbar .offcanvas-header {
@@ -141,6 +136,12 @@ header .navbar-expand-lg .navbar-nav li a.nav-link::after {
   border-bottom: solid 2px #f7c35f;
   transform: scaleX(0);
   transition: transform 500ms ease-in-out;
+}
+@media screen and (max-width: 991px) {
+  header .navbar-expand-lg .navbar-nav li a.nav-link::after {
+    border-bottom: none;
+    transform: scale(none);
+  }
 }
 header .navbar-expand-lg .navbar-nav li a.nav-link:hover {
   color: #f7c35f;
@@ -189,11 +190,6 @@ header .fz_sigin ul li a span svg {
 }
 header .fz_sigin ul li a span svg path {
   fill: #fff;
-}
-@media (min-width: 992px) and (max-width: 1051px) {
-  header .fz_sigin ul li a {
-    font-size: 12px;
-  }
 }
 header .fz_sigin ul li:nth-child(2) {
   padding-left: 10px;
@@ -286,6 +282,11 @@ header .fz_sigin ul .unlock a:hover svg path {
 .buttons:hover .text {
   position: relative;
   left: 0px;
+}
+@media screen and (max-width: 375px) {
+  .buttons:hover {
+    font-size: 13px;
+  }
 }
 
 .onboard_btn .buttons {
@@ -397,11 +398,6 @@ header .fz_sigin ul .unlock a:hover svg path {
   transition: opacity 0.5s ease;
 }
 
-@media screen and (max-width: 1200px) {
-  .dropdown {
-    display: none;
-  }
-}
 .dropdown:hover .dropdown-content {
   display: block;
   opacity: 1;
@@ -417,11 +413,17 @@ header .fz_sigin ul .unlock a:hover svg path {
   display: block;
 }
 
-.column ul li a {
+.dropdown .column ul li a {
   color: white;
   text-decoration: none;
   justify-content: center;
   font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+.dropdown .column ul li {
+  padding: 25px 15px 10px 15px;
+  line-height: 24px;
   transition: all 0.5s ease;
 }
 
@@ -430,15 +432,19 @@ header .fz_sigin ul .unlock a:hover svg path {
   gap: 40px;
 }
 
-.column ul li a {
+.dropdown .column ul li a {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: left;
+  font-weight: 600;
+  transition: all 0.5s ease;
+  color: #ffffff;
+  font-size: 18px;
 }
 
-.image-text:hover li a {
+.image-text li:hover a, .image-text li:hover p {
   cursor: pointer;
-  color: #f7c35f;
+  transition: all 0.5s ease;
+  color: #f7c35f !important;
 }
 
 .image-text {

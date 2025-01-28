@@ -89,22 +89,23 @@
 }
 @media screen and (max-width: 1300px) {
   #fz-hero-bg .text-content h1 {
-    font-size: 38px;
-    line-height: 40px;
+    font-size: 45px;
+    line-height: 55px;
   }
 }
 @media screen and (max-width: 991px) {
   #fz-hero-bg .text-content h1 {
     font-size: 40px;
-    justify-content: center;
-    line-height: 50px;
+    width: 380px;
+    margin: 0 auto 20px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #fz-hero-bg .text-content h1 {
-    line-height: 40px;
     font-size: 1.75rem;
     text-align: center;
+    width: 330px;
+    line-height: 40px;
   }
 }
 #fz-hero-bg .text-content h1 .text-line text {
@@ -119,7 +120,7 @@
 }
 @media screen and (max-width: 1300px) {
   #fz-hero-bg .text-content h1 svg {
-    width: 170px;
+    width: 140px;
     height: auto;
   }
 }
@@ -200,6 +201,16 @@
   position: relative;
   left: 0px;
 }
+@media screen and (max-width: 375px) {
+  #fz-hero-bg .hero-section-button .section-button-one:hover, #fz-hero-bg .hero-section-button .section-button-two:hover {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #fz-hero-bg .hero-section-button .section-button-one, #fz-hero-bg .hero-section-button .section-button-two {
+    font-size: 13px;
+  }
+}
 #fz-hero-bg .hero-section-button .section-button-one {
   padding: 0px 20px 0 25px;
   --text-color: rgb(210 210 240);
@@ -227,6 +238,11 @@
 }
 #fz-hero-bg .hero-section-button .section-button-one:hover {
   --box-glow-color: #06eed5;
+}
+@media screen and (max-width: 375px) {
+  #fz-hero-bg .hero-section-button .section-button-one {
+    font-size: 13px;
+  }
 }
 #fz-hero-bg .hero-section-button .section-button-two {
   margin-left: 20px;
@@ -259,7 +275,7 @@
   animation-delay: 1s;
   fill: none;
   stroke: #f7c35f;
-  stroke-width: 0.5;
+  stroke-width: 0.7;
 }
 
 /* Keyframes for Animation */

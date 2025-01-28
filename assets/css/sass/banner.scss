@@ -76,18 +76,19 @@
       margin-bottom: 40px;
       line-height: 70px;
       @media screen and (max-width: 1300px) {
-        font-size: 38px;
-        line-height: 40px;
+        font-size: 45px;
+        line-height: 55px;
       }
       @media screen and (max-width: 991px) {
         font-size: 40px;
-        justify-content: center;
-        line-height: 50px;
+        width:380px;
+        margin: 0 auto 20px;
       }
-      @media screen and (max-width: 768px) {
-          line-height: 40px;
+      @media screen and (max-width: 767px) {
           font-size: 1.75rem;
           text-align: center;
+          width:330px;
+          line-height: 40px;
       }
 
       // @media (min-width: 1024px) and (max-width: 1400px) {
@@ -106,7 +107,7 @@
         }
         svg{
           @media screen and (max-width: 1300px) {
-            width: 170px;
+            width: 140px;
             height: auto;
           }
       }

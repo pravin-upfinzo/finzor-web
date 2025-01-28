@@ -68,10 +68,10 @@
                 <h5>Company</h5>
                 <ul>
                     <li>
-                        <a href="#" title="Payouts">About Us</a>
+                        <a href="about-us.html" title="Payouts">About Us</a>
                     </li>
                     <li>
-                        <a href="#" title="Vendor Payments">Contact</a>
+                        <a href="contact-us.html" title="Vendor Payments">Contact</a>
                     </li>
                     <li>
                         <a href="#" title="Payment Links">FAQ</a>

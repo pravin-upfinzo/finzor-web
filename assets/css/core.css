@@ -15,7 +15,7 @@
   padding: 80px 0;
 }
 #fz_core_nexus .fz_core_bg {
-  width: 558px;
+  width: 500px;
   background-color: #1a2c2a;
   border-radius: 16px;
   padding-top: 30px;
@@ -34,6 +34,17 @@
 @keyframes bg-spin {
   to {
     --border-angle: 1turn;
+  }
+}
+@media (min-width: 0px) and (max-width: 1200px) {
+  #fz_core_nexus .fz_core_bg {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #fz_core_nexus .fz_core_bg {
+    width: 90%;
+    margin: 0 auto;
   }
 }
 #fz_core_nexus .fz_core_bg .fz_core_text {
@@ -58,16 +69,22 @@
 }
 @media screen and (max-width: 991px) {
   #fz_core_nexus .fz_core_bg .fz_core_text h3 {
-    font-size: 23px;
+    font-size: 22px;
     padding: 25px 25px 0;
     line-height: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #fz_core_nexus .fz_core_bg .fz_core_text h3 {
+    font-size: 24px;
+    line-height: 34px;
   }
 }
 #fz_core_nexus .fz_core_bg .fz_core_text img {
   position: relative;
   z-index: 1;
 }
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   #fz_core_nexus .fz_core_bg .fz_core_text img {
     width: 100%;
   }
@@ -111,9 +128,9 @@
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 1400px) {
-  #fz_core_nexus .fz_core_bg {
-    width: 100%;
+@media (min-width: 768px) and (max-width: 1199px) {
+  #fz_core_nexus .fz_core_text_right {
+    padding-left: 40px;
   }
 }
 #fz_core_nexus .fz_core_text_right h2 {
@@ -123,11 +140,20 @@
   line-height: 48px;
   margin-bottom: 35px;
 }
+@media screen and (max-width: 1199px) {
+  #fz_core_nexus .fz_core_text_right h2 {
+    font-size: 30px;
+  }
+}
 @media screen and (max-width: 991px) {
   #fz_core_nexus .fz_core_text_right h2 {
-    margin-top: 45px;
     margin-bottom: 20px;
-    font-size: 32px;
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #fz_core_nexus .fz_core_text_right h2 {
+    margin-top: 45px;
   }
 }
 #fz_core_nexus .fz_core_text_right h5 {
@@ -256,6 +282,16 @@
   position: relative;
   left: 0px;
 }
+@media screen and (max-width: 375px) {
+  #fz_core_nexus .fz_core_text_right div .fz_learmore:hover {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #fz_core_nexus .fz_core_text_right div .fz_learmore {
+    font-size: 13px;
+  }
+}
 #fz_core_nexus .fz_core_text_right div .fz_learmore img {
   opacity: 1;
 }
@@ -268,6 +304,11 @@
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore:hover {
   --box-glow-color: #06eed5;
+}
+@media screen and (max-width: 375px) {
+  #fz_core_nexus .fz_core_text_right div .fz_learmore {
+    font-size: 13px;
+  }
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore_btn {
   height: 50px;
@@ -322,6 +363,16 @@
 #fz_core_nexus .fz_core_text_right div .fz_learmore_btn:hover .text {
   position: relative;
   left: 0px;
+}
+@media screen and (max-width: 375px) {
+  #fz_core_nexus .fz_core_text_right div .fz_learmore_btn:hover {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #fz_core_nexus .fz_core_text_right div .fz_learmore_btn {
+    font-size: 13px;
+  }
 }
 
 @keyframes animate {

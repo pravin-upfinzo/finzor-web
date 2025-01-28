@@ -4,8 +4,10 @@
     padding: 20px 0px;
     @media screen and (max-width:767px) {
         padding: 0px 20px;
+        
         .container {
             padding: 0;
+           
         }
     }
     .play_store_container{
@@ -23,7 +25,7 @@
          background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
          background-position: center center;
          animation: bg-spin 8s linear infinite;
-        @media screen and (max-width:992px) {
+        @media screen and (max-width:991px) {
             padding: 60px 0px 0px 0px;
             top: 0px;
         }
@@ -100,9 +102,9 @@
         color: $white;
         color: #889795;
         margin: 0 0px 20px;
-        @media screen and (max-width:991px) {
-            text-align: center;
-        }
+        // @media screen and (max-width:991px) {
+        //     text-align: center;
+        // }
     }
     .play_store_right{
         display: flex;
@@ -133,10 +135,10 @@
     .play_store_left{
         position: relative;
         z-index: 2;
-        padding: 40px 70px 40px;
-        @media screen and (max-width:992px) {
+        padding: 40px 70px 28px;
+        @media screen and (max-width:991px) {
             padding: 0px;
-            text-align: center;
+            // text-align: center;
             br{
                 display: none;
               }

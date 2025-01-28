@@ -1,11 +1,11 @@
 @import './variable.scss';
 .newsletter_section{
     // background-color: $black;
-    text-align: left;
-    padding:0px 0px 0;
+    // text-align: left;
+    // padding:0px 0px 0;
     @media screen and (max-width:991px) {
         padding-bottom: 30px;
-        text-align: center;
+        // text-align: center;
        }
     h3{
         color: $white;
@@ -41,14 +41,14 @@
     // opacity: 0px;
     margin: 25px auto 30px;
     border: none;
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:767px) {
       width: auto;
       margin-top: 40px;
     }
-    @media screen and (min-width: 769px) and (max-width: 991px) {
-        width:60%;
-        margin-top: 40px;
-    }
+    // @media screen and (min-width: 769px) and (max-width: 991px) {
+    //     width:60%;
+    //     margin-top: 40px;
+    // }
     button{
         background-color: $primary-color !important;
         width: 165px;

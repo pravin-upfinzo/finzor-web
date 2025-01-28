@@ -1,12 +1,24 @@
 @import "./variable.scss";
 #fz_core_nexus {
   padding: 80px 0;
+
+ 
+  
+  
   .fz_core_bg {
-    width: 558px;
+    width: 500px;
     background-color: $tertiary-color;
     border-radius: 16px;
     padding-top: 30px;
     @include neon-border;
+    @media (min-width: 0px) and (max-width: 1200px) {
+      width: 100%;
+    }
+    
+    @media screen and (max-width: 767px) {
+      width: 90%;
+      margin: 0 auto;
+    }
     .fz_core_text {
       background-color: $black;
       border-top-left-radius: 32px;
@@ -30,16 +42,20 @@
         padding: 50px 50px 0;
 
         @media screen and (max-width: 991px) {
-          font-size: 23px;
+          font-size: 22px;
           padding: 25px 25px 0;
           line-height: 30px;
+        }
+        @media screen and (max-width: 767px) {
+          font-size: 24px;
+          line-height: 34px;
         }
       }
       img {
         position: relative;
         z-index: 1;
 
-        @media (min-width: 992px) and (max-width: 1200px) {
+        @media (min-width: 992px) and (max-width: 1199px) {
           width: 100%;
         }
 
@@ -83,24 +99,37 @@
         margin: 0 auto;
       }
     }
+    // @media screen and (max-width: 1400px) {
+    //   width: 100%;
+     
+    // }
+    // @media screen and (max-width: 991px) {
+    //   width: 60%;
+    //   margin: 0 auto;
+    // }
 
-    @media screen and (max-width: 1400px) {
-      width: 100%;
-    }
   }
   .fz_core_text_right {
+    @media (min-width: 768px) and (max-width: 1199px) {
+      padding-left: 40px;
+    }
     h2 {
       font-size: 36px;
       color: $white;
       font-weight: 700;
       line-height: 48px;
       margin-bottom: 35px;
-
+      @media screen and (max-width: 1199px) {
+       font-size: 30px;
+     }
       @media screen and (max-width: 991px) {
-        margin-top: 45px;
+        // margin-top: 45px;
         margin-bottom: 20px;
-        font-size: 32px;
+        font-size: 26px;
         // text-align: center;
+      }
+      @media screen and (max-width: 767px) {
+         margin-top: 45px;
       }
     }
     h5 {

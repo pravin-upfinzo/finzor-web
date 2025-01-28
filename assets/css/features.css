@@ -72,6 +72,7 @@
 @media screen and (min-width: 1600px) {
   .panel__stack .panel__card {
     justify-content: center;
+    height: 34rem;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -79,9 +80,12 @@
     grid-area: unset;
     position: unset;
     margin-top: 20px;
-    padding: 1.5rem;
+    background: transparent;
     height: auto !important;
     width: 100%;
+  }
+  .panel__stack .panel__card.active {
+    background: transparent;
   }
 }
 @media screen and (max-width: 1600px) {
@@ -353,22 +357,9 @@
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay:hover {
   transform: perspective(600px) rotateY(5deg);
 }
-@media screen and (min-width: 0px) and (max-width: 419px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
-    width: 100%;
-    padding: 0px 24px;
-  }
-}
-@media screen and (min-width: 420px) and (max-width: 490px) {
-  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
-    width: 100%;
-    padding: 0px 70px;
-  }
-}
-@media screen and (min-width: 490px) and (max-width: 767px) {
-  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
-    width: 100%;
-    padding: 0px 100px;
+    padding: 0px 30px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -377,9 +368,22 @@
     padding: 0px 30px;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media screen and (min-width: 490px) and (max-width: 767px) {
   .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
-    padding: 0px 30px;
+    width: 100%;
+    padding: 0px 100px;
+  }
+}
+@media screen and (min-width: 420px) and (max-width: 490px) {
+  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
+    width: 100%;
+    padding: 0px 70px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 419px) {
+  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
+    width: 100%;
+    padding: 0px 24px;
   }
 }
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .feature-animate-icon svg {
@@ -391,7 +395,7 @@
     height: auto;
   }
 }
-@media screen and (min-width: 991px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .feature-animate-icon svg {
     height: 224px !important;
   }
@@ -416,6 +420,11 @@
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
+@media screen and (min-width: 390px) and (max-width: 420px) {
+  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text {
+    padding: 0 12px;
+  }
+}
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text h3 {
   color: #3eab90;
   font-size: 20px;
@@ -423,12 +432,6 @@
   line-height: 36px;
 }
 @media screen and (max-width: 1199px) {
-  .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text h3 {
-    font-size: 16px;
-    line-height: 18px;
-  }
-}
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
   .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text h3 {
     font-size: 16px;
     line-height: 18px;

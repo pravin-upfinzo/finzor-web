@@ -52,13 +52,13 @@
         border-radius: 16px !important;
 
         
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       line-height: 24px;
       padding: 14px 24px;
       font-size: 16px;
     }
 
-    @media (min-width: 769px) and (max-width: 1200px) {
+    @media (min-width: 768px) and (max-width: 1200px) {
       line-height: 28px;
     }
       }
