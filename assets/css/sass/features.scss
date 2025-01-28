@@ -45,15 +45,18 @@
     }
     @media screen and (min-width: 1600px) {
       justify-content: center;
+      height: 34rem;
     }
     @media screen and (max-width: 1199px) {
       grid-area:unset;
       position: unset;
       margin-top: 20px;
-      padding:1.5rem;
+      background: transparent;
       height: auto !important;
       width: 100%;
-     
+      &.active {
+        background: transparent;
+      }
     }
     @media screen and (max-width: 1600px) {
       height: 34rem;
@@ -301,24 +304,27 @@
                         &:hover {
                           transform: perspective(600px) rotateY(5deg);
                         }
-                        @media screen and (min-width: 0px) and (max-width: 419px) {
-                          width:100%;
-                          padding: 0px 24px;
+                       
+                       
+                        @media screen and (min-width: 992px) and (max-width: 1199px) {
+                          padding: 0px 30px;
                         }
-                        @media screen and (min-width: 420px) and (max-width: 490px) {
-                          width:100%;
-                          padding: 0px 70px;
+                        
+                        @media screen and (min-width: 768px) and (max-width: 991px) {
+                          width: calc(50% - 20px);
+                          padding: 0px 30px;
                         }
                         @media screen and (min-width: 490px) and (max-width: 767px) {
                           width:100%;
                           padding: 0px 100px;
                         }
-                        @media screen and (min-width: 768px) and (max-width: 991px) {
-                          width: calc(50% - 20px);
-                          padding: 0px 30px;
+                        @media screen and (min-width: 420px) and (max-width: 490px) {
+                          width:100%;
+                          padding: 0px 70px;
                         }
-                        @media screen and (min-width: 992px) and (max-width: 1199px) {
-                          padding: 0px 30px;
+                        @media screen and (min-width: 0px) and (max-width: 419px) {
+                          width:100%;
+                          padding: 0px 24px;
                         }
                         .feature-animate-icon svg{
                           width: 100%;
@@ -326,7 +332,7 @@
                           @media screen and (max-width: 767px) {
                             height:auto;
                           }
-                          @media screen and (min-width: 991px) and (max-width: 1200px) {
+                          @media (min-width: 992px) and (max-width: 1199px) {
                           height:224px !important;
                           }
                         }
@@ -346,9 +352,13 @@
                             padding: 0px;
                             border-bottom-left-radius: 8px;
                             border-bottom-right-radius: 8px;
-                            // @media screen and (min-width: 991px) and (max-width: 1400px) {
-                            //   min-height: 236px;
-                            // }
+                            // @media screen and (min-width: 1200px) and (max-width: 1400px) {
+                            //   font-size: 16px;
+                            //   line-height: 18px;
+                            //    }
+                            @media screen and (min-width: 390px) and (max-width: 420px) {
+                              padding:0 12px
+                            }
                             h3 {
                                 color: $primary-color;
                                 font-size: 20px;
@@ -358,10 +368,7 @@
                                  font-size: 16px;
                                  line-height: 18px;
                                 }
-                         @media screen and (min-width: 1200px) and (max-width: 1400px) {
-                          font-size: 16px;
-                          line-height: 18px;
-                           }
+                         
                             }
                             p {
                                 color: $white;

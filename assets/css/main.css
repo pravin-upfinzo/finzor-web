@@ -117,13 +117,7 @@ header {
     background: rgba(3, 0, 20, 0.08);
 }
 
-@media (max-width: 991px) {
-    header {
-        padding: 0px;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1300px) {
+@media (max-width: 1199px) {
     header {
         padding: 0px;
     }
@@ -198,7 +192,7 @@ header .navbar-brand svg path {
     }
 
     header .navbar #offcanvasNavbar {
-        background-color: #000;
+        background-color: #000000;
         width: 100%;
     }
 
@@ -231,6 +225,13 @@ header .navbar-expand-lg .navbar-nav li a.nav-link::after {
     border-bottom: solid 2px #f7c35f;
     transform: scaleX(0);
     transition: transform 500ms ease-in-out;
+}
+
+@media screen and (max-width: 991px) {
+    header .navbar-expand-lg .navbar-nav li a.nav-link::after {
+        border-bottom: none;
+        transform: scale(none);
+    }
 }
 
 header .navbar-expand-lg .navbar-nav li a.nav-link:hover {
@@ -290,12 +291,6 @@ header .fz_sigin ul li a span svg {
 
 header .fz_sigin ul li a span svg path {
     fill: #fff;
-}
-
-@media (min-width: 992px) and (max-width: 1051px) {
-    header .fz_sigin ul li a {
-        font-size: 12px;
-    }
 }
 
 header .fz_sigin ul li:nth-child(2) {
@@ -403,6 +398,12 @@ header .fz_sigin ul .unlock a:hover svg path {
 .buttons:hover .text {
     position: relative;
     left: 0px;
+}
+
+@media screen and (max-width: 375px) {
+    .buttons:hover {
+        font-size: 13px;
+    }
 }
 
 .onboard_btn .buttons {
@@ -525,12 +526,6 @@ header .fz_sigin ul .unlock a:hover svg path {
     transition: opacity 0.5s ease;
 }
 
-@media screen and (max-width: 1200px) {
-    .dropdown {
-        display: none;
-    }
-}
-
 .dropdown:hover .dropdown-content {
     display: block;
     opacity: 1;
@@ -546,11 +541,17 @@ header .fz_sigin ul .unlock a:hover svg path {
     display: block;
 }
 
-.column ul li a {
+.dropdown .column ul li a {
     color: white;
     text-decoration: none;
     justify-content: center;
     font-size: 14px;
+    transition: all 0.5s ease;
+}
+
+.dropdown .column ul li {
+    padding: 25px 15px 10px 15px;
+    line-height: 24px;
     transition: all 0.5s ease;
 }
 
@@ -559,15 +560,20 @@ header .fz_sigin ul .unlock a:hover svg path {
     gap: 40px;
 }
 
-.column ul li a {
+.dropdown .column ul li a {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: left;
+    font-weight: 600;
+    transition: all 0.5s ease;
+    color: #ffffff;
+    font-size: 18px;
 }
 
-.image-text:hover li a {
+.image-text li:hover a,
+.image-text li:hover p {
     cursor: pointer;
-    color: #f7c35f;
+    transition: all 0.5s ease;
+    color: #f7c35f !important;
 }
 
 .image-text {
@@ -697,24 +703,25 @@ header .fz_sigin ul .unlock a:hover svg path {
 
 @media screen and (max-width: 1300px) {
     #fz-hero-bg .text-content h1 {
-        font-size: 38px;
-        line-height: 40px;
+        font-size: 45px;
+        line-height: 55px;
     }
 }
 
 @media screen and (max-width: 991px) {
     #fz-hero-bg .text-content h1 {
         font-size: 40px;
-        justify-content: center;
-        line-height: 50px;
+        width: 380px;
+        margin: 0 auto 20px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     #fz-hero-bg .text-content h1 {
-        line-height: 40px;
         font-size: 1.75rem;
         text-align: center;
+        width: 330px;
+        line-height: 40px;
     }
 }
 
@@ -732,7 +739,7 @@ header .fz_sigin ul .unlock a:hover svg path {
 
 @media screen and (max-width: 1300px) {
     #fz-hero-bg .text-content h1 svg {
-        width: 170px;
+        width: 140px;
         height: auto;
     }
 }
@@ -835,6 +842,14 @@ header .fz_sigin ul .unlock a:hover svg path {
     left: 0px;
 }
 
+@media screen and (max-width: 375px) {
+
+    #fz-hero-bg .hero-section-button .section-button-one:hover,
+    #fz-hero-bg .hero-section-button .section-button-two:hover {
+        font-size: 13px;
+    }
+}
+
 #fz-hero-bg .hero-section-button .section-button-one {
     padding: 0px 20px 0 25px;
     --text-color: rgb(210 210 240);
@@ -866,6 +881,12 @@ header .fz_sigin ul .unlock a:hover svg path {
 
 #fz-hero-bg .hero-section-button .section-button-one:hover {
     --box-glow-color: #06eed5;
+}
+
+@media screen and (max-width: 375px) {
+    #fz-hero-bg .hero-section-button .section-button-one {
+        font-size: 13px;
+    }
 }
 
 #fz-hero-bg .hero-section-button .section-button-two {
@@ -933,7 +954,7 @@ header .fz_sigin ul .unlock a:hover svg path {
 }
 
 #fz_core_nexus .fz_core_bg {
-    width: 558px;
+    width: 500px;
     background-color: #1a2c2a;
     border-radius: 16px;
     padding-top: 30px;
@@ -951,6 +972,19 @@ header .fz_sigin ul .unlock a:hover svg path {
 @keyframes bg-spin {
     to {
         --border-angle: 1turn;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 1200px) {
+    #fz_core_nexus .fz_core_bg {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #fz_core_nexus .fz_core_bg {
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
@@ -979,9 +1013,16 @@ header .fz_sigin ul .unlock a:hover svg path {
 
 @media screen and (max-width: 991px) {
     #fz_core_nexus .fz_core_bg .fz_core_text h3 {
-        font-size: 23px;
+        font-size: 22px;
         padding: 25px 25px 0;
         line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #fz_core_nexus .fz_core_bg .fz_core_text h3 {
+        font-size: 24px;
+        line-height: 34px;
     }
 }
 
@@ -990,7 +1031,7 @@ header .fz_sigin ul .unlock a:hover svg path {
     z-index: 1;
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     #fz_core_nexus .fz_core_bg .fz_core_text img {
         width: 100%;
     }
@@ -1042,9 +1083,9 @@ header .fz_sigin ul .unlock a:hover svg path {
     }
 }
 
-@media screen and (max-width: 1400px) {
-    #fz_core_nexus .fz_core_bg {
-        width: 100%;
+@media (min-width: 768px) and (max-width: 1199px) {
+    #fz_core_nexus .fz_core_text_right {
+        padding-left: 40px;
     }
 }
 
@@ -1056,11 +1097,22 @@ header .fz_sigin ul .unlock a:hover svg path {
     margin-bottom: 35px;
 }
 
+@media screen and (max-width: 1199px) {
+    #fz_core_nexus .fz_core_text_right h2 {
+        font-size: 30px;
+    }
+}
+
 @media screen and (max-width: 991px) {
     #fz_core_nexus .fz_core_text_right h2 {
-        margin-top: 45px;
         margin-bottom: 20px;
-        font-size: 32px;
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #fz_core_nexus .fz_core_text_right h2 {
+        margin-top: 45px;
     }
 }
 
@@ -1207,6 +1259,12 @@ header .fz_sigin ul .unlock a:hover svg path {
     left: 0px;
 }
 
+@media screen and (max-width: 375px) {
+    #fz_core_nexus .fz_core_text_right div .fz_learmore:hover {
+        font-size: 13px;
+    }
+}
+
 #fz_core_nexus .fz_core_text_right div .fz_learmore img {
     opacity: 1;
 }
@@ -1222,6 +1280,12 @@ header .fz_sigin ul .unlock a:hover svg path {
 
 #fz_core_nexus .fz_core_text_right div .fz_learmore:hover {
     --box-glow-color: #06eed5;
+}
+
+@media screen and (max-width: 375px) {
+    #fz_core_nexus .fz_core_text_right div .fz_learmore {
+        font-size: 13px;
+    }
 }
 
 #fz_core_nexus .fz_core_text_right div .fz_learmore_btn {
@@ -1286,6 +1350,12 @@ header .fz_sigin ul .unlock a:hover svg path {
     left: 0px;
 }
 
+@media screen and (max-width: 375px) {
+    #fz_core_nexus .fz_core_text_right div .fz_learmore_btn:hover {
+        font-size: 13px;
+    }
+}
+
 @keyframes animate {
     0% {
         transform: scale(0) translateY(-80px);
@@ -1332,7 +1402,7 @@ header .fz_sigin ul .unlock a:hover svg path {
     z-index: -1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .features_posibilityies {
         height: auto;
         /* Allow content to adjust height based on content */
@@ -1349,14 +1419,6 @@ header .fz_sigin ul .unlock a:hover svg path {
     justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
-    .features_posibilityies .container {
-        width: 100%;
-        flex-direction: column;
-        /* Stack content vertically */
-    }
-}
-
 .features_posibilityies .container .texts {
     height: 100vh;
     width: 100%;
@@ -1368,22 +1430,20 @@ header .fz_sigin ul .unlock a:hover svg path {
     top: 125px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .features_posibilityies .container .texts {
-        height: auto;
+        height: 80vh;
         /* Allow for dynamic height */
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .features_posibilityies .container .texts img {
-        width: 100%;
-        height: auto;
-        /* Maintain aspect ratio */
+        display: none;
     }
 }
 
-@media (min-width: 769px) and (max-width: 1400px) {
+@media (min-width: 768px) and (max-width: 1400px) {
     .features_posibilityies .container .texts img {
         height: 1100px;
     }
@@ -1400,7 +1460,7 @@ header .fz_sigin ul .unlock a:hover svg path {
     justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .features_posibilityies .container .inner-text {
         flex-direction: column;
         /* Stack content */
@@ -1410,7 +1470,7 @@ header .fz_sigin ul .unlock a:hover svg path {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .features_posibilityies .container .inner-text .left img,
     .features_posibilityies .container .inner-text .right img {
@@ -1419,7 +1479,7 @@ header .fz_sigin ul .unlock a:hover svg path {
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
 
     .features_posibilityies .container .inner-text .left img,
     .features_posibilityies .container .inner-text .right img {
@@ -1440,7 +1500,7 @@ header .fz_sigin ul .unlock a:hover svg path {
     position: relative;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .features_posibilityies .container .inner-text .left.left,
     .features_posibilityies .container .inner-text .right.left {
@@ -1459,7 +1519,7 @@ header .fz_sigin ul .unlock a:hover svg path {
     position: relative;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .features_posibilityies .container .inner-text .left.right,
     .features_posibilityies .container .inner-text .right.right {
@@ -1479,7 +1539,7 @@ header .fz_sigin ul .unlock a:hover svg path {
     opacity: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .features_posibilityies .container .dd {
         position: static;
         /* Adjust positioning for mobile */
@@ -1509,13 +1569,13 @@ header .fz_sigin ul .unlock a:hover svg path {
     color: #4dd0b1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .features_posibilityies .container h3 p {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .features_posibilityies .container h3 {
         font-size: 40px;
         padding: 10px;
@@ -1536,21 +1596,21 @@ header .fz_sigin ul .unlock a:hover svg path {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
     .features_posibilityies .hash_content {
         left: 295px;
     }
 }
 
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .features_posibilityies .hash_content {
         left: 247px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .features_posibilityies .hash_content {
-        left: 0px;
+        display: none;
     }
 }
 
@@ -1561,7 +1621,7 @@ header .fz_sigin ul .unlock a:hover svg path {
     height: 90px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
     .hash_content {
         width: 30px;
         height: 60px;
@@ -1572,7 +1632,7 @@ header .fz_sigin ul .unlock a:hover svg path {
     font-size: 45px !important;
 }
 
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .features_posibilityies .hash_bar {
         font-size: 30px !important;
     }
@@ -1652,6 +1712,7 @@ header .fz_sigin ul .unlock a:hover svg path {
 @media screen and (min-width: 1600px) {
     .panel__stack .panel__card {
         justify-content: center;
+        height: 34rem;
     }
 }
 
@@ -1660,9 +1721,13 @@ header .fz_sigin ul .unlock a:hover svg path {
         grid-area: unset;
         position: unset;
         margin-top: 20px;
-        padding: 1.5rem;
+        background: transparent;
         height: auto !important;
         width: 100%;
+    }
+
+    .panel__stack .panel__card.active {
+        background: transparent;
     }
 }
 
@@ -1955,24 +2020,9 @@ header .fz_sigin ul .unlock a:hover svg path {
     transform: perspective(600px) rotateY(5deg);
 }
 
-@media screen and (min-width: 0px) and (max-width: 419px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
     .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
-        width: 100%;
-        padding: 0px 24px;
-    }
-}
-
-@media screen and (min-width: 420px) and (max-width: 490px) {
-    .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
-        width: 100%;
-        padding: 0px 70px;
-    }
-}
-
-@media screen and (min-width: 490px) and (max-width: 767px) {
-    .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
-        width: 100%;
-        padding: 0px 100px;
+        padding: 0px 30px;
     }
 }
 
@@ -1983,9 +2033,24 @@ header .fz_sigin ul .unlock a:hover svg path {
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media screen and (min-width: 490px) and (max-width: 767px) {
     .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
-        padding: 0px 30px;
+        width: 100%;
+        padding: 0px 100px;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 490px) {
+    .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
+        width: 100%;
+        padding: 0px 70px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 419px) {
+    .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay {
+        width: 100%;
+        padding: 0px 24px;
     }
 }
 
@@ -2000,7 +2065,7 @@ header .fz_sigin ul .unlock a:hover svg path {
     }
 }
 
-@media screen and (min-width: 991px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .feature-animate-icon svg {
         height: 224px !important;
     }
@@ -2030,6 +2095,12 @@ header .fz_sigin ul .unlock a:hover svg path {
     border-bottom-right-radius: 8px;
 }
 
+@media screen and (min-width: 390px) and (max-width: 420px) {
+    .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text {
+        padding: 0 12px;
+    }
+}
+
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text h3 {
     color: #3eab90;
     font-size: 20px;
@@ -2038,13 +2109,6 @@ header .fz_sigin ul .unlock a:hover svg path {
 }
 
 @media screen and (max-width: 1199px) {
-    .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text h3 {
-        font-size: 16px;
-        line-height: 18px;
-    }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
     .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text h3 {
         font-size: 16px;
         line-height: 18px;
@@ -2131,8 +2195,13 @@ header .fz_sigin ul .unlock a:hover svg path {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 178px;
     gap: 24px;
+}
+
+@media only screen and (max-width: 991px) {
+    .fz_product_sec .container .fz_product_left {
+        padding: 0 10px;
+    }
 }
 
 .fz_product_sec .container .fz_product_left .fz_sub_container {
@@ -2140,11 +2209,10 @@ header .fz_sigin ul .unlock a:hover svg path {
     height: 100vh;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
     .fz_product_sec .container .fz_product_left .fz_sub_container {
         height: auto;
         flex-direction: column;
-        gap: 24px;
     }
 }
 
@@ -2153,13 +2221,13 @@ header .fz_sigin ul .unlock a:hover svg path {
     width: 620px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1199px) {
     .fz_product_sec .container .fz_product_left .fz_sub_container .fz_content {
         width: 400px;
     }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
     .fz_product_sec .container .fz_product_left .fz_sub_container .fz_content {
         width: 100%;
     }
@@ -2181,7 +2249,7 @@ header .fz_sigin ul .unlock a:hover svg path {
     text-stroke: 1px #1ca999;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1199px) {
     .fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .fz_num h2 {
         font-size: 30px;
         padding-top: 5px;
@@ -2206,7 +2274,7 @@ header .fz_sigin ul .unlock a:hover svg path {
     margin: 0;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
     .fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .fz_title_content h3 {
         font-size: 80px;
     }
@@ -2235,7 +2303,7 @@ header .fz_sigin ul .unlock a:hover svg path {
     margin-bottom: 0px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
     .fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .fz_subtitle {
         line-height: 40px;
     }
@@ -2263,9 +2331,16 @@ header .fz_sigin ul .unlock a:hover svg path {
     display: none;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     .fz_product_sec .container .fz_product_left .fz_img {
         display: block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .fz_product_sec .container .fz_product_left .fz_img {
+        width: 75%;
+        margin: 0 auto;
     }
 }
 
@@ -2275,15 +2350,15 @@ header .fz_sigin ul .unlock a:hover svg path {
     padding-top: 178px !important;
 }
 
-@media screen and (max-height: 768px) {
+@media screen and (max-width: 991px) {
     .fz_product_sec .container .fz_product_right {
-        padding-top: 110px !important;
+        display: none;
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-height: 767px) {
     .fz_product_sec .container .fz_product_right {
-        display: none;
+        padding-top: 110px !important;
     }
 }
 
@@ -2291,6 +2366,12 @@ header .fz_sigin ul .unlock a:hover svg path {
     width: 525px;
     height: 525px;
     position: relative;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .fz_product_sec .container .fz_product_right .fz_product_images {
+        margin-left: 40px;
+    }
 }
 
 .fz_product_sec .container .fz_product_right .fz_product_images .fz_product_image {
@@ -2305,14 +2386,20 @@ header .fz_sigin ul .unlock a:hover svg path {
     height: 100%;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+    .fz_product_sec .container .fz_product_right .fz_product_images .fz_product_image svg {
+        width: auto !important;
+    }
+}
+
 @media (min-width: 992px) and (max-width: 1400px) {
     .fz_product_sec .container .fz_product_right .fz_product_images .fz_product_image .finbankz-product svg {
-        width: 80% !important;
+        width: 70% !important;
         margin-left: 30px;
     }
 
     .fz_product_sec .container .fz_product_right .fz_product_images .fz_product_image .finlyticz-product svg {
-        width: 80% !important;
+        width: 75% !important;
         margin-left: 40px;
     }
 }
@@ -2346,9 +2433,9 @@ div.product-icon {
     padding: 60px 0px 100px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
     .developer_section {
-        padding: 40px 0px;
+        padding: 40px 0px 0;
     }
 }
 
@@ -2687,7 +2774,6 @@ div#api-dev {
         margin-bottom: 30px;
         line-height: 22px;
         font-size: 14px;
-        align-items: start;
     }
 }
 
@@ -2708,14 +2794,7 @@ div#api-dev {
     margin-left: 70px;
 }
 
-@media (min-width: 992px) and (max-width: 1400px) {
-    #fz_mobile_section .fz_mobile_text_left .fz_btn {
-        margin-left: 0;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1400px) {
     #fz_mobile_section .fz_mobile_text_left .fz_btn {
         margin-left: 0;
         justify-content: center;
@@ -2796,6 +2875,12 @@ div#api-dev {
     left: 0px;
 }
 
+@media screen and (max-width: 375px) {
+    #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore:hover {
+        font-size: 13px;
+    }
+}
+
 #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore img {
     opacity: 1;
 }
@@ -2811,6 +2896,12 @@ div#api-dev {
 
 #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore:hover {
     --box-glow-color: #06eed5;
+}
+
+@media screen and (max-width: 375px) {
+    #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore {
+        font-size: 13px;
+    }
 }
 
 #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore_btn {
@@ -2873,6 +2964,12 @@ div#api-dev {
 #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore_btn:hover .text {
     position: relative;
     left: 0px;
+}
+
+@media screen and (max-width: 375px) {
+    #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore_btn:hover {
+        font-size: 13px;
+    }
 }
 
 @keyframes moveAnimation {
@@ -3173,12 +3270,6 @@ div#api-dev {
     line-height: 26px;
 }
 
-@media screen and (max-width: 991px) {
-    .fz-blog .blog-carousel p {
-        line-height: 25px;
-    }
-}
-
 .fz-blog .owl-item {
     transform: scale(0.9);
     transition: all 0.7s ease-in;
@@ -3227,12 +3318,6 @@ div#api-dev {
     transition: all 1s ease-out;
 }
 
-@media screen and (max-width: 991px) {
-    .fz-blog .item img {
-        height: 100%;
-    }
-}
-
 .fz-blog .item .card-body {
     padding: 10px 20px;
     width: 100%;
@@ -3277,7 +3362,6 @@ div#api-dev {
     .fz-blog .item .card-body h5 {
         font-size: 16px;
         padding-bottom: 7px;
-        line-height: 22px;
     }
 }
 
@@ -3287,6 +3371,7 @@ div#api-dev {
     font-weight: 300;
     margin-bottom: 2rem;
     max-height: 46px;
+    color: #ffffff;
     overflow: hidden;
     transition: all 1s ease;
 }
@@ -3559,7 +3644,7 @@ div#api-dev {
     border-radius: 16px !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .faq_section .accordion-item .accordion-header .accordion-button {
         line-height: 24px;
         padding: 14px 24px;
@@ -3567,7 +3652,7 @@ div#api-dev {
     }
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1200px) {
     .faq_section .accordion-item .accordion-header .accordion-button {
         line-height: 28px;
     }
@@ -3698,15 +3783,9 @@ div#faq-animate svg {
     initial-value: 0turn;
 }
 
-.newsletter_section {
-    text-align: left;
-    padding: 0px 0px 0;
-}
-
 @media screen and (max-width: 991px) {
     .newsletter_section {
         padding-bottom: 30px;
-        text-align: center;
     }
 }
 
@@ -3750,16 +3829,9 @@ div#faq-animate svg {
     border: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .newsletter_section .input-group {
         width: auto;
-        margin-top: 40px;
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width: 991px) {
-    .newsletter_section .input-group {
-        width: 60%;
         margin-top: 40px;
     }
 }
@@ -3840,7 +3912,7 @@ div#faq-animate svg {
     animation: bg-spin 8s linear infinite;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     .play_store_section .play_store_container {
         padding: 60px 0px 0px 0px;
         top: 0px;
@@ -3935,12 +4007,6 @@ div#faq-animate svg {
     margin: 0 0px 20px;
 }
 
-@media screen and (max-width: 991px) {
-    .play_store_section p {
-        text-align: center;
-    }
-}
-
 .play_store_section .play_store_right {
     display: flex;
     border-bottom-right-radius: 40px;
@@ -3980,13 +4046,12 @@ div#faq-animate svg {
 .play_store_section .play_store_left {
     position: relative;
     z-index: 2;
-    padding: 40px 70px 40px;
+    padding: 40px 70px 28px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     .play_store_section .play_store_left {
         padding: 0px;
-        text-align: center;
     }
 
     .play_store_section .play_store_left br {
@@ -4306,7 +4371,7 @@ div#faq-animate svg {
     height: 50px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     .footer_section .col-lg-4 .footer_logo {
         margin: 0 auto;
     }
@@ -4551,4 +4616,10 @@ div#faq-animate svg {
 .chat-bot img {
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 0 15px;
+    }
 }

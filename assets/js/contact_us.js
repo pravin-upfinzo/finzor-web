@@ -74,4 +74,14 @@ $(document).ready(function () {
         event.preventDefault();
       }
     });
+
+    document.querySelectorAll('#contact-us').forEach((container) => {
+      lottie.loadAnimation({
+        container: container, // HTML container for the animation
+        renderer: 'svg',      // Render as SVG
+        loop: true,           // Animation will loop continuously
+        autoplay: true,       // Animation will play automatically
+        path: './assets/json/contact-us.json' // Path to the Lottie JSON file
+      });
+    });
   });

@@ -34,15 +34,10 @@ header {
   backdrop-filter: blur(16px);
   background: rgba(3, 0, 20, .08);
 
-  @media (max-width: 991px) {
+  @media (max-width: 1199px) {
       padding:0px;
   }
   
-
-  @media (min-width: 992px) and (max-width: 1300px) {
-      
-  padding:0px;
-}
 .navbar-brand svg path {
   fill: #22feb3;
 }
@@ -111,7 +106,7 @@ header {
         }
       }
       #offcanvasNavbar {
-        background-color: #000;
+        background-color: $black;
         width: 100%;
         .offcanvas-header {
           border-bottom: 1px solid #ddd;
@@ -148,6 +143,10 @@ header {
             border-bottom: solid 2px $secondary-color;
             transform: scaleX(0);
             transition: transform 500ms ease-in-out;
+            @media screen and (max-width: 991px) {
+              border-bottom: none;
+              transform: scale(none);
+         }
           }
           &:hover {
             color: $secondary-color;
@@ -208,12 +207,7 @@ header {
           font-size: 14px;
           display: inline-flex;
           text-decoration: none;
-          @media (min-width: 992px) and (max-width: 1051px) {
-            font-size: 12px;
-          }
-          // @media (min-width: 992px) and (max-width: 1300px) {
-          //   font-size: 14px;
-          // }
+          
         }
 
         &:nth-child(2) {
@@ -505,12 +499,12 @@ header {
   // background: rgba(3, 0, 20, .08);
 }
 
-@media screen and (max-width: 1200px) {
-  .dropdown{
-    display: none;
-  }
+// @media screen and (max-width: 1200px) {
+//   .dropdown{
+//     display: none;
+//   }
  
-}
+// }
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -527,7 +521,7 @@ header {
   display: block;
 }
 
-.column ul li a{
+.dropdown .column ul li a{
   // margin-bottom:45px;
   color: white;
   text-decoration: none;
@@ -535,22 +529,33 @@ header {
   font-size: 14px;
   transition: all 0.5s ease;
 }
+.dropdown .column ul li{
+  padding: 25px 15px 10px 15px;
+  line-height: 24px;
+  transition: all 0.5s ease;
+}
 .content-box{
   display: flex;
   gap:40px;
 }
-.column ul li a{
+.dropdown .column ul li a{
   // padding:20px 0;
      display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: left;
+    font-weight: 600;
+    transition: all 0.5s ease;
+    color: $white;
+    font-size: 18px;
 }
-.image-text:hover li a {
+.image-text  li:hover a, .image-text  li:hover p{
   cursor: pointer;
-  color: $secondary-color;
-
+  transition: all 0.5s ease;
+  color: $secondary-color !important;
 }
-
+// .image-text:hover li a{
+//   color:$secondary-color;
+//   cursor: pointer;
+// }
 .image-text{
   display: flex;
   padding: 20px;
@@ -570,4 +575,5 @@ header {
   background:$secondary-color;
   border: 1px solid $secondary-color;
 }
+
 

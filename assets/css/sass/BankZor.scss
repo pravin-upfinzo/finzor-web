@@ -42,7 +42,6 @@
         margin-bottom: 30px;
         line-height: 22px;
         font-size: 14px;
-        align-items: start;
       }
       span {
         background-color: $ternary-color;
@@ -60,12 +59,7 @@
       display: flex;
       margin-left: 70px;
 
-      @media (min-width: 992px) and (max-width: 1400px) {
-        margin-left: 0;
-        justify-content: center;
-      }
-
-      @media screen and (max-width: 991px) {
+      @media screen and (max-width: 1400px) {
         margin-left: 0;
         justify-content: center;
       }

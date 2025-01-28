@@ -11,14 +11,9 @@
   inherits: true;
   initial-value: 0turn;
 }
-.newsletter_section {
-  text-align: left;
-  padding: 0px 0px 0;
-}
 @media screen and (max-width: 991px) {
   .newsletter_section {
     padding-bottom: 30px;
-    text-align: center;
   }
 }
 .newsletter_section h3 {
@@ -56,15 +51,9 @@
   margin: 25px auto 30px;
   border: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .newsletter_section .input-group {
     width: auto;
-    margin-top: 40px;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 991px) {
-  .newsletter_section .input-group {
-    width: 60%;
     margin-top: 40px;
   }
 }

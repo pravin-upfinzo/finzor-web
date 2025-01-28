@@ -15,9 +15,9 @@
   background-color: #000000;
   padding: 60px 0px 100px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .developer_section {
-    padding: 40px 0px;
+    padding: 40px 0px 0;
   }
 }
 .developer_section .dev_api_images {
