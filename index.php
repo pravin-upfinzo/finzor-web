@@ -5,20 +5,20 @@ $meta_lines = '<meta name="description" content="Finzor Core Banking Services re
 
 // to include page specific CSS
 $pageStyles = '<style></style>';
-// $pageStyles .= '<link rel="stylesheet" href="/assets/css/about.css">';
-// $pageStyles .= '<link rel="stylesheet" href="/assets/css/extra.css">';
+// $pageStyles .= '<link rel="stylesheet" href="./assets/css/about.css">';
+// $pageStyles .= '<link rel="stylesheet" href="./assets/css/extra.css">';
 
 // to include page specific JS
 $pageScripts = '<script></script>';
-// $pageScripts .= '<script src="/assets/js/about.js"></script>';
-// $pageScripts .= '<script src="/assets/js/extra.js"></script>';
+// $pageScripts .= '<script src="./assets/js/about.js"></script>';
+// $pageScripts .= '<script src="./assets/js/extra.js"></script>';
 
 include_once('partials/header.php'); //should be last after all variables
 ?>
 
 <section id="fz-hero-bg">
     <canvas></canvas>
-    <img src="assets/images/signal-1.gif" class="hero" />
+    <img src="./assets/images/signal-1.gif" class="hero" />
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
@@ -79,21 +79,21 @@ include_once('partials/header.php'); //should be last after all variables
 <section id="fz_core_nexus">
     <div class="container">
         <div class="row align-items-lg-center">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-5">
                 <div class="fz_core_bg">
                     <div class="fz_core_text">
                         <h3>Discover the key to your fintech Future </h3>
                         <img src="assets/images/core-nexus.svg" alt="corenexus" />
                         <div class="fz_box">
-                            <div><img src="/assets/images/intro_icon2.svg" alt="introIcon" /></div>
-                            <div><img src="/assets/images/intro_icon1.svg" alt="introIcon" /></div>
-                            <div><img src="/assets/images/intro_icon3.svg" alt="introIcon" /></div>
-                            <div><img src="/assets/images/intro_icon4.svg" alt="introIcon" /></div>
+                            <div><img src="assets/images/intro_icon2.svg" alt="introIcon" /></div>
+                            <div><img src="assets/images/intro_icon1.svg" alt="introIcon" /></div>
+                            <div><img src="assets/images/intro_icon3.svg" alt="introIcon" /></div>
+                            <div><img src="assets/images/intro_icon4.svg" alt="introIcon" /></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 fz_core_text_right">
+            <div class="col-lg-6 col-md-7 fz_core_text_right">
                 <h2>Driving Financial Efficiency</h2>
                 <p><span class="circle-ripple"><img src="assets/images/finance-icon.svg" alt="finacne" /></span>At Finzor, we strive to be a digital leader in Core Banking Solutions, delivering security and efficiency through multi-factor authentication, encryption, automated workflows, and seamless third-party integration with our plug-in modules. Our innovative solutions simplify financial management with real-time communication and enhanced functionality</p>
                 <div>
@@ -161,7 +161,7 @@ include_once('partials/header.php'); //should be last after all variables
                             <h2>01</h2>
                         </div>
                         <div class="fz_title_content">
-                            <div class="fz_subtitle">Core Banking Solution</div>
+                            <div class="fz_subtitle">Banking Core and Digital Platform</div>
                             <h3>
                                 <img src="./assets/images/bank.gif" alt="cbs" style="width: 40px; height: 40px;
                                 margin-right: 10px;" />
@@ -231,7 +231,7 @@ include_once('partials/header.php'); //should be last after all variables
                             <div class="fz_subtitle">End to End Operational Suite</div>
                             <h3>
                                 <div id="finops360-icon" class="product-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-                                <div class="fz_title">FinOps360<sup>°</sup></div>
+                                <div class="fz_title">FinOpZ 360<sup>°</sup></div>
                             </h3>
                         </div>
                         <div class="fz_bank">Streamlining and Optimizing Processes to Enhance Efficiency and Accuracy</div>

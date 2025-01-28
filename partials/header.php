@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?php echo (isset($page_title) && $page_title != '') ? $page_title : 'Finzor - The Zor of Fintech Innovations'; ?></title>
-    <?php echo isset($meta_lines) ?? ''; ?>
+    <?php echo isset($meta_lines) ? $meta_lines . "\n" : ''; ?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="assets/images/finzor-fav.png">
+    <link rel="icon" href="assets/images/finzor-fav.png" type="image/png">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -136,7 +136,8 @@
                                                     </div>
 
                                                     <div class="text">
-                                                        <li><a href="">Core Banking System</a>
+                                                        <li><a href="coreBankingSolution.html">FinbankZ</a>
+                                                            <p>Banking Core and Digital Platform</p>
                                                         </li>
                                                     </div>
                                                 </div>
@@ -151,7 +152,8 @@
                                                         </svg>
                                                     </div>
                                                     <div class="text">
-                                                        <li><a href="">Merchant Onboarding</a>
+                                                        <li><a href="">UPIZor</a>
+                                                            <p>Payment Solutions</p>
                                                         </li>
                                                     </div>
                                                 </div>
@@ -169,7 +171,8 @@
                                                         </svg>
                                                     </div>
                                                     <div class="text">
-                                                        <li><a href="">Payment Gateway</a>
+                                                        <li><a href="">FinzOpZ 360</a>
+                                                            <p>End to End Operational Suite</p>
 
                                                         </li>
                                                     </div>
@@ -195,7 +198,8 @@
                                                     </div>
 
                                                     <div class="text">
-                                                        <li><a href="">UPI & UPI Switch</a>
+                                                        <li><a href="">FinZro</a>
+                                                            <p>Merchant Solution</p>
 
                                                         </li>
                                                     </div>
@@ -211,7 +215,8 @@
                                                         </svg>
                                                     </div>
                                                     <div class="text">
-                                                        <li><a href="">Data Analytics</a>
+                                                        <li><a href="">FinlyticZ</a>
+                                                            <p>Data & Analytics </p>
 
                                                         </li>
                                                     </div>
