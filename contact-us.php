@@ -12,7 +12,7 @@ $pageStyles .= '<style></style>' . "\n";
 
 $pageScripts = '<script src="./assets/js/contact_us.js"></script>' . "\n";
 $pageScripts .= '<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>' . "\n";
-$pageScripts = '<script></script>' . "\n";
+$pageScripts .= '<script></script>' . "\n";
 
 include_once('partials/header.php'); //should be last after all variables
 ?>
@@ -30,7 +30,7 @@ include_once('partials/header.php'); //should be last after all variables
                     <model-viewer class="model" alt="laptop" src="https://raw.githubusercontent.com/Smit-Prajapati/prajapatismit/b5f434ae4d45d10fe1664d5606ad28e4d9c739af/images/laptop.glb" shadow-intensity="1"  camera-controls touch-action="pan-y"  environment-image="https://raw.githubusercontent.com/Smit-Prajapati/prajapatismit/b5f434ae4d45d10fe1664d5606ad28e4d9c739af/images/dancing_hall_2k.hdr" exposure="1.5"   disable-zoom disable-tap  camera-orbit="-45deg 60deg 9m" autoplay ></model-viewer> -->
                 <div id="contact-us" class="visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
             </div>
-            <form id="form" class="form-wrapper">
+            <form method="POST" id="form" class="form-wrapper">
                 <div class="contact-wrapper form_group">
                     <label for="name" class="field-label">Name</label>
                     <input class="text-field-3" maxlength="256" name="name" data-name="Name" placeholder="Enter Your Name" type="text" id="Name" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)">
