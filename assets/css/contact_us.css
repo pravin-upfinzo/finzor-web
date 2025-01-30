@@ -187,11 +187,6 @@
     font-size: 13px;
   }
 }
-@media screen and (max-width: 375px) {
-  #contact_us .contact_sub_cont .form-wrapper .fz_submit {
-    font-size: 13px;
-  }
-}
 #contact_us .contact_sub_cont .error {
   color: #ED5B43;
   font-size: 12px;

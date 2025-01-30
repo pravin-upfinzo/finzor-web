@@ -11,134 +11,51 @@ body {
   }
 
   @import "./variable.scss";
-// Product Hero
-  #fz_product_list_hero_sec {
+
+// Product Hero section
+#fz_product_list_hero_sec {
     position: relative;
     background: linear-gradient(90deg, #00838316 0%, #00838316 100%);
-        img{
-          position: absolute;
-          top: 50%;
-          right: 0;
-          opacity: 0.8;
-          transform: translate(0, -50%);
+    padding-bottom: 96px;
+    canvas {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        height: 100%;
+    }
+    .product_list_hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        .product_list_hero_title {
+            font-size: 64px;
+            font-weight: 600;
+            line-height: 96px;
+            letter-spacing: 1px;
+            text-align: center;
+            color: #F6FCDF;
+            padding: 196px 176px 52px;
+            span {
+                color: #00B2B1;
+            }
         }
-        canvas {
-          position: absolute;
-          width: 100%;
-          display: flex;
-          height: 100%;
-      }
-      .fz_product_list_hero {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          height: 100vh;
-          @media only screen and (max-width: 992px) {
-            height: auto;
-            flex-direction: column;
-            gap: 24px;
-          }
-          .product_list_hero_content {
-            position: relative;
-            width: 620px;
-  
-            @media only screen and (max-width: 1200px) {
-              width: 400px;
-            }
-            @media only screen and (max-width: 992px) {
-              width: 100%;
-            }
-            .product_list_hero_title {
-              font-size: 14px;
-              font-weight: 400;
-              line-height: 26px;
-              color: $white;
-              border-radius: 24px;
-              background: #00B2B114;
-              display: inline-flex;
-              align-items: center;
-              justify-content: center;
-              gap: 8px;
-              padding: 8px 16px;
-              margin-bottom: 16px;
-              --border-angle: 0turn;
-              --main-bg: conic-gradient(from var(--border-angle), #002d2c 0%, #002d2c 100%);
-              border: solid 1px transparent;
-              --gradient-border: conic-gradient(from var(--border-angle), rgba(2, 237, 104, 0) 7.95474deg, rgb(34 254 179) 77.822552deg, rgba(10, 10, 10, 0) 182.574207deg, rgba(10, 10, 10, 0) 204.015297deg, rgb(34 254 179) 258.393755deg, rgba(0, 157, 255, 0) 354.246679deg);
-              background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
-              background-position: center center;
-              animation: bg-spin 5s linear infinite;
-              @keyframes bg-spin {
-                to {
-                --border-angle: 1turn;
-                }
-            }
-              @media screen and (max-width: 1200px) {
-                line-height: 40px;
-              }
-            }
-  
-            .product_list_hero_subtitle {
-              font-size: 48px;
-              font-weight: 600;
-              color: #00B2B1CC;
-              padding-bottom: 2px;
-            }
-  
-            .product_list_hero_desc {
-              font-size: 20px;
-              font-weight: 400;
-              color: #ffffff;
-              padding-bottom: 24px;
-              line-height: 28px;
-              letter-spacing: 0.25px;
-              margin: 0;
-            }
-  
-            &::before {
-              content: "";
-              position: absolute;
-              top: 32%;
-              left: 14%;
-              transform: translate(32%, 14%);
-              width: 213px;
-              height: 213px;
-              background: #2D4949E5;
-              filter: blur(84px);
-              transform: translate3d(0, 0, 0);
-              z-index: -1;
-              pointer-events: none;
-            }
-            button {
-              @include cmn-btn;
-              width: 160px !important;
-              --w: 173px !important;
-            }
-          }
-          .product_list_hero_img {
-            position: relative;
-            .finbankz-product {
-                width: 625px;
-                height: 625px;
-                &::before {
-                content: "";
-                position: absolute;
-                top: 26%;
-                left: 18%;
-                transform: translate(26%, 18%);
-                width: 350px;
-                height: 350px;
-                height: 350px;
-                background: #2D4949E5;
-                filter: blur(84px);
-                transform: translate3d(0, 0, 0);
-                z-index: -1;
-                pointer-events: none;
-                }
-            }
-          }
+        .buttons {
+            @include cmn-btn;
+            width: 150px !important;
+            --w: 164px !important;
         }
-  }
+    }
+}
+
+// Banner section
+#fz_product_list_banner_sec {
+    background: linear-gradient(90deg, #00838316 0%, #00838316 100%);
+    .fz_product_list_banner_img {
+        width: 100%;
+        height: 100%;
+    }
+}
 
 // Feature Card
   #fz_product_list_feature {
@@ -153,6 +70,7 @@ body {
             text-align: center;
             text-shadow: 0 0 5px rgba(0, 255, 203, 0.52),
                 0 0 10px rgba(0, 255, 211, 0.51);
+            // text-shadow: 0 0 0px rgb(193 251 234), 0 0 4px rgba(0, 255, 211, 0.51);
             -webkit-text-stroke: 1px $white;
             text-stroke: 1px $white;
             -webkit-text-fill-color: #101111;
@@ -219,7 +137,7 @@ body {
                 transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
                 border-radius: 9999px;
                 --tw-bg-opacity: 1;
-                background-color: rgb(148 163 184 / var(--tw-bg-opacity, 1));
+                background-color: #00B2B1;
                 -webkit-filter: blur(100px);
                 filter: blur(100px);
                 @supports (-webkit-backdrop-filter: none) {
@@ -326,6 +244,7 @@ body {
       border-radius:0px  10px 10px 0px!important;
       margin-bottom:5px;
       padding:15px;
+      border-left:3px solid transparent;
       &.active{
           background-color: #33392f !important;
           border-left:3px solid #D6CA8A;
@@ -391,6 +310,17 @@ body {
       @media (max-width: 991px) {
           justify-content: center;
       }
+      .tab-pane.active {
+        animation: transformAnimation 2s;
+      }
+      @keyframes transformAnimation {
+        0% {
+          transform: scale(0.5);
+        }
+        50% {
+          transform: scale(1);
+        }
+      }
   }
 }
 
@@ -445,6 +375,7 @@ body {
           padding: 0px;
           margin: 0px;
           box-sizing: border-box;
+          list-style-type: none;
           @media (max-width: 991px) {
               margin-bottom: 30px;
           }
@@ -740,3 +671,165 @@ body {
         }
     }
 }
+
+// =========finbankz=====page=====styles=======
+#fin_bankz_sec {
+    position: relative;
+    background: linear-gradient(90deg, #00838316 0%, #00838316 100%);
+        img{
+          position: absolute;
+          top: 50%;
+          right: 0;
+          opacity: 0.8;
+          transform: translate(0, -50%);
+        }
+        canvas {
+          position: absolute;
+          width: 100%;
+          display: flex;
+          height: 100%;
+      }
+      .fin_bankz {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 100vh;
+          @media only screen and (max-width: 992px) {
+            height: auto;
+            flex-direction: column;
+            gap: 24px;
+          }
+          .fin_bankz_content {
+            position: relative;
+            width: 620px;
+  
+            @media only screen and (max-width: 1200px) {
+              width: 400px;
+            }
+            @media only screen and (max-width: 992px) {
+              width: 100%;
+            }
+            .fin_bankz_title {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 26px;
+              color: $white;
+              border-radius: 24px;
+              background: #00B2B114;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              gap: 8px;
+              padding: 8px 16px;
+              margin-bottom: 16px;
+              --border-angle: 0turn;
+              --main-bg: conic-gradient(from var(--border-angle), #002d2c 0%, #002d2c 100%);
+              border: solid 1px transparent;
+              --gradient-border: conic-gradient(from var(--border-angle), rgba(2, 237, 104, 0) 7.95474deg, rgb(34 254 179) 77.822552deg, rgba(10, 10, 10, 0) 182.574207deg, rgba(10, 10, 10, 0) 204.015297deg, rgb(34 254 179) 258.393755deg, rgba(0, 157, 255, 0) 354.246679deg);
+              background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+              background-position: center center;
+              animation: bg-spin 5s linear infinite;
+              @keyframes bg-spin {
+                to {
+                --border-angle: 1turn;
+                }
+            }
+              @media screen and (max-width: 1200px) {
+                line-height: 40px;
+              }
+            }
+  
+            .fin_bankz_subtitle {
+              font-size: 48px;
+              font-weight: 600;
+              color: #00B2B1CC;
+              padding-bottom: 2px;
+            }
+  
+            .fin_bankz_desc {
+              font-size: 20px;
+              font-weight: 400;
+              color: #ffffff;
+              padding-bottom: 24px;
+              line-height: 28px;
+              letter-spacing: 0.25px;
+              margin: 0;
+            }
+  
+            &::before {
+              content: "";
+              position: absolute;
+              top: 32%;
+              left: 14%;
+              transform: translate(32%, 14%);
+              width: 213px;
+              height: 213px;
+              background: #2D4949E5;
+              filter: blur(84px);
+              transform: translate3d(0, 0, 0);
+              z-index: -1;
+              pointer-events: none;
+            }
+            button {
+              @include cmn-btn;
+              width: 160px !important;
+              --w: 173px !important;
+            }
+          }
+          .fin_bankz_img {
+            position: relative;
+            .finbankz-product {
+                width: 625px;
+                height: 625px;
+                &::before {
+                content: "";
+                position: absolute;
+                top: 26%;
+                left: 18%;
+                transform: translate(26%, 18%);
+                width: 350px;
+                height: 350px;
+                height: 350px;
+                background: #2D4949E5;
+                filter: blur(84px);
+                transform: translate3d(0, 0, 0);
+                z-index: -1;
+                pointer-events: none;
+                }
+            }
+          }
+        }
+  }
+.finbankz_heading{
+    h3{
+      padding-top: 50px !important;
+    }
+  }
+  .fin_bankz{
+    background: transparent !important;
+    .finbank_content{
+      border-left: 1px solid #fff;
+      padding-left:25px;
+      position: relative;
+      .finbank_count{
+    position: absolute;
+    top: -25px;
+    left: -8px;
+    color: $white;
+    font-size: 18px;
+      }
+      .fin_bankz_desc{
+        font-size: 16px !important;
+      }
+    }
+    .fz_fin_bankz{
+      height: auto !important;
+      padding: 30px 0px;
+    }
+  }
+  .finbankz_bg{
+    background: linear-gradient(179.22deg, rgba(0, 17, 21, 0) 0.51%, rgba(4, 46, 39, 0.5) 48.77%) !important;
+  }
+  .finbankz_bg_1{
+    background: linear-gradient(359.22deg, rgba(0, 17, 21, 0) 2.97%, rgba(4, 46, 39, 0.5) 51.23%) !important;
+  }

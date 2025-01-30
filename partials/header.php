@@ -11,53 +11,9 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.9/codemirror.min.css">
-    <style>
-        #fz-hero-bg {
-            position: relative;
-        }
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.9/codemirror.min.css"> -->
 
-        #fz-hero-bg img.hero {
-            width: 75%;
-            position: absolute;
-            right: -200px;
-            top: 50%;
-            transform: translate(0%, -50%);
-            /* opacity: 0.5; */
-            display: none;
-        }
-
-        /* #fz-hero-bg::before{
-          display: none;
-        } */
-        /* section#fz-hero-bg:after {
-          content: "";
-          background: url(./assets/images/hero-bg.jpg) no-repeat;
-          background-size: 100% 100%;
-          background-position: top;
-          position: absolute;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          z-index: -1;
-          opacity: 0.3;
-      } */
-        @media screen and (max-width:991px) {
-            #fz-hero-bg {
-                display: flex;
-                flex-direction: column;
-            }
-
-            #fz-hero-bg img.hero {
-                display: flex;
-                order: 1;
-                margin: 40px 0;
-                position: unset;
-                transform: unset;
-                width: 100%;
-            }
-        }
-    </style>
+    <style></style>
 
     <?php
     // Include page-specific CSS
@@ -65,7 +21,6 @@
         echo $pageStyles;
     }
     ?>
-
 </head>
 
 <body>
@@ -73,7 +28,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.php">
                     <svg xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="0 0 120 40" fill="none">
                         <path d="M117.062 30.2616H113.239L110.065 24.7143H107.902V30.2616H104.344V14.4773H111.196C114.754 14.4773 116.942 16.4165 116.942 19.5737C116.942 21.8511 115.74 23.5877 113.648 24.3319V24.3547L117.062 30.2623L117.062 30.2616ZM110.763 21.6699C112.47 21.6699 113.383 20.9258 113.383 19.5502C113.383 18.1746 112.517 17.5204 110.763 17.5204H107.902V21.6693H110.763V21.6699Z" fill="#2D4949"></path>
                         <path d="M38.1836 14.4766H49.0263V17.5431H41.7415V21.3988H48.5213V24.3304H41.7415V30.2609H38.1836V14.4766Z" fill="#2D4949"></path>
@@ -114,7 +69,7 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link" href="index.php">Home</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link" href="#" id="menu1" role="button" aria-expanded="false">Products</a>
@@ -173,7 +128,6 @@
                                                     <div class="text">
                                                         <li><a href="">FinzOpZ 360</a>
                                                             <p>End to End Operational Suite</p>
-
                                                         </li>
                                                     </div>
                                                 </div>
@@ -200,7 +154,6 @@
                                                     <div class="text">
                                                         <li><a href="">FinZro</a>
                                                             <p>Merchant Solution</p>
-
                                                         </li>
                                                     </div>
                                                 </div>
@@ -217,7 +170,6 @@
                                                     <div class="text">
                                                         <li><a href="">FinlyticZ</a>
                                                             <p>Data & Analytics </p>
-
                                                         </li>
                                                     </div>
                                                 </div>
@@ -230,10 +182,10 @@
                                 <a class="nav-link" href="#">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about-us.html">Company</a>
+                                <a class="nav-link" href="about-us.php">Company</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./contact-us.html">Contact</a>
+                                <a class="nav-link" href="contact-us.php">Contact</a>
                             </li>
                         </ul>
                         <div class="d-flex fz_sigin">
@@ -241,8 +193,9 @@
                                 <li><a href="#"><img class="flag-img" src="assets/images/flag.gif" alt="Country" width="40px"></a></li>
                                 <li class="unlock"><a href="#">Unlock
                                         <span>
-                                            
-											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M144 144c0-44.2 35.8-80 80-80c31.9 0 59.4 18.6 72.3 45.7c7.6 16 26.7 22.8 42.6 15.2s22.8-26.7 15.2-42.6C331 33.7 281.5 0 224 0C144.5 0 80 64.5 80 144l0 48-16 0c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-192c0-35.3-28.7-64-64-64l-240 0 0-48z"/></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                                <path d="M144 144c0-44.2 35.8-80 80-80c31.9 0 59.4 18.6 72.3 45.7c7.6 16 26.7 22.8 42.6 15.2s22.8-26.7 15.2-42.6C331 33.7 281.5 0 224 0C144.5 0 80 64.5 80 144l0 48-16 0c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-192c0-35.3-28.7-64-64-64l-240 0 0-48z" />
+                                            </svg>
                                         </span>
                                     </a></li>
                                 <li>

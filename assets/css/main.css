@@ -105,6 +105,11 @@ body::-webkit-scrollbar-thumb {
     background-color: #555;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
 header {
     padding: 0px 40px;
     position: fixed;
@@ -578,7 +583,7 @@ header .fz_sigin ul .unlock a:hover svg path {
 
 .image-text {
     display: flex;
-    padding: 20px;
+    padding: 0px;
     align-items: center;
 }
 
@@ -2325,6 +2330,10 @@ header .fz_sigin ul .unlock a:hover svg path {
     padding-bottom: 26px;
     line-height: 26px;
     letter-spacing: 0.25px;
+}
+
+.fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .buttons {
+    width: 168px;
 }
 
 .fz_product_sec .container .fz_product_left .fz_img {

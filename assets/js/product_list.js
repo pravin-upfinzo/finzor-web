@@ -121,20 +121,6 @@ function init() {
 }
 init();
 
-// Json Lottie
-document.addEventListener("DOMContentLoaded", function () {
-    // Load the Lottie animation
-    document.querySelectorAll(".finbankz-product").forEach((container) => {
-        lottie.loadAnimation({
-            container: container, // HTML container for the animation
-            renderer: "svg", // Render as SVG
-            loop: true, // Animation will loop continuously
-            autoplay: true, // Animation will play automatically
-            path: "./assets/json/product-1.json", // Path to the Lottie JSON file
-        });
-    });
-});
-
 gsap.registerPlugin(ScrollTrigger);
 
 // feature section
@@ -233,52 +219,6 @@ sm1.add("(min-width: 1200px)", () => {
         }
     );
 
-     // Animation for .fade-right (left to center)
-     gsap.fromTo(
-        ".fade-right-2",
-        {
-            opacity: 0.5,
-            scale: 0.7,
-            rotateX: "20deg",
-            x: "-20vw", // Start from left side (off-screen)
-        },
-        {
-            opacity: 1,
-            scale: 1,
-            rotateX: "0deg",
-            x: "0vw", // Move to original position (center)
-            scrollTrigger: {
-                trigger: ".product_center",
-                start: "top bottom", // Starts when the top of the section reaches the bottom of the viewport
-                end: "bottom bottom-=10%", // Ends when the section bottom is 10% before the bottom
-                scrub: 1, // Syncs animation with scroll position
-            },
-        }
-    );
-
-    // Animation for .fade-left (right to center)
-    gsap.fromTo(
-        ".fade-left-2",
-        {
-            opacity: 0.5,
-            scale: 0.7,
-            rotateX: "20deg",
-            x: "20vw", // Start from right side (off-screen)
-        },
-        {
-            opacity: 1,
-            scale: 1,
-            rotateX: "0deg",
-            x: "0vw", // Move to original position (center)
-            scrollTrigger: {
-                trigger: ".product_center",
-                start: "top bottom", // Starts when the section top reaches the bottom of the viewport
-                end: "bottom bottom-=10%", // Ends when the section bottom is 10% before the bottom
-                scrub: 1, // Syncs animation with scroll position
-            },
-        }
-    );
-
     // Zoom in
     gsap.fromTo(
         ".zoom-in",
@@ -301,7 +241,126 @@ sm1.add("(min-width: 1200px)", () => {
             },
         }
     );
+    // Zoom in
+    gsap.fromTo(
+        ".zoom-in_ai_enhance",
+        {
+            opacity: 0.5,
+            scale: 0.7,
+            rotateX: "0deg",
+            x: "0vw", // Start from right side (off-screen)
+        },
+        {
+            opacity: 1,
+            scale: 1,
+            rotateX: "0deg",
+            x: "0vw", // Move to original position (center)
+            scrollTrigger: {
+                trigger: ".fz_ai_enhance_sec",
+                start: "top bottom", // Starts when the section top reaches the bottom of the viewport
+                end: "bottom bottom-=10%", // Ends when the section bottom is 10% before the bottom
+                scrub: 1, // Syncs animation with scroll position
+            },
+        }
+    );
+
+
+    // Zoom in
+    gsap.fromTo(
+        ".zoom-in-cbs",
+        {
+            opacity: 0.5,
+            scale: 0.7,
+            rotateX: "0deg",
+            x: "0vw", // Start from right side (off-screen)
+        },
+        {
+            opacity: 1,
+            scale: 1,
+            rotateX: "0deg",
+            x: "0vw", // Move to original position (center)
+            scrollTrigger: {
+                trigger: ".cbs_sec",
+                start: "top bottom", // Starts when the section top reaches the bottom of the viewport
+                end: "bottom bottom-=10%", // Ends when the section bottom is 10% before the bottom
+                scrub: 1, // Syncs animation with scroll position
+            },
+        }
+    );
+
+    // Zoom in
+    gsap.fromTo(
+        ".zoom-in-fe",
+        {
+            opacity: 0.5,
+            scale: 0.7,
+            rotateX: "0deg",
+            x: "0vw", // Start from right side (off-screen)
+        },
+        {
+            opacity: 1,
+            scale: 1,
+            rotateX: "0deg",
+            x: "0vw", // Move to original position (center)
+            scrollTrigger: {
+                trigger: ".fz_features_sec",
+                start: "top bottom", // Starts when the section top reaches the bottom of the viewport
+                end: "bottom bottom-=10%", // Ends when the section bottom is 10% before the bottom
+                scrub: 1, // Syncs animation with scroll position
+            },
+        }
+    );
+
+    // Animation for .fade-right (left to center)
+    gsap.fromTo(
+        ".fade-right-hand",
+        {
+            opacity: 0.5,
+            scale: 0.7,
+            rotateX: "20deg",
+            x: "-20vw", // Start from left side (off-screen)
+        },
+        {
+            opacity: 1,
+            scale: 1,
+            rotateX: "0deg",
+            x: "0vw", // Move to original position (center)
+            scrollTrigger: {
+                trigger: ".fz_get_in_touch",
+                start: "top bottom", // Starts when the top of the section reaches the bottom of the viewport
+                end: "bottom bottom-=10%", // Ends when the section bottom is 10% before the bottom
+                scrub: 1, // Syncs animation with scroll position
+            },
+        }
+    );
 });
 
-//
+//Product Range
+
+$(document).ready(function () {
+    $("#product-range").owlCarousel({
+        items: 2,
+        margin: 35,
+        nav: true /* Shows previous and next arrows */,
+        dots: false,
+        autoplay: false,
+        smartSpeed: 2000,
+        autoplayTimeout: 4000,
+        navText: [
+            '<span class="custom-prev"><svg aria-hidden="true" role="img" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%"><path d="M9.293 5.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 12 9.293 6.707a1 1 0 0 1 0-1.414Z"></path></svg><svg aria-hidden="true" role="img" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%"><path d="M9.293 5.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 12 9.293 6.707a1 1 0 0 1 0-1.414Z"></path></svg></span>',
+            '<span class="custom-next"><svg aria-hidden="true" role="img" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%"><path d="M9.293 5.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 12 9.293 6.707a1 1 0 0 1 0-1.414Z"></path></svg><svg aria-hidden="true" role="img" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%"><path d="M9.293 5.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 12 9.293 6.707a1 1 0 0 1 0-1.414Z"></path></svg></span>',
+        ],
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 2,
+            },
+            1000: {
+                items: 3,
+            },
+        },
+    });
+});
 

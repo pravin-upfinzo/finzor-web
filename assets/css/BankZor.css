@@ -148,11 +148,6 @@
     font-size: 13px;
   }
 }
-@media screen and (max-width: 375px) {
-  #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore {
-    font-size: 13px;
-  }
-}
 #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore img {
   opacity: 1;
 }
@@ -227,11 +222,6 @@
 }
 @media screen and (max-width: 375px) {
   #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore_btn:hover {
-    font-size: 13px;
-  }
-}
-@media screen and (max-width: 375px) {
-  #fz_mobile_section .fz_mobile_text_left .fz_btn .fz_learmore_btn {
     font-size: 13px;
   }
 }
