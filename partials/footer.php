@@ -17,129 +17,95 @@
                         <path d="M35.4469 2.46265L35.4196 2.51029C34.038 4.82261 31.5974 6.35924 28.817 6.35924H23.0447C20.2332 6.35924 17.7685 7.93077 16.3957 10.288L5.06641 30.0851V23.9312C5.07403 22.9736 5.33193 22.0785 5.77469 21.3155L5.78168 21.3035L12.8537 8.94467C15.0605 5.0615 19.0859 2.46265 23.6856 2.46265H35.4475H35.4469Z" fill="#2D4949"></path>
                     </svg>
                 </div>
-                <p>We blend cutting-edge technology with
-                    Financial expertise to revolutionize the way businesses manage their finances. we focus on innovation as well as security</p>
-                <div class="footer_num_email">
-                    <a href="mailto:support@finzor.com" title="support@finzor.com">info@finzor.com</a>
-                </div>
+                <p>Transforming Financial Services with Innovative Solutions for Payments, Banking Services, and Wealth Management Services.</p>
             </div>
 
-            <div class="col-lg-3 col-md-4 col-12 footer-first-col">
+            <div class="col-lg-2 col-md-4 col-12 footer-first-col">
                 <h5>PRODUCTS</h5>
                 <ul>
                     <li>
-                        <a href="#" title="FinbankZ">Core Banking System</a>
+                        <a href="finbankz.php" title="FinbankZ">FinbankZ</a>
                     </li>
                     <li>
-                        <a href="#" title="UPIZor">Merchant Onbording</a>
+                        <a href="#" title="UPIZor">UPIZor</a>
                     </li>
                     <li>
-                        <a href="#" title="FinOps360">Payment Gateway</a>
+                        <a href="#" title="FinOps360">FinzOpZ</a>
                     </li>
                     <li>
-                        <a href="#" title="FinZro">UPI & UPI Switch</a>
+                        <a href="#" title="FinZro">FinZro</a>
                     </li>
                     <li>
-                        <a href="#" title="FinlyticZ">Data Analytics</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-4 col-12">
-                <h5>SERVICES</h5>
-                <ul>
-                    <li>
-                        <a href="#" title="Website Development">Payout</a>
-                    </li>
-                    <li>
-                        <a href="#" title="Application Development">Neo Banking</a>
-                    </li>
-                    <li>
-                        <a href="#" title="Seamless checkout">Reconciliation</a>
-                    </li>
-                    <li>
-                        <a href="#" title="Customizable">Fraud prevention</a>
-                    </li>
-                    <li>
-                        <a href="#" title="Customizable">Multi-channel banking</a>
+                        <a href="#" title="FinlyticZ">FinlyticZ</a>
                     </li>
                 </ul>
             </div>
             <div class="col-lg-2 col-md-4 col-12">
-                <h5>Company</h5>
+                <h5>COMPANY</h5>
                 <ul>
                     <li>
-                        <a href="about-us.html" title="Payouts">About Us</a>
+                        <a href="about-us.php" title="Website Development">About us</a>
                     </li>
                     <li>
-                        <a href="contact-us.html" title="Vendor Payments">Contact</a>
+                        <a href="contact-us.php" title="Application Development">Contact</a>
                     </li>
                     <li>
-                        <a href="#" title="Payment Links">FAQ</a>
+                        <a href="#" title="Seamless checkout">FAQ</a>
                     </li>
-
                 </ul>
             </div>
-            <!-- <div class="col-lg-2 col-md-6 col-12">
-                      <h5>Support</h5>
-                      <ul>
-                          <li>
-                              <a href="#" title="About us">About us</a>
-                          </li>
-                          <li>
-                              <a href="#" title="Contact us">Contact us</a>
-                          </li>
-                          <li>
-                              <a href="#" title="FAQ’s">FAQ’s</a>
-                          </li>
-                      </ul>
+            <div class="col-lg-2 col-md-4 col-12">
+                <h5>LEGAL</h5>
+                <ul>
+                    <li>
+                        <a href="about-us.html" title="Payouts">Terms & Conditions</a>
+                    </li>
+                    <li>
+                        <a href="contact-us.html" title="Vendor Payments">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 col-12">
+                <p>Stay updated by Subscribe</p>
+                <!-- <div class="input-group input-group-lg">
+                    <input type="text" class="form-control" placeholder="Enter email address
+                    " aria-label="Username" aria-describedby="basic-addon1">
                   </div> -->
-        </div>
-        <div class="copy_rights">
+
+                <div class="fz_social_icons">
+                    <ul>
+                        <li>
+                            <a href="#" title="Facebook"><img src="assets/images/facebook.svg" alt="Facebook"></a>
+                        </li>
+                        <li>
+                            |
+                        </li>
+                        <li>
+                            <a href="#" title="Linked-In">
+                                <img src="assets/images/linkedin.svg" alt="Linked">
+                            </a>
+                        </li>
+                        <li>
+                            |
+                        </li>
+                        <li>
+                            <a href="#" title="Playstore"><img src="assets/images/playstore.svg" alt="Playstore"></a>
+                        </li>
+                        <li>
+                            |
+                        </li>
+                        <li>
+                            <a href="#" title="Youtube"><img src="assets/images/youtube.svg" alt="youtube"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="copy_rights_1">
-                <!-- <p>© <span id="year"></span> Finzor.All rights reserved</p> -->
                 <p>Copyright © <?php echo date('Y'); ?> Finzor. All rights reserved</p>
             </div>
-            <div class="copy_rights_1">
-                <ul>
-                    <li>
-                        <a href="#" title="Privacy Policy"> Privacy Policy </a>
-                    </li>
-                    <li>
-                        |
-                    </li>
-                    <li>
-                        <a href="#" title="Terms & Conditions">Terms & Conditions</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="copy_rights_1 fz_social_icon">
-                <ul>
-                    <li>
-                        <a href="#" title="Facebook"><img src="assets/images/facebook.svg" alt="Facebook"></a>
-                    </li>
-                    <li>
-                        |
-                    </li>
-                    <li>
-                        <a href="#" title="Linked-In">
-                            <img src="assets/images/linkedin.svg" alt="Linked">
-                        </a>
-                    </li>
-                    <li>
-                        |
-                    </li>
-                    <li>
-                        <a href="#" title="Playstore"><img src="assets/images/playstore.svg" alt="Playstore"></a>
-                    </li>
-                    <li>
-                        |
-                    </li>
-                    <li>
-                        <a href="#" title="Youtube"><img src="assets/images/youtube.svg" alt="youtube"></a>
-                    </li>
-                </ul>
-            </div>
+
         </div>
+
     </div>
 </footer>
 <div class="footer-bg">
@@ -174,14 +140,12 @@
 <script src="assets/js/javascript.min.js"></script>
 <script src="assets/js/main.js"></script>
 
-
 <?php
 // Include page-specific JS
 if (isset($pageScripts)) {
     echo $pageScripts;
 }
 ?>
-
 </body>
 
 </html>

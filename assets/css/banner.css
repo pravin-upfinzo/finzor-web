@@ -206,11 +206,6 @@
     font-size: 13px;
   }
 }
-@media screen and (max-width: 375px) {
-  #fz-hero-bg .hero-section-button .section-button-one, #fz-hero-bg .hero-section-button .section-button-two {
-    font-size: 13px;
-  }
-}
 #fz-hero-bg .hero-section-button .section-button-one {
   padding: 0px 20px 0 25px;
   --text-color: rgb(210 210 240);

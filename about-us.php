@@ -1,55 +1,312 @@
 <!-- Include Header -->
 <?php
-$page_title = '';
-$meta_lines = '<meta name="description" content="Finzor Core Banking Services refers to the suite of services and solutions offered by Finzor to financial institutions.">';
-// to include page specific CSS
+$page_title = 'About Us - The Zor of Fintech Innovations';
+$meta_lines = '<meta name="description" content="">';
 
-$pageStyles = '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.9/codemirror.min.css">' . "\n";
+// to include page specific CSS
+$pageStyles = '<link rel="stylesheet" href="./assets/css/about_us.css">';
 // $pageStyles .= '<link rel="stylesheet" href="./assets/css/extra.css">';
 $pageStyles .= '<style>
-        #fz-hero-bg {
+        #fz-hero-bg iframe {
+            height: 120vh !important;
+            transform: scale(0.8);
+        }
+
+        @media screen and (max-width: 991px) {
+            #fz-hero-bg iframe {
+                height: 117vh !important;
+                transform: scale(0.5);
+            }
+        }
+
+        div#loader {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #000;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 999999;
+        }
+
+        #container {
+            width: 600px;
             position: relative;
         }
 
-        #fz-hero-bg img.hero {
-            width: 75%;
-            position: absolute;
-            right: -200px;
-            top: 50%;
-            transform: translate(0%, -50%);
-            /* opacity: 0.5; */
-            display: none;
+        div#loader img {
+            width: 100%;
         }
 
-        /* #fz-hero-bg::before{
-          display: none;
-        } */
-        /* section#fz-hero-bg:after {
-          content: "";
-          background: url(./assets/images/hero-bg.jpg) no-repeat;
-          background-size: 100% 100%;
-          background-position: top;
-          position: absolute;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          z-index: -1;
-          opacity: 0.3;
-      } */
-        @media screen and (max-width:991px) {
-            #fz-hero-bg {
-                display: flex;
+        /* #fz-hero-bg .text-content h1{
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        line-height: 70px;
+       } */
+
+        @media screen and (max-width: 991px) {
+            #fz-hero-bg .text-content h1 {
+                line-height: 50px;
+                font-size: 2rem;
+            }
+        }
+
+        @media screen and (max-width: 1300px) {
+            .video_anim {
+                height: 100% !important;
+                padding: 40px 0px 20px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            #fz-hero-bg .text-content h1 {
+                line-height: 40px;
+                font-size: 1.75rem;
                 flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        .path {
+            fill: none;
+            stroke: #3EAB90;
+            stroke-width: 5px;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .path-1 {
+            stroke-dasharray: 1850;
+            stroke-dashoffset: 1850;
+            transition: stroke-dashoffset 5s linear;
+        }
+
+        .path-2 {
+            stroke-dasharray: 260;
+            stroke-dashoffset: 260;
+            transition: stroke-dashoffset 1.2s linear 5s;
+        }
+
+        .path-3 {
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+            transition: stroke-dashoffset 1s linear 6.2s;
+        }
+
+        .path-4 {
+            stroke-width: 0;
+            transition: stroke-width 0.1s linear 7.5s;
+        }
+
+        #container.fin .path-1 {
+            stroke-dashoffset: 0;
+        }
+
+        #container.fin .path-2 {
+            stroke-dashoffset: 0;
+        }
+
+        #container.fin .path-3 {
+            stroke-dashoffset: 0;
+        }
+
+        #container.fin .path-4 {
+            stroke-width: 5px;
+        }
+
+        .text-line1 {
+            width: auto;
+            height: 55px;
+        }
+
+        /* Animation Setup */
+        .text-line1 .path {
+            stroke-dasharray: 1000;
+            /* Large number to ensure path length is enough */
+            stroke-dashoffset: 1000;
+            animation: draws 8s ease forwards;
+            animation-iteration-count: infinite;
+        }
+
+        /* Staggered Animation */
+        .text-line1 .path {
+            animation-delay: 1s;
+            fill: none;
+            stroke: #f7c35f;
+            stroke-width: 0.5;
+        }
+
+        /* Keyframes for Animation */
+        @keyframes draws {
+            to {
+                stroke-dashoffset: 0;
+                /* Animate to reveal the path */
+            }
+        }
+
+        /* Hash Transition */
+        .features_posibilityies .hash_content {
+            width: 36px;
+            height: 40px;
+            position: absolute;
+            left: 380px;
+        }
+
+        .hash_content {
+            position: relative;
+            z-index: 1;
+            width: 62px;
+            height: 90px;
+        }
+
+        .features_posibilityies .hash_bar {
+            font-size: 45px !important;
+        }
+
+        @media (min-width: 769px) and (max-width: 991px) {
+            .features_posibilityies .hash_bar {
+                font-size: 30px !important;
+            }
+        }
+
+        @media screen and (min-width: 1400px) {
+            .features_posibilityies .hash_content {
+                left: 472px;
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            .features_posibilityies .hash_content {
+                left: 295px;
             }
 
-            #fz-hero-bg img.hero {
-                display: flex;
-                order: 1;
-                margin: 40px 0;
-                position: unset;
-                transform: unset;
-                width: 100%;
+            .hash_content {
+                width: 30px;
+                height: 60px;
             }
+        }
+
+        /* @media screen and (max-width: 991px) {
+            .features_posibilityies .hash_content {
+            left: 210px;
+            }
+        } */
+
+        @media (min-width: 769px) and (max-width: 991px) {
+            .features_posibilityies .hash_content {
+                left: 247px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .features_posibilityies .hash_content {
+                left: 0px;
+            }
+        }
+    
+        /* Styling for the animation container */
+        #lottie-animation {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            /* Center it horizontally */
+        }
+
+        .visual-desktop {
+            position: relative;
+            display: block;
+            overflow: hidden;
+        }
+
+        #lottie-animation1 svg {
+            width: 35px !important;
+            height: 35px !important;
+        }
+
+        div.product-icon {
+            width: 70px;
+            height: 70px;
+            display: inline-flex;
+            align-items: center;
+            margin-left: -20px;
+        }
+
+        div#api-dev {
+            width: 100%;
+            height: 300px;
+        }
+
+        div#faq-animate {
+            width: 100%;
+            height: 400px;
+            display: inline-flex;
+            justify-content: start;
+        }
+
+        @media screen and (max-width: 991px) {
+            div#faq-animate {
+                display: block;
+            }
+        }
+
+        div#faq-animate svg {
+            width: auto !important;
+
+        }
+
+        #page-loader {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 99999;
+            background: url("./assets/images/finzor-loading.gif") center no-repeat #000;
+        }
+
+        .footer-bg img {
+            width: 100%;
+        }
+    
+        .chat-bot {
+            position: fixed;
+            right: -5px;
+            bottom: 5px;
+            cursor: pointer;
+            display: inline-flex;
+            width: 120px;
+            z-index: 99;
+        }
+
+        .chat-bot img {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* @media screen and (max-width: 1440px) {
+        .features_posibilityies .container .inner-text .left img {
+            height: 1200px;
+        }
+        }
+        @media screen and (max-width: 1440px) {
+        .features_posibilityies .container .inner-text .right img {
+            height: 1150px;
+        }
+        } */
+        .fz_product_sec .fz_container .fz_sub_container .fz_img-sec .fz_img img:last-child {
+            min-width: 70%;
+        }
+
+        .fz-tab-card .animation {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
         }
     </style>';
 
@@ -62,784 +319,29 @@ $pageScripts = '<script></script>';
 include_once('partials/header.php'); //should be last after all variables
 ?>
 
-<section id="fz-hero-bg">
-    <canvas></canvas>
-    <img src="assets/images/signal-1.gif" class="hero" />
-    <div class="container">
+<section class="about_us_section" style="background-color: #000;height: auto;">
+
+    <div class="about_us_banner_sec">
         <div class="row">
-            <div class="col-lg-8">
-                <div class="content-wrapper">
-                    <div class="text-content">
-                        <h1>
-                            <span>The Zor of</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="text-line1" viewBox="0 0 215 58">
-                                <path class="path" d="M31.3063 35.5908L27.8867 41.594C27.8867 41.594 27.8806 41.6047 27.8776 41.609C27.8513 41.6561 27.8261 41.7033 27.7978 41.7505V41.7526C26.9616 43.1749 25.4739 44.1224 23.7772 44.1224H11.7103L6.49093 53.2853L6.40408 53.4386C5.06994 55.7151 2.70363 57.2414 0 57.281L12.3527 35.5918L31.3063 35.5908Z" fill="white" />
-                                <path class="path" d="M33.3081 32.0744L31.564 35.0862H12.6202L13.4616 33.6414L13.5222 33.5353C14.0393 32.6585 14.9594 32.0755 16.0067 32.0755L33.3081 32.0744Z" fill="white" />
-                                <path class="path" d="M45.8555 10.0532L36.9306 25.7209C36.9063 25.7638 36.8831 25.8077 36.8578 25.8506C36.0246 27.2868 34.5289 28.245 32.8221 28.245H16.5387L23.2993 16.3769C25.4767 12.5848 29.4095 10.0532 33.8987 10.0532H45.8555Z" fill="white" />
-                                <path class="path" d="M51.5777 0L51.5343 0.0760986C49.3377 3.76957 45.4574 6.22402 41.0369 6.22402H31.8595C27.3895 6.22402 23.4709 8.7342 21.2884 12.4995L3.27598 44.1212V34.2916C3.2881 32.7621 3.69814 31.3323 4.40207 30.1137L4.41318 30.0944L15.6569 10.3537C19.1655 4.15113 25.5655 0 32.8785 0H51.5777Z" fill="white" />
-                                <path class="path" d="M46.3835 48.1405L51.2926 18.686H59.4616L54.5526 48.1405H46.3835ZM56.2209 14.8507C55.0064 14.8507 54.0028 14.448 53.2102 13.6426C52.4304 12.8245 52.1108 11.8529 52.2514 10.7279C52.392 9.57729 52.9418 8.6057 53.9006 7.81309C54.8594 7.00769 55.946 6.60499 57.1605 6.60499C58.375 6.60499 59.3658 7.00769 60.1328 7.81309C60.8999 8.6057 61.2195 9.57729 61.0916 10.7279C60.9638 11.8529 60.4205 12.8245 59.4616 13.6426C58.5156 14.448 57.4354 14.8507 56.2209 14.8507Z" fill="white" />
-                                <path class="path" d="M72.429 31.1121L69.5909 48.1405H61.4411L66.3501 18.686H74.1165L73.2727 23.8827H73.5987C74.532 22.1568 75.8487 20.7953 77.549 19.7982C79.2621 18.801 81.2116 18.3024 83.3977 18.3024C85.4432 18.3024 87.1499 18.7499 88.5178 19.6448C89.8984 20.5396 90.87 21.8117 91.4325 23.4608C92.0078 25.11 92.1037 27.0851 91.7202 29.3862L88.5753 48.1405H80.4062L83.3018 30.8436C83.5959 29.0411 83.3658 27.6348 82.6115 26.6249C81.87 25.6022 80.6747 25.0908 79.0256 25.0908C77.9261 25.0908 76.9162 25.3273 75.9957 25.8003C75.0753 26.2733 74.3018 26.9637 73.6754 27.8713C73.0618 28.7662 72.6463 29.8465 72.429 31.1121Z" fill="white" />
-                                <path class="path" d="M162.615 48.7158C159.585 48.7158 157.092 48.0766 155.136 46.7982C153.193 45.507 151.832 43.7172 151.052 41.4289C150.285 39.1405 150.151 36.507 150.649 33.5283C151.135 30.5112 152.151 27.8649 153.698 25.5894C155.245 23.301 157.207 21.5176 159.585 20.2392C161.976 18.948 164.661 18.3024 167.639 18.3024C170.209 18.3024 172.382 18.7691 174.159 19.7023C175.936 20.6355 177.24 21.9459 178.071 23.6334C178.902 25.3209 179.183 27.3024 178.915 29.578H171.225C171.238 28.1206 170.861 26.9381 170.094 26.0304C169.327 25.1227 168.202 24.6689 166.719 24.6689C165.44 24.6689 164.264 25.0141 163.19 25.7044C162.129 26.382 161.228 27.3727 160.487 28.6767C159.758 29.9807 159.246 31.5595 158.952 33.4132C158.646 35.2925 158.639 36.8905 158.933 38.2073C159.227 39.524 159.79 40.5276 160.621 41.2179C161.452 41.9083 162.5 42.2534 163.766 42.2534C164.712 42.2534 165.587 42.0617 166.393 41.6781C167.211 41.2946 167.927 40.7385 168.54 40.0098C169.154 39.2683 169.627 38.3798 169.96 37.3443H177.668C177.144 39.6071 176.192 41.5887 174.811 43.2889C173.443 44.9892 171.724 46.3188 169.653 47.2776C167.582 48.2364 165.236 48.7158 162.615 48.7158Z" fill="white" />
-                                <path class="path" d="M192.429 31.1121L189.591 48.1405H181.441L187.961 8.86777H195.881L193.426 23.8827H193.752C194.698 22.1441 195.996 20.7825 197.645 19.7982C199.294 18.801 201.244 18.3024 203.494 18.3024C205.539 18.3024 207.246 18.7499 208.614 19.6448C209.994 20.5269 210.972 21.7989 211.548 23.4608C212.123 25.11 212.219 27.0851 211.835 29.3862L208.69 48.1405H200.54L203.417 30.8436C203.711 29.0283 203.474 27.6156 202.707 26.6057C201.953 25.5958 200.751 25.0908 199.102 25.0908C197.99 25.0908 196.967 25.3273 196.034 25.8003C195.101 26.2733 194.315 26.9637 193.675 27.8713C193.049 28.7662 192.634 29.8465 192.429 31.1121Z" fill="white" />
-                                <path class="path" d="M115.773 18.5568L114.757 24.6932H109.189L106.818 38.9602C106.69 39.7145 106.71 40.3026 106.876 40.7244C107.042 41.1335 107.317 41.4212 107.7 41.5874C108.097 41.7536 108.57 41.8366 109.119 41.8366C109.503 41.8366 109.893 41.8047 110.289 41.7408C110.685 41.6641 110.986 41.6065 111.19 41.5682L111.497 47.647C111.037 47.7876 110.417 47.9411 109.637 48.1072C108.87 48.2734 107.962 48.3757 106.914 48.4141C104.92 48.4908 103.232 48.2287 101.852 47.6278C100.471 47.0142 99.4801 46.0746 98.8793 44.8089C98.2784 43.5433 98.1506 41.9517 98.4957 40.0341L101.032 24.6932H97L98.0355 18.5568H102.046L103.213 11.5H111.382L110.209 18.5568H115.773Z" fill="white" />
-                                <path class="path" fill-rule="evenodd" clip-rule="evenodd" d="M129.394 48.9134C126.377 48.9134 123.878 48.2997 121.896 47.0724C119.915 45.8324 118.521 44.081 117.716 41.8182C116.923 39.5426 116.789 36.8516 117.313 33.745C117.824 30.7152 118.853 28.0561 120.4 25.7678C121.96 23.4794 123.916 21.696 126.268 20.4176C128.62 19.1392 131.241 18.5 134.13 18.5C136.074 18.5 137.831 18.8132 139.404 19.4396C140.989 20.0533 142.306 20.9865 143.354 22.2393C144.402 23.4794 145.118 25.0327 145.502 26.8991C145.898 28.7656 145.892 30.9517 145.483 33.4574L145.118 35.701H125.066C124.811 37.2479 124.817 38.7436 125.175 39.7663C125.546 40.7891 126.185 41.5561 127.093 42.0675C128 42.5661 129.151 42.8153 130.544 42.8153C131.452 42.8153 132.302 42.6875 133.095 42.4318C133.9 42.1761 134.616 41.799 135.243 41.3004C135.869 40.7891 136.38 40.1563 136.777 39.402L144.236 39.9006C143.546 41.7159 142.498 43.3011 141.091 44.6562C139.685 45.9986 137.991 47.0469 136.01 47.8011C134.041 48.5426 131.836 48.9134 129.394 48.9134ZM138.004 27.5128C138.349 28.4205 138.426 29.4624 138.234 30.6385H125.944C126.148 29.5263 126.581 28.7464 127.285 27.8004C128 26.8416 128.883 26.0682 129.931 25.4801C130.979 24.892 132.104 24.598 133.306 24.598C134.482 24.598 135.473 24.8601 136.278 25.3842C137.084 25.8956 137.659 26.6051 138.004 27.5128Z" fill="white" />
-                            </svg>
-                            <span>Innovations
-                            </span>
-                        </h1>
-                        <p>Finzor Core Banking Services refers to the suite of services <br class="mobile-break">and solutions offered by Finzor to
-                            financial institutions.</p>
-                        <div class="hero-section-button">
-                            <button class="section-button-one active_btn">
-                                <span class="text">Explore</span>
-                                <div class="icon">
-                                    <img src="./assets/images/fz_button_arrow.svg" alt="">
-                                </div>
-                            </button>
-                            <button class="section-button-two">
-                                <span class="text">Connect</span>
-                                <div class="icon">
-                                    <img src="./assets/images/fz_button_arrow.svg" alt="">
-                                </div>
-                            </button>
+            <div class="col-lg-12">
+                <div class="about_us_banner_img">
+                    <img src="assets/images/about.svg" alt="">
+                    <div class="container">
+                        <div class="about_banner_content">
+                            <h2>About Us</h2>
+                            <p>We knew that by aligning our incentives with our customers, without compromise, we could build something truly significant. With that in mind, we set out to deliver sophisticated financial products and advice to everyone.
+
+                                We knew that the way to build a better solution was through the use of smarter technology. We built an experience that replaced confusion with delight, and uncertainty with control.
+
+                                We’re aiming to bring back the feeling of defined benefits, and the financial peace of mind that goes with it. We envision a world where you can be confident of reaching your goals, whatever they may be.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- <div class="col-lg-6" style="    display: inline-flex;
-                  align-items: center;
-                  justify-content: center; height: 100vh;">
-                <iframe src='https://my.spline.design/techinspired3dassetsmoneybag-f38d3d817f7387f214aa7a2ba8733225/' frameborder='0' width='100%' height='100%'></iframe>
-               
-              </div> -->
         </div>
     </div>
-</section>
-<!-- Dashboard -->
-<section class="fz_dashboard">
-    <div class="container text-center">
-        <div id="lottie-animation" class="visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-    </div>
-</section>
-<!-- About Finzor -->
-<section id="fz_core_nexus">
     <div class="container">
-        <div class="row align-items-lg-center">
-            <div class="col-lg-6 col-md-5">
-                <div class="fz_core_bg">
-                    <div class="fz_core_text">
-                        <h3>Discover the key to your fintech Future </h3>
-                        <img src="assets/images/core-nexus.svg" alt="corenexus" />
-                        <div class="fz_box">
-                            <div><img src="./assets/images/intro_icon2.svg" alt="introIcon" /></div>
-                            <div><img src="./assets/images/intro_icon1.svg" alt="introIcon" /></div>
-                            <div><img src="./assets/images/intro_icon3.svg" alt="introIcon" /></div>
-                            <div><img src="./assets/images/intro_icon4.svg" alt="introIcon" /></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-7 fz_core_text_right">
-                <h2>Driving Financial Efficiency</h2>
-                <p><span class="circle-ripple"><img src="assets/images/finance-icon.svg" alt="finacne" /></span>At Finzor, we strive to be a digital leader in Core Banking Solutions, delivering security and efficiency through multi-factor authentication, encryption, automated workflows, and seamless third-party integration with our plug-in modules. Our innovative solutions simplify financial management with real-time communication and enhanced functionality</p>
-                <div>
-                    <button class="fz_learmore active_btn">
-                        <span class="text">Learn more</span>
-                        <div class="icon">
-                            <img src="./assets/images/fz_button_arrow.svg" alt="">
-                        </div>
-                    </button>
-                    <button class="fz_learmore_btn">
-                        <span class="text">Get Started</span>
-                        <div class="icon">
-                            <img src="./assets/images/fz_button_arrow.svg" alt="">
-                        </div>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Product Intro -->
-<audio id="sectionAudio" src="assets/images/loading.mp3"></audio>
-<div id="targetSection">
-    <section class="features_posibilityies">
-        <div class="container hash_tag_con">
-            <div class="texts">
-                <img src="./assets/images/feature_eff_1.svg" alt="">
-            </div>
-            <div class="inner-text">
-                <div class="left">
-                    <img src="./assets/images/feature_left_eff.svg" alt="">
-                </div>
-                <div class="dd">
-                    <img src="./assets/images/Vector.png" alt="" width="100px" height="100px">
-                    <div class="hash_bar">#</div>
-                    <h3 class="product_intro_text" style="display: none;">Empowering Financial Journey with Trust</h3>
-                    <h3 class="typing_text-heading">
-                        <span class="hash_content"></span>
-                        <p class="typing_text"></p>
-                    </h3>
-                    <div class="rising-stars rising-stars-visible" on:qvisible="q-ece0b717.js#_hW[0]" q:key="DM_0" q:id="31">
-                        <div style="height:2px;width:2px" q:key="0"></div>
-                        <div style="height:2px;width:2px" q:key="1"></div>
-                        <div style="height:1px;width:1px" q:key="2"></div>
-                    </div>
-                    <div id="lottie-animation1" class="visual-desktop hidden lg:block w-1454 h-1258 relative z-[1] mouse-down"></div>
-                </div>
-                <div class="right">
-                    <img src="./assets/images/feature_right_eff.svg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-<!-- Products -->
-<section class="fz_product_sec" id="panels-container">
-    <div class="container">
-        <div class="fz_product_left">
-            <div class="fz_product_panel hash_tag_con item-1">
-                <div class="fz_sub_container">
-                    <div class="fz_content">
-                        <div class="fz_num">
-                            <div class="hash_content">
-                            </div>
-                            <h2>01</h2>
-                        </div>
-                        <div class="fz_title_content">
-                            <div class="fz_subtitle">Banking Core and Digital Platform</div>
-                            <h3>
-                                <img src="./assets/images/bank.gif" alt="cbs" style="width: 40px; height: 40px;
-                                margin-right: 10px;" />
-                                <div class="fz_title">FinbankZ</div>
-                            </h3>
-                        </div>
-                        <div class="fz_bank">Empowering banks with seamless, efficient, and secure financial services
-                        </div>
-                        <div class="fz_desc">Finzor Core Banking Services refers to the suite of services and solutions
-                            offered by Finzor (a technology provider) to financial institutions. These services are
-                            designed to modernize and streamline banking operations by providing a robust core banking
-                            platform that integrates various functionalities.</div>
-                        <div class="fz_btn">
-                            <a href="core-banking-solution.html" class="buttons">
-                                <span class="text">Learn more</span>
-                                <div class="icon">
-                                    <img src="./assets/images/fz_button_arrow.svg" alt="">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="fz_img">
-                        <div class="finbankz-product"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="fz_product_panel hash_tag_con item-2">
-                <div class="fz_sub_container">
-                    <div class="fz_content">
-                        <div class="fz_num">
-                            <div class="hash_content">
-                            </div>
-                            <h2>02</h2>
-                        </div>
-                        <div class="fz_title_content">
-                            <div class="fz_subtitle">Payment Solutions</div>
-                            <h3>
-                                <div id="uipizor-icon" class="product-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-                                <div class="fz_title">UPIZor</div>
-                            </h3>
-                        </div>
-                        <div class="fz_bank">Empowering Seamless, Secure, and Instant Transactions for a Connected World </div>
-                        <div class="fz_desc">FINZOR’s Digital Payment Solutions deliver secure, fast, and seamless transaction capabilities across platforms. With advanced encryption and fraud protection, our solution ensures a smooth payment experience for both merchants and customers. Designed for scalability, it integrates effortlessly into existing systems, empowering businesses to thrive in the digital economy with real-time, borderless payments.</div>
-                        <div class="fz_btn">
-                            <a href="#" class="buttons">
-                                <span class="text">Learn more</span>
-                                <div class="icon">
-                                    <img src="./assets/images/fz_button_arrow.svg" alt="">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="fz_img">
-                        <div class="upizor-product"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="fz_product_panel hash_tag_con item-3">
-                <div class="fz_sub_container">
-                    <div class="fz_content">
-                        <div class="fz_num">
-                            <div class="hash_content">
-                            </div>
-                            <h2>03</h2>
-                        </div>
-                        <div class="fz_title_content">
-                            <div class="fz_subtitle">End to End Operational Suite</div>
-                            <h3>
-                                <div id="finops360-icon" class="product-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-                                <div class="fz_title">FinOpZ 360<sup>°</sup></div>
-                            </h3>
-                        </div>
-                        <div class="fz_bank">Streamlining and Optimizing Processes to Enhance Efficiency and Accuracy</div>
-                        <div class="fz_desc">FINZOR’s End to End Operational solutions optimize and automate key financial processes, enhancing accuracy, efficiency, and control. Our platform integrates seamlessly to streamline transaction management, compliance reporting, and financial visibility, empowering businesses to reduce errors, improve decision-making, and drive operational excellence.</div>
-                        <div class="fz_btns">
-                            <a href="#" class="buttons">
-                                <span class="text">Learn more</span>
-                                <div class="icon">
-                                    <img src="./assets/images/fz_button_arrow.svg" alt="">
-                                </div>
-                            </a>
-
-                        </div>
-                    </div>
-                    <div class="fz_img">
-                        <div class="finops360-product"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="fz_product_panel hash_tag_con item-4">
-                <div class="fz_sub_container">
-                    <div class="fz_content">
-                        <div class="fz_num">
-                            <div class="hash_content">
-                            </div>
-                            <h2>04</h2>
-                        </div>
-                        <div class="fz_title_content">
-                            <div class="fz_subtitle">Merchant Solution</div>
-                            <h3>
-                                <div id="finzro-icon" class="product-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-                                <div class="fz_title">FinZro</div>
-                            </h3>
-                        </div>
-                        <div class="fz_bank">Fueling Business Growth with Smart, Scalable Payment Tools</div>
-                        <div class="fz_desc">FINZOR’s Merchant Solutions offer secure, scalable payment tools that streamline transactions and fuel business growth. With seamless integration across online, in-store, and mobile payments, our platform enhances efficiency through real-time reporting, fraud protection, and customizable features, empowering merchants to optimize operations and improve customer experiences.
-                        </div>
-                        <div class="fz_btn">
-                            <a href="#" class="buttons">
-                                <span class="text">Learn more</span>
-                                <div class="icon">
-                                    <img src="./assets/images/fz_button_arrow.svg" alt="">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="fz_img">
-                        <div class="finzro-product"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="fz_product_panel hash_tag_con item-5">
-                <div class="fz_sub_container">
-                    <div class="fz_content">
-                        <div class="fz_num">
-                            <div class="hash_content">
-                            </div>
-                            <h2>05</h2>
-                        </div>
-                        <div class="fz_title_content">
-                            <div class="fz_subtitle">Data & Analytics</div>
-                            <h3>
-                                <div id="finlyticz-icon" class="product-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-                                <div class="fz_title">FinlyticZ</div>
-                            </h3>
-                        </div>
-                        <div class="fz_bank">Transforming Data into Actionable Insights for Smarter, Data-Driven Decisions</div>
-                        <div class="fz_desc">Fueling Business Growth with Smart, Scalable Payment ToolsFINZOR’s Data & Analytics solutions empower businesses to transform data into actionable insights. With advanced analytics, real-time reporting, and predictive tools, we help optimize performance, identify trends, and drive informed decision-making. Our solutions enable businesses to unlock new opportunities and stay ahead in a data-driven world.</div>
-                        <div class="fz_btn">
-                            <a href="#" class="buttons">
-                                <span class="text">Learn more</span>
-                                <div class="icon">
-                                    <img src="./assets/images/fz_button_arrow.svg" alt="">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="fz_img">
-                        <div class="finlyticz-product"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="fz_product_right">
-            <div class="fz_product_images">
-                <div class="fz_product_image">
-                    <div class="finbankz-product"></div>
-                </div>
-                <div class="fz_product_image">
-                    <div class="upizor-product"></div>
-                </div>
-                <div class="fz_product_image">
-                    <div class="finops360-product"></div>
-                </div>
-                <div class="fz_product_image">
-                    <div class="finzro-product"></div>
-                </div>
-                <div class="fz_product_image">
-                    <div class="finlyticz-product"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Feature -->
-<section id="fz_features" class="panel spacer-y">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="panel__options">
-                    <span data-target="b" class="active" role="button">Core Banking Solution</span>
-                    <span data-target="c" role="button">Payment Gateway </span>
-                    <span data-target="d" role="button">Neo Banking</span>
-                    <span data-target="e" role="button">UPI</span>
-                </div>
-
-                <div class="panel__stack">
-                    <div class="panel__card panel__card--one text-white bg-purple overflow-hidden">
-                        <h2>Core Banking Solution</h2>
-                        <div class="tab-content">
-                            <div id="home" class="tab-pane fade show active" role="tabpanel">
-                                <div class="fz-tab-card">
-                                    <div class="item-pay">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="378" height="480" viewBox="0 0 378 480" fill="none" style="
-                                position: absolute;z-index: -1;top: 0;left: 0;width: 100%;height: 100%!important;">
-                                            <g filter="url(#filter0_b_2084_14380)">
-                                                <path d="M378 21.8295C378 9.77338 367.505 0 354.558 0H23.4419C10.4953 0 0 9.77339 0 21.8295V458.171C0 470.227 10.4953 480 23.4419 480L214.771 480C222.214 480 229.214 476.709 233.633 471.132L279.314 413.489C283.733 407.912 290.733 404.621 298.176 404.621H354.558C367.505 404.621 378 394.848 378 382.792V21.8295Z" fill="url(#paint0_linear_2084_14380)"></path>
-                                                <path d="M23.4419 0.5H354.558C367.263 0.5 377.5 10.0825 377.5 21.8295V382.792C377.5 394.539 367.263 404.121 354.558 404.121H298.176C290.588 404.121 283.441 407.476 278.922 413.178L233.242 470.822C228.922 476.272 222.069 479.5 214.771 479.5L23.4419 479.5C10.7373 479.5 0.5 469.918 0.5 458.171V21.8295C0.5 10.0825 10.7373 0.5 23.4419 0.5Z" stroke="url(#paint1_linear_2084_14380)"></path>
-                                            </g>
-                                            <defs>
-                                                <filter id="filter0_b_2084_14380" x="-21.5599" y="-21.5599" width="421.12" height="523.12" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="10.7799"></feGaussianBlur>
-                                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2084_14380"></feComposite>
-                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2084_14380" result="shape"></feBlend>
-                                                </filter>
-                                                <linearGradient id="paint0_linear_2084_14380" x1="189" y1="0" x2="189" y2="412" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#302F2F"></stop>
-                                                    <stop offset="1" stop-color="#111111"></stop>
-                                                </linearGradient>
-                                                <linearGradient id="paint1_linear_2084_14380" x1="95.481" y1="220.041" x2="51.0376" y2="485.695" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#124945"></stop>
-                                                    <stop offset="1" stop-color="#3A723A"></stop>
-                                                </linearGradient>
-                                            </defs>
-                                        </svg>
-                                        <div id="feature-core1-icon" class="feature-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-                                        <div class="item-pay-text">
-                                            <h3>AI Tools</h3>
-                                            <p>Enhance CX, efficiency, and security via automation, predictive analytics, and fraud detection.</p>
-                                            <a href="#">Read More</a>
-                                            <div class="bottom-img"><img src="assets/images/arrow.svg" alt="arrow"><img src="assets/images/core-icon1.svg" alt="arrow"></div>
-                                        </div>
-                                    </div>
-                                    <div class="item-pay">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="378" height="480" viewBox="0 0 378 480" fill="none" style="
-                                position: absolute;z-index: -1;top: 0;left: 0;width: 100%;height: 100%!important;">
-                                            <g filter="url(#filter0_b_2084_14380)">
-                                                <path d="M378 21.8295C378 9.77338 367.505 0 354.558 0H23.4419C10.4953 0 0 9.77339 0 21.8295V458.171C0 470.227 10.4953 480 23.4419 480L214.771 480C222.214 480 229.214 476.709 233.633 471.132L279.314 413.489C283.733 407.912 290.733 404.621 298.176 404.621H354.558C367.505 404.621 378 394.848 378 382.792V21.8295Z" fill="url(#paint0_linear_2084_14380)"></path>
-                                                <path d="M23.4419 0.5H354.558C367.263 0.5 377.5 10.0825 377.5 21.8295V382.792C377.5 394.539 367.263 404.121 354.558 404.121H298.176C290.588 404.121 283.441 407.476 278.922 413.178L233.242 470.822C228.922 476.272 222.069 479.5 214.771 479.5L23.4419 479.5C10.7373 479.5 0.5 469.918 0.5 458.171V21.8295C0.5 10.0825 10.7373 0.5 23.4419 0.5Z" stroke="url(#paint1_linear_2084_14380)"></path>
-                                            </g>
-                                            <defs>
-                                                <filter id="filter0_b_2084_14380" x="-21.5599" y="-21.5599" width="421.12" height="523.12" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="10.7799"></feGaussianBlur>
-                                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2084_14380"></feComposite>
-                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2084_14380" result="shape"></feBlend>
-                                                </filter>
-                                                <linearGradient id="paint0_linear_2084_14380" x1="189" y1="0" x2="189" y2="412" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#302F2F"></stop>
-                                                    <stop offset="1" stop-color="#111111"></stop>
-                                                </linearGradient>
-                                                <linearGradient id="paint1_linear_2084_14380" x1="95.481" y1="220.041" x2="51.0376" y2="485.695" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#124945"></stop>
-                                                    <stop offset="1" stop-color="#3A723A"></stop>
-                                                </linearGradient>
-                                            </defs>
-                                        </svg>
-                                        <div id="feature-core2-icon" class="feature-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-                                        <div class="item-pay-text">
-                                            <h3>Payments</h3>
-                                            <p>Complete payments lifecycle with Cloud-Native, XAI, API-enabled, and end-to-end payment tech.</p>
-                                            <a href="#">Read More</a>
-                                            <div class="bottom-img"><img src="assets/images/arrow.svg" alt="arrow"><img src="assets/images/core-icon2.svg" alt="arrow"></div>
-                                        </div>
-                                    </div>
-                                    <div class="item-pay">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="378" height="480" viewBox="0 0 378 480" fill="none" style="
-                                position: absolute;z-index: -1;top: 0;left: 0;width: 100%;height: 100%!important;">
-                                            <g filter="url(#filter0_b_2084_14380)">
-                                                <path d="M378 21.8295C378 9.77338 367.505 0 354.558 0H23.4419C10.4953 0 0 9.77339 0 21.8295V458.171C0 470.227 10.4953 480 23.4419 480L214.771 480C222.214 480 229.214 476.709 233.633 471.132L279.314 413.489C283.733 407.912 290.733 404.621 298.176 404.621H354.558C367.505 404.621 378 394.848 378 382.792V21.8295Z" fill="url(#paint0_linear_2084_14380)"></path>
-                                                <path d="M23.4419 0.5H354.558C367.263 0.5 377.5 10.0825 377.5 21.8295V382.792C377.5 394.539 367.263 404.121 354.558 404.121H298.176C290.588 404.121 283.441 407.476 278.922 413.178L233.242 470.822C228.922 476.272 222.069 479.5 214.771 479.5L23.4419 479.5C10.7373 479.5 0.5 469.918 0.5 458.171V21.8295C0.5 10.0825 10.7373 0.5 23.4419 0.5Z" stroke="url(#paint1_linear_2084_14380)"></path>
-                                            </g>
-                                            <defs>
-                                                <filter id="filter0_b_2084_14380" x="-21.5599" y="-21.5599" width="421.12" height="523.12" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="10.7799"></feGaussianBlur>
-                                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2084_14380"></feComposite>
-                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2084_14380" result="shape"></feBlend>
-                                                </filter>
-                                                <linearGradient id="paint0_linear_2084_14380" x1="189" y1="0" x2="189" y2="412" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#302F2F"></stop>
-                                                    <stop offset="1" stop-color="#111111"></stop>
-                                                </linearGradient>
-                                                <linearGradient id="paint1_linear_2084_14380" x1="95.481" y1="220.041" x2="51.0376" y2="485.695" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#124945"></stop>
-                                                    <stop offset="1" stop-color="#3A723A"></stop>
-                                                </linearGradient>
-                                            </defs>
-                                        </svg>
-                                        <div id="feature-core3-icon" class="feature-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-                                        <div class="item-pay-text">
-                                            <h3>Cloud Based Solutions</h3>
-                                            <p>Scalable, secure, cost-efficient CBS with disaster recovery and multi-tenant support.</p>
-                                            <a href="#">Read More</a>
-                                            <div class="bottom-img"><img src="assets/images/arrow.svg" alt="arrow"><img src="assets/images/core-icon3.svg" alt="arrow"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="panel__card panel__card--two bg-skyblue-light">
-                        <h2>Payment Gateway</h2>
-                        <div class="tab-content">
-                            <div class="fz-tab-card">
-                                <div class="item-pay">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="378" height="480" viewBox="0 0 378 480" fill="none" style="
-                            position: absolute;z-index: -1;top: 0;left: 0;width: 100%;height: 100%!important;">
-                                        <g filter="url(#filter0_b_2084_14380)">
-                                            <path d="M378 21.8295C378 9.77338 367.505 0 354.558 0H23.4419C10.4953 0 0 9.77339 0 21.8295V458.171C0 470.227 10.4953 480 23.4419 480L214.771 480C222.214 480 229.214 476.709 233.633 471.132L279.314 413.489C283.733 407.912 290.733 404.621 298.176 404.621H354.558C367.505 404.621 378 394.848 378 382.792V21.8295Z" fill="url(#paint0_linear_2084_14380)"></path>
-                                            <path d="M23.4419 0.5H354.558C367.263 0.5 377.5 10.0825 377.5 21.8295V382.792C377.5 394.539 367.263 404.121 354.558 404.121H298.176C290.588 404.121 283.441 407.476 278.922 413.178L233.242 470.822C228.922 476.272 222.069 479.5 214.771 479.5L23.4419 479.5C10.7373 479.5 0.5 469.918 0.5 458.171V21.8295C0.5 10.0825 10.7373 0.5 23.4419 0.5Z" stroke="url(#paint1_linear_2084_14380)"></path>
-                                        </g>
-                                        <defs>
-                                            <filter id="filter0_b_2084_14380" x="-21.5599" y="-21.5599" width="421.12" height="523.12" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="10.7799"></feGaussianBlur>
-                                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2084_14380"></feComposite>
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2084_14380" result="shape"></feBlend>
-                                            </filter>
-                                            <linearGradient id="paint0_linear_2084_14380" x1="189" y1="0" x2="189" y2="412" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#302F2F"></stop>
-                                                <stop offset="1" stop-color="#111111"></stop>
-                                            </linearGradient>
-                                            <linearGradient id="paint1_linear_2084_14380" x1="95.481" y1="220.041" x2="51.0376" y2="485.695" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#124945"></stop>
-                                                <stop offset="1" stop-color="#3A723A"></stop>
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                    <div id="feature-pay1-icon" class="feature-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-                                    <div class="item-pay-text">
-                                        <h3>High Scalability</h3>
-                                        <p>Ensures reliable payments with optimized infrastructure, cloud tech, and seamless transactions.</p>
-                                        <a href="#">Read More</a>
-                                        <div class="bottom-img"><img src="assets/images/arrow.svg" alt="arrow"><img src="assets/images/payment-icon1.svg" alt="arrow"></div>
-                                    </div>
-                                </div>
-                                <div class="item-pay">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="378" height="480" viewBox="0 0 378 480" fill="none" style="
-                                position: absolute;z-index: -1;top: 0;left: 0;width: 100%;height: 100%!important;">
-                                        <g filter="url(#filter0_b_2084_14380)">
-                                            <path d="M378 21.8295C378 9.77338 367.505 0 354.558 0H23.4419C10.4953 0 0 9.77339 0 21.8295V458.171C0 470.227 10.4953 480 23.4419 480L214.771 480C222.214 480 229.214 476.709 233.633 471.132L279.314 413.489C283.733 407.912 290.733 404.621 298.176 404.621H354.558C367.505 404.621 378 394.848 378 382.792V21.8295Z" fill="url(#paint0_linear_2084_14380)"></path>
-                                            <path d="M23.4419 0.5H354.558C367.263 0.5 377.5 10.0825 377.5 21.8295V382.792C377.5 394.539 367.263 404.121 354.558 404.121H298.176C290.588 404.121 283.441 407.476 278.922 413.178L233.242 470.822C228.922 476.272 222.069 479.5 214.771 479.5L23.4419 479.5C10.7373 479.5 0.5 469.918 0.5 458.171V21.8295C0.5 10.0825 10.7373 0.5 23.4419 0.5Z" stroke="url(#paint1_linear_2084_14380)"></path>
-                                        </g>
-                                        <defs>
-                                            <filter id="filter0_b_2084_14380" x="-21.5599" y="-21.5599" width="421.12" height="523.12" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="10.7799"></feGaussianBlur>
-                                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2084_14380"></feComposite>
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2084_14380" result="shape"></feBlend>
-                                            </filter>
-                                            <linearGradient id="paint0_linear_2084_14380" x1="189" y1="0" x2="189" y2="412" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#302F2F"></stop>
-                                                <stop offset="1" stop-color="#111111"></stop>
-                                            </linearGradient>
-                                            <linearGradient id="paint1_linear_2084_14380" x1="95.481" y1="220.041" x2="51.0376" y2="485.695" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#124945"></stop>
-                                                <stop offset="1" stop-color="#3A723A"></stop>
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                    <div id="feature-pay2-icon" class="feature-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-                                    <div class="item-pay-text">
-                                        <h3>Fraud Prevention</h3>
-                                        <p>AI-driven fraud detection ensures secure transactions, anomaly alerts, and advanced tools.</p>
-                                        <a href="#">Read More</a>
-                                        <div class="bottom-img"><img src="assets/images/arrow.svg" alt="arrow"><img src="assets/images/payment-icon2.svg" alt="arrow"></div>
-                                    </div>
-                                </div>
-                                <div class="item-pay">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="378" height="480" viewBox="0 0 378 480" fill="none" style="
-                          position: absolute;z-index: -1;top: 0;left: 0;width: 100%;height: 100%!important;">
-                                        <g filter="url(#filter0_b_2084_14380)">
-                                            <path d="M378 21.8295C378 9.77338 367.505 0 354.558 0H23.4419C10.4953 0 0 9.77339 0 21.8295V458.171C0 470.227 10.4953 480 23.4419 480L214.771 480C222.214 480 229.214 476.709 233.633 471.132L279.314 413.489C283.733 407.912 290.733 404.621 298.176 404.621H354.558C367.505 404.621 378 394.848 378 382.792V21.8295Z" fill="url(#paint0_linear_2084_14380)"></path>
-                                            <path d="M23.4419 0.5H354.558C367.263 0.5 377.5 10.0825 377.5 21.8295V382.792C377.5 394.539 367.263 404.121 354.558 404.121H298.176C290.588 404.121 283.441 407.476 278.922 413.178L233.242 470.822C228.922 476.272 222.069 479.5 214.771 479.5L23.4419 479.5C10.7373 479.5 0.5 469.918 0.5 458.171V21.8295C0.5 10.0825 10.7373 0.5 23.4419 0.5Z" stroke="url(#paint1_linear_2084_14380)"></path>
-                                        </g>
-                                        <defs>
-                                            <filter id="filter0_b_2084_14380" x="-21.5599" y="-21.5599" width="421.12" height="523.12" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="10.7799"></feGaussianBlur>
-                                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2084_14380"></feComposite>
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2084_14380" result="shape"></feBlend>
-                                            </filter>
-                                            <linearGradient id="paint0_linear_2084_14380" x1="189" y1="0" x2="189" y2="412" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#302F2F"></stop>
-                                                <stop offset="1" stop-color="#111111"></stop>
-                                            </linearGradient>
-                                            <linearGradient id="paint1_linear_2084_14380" x1="95.481" y1="220.041" x2="51.0376" y2="485.695" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#124945"></stop>
-                                                <stop offset="1" stop-color="#3A723A"></stop>
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                    <div id="feature-pay3-icon" class="feature-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-                                    <div class="item-pay-text">
-                                        <h3>Developer-Friendly APIs</h3>
-                                        <p>Easy APIs for seamless payment integration, supported by docs, SDKs, and customization tools.</p>
-                                        <a href="#">Read More</a>
-                                        <div class="bottom-img"><img src="assets/images/arrow.svg" alt="arrow"><img src="assets/images/payment-icon3.svg" alt="arrow"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="panel__card panel__card--three bg-orange-light">
-                        <h2>Neo Banking</h2>
-                        <div class="tab-content">
-                            <div class="fz-tab-card">
-                                <div class="item-pay">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="378" height="480" viewBox="0 0 378 480" fill="none" style="
-                          position: absolute;z-index: -1;top: 0;left: 0;width: 100%;height: 100%!important;">
-                                        <g filter="url(#filter0_b_2084_14380)">
-                                            <path d="M378 21.8295C378 9.77338 367.505 0 354.558 0H23.4419C10.4953 0 0 9.77339 0 21.8295V458.171C0 470.227 10.4953 480 23.4419 480L214.771 480C222.214 480 229.214 476.709 233.633 471.132L279.314 413.489C283.733 407.912 290.733 404.621 298.176 404.621H354.558C367.505 404.621 378 394.848 378 382.792V21.8295Z" fill="url(#paint0_linear_2084_14380)"></path>
-                                            <path d="M23.4419 0.5H354.558C367.263 0.5 377.5 10.0825 377.5 21.8295V382.792C377.5 394.539 367.263 404.121 354.558 404.121H298.176C290.588 404.121 283.441 407.476 278.922 413.178L233.242 470.822C228.922 476.272 222.069 479.5 214.771 479.5L23.4419 479.5C10.7373 479.5 0.5 469.918 0.5 458.171V21.8295C0.5 10.0825 10.7373 0.5 23.4419 0.5Z" stroke="url(#paint1_linear_2084_14380)"></path>
-                                        </g>
-                                        <defs>
-                                            <filter id="filter0_b_2084_14380" x="-21.5599" y="-21.5599" width="421.12" height="523.12" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="10.7799"></feGaussianBlur>
-                                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2084_14380"></feComposite>
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2084_14380" result="shape"></feBlend>
-                                            </filter>
-                                            <linearGradient id="paint0_linear_2084_14380" x1="189" y1="0" x2="189" y2="412" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#302F2F"></stop>
-                                                <stop offset="1" stop-color="#111111"></stop>
-                                            </linearGradient>
-                                            <linearGradient id="paint1_linear_2084_14380" x1="95.481" y1="220.041" x2="51.0376" y2="485.695" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#124945"></stop>
-                                                <stop offset="1" stop-color="#3A723A"></stop>
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                    <div id="feature-neo1-icon" class="feature-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-                                    <div class="item-pay-text">
-                                        <h3>Multichannel Banking</h3>
-                                        <p>Access banking across platforms with consistent and unified user experiences.</p>
-                                        <a href="#">Read More</a>
-                                        <div class="bottom-img"><img src="assets/images/arrow.svg" alt="arrow"><img src="assets/images/neo-icon1.svg" alt="arrow"></div>
-                                    </div>
-                                </div>
-                                <div class="item-pay">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="378" height="480" viewBox="0 0 378 480" fill="none" style="
-                                position: absolute;z-index: -1;top: 0;left: 0;width: 100%;height: 100%!important;">
-                                        <g filter="url(#filter0_b_2084_14380)">
-                                            <path d="M378 21.8295C378 9.77338 367.505 0 354.558 0H23.4419C10.4953 0 0 9.77339 0 21.8295V458.171C0 470.227 10.4953 480 23.4419 480L214.771 480C222.214 480 229.214 476.709 233.633 471.132L279.314 413.489C283.733 407.912 290.733 404.621 298.176 404.621H354.558C367.505 404.621 378 394.848 378 382.792V21.8295Z" fill="url(#paint0_linear_2084_14380)"></path>
-                                            <path d="M23.4419 0.5H354.558C367.263 0.5 377.5 10.0825 377.5 21.8295V382.792C377.5 394.539 367.263 404.121 354.558 404.121H298.176C290.588 404.121 283.441 407.476 278.922 413.178L233.242 470.822C228.922 476.272 222.069 479.5 214.771 479.5L23.4419 479.5C10.7373 479.5 0.5 469.918 0.5 458.171V21.8295C0.5 10.0825 10.7373 0.5 23.4419 0.5Z" stroke="url(#paint1_linear_2084_14380)"></path>
-                                        </g>
-                                        <defs>
-                                            <filter id="filter0_b_2084_14380" x="-21.5599" y="-21.5599" width="421.12" height="523.12" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="10.7799"></feGaussianBlur>
-                                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2084_14380"></feComposite>
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2084_14380" result="shape"></feBlend>
-                                            </filter>
-                                            <linearGradient id="paint0_linear_2084_14380" x1="189" y1="0" x2="189" y2="412" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#302F2F"></stop>
-                                                <stop offset="1" stop-color="#111111"></stop>
-                                            </linearGradient>
-                                            <linearGradient id="paint1_linear_2084_14380" x1="95.481" y1="220.041" x2="51.0376" y2="485.695" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#124945"></stop>
-                                                <stop offset="1" stop-color="#3A723A"></stop>
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                    <div id="feature-neo2-icon" class="feature-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-                                    <div class="item-pay-text">
-                                        <h3>Smart Insights & Alerts</h3>
-                                        <p>AI analyzes spending, gives savings advice, and offers instant transaction and balance alerts.</p>
-                                        <a href="#">Read More</a>
-                                        <div class="bottom-img"><img src="assets/images/arrow.svg" alt="arrow"><img src="assets/images/neo-icon2.svg" alt="arrow"></div>
-                                    </div>
-                                </div>
-                                <div class="item-pay">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="378" height="480" viewBox="0 0 378 480" fill="none" style="
-                          position: absolute;z-index: -1;top: 0;left: 0;width: 100%;height: 100%!important;">
-                                        <g filter="url(#filter0_b_2084_14380)">
-                                            <path d="M378 21.8295C378 9.77338 367.505 0 354.558 0H23.4419C10.4953 0 0 9.77339 0 21.8295V458.171C0 470.227 10.4953 480 23.4419 480L214.771 480C222.214 480 229.214 476.709 233.633 471.132L279.314 413.489C283.733 407.912 290.733 404.621 298.176 404.621H354.558C367.505 404.621 378 394.848 378 382.792V21.8295Z" fill="url(#paint0_linear_2084_14380)"></path>
-                                            <path d="M23.4419 0.5H354.558C367.263 0.5 377.5 10.0825 377.5 21.8295V382.792C377.5 394.539 367.263 404.121 354.558 404.121H298.176C290.588 404.121 283.441 407.476 278.922 413.178L233.242 470.822C228.922 476.272 222.069 479.5 214.771 479.5L23.4419 479.5C10.7373 479.5 0.5 469.918 0.5 458.171V21.8295C0.5 10.0825 10.7373 0.5 23.4419 0.5Z" stroke="url(#paint1_linear_2084_14380)"></path>
-                                        </g>
-                                        <defs>
-                                            <filter id="filter0_b_2084_14380" x="-21.5599" y="-21.5599" width="421.12" height="523.12" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="10.7799"></feGaussianBlur>
-                                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2084_14380"></feComposite>
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2084_14380" result="shape"></feBlend>
-                                            </filter>
-                                            <linearGradient id="paint0_linear_2084_14380" x1="189" y1="0" x2="189" y2="412" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#302F2F"></stop>
-                                                <stop offset="1" stop-color="#111111"></stop>
-                                            </linearGradient>
-                                            <linearGradient id="paint1_linear_2084_14380" x1="95.481" y1="220.041" x2="51.0376" y2="485.695" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#124945"></stop>
-                                                <stop offset="1" stop-color="#3A723A"></stop>
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                    <div id="feature-neo3-icon" class="feature-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-                                    <div class="item-pay-text">
-                                        <h3>Round-the-Clock Support</h3>
-                                        <p>24/7 customer support via chatbots and live agents for quick issue resolution.</p>
-                                        <a href="#">Read More</a>
-                                        <div class="bottom-img"><img src="assets/images/arrow.svg" alt="arrow"><img src="assets/images/neo-icon3.svg" alt="arrow"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="panel__card panel__card--four bg-green-light">
-                        <h2>UPI</h2>
-                        <div class="tab-content">
-                            <div class="fz-tab-card">
-                                <div class="item-pay">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="378" height="480" viewBox="0 0 378 480" fill="none" style="
-                          position: absolute;z-index: -1;top: 0;left: 0;width: 100%;height: 100%!important;">
-                                        <g filter="url(#filter0_b_2084_14380)">
-                                            <path d="M378 21.8295C378 9.77338 367.505 0 354.558 0H23.4419C10.4953 0 0 9.77339 0 21.8295V458.171C0 470.227 10.4953 480 23.4419 480L214.771 480C222.214 480 229.214 476.709 233.633 471.132L279.314 413.489C283.733 407.912 290.733 404.621 298.176 404.621H354.558C367.505 404.621 378 394.848 378 382.792V21.8295Z" fill="url(#paint0_linear_2084_14380)"></path>
-                                            <path d="M23.4419 0.5H354.558C367.263 0.5 377.5 10.0825 377.5 21.8295V382.792C377.5 394.539 367.263 404.121 354.558 404.121H298.176C290.588 404.121 283.441 407.476 278.922 413.178L233.242 470.822C228.922 476.272 222.069 479.5 214.771 479.5L23.4419 479.5C10.7373 479.5 0.5 469.918 0.5 458.171V21.8295C0.5 10.0825 10.7373 0.5 23.4419 0.5Z" stroke="url(#paint1_linear_2084_14380)"></path>
-                                        </g>
-                                        <defs>
-                                            <filter id="filter0_b_2084_14380" x="-21.5599" y="-21.5599" width="421.12" height="523.12" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="10.7799"></feGaussianBlur>
-                                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2084_14380"></feComposite>
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2084_14380" result="shape"></feBlend>
-                                            </filter>
-                                            <linearGradient id="paint0_linear_2084_14380" x1="189" y1="0" x2="189" y2="412" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#302F2F"></stop>
-                                                <stop offset="1" stop-color="#111111"></stop>
-                                            </linearGradient>
-                                            <linearGradient id="paint1_linear_2084_14380" x1="95.481" y1="220.041" x2="51.0376" y2="485.695" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#124945"></stop>
-                                                <stop offset="1" stop-color="#3A723A"></stop>
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                    <div id="feature-upi1-icon" class="feature-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-                                    <div class="item-pay-text">
-                                        <h3>Interbank Instant Transfers</h3>
-                                        <p>Real-time UPI transfers eliminate delays, ensuring fast and secure payments.</p>
-                                        <a href="#">Read More</a>
-                                        <div class="bottom-img"><img src="assets/images/arrow.svg" alt="arrow"><img src="assets/images/upi-icon1.svg" alt="arrow"></div>
-                                    </div>
-                                </div>
-                                <div class="item-pay">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="378" height="480" viewBox="0 0 378 480" fill="none" style="
-                          position: absolute;z-index: -1;top: 0;left: 0;width: 100%;height: 100%!important;">
-                                        <g filter="url(#filter0_b_2084_14380)">
-                                            <path d="M378 21.8295C378 9.77338 367.505 0 354.558 0H23.4419C10.4953 0 0 9.77339 0 21.8295V458.171C0 470.227 10.4953 480 23.4419 480L214.771 480C222.214 480 229.214 476.709 233.633 471.132L279.314 413.489C283.733 407.912 290.733 404.621 298.176 404.621H354.558C367.505 404.621 378 394.848 378 382.792V21.8295Z" fill="url(#paint0_linear_2084_14380)"></path>
-                                            <path d="M23.4419 0.5H354.558C367.263 0.5 377.5 10.0825 377.5 21.8295V382.792C377.5 394.539 367.263 404.121 354.558 404.121H298.176C290.588 404.121 283.441 407.476 278.922 413.178L233.242 470.822C228.922 476.272 222.069 479.5 214.771 479.5L23.4419 479.5C10.7373 479.5 0.5 469.918 0.5 458.171V21.8295C0.5 10.0825 10.7373 0.5 23.4419 0.5Z" stroke="url(#paint1_linear_2084_14380)"></path>
-                                        </g>
-                                        <defs>
-                                            <filter id="filter0_b_2084_14380" x="-21.5599" y="-21.5599" width="421.12" height="523.12" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="10.7799"></feGaussianBlur>
-                                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2084_14380"></feComposite>
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2084_14380" result="shape"></feBlend>
-                                            </filter>
-                                            <linearGradient id="paint0_linear_2084_14380" x1="189" y1="0" x2="189" y2="412" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#302F2F"></stop>
-                                                <stop offset="1" stop-color="#111111"></stop>
-                                            </linearGradient>
-                                            <linearGradient id="paint1_linear_2084_14380" x1="95.481" y1="220.041" x2="51.0376" y2="485.695" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#124945"></stop>
-                                                <stop offset="1" stop-color="#3A723A"></stop>
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                    <div id="feature-upi2-icon" class="feature-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-                                    <div class="item-pay-text">
-                                        <h3>QR Scan & Pay</h3>
-                                        <p>Simple QR-based payments allow instant, secure UPI transactions for merchants and customers.</p>
-                                        <a href="#">Read More</a>
-                                        <div class="bottom-img"><img src="assets/images/arrow.svg" alt="arrow"><img src="assets/images/upi-icon2.svg" alt="arrow"></div>
-                                    </div>
-                                </div>
-                                <div class="item-pay">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="378" height="480" viewBox="0 0 378 480" fill="none" style="
-                          position: absolute;z-index: -1;top: 0;left: 0;width: 100%;height: 100%!important;">
-                                        <g filter="url(#filter0_b_2084_14380)">
-                                            <path d="M378 21.8295C378 9.77338 367.505 0 354.558 0H23.4419C10.4953 0 0 9.77339 0 21.8295V458.171C0 470.227 10.4953 480 23.4419 480L214.771 480C222.214 480 229.214 476.709 233.633 471.132L279.314 413.489C283.733 407.912 290.733 404.621 298.176 404.621H354.558C367.505 404.621 378 394.848 378 382.792V21.8295Z" fill="url(#paint0_linear_2084_14380)"></path>
-                                            <path d="M23.4419 0.5H354.558C367.263 0.5 377.5 10.0825 377.5 21.8295V382.792C377.5 394.539 367.263 404.121 354.558 404.121H298.176C290.588 404.121 283.441 407.476 278.922 413.178L233.242 470.822C228.922 476.272 222.069 479.5 214.771 479.5L23.4419 479.5C10.7373 479.5 0.5 469.918 0.5 458.171V21.8295C0.5 10.0825 10.7373 0.5 23.4419 0.5Z" stroke="url(#paint1_linear_2084_14380)"></path>
-                                        </g>
-                                        <defs>
-                                            <filter id="filter0_b_2084_14380" x="-21.5599" y="-21.5599" width="421.12" height="523.12" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="10.7799"></feGaussianBlur>
-                                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2084_14380"></feComposite>
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2084_14380" result="shape"></feBlend>
-                                            </filter>
-                                            <linearGradient id="paint0_linear_2084_14380" x1="189" y1="0" x2="189" y2="412" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#302F2F"></stop>
-                                                <stop offset="1" stop-color="#111111"></stop>
-                                            </linearGradient>
-                                            <linearGradient id="paint1_linear_2084_14380" x1="95.481" y1="220.041" x2="51.0376" y2="485.695" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#124945"></stop>
-                                                <stop offset="1" stop-color="#3A723A"></stop>
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                    <div id="feature-upi3-icon" class="feature-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-                                    <div class="item-pay-text">
-                                        <h3>Scheduled Payments</h3>
-                                        <p>Automate bills, loans, and subscriptions to ensure hassle-free payments and manage cash flow.</p>
-                                        <a href="#">Read More</a>
-                                        <div class="bottom-img"><img src="assets/images/arrow.svg" alt="arrow"><img src="assets/images/upi-icon3.svg" alt="arrow"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Code -->
-<section class="developer_section">
-    <div class="container">
-        <div class="row">
-            <h3>Finzor is built </h3>
-            <h5>for developers by developers</h5>
-            <div class="col-lg-6">
-                <div class="dev_api_images" style="padding: 0;">
-                    <div id="api-dev" class="api-animate-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div id="editor">
-                    <div id="typingEffect" class="code-container"></div>
-                    <ul>
-                        <li class="btn_1"></li>
-                        <li class="btn_2"></li>
-                        <li class="btn_3"></li>
-                    </ul>
-                    <textarea id="code" name="code"></textarea>
-                    <span class="cursor"></span>
-                </div>
-            </div>
+        <div class="developer_section">
             <div class="col-lg-12">
                 <div class="dev_left">
                     <div class="row">
@@ -847,9 +349,9 @@ include_once('partials/header.php'); //should be last after all variables
                             <div class="dev_card fz_intergration">
                                 <div class="dev_card_logo">
                                     <span><img src="./assets/images/integration.png" alt=""></span>
-                                    <h4>Integrations</h4>
+                                    <h4>Impact</h4>
                                 </div>
-                                <p>Find all popular platform SDKs, plugin, server integrations in our integration stack.</p>
+                                <p>We are here to enhance financial inclusion by unlocking access to a comprehensive suite of essential financial services for thriving enterprise businesses across Southeast Asia.</p>
                             </div>
                         </div>
                     </div>
@@ -858,9 +360,9 @@ include_once('partials/header.php'); //should be last after all variables
                             <div class="dev_card fz_api">
                                 <div class="dev_card_logo">
                                     <span><img src="./assets/images/Api.png" alt=""></span>
-                                    <h4>API Reference</h4>
+                                    <h4>Ownership</h4>
                                 </div>
-                                <p>Comprehensive documentation to build powerful payment solutions.</p>
+                                <p>It is a privilege for us to be a change maker in the fintech ecosystem, working alongside financial institutions with wide coverage and tech companies.</p>
                             </div>
                         </div>
                     </div>
@@ -869,326 +371,97 @@ include_once('partials/header.php'); //should be last after all variables
                             <div class="dev_card fz_webhook">
                                 <div class="dev_card_logo">
                                     <span><img src="./assets/images/plug.png" alt=""></span>
-                                    <h4>Webhooks</h4>
+                                    <h4>Customer Centric</h4>
                                 </div>
-                                <p>Receive real-time notifications for all payment related transactions and events.</p>
+                                <p>We care about people, from our partners and clients to their end-users. We constantly focus on bringing value to the people we touch.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- BankZor Section -->
-<section id="fz_mobile_section">
-    <div class="container">
-        <div class="row align-items-lg-center">
-            <div class="col-lg-6">
-                <div class="fz_mobile_right">
-                    <img src="./assets/audio/Mobile-Animation.gif" alt="Zorion_gif">
-                </div>
-            </div>
-            <div class="col-lg-6 fz_mobile_text_left">
-                <h2>Zorion</h2>
-                <p class="fz_sub_title">Built for Next-Gen Leaders</p>
-                <p class="fz_description"><span><img src="assets/images/finance-icon.svg" alt="Mobile" /></span>The unified
-                    app designed exclusively
-                    for the leadership team, offers real-time insights, secured communication, and actionable tools to enhance
-                    decision-making and operational efficiency.Built with advanced security, including
-                    end-to-end encryption and multi-factor authentication, it ensures your data is protected. Powered by AI and
-                    ML, it empowers leaders to monitor, manage, and strategize seamlessly.</p>
-                <div class="fz_btn">
-                    <button class="fz_learmore active_btn">
-                        <span class="text">Learn more</span>
-                        <div class="icon">
-                            <img src="./assets/images/fz_button_arrow.svg" alt="">
-                        </div>
-                    </button>
-                    <button class="fz_learmore_btn">
-                        <span class="text">Get Started</span>
-                        <div class="icon">
-                            <img src="./assets/images/fz_button_arrow.svg" alt="">
-                        </div>
-                    </button>
-                </div>
-            </div>
-        </div>
-</section>
-<!-- Counter -->
-<section class="counter_section">
-    <div class="container">
-        <iframe src="https://lottie.host/embed/b3bba18e-9e0f-4de6-8ce4-342df5718ab8/mEDuQEZBOr.lottie"></iframe>
-        <h2>Achievement of Finzor</h2>
-        <p>"We take pride in our journey, marked by milestones that reflect our <br> commitment to excellence, innovation, and customer satisfaction."</p>
-        <div id="counter">
-            <div class="row" id="counter-section">
 
-                <div class="col-lg-3">
-                    <div class="count percent plus_counter js-count-up" data-value="100">
-                        0 M
-                    </div>
-                    <span>Dedicated Experts</span>
-                </div>
-                <div class="col-lg-3">
-                    <div class="count percent plus_counter js-count-up" data-value="60">
-                        0
-                    </div>
-                    <span>Employees</span>
-                </div>
-                <div class="col-lg-3">
-                    <div class="count percent plus_counter js-count-up" data-value="100">
-                        0
-                    </div>
-                    <span>Features</span>
-                </div>
-                <div class="col-lg-3">
-                    <div class="count percent percent_1 js-count-up" data-value="13">
-                        0
-                    </div>
-                    <span>Products</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Blog -->
-<section class="fz-blog">
-    <div class="container">
-        <div class="blog-carousel">
-            <h3>Boost your finances with Finzor</h3>
-            <p>All your finance activity are highly encrypted with several level of security protocols</p>
-        </div>
-        <div class="owl-carousel owl-theme" id="owl-carousel">
-            <!-- Card 1 -->
-            <div class="item">
-                <img src="./assets/images/blog_card_1.png" alt="Image 1">
-                <div class="card-body">
-                    <h5 class="card-title">Integrated Workflow Scheduler</h5>
-                    <p class="card-text">
-                        Integrate a robust scheduler within the CBS to automate processes like report generation and account maintenance at desired frequencies. This enhances efficiency, streamlines workflows, and ensures timely execution without manual intervention.
-                    </p>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="item">
-                <img src="./assets/images/blog_card_2.png" alt="Image 2">
-                <div class="card-body">
-                    <h5 class="card-title">Multi-Factor Authentication</h5>
-                    <p class="card-text">
-                        We offer robust security solutions with OTP delivery via SMS, offline OTP generation through a mobile app, biometric authentication (fingerprint/face), and text-based challenges to protect against bots. Our multi-layered approach ensures top-tier user authentication and data security.
-                    </p>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="item">
-                <img src="./assets/images/blog_card_3.png" alt="Image 3">
-                <div class="card-body">
-                    <h5 class="card-title">Scalable Licensing and Smart Usage</h5>
-                    <p class="card-text">
-                        Finzor provides a scalable licensing system for CBS, dynamically adjusting based on user activity—covering users, transactions, customers, and branches. It supports prepaid and postpaid models with license expiry, ensuring cost-effective, usage-based pricing.
-                    </p>
-                </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="item">
-                <img src="./assets/images/blog_card_4.png" alt="Image 4">
-                <div class="card-body">
-                    <h5 class="card-title">Data protection & Fraud prevention</h5>
-                    <p class="card-text">
-                        Fortifying financial systems with robust security and proactive AML strategies to combat fraud and prevent money laundering
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Testimonial -->
-<!-- Testimonial -->
-<!-- <section class="fz_testimonial">
-          <div class="container">
-            <div class="fz_testimonial_top">
-              <h2>Lorem ipsum</h2>
-              <p>How we make finances easy
-              </p>
-            </div>
-            <ul class="fz_testimonial_items">
-              <li class="fz_testimonial_item">
-                <img class="img" src="./assets/images/testimonial_1.jpeg" alt="Edward Johnson">
-                <div class="fz_testimonial_item_content">
-                  <h3>Lorem ipsum</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare a arcu quis ornare. Aliquam a diam nunc. Etiam augue augue, sagittis nec bibendum vel, pretium nec nunc.</p>
-                </div>
-              </li>
-              <li class="fz_testimonial_item">
-                <img class="img" src="./assets/images/testimonial_2.jpeg" alt="Emma">
+        <div class="about_part">
 
-                <div class="fz_testimonial_item_content">
-                  <h3>Lorem ipsum</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare a arcu quis ornare. Aliquam a diam nunc. Etiam augue augue, sagittis nec bibendum vel, pretium nec nunc.</p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about_us_images">
+                        <img src="assets/images/arrow.png" alt="" class="mission_img">
+                    </div>
                 </div>
-              </li>
-              <li class="fz_testimonial_item active">
-                <img class="img" src="./assets/images/testimonial_3.jpeg" alt="tom">
-                <div class="fz_testimonial_item_content">
-                  <h3>Lorem ipsum</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare a arcu quis ornare. Aliquam a diam nunc. Etiam augue augue, sagittis nec bibendum vel, pretium nec nunc.</p>
-                </div>
-              </li>
-              <li class="fz_testimonial_item">
-                <img class="img" src="./assets/images/testimonial_4.jpeg" alt="John">
-                <div class="fz_testimonial_item_content">
-                  <h3>Lorem ipsum</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare a arcu quis ornare. Aliquam a diam nunc. Etiam augue augue, sagittis nec bibendum vel, pretium nec nunc.</p>
-                </div>
-              </li>
-              <li class="fz_testimonial_item">
-                <img class="img" src="./assets/images/testimonial_5.jpeg" alt="Sam">
-                <div class="fz_testimonial_item_content">
-                  <h3>Lorem ipsum</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare a arcu quis ornare. Aliquam a diam nunc. Etiam augue augue, sagittis nec bibendum vel, pretium nec nunc.</p>
-                </div>
-              </li>
-              <li class="fz_testimonial_item">
-                <img class="img" src="./assets/images/testimonial_6.jpeg" alt="aravind">
-                <div class="fz_testimonial_item_content">
-                  <h3>Lorem ipsum</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare a arcu quis ornare. Aliquam a diam nunc. Etiam augue augue, sagittis nec bibendum vel, pretium nec nunc.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section> -->
-<!-- FAQ -->
-<section class="faq_section">
-    <div class="container">
-        <div class="row align-items-lg-start">
-            <div class="col-lg-6">
-                <div class="faq_header">
-                    <h4>FAQ</h4>
-                    <h3>You have questions? <br> We have
-                        answers.</h3>
-                    <div id="faq-animate" class="faq-animate visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
+                <div class="col-lg-6">
+                    <div class="about_us_content">
+                        <h5>Our Mission</h5>
+                        To deliver advanced, reliable, and scalable payment and core banking systems that ensure
+                        secure, eﬃcient, and user-centric financial transacAons, fostering trust and supporAng the
+                        growth of the financial ecosystem.
+                        <button class="buttons mt-4">
+                            <span class="text">Get Started</span>
+                            <div class="icon">
+                                <img src="./assets/images/fz_button_arrow.svg" alt="">
+                            </div>
+                        </button>
+                    </div>
+
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                aria-expanded="true" aria-controls="collapseOne">
-                                What is a Core Banking Solution (CBS)?
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                A CBS is a centralized system that manages banking operations, including accounts, transactions, loans, and payments, in real-time.
+        </div>
+        <div class="about_part">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about_us_content">
+                        <h5>Our Vision</h5>
+                        Finzor is revoluAonizing banking by providing future-ready core banking and payment
+                        soluAons that empower financial insAtuAons with innovaAon, security, and operaAonal
+                        excellence.
+                        Leveraging ArAficial Intelligence, Machine Learning, blockchain, and cloud-naAve
+                        architectures, we enhance customer experiences and ensure banks stay compeAAve.
+                        With a commitment to resilience, compliance, and sustainable growth, we drive the
+                        transformaAon of the digital financial ecosystem.
+                        <button class="buttons mt-4">
+                            <span class="text">Get Started</span>
+                            <div class="icon">
+                                <img src="./assets/images/fz_button_arrow.svg" alt="">
                             </div>
-                        </div>
+                        </button>
                     </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                How can CBS benefit my financial institution?
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                CBS enhances operational efficiency, reduces costs, ensures compliance, and provides real-time access to banking data, boosting decision-making.
+                </div>
+                <div class="col-lg-6 about_us_center_col">
+                    <div class="about_us_images">
+                        <img src="assets/images/vision.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about_part">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about_us_images">
+                        <img src="assets/images/core values.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about_us_content">
+                        <h5>Core Values</h5>
+                        With flexibility, scalability, and real-Ame processing, our Core Banking System (CBS)
+                        facilitates the smooth administraAon of accounts, transacAons, and client interacAons,
+                        resulAng in increased operaAonal eﬃciency and first-rate service.
+                        We increase consumer happiness and encourage digital adopAon by enabling safe, quick,
+                        and dependable digital transacAons across point-of-sale, web, and mobile plaXorms with
+                        Payment SoluAons.
+                        <button class="buttons mt-4">
+                            <span class="text">Get Started</span>
+                            <div class="icon">
+                                <img src="./assets/images/fz_button_arrow.svg" alt="">
                             </div>
-                        </div>
+                        </button>
                     </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Is your CBS scalable for growing institutions?
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Yes, our CBS can scale seamlessly to support institutional growth and increased customer demand.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwoo" aria-expanded="false" aria-controls="collapseTwo">
-                                What is a payment gateway?
-                            </button>
-                        </h2>
-                        <div id="collapseTwoo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Payment gateways are safe and secure payment technology that let you accept online payments via credit card and other payment methods like Apple Pay, Google Pay, and Finzor.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThreee" aria-expanded="false" aria-controls="collapseThree">
-                                Does your Payment Gateway support multiple payment modes?
-                            </button>
-                        </h2>
-                        <div id="collapseThreee" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Yes, finzor support cards, UPI, net banking, wallets, and more to cater to diverse customer preferences
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
-                                What is UPI, and how does it work?
-                            </button>
-                        </h2>
-                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                UPI is a real-time payment system that allows instant money transfers between bank accounts using mobile devices.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
-                                Can merchants accept payments via UPI on your platform?
-                            </button>
-                        </h2>
-                        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Yes, finzor offer QR code-based payment solutions for merchants to accept UPI payments seamlessly.
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- LOgo -->
-<section id="logo_marquee">
-    <div class="container">
-        <div class="owl-carousel owl-theme" id="owl-logo">
-            <div class="item">
-                <img src='./assets/images/phonepe.svg' alt=''>
-            </div>
-            <div class="item">
-                <img src='./assets/images/apple-pay.svg' alt=''>
-            </div>
-            <div class="item">
-                <img src='./assets/images/amezon-img.svg' alt=''>
-            </div>
-            <div class="item">
-                <img src='./assets/images/gpay.svg' alt=''>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Newsletter -->
 <section class="play_store_section">
     <div class="container">
         <div class="play_store_container">
@@ -1203,7 +476,8 @@ include_once('partials/header.php'); //should be last after all variables
                                 <p>We help banks to Engage Better with their customers, employees, and partners to drive purposeful growth.</p>
                                 <div class="input-group input-group-lg">
                                     <input type="text" class="form-control" placeholder="Enter email address
-                                      " aria-label="Username" aria-describedby="basic-addon1">
+                              " aria-label="Username" aria-describedby="basic-addon1">
+                                    <!-- <button class="btn" type="button" id="button-addon2">Submit</button> -->
                                 </div>
                                 <button class="buttons">
                                     <span class="text">Book a demo</span>
@@ -1224,6 +498,9 @@ include_once('partials/header.php'); //should be last after all variables
                             <div class="hover-box">
                                 <a class="dedcription-btn" href="#">
                                     <span class="name-descripeion">Download Now</span>
+                                    <!-- <div class="btn-icon">
+                                <img src="./assets/images/appstore_arrow.svg" alt=""> 
+                              </div> -->
                                 </a>
                             </div>
                         </div>
@@ -1236,6 +513,8 @@ include_once('partials/header.php'); //should be last after all variables
                 </div>
                 <div class="col-lg-5">
                     <div class="play_store_right">
+                        <!-- <img src="./assets/images/playstore1.svg" alt="" class="fz_playstore1"> -->
+                        <!-- <img src="./assets/images/book-demo.svg" alt="Book a Demo" class="fz_playstore2"> -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="564" height="613" viewBox="0 0 564 613" fill="none" class="fz_playstore2">
                             <style>
                                 svg>g path.dd {
@@ -1382,6 +661,7 @@ include_once('partials/header.php'); //should be last after all variables
         </div>
     </div>
 </section>
+
 
 <!-- Include footer -->
 <?php include_once('partials/footer.php'); ?>

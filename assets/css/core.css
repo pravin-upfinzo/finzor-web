@@ -287,11 +287,6 @@
     font-size: 13px;
   }
 }
-@media screen and (max-width: 375px) {
-  #fz_core_nexus .fz_core_text_right div .fz_learmore {
-    font-size: 13px;
-  }
-}
 #fz_core_nexus .fz_core_text_right div .fz_learmore img {
   opacity: 1;
 }
@@ -366,11 +361,6 @@
 }
 @media screen and (max-width: 375px) {
   #fz_core_nexus .fz_core_text_right div .fz_learmore_btn:hover {
-    font-size: 13px;
-  }
-}
-@media screen and (max-width: 375px) {
-  #fz_core_nexus .fz_core_text_right div .fz_learmore_btn {
     font-size: 13px;
   }
 }

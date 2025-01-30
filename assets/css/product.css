@@ -137,6 +137,9 @@
   line-height: 26px;
   letter-spacing: 0.25px;
 }
+.fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .buttons {
+  width: 168px;
+}
 .fz_product_sec .container .fz_product_left .fz_img {
   display: none;
 }
