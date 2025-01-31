@@ -72,7 +72,7 @@
                                 <a class="nav-link" href="index.php">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" id="menu1" role="button" aria-expanded="false">Products</a>
+                                <a class="nav-link" href="#" id="menu1" role="button" aria-expanded="false">What we offer</a>
 
                                 <div class="dropdown-content">
                                     <div class="content-box">
@@ -178,9 +178,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Services</a>
-                            </li>
+                           
                             <li class="nav-item">
                                 <a class="nav-link" href="about-us.php">Company</a>
                             </li>
@@ -191,13 +189,7 @@
                         <div class="d-flex fz_sigin">
                             <ul>
                                 <li><a href="#"><img class="flag-img" src="assets/images/flag.gif" alt="Country" width="40px"></a></li>
-                                <li class="unlock"><a href="#">Unlock
-                                        <span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                                <path d="M144 144c0-44.2 35.8-80 80-80c31.9 0 59.4 18.6 72.3 45.7c7.6 16 26.7 22.8 42.6 15.2s22.8-26.7 15.2-42.6C331 33.7 281.5 0 224 0C144.5 0 80 64.5 80 144l0 48-16 0c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-192c0-35.3-28.7-64-64-64l-240 0 0-48z" />
-                                            </svg>
-                                        </span>
-                                    </a></li>
+                               
                                 <li>
                                     <a href="#" class="onboard_btn">
                                         <button class="buttons">

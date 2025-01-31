@@ -124,7 +124,7 @@ header {
   .navbar-expand-lg {
     .navbar-nav {
       flex: 1;
-      justify-content: flex-end;
+      justify-content: center;
       padding: 10px;
 
       // @media (min-width: 992px) and (max-width: 1300px) {
@@ -144,7 +144,11 @@ header {
           &::after {
             display: block;
             content: '';
-            border-bottom: solid 2px $secondary-color;
+            text-align:center;
+            border-bottom: 2px solid transparent;
+            border-image: linear-gradient(0.25turn, rgba(0, 0, 0, 0), rgba(0, 178, 177, 1), rgba(0, 0, 0, 0));
+            border-image-slice: 1;
+            width:100%;
             transform: scaleX(0);
             transition: transform 500ms ease-in-out;
             @media screen and (max-width: 991px) {
@@ -490,7 +494,7 @@ header {
   min-width: 960px;
   transform: translateX(-50%);
   top: 39px;
-  padding: 30px;
+  padding:20px;
   margin: 0 auto;
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -513,16 +517,19 @@ header {
 .dropdown:hover .dropdown-content {
   display: block;
   opacity: 1;
-  
 }
 
 .column {
   width: 40%;
 }
+
 .column ul {
   list-style-type: none;
   padding: 0;
   display: block;
+  p{
+    margin-bottom: 0px;
+  }
 }
 
 .dropdown .column ul li a{
@@ -534,7 +541,8 @@ header {
   transition: all 0.5s ease;
 }
 .dropdown .column ul li{
-  padding: 25px 15px 10px 15px;
+  // padding: 25px 15px 10px 15px;
+  padding: 10px;
   line-height: 24px;
   transition: all 0.5s ease;
 }
