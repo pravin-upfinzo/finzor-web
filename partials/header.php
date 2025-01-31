@@ -91,7 +91,7 @@
                                                     </div>
 
                                                     <div class="text">
-                                                        <li><a href="core-banking-solution.html">FinbankZ</a>
+                                                        <li><a href="finbankz.php">FinbankZ</a>
                                                             <p>Banking Core and Digital Platform</p>
                                                         </li>
                                                     </div>

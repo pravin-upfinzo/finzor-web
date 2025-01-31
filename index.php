@@ -55,9 +55,15 @@ $pageStyles .= '<style>
 
 
 // to include page specific JS
-$pageScripts = '<script></script>';
-// $pageScripts .= '<script src="./assets/js/about.js"></script>';
-// $pageScripts .= '<script src="./assets/js/extra.js"></script>';
+$pageScripts = '<script src="./assets/js/Flip_Plugin.min.js"></script>' . "\n";
+$pageScripts .= '<script src="./assets/js/TextPlugin.min.js"></script>' . "\n";
+$pageScripts .= '<script src="./assets/js/ScrollToPlugin.min.js"></script>' . "\n";
+$pageScripts .= '<script src="./assets/js/lottie.min.js"></script>' . "\n";
+$pageScripts .= '<audio id="typing-sound" src="./assets/audio/typingsound.mp3" type="audio/mp3"></audio>' . "\n";
+$pageScripts .= '<script src="./assets/js/codemirror.min.js"></script>' . "\n";
+$pageScripts .= '<script src="./assets/js/codemirrortheme.min.js"></script>' . "\n";
+$pageScripts .= '<script src="./assets/js/main.js"></script>' . "\n";
+$pageScripts .= '<script></script>' . "\n";
 
 include_once('partials/header.php'); //should be last after all variables
 ?>
@@ -221,7 +227,7 @@ include_once('partials/header.php'); //should be last after all variables
                             designed to modernize and streamline banking operations by providing a robust core banking
                             platform that integrates various functionalities.</div>
                         <div class="fz_btn">
-                            <a href="core-banking-solution.html" class="buttons">
+                            <a href="core-banking-solution.php" class="buttons">
                                 <span class="text">Learn more</span>
                                 <div class="icon">
                                     <img src="./assets/images/fz_button_arrow.svg" alt="">

@@ -1,22 +1,4 @@
-// Page loader
-$(window).on('load', function() {
-  setTimeout(function() {
-    $("#page-loader").fadeOut("slow");
-    $('.hero').fadeIn();
-  }, 2000);
-}); 
-var btn = $('#scroll_top');
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-      btn.addClass('show');
-  } else {
-      btn.removeClass('show');
-  }
-});
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
-});
+
 $(document).ready(function () {
   $("#owl-carousel").owlCarousel({
     loop: true, /* Allows infinite scrolling */

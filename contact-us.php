@@ -10,9 +10,9 @@ $pageStyles .= '<style></style>' . "\n";
 
 // to include page specific JS
 
-$pageScripts = '<script src="./assets/js/contact_us.js"></script>' . "\n";
-$pageScripts .= '<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>' . "\n";
-$pageScripts = '<script></script>' . "\n";
+$pageScripts = '<script src="./assets/js/lottie.min.js"></script>' . "\n";
+$pageScripts .= '<script src="./assets/js/contact_us.js"></script>' . "\n";
+$pageScripts .= '<script></script>' . "\n";
 
 include_once('partials/header.php'); //should be last after all variables
 ?>

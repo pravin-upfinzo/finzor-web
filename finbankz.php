@@ -9,7 +9,8 @@ $pageStyles .= '<style></style>' . "\n";
 
 
 // to include page specific JS
-$pageScripts = '<script src="./assets/js/finbankz.js"></script>' . "\n";
+$pageScripts = '<script src="./assets/js/lottie.min.js"></script>' . "\n";
+$pageScripts .= '<script src="./assets/js/finbankz.js"></script>' . "\n";
 $pageScripts .= '<script></script>' . "\n";
 
 include_once('partials/header.php'); //should be last after all variables
@@ -59,7 +60,7 @@ include_once('partials/header.php'); //should be last after all variables
                     APIs for easy third-party integrations. By leveraging Finzor’s CBS, financial institutions can
                     enhance customer experience and operational agility.</p>
                 <button class="buttons">
-                    <a href="core-banking-solution.html"><span class="text">View Product</span></a>
+                    <a href="core-banking-solution.php"><span class="text">View Product</span></a>
                     <div class="icon">
                         <img src="./assets/images/right_arrow.svg" alt="" class="tele_img">
                     </div>
@@ -111,7 +112,7 @@ include_once('partials/header.php'); //should be last after all variables
                     connectivity with fintech ecosystems. With AI-driven analytics, Finzor’s mobile banking enhances
                     decision-making and customer insights.</p>
                 <button class="buttons">
-                    <a href="core-banking-solution.html"><span class="text">View Product</span></a>
+                    <a href="core-banking-solution.php"><span class="text">View Product</span></a>
                     <div class="icon">
                         <img src="./assets/images/right_arrow.svg" alt="" class="tele_img">
                     </div>
@@ -158,7 +159,7 @@ include_once('partials/header.php'); //should be last after all variables
                     customers make informed financial decisions. Our platform empowers fintech startups and
                     enterprises to deliver cutting-edge banking services efficiently.</p>
                 <button class="buttons">
-                    <a href="core-banking-solution.html"><span class="text">View Product</span></a>
+                    <a href="core-banking-solution.php"><span class="text">View Product</span></a>
                     <div class="icon">
                         <img src="./assets/images/right_arrow.svg" alt="" class="tele_img">
                     </div>
@@ -210,7 +211,7 @@ include_once('partials/header.php'); //should be last after all variables
                     financial activities efficiently. With AI-powered insights and predictive analytics, we optimize
                     banking interactions for improved customer satisfaction.</p>
                 <button class="buttons">
-                    <a href="core-banking-solution.html"><span class="text">View Product</span></a>
+                    <a href="core-banking-solution.php"><span class="text">View Product</span></a>
                     <div class="icon">
                         <img src="./assets/images/right_arrow.svg" alt="" class="tele_img">
                     </div>

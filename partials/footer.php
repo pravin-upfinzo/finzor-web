@@ -130,15 +130,8 @@
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/gsap.min.js"></script>
 <script src="assets/js/ScrollTrigger.min.js"></script>
-<script src="assets/js/Flip_Plugin.min.js"></script>
-<script src="assets/js/TextPlugin.min.js"></script>
-<script src="assets/js/ScrollToPlugin.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/lottie.min.js"></script>
-<audio id="typing-sound" src="assets/audio/typingsound.mp3" type="audio/mp3"></audio>
-<script src="assets/js/codemirror.min.js"></script>
-<script src="assets/js/javascript.min.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="assets/js/logo_loader.js"></script>
 
 <?php
 // Include page-specific JS
