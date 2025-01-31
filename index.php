@@ -1211,7 +1211,7 @@ include_once('partials/header.php'); //should be last after all variables
                                     <input type="text" class="form-control" placeholder="Enter email address
                                       " aria-label="Username" aria-describedby="basic-addon1">
                                 </div>
-                                <button class="buttons">
+                                <button class="buttons" data-bs-toggle="modal" data-bs-target="#myModal">
                                     <span class="text">Book a demo</span>
                                     <div class="icon">
                                         <img src="./assets/images/fz_button_arrow.svg" alt="">

@@ -125,17 +125,18 @@ header .navbar-expand-lg .navbar-nav {
   justify-content: center;
   padding: 10px;
 }
-header .navbar-expand-lg .navbar-nav li {
+header .navbar-expand-lg .navbar-nav > li {
   padding: 0px 15px;
   font-size: 14px;
+  position: unset;
 }
-header .navbar-expand-lg .navbar-nav li a.nav-link {
+header .navbar-expand-lg .navbar-nav > li a.nav-link {
   font-weight: 400;
   color: #ffffff;
   position: relative;
   transition: all 0.5s ease;
 }
-header .navbar-expand-lg .navbar-nav li a.nav-link::after {
+header .navbar-expand-lg .navbar-nav > li a.nav-link::after {
   display: block;
   content: "";
   text-align: center;
@@ -147,22 +148,122 @@ header .navbar-expand-lg .navbar-nav li a.nav-link::after {
   transition: transform 500ms ease-in-out;
 }
 @media screen and (max-width: 991px) {
-  header .navbar-expand-lg .navbar-nav li a.nav-link::after {
+  header .navbar-expand-lg .navbar-nav > li a.nav-link::after {
     border-bottom: none;
     transform: scale(none);
   }
 }
-header .navbar-expand-lg .navbar-nav li a.nav-link:hover {
+header .navbar-expand-lg .navbar-nav > li a.nav-link:hover {
   color: #f7c35f;
 }
-header .navbar-expand-lg .navbar-nav li a.nav-link:hover:after {
+header .navbar-expand-lg .navbar-nav > li a.nav-link:hover:after {
   transform: scaleX(1);
 }
 @media screen and (max-width: 991px) {
-  header .navbar-expand-lg .navbar-nav li {
+  header .navbar-expand-lg .navbar-nav > li {
     padding: 10px 5px;
     color: #ffffff;
   }
+}
+header .navbar-expand-lg .navbar-nav > li .submenu, header .navbar-expand-lg .navbar-nav > li .inner-submenu {
+  display: none;
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-40%);
+}
+@media screen and (max-width: 991px) {
+  header .navbar-expand-lg .navbar-nav > li .submenu, header .navbar-expand-lg .navbar-nav > li .inner-submenu {
+    position: unset;
+    width: 100% !important;
+  }
+}
+header .navbar-expand-lg .navbar-nav > li .submenu li a, header .navbar-expand-lg .navbar-nav > li .inner-submenu li a {
+  transition: all 0.5s ease;
+}
+header .navbar-expand-lg .navbar-nav > li .submenu li a:hover, header .navbar-expand-lg .navbar-nav > li .inner-submenu li a:hover {
+  background: rgba(0, 75, 75, 0.5);
+}
+header .navbar-expand-lg .navbar-nav > li .submenu li a:hover .fz_text h3, header .navbar-expand-lg .navbar-nav > li .inner-submenu li a:hover .fz_text h3 {
+  color: #04a5a7;
+}
+header .navbar-expand-lg .navbar-nav > li .submenu {
+  background: rgba(6, 54, 50, 0.6);
+}
+header .navbar-expand-lg .navbar-nav > li .submenu a {
+  display: flex;
+  padding: 15px 20px;
+  width: 45%;
+}
+@media screen and (max-width: 991px) {
+  header .navbar-expand-lg .navbar-nav > li .submenu a {
+    width: 100%;
+  }
+}
+header .navbar-expand-lg .navbar-nav > li .submenu .image-text {
+  display: flex;
+  align-items: center;
+}
+header .navbar-expand-lg .navbar-nav > li .submenu .image-text .fz_header_svg {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+header .navbar-expand-lg .navbar-nav > li .submenu .image-text .fz_header_svg svg {
+  width: 18px;
+}
+header .navbar-expand-lg .navbar-nav > li .submenu .image-text .fz_text {
+  padding-left: 10px;
+}
+header .navbar-expand-lg .navbar-nav > li .submenu .image-text .fz_text h3 {
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0;
+  transition: all 0.5s ease;
+}
+header .navbar-expand-lg .navbar-nav > li .submenu .image-text .fz_text p {
+  font-size: 12px;
+  margin: 0;
+  color: #DDDEDD;
+}
+header .navbar-expand-lg .navbar-nav > li .inner-submenu {
+  background: rgba(6, 54, 50, 0.1);
+  width: 55%;
+  top: 0px;
+  height: 100%;
+  right: 0px;
+  right: 0;
+  transform: unset;
+  left: unset;
+}
+header .navbar-expand-lg .navbar-nav > li .inner-submenu a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+header .navbar-expand-lg .navbar-nav > li .inner-submenu a:hover {
+  background: rgba(0, 75, 75, 0.5);
+}
+header .navbar-expand-lg .navbar-nav > li .inner-submenu a h3 {
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0;
+  transition: all 0.5s ease;
+}
+header .navbar-expand-lg .navbar-nav > li .inner-submenu a p {
+  font-size: 12px;
+  margin: 0;
+  color: #DDDEDD;
 }
 @media screen and (max-width: 991px) {
   header .fz_sigin {
@@ -384,99 +485,4 @@ header .fz_sigin ul .unlock a:hover svg path {
 #lottie-animation1 svg {
   width: 35px !important;
   height: 35px !important;
-}
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.9);
-  min-width: 960px;
-  transform: translateX(-50%);
-  top: 39px;
-  padding: 20px;
-  margin: 0 auto;
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 8px;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-  opacity: 1;
-}
-
-.column {
-  width: 40%;
-}
-
-.column ul {
-  list-style-type: none;
-  padding: 0;
-  display: block;
-}
-.column ul p {
-  margin-bottom: 0px;
-}
-
-.dropdown .column ul li a {
-  color: white;
-  text-decoration: none;
-  justify-content: center;
-  font-size: 14px;
-  transition: all 0.5s ease;
-}
-
-.dropdown .column ul li {
-  padding: 10px;
-  line-height: 24px;
-  transition: all 0.5s ease;
-}
-
-.content-box {
-  display: flex;
-  gap: 40px;
-}
-
-.dropdown .column ul li a {
-  display: flex;
-  justify-content: left;
-  font-weight: 600;
-  transition: all 0.5s ease;
-  color: #ffffff;
-  font-size: 18px;
-}
-
-.image-text li:hover a, .image-text li:hover p {
-  cursor: pointer;
-  transition: all 0.5s ease;
-  color: #f7c35f !important;
-}
-
-.image-text {
-  display: flex;
-  padding: 0px;
-  align-items: center;
-}
-
-.fz_header_svg {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.5s ease;
-}
-
-.image-text:hover .fz_header_svg {
-  background: #f7c35f;
-  border: 1px solid #f7c35f;
 }
