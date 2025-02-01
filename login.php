@@ -28,7 +28,7 @@ include_once('partials/header.php'); //should be last after all variables
     <div class="signup-container">
         <h3>Sign in with</h3>
         <div class="social-buttons">
-            <button class="google"><img src="icons8-google.svg" alt=""> Google</button>
+            <button class="google"><img src="./assets/images/google-icon.svg" alt="google"> Google</button>
         </div>
 
         <p class="divider">Or sign in with credentials</p>
@@ -61,4 +61,5 @@ include_once('partials/header.php'); //should be last after all variables
 
 </div>
 
-
+<!-- Include footer -->
+<?php include_once('partials/footer.php'); ?>

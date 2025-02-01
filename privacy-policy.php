@@ -11,7 +11,7 @@ $pageStyles .= '<style></style>' . "\n";
 include_once('partials/header.php'); //should be last after all variables
 ?>
 
-<main class="privacy_policy">
+<main class="privacy_policy container">
         <div class="main_container">
 
             <section class="inner_container">
@@ -21,9 +21,7 @@ include_once('partials/header.php'); //should be last after all variables
                             <p>Your data, your control! Discover our Privacy Policy to understand how we safeguard your
                                 information.</p>
                         </div>
-                        <div class="privacy_policy_top_part_img">
-                            <img src="https://d13gbk027tmejc.cloudfront.net/uploads/assets/wegofin-images/privacy_policy_top.png" alt="privacy_policy_top">
-                        </div>
+                        
                     </div>
 
                     <div class="privacy_policy_bottom_part">
@@ -32,7 +30,6 @@ include_once('partials/header.php'); //should be last after all variables
                         <div class="privacy_policy_bottom_right show_content_sec">
                             <div class="privacy_policy_bottom_right_first priv_show_list1 active_1">
                                 <div class="privacy_policy_bottom_right_first_head">
-                                    <h3>Privacy policy</h3>
                                 </div>
                                 <div class="privacy_policy_bottom_right_first_para">
                                     <p>Our company is committed to safeguarding the privacy of individuals and their
@@ -63,7 +60,7 @@ include_once('partials/header.php'); //should be last after all variables
                                         Digital in effect during their visit, access, or use of the Website.</p>
                                 </div>
                                 <div class="privacy_policy_bottom_right_first_list">
-                                    <h4>This Policy is published in compliance with the following:</h4>
+                                    
                                     <ul class="privacy_definitions ul_list_txt digital">
                                         <li>Section 43A of the 2000 Information Technology Act ("Act").</li>
                                         <li>Regulation 4 of the 2011 IT (Reasonable Security Practices and Procedures and
@@ -77,7 +74,7 @@ include_once('partials/header.php'); //should be last after all variables
                                     <h3>Definitions</h3>
                                 </div>
                                 <div class="privacy_policy_bottom_right_second_content">
-                                    <h4>Personal Information</h4>
+                                   
                                     <p>Personal Information" is the term defined by the SPI Rules and refers to any data
                                         that pertains to an individual and, either directly or in conjunction with other
                                         information held by a corporate entity, can be used to identify that individual.
@@ -85,7 +82,7 @@ include_once('partials/header.php'); //should be last after all variables
                                         similar particulars.</p>
                                 </div>
                                 <div class="privacy_policy_bottom_right_second_li_head">
-                                    <h4>Sensitive Personal Data Or Information</h4>
+                                   
                                     <p>As per the SPI Rules, "Sensitive Personal Data" encompasses information concerning an
                                         individual's</p>
                                     <ul class="privacy_definitions ul_list_txt">
