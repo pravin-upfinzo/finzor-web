@@ -44,7 +44,7 @@
                 <ul>
                   <li><a href="finbankz.php">FinbankZ</a></li>
                   <li><a href="#">UPIZor</a></li>
-                  <li><a href="#">FinZOpZ</a></li>
+                  <li><a href="#">FinzOpZ</a></li>
                   <li><a href="#">FinZro</a></li>
                   <li><a href="#">FinlyticZ</a></li>
                 </ul>

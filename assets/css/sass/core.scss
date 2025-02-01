@@ -205,6 +205,7 @@
       .fz_learmore_btn {
         @include btn-effect;
         margin-left: 20px;
+        z-index: 2;
       }
     }
   }

@@ -212,7 +212,6 @@
   --gradient-border: conic-gradient(from var(--border-angle), transparent 10%, #05311d, #3eab90 49%, transparent);
   background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
   animation: bg-spin 6s linear infinite;
-  cursor: pointer;
   position: relative;
 }
 @keyframes bg-spin {
@@ -234,12 +233,8 @@
 .footer_section .fz_footer_container .subscribe .subscribe-form .footer_arrow img {
   position: absolute;
   right: 19px;
+  cursor: pointer;
   bottom: 19px;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .footer_section .fz_footer_container .subscribe .subscribe-form .footer_arrow img {
-    right: 75px;
-  }
 }
 .footer_section .footer-bottom .horizontal-line {
   border: none;
