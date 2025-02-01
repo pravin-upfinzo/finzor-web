@@ -342,3 +342,167 @@
     padding: 0 15px;
   }
 }
+#myModal {
+  z-index: 9999;
+  --bs-modal-width: 650px;
+}
+#myModal .modal-content {
+  border: solid 1px transparent;
+  --main-bg: conic-gradient(from var(--border-angle), #000 0%, rgb(0, 0, 0) 100%);
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 10%, #05311d, #3EAB90 49%, transparent);
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+  animation: bg-spin 2s linear infinite;
+}
+#myModal .modal-content .modal-header {
+  padding: 20px 30px 0 100px;
+  border: 0;
+  flex-direction: column;
+  align-items: start;
+}
+#myModal .modal-content .modal-header h4, #myModal .modal-content .modal-header p {
+  color: #ffffff;
+}
+#myModal .modal-content .modal-header .btn-close {
+  background-color: #ffffff;
+  opacity: 1;
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  border-radius: 50%;
+}
+#myModal .modal-content .modal-body {
+  padding: 15px 100px 30px;
+}
+#myModal .form-wrapper {
+  color: #ffffff;
+}
+#myModal .form-wrapper .form_group {
+  position: relative;
+  margin-bottom: 20px;
+}
+#myModal .form-wrapper .form_group .field-label {
+  color: #34b195;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-family: Space Grotesk, sans-serif;
+  font-size: 14px;
+  line-height: 18.2px;
+}
+#myModal .form-wrapper .form_group input:focus, #myModal .form-wrapper .form_group textarea:focus {
+  border: solid 1px transparent;
+  --main-bg: conic-gradient(from var(--border-angle), #000 0%, rgb(0, 0, 0) 100%);
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 10%, #05311d, #3EAB90 49%, transparent);
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+  animation: bg-spin 2s linear infinite;
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+#myModal .form-wrapper .form_group .text-field-3 {
+  width: 100%;
+  height: 58px;
+  font-size: 14px;
+  border: 1px solid #2D4949;
+  background-color: #000000;
+  color: #fff;
+  border-radius: 0;
+  margin-bottom: 0;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 24px;
+  outline: none;
+  height: 50px;
+}
+#myModal .form-wrapper .comment-wrapper {
+  position: relative;
+  height: 146px;
+  margin-bottom: 30px;
+}
+#myModal .form-wrapper .comment-wrapper .field-label {
+  color: #34b195;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-family: Space Grotesk, sans-serif;
+  font-size: 14px;
+  line-height: 18.2px;
+}
+#myModal .form-wrapper .comment-wrapper .texteria {
+  resize: none;
+  height: auto !important;
+  width: 100%;
+  height: 58px;
+  font-size: 14px;
+  border: 1px solid #2D4949;
+  background-color: #000000;
+  color: #fff;
+  border-radius: 0;
+  margin-bottom: 0;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 24px;
+  outline: none;
+}
+#myModal .form-wrapper .fz_submit {
+  height: 50px;
+  border-radius: 32px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #309393;
+  font-size: 16px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  transition: all 1s ease;
+  padding: 0px 20px 0 25px;
+}
+#myModal .form-wrapper .fz_submit .text {
+  position: relative;
+  left: 10px;
+  transition: all 1s ease;
+}
+#myModal .form-wrapper .fz_submit img {
+  opacity: 0;
+  transition: all 1s ease;
+}
+#myModal .form-wrapper .fz_submit .icon {
+  margin-left: 10px;
+}
+#myModal .form-wrapper .fz_submit:hover {
+  padding: 0px 20px 0 25px;
+  --text-color: rgb(210 210 240);
+  --box-glow-color: transparent;
+  --box-glow-blur: 32px;
+  --color: #00afaf85;
+  position: relative;
+  border: none;
+  box-shadow: 0px 3px 0 0px #31b2b2, 0 0 var(--box-glow-blur) var(--box-glow-color), inset 0 0 26px -10px rgba(29, 77, 45, 0.3607843137);
+  transition: box-shadow 1s ease;
+  --box-glow-color: var(--color);
+  z-index: 2;
+  font-size: 16px;
+  border: 1px solid rgba(62, 171, 144, 0.568627451);
+  background: linear-gradient(0deg, rgb(45, 73, 73) 0%, rgb(49, 178, 178) 100%);
+}
+#myModal .form-wrapper .fz_submit:hover img {
+  opacity: 1;
+}
+#myModal .form-wrapper .fz_submit:hover .icon {
+  margin-left: 10px;
+}
+#myModal .form-wrapper .fz_submit:hover .text {
+  position: relative;
+  left: 0px;
+}
+@media screen and (max-width: 375px) {
+  #myModal .form-wrapper .fz_submit:hover {
+    font-size: 13px;
+  }
+}
+
+.modal-backdrop.show {
+  opacity: 0.8;
+}
