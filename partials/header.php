@@ -74,8 +74,9 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link" href="#" id="menu1" role="button">What we offer</a>
                                 <ul class="submenu">
+                                <div class="upward-arrow"></div>
                                     <li>
-                                    <a href="#">
+                                    <a href="./finbankz.php">
                                         <div class="image-text">
                                         <div class="fz_header_svg">
                                             <svg class="normal__svg" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -94,25 +95,25 @@
                                     </a>
                                     <ul class="inner-submenu">
                                         <li>
-                                        <a href="index.html">
+                                        <a href="./core-banking-solution.php">
                                             <h3>CoreNexus</h3>
                                             <p>Core Banking Solution</p>
                                         </a>
                                         </li>
                                         <li>
-                                        <a href="#">
+                                        <a href="./mobile-banking.php">
                                             <h3>MobfinZ</h3>
                                             <p>Mobile Banking</p>
                                         </a>
                                         </li>
                                         <li>
-                                        <a href="#">
+                                        <a href="./neo-banking.php">
                                             <h3>NeoPulse</h3>
                                             <p>Neo Banking</p>
                                         </a>
                                         </li>
                                         <li>
-                                        <a href="#">
+                                        <a href="./internet-banking.php">
                                             <h3>WebVault</h3>
                                             <p>Internet Banking</p>
                                         </a>
@@ -120,7 +121,7 @@
                                     </ul>
                                     </li>
                                     <li>
-                                    <a href="#">
+                                    <a href="./upizor.php">
                                         <div class="image-text">
                                         <div class="fz_header_svg">
                                             <svg class="normal__svg" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -137,21 +138,27 @@
                                     </a>
                                     <ul class="inner-submenu">
                                         <li>
-                                        <a href="index.html">
+                                        <a href="./upi.php">
                                             <h3>CoreNexus</h3>
-                                            <p>Core Banking Solution</p>
+                                            <p>UPI</p>
                                         </a>
                                         </li>
                                         <li>
-                                        <a href="#">
+                                        <a href="./upi-switch.php">
                                             <h3>MobfinZ</h3>
-                                            <p>Mobile Banking</p>
+                                            <p>UPI Switch</p>
+                                        </a>
+                                        </li>
+                                        <li>
+                                        <a href="./payment-gateways.php">
+                                            <h3>MobfinZ</h3>
+                                            <p>Payment Gateways</p>
                                         </a>
                                         </li>
                                     </ul>
                                     </li>
                                     <li>
-                                    <a href="#">
+                                    <a href="./finzopz.php">
                                         <div class="image-text">
                                         <div class="fz_header_svg">
                                             <svg class="normal__svg" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -170,27 +177,27 @@
                                     </a>
                                     <ul class="inner-submenu">
                                         <li>
-                                        <a href="index.html">
+                                        <a href="./investment-management.php">
                                             <h3>CoreNexus</h3>
-                                            <p>Core Banking Solution</p>
+                                            <p>Investment Management</p>
                                         </a>
                                         </li>
                                         <li>
-                                        <a href="#">
+                                        <a href="./settlements.php">
                                             <h3>MobfinZ</h3>
-                                            <p>Mobile Banking</p>
+                                            <p>Settlements</p>
                                         </a>
                                         </li>
                                         <li>
-                                        <a href="#">
+                                        <a href="./reconciliation.php">
                                             <h3>NeoPulse</h3>
-                                            <p>Neo Banking</p>
+                                            <p>Reconciliation</p>
                                         </a>
                                         </li>
                                     </ul>
                                     </li>
                                     <li>
-                                    <a href="#">
+                                    <a href="./finzro.php">
                                         <div class="image-text">
                                         <div class="fz_header_svg">
                                             <svg class="normal__svg" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -208,7 +215,7 @@
                                     </a>
                                     </li>
                                     <li>
-                                    <a href="#">
+                                    <a href="./finlyticz.php">
                                         <div class="image-text">
                                         <div class="fz_header_svg">
                                             <svg class="normal__svg" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">

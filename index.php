@@ -1207,10 +1207,10 @@ include_once('partials/header.php'); //should be last after all variables
                                 <h3>Innovate with us</h3>
                                 <h5>Let&rsquo;s connect</h5>
                                 <p>We help banks to Engage Better with their customers, employees, and partners to drive purposeful growth.</p>
-                                <div class="input-group input-group-lg">
+                                <!-- <div class="input-group input-group-lg">
                                     <input type="text" class="form-control" placeholder="Enter email address
                                       " aria-label="Username" aria-describedby="basic-addon1">
-                                </div>
+                                </div> -->
                                 <button class="buttons" data-bs-toggle="modal" data-bs-target="#myModal">
                                     <span class="text">Book a demo</span>
                                     <div class="icon">
