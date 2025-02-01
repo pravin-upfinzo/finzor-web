@@ -43,7 +43,10 @@ header {
   }
   
 .navbar-brand svg path {
-  fill: #22feb3;
+  fill: #3eab90;
+}
+.navbar-brand-mobile svg path{
+  fill: #3eab90;
 }
 
   // Mobile View
@@ -190,6 +193,7 @@ header {
           @media screen and (max-width: 991px) {
             position: unset;
             width: 100% !important;
+            transform: unset;
           }
           li {
             a {
@@ -207,12 +211,45 @@ header {
         }
         .submenu {
           background: rgba(6, 54, 50, 0.6);
+          .upward-arrow {
+            border-color: transparent transparent rgb(62 171 144 / 20%);
+            border-style: solid;
+            border-width: 0 8px 8px;
+            height: 0;
+            position: absolute;
+            top: -8px;
+            width: 0;
+            left: 204px;
+            @media screen and (max-width: 991px) {
+              border-width:unset;
+            }
+          }
           a {
             display: flex;
             padding: 15px 20px;
             width: 45%;
             @media screen and (max-width: 991px) {
               width: 100%;
+            }
+          }
+          li > a:hover {
+            position: relative;
+            &:after {
+              border-color: transparent transparent transparent rgb(62 171 144 / 20%);
+              border-style: solid;
+              border-width: 8px 0 8px 8px;
+              content: "";
+              height: 0;
+              position: absolute;
+              right: -8px;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 0;
+              z-index: 100;
+              transition: all 0.5s ease;
+              @media screen and (max-width: 991px) {
+                border-width:unset;
+              }
             }
           }
           .image-text {
@@ -262,6 +299,9 @@ header {
             flex-direction: column;
             &:hover {
               background: rgba(0, 75, 75, 0.5);
+            }
+            &:after {
+              border-width: unset !important;
             }
             h3 {
               font-weight: 500;

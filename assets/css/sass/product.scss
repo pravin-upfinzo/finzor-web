@@ -28,6 +28,12 @@
           flex-direction: column;
           // gap: 24px;
         }
+        .item-1 {
+          padding-top: 178px;
+          @media screen and (max-height: 767px) {
+            padding-top: 150px;
+          }
+        }
         .fz_content {
           position: relative;
           width: 620px;

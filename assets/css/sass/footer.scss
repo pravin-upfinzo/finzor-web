@@ -13,19 +13,31 @@
 
 
 .fz_footer_container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 2rem;
-  color: #c7c7c7;
-  @media screen and (max-width: 991px) {
-   display: block;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  @media (min-width: 992px) and (max-width: 1199px) {
+    display: block;
+        width: 80%;
+        margin: 0 auto;
   }
+  @media screen and (max-width: 991px) {
+    display: block;
+   }
+
 
 .footer-brand {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 375px;
+  width: 330px;
+  @media (min-width: 992px) and (max-width: 1199px) {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+  }
   @media screen and (max-width: 991px) {
     padding-bottom: 30px;
    }
@@ -40,8 +52,11 @@
   p {
     color: #949894;
     font-size: 14px;
-    width: 290px;
+    width: 315px;
     text-decoration: none;
+    @media (min-width: 992px) and (max-width: 1199px) {
+       text-align: center;
+  }
   }
 }
 
@@ -86,6 +101,20 @@
   }
  
 }
+.footer_list_link{
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  gap: 30px;
+  color: #c7c7c7;
+  @media (min-width: 992px) and (max-width: 1199px) {
+        gap: 75px;
+        width: 70%;
+        margin: 40px auto;
+  }
+  @media screen and (max-width: 991px) {
+    display: block;
+   }
+
   .links-group {
     h4 {
       color: #C7DAD9;
@@ -122,17 +151,40 @@
       }
     }
   }
-
+}
 .subscribe{
-// width:330px;
-
+width:250px;
+@media (min-width: 992px) and (max-width: 1199px) {
+   width:400px;
+   margin: 0 auto;
+  }
+  @media screen and (max-width: 991px) {
+    margin: 30px 0px;
+   }
+p{
+  font-size: 18px;
+  color: #C7DAD9;
+  font-weight: 400;
+  @media (min-width: 992px) and (max-width: 1199px) {
+    text-align: center;
+}
+ 
+}
 .subscribe-form {
   position: relative;
   margin: 20px 0px;
   display: inline-block;
-  
+  width:100%;
+  @media (min-width: 992px) and (max-width: 1199px) {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+@media screen and (max-width: 991px) {
+    margin: 0;
+   }
   input {
-    width: 286px;
+    width: 100%;
     padding: 16px;
     font-size: 14px;
     background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
@@ -162,12 +214,15 @@
     outline: 0;
     box-shadow: rgba(0, 178, 177, 100) 0 0 5px 3px;
     }
-
+  
   }
   .footer_arrow img{
     position: absolute;
     right:19px;
     bottom:19px;
+    @media (min-width: 992px) and (max-width: 1199px) {
+       right:75px;
+    }
   }
 }
 }
@@ -275,7 +330,7 @@
 }
 
 #myModal {
-  z-index: 9999;
+  z-index: 99991;
   --bs-modal-width: 650px;
   .modal-content {
       border: solid 1px transparent;
@@ -284,7 +339,7 @@
       background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
       animation: bg-spin 2s linear infinite;
       .modal-header {
-          padding: 20px 30px 0 100px;
+          padding: 30px 30px 10px;
           border: 0;
           flex-direction: column;
           align-items: start;
@@ -301,14 +356,22 @@
           }
       }
       .modal-body {
-          padding: 15px 100px 30px;
+          padding: 0px 30px 20px;
       }
   }
   .form-wrapper {
       color: $white;
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
       .form_group {
           position: relative;
           margin-bottom: 20px;
+          width: 48%;
+          @media screen and (max-width: 767px) {
+            width: 100%;
+          }
           .field-label{
               @include field-label
           }
@@ -331,11 +394,16 @@
               @include text-field-3;
               height: 50px;
           }
+          span.error {
+            font-size: 10px;
+            color: #cb0909;
+        }
       }
       .comment-wrapper {
           position: relative;
           height: 146px;
           margin-bottom: 30px;
+          width: 100%;
           .field-label{
               @include field-label
           }
@@ -352,5 +420,9 @@
   }
 }
 .modal-backdrop.show {
-  opacity: 0.8;
+  z-index: 9999;
+  opacity: 1;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background: rgb(13 116 101 / 8%);
 }

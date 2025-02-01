@@ -38,10 +38,11 @@
               </div>
             </div>
             
+            <div class="footer_list_link">
               <div class="links-group">
                 <h4>PRODUCTS</h4>
                 <ul>
-                  <li><a href="#">FinbankZ</a></li>
+                  <li><a href="finbankz.php">FinbankZ</a></li>
                   <li><a href="#">UPIZor</a></li>
                   <li><a href="#">FinZOpZ</a></li>
                   <li><a href="#">FinZro</a></li>
@@ -51,25 +52,26 @@
               <div class="links-group">
                 <h4>COMPANY</h4>
                 <ul>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="about-us.php">About us</a></li>
+                  <li><a href="contact-us.php">Contact</a></li>
                   <li><a href="#">FAQ</a></li>
                 </ul>
               </div>
               <div class="links-group">
                 <h4>LEGAL</h4>
                 <ul>
-                  <li><a href="#">Terms & Conditions</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="terms-and-condition.php">Terms & Conditions</a></li>
+                  <li><a href="privacy-policy.php">Privacy Policy</a></li>
                 </ul>
               </div>
+            </div>
               <div class="links-group subscribe">
-                <h4>Stay updated by Subscribe</h4>
+                <p>Stay updated by Subscribe</p>
                 <form class="subscribe-form">
                   <input type="email" placeholder="Enter your email address">
                   <div class="footer_arrow">
-                   <img src="./assets/images/footer_arrow.svg" alt="" class="">
-                </div>
+                    <img src="./assets/images/footer_arrow.svg" alt="" class="">
+                 </div>
                 </form>
               </div>
             </div>
@@ -81,6 +83,7 @@
           </div>
         </footer>
 
+        
 <div class="footer-bg">
     <img src="./assets/images/footer-bg.gif" alt="footer-bg" />
 </div>
@@ -106,12 +109,12 @@
       <!-- Modal Header -->
       <div class="modal-header">
         <h4 class="modal-title">Book a demo</h4>
-        <p>Lorem Ipsum es simplemente el texto de relleno de las.</p>
+        <p>Fill in the form below and a member of our team will be in touch.</p>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
       <!-- Modal body -->
       <div class="modal-body">
-        <form id="form" class="form-wrapper">
+        <form id="book-demoform" class="form-wrapper">
           <div class="contact-wrapper form_group">
               <label for="name" class="field-label">Name</label>
               <input class="text-field-3" maxlength="256" name="name" data-name="Name" placeholder="Enter Your Name" type="text" id="Name" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)">
@@ -120,7 +123,7 @@
           <div class="contact-wrapper form_group">
             <label for="name" class="field-label">Company Name</label>
             <input class="text-field-3" name="Companyname" placeholder="Enter Your Name" type="text" id="Companyname">
-            <span class="error" id="NameError"></span>
+            <span class="error" id="CompanyNameError"></span>
         </div>
           <div class="email-wrapper form_group">
               <label for="email" class="field-label">Company Email</label>
