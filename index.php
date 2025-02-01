@@ -96,18 +96,24 @@ include_once('partials/header.php'); //should be last after all variables
                         <p>Finzor Core Banking Services refers to the suite of services <br class="mobile-break">and solutions offered by Finzor to
                             financial institutions.</p>
                         <div class="hero-section-button">
+                        <a href="core-banking-solution.php">
                             <button class="section-button-one active_btn">
                                 <span class="text">Explore</span>
                                 <div class="icon">
                                     <img src="./assets/images/fz_button_arrow.svg" alt="">
                                 </div>
                             </button>
+                            </a>
+
+                            <a href="contact-us.php">
                             <button class="section-button-two">
                                 <span class="text">Connect</span>
                                 <div class="icon">
                                     <img src="./assets/images/fz_button_arrow.svg" alt="">
                                 </div>
                             </button>
+                          </a>
+
                         </div>
                     </div>
                 </div>
@@ -149,18 +155,23 @@ include_once('partials/header.php'); //should be last after all variables
                 <h2>Driving Financial Efficiency</h2>
                 <p><span class="circle-ripple"><img src="assets/images/finance-icon.svg" alt="finacne" /></span>At Finzor, we strive to be a digital leader in Core Banking Solutions, delivering security and efficiency through multi-factor authentication, encryption, automated workflows, and seamless third-party integration with our plug-in modules. Our innovative solutions simplify financial management with real-time communication and enhanced functionality</p>
                 <div>
+
+                <a href="core-banking-solution.php">
                     <button class="fz_learmore active_btn">
                         <span class="text">Learn more</span>
                         <div class="icon">
                             <img src="./assets/images/fz_button_arrow.svg" alt="">
                         </div>
                     </button>
+                </a>
+                <a href="contact-us.php">
                     <button class="fz_learmore_btn">
                         <span class="text">Get Started</span>
                         <div class="icon">
                             <img src="./assets/images/fz_button_arrow.svg" alt="">
                         </div>
                     </button>
+                </a>
                 </div>
             </div>
         </div>
@@ -283,7 +294,7 @@ include_once('partials/header.php'); //should be last after all variables
                             <div class="fz_subtitle">End to End Operational Suite</div>
                             <h3>
                                 <div id="finops360-icon" class="product-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-                                <div class="fz_title">FinOpZ 360<sup>°</sup></div>
+                                <div class="fz_title">FinzOpZ 360<sup>°</sup></div>
                             </h3>
                         </div>
                         <div class="fz_bank">Streamlining and Optimizing Processes to Enhance Efficiency and Accuracy</div>
@@ -905,18 +916,24 @@ include_once('partials/header.php'); //should be last after all variables
                     end-to-end encryption and multi-factor authentication, it ensures your data is protected. Powered by AI and
                     ML, it empowers leaders to monitor, manage, and strategize seamlessly.</p>
                 <div class="fz_btn">
+                <a href="core-banking-solution.php">
                     <button class="fz_learmore active_btn">
                         <span class="text">Learn more</span>
                         <div class="icon">
                             <img src="./assets/images/fz_button_arrow.svg" alt="">
                         </div>
                     </button>
+                </a>
+
+                <a href="contact-us.php">
                     <button class="fz_learmore_btn">
                         <span class="text">Get Started</span>
                         <div class="icon">
                             <img src="./assets/images/fz_button_arrow.svg" alt="">
                         </div>
                     </button>
+                </a>
+
                 </div>
             </div>
         </div>
