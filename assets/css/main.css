@@ -1551,7 +1551,7 @@ header .fz_sigin ul .unlock a:hover svg path {
 @media screen and (min-width: 1600px) {
   .panel__stack .panel__card {
     justify-content: center;
-    height: 34rem;
+    height: 38rem;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -3493,6 +3493,11 @@ div#faq-animate svg {
   filter: blur(152px);
   transform: translate3d(0, 0, 0);
   z-index: 1;
+}
+.play_store_section .play_store_container .play_flex {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .play_store_section h2 {
   font-size: 48px;
