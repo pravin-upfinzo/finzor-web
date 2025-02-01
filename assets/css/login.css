@@ -1,16 +1,3 @@
-@keyframes moveAnimation {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(50%);
-  }
-}
-@property --border-angle {
-  syntax: "<angle>";
-  inherits: true;
-  initial-value: 0turn;
-}
 .container-login {
   padding-top: 120px;
 }
