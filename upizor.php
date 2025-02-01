@@ -48,7 +48,7 @@ include_once('partials/header.php'); //should be last after all variables
 
                     UPI
                 </div>
-                <h3 class="fin_bankz_subtitle">CoreNexus</h3>
+                <h3 class="fin_bankz_subtitle">PayUnity</h3>
                 <div class="fin_bankz_bank">
                 </div>
                 <p class="fin_bankz_desc">Finzor’s UPI solutions offer a real-time payment system that enables P2P and P2M transactions with ease. Our platform supports multiple bank accounts in a single app, simplifying digital transactions. With scheduled payments and payment link generation, Finzor enhances financial accessibility. </p>
@@ -94,7 +94,7 @@ include_once('partials/header.php'); //should be last after all variables
 
                     UPI Switch
                 </div>
-                <h3 class="fin_bankz_subtitle">MobfinZ</h3>
+                <h3 class="fin_bankz_subtitle">FinzSwitch</h3>
                 <div class="fin_bankz_bank">
                 </div>
                 <p class="fin_bankz_desc">UPI Switch by Finzor enables the seamless routing of UPI transactions between banks and fintechs. Our solution integrates with accounting and ERP systems, ensuring smooth financial operations. With advanced security protocols, including two-factor authentication, we enhance transaction safety.</p>
@@ -135,7 +135,7 @@ include_once('partials/header.php'); //should be last after all variables
 
                     Payment Gateways
                 </div>
-                <h3 class="fin_bankz_subtitle">NeoPulse</h3>
+                <h3 class="fin_bankz_subtitle">FlowGate</h3>
                 <div class="fin_bankz_bank">
                 </div>
                 <p class="fin_bankz_desc">Finzor’s Payment Gateway simplifies online payments by supporting multiple payment methods, including cards, UPI, and wallets. Our platform ensures secure transactions with encryption, protecting customer data. With AI-powered fraud detection, we provide real-time risk analysis and prevention.</p>

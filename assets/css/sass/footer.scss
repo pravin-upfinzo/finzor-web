@@ -330,7 +330,7 @@ p{
 }
 
 #myModal {
-  z-index: 9999;
+  z-index: 99991;
   --bs-modal-width: 650px;
   .modal-content {
       border: solid 1px transparent;
@@ -339,7 +339,7 @@ p{
       background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
       animation: bg-spin 2s linear infinite;
       .modal-header {
-          padding: 20px 30px 0 100px;
+          padding: 30px 30px 10px;
           border: 0;
           flex-direction: column;
           align-items: start;
@@ -356,14 +356,22 @@ p{
           }
       }
       .modal-body {
-          padding: 15px 100px 30px;
+          padding: 0px 30px 20px;
       }
   }
   .form-wrapper {
       color: $white;
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
       .form_group {
           position: relative;
           margin-bottom: 20px;
+          width: 48%;
+          @media screen and (max-width: 767px) {
+            width: 100%;
+          }
           .field-label{
               @include field-label
           }
@@ -386,11 +394,16 @@ p{
               @include text-field-3;
               height: 50px;
           }
+          span.error {
+            font-size: 10px;
+            color: #cb0909;
+        }
       }
       .comment-wrapper {
           position: relative;
           height: 146px;
           margin-bottom: 30px;
+          width: 100%;
           .field-label{
               @include field-label
           }
@@ -407,5 +420,9 @@ p{
   }
 }
 .modal-backdrop.show {
-  opacity: 0.8;
+  z-index: 9999;
+  opacity: 1;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background: rgb(13 116 101 / 8%);
 }
