@@ -72,7 +72,6 @@
 @media screen and (min-width: 1600px) {
   .panel__stack .panel__card {
     justify-content: center;
-    height: 34rem;
   }
 }
 @media screen and (max-width: 1199px) {

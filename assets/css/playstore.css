@@ -77,6 +77,11 @@
   transform: translate3d(0, 0, 0);
   z-index: 1;
 }
+.play_store_section .play_store_container .play_flex {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 .play_store_section h2 {
   font-size: 48px;
   font-weight: 400;

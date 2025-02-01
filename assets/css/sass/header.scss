@@ -232,23 +232,28 @@ header {
               width: 100%;
             }
           }
-          li > a:hover {
-            position: relative;
-            &:after {
-              border-color: transparent transparent transparent rgb(62 171 144 / 20%);
-              border-style: solid;
-              border-width: 8px 0 8px 8px;
-              content: "";
-              height: 0;
-              position: absolute;
-              right: -8px;
-              top: 50%;
-              transform: translateY(-50%);
-              width: 0;
-              z-index: 100;
-              transition: all 0.5s ease;
-              @media screen and (max-width: 991px) {
-                border-width:unset;
+          li > a{
+            @media screen and (max-width: 991px) {
+              pointer-events: none;
+            }
+            &:hover {
+              position: relative;
+              &:after {
+                border-color: transparent transparent transparent rgb(62 171 144 / 20%);
+                border-style: solid;
+                border-width: 8px 0 8px 8px;
+                content: "";
+                height: 0;
+                position: absolute;
+                right: -8px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 0;
+                z-index: 100;
+                transition: all 0.5s ease;
+                @media screen and (max-width: 991px) {
+                  border-width:unset;
+                }
               }
             }
           }
