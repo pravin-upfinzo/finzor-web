@@ -324,34 +324,51 @@ include_once('partials/header.php'); //should be last after all variables
     <div class="about_us_banner_sec">
         <div class="row">
             <div class="col-lg-12">
-                <div class="about_us_banner_img">
-                    <img src="assets/images/about.svg" alt="">
+                    <!-- <img src="assets/images/about.svg" alt=""> -->
                     <div class="container">
+                        <div class="about_us_heading">
+                        <h3 class="fade-up">We help every company become a fintech expert</h3>
+                            <p class="fade-up">Empowering Banks with Scalable Software as a Service (SaaS) Solutions for Banki
+                            Payments, and Fintech Innovation.</p>
+                            <div class="about_us_banner_img">
+                                <img src="./assets/images/about.png" alt="about_bg">
+                            </div>
+                        </div>
                         <div class="about_banner_content">
-                            <h2>About Us</h2>
-                            <p>We knew that by aligning our incentives with our customers, without compromise, we could build something truly significant. With that in mind, we set out to deliver sophisticated financial products and advice to everyone.
-
-                                We knew that the way to build a better solution was through the use of smarter technology. We built an experience that replaced confusion with delight, and uncertainty with control.
-
-                                We’re aiming to bring back the feeling of defined benefits, and the financial peace of mind that goes with it. We envision a world where you can be confident of reaching your goals, whatever they may be.</p>
+                            <h2 class="fade-up"> About Us</h2>
+                            <p class="fade-up">Finzor leads the way in digital banking soluAons, partnering with both established and
+                                emerging financial insAtuAons to meet the evolving needs of banking, payments, analyAcs,
+                                arAficial intelligence (AI), blockchain, and fraud prevenAon. Our suite of soluAons drives
+                                innovaAon, enhances operaAons, and enables seamless transformaAon through a flexible,
+                                decomposable architecture and a startup mentality.</p>
+                                <p class="fade-up">
+                                With So ware-as-a-Service (SaaS)-powered tools, we help banks innovate faster, enhance
+                                customer engagement, and scale eﬀortlessly. Our focus on user interface (UI) and user
+                                experience (UX) ensures intuiAve interfaces that improve workflows and customer journeys.
+                                We also provide Technical Service Provider (TSP) capabiliAes, applicaAon programming
+                                interfaces (APIs), and plugin soluAons for easy integraAon into exisAng systems, keeping
+                                banks agile. In an  ever&nbsp;changing financial landscape, Finzor's cuUng-edge Fraud and Risk
+                                Management (FRM) soluAons, AI-powered risk engines, and AnA-Money Laundering (AML)
+                                tools ensure security, compliance, and risk miAgaAon, empowering banks to stay ahead in a
+                                rapidly evolving industry.
+                                </p>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="developer_section">
+        <div class="developer_section about_card_sec">
             <div class="col-lg-12">
                 <div class="dev_left">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="dev_card fz_intergration">
                                 <div class="dev_card_logo">
-                                    <span><img src="./assets/images/integration.png" alt=""></span>
-                                    <h4>Impact</h4>
+                                    <span><img src="./assets/images/impact.svg" alt=""></span>
+                                    <h4 class="fade-up">Impact</h4>
                                 </div>
-                                <p>We are here to enhance financial inclusion by unlocking access to a comprehensive suite of essential financial services for thriving enterprise businesses across Southeast Asia.</p>
+                                <p class="fade-up">We are here to enhance financial inclusion by unlocking access to a comprehensive suite of essential financial services for thriving enterprise businesses across Southeast Asia.</p>
                             </div>
                         </div>
                     </div>
@@ -359,10 +376,10 @@ include_once('partials/header.php'); //should be last after all variables
                         <div class="col-lg-12">
                             <div class="dev_card fz_api">
                                 <div class="dev_card_logo">
-                                    <span><img src="./assets/images/Api.png" alt=""></span>
-                                    <h4>Ownership</h4>
+                                    <span><img src="./assets/images/Ownershippp.svg" alt=""></span>
+                                    <h4 class="fade-up">Ownership</h4>
                                 </div>
-                                <p>It is a privilege for us to be a change maker in the fintech ecosystem, working alongside financial institutions with wide coverage and tech companies.</p>
+                                <p class="fade-up">It is a privilege for us to be a change maker in the fintech ecosystem, working alongside financial institutions with wide coverage and tech companies.</p>
                             </div>
                         </div>
                     </div>
@@ -370,10 +387,10 @@ include_once('partials/header.php'); //should be last after all variables
                         <div class="col-lg-12">
                             <div class="dev_card fz_webhook">
                                 <div class="dev_card_logo">
-                                    <span><img src="./assets/images/plug.png" alt=""></span>
-                                    <h4>Customer Centric</h4>
+                                    <span><img src="./assets/images/Customer Centric.svg" alt=""></span>
+                                    <h4 class="fade-up">Customer Centric</h4>
                                 </div>
-                                <p>We care about people, from our partners and clients to their end-users. We constantly focus on bringing value to the people we touch.</p>
+                                <p class="fade-up">We care about people, from our partners and clients to their end-users. We constantly focus on bringing value to the people we touch.</p>
                             </div>
                         </div>
                     </div>
@@ -391,10 +408,13 @@ include_once('partials/header.php'); //should be last after all variables
                 </div>
                 <div class="col-lg-6">
                     <div class="about_us_content">
-                        <h5>Our Mission</h5>
+                        <h5 class="fade-up">Our Mission</h5>
+                        <p class="fade-up">
                         To deliver advanced, reliable, and scalable payment and core banking systems that ensure
                         secure, eﬃcient, and user-centric financial transacAons, fostering trust and supporAng the
                         growth of the financial ecosystem.
+                        </p>
+                        
                         <button class="buttons mt-4">
                             <span class="text">Get Started</span>
                             <div class="icon">
@@ -410,7 +430,8 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="row">
                 <div class="col-lg-6">
                     <div class="about_us_content">
-                        <h5>Our Vision</h5>
+                        <h5 class="fade-up">Our Vision</h5>
+                        <p class="fade-up">
                         Finzor is revoluAonizing banking by providing future-ready core banking and payment
                         soluAons that empower financial insAtuAons with innovaAon, security, and operaAonal
                         excellence.
@@ -418,6 +439,8 @@ include_once('partials/header.php'); //should be last after all variables
                         architectures, we enhance customer experiences and ensure banks stay compeAAve.
                         With a commitment to resilience, compliance, and sustainable growth, we drive the
                         transformaAon of the digital financial ecosystem.
+                        </p>
+                       
                         <button class="buttons mt-4">
                             <span class="text">Get Started</span>
                             <div class="icon">
@@ -442,13 +465,16 @@ include_once('partials/header.php'); //should be last after all variables
                 </div>
                 <div class="col-lg-6">
                     <div class="about_us_content">
-                        <h5>Core Values</h5>
+                        <h5 class="fade-up">Core Values</h5>
+                        <p class="fade-up">
                         With flexibility, scalability, and real-Ame processing, our Core Banking System (CBS)
                         facilitates the smooth administraAon of accounts, transacAons, and client interacAons,
                         resulAng in increased operaAonal eﬃciency and first-rate service.
                         We increase consumer happiness and encourage digital adopAon by enabling safe, quick,
                         and dependable digital transacAons across point-of-sale, web, and mobile plaXorms with
                         Payment SoluAons.
+                        </p>
+                       
                         <button class="buttons mt-4">
                             <span class="text">Get Started</span>
                             <div class="icon">
@@ -474,12 +500,11 @@ include_once('partials/header.php'); //should be last after all variables
                                 <h3>Innovate with us</h3>
                                 <h5>Let&rsquo;s connect</h5>
                                 <p>We help banks to Engage Better with their customers, employees, and partners to drive purposeful growth.</p>
-                                <div class="input-group input-group-lg">
+                                <!-- <div class="input-group input-group-lg">
                                     <input type="text" class="form-control" placeholder="Enter email address
-                              " aria-label="Username" aria-describedby="basic-addon1">
-                                    <!-- <button class="btn" type="button" id="button-addon2">Submit</button> -->
-                                </div>
-                                <button class="buttons">
+                                      " aria-label="Username" aria-describedby="basic-addon1">
+                                </div> -->
+                                <button class="buttons" data-bs-toggle="modal" data-bs-target="#myModal">
                                     <span class="text">Book a demo</span>
                                     <div class="icon">
                                         <img src="./assets/images/fz_button_arrow.svg" alt="">
@@ -498,9 +523,6 @@ include_once('partials/header.php'); //should be last after all variables
                             <div class="hover-box">
                                 <a class="dedcription-btn" href="#">
                                     <span class="name-descripeion">Download Now</span>
-                                    <!-- <div class="btn-icon">
-                                <img src="./assets/images/appstore_arrow.svg" alt=""> 
-                              </div> -->
                                 </a>
                             </div>
                         </div>
@@ -513,8 +535,6 @@ include_once('partials/header.php'); //should be last after all variables
                 </div>
                 <div class="col-lg-5">
                     <div class="play_store_right">
-                        <!-- <img src="./assets/images/playstore1.svg" alt="" class="fz_playstore1"> -->
-                        <!-- <img src="./assets/images/book-demo.svg" alt="Book a Demo" class="fz_playstore2"> -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="564" height="613" viewBox="0 0 564 613" fill="none" class="fz_playstore2">
                             <style>
                                 svg>g path.dd {
@@ -661,7 +681,26 @@ include_once('partials/header.php'); //should be last after all variables
         </div>
     </div>
 </section>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+ const fadeElements = document.querySelectorAll(".fade-up");
 
+const observer_about_fadeup = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        } else {
+            entry.target.classList.remove("show"); // Remove class when out of view
+        }
+    });
+}, { threshold: 0.2 });
+
+fadeElements.forEach(el => observer_about_fadeup.observe(el));
+
+});
+
+
+</script>
 
 <!-- Include footer -->
 <?php include_once('partials/footer.php'); ?>

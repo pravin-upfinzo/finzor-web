@@ -29,19 +29,13 @@
         // width: 400px;
         // height: 400px;
         position: relative;
-        margin: 0 auto;
+        margin: 50px auto;
         @media screen and (max-width: 991px) {
             width: auto;
             height: auto;
             object-fit: contain;
         }
-        .about_banner_content{
-            position: absolute;
-            top:25%;
-            width: 50%;
-            text-align: left;
-            padding-left: 30px;
-        }
+       
         img{
             width: 100%;
             height: 100%;
@@ -51,6 +45,25 @@
   
 }
 .about_us_section{
+    .about_us_banner_sec{
+        .about_banner_content{
+            width: 80%;
+            margin: 0 auto;
+            @media screen and (max-width: 991px) {
+                width: 100%;
+            }
+        }
+    }
+    .about_us_heading{
+        padding-top: 100px;
+        h3{
+            font-size: 40px;
+            color: $white;
+            font-weight: 300;
+            margin-bottom: 0px;
+        }
+    }
+   
     .about_part{
         height: auto;
         padding:50px 0px;
@@ -104,5 +117,33 @@
             }
         }
     }
+}
+.about_card_sec{
+    .dev_card{
+        p{
+            text-align: center !important;
+        }
+        .dev_card_logo{
+            flex-direction: column !important;
+            span{
+                width: 75px;
+                height: 75px;
+                background-color: $primary-color;
+                padding: 15px;
+            }
+        }
+       
+    }
+   
+}
+.fade-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
