@@ -114,7 +114,7 @@
       </div>
       <!-- Modal body -->
       <div class="modal-body">
-        <form id="book-demoform" class="form-wrapper">
+        <form method="POST" id="book-demoform" class="form-wrapper">
           <div class="contact-wrapper form_group">
               <label for="name" class="field-label">Name</label>
               <input class="text-field-3" maxlength="256" name="name" data-name="Name" placeholder="Enter Your Name" type="text" id="Name" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)">
@@ -156,7 +156,8 @@
 <script src="assets/js/gsap.min.js"></script>
 <script src="assets/js/ScrollTrigger.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/logo_loader.js"></script>
+<script src="assets/js/logo_loader.js"></script> 
+<script src="assets/js/form-submission.js"></script> 
 
 <?php
 // Include page-specific JS
