@@ -20,6 +20,12 @@
       @media only screen and (max-width: 991px) {
        padding:0 10px;
       }
+      .item-1 {
+        padding-top: 178px;
+        @media screen and (max-height: 767px) {
+          padding-top: 150px;
+        }
+      }
       .fz_sub_container {
         display: flex;
         height: 100vh;
@@ -27,12 +33,6 @@
           height: auto;
           flex-direction: column;
           // gap: 24px;
-        }
-        .item-1 {
-          padding-top: 178px;
-          @media screen and (max-height: 767px) {
-            padding-top: 150px;
-          }
         }
         .fz_content {
           position: relative;
