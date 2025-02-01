@@ -157,7 +157,7 @@
 <script src="assets/js/ScrollTrigger.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/logo_loader.js"></script>
-
+<script src="assets/js/form-submission.js"></script>
 <?php
 // Include page-specific JS
 if (isset($pageScripts)) {
