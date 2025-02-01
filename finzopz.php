@@ -48,7 +48,7 @@ include_once('partials/header.php'); //should be last after all variables
 
                     Investment Management
                 </div>
-                <h3 class="fin_bankz_subtitle">CoreNexus</h3>
+                <h3 class="fin_bankz_subtitle">FinInvezt</h3>
                 <div class="fin_bankz_bank">
                 </div>
                 <p class="fin_bankz_desc">Finzor's investment management solutions provide AI-driven insights to help customers make informed financial decisions. Our platform supports portfolio management, tax planning, and budgeting tools for effective wealth management. With automated risk assessment, we help users optimize their investments.</p>
@@ -94,7 +94,7 @@ include_once('partials/header.php'); //should be last after all variables
 
                     Settlements
                 </div>
-                <h3 class="fin_bankz_subtitle">MobfinZ</h3>
+                <h3 class="fin_bankz_subtitle">Finalease</h3>
                 <div class="fin_bankz_bank">
                 </div>
                 <p class="fin_bankz_desc">At Finzor, we ensure smooth and timely settlements by automating payment processing. Our customizable settlement thresholds allow businesses to optimize cash flow and minimize risks. With tax calculation and reporting features, we help merchants stay compliant with regulations.</p>
@@ -135,7 +135,7 @@ include_once('partials/header.php'); //should be last after all variables
 
                     Reconciliation
                 </div>
-                <h3 class="fin_bankz_subtitle">NeoPulse</h3>
+                <h3 class="fin_bankz_subtitle">ReconSphere</h3>
                 <div class="fin_bankz_bank">
                 </div>
                 <p class="fin_bankz_desc">The reconciliation process at Finzor ensures real-time tracking of financial transactions. Our AI-driven insights help businesses manage receivables efficiently, reducing discrepancies. With automated alerts, we notify users of any inconsistencies in transaction records.</p>

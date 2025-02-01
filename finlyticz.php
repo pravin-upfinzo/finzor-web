@@ -65,7 +65,7 @@ include_once('partials/header.php'); //should be last after all variables
 
                     Data Analytics
                 </div>
-                <h3 class="fin_bankz_subtitle">NeoPulse</h3>
+                <h3 class="fin_bankz_subtitle">DataVista</h3>
                 <div class="fin_bankz_bank">
                 </div>
                 <p class="fin_bankz_desc">Use our data analytics to empower businesses with real-time insights. Finzor’s analytics tools help segment customers, identify market trends, and optimize financial strategies. Our risk analytics and credit scoring enable smarter decision-making for financial institutions.</p>
