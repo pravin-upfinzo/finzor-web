@@ -156,6 +156,7 @@ $ternary-color: #2d4949;
 @mixin cmn-btn {
   z-index: 2;
   font-size:14px;
+  border-radius: 32px;
   border: 1px solid #3eab9091;
   background: linear-gradient(83.46deg, #00B2B1 -13.99%, #008283 31.77%, #006468 73.27%);
   overflow: hidden;
@@ -167,7 +168,7 @@ $ternary-color: #2d4949;
   --w: 135px;
   --h: 40px;
   --icon-size: 25px;
-  padding: 0px 15px !important;
+  padding: 0px 28px !important;
   @media (min-width: 992px) and (max-width: 1024px) {
     font-size: 12px;
   }

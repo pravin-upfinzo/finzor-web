@@ -1,5 +1,5 @@
 <?php
-$page_title = 'Core Banking Solution';
+$page_title = 'FinZro';
 $meta_lines = '<meta name="description" content="">';
 
 // to include page specific CSS
@@ -10,6 +10,7 @@ $pageStyles .= '<style></style>' . "\n";
 
 // to include page specific JS
 $pageScripts = '<script src="./assets/js/spotlight_effect.js"></script>' . "\n";
+$pageScripts .= '<script src="./assets/js/lottie.min.js"></script>' . "\n";
 $pageScripts .= '<script src="./assets/js/product_list.js"></script>' . "\n";
 $pageScripts .= '<script></script>' . "\n";
 
@@ -39,6 +40,41 @@ include_once('partials/header.php'); //should be last after all variables
         <img src="./assets/images/product_banner.svg" alt="product-banner" class="fz_product_list_banner_img">
     </div>
 </section>
+<!-- product_hero_section -->
+<section id="fin_bankz_sec" class="fin_bankz finbankz_bg_1">
+    <div class="container">
+        <div class="fin_bankz">
+            <div class="fin_bankz_content finbank_content">
+                <div class="fin_bankz_title">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.04814 8.69861L7.16902 10.1659C7.16902 10.1659 7.16746 10.1685 7.16668 10.1695C7.15993 10.1811 7.15344 10.1926 7.14617 10.2041C6.93119 10.5518 6.54875 10.7839 6.11257 10.7839H3.01046L1.66867 13.0234L1.64634 13.0609C1.30336 13.6173 0.695041 13.9903 0 14L3.17559 8.69887L8.04814 8.69861Z"
+                            fill="#E4F1F2" />
+                        <path
+                            d="M8.5627 7.83958L8.18831 8.46463H3.31575L3.46063 8.22257L3.47621 8.19664C3.60914 7.98235 3.84567 7.83984 4.11491 7.83984L8.5627 7.83958Z"
+                            fill="#E4F1F2" />
+                        <path
+                            d="M11.7874 2.45719L9.49301 6.2866C9.48678 6.29708 9.48081 6.30782 9.47432 6.3183C9.26012 6.66933 8.8756 6.90353 8.43682 6.90353H4.25074L5.98873 4.00278C6.5485 3.07595 7.55952 2.45719 8.71359 2.45719H11.7874Z"
+                            fill="#E4F1F2" />
+                        <path
+                            d="M13.2595 0L13.2484 0.0185995C12.6837 0.921332 11.6861 1.52123 10.5497 1.52123H8.19043C7.04129 1.52123 6.03391 2.13476 5.47284 3.05504L0.842263 10.7838V8.38132C0.845379 8.00749 0.95079 7.65803 1.13176 7.36018L1.13461 7.35546L4.02512 2.53059C4.92709 1.01459 6.57239 0 8.4524 0H13.2595Z"
+                            fill="#E4F1F2" />
+                    </svg>
+
+                    Merchant Onboarding
+                </div>
+                <h3 class="fin_bankz_subtitle">NeoPulse</h3>
+                <div class="fin_bankz_bank">
+                </div>
+                <p class="fin_bankz_desc">Our digital merchant acquisition process at Finzor simplifies onboarding with automated workflows. The onboarding dashboard provides businesses with real-time status updates and compliance tracking. Secure API integration ensures seamless connectivity with payment platforms.</p>
+                <p class="fin_bankz_desc">Finzor’s merchant onboarding solutions reduce onboarding time while maintaining strict regulatory compliance. Our AI-driven verification process enhances fraud prevention. With a user-friendly interface, we enable businesses to onboard merchants efficiently and securely.</p>
+            </div>
+            <div class="fin_bankz_img">
+                <div class="finbankz-product3"></div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Cloud Based Solutions -->
 <section class="fz_ai_enhance_sec cbs_sec">
@@ -46,8 +82,8 @@ include_once('partials/header.php'); //should be last after all variables
         <div class="row">
             <div class="col-lg-6 fz_enhance_col">
                 <div class="fz_ai_enhance_text">
-                    <h2>Driving Deeper Customer Interactions</h2>
-                    <p class="fz_enhance_para">Accelerate digital adoption with customer-led product designs, gain real-time insights into customer journeys for personalized engagements. Offer tailored products based on holistic customer views and embedded insights
+                    <h2>Cloud Based Solutions</h2>
+                    <p class="fz_enhance_para">Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web development to fill empty spaces in a layout that does not yet have content.
                     </p>
                     <ul>
                         <li>
@@ -78,53 +114,18 @@ include_once('partials/header.php'); //should be last after all variables
             <h4>Features</h4>
         </div>
         <div class="product_list_feature_cards spotlight-effect">
-            <div></div>
-            <div class="product_list_feature_card fade-down">
-                <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4>Open Rest API</h4>
-                    <p>Cash management refers to a broad area of finance involving the collection, handdivng, and usage of cash.</p>
-                </div>
-            </div>
-            <div class="product_list_feature_card fade-left">
-                <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4> CKYC and AML</h4>
-                    <p>Cash management refers to a broad area of finance involving the collection, handdivng, and usage of cash.</p>
-                </div>
-            </div>
             <div class="product_list_feature_card fade-right">
                 <div class="product_list_feature_cont">
                     <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4>Cash Management</h4>
+                    <h4>Onboarding Dashboard </h4>
                     <p>Cash management refers to a broad area of finance involving the collection, handdivng, and usage of cash.</p>
                 </div>
             </div>
-            <div class="product_list_feature_card zoom-in product_center">
-                <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4>Digital Payments</h4>
-                    <p>Cash management refers to a broad area of finance involving the collection, handdivng, and usage of cash.</p>
-                </div>
-            </div>
+            <div class="product_center"></div>
             <div class="product_list_feature_card fade-left">
                 <div class="product_list_feature_cont">
                     <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4>Cloud Based Solutions </h4>
-                    <p>Cash management refers to a broad area of finance involving the collection, handdivng, and usage of cash.</p>
-                </div>
-            </div>
-            <div class="product_list_feature_card fade-right">
-                <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4>AI enhancement </h4>
-                    <p>Cash management refers to a broad area of finance involving the collection, handdivng, and usage of cash.</p>
-                </div>
-            </div>
-            <div class="product_list_feature_card fade-up">
-                <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4>Regulatory Risk</h4>
+                    <h4> Secure API Integration</h4>
                     <p>Cash management refers to a broad area of finance involving the collection, handdivng, and usage of cash.</p>
                 </div>
             </div>
@@ -135,8 +136,8 @@ include_once('partials/header.php'); //should be last after all variables
 <!-- Super Feature -->
 <section class="fz_features_sec">
     <div class="container">
-        <h2>Innovate Better</h2>
-        <p class="fz_features_heading_para">Power innovations with open APIs and a curated partner ecosystem. Transform into digital businesses creating unconventional revenue streams.</p>
+        <h2>Finzor’s Super Features</h2>
+        <p class="fz_features_heading_para">You can view your account balances, transaction history, and statements, and even set up custom alerts to help you stay on <br> top of your finances.</p>
         <div class="row">
             <div class="col-lg-6">
                 <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -215,7 +216,7 @@ include_once('partials/header.php'); //should be last after all variables
             </div>
             <div class="col-lg-6 fz_enhance_col">
                 <div class="fz_ai_enhance_text">
-                    <h2>End-to-End Digital Experience</h2>
+                    <h2>AI enhancement make your work seamless</h2>
                     <p class="fz_enhance_para">Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web development to fill empty spaces in a layout that does not yet have content.
                     </p>
                     <p class="fz_enhance_para">
@@ -269,7 +270,7 @@ include_once('partials/header.php'); //should be last after all variables
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px; margin: 0 auto;" />
                     <h3>UpiZor</h3>
                     <p>Empowering seamless, secure, and instant transactions for a connected world</p>
-                    <a class="cmn-btn" href="#">
+                    <a class="cmn-btn" href="contact-us.php">
                         <span class="text"> View Product</span>
                         <div class="icon">
                             <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
@@ -285,7 +286,7 @@ include_once('partials/header.php'); //should be last after all variables
                     <p>Streamlining and optimising
                         processes to enhance
                         efficiency and accuracy</p>
-                    <a class="cmn-btn" href="#">
+                    <a class="cmn-btn" href="contact-us.php">
                         <span class="text"> View Product</span>
                         <div class="icon">
                             <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
@@ -300,13 +301,12 @@ include_once('partials/header.php'); //should be last after all variables
                     <h3>FinZro</h3>
                     <p>Fuelling business growth with
                         smart, scalable payment<br> tools</p>
-                    <a class="cmn-btn" href="#">
+                    <a class="cmn-btn" href="contact-us.php">
                         <span class="text"> View Product</span>
                         <div class="icon">
                             <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
                         </div>
                     </a>
-                <img src="./assets/images/product-range.svg" alt="iconglow" />
                 </div>
                 <img src="./assets/images/product-glow.svg" alt="iconglow" />
             </div>
@@ -315,7 +315,7 @@ include_once('partials/header.php'); //should be last after all variables
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
                     <h3>UpiZor</h3>
                     <p>Empowering seamless, secure, and instant transactions for a connected world</p>
-                    <a class="cmn-btn" href="#">
+                    <a class="cmn-btn" href="contact-us.php">
                         <span class="text"> View Product</span>
                         <div class="icon">
                             <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
