@@ -460,6 +460,15 @@ header .fz_sigin ul .unlock a:hover svg path {
   }
 }
 
+.error {
+    color: #ED5B43;
+    font-size: 12px;
+    padding: 0px;
+    margin-bottom: -5px;
+    position: absolute;
+    bottom: -25%;
+    left: 0;
+}
 .onboard_btn .buttons {
   z-index: 2;
   font-size: 14px;
@@ -4153,7 +4162,7 @@ div#faq-animate svg {
 }
 #myModal .form-wrapper .form_group {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 #myModal .form-wrapper .form_group .field-label {
   color: #34b195;
@@ -4193,7 +4202,7 @@ div#faq-animate svg {
 #myModal .form-wrapper .comment-wrapper {
   position: relative;
   height: 146px;
-  margin-bottom: 30px;
+  margin-bottom: 43px;
 }
 #myModal .form-wrapper .comment-wrapper .field-label {
   color: #34b195;
@@ -4279,5 +4288,6 @@ div#faq-animate svg {
 }
 
 .modal-backdrop.show {
-  opacity: 0.8;
+    opacity: 0.8;
 }
+

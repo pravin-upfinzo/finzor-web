@@ -114,7 +114,7 @@
       </div>
       <!-- Modal body -->
       <div class="modal-body">
-        <form id="form" class="form-wrapper">
+        <form id="book-demoform" class="form-wrapper">
           <div class="contact-wrapper form_group">
               <label for="name" class="field-label">Name</label>
               <input class="text-field-3" maxlength="256" name="name" data-name="Name" placeholder="Enter Your Name" type="text" id="Name" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)">
@@ -123,7 +123,7 @@
           <div class="contact-wrapper form_group">
             <label for="name" class="field-label">Company Name</label>
             <input class="text-field-3" name="Companyname" placeholder="Enter Your Name" type="text" id="Companyname">
-            <span class="error" id="NameError"></span>
+            <span class="error" id="CompanyNameError"></span>
         </div>
           <div class="email-wrapper form_group">
               <label for="email" class="field-label">Company Email</label>
