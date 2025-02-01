@@ -16,6 +16,10 @@ $(window).on('load', function() {
             $('.hero').fadeIn();
         }, 2000);
      }
+
+    setTimeout(function() {
+        $('.hero').fadeIn();
+    }, 500);
   }); 
   var btn = $('#scroll_top');
   $(window).scroll(function() {
