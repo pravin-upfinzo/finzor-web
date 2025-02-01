@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <div id="page-loader"></div>
+    <div id="page-loader" style="display: none;"></div>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
