@@ -343,7 +343,7 @@ body {
   @media (max-width: 991px) {
       padding: 60px 0px;
   }
-  .col-lg-6 {
+  .col-lg-5 {
     display: flex;
     align-items: center;
   }
@@ -405,7 +405,7 @@ body {
               margin-bottom: 30px;
           }
           li{
-              font-size: 18px;
+              font-size: 16px;
               font-weight: 300;
               padding: 10px 20px;
               border-radius: 30px;
@@ -421,17 +421,15 @@ body {
               }
               .fz_cbs_color{
                   color: $primary-color;
-                  padding: 5px;
-                  padding-left: 20px;
               }
               .normal_text{
                   color: $white;
-                  padding-left: 10px;
               }
               img{
                   width: 30px;
                   height: 30px;
                   object-fit: contain;
+                  margin-right: 16px;
               }
           }
       }

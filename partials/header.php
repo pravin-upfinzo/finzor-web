@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <div id="page-loader"></div>
+    <div id="page-loader" style="display: none;"></div>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
@@ -49,7 +49,7 @@
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <a class="navbar-brand-mobile" href="#">
+                        <a class="navbar-brand-mobile" href="index.php">
                             <svg xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="0 0 120 40" fill="none">
                                 <path d="M117.062 30.2616H113.239L110.065 24.7143H107.902V30.2616H104.344V14.4773H111.196C114.754 14.4773 116.942 16.4165 116.942 19.5737C116.942 21.8511 115.74 23.5877 113.648 24.3319V24.3547L117.062 30.2623L117.062 30.2616ZM110.763 21.6699C112.47 21.6699 113.383 20.9258 113.383 19.5502C113.383 18.1746 112.517 17.5204 110.763 17.5204H107.902V21.6693H110.763V21.6699Z" fill="#2D4949"></path>
                                 <path d="M38.1836 14.4766H49.0263V17.5431H41.7415V21.3988H48.5213V24.3304H41.7415V30.2609H38.1836V14.4766Z" fill="#2D4949"></path>
@@ -139,19 +139,19 @@
                                     <ul class="inner-submenu">
                                         <li>
                                         <a href="./upi.php">
-                                            <h3>CoreNexus</h3>
+                                            <h3>PayUnity</h3>
                                             <p>UPI</p>
                                         </a>
                                         </li>
                                         <li>
                                         <a href="./upi-switch.php">
-                                            <h3>MobfinZ</h3>
+                                            <h3>FinzSwitch</h3>
                                             <p>UPI Switch</p>
                                         </a>
                                         </li>
                                         <li>
                                         <a href="./payment-gateways.php">
-                                            <h3>MobfinZ</h3>
+                                            <h3>FlowGate</h3>
                                             <p>Payment Gateways</p>
                                         </a>
                                         </li>
@@ -178,19 +178,19 @@
                                     <ul class="inner-submenu">
                                         <li>
                                         <a href="./investment-management.php">
-                                            <h3>CoreNexus</h3>
+                                            <h3>FinInvezt</h3>
                                             <p>Investment Management</p>
                                         </a>
                                         </li>
                                         <li>
                                         <a href="./settlements.php">
-                                            <h3>MobfinZ</h3>
+                                            <h3>Finalease</h3>
                                             <p>Settlements</p>
                                         </a>
                                         </li>
                                         <li>
                                         <a href="./reconciliation.php">
-                                            <h3>NeoPulse</h3>
+                                            <h3>ReconSphere</h3>
                                             <p>Reconciliation</p>
                                         </a>
                                         </li>

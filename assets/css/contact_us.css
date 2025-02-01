@@ -102,11 +102,11 @@
   border: 1px solid #2D4949;
   background-color: #000000;
   color: #fff;
-  border-radius: 0;
+  border-radius: 3px;
   margin-bottom: 0;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  padding-left: 24px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
   outline: none;
 }
 #contact_us .contact_sub_cont .form-wrapper .comment-wrapper {
@@ -131,11 +131,11 @@
   border: 1px solid #2D4949;
   background-color: #000000;
   color: #fff;
-  border-radius: 0;
+  border-radius: 3px;
   margin-bottom: 0;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  padding-left: 24px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
   outline: none;
 }
 #contact_us .contact_sub_cont .form-wrapper .fz_submit {

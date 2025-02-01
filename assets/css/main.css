@@ -283,6 +283,11 @@ header .navbar-expand-lg .navbar-nav > li .submenu a {
     width: 100%;
   }
 }
+@media screen and (max-width: 991px) {
+  header .navbar-expand-lg .navbar-nav > li .submenu li > a {
+    pointer-events: none;
+  }
+}
 header .navbar-expand-lg .navbar-nav > li .submenu li > a:hover {
   position: relative;
 }
@@ -1552,7 +1557,6 @@ header .fz_sigin ul .unlock a:hover svg path {
 @media screen and (min-width: 1600px) {
   .panel__stack .panel__card {
     justify-content: center;
-    height: 34rem;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -1991,6 +1995,14 @@ header .fz_sigin ul .unlock a:hover svg path {
 @media only screen and (max-width: 991px) {
   .fz_product_sec .container .fz_product_left {
     padding: 0 10px;
+  }
+}
+.fz_product_sec .container .fz_product_left .item-1 {
+  padding-top: 178px;
+}
+@media screen and (max-height: 767px) {
+  .fz_product_sec .container .fz_product_left .item-1 {
+    padding-top: 150px;
   }
 }
 .fz_product_sec .container .fz_product_left .fz_sub_container {
@@ -3487,6 +3499,11 @@ div#faq-animate svg {
   transform: translate3d(0, 0, 0);
   z-index: 1;
 }
+.play_store_section .play_store_container .play_flex {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 .play_store_section h2 {
   font-size: 48px;
   font-weight: 400;
@@ -4160,7 +4177,7 @@ div#faq-animate svg {
   }
 }
 #myModal {
-  z-index: 9999;
+  z-index: 99991;
   --bs-modal-width: 650px;
 }
 #myModal .modal-content {
@@ -4171,7 +4188,7 @@ div#faq-animate svg {
   animation: bg-spin 2s linear infinite;
 }
 #myModal .modal-content .modal-header {
-  padding: 20px 30px 0 100px;
+  padding: 30px 30px 10px;
   border: 0;
   flex-direction: column;
   align-items: start;
@@ -4188,14 +4205,24 @@ div#faq-animate svg {
   border-radius: 50%;
 }
 #myModal .modal-content .modal-body {
-  padding: 15px 100px 30px;
+  padding: 0px 30px 20px;
 }
 #myModal .form-wrapper {
   color: #ffffff;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 #myModal .form-wrapper .form_group {
   position: relative;
   margin-bottom: 20px;
+  width: 48%;
+}
+@media screen and (max-width: 767px) {
+  #myModal .form-wrapper .form_group {
+    width: 100%;
+  }
 }
 #myModal .form-wrapper .form_group .field-label {
   color: #34b195;
@@ -4224,18 +4251,23 @@ div#faq-animate svg {
   border: 1px solid #2D4949;
   background-color: #000000;
   color: #fff;
-  border-radius: 0;
+  border-radius: 3px;
   margin-bottom: 0;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  padding-left: 24px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
   outline: none;
   height: 50px;
+}
+#myModal .form-wrapper .form_group span.error {
+  font-size: 10px;
+  color: #cb0909;
 }
 #myModal .form-wrapper .comment-wrapper {
   position: relative;
   height: 146px;
   margin-bottom: 30px;
+  width: 100%;
 }
 #myModal .form-wrapper .comment-wrapper .field-label {
   color: #34b195;
@@ -4254,11 +4286,11 @@ div#faq-animate svg {
   border: 1px solid #2D4949;
   background-color: #000000;
   color: #fff;
-  border-radius: 0;
+  border-radius: 3px;
   margin-bottom: 0;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  padding-left: 24px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
   outline: none;
 }
 #myModal .form-wrapper .fz_submit {
@@ -4321,5 +4353,9 @@ div#faq-animate svg {
 }
 
 .modal-backdrop.show {
-  opacity: 0.8;
+  z-index: 9999;
+  opacity: 1;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background: rgba(13, 116, 101, 0.08);
 }

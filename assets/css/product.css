@@ -30,6 +30,14 @@
     padding: 0 10px;
   }
 }
+.fz_product_sec .container .fz_product_left .item-1 {
+  padding-top: 178px;
+}
+@media screen and (max-height: 767px) {
+  .fz_product_sec .container .fz_product_left .item-1 {
+    padding-top: 150px;
+  }
+}
 .fz_product_sec .container .fz_product_left .fz_sub_container {
   display: flex;
   height: 100vh;

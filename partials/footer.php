@@ -109,7 +109,7 @@
       <!-- Modal Header -->
       <div class="modal-header">
         <h4 class="modal-title">Book a demo</h4>
-        <p>Lorem Ipsum es simplemente el texto de relleno de las.</p>
+        <p>Fill in the form below and a member of our team will be in touch.</p>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
       <!-- Modal body -->
@@ -157,7 +157,7 @@
 <script src="assets/js/ScrollTrigger.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/logo_loader.js"></script>
-
+<script src="assets/js/form-submission.js"></script>
 <?php
 // Include page-specific JS
 if (isset($pageScripts)) {

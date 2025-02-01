@@ -1216,7 +1216,7 @@ include_once('partials/header.php'); //should be last after all variables
     <div class="container">
         <div class="play_store_container">
             <div class="row">
-                <div class="col-lg-7">
+                <div class="col-lg-7 play_flex">
 
                     <div class="play_store_left">
                         <section class="newsletter_section">

@@ -24,7 +24,6 @@
 .footer_section .fz_footer_container {
   display: flex;
   gap: 50px;
-  justify-content: space-between;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .footer_section .fz_footer_container {
@@ -107,7 +106,7 @@
 }
 .footer_section .fz_footer_container .footer_list_link {
   display: grid;
-  grid-template-columns: repeat(3, 150px);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   color: #c7c7c7;
 }
@@ -186,7 +185,6 @@
   position: relative;
   margin: 20px 0px;
   display: inline-block;
-  width: 100%;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .footer_section .fz_footer_container .subscribe .subscribe-form {
@@ -201,7 +199,7 @@
   }
 }
 .footer_section .fz_footer_container .subscribe .subscribe-form input {
-  width: 100%;
+  width: 290px;
   padding: 16px;
   font-size: 14px;
   background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
@@ -340,7 +338,7 @@
   }
 }
 #myModal {
-  z-index: 9999;
+  z-index: 99991;
   --bs-modal-width: 650px;
 }
 #myModal .modal-content {
@@ -351,7 +349,7 @@
   animation: bg-spin 2s linear infinite;
 }
 #myModal .modal-content .modal-header {
-  padding: 20px 30px 0 100px;
+  padding: 30px 30px 10px;
   border: 0;
   flex-direction: column;
   align-items: start;
@@ -368,14 +366,24 @@
   border-radius: 50%;
 }
 #myModal .modal-content .modal-body {
-  padding: 15px 100px 30px;
+  padding: 0px 30px 20px;
 }
 #myModal .form-wrapper {
   color: #ffffff;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 #myModal .form-wrapper .form_group {
   position: relative;
   margin-bottom: 20px;
+  width: 48%;
+}
+@media screen and (max-width: 767px) {
+  #myModal .form-wrapper .form_group {
+    width: 100%;
+  }
 }
 #myModal .form-wrapper .form_group .field-label {
   color: #34b195;
@@ -412,10 +420,15 @@
   outline: none;
   height: 50px;
 }
+#myModal .form-wrapper .form_group span.error {
+  font-size: 10px;
+  color: #cb0909;
+}
 #myModal .form-wrapper .comment-wrapper {
   position: relative;
   height: 146px;
   margin-bottom: 30px;
+  width: 100%;
 }
 #myModal .form-wrapper .comment-wrapper .field-label {
   color: #34b195;
@@ -501,5 +514,9 @@
 }
 
 .modal-backdrop.show {
-  opacity: 0.8;
+  z-index: 9999;
+  opacity: 1;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background: rgba(13, 116, 101, 0.08);
 }

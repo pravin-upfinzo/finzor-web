@@ -1,9 +1,25 @@
 // Page loader
 $(window).on('load', function() {
+     //Page Loader setup
+     let lastLoadedDate = localStorage.getItem("lastLoadedDate");
+     let today = new Date().toISOString().split("T")[0];
+     if (lastLoadedDate !== today) {
+         showLoader();
+         localStorage.setItem("lastLoadedDate", today);
+     }
+ 
+     function showLoader() {
+        $("#page-loader").show();
+        
+        setTimeout(function() {
+            $("#page-loader").fadeOut("slow");
+            $('.hero').fadeIn();
+        }, 2000);
+     }
+
     setTimeout(function() {
-      $("#page-loader").fadeOut("slow");
-      $('.hero').fadeIn();
-    }, 2000);
+        $('.hero').fadeIn();
+    }, 500);
   }); 
   var btn = $('#scroll_top');
   $(window).scroll(function() {

@@ -64,7 +64,7 @@ include_once('partials/header.php'); //should be last after all variables
 
                     Merchant Onboarding
                 </div>
-                <h3 class="fin_bankz_subtitle">NeoPulse</h3>
+                <h3 class="fin_bankz_subtitle">EaseMerchant</h3>
                 <div class="fin_bankz_bank">
                 </div>
                 <p class="fin_bankz_desc">Our digital merchant acquisition process at Finzor simplifies onboarding with automated workflows. The onboarding dashboard provides businesses with real-time status updates and compliance tracking. Secure API integration ensures seamless connectivity with payment platforms.</p>
