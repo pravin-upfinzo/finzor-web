@@ -1,12 +1,12 @@
 <?php
 header("Content-Type: application/json");
 session_start();
+$canSaveOnDB = 0;
 
-require_once __DIR__ . '/config/db.php';
+if ($canSaveOnDB == 1) {
+    require_once __DIR__ . '/config/db.php';
+}
 require_once __DIR__ . '/helpers/mail_helper.php';
-// require_once 'config/db.php';
-// require_once 'helpers/mail_helper.php';
-
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     switch ($action) {
         case 'submit_contact_form':
-            $canSaveOnDB = 0;
+            // $canSaveOnDB = 0;
             $name = $_POST['name'] ?? '';
             $email = $_POST['email'] ?? '';
             $phone = $_POST['phone'] ?? '';
