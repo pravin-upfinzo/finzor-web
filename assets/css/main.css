@@ -444,7 +444,15 @@ header .fz_sigin ul .unlock a:hover svg path {
 .offcanvas-backdrop {
   position: relative;
 }
-
+.error {
+    color: #ED5B43;
+    font-size: 12px;
+    padding: 0px;
+    margin-bottom: -5px;
+    position: absolute;
+    bottom: -25%;
+    left: 0;
+}
 .buttons {
   height: 50px;
   border-radius: 32px;
@@ -4199,7 +4207,7 @@ div#faq-animate svg {
 }
 #myModal .form-wrapper .form_group {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 #myModal .form-wrapper .form_group .field-label {
   color: #34b195;
@@ -4239,7 +4247,7 @@ div#faq-animate svg {
 #myModal .form-wrapper .comment-wrapper {
   position: relative;
   height: 146px;
-  margin-bottom: 30px;
+  margin-bottom: 42px;
 }
 #myModal .form-wrapper .comment-wrapper .field-label {
   color: #34b195;
