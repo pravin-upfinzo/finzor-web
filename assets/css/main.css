@@ -243,6 +243,7 @@ header .navbar-expand-lg .navbar-nav > li .submenu, header .navbar-expand-lg .na
   header .navbar-expand-lg .navbar-nav > li .submenu, header .navbar-expand-lg .navbar-nav > li .inner-submenu {
     position: unset;
     width: 100% !important;
+    transform: unset;
   }
 }
 header .navbar-expand-lg .navbar-nav > li .submenu li a, header .navbar-expand-lg .navbar-nav > li .inner-submenu li a {
@@ -257,6 +258,21 @@ header .navbar-expand-lg .navbar-nav > li .submenu li a:hover .fz_text h3, heade
 header .navbar-expand-lg .navbar-nav > li .submenu {
   background: rgba(6, 54, 50, 0.6);
 }
+header .navbar-expand-lg .navbar-nav > li .submenu .upward-arrow {
+  border-color: transparent transparent rgba(62, 171, 144, 0.2);
+  border-style: solid;
+  border-width: 0 8px 8px;
+  height: 0;
+  position: absolute;
+  top: -8px;
+  width: 0;
+  left: 204px;
+}
+@media screen and (max-width: 991px) {
+  header .navbar-expand-lg .navbar-nav > li .submenu .upward-arrow {
+    border-width: unset;
+  }
+}
 header .navbar-expand-lg .navbar-nav > li .submenu a {
   display: flex;
   padding: 15px 20px;
@@ -265,6 +281,28 @@ header .navbar-expand-lg .navbar-nav > li .submenu a {
 @media screen and (max-width: 991px) {
   header .navbar-expand-lg .navbar-nav > li .submenu a {
     width: 100%;
+  }
+}
+header .navbar-expand-lg .navbar-nav > li .submenu li > a:hover {
+  position: relative;
+}
+header .navbar-expand-lg .navbar-nav > li .submenu li > a:hover:after {
+  border-color: transparent transparent transparent rgba(62, 171, 144, 0.2);
+  border-style: solid;
+  border-width: 8px 0 8px 8px;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  z-index: 100;
+  transition: all 0.5s ease;
+}
+@media screen and (max-width: 991px) {
+  header .navbar-expand-lg .navbar-nav > li .submenu li > a:hover:after {
+    border-width: unset;
   }
 }
 header .navbar-expand-lg .navbar-nav > li .submenu .image-text {
@@ -316,6 +354,9 @@ header .navbar-expand-lg .navbar-nav > li .inner-submenu a {
 }
 header .navbar-expand-lg .navbar-nav > li .inner-submenu a:hover {
   background: rgba(0, 75, 75, 0.5);
+}
+header .navbar-expand-lg .navbar-nav > li .inner-submenu a:after {
+  border-width: unset !important;
 }
 header .navbar-expand-lg .navbar-nav > li .inner-submenu a h3 {
   font-weight: 500;
@@ -463,15 +504,6 @@ header .fz_sigin ul .unlock a:hover svg path {
   }
 }
 
-.error {
-    color: #ED5B43;
-    font-size: 12px;
-    padding: 0px;
-    margin-bottom: -5px;
-    position: absolute;
-    bottom: -25%;
-    left: 0;
-}
 .onboard_btn .buttons {
   z-index: 2;
   font-size: 14px;
@@ -4165,7 +4197,7 @@ div#faq-animate svg {
 }
 #myModal .form-wrapper .form_group {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 #myModal .form-wrapper .form_group .field-label {
   color: #34b195;
@@ -4205,7 +4237,7 @@ div#faq-animate svg {
 #myModal .form-wrapper .comment-wrapper {
   position: relative;
   height: 146px;
-  margin-bottom: 43px;
+  margin-bottom: 30px;
 }
 #myModal .form-wrapper .comment-wrapper .field-label {
   color: #34b195;
@@ -4291,6 +4323,5 @@ div#faq-animate svg {
 }
 
 .modal-backdrop.show {
-    opacity: 0.8;
+  opacity: 0.8;
 }
-

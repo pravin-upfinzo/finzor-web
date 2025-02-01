@@ -74,6 +74,7 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link" href="#" id="menu1" role="button">What we offer</a>
                                 <ul class="submenu">
+                                <div class="upward-arrow"></div>
                                     <li>
                                     <a href="./finbankz.php">
                                         <div class="image-text">
