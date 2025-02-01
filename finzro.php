@@ -11,6 +11,7 @@ $pageStyles .= '<style></style>' . "\n";
 // to include page specific JS
 $pageScripts = '<script src="./assets/js/spotlight_effect.js"></script>' . "\n";
 $pageScripts .= '<script src="./assets/js/lottie.min.js"></script>' . "\n";
+$pageScripts .= '<script src="./assets/js/finbankz.js"></script>' . "\n";
 $pageScripts .= '<script src="./assets/js/product_list.js"></script>' . "\n";
 $pageScripts .= '<script></script>' . "\n";
 
@@ -44,7 +45,7 @@ include_once('partials/header.php'); //should be last after all variables
 <section id="fin_bankz_sec" class="fin_bankz finbankz_bg_1">
     <div class="container">
         <div class="fin_bankz">
-            <div class="fin_bankz_content finbank_content">
+            <div class="fin_bankz_content finbank_content border-0">
                 <div class="fin_bankz_title">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
