@@ -410,7 +410,7 @@ li {
     padding: 60px 0px;
   }
 }
-.fz_ai_enhance_sec .col-lg-6 {
+.fz_ai_enhance_sec .col-lg-5 {
   display: flex;
   align-items: center;
 }
@@ -483,7 +483,7 @@ li {
   }
 }
 .fz_ai_enhance_sec .fz_ai_enhance_text ul li {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   padding: 10px 20px;
   border-radius: 30px;
@@ -504,17 +504,15 @@ li {
 }
 .fz_ai_enhance_sec .fz_ai_enhance_text ul li .fz_cbs_color {
   color: #3eab90;
-  padding: 5px;
-  padding-left: 20px;
 }
 .fz_ai_enhance_sec .fz_ai_enhance_text ul li .normal_text {
   color: #ffffff;
-  padding-left: 10px;
 }
 .fz_ai_enhance_sec .fz_ai_enhance_text ul li img {
   width: 30px;
   height: 30px;
   object-fit: contain;
+  margin-right: 16px;
 }
 .fz_ai_enhance_sec .fz_enhance_col {
   display: flex;
