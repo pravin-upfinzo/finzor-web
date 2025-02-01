@@ -282,7 +282,7 @@
                                 <li><a href="#"><img class="flag-img" src="assets/images/flag.gif" alt="Country" width="40px"></a></li>
                                
                                 <li>
-                                    <a href="#" class="onboard_btn">
+                                    <a href="login.php" class="onboard_btn">
                                         <button class="buttons">
                                             <span class="text">Onboard</span>
                                             <div class="icon">

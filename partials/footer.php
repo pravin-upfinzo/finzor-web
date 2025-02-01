@@ -38,10 +38,11 @@
               </div>
             </div>
             
+            <div class="footer_list_link">
               <div class="links-group">
                 <h4>PRODUCTS</h4>
                 <ul>
-                  <li><a href="#">FinbankZ</a></li>
+                  <li><a href="finbankz.php">FinbankZ</a></li>
                   <li><a href="#">UPIZor</a></li>
                   <li><a href="#">FinZOpZ</a></li>
                   <li><a href="#">FinZro</a></li>
@@ -51,25 +52,26 @@
               <div class="links-group">
                 <h4>COMPANY</h4>
                 <ul>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="about-us.php">About us</a></li>
+                  <li><a href="contact-us.php">Contact</a></li>
                   <li><a href="#">FAQ</a></li>
                 </ul>
               </div>
               <div class="links-group">
                 <h4>LEGAL</h4>
                 <ul>
-                  <li><a href="#">Terms & Conditions</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="terms-and-condition.php">Terms & Conditions</a></li>
+                  <li><a href="privacy-policy.php">Privacy Policy</a></li>
                 </ul>
               </div>
+            </div>
               <div class="links-group subscribe">
-                <h4>Stay updated by Subscribe</h4>
+                <p>Stay updated by Subscribe</p>
                 <form class="subscribe-form">
                   <input type="email" placeholder="Enter your email address">
                   <div class="footer_arrow">
-                   <img src="./assets/images/footer_arrow.svg" alt="" class="">
-                </div>
+                    <img src="./assets/images/footer_arrow.svg" alt="" class="">
+                 </div>
                 </form>
               </div>
             </div>
@@ -81,6 +83,7 @@
           </div>
         </footer>
 
+        
 <div class="footer-bg">
     <img src="./assets/images/footer-bg.gif" alt="footer-bg" />
 </div>

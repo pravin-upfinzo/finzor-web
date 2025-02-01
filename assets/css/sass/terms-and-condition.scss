@@ -1,0 +1,38 @@
+.terms_condition{
+    background-color: black;
+    padding: 130px 40px;
+
+    .terms_condition_top_part_img img{
+              width:20%;
+              display: flex;
+              margin: 40px auto;
+    }
+
+    h1{
+        color: #3eab90;
+        font-weight: 600;
+        font-size: 45px;
+    }
+    h3{
+        color: #00B2B1;
+        font-weight: 400;
+        font-size: 20px; 
+    }
+    h4{
+        color: #3eab90;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    p{
+        font-weight: 300;
+        font-size: 16px;
+        color: white;
+    }
+    ul {
+        li{
+            list-style: none;
+            color: white;
+        }
+    }
+    
+}
