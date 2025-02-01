@@ -77,6 +77,10 @@ body {
             text-fill: #101111;
             margin-top: 96px;
             margin-bottom: 0px;
+
+            @media screen and (max-width: 991px) {
+              font-size: 100px;
+            }
         }
 
         h4 {
@@ -89,6 +93,11 @@ body {
                 0 6px 1px #38fdb549, 0 0 5px #38fdb536, 0 1px 3px #38fdb525,
                 0 3px 5px #38fdb510, 0 1px 4px #38fdb50f, 0 0px 8px #38fdb50e,
                 0 0px 10px #38fdb500;
+
+                
+            @media screen and (max-width: 991px) {
+              font-size: 94px;
+            }
         }
     }
 
@@ -704,11 +713,11 @@ body {
             width: 620px;
   
             @media only screen and (max-width: 1200px) {
-              width: 400px;
-            }
-            @media only screen and (max-width: 992px) {
               width: 100%;
             }
+            // @media only screen and (max-width: 991px) {
+            //   width: 100%;
+            // }
             .fin_bankz_title {
               font-size: 14px;
               font-weight: 400;
@@ -781,6 +790,10 @@ body {
             .finbankz-product {
                 width: 625px;
                 height: 625px;
+                
+                @media screen and (max-width: 1199px) {
+                  width:100%;
+                }
                 &::before {
                 content: "";
                 position: absolute;

@@ -1,0 +1,38 @@
+.privacy_policy{
+    background-color: black;
+    padding: 130px 40px;
+
+    .privacy_policy_top_part_img img{
+              width:25%;
+              display: flex;
+              margin: 0 auto;
+    }
+
+    h1{
+        color: #3eab90;
+        font-weight: 600;
+        font-size: 45px;
+    }
+    h3{
+        color: #00B2B1;
+        font-weight: 400;
+        font-size: 20px; 
+    }
+    h4{
+        color: #3eab90;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    p{
+        font-weight: 300;
+        font-size: 16px;
+        color: white;
+    }
+    ul {
+        li{
+            list-style: none;
+            color: white;
+        }
+    }
+    
+}
