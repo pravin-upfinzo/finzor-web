@@ -1,5 +1,5 @@
 <?php
-$page_title = 'Core Banking Solution';
+$page_title = 'Settlements';
 $meta_lines = '<meta name="description" content="">';
 
 // to include page specific CSS
@@ -46,8 +46,8 @@ include_once('partials/header.php'); //should be last after all variables
         <div class="row">
             <div class="col-lg-6 fz_enhance_col">
                 <div class="fz_ai_enhance_text">
-                    <h2>Driving Deeper Customer Interactions</h2>
-                    <p class="fz_enhance_para">Accelerate digital adoption with customer-led product designs, gain real-time insights into customer journeys for personalized engagements. Offer tailored products based on holistic customer views and embedded insights
+                    <h2>Cloud Based Solutions</h2>
+                    <p class="fz_enhance_para">Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web development to fill empty spaces in a layout that does not yet have content.
                     </p>
                     <ul>
                         <li>
@@ -82,49 +82,35 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="product_list_feature_card fade-down">
                 <div class="product_list_feature_cont">
                     <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4>Open Rest API</h4>
+                    <h4>Customizable Settlement Thresholds</h4>
                     <p>Cash management refers to a broad area of finance involving the collection, handdivng, and usage of cash.</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-left">
                 <div class="product_list_feature_cont">
                     <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4> CKYC and AML</h4>
+                    <h4> Tax Calculation</h4>
                     <p>Cash management refers to a broad area of finance involving the collection, handdivng, and usage of cash.</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-right">
                 <div class="product_list_feature_cont">
                     <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4>Cash Management</h4>
+                    <h4>Settlement API Integration</h4>
                     <p>Cash management refers to a broad area of finance involving the collection, handdivng, and usage of cash.</p>
                 </div>
             </div>
             <div class="product_list_feature_card zoom-in product_center">
                 <div class="product_list_feature_cont">
                     <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4>Digital Payments</h4>
+                    <h4>Instant Dispute Resolution</h4>
                     <p>Cash management refers to a broad area of finance involving the collection, handdivng, and usage of cash.</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-left">
                 <div class="product_list_feature_cont">
                     <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4>Cloud Based Solutions </h4>
-                    <p>Cash management refers to a broad area of finance involving the collection, handdivng, and usage of cash.</p>
-                </div>
-            </div>
-            <div class="product_list_feature_card fade-right">
-                <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4>AI enhancement </h4>
-                    <p>Cash management refers to a broad area of finance involving the collection, handdivng, and usage of cash.</p>
-                </div>
-            </div>
-            <div class="product_list_feature_card fade-up">
-                <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4>Regulatory Risk</h4>
+                    <h4>Scheduled Settlements </h4>
                     <p>Cash management refers to a broad area of finance involving the collection, handdivng, and usage of cash.</p>
                 </div>
             </div>
@@ -135,8 +121,8 @@ include_once('partials/header.php'); //should be last after all variables
 <!-- Super Feature -->
 <section class="fz_features_sec">
     <div class="container">
-        <h2>Innovate Better</h2>
-        <p class="fz_features_heading_para">Power innovations with open APIs and a curated partner ecosystem. Transform into digital businesses creating unconventional revenue streams.</p>
+        <h2>Finzor’s Super Features</h2>
+        <p class="fz_features_heading_para">You can view your account balances, transaction history, and statements, and even set up custom alerts to help you stay on <br> top of your finances.</p>
         <div class="row">
             <div class="col-lg-6">
                 <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -215,7 +201,7 @@ include_once('partials/header.php'); //should be last after all variables
             </div>
             <div class="col-lg-6 fz_enhance_col">
                 <div class="fz_ai_enhance_text">
-                    <h2>End-to-End Digital Experience</h2>
+                    <h2>AI enhancement make your work seamless</h2>
                     <p class="fz_enhance_para">Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web development to fill empty spaces in a layout that does not yet have content.
                     </p>
                     <p class="fz_enhance_para">
@@ -306,7 +292,6 @@ include_once('partials/header.php'); //should be last after all variables
                             <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
                         </div>
                     </a>
-                <img src="./assets/images/product-range.svg" alt="iconglow" />
                 </div>
                 <img src="./assets/images/product-glow.svg" alt="iconglow" />
             </div>

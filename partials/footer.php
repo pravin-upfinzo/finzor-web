@@ -102,6 +102,55 @@
         <path fill-rule="evenodd" clip-rule="evenodd" d="M15 5C15.2652 5 15.5196 5.10034 15.7071 5.27895C15.8946 5.45755 16 5.69979 16 5.95238V24.0476C16 24.3002 15.8946 24.5424 15.7071 24.7211C15.5196 24.8997 15.2652 25 15 25C14.7348 25 14.4804 24.8997 14.2929 24.7211C14.1054 24.5424 14 24.3002 14 24.0476V5.95238C14 5.69979 14.1054 5.45755 14.2929 5.27895C14.4804 5.10034 14.7348 5 15 5Z" fill="#fff"></path>
     </svg>
 </a>
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Book a demo</h4>
+        <p>Lorem Ipsum es simplemente el texto de relleno de las.</p>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+        <form id="form" class="form-wrapper">
+          <div class="contact-wrapper form_group">
+              <label for="name" class="field-label">Name</label>
+              <input class="text-field-3" maxlength="256" name="name" data-name="Name" placeholder="Enter Your Name" type="text" id="Name" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)">
+              <span class="error" id="NameError"></span>
+          </div>
+          <div class="contact-wrapper form_group">
+            <label for="name" class="field-label">Company Name</label>
+            <input class="text-field-3" name="Companyname" placeholder="Enter Your Name" type="text" id="Companyname">
+            <span class="error" id="NameError"></span>
+        </div>
+          <div class="email-wrapper form_group">
+              <label for="email" class="field-label">Company Email</label>
+              <input class="text-field-3" maxlength="256" name="email" data-name="Email" placeholder="Enter Your Company Email" type="email" id="email">
+              <span class="error" id="emailError"></span>
+          </div>
+          <div class="phone-wrapper form_group">
+              <label for="phone" class="field-label">Company phone</label>
+              <input class="text-field-3" maxlength="256" name="phone" data-name="phone" placeholder="Enter Your Company Phone" type="phone" id="phone" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+              <span class="error" id="phoneError"></span>
+          </div>
+          <div class="comment-wrapper form_group">
+              <label for="message" class="field-label">Message</label>
+              <textarea id="message" name="message" maxlength="5000" rows="4" cols="50" data-name="Field 3" placeholder="Enter Your Message" class="texteria"></textarea>
+              <span class="error" id="messageError"></span>
+          </div>
+          <button type="submit" class="fz_submit active_btn">
+              <span class="text">Send Message</span>
+                  <div class="icon">
+                  <img src="./assets/images/fz_button_arrow.svg" alt="">
+                  </div>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/gsap.min.js"></script>

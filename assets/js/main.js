@@ -1,5 +1,34 @@
 
 $(document).ready(function () {
+  if ($(window).width() <= 991) {
+    $(".menu > li").off("mouseenter mouseleave").click(function(e) {
+        e.stopPropagation(); // Prevent bubbling of the event
+        console.log('Menu clicked');
+        $(this).children(".submenu").stop(true, true).slideToggle();
+    });
+
+    $(".submenu > li").click(function(e) {
+        e.stopPropagation(); // Prevent the click event from bubbling to parent
+        $(this).children(".inner-submenu").stop(true, true).slideToggle();
+    });
+  } else {
+    $(".menu > li").hover(
+        function() {
+            $(this).children(".submenu").stop(true, true).fadeIn(200);
+        },
+        function() {
+            $(this).children(".submenu").stop(true, true).fadeOut(200);
+        }
+    );
+    $(".submenu > li").hover(
+        function() {
+            $(this).children(".inner-submenu").stop(true, true).fadeIn(200);
+        },
+        function() {
+            $(this).children(".inner-submenu").stop(true, true).fadeOut(200);
+        }
+    );
+  }
   $("#owl-carousel").owlCarousel({
     loop: true, /* Allows infinite scrolling */
     margin: 32, /* Adds spacing between cards */
