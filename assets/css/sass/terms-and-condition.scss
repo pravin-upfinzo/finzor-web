@@ -1,6 +1,11 @@
+@import "./variable.scss";
+
 .terms_condition{
+    
+    width: 80%;
     background-color: black;
     padding: 130px 40px;
+    margin: 0 auto;
 
     .terms_condition_top_part_img img{
               width:20%;
@@ -14,24 +19,26 @@
         font-size: 45px;
     }
     h3{
-        color: #00B2B1;
-        font-weight: 400;
+        color: #3eab90;
+        font-weight: 500;
+        padding:10px 0px;
+        margin: 0;
         font-size: 20px; 
     }
-    h4{
-        color: #3eab90;
-        font-weight: 400;
-        font-size: 18px;
-    }
+    
     p{
         font-weight: 300;
-        font-size: 16px;
-        color: white;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0px 0px 10px 0;
+    color: rgb(160, 160, 160);
     }
     ul {
         li{
             list-style: none;
-            color: white;
+            color: #c7c7c7;
+            line-height: 1.6;
         }
     }
     

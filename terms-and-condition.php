@@ -11,7 +11,7 @@ $pageStyles .= '<style></style>' . "\n";
 include_once('partials/header.php'); //should be last after all variables
 ?>
 
-<main class="terms_condition">
+<main class="terms_condition container">
         <div class="main_container">
 
             <section class="inner_container">
@@ -21,19 +21,16 @@ include_once('partials/header.php'); //should be last after all variables
                         <p>Transparency and trust are key! Explore our Terms and Conditions for a smooth payment experience.
                         </p>
                     </div>
-                    <div class="terms_condition_top_part_img">
-                        <img src="https://d13gbk027tmejc.cloudfront.net/uploads/assets/wegofin-images/terms_condition_img.png" alt="terms_condition_img">
-                    </div>
+                   
                 </div>
 
                 <div class="terms_condition_bottom_part">
                     <div class="terms_condition_bottom_right show_content_sec">
                         <div class="privacy_policy_bottom_right_first priv_show_list1 active_1">
                             <div class="privacy_policy_bottom_right_first_head">
-                                <h3>Terms and conditions</h3>
                             </div>
                             <div class="para_text">
-                                <h4>Welcome to Wegofin Digital - Your Trusted Payment Gateway</h4>
+                             
                                 <p>We understand the immense trust you place in our platform when you entrust us with your
                                     data. Safeguarding your information is our utmost priority. We leave no stone unturned
                                     in ensuring the privacy and security of your data, which is why we rigorously scrutinize
@@ -67,10 +64,7 @@ include_once('partials/header.php'); //should be last after all variables
                                     agreeable to you, you have the option to discontinue using our Services. It's important
                                     to note that these Terms are closely tied to and incorporate our Privacy Policy.</p>
                             </div>
-                            <div class="privacy_policy_bottom_right_condition">
-                                <h4>Your journey with us begins here, and we are committed to ensuring it's a secure and
-                                    fulfilling one.</h4>
-                            </div>
+                           
                         </div>
 
                         <div class="privacy_policy_bottom_right_first priv_show_list3">
@@ -78,7 +72,7 @@ include_once('partials/header.php'); //should be last after all variables
                                 <h3>Acceptance of terms</h3>
                             </div>
                             <div class="privacy_policy_bottom_right_condition para_text">
-                                <h4>Embarking on Your Wegofin Digital Journey</h4>
+                            
                                 <p>We invite you to embark on your Wegofin Digital journey by acquainting yourself with
                                     these terms and conditions. It's essential to read them carefully. When you join our
                                     Platform, you're not just signing up; you're acknowledging your understanding and
@@ -107,7 +101,7 @@ include_once('partials/header.php'); //should be last after all variables
                                 <h3>Definition </h3>
                             </div>
                             <div class="para_text">
-                                <h4>Understanding the Language of Wegofin Digital</h4>
+                              
                                 <p>In our quest for clarity and transparency, we've laid out some definitions to ensure you fully comprehend the terms and phrases we use in our Wegofin Digital Terms and Conditions. These terms are divided into various categories, such as Indian laws, financial processes, intellectual property, and more.</p>
 
                                     <p><b>Applicable Laws :&nbsp;</b>This encompasses any Indian statute,
@@ -155,13 +149,13 @@ include_once('partials/header.php'); //should be last after all variables
                                 <h3>General terms and conditions</h3>
                             </div>
                             <div class="privacy_policy_bottom_right_condition para_text">
-                                <h4>Navigating Your Wegofin Digital Experience!</h4>
+                               
                                 <p>These General Terms and Conditions are here to guide your journey while using the
                                     Services provided by Wegofin Digital. We believe in transparency and mutual
                                     understanding, so let's delve into the key aspects.</p>
                             </div>
                             <div class="privacy_policy_bottom_right_condition para_text">
-                                <h4>Supplying Accurate Information</h4>
+                               
                                 <p>To ensure a seamless experience, Users commit to providing truthful, accurate, current,
                                     and complete information during registration and at all other times when interacting
                                     with Wegofin Digital.</p>
@@ -226,7 +220,7 @@ include_once('partials/header.php'); //should be last after all variables
                                 <h3>Communication policy</h3>
                             </div>
                             <div class="para_text">
-                                <h4>By accepting this Agreement, you consent to the following communication practices.</h4>
+                              
                                 <p>Wegofin Digital may send you transactional or non-transactional business communications
                                     via SMS, Email, or Push notifications while fulfilling your requests or servicing your
                                     Account. Even if you opt out of marketing communications, Wegofin Digital may continue
@@ -243,12 +237,9 @@ include_once('partials/header.php'); //should be last after all variables
                             <div class="privacy_policy_bottom_right_first_head">
                                 <h3>Limitation of liability</h3>
                             </div>
+                            
                             <div class="para_text">
-                                <h4>We prioritize transparency and responsibility. Please carefully consider the following
-                                    to understand the boundaries of our liability.</h4>
-                            </div>
-                            <div class="para_text">
-                                <h4>No Consequential or Indirect Damages.</h4>
+                               
                                 <p>We want to be clear that Wegofin Digital, its directors, agents, officers, and employees
                                     shall not be held responsible for any special, indirect, incidental, consequential,
                                     punitive, or exemplary damages incurred by Users. This includes but is not limited to,
@@ -284,7 +275,7 @@ include_once('partials/header.php'); //should be last after all variables
                                         sustainable economic basis.</p>
                                 </div>
                                 <div class="para_text">
-                                    <h4>Reasons for Rejection</h4>
+                                    
                                     <p>Please be aware that Wegofin Digital and its Service Providers may decline the authentication and/or authorization of transactions for various reasons, including but not limited to</p>
                                     <ul class="privacy_definitions ul_list_txt">
                                         <li>Insufficient funds</li>
@@ -304,14 +295,14 @@ include_once('partials/header.php'); //should be last after all variables
                                         or geographical locations, to protect our platform and Users.</p>
                                 </div>
                                 <div class="para_text">
-                                    <h4>Transaction Limitations</h4>
+                                    
                                     <p>In the interest of risk management, Wegofin Digital and/or the Service Providers may
                                         impose limitations on the size, amount, and/or monthly volume of transactions at any
                                         time. Our decisions in this regard will be based on multiple factors, and the final
                                         call will be ours alone.</p>
                                 </div>
                                 <div class="para_text">
-                                    <h4>Dealing with Fraudulent Transactions</h4>
+                                 
                                     <p>At Wegofin Digital, we take swift action when we receive reports of unauthorized
                                         debit/chargebacks on a customer's payment instrument, which we refer to as
                                         "Fraudulent Transactions."</p>
@@ -323,7 +314,7 @@ include_once('partials/header.php'); //should be last after all variables
                                     <h3>Here's how we handle such situations :</h3>
                                 </div>
                                 <div class="para_text">
-                                    <h4>User Notification and Documentation</h4>
+                                   
                                     <p>If we receive a report from the bank regarding a Fraudulent Transaction, we will
                                         promptly notify the User. To assist in resolving the issue, the User must provide
                                         all relevant documents and information related to the Transaction associated with
@@ -331,11 +322,11 @@ include_once('partials/header.php'); //should be last after all variables
                                         bank.</p>
                                 </div>
                                 <div class="para_text">
-                                    <h4>User Agreement and Acknowledgment</h4>
+                                    
                                     <p>The User agrees and acknowledges these procedures.</p>
                                 </div>
                                 <div class="para_text">
-                                    <h4>Insufficient Documentation</h4>
+                                   
                                     <p>If the User is unable to provide the required Chargeback Documents to the
                                         satisfaction of the bank, the bank may instruct us to reverse the debit associated
                                         with the Chargeback. This means that the Chargeback Amount will be credited back to
@@ -343,13 +334,13 @@ include_once('partials/header.php'); //should be last after all variables
                                         settlement of the disputed amount or withhold the value of the Transaction.</p>
                                 </div>
                                 <div class="para_text">
-                                    <h4>Settlement of Disputed Amount</h4>
+                                    <h3>Settlement of Disputed Amount</h3>
                                     <p>In cases where the User has already settled the amount related to the Fraudulent
                                         Transaction, any disputes arising from that Transaction will be resolved in
                                         accordance with the guidelines issued by regulators or service providers.</p>
                                 </div>
                                 <div class="para_text">
-                                    <h4>User Responsibility for Fines and Charges</h4>
+                                    
                                     <p>Users understand and accept their responsibility for fines, penalties, and charges
                                         imposed by banks, card networks, and government authorities in connection with
                                         unauthorized transactions.</p>
@@ -361,7 +352,7 @@ include_once('partials/header.php'); //should be last after all variables
                                     <h3>Charge Reimbursement</h3>
                                 </div>
                                 <div class="para_text">
-                                    <h4>The User acknowledges that, if necessary:</h4>
+                                    
                                     <ul class="privacy_definitions ul_list_txt">
                                         <li>We may incur charges due to Chargebacks.</li>
                                         <li>If the Transaction Amounts available are insufficient to cover the Chargeback
@@ -371,7 +362,7 @@ include_once('partials/header.php'); //should be last after all variables
                                     </ul>
                                 </div>
                                 <div class="para_text">
-                                    <h4>User Responsibility for Transaction Approvals</h4>
+                                    
                                     <p>Both parties agree that any payment instructions for Transactions accepted by the
                                         User, as per the terms herein, are the User's responsibility and liability. This
                                         includes cases where</p>
@@ -382,7 +373,7 @@ include_once('partials/header.php'); //should be last after all variables
                                     </ul>
                                 </div>
                                 <div class="para_text">
-                                    <h4>Wegofin Digital's Role</h4>
+                                    
                                     <p>As a facilitator for payment processing services requested by Users, Wegofin Digital
                                         acknowledges that it is not responsible for unauthorized transactions, including
                                         those conducted by third parties, which infringe upon another's rights, or for
@@ -390,7 +381,7 @@ include_once('partials/header.php'); //should be last after all variables
                                         security during online or other transactions.</p>
                                 </div>
                                 <div class="para_text">
-                                    <h4>Assistance in Resolving Queries</h4>
+                                    
                                     <p>While Wegofin Digital will assist Users in resolving any queries related to the
                                         Services, we shall not be held responsible for disputes or inquiries concerning
                                         customer payments to the website. Users are encouraged to take necessary precautions
@@ -426,7 +417,7 @@ include_once('partials/header.php'); //should be last after all variables
                                 <h3>User's Representations and Commitments</h3>
                             </div>
                             <div class="para_text">
-                                <h4>You, the User, make the following representations and commitments</h4>
+                                
                                 <p>You have had ample opportunity to review and assess the performance of the Applicable
                                     Agreement, including its financial implications and risks. If Wegofin Digital becomes
                                     aware of any violation or potential violation of these Terms of Use or any circumstances
@@ -563,8 +554,7 @@ include_once('partials/header.php'); //should be last after all variables
                                 <h3>Termination</h3>
                             </div>
                             <div class="para_text">
-                                <h4>Wegofin Digital reserves the right to suspend or terminate your access to the Wegofin
-                                    Digital Platform and Services without prior notice if :</h4>
+                               
                                 <ul class="privacy_definitions ul_list_txt">
                                     <li>You violate these Terms of Use or any Wegofin Digital policies.</li>
                                     <li>You engage in restricted, illegal, fraudulent, or abusive activities.</li>
@@ -628,11 +618,11 @@ include_once('partials/header.php'); //should be last after all variables
                             </div>
                             <div class="privacy_policy_bottom_right_contact">
                                 <div class="para_text information">
-                                    <h4>Mail :</h4>
+                                   
                                     <a class="contact_text" href="mailto:info@wegofin.com">info@wegofin.com</a>
                                 </div>
                                 <div class="para_text information number_txt">
-                                    <h4>Phone Number :</h4>
+                                 
                                     <a class="contact_text" href="tel:1800-3096-203">1800-3096-203</a>
                                 </div>
                             </div>
@@ -643,15 +633,6 @@ include_once('partials/header.php'); //should be last after all variables
 
         </div>
     </main>
-
-
-
-
-
-
-
-
-
 
 <!-- Include footer -->
 <?php include_once('partials/footer.php'); ?>

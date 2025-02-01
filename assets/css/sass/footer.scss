@@ -15,6 +15,7 @@
 .fz_footer_container {
   display: flex;
   gap: 50px;
+  justify-content: space-between;
   @media (min-width: 992px) and (max-width: 1199px) {
     display: block;
         width: 80%;
@@ -102,7 +103,7 @@
 }
 .footer_list_link{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 150px);
   gap: 30px;
   color: #c7c7c7;
   @media (min-width: 992px) and (max-width: 1199px) {
@@ -173,7 +174,7 @@ p{
   position: relative;
   margin: 20px 0px;
   display: inline-block;
-
+  width:100%;
   @media (min-width: 992px) and (max-width: 1199px) {
     align-items: center;
     justify-content: center;
@@ -183,7 +184,7 @@ p{
     margin: 0;
    }
   input {
-    width: 290px;
+    width: 100%;
     padding: 16px;
     font-size: 14px;
     background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;

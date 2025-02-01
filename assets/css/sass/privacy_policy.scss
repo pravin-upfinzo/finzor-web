@@ -1,37 +1,37 @@
+@import "./variable.scss";
 .privacy_policy{
+    
+    width: 80%;
     background-color: black;
     padding: 130px 40px;
-
-    .privacy_policy_top_part_img img{
-              width:25%;
-              display: flex;
-              margin: 0 auto;
-    }
-
+    margin: 0 auto;
+   
     h1{
         color: #3eab90;
         font-weight: 600;
         font-size: 45px;
     }
     h3{
-        color: #00B2B1;
-        font-weight: 400;
+        color: #3eab90;
+        font-weight: 500;
+        padding:10px 0px;
+        margin: 0;
         font-size: 20px; 
     }
-    h4{
-        color: #3eab90;
-        font-weight: 400;
-        font-size: 18px;
-    }
+   
     p{
         font-weight: 300;
-        font-size: 16px;
-        color: white;
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0px 0px 10px 0;
+        color: rgb(160, 160, 160);
     }
     ul {
         li{
             list-style: none;
-            color: white;
+            color: rgb(160, 160, 160);
+            line-height: 1.6;
         }
     }
     
