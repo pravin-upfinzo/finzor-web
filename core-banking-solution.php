@@ -52,13 +52,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="normal_text">Personalized engagements tailor products with <span class="fz_cbs_color">real-time data</span></span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p>Personalized engagements tailor products with <span class="fz_cbs_color">real-time data</span></p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Customer-Centric Design</span><span class="normal_text">Enhance UX with smart insights.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Customer-Centric Design</span>Enhance UX with smart insights.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Seamless Digital Adoption</span><span class="normal_text">Drive growth with AI-driven analytics.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Seamless Digital Adoption</span>Drive growth with AI-driven analytics.</p>
                         </li>
                     </ul>
                 </div>
@@ -215,14 +215,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="normal_text">Create personalized client journeys with</span><span class="fz_cbs_color ps-1">seamless digital solutions.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p>Create personalized client journeys with<span class="fz_cbs_color ps-1">seamless digital solutions</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="normal_text">Utilize best practices to <span class="fz_cbs_color"> enhance customer experience</span>across touchpoints.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p>Utilize best practices to <span class="fz_cbs_color"> enhance customer experience</span>across touchpoints</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Adopt agile delivery</span><span class="normal_text"> or gradual transformation at every interaction.
-                            </span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Adopt agile delivery</span> or gradual transformation at every interaction.</p>
                         </li>
                     </ul>
                 </div>
