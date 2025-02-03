@@ -1,7 +1,7 @@
 @import './variable.scss';
 
 .footer_section {
-  background: linear-gradient(359.8deg, rgb(0 0 0 / 46%) 5.16%, rgb(97 97 97 / 22%) 99.83%);
+  background: linear-gradient(90deg, #000000, #000e0e);
   background-color: $black;
   padding: 150px 0px 0;
 
@@ -185,7 +185,7 @@ p{
    }
   input {
     width: 100%;
-    padding: 16px;
+    padding: 16px 34px 16px 16px;
     font-size: 14px;
     background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
     border-radius: 96px;
@@ -197,6 +197,7 @@ p{
     animation: bg-spin 6s linear infinite;
    
     position: relative;
+    cursor: auto;
     @keyframes bg-spin {
       to {
         --border-angle: 1turn;
@@ -218,7 +219,7 @@ p{
   }
   .footer_arrow img{
     position: absolute;
-    right:19px;
+    right:13px;
     cursor: pointer;
     bottom:19px;
   }

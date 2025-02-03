@@ -13,7 +13,13 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.9/codemirror.min.css"> -->
 
-    <style></style>
+    <style>
+        #subsEmailError{
+            font-size: 11px;
+            color: red;
+            margin-left: 15px;
+        }
+    </style>
 
     <?php
     // Include page-specific CSS
@@ -73,6 +79,7 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link" href="#" id="menu1" role="button">What we offer</a>
+                                <div class="submenu-wrapper">
                                 <ul class="submenu">
                                 <div class="upward-arrow"></div>
                                     <li>
@@ -269,6 +276,8 @@
                                     </a>
                                     </li>
                                 </ul>
+                                </div>
+                                
                                 </li>
                            
                             <li class="nav-item">

@@ -168,7 +168,7 @@ header .navbar-expand-lg .navbar-nav > li a.nav-link:hover:after {
     color: #ffffff;
   }
 }
-header .navbar-expand-lg .navbar-nav > li .submenu, header .navbar-expand-lg .navbar-nav > li .inner-submenu {
+header .navbar-expand-lg .navbar-nav > li .inner-submenu, header .navbar-expand-lg .navbar-nav > li .submenu-wrapper {
   display: none;
   position: absolute;
   list-style: none;
@@ -179,23 +179,23 @@ header .navbar-expand-lg .navbar-nav > li .submenu, header .navbar-expand-lg .na
   transform: translateX(-40%);
 }
 @media screen and (max-width: 991px) {
-  header .navbar-expand-lg .navbar-nav > li .submenu, header .navbar-expand-lg .navbar-nav > li .inner-submenu {
+  header .navbar-expand-lg .navbar-nav > li .inner-submenu, header .navbar-expand-lg .navbar-nav > li .submenu-wrapper {
     position: unset;
     width: 100% !important;
     transform: unset;
   }
 }
-header .navbar-expand-lg .navbar-nav > li .submenu li a, header .navbar-expand-lg .navbar-nav > li .inner-submenu li a {
+header .navbar-expand-lg .navbar-nav > li .inner-submenu li a, header .navbar-expand-lg .navbar-nav > li .submenu-wrapper li a {
   transition: all 0.5s ease;
 }
-header .navbar-expand-lg .navbar-nav > li .submenu li a:hover, header .navbar-expand-lg .navbar-nav > li .inner-submenu li a:hover {
+header .navbar-expand-lg .navbar-nav > li .inner-submenu li a:hover, header .navbar-expand-lg .navbar-nav > li .submenu-wrapper li a:hover {
   background: rgba(0, 75, 75, 0.5);
 }
-header .navbar-expand-lg .navbar-nav > li .submenu li a:hover .fz_text h3, header .navbar-expand-lg .navbar-nav > li .inner-submenu li a:hover .fz_text h3 {
+header .navbar-expand-lg .navbar-nav > li .inner-submenu li a:hover .fz_text h3, header .navbar-expand-lg .navbar-nav > li .submenu-wrapper li a:hover .fz_text h3 {
   color: #04a5a7;
 }
 header .navbar-expand-lg .navbar-nav > li .submenu {
-  background: rgba(6, 54, 50, 0.6);
+  list-style: none;
 }
 header .navbar-expand-lg .navbar-nav > li .submenu .upward-arrow {
   border-color: transparent transparent rgba(62, 171, 144, 0.2);
@@ -534,4 +534,24 @@ header .fz_sigin ul .unlock a:hover svg path {
 #lottie-animation1 svg {
   width: 35px !important;
   height: 35px !important;
+}
+
+#menu-blur-bg {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: rgba(10, 10, 10, 0.4862745098);
+  -webkit-backdrop-filter: blur(20px);
+  -moz-backdrop-filter: blur(20px);
+  -o-backdrop-filter: blur(20px);
+  -ms-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  z-index: 200;
+  margin: 0 auto;
+  width: 735px;
+  height: 453px;
+  top: 58px;
+  transform: translateX(80px);
+  border: 1px solid #143941;
+  border-radius: 5px;
 }

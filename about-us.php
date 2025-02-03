@@ -432,13 +432,7 @@ include_once('partials/header.php'); //should be last after all variables
                     <div class="about_us_content">
                         <h5 class="fade-up">Our Vision</h5>
                         <p class="fade-up">
-                        Finzor is revoluAonizing banking by providing future-ready core banking and payment
-                        soluAons that empower financial insAtuAons with innovaAon, security, and operaAonal
-                        excellence.
-                        Leveraging ArAficial Intelligence, Machine Learning, blockchain, and cloud-naAve
-                        architectures, we enhance customer experiences and ensure banks stay compeAAve.
-                        With a commitment to resilience, compliance, and sustainable growth, we drive the
-                        transformaAon of the digital financial ecosystem.
+                        Finzor aims to revolutionize banking with advanced core banking and payment solutions that harness AI, blockchain, and cloud technologies. We empower financial institutions to optimize operations, enhance customer experiences, and drive growth through real-time insights, modular systems, and secure, scalable platforms.
                         </p>
                        
                         <button class="buttons mt-4">

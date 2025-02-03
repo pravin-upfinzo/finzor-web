@@ -36,7 +36,7 @@ include_once('partials/header.php'); //should be last after all variables
 <!-- Banner Section -->
 <section id="fz_product_list_banner_sec">
     <div class="container">
-        <img src="./assets/images/product_banner.svg" alt="product-banner" class="fz_product_list_banner_img">
+        <img src="./assets/images/Settlements.svg" alt="product-banner" class="fz_product_list_banner_img">
     </div>
 </section>
 
@@ -203,7 +203,7 @@ include_once('partials/header.php'); //should be last after all variables
                             <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Fast & secure fund settlements </span><span class="normal_text"> for smooth transactions.</span>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Automated reconciliation <span class="normal_text"> enhance customer experience</span> to ensure accurate payouts.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Automated reconciliation </span><span class="normal_text"> enhance customer experience to ensure accurate payouts.</span>
                         </li>
                         <li>
                             <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">eal-time tracking</span><span class="normal_text"> of settlement status & reports.
