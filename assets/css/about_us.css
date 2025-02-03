@@ -186,10 +186,16 @@
 .about_card_sec .dev_card .dev_card_logo {
   flex-direction: column !important;
 }
+.about_card_sec .dev_card .dev_card_logo h4 {
+  color: #3eab90;
+}
+.about_card_sec .dev_card .dev_card_logo svg path {
+  fill: #3eab90;
+  stroke: #3eab90;
+}
 .about_card_sec .dev_card .dev_card_logo span {
   width: 75px;
   height: 75px;
-  background-color: #3eab90;
   padding: 15px;
 }
 

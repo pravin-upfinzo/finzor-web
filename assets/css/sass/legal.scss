@@ -1,0 +1,72 @@
+@import "./variable.scss";
+
+.legal{
+    background-color: black;
+    padding: 130px 40px 50px 40px;
+    margin: 0 auto;
+   
+
+    h1 {
+        color: #3eab90;
+        font-size: 24px;
+        padding-bottom: 30px;
+    }
+
+    .intro_section{
+           
+        h2{
+            color: #3eab90;
+            font-size: 20px;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 400;
+            color: rgb(160, 160, 160);
+        }
+    }
+
+   
+    ol {
+        padding-left: 20px;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-bottom: 10px;
+        padding-left: 16px;
+
+        .terms_condition_heading{
+            color: #3eab90;
+            font-size: 20px;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.6;
+            color: rgb(160, 160, 160);
+            margin-bottom: 0;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding-bottom: 10px;
+            padding-left: 18px;
+            
+            li{
+                color: rgb(160, 160, 160);
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 1.6;
+                list-style-type: disc;
+
+              }
+              strong{
+                font-weight: 600;
+              }
+        }
+       
+    }
+    
+}
+

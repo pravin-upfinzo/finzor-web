@@ -233,27 +233,34 @@ header {
               width: 100%;
             }
           }
-          li > a{
-            @media screen and (max-width: 991px) {
-              pointer-events: none;
+          li {
+            &.active-submenu {
+              > a {
+                  background: rgba(0, 75, 75, 0.5);
+              }
             }
-            &:hover {
-              position: relative;
-              &:after {
-                border-color: transparent transparent transparent rgb(62 171 144 / 20%);
-                border-style: solid;
-                border-width: 8px 0 8px 8px;
-                content: "";
-                height: 0;
-                position: absolute;
-                right: -8px;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 0;
-                z-index: 100;
-                transition: all 0.5s ease;
-                @media screen and (max-width: 991px) {
-                  border-width:unset;
+            > a{
+              @media screen and (max-width: 991px) {
+                pointer-events: none;
+              }
+              &:hover {
+                position: relative;
+                &:after {
+                  border-color: transparent transparent transparent rgb(62 171 144 / 20%);
+                  border-style: solid;
+                  border-width: 8px 0 8px 8px;
+                  content: "";
+                  height: 0;
+                  position: absolute;
+                  right: -8px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  width: 0;
+                  z-index: 100;
+                  transition: all 0.5s ease;
+                  @media screen and (max-width: 991px) {
+                    border-width:unset;
+                  }
                 }
               }
             }
@@ -640,10 +647,11 @@ header {
   backdrop-filter: blur(20px);
   z-index: 200;
   margin: 0 auto;
-  width: 735px;
+  width: 47.5%;
   height: 453px;
   top: 58px;
-  transform: translateX(80px);
+  left: 50%;
+  transform: translateX(-42.6%);
   border: 1px solid #143941;
   border-radius: 5px;
 }

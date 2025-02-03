@@ -51,13 +51,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Tailored Investment Plans for Every Client</span><span class="normal_text">Gen AI customizes strategies based on risk, goals, and preferences.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Tailored Investment Plans for Every Client</span>Gen AI customizes strategies based on risk, goals, and preferences.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Dynamic Recommendations with Market Updates</span><span class="normal_text"> Continuously adjusts strategies as market conditions evolve.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Dynamic Recommendations with Market Updates</span> Continuously adjusts strategies as market conditions evolve.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Accessible Personalized Financial Guidance</span><span class="normal_text">Offers tailored strategies to a wider audience, beyond just experts.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Accessible Personalized Financial Guidance</span>Offers tailored strategies to a wider audience, beyond just experts.</p>
                         </li>
                     </ul>
                 </div>
@@ -79,7 +79,7 @@ include_once('partials/header.php'); //should be last after all variables
         </div>
         <div class="product_list_feature_cards spotlight-effect">
             <div></div>
-            <div class="product_list_feature_card fade-down">
+            <div class="product_list_feature_card fade-down product_center">
                 <div class="product_list_feature_cont">
                     <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
                     <h4>AI Driven Insights</h4>
@@ -96,18 +96,11 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="product_list_feature_card fade-right">
                 <div class="product_list_feature_cont">
                     <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4>Tax Planning </h4>
-                    <p>Offers strategies to minimize tax liabilities related to investments.</p>
-                </div>
-            </div>
-            <div class="product_list_feature_card zoom-in product_center">
-                <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
                     <h4>Budgeting and Expense Management</h4>
                     <p>Helps in tracking expenses and creating budgets to align with investment goals.</p>
                 </div>
             </div>
-            <div class="product_list_feature_card fade-left">
+            <div class="product_list_feature_card zoom-in">
                 <div class="product_list_feature_cont">
                     <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
                     <h4>Risk Management</h4>
@@ -200,14 +193,14 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Grow your wealth smartly </span><span class="normal_text"> with expert investment strategies.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Grow your wealth smartly </span>with expert investment strategies.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Diversify your portfolio </span><span class="normal_text"> for better risk management.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Diversify your portfolio </span>for better risk management.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Track & manage investments</span><span class="normal_text"> with real-time insights.
-                            </span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Track & manage investments</span>with real-time insights.</p>
+                            
                         </li>
                     </ul>
                 </div>
@@ -258,7 +251,7 @@ include_once('partials/header.php'); //should be last after all variables
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px; margin: 0 auto;" />
                     <h3>CoreNexus</h3>
                     <p>Seamless, integrated solutions for smarter banking</p>
-                    <a class="cmn-btn" href="#">
+                    <a class="cmn-btn" href="./core-banking-solution.php">
                         <span class="text"> View Product</span>
                         <div class="icon">
                             <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
@@ -272,7 +265,7 @@ include_once('partials/header.php'); //should be last after all variables
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px; margin: 0 auto;" />
                     <h3>MobfinZ</h3>
                     <p> Bank securely and conveniently, anytime, anywhere.</p>
-                    <a class="cmn-btn" href="#">
+                    <a class="cmn-btn" href="./mobile-banking.php">
                         <span class="text"> View Product</span>
                         <div class="icon">
                             <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
@@ -286,7 +279,7 @@ include_once('partials/header.php'); //should be last after all variables
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px; margin: 0 auto;" />
                     <h3>NeoPulse</h3>
                     <p>Next-gen digital banking for a modern financial experience.</p>
-                    <a class="cmn-btn" href="#">
+                    <a class="cmn-btn" href="./neo-banking.php">
                         <span class="text"> View Product</span>
                         <div class="icon">
                             <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
@@ -300,7 +293,7 @@ include_once('partials/header.php'); //should be last after all variables
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px; margin: 0 auto;" />
                     <h3>WebVault</h3>
                     <p>Effortless and secure banking, on any device.</p>
-                    <a class="cmn-btn" href="#">
+                    <a class="cmn-btn" href="./internet-banking.php">
                         <span class="text"> View Product</span>
                         <div class="icon">
                             <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
@@ -314,7 +307,7 @@ include_once('partials/header.php'); //should be last after all variables
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
                     <h3>PayUnity</h3>
                     <p>Instant, secure payments made simple with UPI.</p>
-                    <a class="cmn-btn" href="#">
+                    <a class="cmn-btn" href="./upi.php">
                         <span class="text"> View Product</span>
                         <div class="icon">
                             <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
@@ -328,7 +321,7 @@ include_once('partials/header.php'); //should be last after all variables
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
                     <h3>FinzSwitch</h3>
                     <p>Streamline payments with secure UPI solutions.</p>
-                    <a class="cmn-btn" href="#">
+                    <a class="cmn-btn" href="./upi-switch.php">
                         <span class="text"> View Product</span>
                         <div class="icon">
                             <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
@@ -342,7 +335,7 @@ include_once('partials/header.php'); //should be last after all variables
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
                     <h3>FlowGate</h3>
                     <p>Secure and seamless payments for businesses.</p>
-                    <a class="cmn-btn" href="#">
+                    <a class="cmn-btn" href="./payment-gateways.php">
                         <span class="text"> View Product</span>
                         <div class="icon">
                             <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
@@ -356,7 +349,7 @@ include_once('partials/header.php'); //should be last after all variables
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
                     <h3>FinInvezt</h3>
                     <p>AI-driven insights for smarter investment strategies.</p>
-                    <a class="cmn-btn" href="#">
+                    <a class="cmn-btn" href="./investment-management.php">
                         <span class="text"> View Product</span>
                         <div class="icon">
                             <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
@@ -370,7 +363,7 @@ include_once('partials/header.php'); //should be last after all variables
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
                     <h3>Finalease</h3>
                     <p>Accelerate secure fund transfers and streamline operations.</p>
-                    <a class="cmn-btn" href="#">
+                    <a class="cmn-btn" href="./settlements.php">
                         <span class="text"> View Product</span>
                         <div class="icon">
                             <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
@@ -384,7 +377,7 @@ include_once('partials/header.php'); //should be last after all variables
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
                     <h3>ReconSphere</h3>
                     <p>Automated reconciliation for accuracy and time savings.</p>
-                    <a class="cmn-btn" href="#">
+                    <a class="cmn-btn" href="./reconciliation.php">
                         <span class="text"> View Product</span>
                         <div class="icon">
                             <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
@@ -398,7 +391,7 @@ include_once('partials/header.php'); //should be last after all variables
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
                     <h3>EaseMerchant</h3>
                     <p>Effortless merchant onboarding with automated workflows.</p>
-                    <a class="cmn-btn" href="#">
+                    <a class="cmn-btn" href="./finzro.php">
                         <span class="text"> View Product</span>
                         <div class="icon">
                             <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
@@ -412,7 +405,7 @@ include_once('partials/header.php'); //should be last after all variables
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
                     <h3>DataVista</h3>
                     <p>Unlock insights to drive smarter business decisions.</p>
-                    <a class="cmn-btn" href="#">
+                    <a class="cmn-btn" href="./finlyticz.php">
                         <span class="text"> View Product</span>
                         <div class="icon">
                             <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
