@@ -9,13 +9,15 @@ body {
     margin: 0;
     padding: 0;
   }
+  section {
+    background: linear-gradient(90deg, #000000, #000e0e)
+  }
 
   @import "./variable.scss";
 
 // Product Hero section
 #fz_product_list_hero_sec {
     position: relative;
-    background: linear-gradient(90deg, #00838316 0%, #00838316 100%);
     padding-bottom: 96px;
     canvas {
         position: absolute;
@@ -42,15 +44,14 @@ body {
         }
         .cmn-btn {
             @include cmn-btn;
-            width: 150px !important;
-            --w: 164px !important;
+            width: 162px !important;
+            --w: 188px !important;
         }
     }
 }
 
 // Banner section
 #fz_product_list_banner_sec {
-    background: linear-gradient(90deg, #00838316 0%, #00838316 100%);
     .fz_product_list_banner_img {
         width: 100%;
         height: 100%;
@@ -61,7 +62,6 @@ body {
   #fz_product_list_feature {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(90deg, #00838316 0%, #00838316 100%);
     .product_list_feature_head {
         h3 {
             font-size: 192px;
@@ -251,9 +251,8 @@ body {
   }
   button{
       border-radius:0px  10px 10px 0px!important;
-      margin-bottom:5px;
-      padding:15px;
-      border-left:3px solid transparent;
+      padding: 20px;
+      border-left: 3px solid #FCFCFC29;
       &.active{
           background-color: #33392f !important;
           border-left:3px solid #D6CA8A;
@@ -269,20 +268,21 @@ body {
       .fz_feature_tab_heading{
           display: flex;
           align-content: center;
-          margin-bottom: 20px;
+          margin-bottom: 8px;
           @media (max-width: 991px) {
               flex-direction: column;
               align-items: center;
           }
           svg{
-              width: 40px;
-              height: 40px;
+              width: 30px;
+              height: 30px;
               object-fit: contain;
           }
           h4{
-              padding-left: 20px;
+              padding-left: 16px;
               font-size: 24px;
               color: $white;
+              text-align: left;
               @media (max-width: 991px) {
                   padding-top: 10px;
               }
@@ -392,6 +392,7 @@ body {
       .fz_enhance_para{
           font-size:16px;
           color: $white;
+          font-weight: 300;
           @media (max-width: 991px) {
               text-align: center;
           }
@@ -407,8 +408,8 @@ body {
           li{
               font-size: 16px;
               font-weight: 300;
-              padding: 10px 20px;
-              border-radius: 30px;
+              padding: 8px 20px;
+              border-radius: 20px;
               background-color: #0e1d20;
               margin-bottom: 12px;
               display: inline-flex;
@@ -440,6 +441,11 @@ body {
   .fz_enhance_col{
       display: flex;
       align-items: center;
+      padding-left: 80px;
+      &.left-space{
+        padding-right: 80px;
+        padding-left: 0px;
+      }
   }
   .fz_enhance_img_col{
       display: flex;
@@ -464,6 +470,10 @@ body {
       border-right: 20px solid #2e5858;
       position: relative;
       overflow: hidden;
+      background: url('../images/arrow-animate.gif');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: -20px 43%;
       .row{
           @media (max-width: 991px) {
               display: flex;
@@ -559,8 +569,8 @@ body {
           .get_touch_btn{
             a {
                 @include cmn-btn;
-                width: 156px !important;
-                --w: 176px !important;
+                width: 160px !important;
+                --w: 182px !important;
               }
               @media (max-width: 991px) {
                   display: flex;
@@ -571,6 +581,7 @@ body {
               position: absolute;
               top: 10px;
               left: 160px;
+              display: none;
               @media (max-width: 991px) {
                  display: none;
                 }
@@ -581,6 +592,7 @@ body {
 
 // Product Range
 #fz_product_range {
+  padding: 100px 0px;
     h2 {
         color: $white;
         font-size: 48px;
@@ -625,8 +637,8 @@ body {
             .cmn-btn {
                 margin: 0 auto;
                 @include cmn-btn;
-                width: 150px !important;
-                --w: 156px !important;
+                width: 164px !important;
+                --w: 190px !important;
             }
         }
     }
@@ -789,8 +801,8 @@ body {
             }
             .cmn-btn {
               @include cmn-btn;
-              width: 150px !important;
-              --w: 156px !important;
+              width: 164px !important;
+              --w: 182px !important;
             }
           }
           .fin_bankz_img {

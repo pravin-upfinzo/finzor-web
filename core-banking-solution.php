@@ -36,7 +36,8 @@ include_once('partials/header.php'); //should be last after all variables
 <!-- Banner Section -->
 <section id="fz_product_list_banner_sec">
     <div class="container">
-        <img src="./assets/images/product_banner.svg" alt="product-banner" class="fz_product_list_banner_img">
+        <img src="./assets/images/Core Banking Solutions (CBS).svg" alt="product-banner" class="fz_product_list_banner_img">
+        
     </div>
 </section>
 
@@ -44,14 +45,14 @@ include_once('partials/header.php'); //should be last after all variables
 <section class="fz_ai_enhance_sec cbs_sec">
     <div class="container">
         <div class="row">
-            <div class="col-lg-7 fz_enhance_col">
+            <div class="col-lg-7 fz_enhance_col left-space">
                 <div class="fz_ai_enhance_text">
                     <h2>Driving Deeper Customer Interactions</h2>
                     <p class="fz_enhance_para">Accelerate digital adoption with customer-led product designs, gain real-time insights into customer journeys for personalized engagements. Offer tailored products based on holistic customer views and embedded insights
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Personalized Engagements</span><span class="normal_text">Tailor products with real-time data.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="normal_text">Personalized engagements tailor products with <span class="fz_cbs_color">real-time data</span></span>
                         </li>
                         <li>
                             <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Customer-Centric Design</span><span class="normal_text">Enhance UX with smart insights.</span>

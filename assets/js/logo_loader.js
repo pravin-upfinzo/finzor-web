@@ -33,34 +33,46 @@ $(window).on('load', function() {
     e.preventDefault();
     $('html, body').animate({scrollTop:0}, '300');
   });
-$(document).ready(function () {
-  if ($(window).width() <= 991) {
-    $(".menu > li").off("mouseenter mouseleave").click(function(e) {
-        e.stopPropagation(); // Prevent bubbling of the event
+  $(document).ready(function () {
+    if ($(window).width() <= 991) {
+      $(".menu > li").off("mouseenter mouseleave").click(function (e) {
+        e.stopPropagation();
         console.log('Menu clicked');
-        $(this).children(".submenu").stop(true, true).slideToggle();
-    });
-
-    $(".submenu > li").click(function(e) {
-        e.stopPropagation(); // Prevent the click event from bubbling to parent
+        $(this).children(".submenu-wrapper").stop(true, true).slideToggle();
+      });
+  
+      $(".submenu > li").click(function (e) {
+        e.stopPropagation();
         $(this).children(".inner-submenu").stop(true, true).slideToggle();
-    });
-  } else {
-    $(".menu > li").hover(
-        function() {
-            $(this).children(".submenu").stop(true, true).fadeIn(200);
+      });
+    } else {
+      $(".menu > li.dropdown").hover(
+        function () {
+          // Append blur background
+          if ($('#menu-blur-bg').length === 0) {
+            $('body').append('<div id="menu-blur-bg"></div>');
+          }
+          $("#menu-blur-bg").fadeIn(200);
+          
+          $(this).children(".submenu-wrapper").stop(true, true).fadeIn(200);
         },
-        function() {
-            $(this).children(".submenu").stop(true, true).fadeOut(200);
+        function () {
+          $("#menu-blur-bg").fadeOut(200, function () {
+            $(this).remove(); // Remove after fade out
+          });
+          
+          $(this).children(".submenu-wrapper").stop(true, true).fadeOut(200);
         }
-    );
-    $(".submenu > li").hover(
-        function() {
-            $(this).children(".inner-submenu").stop(true, true).fadeIn(200);
+      );
+  
+      $(".submenu-wrapper .submenu > li").hover(
+        function () {
+          $(this).children(".inner-submenu").stop(true, true).fadeIn(200);
         },
-        function() {
-            $(this).children(".inner-submenu").stop(true, true).fadeOut(200);
+        function () {
+          $(this).children(".inner-submenu").stop(true, true).fadeOut(200);
         }
-    );
-  }
-});
+      );
+    }
+  });
+  
