@@ -38,7 +38,7 @@ include_once('partials/header.php'); //should be last after all variables
 <!-- Banner Section -->
 <section id="fz_product_list_banner_sec">
     <div class="container">
-        <img src="./assets/images/product_banner.svg" alt="product-banner" class="fz_product_list_banner_img">
+        <img src="./assets/images/Merchan Onboarding.svg" alt="product-banner" class="fz_product_list_banner_img">
     </div>
 </section>
 <!-- product_hero_section -->
@@ -116,19 +116,33 @@ include_once('partials/header.php'); //should be last after all variables
             <h4>Features</h4>
         </div>
         <div class="product_list_feature_cards spotlight-effect">
-            <div class="product_list_feature_card fade-right">
+            <div></div>
+            <div class="product_list_feature_card fade-down">
                 <div class="product_list_feature_cont">
                     <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
                     <h4>Onboarding Dashboard </h4>
                     <p>Provides a centralized platform to manage the merchant onboarding process.</p>
                 </div>
             </div>
-            <div class="product_center"></div>
             <div class="product_list_feature_card fade-left">
                 <div class="product_list_feature_cont">
                     <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
                     <h4> Secure API Integration</h4>
                     <p>Connects onboarding systems securely with other applications.</p>
+                </div>
+            </div>
+            <div class="product_list_feature_card fade-right">
+                <div class="product_list_feature_cont">
+                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <h4>AI-Powered Fraud Prevention Onboarding</h4>
+                    <p>Smart AI to Detect Fraud Early</p>
+                </div>
+            </div>
+            <div class="product_list_feature_card zoom-in product_center">
+                <div class="product_list_feature_cont">
+                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <h4>Identity Verification (KYC/AML Compliance)</h4>
+                    <p>AI-driven identity verification for seamless KYC/AML compliance and fraud prevention.</p>
                 </div>
             </div>
         </div>

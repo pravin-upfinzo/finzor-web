@@ -79,6 +79,7 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link" href="#" id="menu1" role="button">What we offer</a>
+                                <div class="submenu-wrapper">
                                 <ul class="submenu">
                                 <div class="upward-arrow"></div>
                                     <li>
@@ -275,6 +276,8 @@
                                     </a>
                                     </li>
                                 </ul>
+                                </div>
+                                
                                 </li>
                            
                             <li class="nav-item">
