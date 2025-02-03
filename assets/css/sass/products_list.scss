@@ -41,6 +41,12 @@ body {
             span {
                 color: #00B2B1;
             }
+
+            @media screen and (max-width: 991px) {
+              padding: 100px 0px 20px 0px;
+              line-height: 54px;
+              font-size: 36px;
+            }
         }
         .cmn-btn {
             @include cmn-btn;
@@ -416,12 +422,12 @@ body {
               align-items: center;
               @media (max-width: 1024px) {
                   font-size: 14px;
-                  padding: 10px 10px;
+                  padding: 15px 15px;
               }
-              @media (max-width: 991px) {
-                  font-size: 14px;
-                  padding: 10px 10px;
-              }
+              // @media (max-width: 991px) {
+              //     font-size: 14px;
+              //     padding: 15px 15px;
+              // }
               .fz_cbs_color{
                   color: $primary-color;
                   padding-right: 5px;
@@ -434,6 +440,11 @@ body {
                   height: 18px;
                   object-fit: contain;
                   margin-right: 16px;
+
+                  @media screen and (max-width: 1199px) {
+                    width:20px;
+                    height:20px;
+                  }
               }
           }
       }
