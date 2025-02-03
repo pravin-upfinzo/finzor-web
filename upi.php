@@ -51,13 +51,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Unified UPI: Multiple Accounts in One App</span><span class="normal_text">Manage multiple bank accounts in one app easily.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Unified UPI: Multiple Accounts in One App </span><span class="normal_text">Manage multiple bank accounts in one app easily.</span>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Enhance security and convenience with advanced fraud protection tools.</span><span class="normal_text">Simplify transactions with seamless P2P, P2M, and scheduled payments.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Seamless Transactions for All Needs </span><span class="normal_text">Simplify transactions with seamless P2P, P2M, and scheduled payments.</span>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Advanced Security for Safe Payments</span><span class="normal_text">Enhance security and convenience with advanced fraud protection tools.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Advanced Security for Safe Payments </span><span class="normal_text">Enhance security and convenience with advanced fraud protection tools.</span>
                         </li>
                     </ul>
                 </div>
