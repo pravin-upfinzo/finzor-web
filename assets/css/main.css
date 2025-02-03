@@ -283,6 +283,9 @@ header .navbar-expand-lg .navbar-nav > li .submenu a {
     width: 100%;
   }
 }
+header .navbar-expand-lg .navbar-nav > li .submenu li.active-submenu > a {
+  background: rgba(0, 75, 75, 0.5);
+}
 @media screen and (max-width: 991px) {
   header .navbar-expand-lg .navbar-nav > li .submenu li > a {
     pointer-events: none;
@@ -609,10 +612,11 @@ header .fz_sigin ul .unlock a:hover svg path {
   backdrop-filter: blur(20px);
   z-index: 200;
   margin: 0 auto;
-  width: 735px;
+  width: 47.5%;
   height: 453px;
   top: 58px;
-  transform: translateX(80px);
+  left: 50%;
+  transform: translateX(-42.6%);
   border: 1px solid #143941;
   border-radius: 5px;
 }
