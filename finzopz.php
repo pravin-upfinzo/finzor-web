@@ -135,7 +135,7 @@ include_once('partials/header.php'); //should be last after all variables
 
                     Reconciliation
                 </div>
-                <h3 class="fin_bankz_subtitle">ReconSphere</h3>
+                <h3 class="fin_bankz_subtitle">FinzRec</h3>
                 <div class="fin_bankz_bank">
                 </div>
                 <p class="fin_bankz_desc">The reconciliation process at Finzor ensures real-time tracking of financial transactions. Our AI-driven insights help businesses manage receivables efficiently, reducing discrepancies. With automated alerts, we notify users of any inconsistencies in transaction records.</p>

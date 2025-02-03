@@ -373,7 +373,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="item">
                 <div class="fz_product-content">
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
-                    <h3>ReconSphere</h3>
+                    <h3>FinzRec</h3>
                     <p>Automated reconciliation for accuracy and time savings.</p>
                     <a class="cmn-btn" href="./reconciliation.php">
                         <span class="text"> View Product</span>

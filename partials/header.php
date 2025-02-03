@@ -197,7 +197,7 @@
                                         </li>
                                         <li>
                                         <a href="./reconciliation.php">
-                                            <h3>ReconSphere</h3>
+                                            <h3>FinzRec</h3>
                                             <p>Reconciliation</p>
                                         </a>
                                         </li>

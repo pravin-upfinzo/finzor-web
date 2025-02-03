@@ -21,7 +21,7 @@ include_once('partials/header.php'); //should be last after all variables
     <canvas class="hero_sec_dot" id="hero_sec_dot"></canvas>
     <div class="container">
         <div class="product_list_hero">
-            <h2 class="product_list_hero_title">Secure financial services <br> as  <span>CoreNexus</span> </h2>
+            <h2 class="product_list_hero_title">Secure financial services<br> as  <span>CoreNexus</span> </h2>
             <a class="cmn-btn" href="contact-us.php">
                 <span class="text"> Let's connect</span>
                 <div class="icon">
@@ -395,7 +395,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="item">
                 <div class="fz_product-content">
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
-                    <h3>ReconSphere</h3>
+                    <h3>FinzRec</h3>
                     <p>Automated reconciliation for accuracy and time savings.</p>
                     <a class="cmn-btn" href="./reconciliation.php">
                         <span class="text"> View Product</span>
