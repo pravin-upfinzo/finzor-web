@@ -1,0 +1,38 @@
+@import "./variable.scss";
+.privacy_policy{
+    
+    width: 80%;
+    background-color: black;
+    padding: 130px 40px;
+    margin: 0 auto;
+   
+    h1{
+        color: #3eab90;
+        font-weight: 600;
+        font-size: 45px;
+    }
+    h3{
+        color: #3eab90;
+        font-weight: 500;
+        padding:10px 0px;
+        margin: 0;
+        font-size: 20px; 
+    }
+   
+    p{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0px 0px 10px 0;
+        color: rgb(160, 160, 160);
+    }
+    ul {
+        li{
+            list-style: none;
+            color: rgb(160, 160, 160);
+            line-height: 1.6;
+        }
+    }
+    
+}

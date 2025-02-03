@@ -68,9 +68,11 @@ $(window).on('load', function() {
       $(".submenu-wrapper .submenu > li").hover(
         function () {
           $(this).children(".inner-submenu").stop(true, true).fadeIn(200);
+          $(this).addClass("active-submenu");
         },
         function () {
           $(this).children(".inner-submenu").stop(true, true).fadeOut(200);
+          $(this).removeClass("active-submenu");
         }
       );
     }

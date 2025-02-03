@@ -43,10 +43,12 @@ section {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  position: relative;
+  z-index: 9;
 }
 #fz_product_list_hero_sec .product_list_hero .product_list_hero_title {
   font-size: 64px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 96px;
   letter-spacing: 1px;
   text-align: center;
@@ -496,8 +498,10 @@ section {
   border-radius: 20px;
   background-color: #0e1d20;
   margin-bottom: 12px;
-  display: inline-flex;
+  color: #ffffff;
+  display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 @media (max-width: 1024px) {
   .fz_ai_enhance_sec .fz_ai_enhance_text ul li {
@@ -508,9 +512,6 @@ section {
 .fz_ai_enhance_sec .fz_ai_enhance_text ul li .fz_cbs_color {
   color: #3eab90;
   padding-right: 5px;
-}
-.fz_ai_enhance_sec .fz_ai_enhance_text ul li .normal_text {
-  color: #ffffff;
 }
 .fz_ai_enhance_sec .fz_ai_enhance_text ul li img {
   width: 18px;
@@ -523,6 +524,9 @@ section {
     width: 20px;
     height: 20px;
   }
+}
+.fz_ai_enhance_sec .fz_ai_enhance_text ul li p {
+  margin: 0;
 }
 .fz_ai_enhance_sec .fz_enhance_col {
   display: flex;

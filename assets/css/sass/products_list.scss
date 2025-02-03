@@ -30,9 +30,11 @@ body {
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
+        position: relative;
+        z-index: 9;
         .product_list_hero_title {
             font-size: 64px;
-            font-weight: 600;
+            font-weight: 500;
             line-height: 96px;
             letter-spacing: 1px;
             text-align: center;
@@ -418,8 +420,10 @@ body {
               border-radius: 20px;
               background-color: #0e1d20;
               margin-bottom: 12px;
-              display: inline-flex;
+              color: $white;
+              display: flex;
               align-items: center;
+              justify-content: flex-start;
               @media (max-width: 1024px) {
                   font-size: 14px;
                   padding: 15px 15px;
@@ -432,9 +436,6 @@ body {
                   color: $primary-color;
                   padding-right: 5px;
               }
-              .normal_text{
-                  color: $white;
-              }
               img{
                   width: 18px;
                   height: 18px;
@@ -445,6 +446,9 @@ body {
                     width:20px;
                     height:20px;
                   }
+              }
+              p {
+                margin: 0;
               }
           }
       }
