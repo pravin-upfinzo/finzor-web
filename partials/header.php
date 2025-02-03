@@ -240,7 +240,7 @@
                                     </a>
                                     </li>
                                     <li>
-                                    <a href="#">
+                                    <a href="./connected-banking.php">
                                         <div class="image-text">
                                         <div class="fz_header_svg">
                                             <svg class="normal__svg" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -251,14 +251,14 @@
                                         </svg>
                                         </div>
                                         <div class="fz_text">
-                                            <h3>FinZro</h3>
-                                            <p>Merchant Solution</p>
+                                            <h3>NexPulse</h3>
+                                            <p>Connected Banking</p>
                                         </div>
                                         </div>
                                     </a>
                                     </li>
                                     <li>
-                                    <a href="#">
+                                    <a href="./fraud-and-risk-management.php">
                                         <div class="image-text">
                                         <div class="fz_header_svg">
                                             <svg class="normal__svg" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -269,8 +269,8 @@
                                         </svg>
                                         </div>
                                         <div class="fz_text">
-                                            <h3>FinlyticZ</h3>
-                                            <p>Data & Analytics </p>
+                                            <h3>FinZShield</h3>
+                                            <p>Fraud and Risk Management</p>
                                         </div>
                                         </div>
                                     </a>
