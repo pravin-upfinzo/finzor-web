@@ -43,6 +43,8 @@ section {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  position: relative;
+  z-index: 9;
 }
 #fz_product_list_hero_sec .product_list_hero .product_list_hero_title {
   font-size: 64px;
