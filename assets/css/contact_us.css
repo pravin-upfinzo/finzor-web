@@ -16,8 +16,6 @@
 }
 #contact_us .get-started {
   width: 100%;
-  display: flex;
-  justify-content: end;
   margin-bottom: 72px;
 }
 @media screen and (max-width: 991px) {
@@ -28,18 +26,23 @@
   }
 }
 #contact_us .get-started h1 {
-  width: 50%;
   color: #fff;
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 80px;
+  text-align: center;
   font-weight: 700;
   line-height: 80px;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  #contact_us .get-started h1 {
+    font-size: 60px;
+  }
+}
 @media screen and (max-width: 991px) {
   #contact_us .get-started h1 {
-    font-size: 50px;
-    line-height: 56px;
+    font-size: 40px;
+    line-height: 48px;
   }
 }
 #contact_us .contact_sub_cont {
@@ -50,6 +53,12 @@
 @media screen and (max-width: 991px) {
   #contact_us .contact_sub_cont {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 1199px) {
+  #contact_us .contact_sub_cont .modal-img {
+    width: 70% !important;
+    margin: 0 auto;
   }
 }
 #contact_us .contact_sub_cont .form-wrapper {

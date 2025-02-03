@@ -114,4 +114,18 @@ $(document).ready(function () {
             });
         }
     });
+
+    //subscribe-form
+    $('#subscribe-form .footer_arrow').on('click', function (event) {
+        var isValid=true;
+        var subs_email = $('#subscribe-form .subscribe_email').val().trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (subs_email === '') {
+            $('#subsEmailError').text('Subscription Email is required.');
+            isValid = false;
+        } else if (!emailRegex.test(subs_email)) {
+            $('#subsEmailError').text('Please enter a valid email ID.');
+            isValid = false;
+        }
+    });
 });

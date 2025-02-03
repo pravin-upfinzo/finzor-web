@@ -283,6 +283,11 @@ header .navbar-expand-lg .navbar-nav > li .submenu a {
     width: 100%;
   }
 }
+@media screen and (max-width: 991px) {
+  header .navbar-expand-lg .navbar-nav > li .submenu li > a {
+    pointer-events: none;
+  }
+}
 header .navbar-expand-lg .navbar-nav > li .submenu li > a:hover {
   position: relative;
 }
@@ -1195,6 +1200,7 @@ header .fz_sigin ul .unlock a:hover svg path {
   transition: all 1s ease;
   padding: 0px 20px 0 25px;
   margin-left: 20px;
+  z-index: 2;
 }
 #fz_core_nexus .fz_core_text_right div .fz_learmore_btn .text {
   position: relative;
@@ -1551,7 +1557,6 @@ header .fz_sigin ul .unlock a:hover svg path {
 @media screen and (min-width: 1600px) {
   .panel__stack .panel__card {
     justify-content: center;
-    height: 34rem;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -3494,6 +3499,11 @@ div#faq-animate svg {
   transform: translate3d(0, 0, 0);
   z-index: 1;
 }
+.play_store_section .play_store_container .play_flex {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 .play_store_section h2 {
   font-size: 48px;
   font-weight: 400;
@@ -4029,7 +4039,7 @@ div#faq-animate svg {
 }
 .footer_section .fz_footer_container .subscribe .subscribe-form input {
   width: 100%;
-  padding: 16px;
+  padding: 16px 34px 16px 16px;
   font-size: 14px;
   background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
   border-radius: 96px;
@@ -4039,8 +4049,8 @@ div#faq-animate svg {
   --gradient-border: conic-gradient(from var(--border-angle), transparent 10%, #05311d, #3eab90 49%, transparent);
   background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
   animation: bg-spin 6s linear infinite;
-  cursor: pointer;
   position: relative;
+  cursor: auto;
 }
 @keyframes bg-spin {
   to {
@@ -4060,13 +4070,9 @@ div#faq-animate svg {
 }
 .footer_section .fz_footer_container .subscribe .subscribe-form .footer_arrow img {
   position: absolute;
-  right: 19px;
+  right: 13px;
+  cursor: pointer;
   bottom: 19px;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .footer_section .fz_footer_container .subscribe .subscribe-form .footer_arrow img {
-    right: 75px;
-  }
 }
 .footer_section .footer-bottom .horizontal-line {
   border: none;

@@ -44,7 +44,7 @@
                 <ul>
                   <li><a href="finbankz.php">FinbankZ</a></li>
                   <li><a href="#">UPIZor</a></li>
-                  <li><a href="#">FinZOpZ</a></li>
+                  <li><a href="#">FinzOpZ</a></li>
                   <li><a href="#">FinZro</a></li>
                   <li><a href="#">FinlyticZ</a></li>
                 </ul>
@@ -67,12 +67,13 @@
             </div>
               <div class="links-group subscribe">
                 <p>Stay updated by Subscribe</p>
-                <form class="subscribe-form">
-                  <input type="email" placeholder="Enter your email address">
-                  <div class="footer_arrow">
+                <form class="subscribe-form" id="subscribe-form">
+                  <input type="email" placeholder="Enter your email ID" name="subscribe_email" class="subscribe_email">
+                  <div class="footer_arrow" role="button">
                     <img src="./assets/images/footer_arrow.svg" alt="" class="">
                  </div>
                 </form>
+                <span class="error" id="subsEmailError"></span>
               </div>
             </div>
            

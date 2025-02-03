@@ -13,7 +13,13 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.9/codemirror.min.css"> -->
 
-    <style></style>
+    <style>
+        #subsEmailError{
+            font-size: 11px;
+            color: red;
+            margin-left: 15px;
+        }
+    </style>
 
     <?php
     // Include page-specific CSS
