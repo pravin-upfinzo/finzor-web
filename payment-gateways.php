@@ -51,13 +51,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Increase Authorization Rates</span><span class="normal_text"> Boost payment success with optimized authorization processes.                            </span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Increase Authorization Rates</span> Boost payment success with optimized authorization processes.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Improve Checkout Conversion</span><span class="normal_text"> Enhance user experience to increase checkout completion rates.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Improve Checkout Conversion</span> Enhance user experience to increase checkout completion rates.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Support Local Payment Methods</span><span class="normal_text"> Offer tailored payment options to suit every market’s needs.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Support Local Payment Methods</span> Offer tailored payment options to suit every market’s needs.</p>
                         </li>
                     </ul>
                 </div>
@@ -193,13 +193,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color"> Secure online payments </span><span class="normal_text"> with multiple payment options.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Secure online payments </span> with multiple payment options.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Fast transaction processing </span><span class="normal_text"> for seamless user experience.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Fast transaction processing </span> for seamless user experience.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Supports cards, UPI, & wallets</span><span class="normal_text"> for easy checkout.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Supports cards, UPI, & wallets</span> for easy checkout.</p>
                         </li>
                     </ul>
                 </div>

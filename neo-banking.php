@@ -51,13 +51,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">24/7 AI-Powered Support</span><span class="normal_text">Get instant help anytime, anywhere</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">24/7 AI-Powered Support</span>Get instant help anytime, anywhere</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Fully Digital Services</span><span class="normal_text">Access banking anytime via app or web</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Fully Digital Services</span>Access banking anytime via app or web</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Seamless User Experience</span><span class="normal_text">Enjoy fast, hassle-free banking</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Seamless User Experience</span>Enjoy fast, hassle-free banking</p>
                         </li>
                     </ul>
                 </div>
@@ -193,14 +193,14 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color"> 100% digital banking</span><span class="normal_text">with no branches & seamless experience</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> 100% digital banking</span>with no branches & seamless experience</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color"> Quick account setup</span><span class="normal_text">with instant access to financial tools</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Quick account setup</span>with instant access to financial tools</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Smart money management</span><span class="normal_text"> with AI-driven insights & analytics
-                            </span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Smart money management</span> with AI-driven insights & analytics</p>
+                            
                         </li>
                     </ul>
                 </div>

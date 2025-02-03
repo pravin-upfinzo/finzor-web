@@ -88,14 +88,14 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Robust Security for Digital Transactions </span><span class="normal_text">Ensure encrypted transactions for secure business operations.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Robust Security for Digital Transactions </span>Ensure encrypted transactions for secure business operations.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">AI-Driven Fraud Prevention </span><span class="normal_text">Leverage AI to detect and prevent fraud during merchant onboarding.
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">AI-Driven Fraud Prevention </span>Leverage AI to detect and prevent fraud during merchant onboarding.</p>
                             </span>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Compliance and Trust Assurance </span><span class="normal_text">Maintain regulatory compliance to build trust with merchants.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Compliance and Trust Assurance </span>Maintain regulatory compliance to build trust with merchants.</p>
                         </li>
                     </ul>
                 </div>
@@ -231,13 +231,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Quick & hassle-free onboarding </span><span class="normal_text">with minimal documentation.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Quick & hassle-free onboarding </span>with minimal documentation.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Seamless integration</span><span class="normal_text"> for instant payment acceptance.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Seamless integration</span> for instant payment acceptance.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Verify & activate merchants</span><span class="normal_text"> with fast processing.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Verify & activate merchants</span> with fast processing.</p>
                         </li>
                     </ul>
                 </div>

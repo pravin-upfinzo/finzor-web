@@ -51,13 +51,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Multi-Factor Authentication</span><span class="normal_text">Enhanced login security for users</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Multi-Factor Authentication</span>Enhanced login security for users</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Biometric Verification</span><span class="normal_text">Secure access with fingerprint or face scan</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Biometric Verification</span>Secure access with fingerprint or face scan</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Real-Time Fraud Monitoring</span><span class="normal_text">Detect and prevent fraudulent activities</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Real-Time Fraud Monitoring</span>Detect and prevent fraudulent activities</p>
                         </li>
                     </ul>
                 </div>
@@ -193,13 +193,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color"> Access your bank account</span><span class="normal_text">anytime, anywhere with full security</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Access your bank account</span>anytime, anywhere with full security</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color"> Pay bills & transfer funds</span><span class="normal_text">instantly with just a few clicks</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Pay bills & transfer funds</span>instantly with just a few clicks</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Manage finances online</span><span class="normal_text"> with real-time tracking & insights</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Manage finances online</span> with real-time tracking & insights</p>
                         </li>
                     </ul>
                 </div>

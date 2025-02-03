@@ -51,13 +51,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Boosted Success Rates for Payments </span><span class="normal_text">Experience a 4-5% increase in success rates with UPI Switch.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Boosted Success Rates for Payments </span>Experience a 4-5% increase in success rates with UPI Switch.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Low Latency for Fast Transactions </span><span class="normal_text">Reduce payment latency to under 100 milliseconds for speed.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Low Latency for Fast Transactions </span>Reduce payment latency to under 100 milliseconds for speed.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Uninterrupted, Reliable Service </span><span class="normal_text">Achieve 99.99% uptime, ensuring consistent payment performance.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Uninterrupted, Reliable Service </span>Achieve 99.99% uptime, ensuring consistent payment performance.</p>
                         </li>
                     </ul>
                 </div>
@@ -216,13 +216,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color"> Seamless routing of UPI </span><span class="normal_text"> transactions for better reliability.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Seamless routing of UPI </span> transactions for better reliability.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color"> Smart load balancing </span><span class="normal_text"> across multiple banks & networks.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Smart load balancing </span> across multiple banks & networks.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Ensures high success rates </span><span class="normal_text"> with faster & secure payments.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Ensures high success rates </span> with faster & secure payments.</p>
                         </li>
                     </ul>
                 </div>

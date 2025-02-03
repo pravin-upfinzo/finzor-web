@@ -88,13 +88,13 @@ include_once('partials/header.php'); //should be last after all variables
                     <p class="fz_enhance_para">Finzor leverages data to create personalized financial solutions, enabling businesses to offer bespoke investment advice, tailored insurance policies, and customized credit and loan options.</p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">AI-Driven Fraud Detection for Smarter Decisions </span><span class="normal_text">Enhance security with AI-powered fraud analytics and risk management.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">AI-Driven Fraud Detection for Smarter Decisions </span>Enhance security with AI-powered fraud analytics and risk management.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Real-Time Insights for Data-Driven Strategies </span><span class="normal_text">Empower businesses with real-time analytics for improved decisions.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Real-Time Insights for Data-Driven Strategies </span>Empower businesses with real-time analytics for improved decisions.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Cloud-Based Platform for Accessible Data </span><span class="normal_text">Leverage secure cloud access for seamless, real-time data use.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Cloud-Based Platform for Accessible Data </span>Leverage secure cloud access for seamless, real-time data use.</p>
                         </li>
                     </ul>
                 </div>
@@ -229,13 +229,13 @@ include_once('partials/header.php'); //should be last after all variables
                     <p class="fz_enhance_para">Finzor combines real-time fraud prevention with cost efficiency through data analytics. Our solutions analyze transactional patterns, instantly identify anomalies, and enhance trust and security. Additionally, we optimize operations by automating data analysis, streamlining workflows, improving resource management, and providing scalable solutions for growth.</p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Real-Time Fraud Detection</span><span class="normal_text"> Analyze patterns and spot anomalies.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Real-Time Fraud Detection</span> Analyze patterns and spot anomalies.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Enhanced Trust & Security</span><span class="normal_text"> Safeguard transactions and user data.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Enhanced Trust & Security</span> Safeguard transactions and user data.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Cost-Efficient Operations</span><span class="normal_text"> Automate workflows and scale seamlessly.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Cost-Efficient Operations</span> Automate workflows and scale seamlessly.</p>
                         </li>
                     </ul>
                 </div>

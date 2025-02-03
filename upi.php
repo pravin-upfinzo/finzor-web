@@ -51,13 +51,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Unified UPI: Multiple Accounts in One App </span><span class="normal_text">Manage multiple bank accounts in one app easily.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Unified UPI: Multiple Accounts in One App </span>Manage multiple bank accounts in one app easily.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Seamless Transactions for All Needs </span><span class="normal_text">Simplify transactions with seamless P2P, P2M, and scheduled payments.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Seamless Transactions for All Needs </span>Simplify transactions with seamless P2P, P2M, and scheduled payments.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Advanced Security for Safe Payments </span><span class="normal_text">Enhance security and convenience with advanced fraud protection tools.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Advanced Security for Safe Payments </span>Enhance security and convenience with advanced fraud protection tools.</p>
                         </li>
                     </ul>
                 </div>
@@ -193,13 +193,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color"> Instant money transfers</span><span class="normal_text"> 24/7 with just a mobile number.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Instant money transfers</span> 24/7 with just a mobile number.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color"> Secure & seamless payments</span><span class="normal_text"> using UPI-enabled apps.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Secure & seamless payments</span> using UPI-enabled apps.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">No need for bank details</span><span class="normal_text"> pay directly via UPI ID.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">No need for bank details</span> pay directly via UPI ID.</p>
                         </li>
                     </ul>
                 </div>
