@@ -547,6 +547,10 @@ li {
   border-right: 20px solid #2e5858;
   position: relative;
   overflow: hidden;
+  background: url("../images/arrow-animate.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -20px 43%;
 }
 @media (max-width: 991px) {
   .fz_get_in_touch .get_in_touch .row {
@@ -734,6 +738,7 @@ li {
   position: absolute;
   top: 10px;
   left: 160px;
+  display: none;
 }
 @media (max-width: 991px) {
   .fz_get_in_touch .get_in_touch .get_touch_in_content .get-touch-arrow {
