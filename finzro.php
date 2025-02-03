@@ -38,7 +38,7 @@ include_once('partials/header.php'); //should be last after all variables
 <!-- Banner Section -->
 <section id="fz_product_list_banner_sec">
     <div class="container">
-        <img src="./assets/images/product_banner.svg" alt="product-banner" class="fz_product_list_banner_img">
+        <img src="./assets/images/Merchan Onboarding.svg" alt="product-banner" class="fz_product_list_banner_img">
     </div>
 </section>
 <!-- product_hero_section -->
