@@ -9,5 +9,5 @@ return [
     'port' => 587,
     //'port' => 465,
     'from_email' => 'jothivijay4716@gmail.com',
-    'from_name' => 'Finzor'
+    'from_name' => 'Finzor',
 ];

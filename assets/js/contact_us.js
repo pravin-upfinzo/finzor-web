@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $('form').on('submit', function (event) {
+        
         event.preventDefault();
         let isValid = true;
 
@@ -88,8 +89,22 @@ $(document).ready(function () {
                         }
                     }
                 },
-                error: function () {
-                    alert("An error occurred while submitting the form.");
+                error: function (xhr) {
+                    let errorMessage = "An error occurred while submitting the form.";
+            
+                    // Check if response contains a JSON error message
+                    if (xhr.responseText) {
+                        try {
+                            let jsonResponse = JSON.parse(xhr.responseText);
+                            if (jsonResponse.message) {
+                                errorMessage = jsonResponse.message;
+                            }
+                        } catch (e) {
+                            console.log("Error parsing JSON response:", e);
+                        }
+                    }
+            
+                    alert(errorMessage);
                 }
             });
         }

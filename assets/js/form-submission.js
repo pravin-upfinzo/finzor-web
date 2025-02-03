@@ -108,8 +108,22 @@ $(document).ready(function () {
                         }
                     }
                 },
-                error: function () {
-                    alert("An error occurred while submitting the form.");
+                error: function (xhr) {
+                    let errorMessage = "An error occurred while submitting the form.";
+            
+                    // Check if response contains a JSON error message
+                    if (xhr.responseText) {
+                        try {
+                            let jsonResponse = JSON.parse(xhr.responseText);
+                            if (jsonResponse.message) {
+                                errorMessage = jsonResponse.message;
+                            }
+                        } catch (e) {
+                            console.log("Error parsing JSON response:", e);
+                        }
+                    }
+            
+                    alert(errorMessage);
                 }
             });
         }
@@ -126,6 +140,47 @@ $(document).ready(function () {
         } else if (!emailRegex.test(subs_email)) {
             $('#subsEmailError').text('Please enter a valid email ID.');
             isValid = false;
+        }
+
+
+         // If any field is invalid, prevent form submission
+         if (!isValid) {
+            event.preventDefault();
+        } else {
+            let fullUrl = window.location.protocol + "//" + window.location.host + window.location.pathname + window.location.search + window.location.hash;
+            
+           
+            $.ajax({
+                url: "routes/ajax.php",
+                type: "POST",
+                data: {'action' : "subscribe", 'subs_email' : subs_email, 'ref_url' : fullUrl},
+                dataType: "json",
+                success: function (response) {
+                    alert(response.message);
+                    if (response.status === "success") {
+                        if ($("#subscribe-form").length) {
+                            $("#subscribe-form")[0].reset();
+                        }
+                    }
+                },
+                error: function (xhr) {
+                    let errorMessage = "An error occurred while submitting the form.";
+            
+                    // Check if response contains a JSON error message
+                    if (xhr.responseText) {
+                        try {
+                            let jsonResponse = JSON.parse(xhr.responseText);
+                            if (jsonResponse.message) {
+                                errorMessage = jsonResponse.message;
+                            }
+                        } catch (e) {
+                            console.log("Error parsing JSON response:", e);
+                        }
+                    }
+            
+                    alert(errorMessage);
+                }
+            });
         }
     });
 });

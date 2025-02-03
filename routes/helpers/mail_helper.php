@@ -7,7 +7,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
-function sendEmail($toEmail, $toName, $subject, $body)
+function sendEmail($toEmail, $toName="", $subject, $body)
 {
     $config = require __DIR__ . '/../config/mail.php'; // Load mail configuration
 
@@ -45,4 +45,70 @@ function sendEmail($toEmail, $toName, $subject, $body)
     } catch (Exception $e) {
         return false;
     }
+}
+
+function contactus_mail_body($type="admin_mail",$data=[]){
+    $mail_body = "";
+
+    if($type == "admin_mail"){ 
+        $mail_body = "<p>Hello Admin,</p><p> You have received a new contact through Finzor website.</p>
+                        <table style='border-collapse: collapse;'>
+                        <tbody>
+                        <tr><td style='border:1px solid #000;padding: 5px;'>Name</td><td style='border:1px solid #000;padding: 5px;'>".$data['name']."</td></tr>
+                        <tr><td style='border:1px solid #000;padding: 5px;'>Email</td><td style='border:1px solid #000;padding: 5px;'>".$data['email']."</td></tr>
+                        <tr><td style='border:1px solid #000;padding: 5px;'>Phone</td><td style='border:1px solid #000;padding: 5px;'>".$data['phone']."</td></tr>
+                        <tr><td style='border:1px solid #000;padding: 5px;'>Message</td><td style='border:1px solid #000;padding: 5px;'>".$data['message']."</td><tr>
+                        </tbody>
+                        </table>
+                        <p><b>Best regards,<b><br>Finzor</p>";
+    } else { //user_thank_mail (if needed)
+        $mail_body = "";
+    }
+
+    return $mail_body;
+}
+
+function book_demo_mail_body($type="admin_mail",$data=[]){
+    $mail_body = "";
+
+    if($type == "admin_mail"){ 
+        $mail_body = "<p>Hello Admin,</p><p> You have received a new demo request through Finzor website.</p>
+                        <table style='border-collapse: collapse;'>
+                        <tbody>
+                        <tr><td style='border:1px solid #000;padding: 5px;'>Name</td><td style='border:1px solid #000;padding: 5px;'>".$data['name']."</td></tr>
+                        <tr><td style='border:1px solid #000;padding: 5px;'>Company Name</td><td style='border:1px solid #000;padding: 5px;'>".$data['Companyname']."</td></tr>
+                        <tr><td style='border:1px solid #000;padding: 5px;'>Email</td><td style='border:1px solid #000;padding: 5px;'>".$data['email']."</td></tr>
+                        <tr><td style='border:1px solid #000;padding: 5px;'>Phone</td><td style='border:1px solid #000;padding: 5px;'>".$data['phone']."</td></tr>
+                        <tr><td style='border:1px solid #000;padding: 5px;'>Message</td><td style='border:1px solid #000;padding: 5px;'>".$data['message']."</td><tr>
+                        <tr><td style='border:1px solid #000;padding: 5px;'>Ref.Page</td><td style='border:1px solid #000;padding: 5px;'>".$data['ref_url']."</td><tr>
+                        </tbody>
+                        </table>
+                        <p><b>Best regards,<b><br>Finzor</p>";
+    } else { //user_thank_mail (if needed)
+        $mail_body = "";
+    }
+
+    return $mail_body;
+}
+
+
+function subscribe_mail_body($type="admin_mail",$data=[]){
+    $mail_body = "";
+
+    if($type == "admin_mail"){ 
+        $mail_body = "<p>Hello Admin,</p><p> You have received a new subscriber through Finzor website.</p>
+        <table style='border-collapse: collapse;'>
+        <tbody>
+       
+        <tr><td style='border:1px solid #000;padding: 5px;'>Email</td><td style='border:1px solid #000;padding: 5px;'>".$data['email']."</td></tr>
+        <tr><td style='border:1px solid #000;padding: 5px;'>Ref.Page</td><td style='border:1px solid #000;padding: 5px;'>".$data['ref_url']."</td><tr>
+        <tr><td style='border:1px solid #000;padding: 5px;'>Received on</td><td style='border:1px solid #000;padding: 5px;'>".$data['created_on']."</td><tr>
+        </tbody>
+        </table>
+        <p><b>Best regards,<b><br>Finzor</p>";
+    } else { //user_thank_mail
+        $mail_body = "Thankyou for subscribing Finzor";
+    }
+
+    return $mail_body;
 }
