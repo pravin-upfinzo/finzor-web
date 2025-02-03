@@ -21,8 +21,7 @@ include_once('partials/header.php'); //should be last after all variables
     <canvas class="hero_sec_dot" id="hero_sec_dot"></canvas>
     <div class="container">
         <div class="product_list_hero">
-            <h2 class="product_list_hero_title">Elevating Your Business
-                with <span>Finalease</span> </h2>
+            <h2 class="product_list_hero_title"><span> Finlease</span> Effortless, secure, and timely settlements</h2>
             <a class="cmn-btn" href="contact-us.php">
                 <span class="text"> Let's connect</span>
                 <div class="icon">
