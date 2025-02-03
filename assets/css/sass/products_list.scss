@@ -411,6 +411,8 @@ body {
               border-radius: 30px;
               background-color: #0e1d20;
               margin-bottom: 12px;
+              display: inline-flex;
+              align-items: center;
               @media (max-width: 1024px) {
                   font-size: 14px;
                   padding: 10px 10px;
@@ -421,13 +423,14 @@ body {
               }
               .fz_cbs_color{
                   color: $primary-color;
+                  padding-right: 5px;
               }
               .normal_text{
                   color: $white;
               }
               img{
-                  width: 30px;
-                  height: 30px;
+                  width: 18px;
+                  height: 18px;
                   object-fit: contain;
                   margin-right: 16px;
               }

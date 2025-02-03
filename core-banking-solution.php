@@ -214,10 +214,10 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="normal_text">Create personalized client journeys with</span><span class="fz_cbs_color"> seamless digital solutions.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="normal_text">Create personalized client journeys with</span><span class="fz_cbs_color ps-1">seamless digital solutions.</span>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="normal_text">Utilize best practices to <span class="fz_cbs_color"> enhance customer experience</span> across touchpoints.</span>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="normal_text">Utilize best practices to <span class="fz_cbs_color"> enhance customer experience</span>across touchpoints.</span>
                         </li>
                         <li>
                             <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><span class="fz_cbs_color">Adopt agile delivery</span><span class="normal_text"> or gradual transformation at every interaction.

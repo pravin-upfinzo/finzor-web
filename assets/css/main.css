@@ -4039,7 +4039,7 @@ div#faq-animate svg {
 }
 .footer_section .fz_footer_container .subscribe .subscribe-form input {
   width: 100%;
-  padding: 16px;
+  padding: 16px 34px 16px 16px;
   font-size: 14px;
   background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
   border-radius: 96px;
@@ -4050,6 +4050,7 @@ div#faq-animate svg {
   background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
   animation: bg-spin 6s linear infinite;
   position: relative;
+  cursor: auto;
 }
 @keyframes bg-spin {
   to {
@@ -4069,7 +4070,7 @@ div#faq-animate svg {
 }
 .footer_section .fz_footer_container .subscribe .subscribe-form .footer_arrow img {
   position: absolute;
-  right: 19px;
+  right: 13px;
   cursor: pointer;
   bottom: 19px;
 }

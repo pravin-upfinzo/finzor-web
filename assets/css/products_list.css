@@ -489,6 +489,8 @@ li {
   border-radius: 30px;
   background-color: #0e1d20;
   margin-bottom: 12px;
+  display: inline-flex;
+  align-items: center;
 }
 @media (max-width: 1024px) {
   .fz_ai_enhance_sec .fz_ai_enhance_text ul li {
@@ -504,13 +506,14 @@ li {
 }
 .fz_ai_enhance_sec .fz_ai_enhance_text ul li .fz_cbs_color {
   color: #3eab90;
+  padding-right: 5px;
 }
 .fz_ai_enhance_sec .fz_ai_enhance_text ul li .normal_text {
   color: #ffffff;
 }
 .fz_ai_enhance_sec .fz_ai_enhance_text ul li img {
-  width: 30px;
-  height: 30px;
+  width: 18px;
+  height: 18px;
   object-fit: contain;
   margin-right: 16px;
 }
