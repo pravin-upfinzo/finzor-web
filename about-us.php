@@ -432,10 +432,7 @@ include_once('partials/header.php'); //should be last after all variables
                     <div class="about_us_content">
                         <h5 class="fade-up">Our Vision</h5>
                         <p class="fade-up">
-                        Finzor aims to revoluAonize banking with advanced core banking and payment soluAons that
-                        harness AI, blockchain, and cloud technologies. We empower financial insAtuAons to
-                        opAmize operaAons, enhance customer experiences, and drive growth through real-Ame
-                        insights, modular systems, and secure, scalable plaXorms.
+                        Finzor aims to revolutionize banking with advanced core banking and payment solutions that harness AI, blockchain, and cloud technologies. We empower financial institutions to optimize operations, enhance customer experiences, and drive growth through real-time insights, modular systems, and secure, scalable platforms.
                         </p>
                        
                         <button class="buttons mt-4">
