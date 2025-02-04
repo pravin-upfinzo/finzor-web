@@ -162,6 +162,11 @@ section {
   margin-top: 96px;
   margin-bottom: 0px;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  #fz_product_list_feature .product_list_feature_head h3 {
+    font-size: 100px;
+  }
+}
 @media screen and (max-width: 991px) {
   #fz_product_list_feature .product_list_feature_head h3 {
     font-size: 50px;
@@ -174,6 +179,11 @@ section {
   line-height: 1.4;
   text-align: center;
   text-shadow: 0 0 1px rgba(56, 253, 181, 0.6823529412), 0 0 4px rgba(56, 253, 181, 0.431372549), 0 0 5px rgba(56, 253, 181, 0.3098039216), 0 6px 1px rgba(56, 253, 181, 0.2862745098), 0 0 5px rgba(56, 253, 181, 0.2117647059), 0 1px 3px rgba(56, 253, 181, 0.1450980392), 0 3px 5px rgba(56, 253, 181, 0.062745098), 0 1px 4px rgba(56, 253, 181, 0.0588235294), 0 0px 8px rgba(56, 253, 181, 0.0549019608), 0 0px 10px rgba(56, 253, 181, 0);
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #fz_product_list_feature .product_list_feature_head h4 {
+    font-size: 80px;
+  }
 }
 @media screen and (max-width: 991px) {
   #fz_product_list_feature .product_list_feature_head h4 {
@@ -259,26 +269,38 @@ section {
   padding: 72px 48px;
   background: linear-gradient(216deg, rgba(1, 86, 86, 0.86) 0%, rgba(0, 53, 53, 0.85) 30%, rgba(0, 17, 17, 0.83) 70%);
 }
+@media screen and (max-width: 1199px) {
+  #fz_product_list_feature .product_list_feature_cards .product_list_feature_card .product_list_feature_cont {
+    padding: 72px 48px 40px;
+  }
+}
 #fz_product_list_feature .product_list_feature_cards .product_list_feature_card .product_list_feature_cont img {
   position: absolute;
   top: 0%;
   right: 0%;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1199px) {
   #fz_product_list_feature .product_list_feature_cards .product_list_feature_card .product_list_feature_cont img {
     width: 80px;
   }
 }
 #fz_product_list_feature .product_list_feature_cards .product_list_feature_card .product_list_feature_cont h4 {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 600;
-  line-height: 50.4px;
-  letter-spacing: 1px;
+  line-height: 36px;
+  /* letter-spacing: 1px; */
   text-align: left;
   color: #ffffff;
   padding-bottom: 16px;
-  padding-right: 46px;
+  padding-right: 42px;
   margin: 0;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #fz_product_list_feature .product_list_feature_cards .product_list_feature_card .product_list_feature_cont h4 {
+    font-size: 18px;
+    padding-right: 16px;
+    line-height: 24px;
+  }
 }
 @media screen and (max-width: 991px) {
   #fz_product_list_feature .product_list_feature_cards .product_list_feature_card .product_list_feature_cont h4 {
@@ -294,6 +316,12 @@ section {
   text-align: left;
   color: rgba(255, 255, 255, 0.6392156863);
   margin: 0;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #fz_product_list_feature .product_list_feature_cards .product_list_feature_card .product_list_feature_cont p {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .fz_features_sec {
@@ -370,6 +398,11 @@ section {
   color: #ffffff;
   text-align: left;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .fz_features_sec button .fz_feature_tab_heading h4 {
+    font-size: 18px;
+  }
+}
 @media (max-width: 991px) {
   .fz_features_sec button .fz_feature_tab_heading h4 {
     padding-top: 10px;
@@ -381,6 +414,11 @@ section {
 .fz_features_sec button .fz_feature_para {
   text-align: left;
   color: #ffffff;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .fz_features_sec button .fz_feature_para {
+    font-size: 14px;
+  }
 }
 @media (max-width: 991px) {
   .fz_features_sec button .fz_feature_para {
@@ -469,11 +507,23 @@ section {
   width: 100%;
   height: 100%;
 }
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .fz_ai_enhance_sec .fz_ai_enhance_img img {
+    height: auto;
+  }
+}
 .fz_ai_enhance_sec .fz_ai_enhance_text h2 {
   color: #ffffff;
   font-size: 48px;
   font-weight: 600;
   margin-bottom: 16px;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .fz_ai_enhance_sec .fz_ai_enhance_text h2 {
+    font-size: 26px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+  }
 }
 @media (max-width: 991px) {
   .fz_ai_enhance_sec .fz_ai_enhance_text h2 {
@@ -499,6 +549,11 @@ section {
   font-size: 16px;
   color: #ffffff;
   font-weight: 300;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .fz_ai_enhance_sec .fz_ai_enhance_text .fz_enhance_para {
+    font-size: 14px;
+  }
 }
 @media (max-width: 991px) {
   .fz_ai_enhance_sec .fz_ai_enhance_text .fz_enhance_para {
@@ -617,7 +672,7 @@ section {
 @media (max-width: 991px) {
   .fz_get_in_touch .get_in_touch {
     padding: 20px;
-    margin: 60px 0px 0px 0px;
+    margin: 60px 0px 0px;
     border-left: 10px solid #3eab90;
     border-right: 10px solid #2e5858;
   }
@@ -672,7 +727,7 @@ section {
 @media (max-width: 991px) {
   .fz_get_in_touch .get_in_touch .ripple_effect_robo {
     top: 51%;
-    left: 61%;
+    left: 50%;
   }
 }
 @media (max-width: 430px) {
@@ -836,6 +891,12 @@ section {
   line-height: 68px;
   font-weight: 400;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  #fz_product_range h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
 @media screen and (max-width: 991px) {
   #fz_product_range h2 {
     font-size: 26px;
@@ -863,6 +924,11 @@ section {
   background: linear-gradient(216deg, rgba(1, 86, 86, 0.86) 0%, rgba(0, 53, 53, 0.85) 30%, rgba(0, 17, 17, 0.83) 70%);
   margin-bottom: 32px;
 }
+@media screen and (max-width: 1199px) {
+  #fz_product_range #product-range .fz_product-content {
+    margin-bottom: 0px;
+  }
+}
 #fz_product_range #product-range .fz_product-content h3 {
   color: #ffffff;
   font-size: 24px;
@@ -870,12 +936,24 @@ section {
   font-weight: 600;
   margin: 20px 0 0;
 }
+@media screen and (max-width: 1199px) {
+  #fz_product_range #product-range .fz_product-content h3 {
+    font-size: 20px;
+  }
+}
 #fz_product_range #product-range .fz_product-content p {
   color: #838383;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   margin: 20px 0;
+}
+@media screen and (max-width: 1199px) {
+  #fz_product_range #product-range .fz_product-content p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 10px 0px;
+  }
 }
 #fz_product_range #product-range .fz_product-content .cmn-btn {
   margin: 0 auto;
