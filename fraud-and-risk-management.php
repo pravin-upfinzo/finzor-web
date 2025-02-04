@@ -1,5 +1,5 @@
 <?php
-$page_title = 'FinZShield';
+$page_title = 'Zsafe';
 $meta_lines = '<meta name="description" content="">';
 
 // to include page specific CSS
@@ -23,7 +23,7 @@ include_once('partials/header.php'); //should be last after all variables
     <canvas class="hero_sec_dot" id="hero_sec_dot"></canvas>
     <div class="container">
         <div class="product_list_hero">
-            <h2 class="product_list_hero_title">AI-powered verification for secure compliance, <span>FinZShield</span></h2>
+            <h2 class="product_list_hero_title">AI-powered verification for secure compliance, <span>Zsafe</span></h2>
             <a class="cmn-btn" href="contact-us.php">
                 <span class="text"> Let's connect</span>
                 <div class="icon">
@@ -77,7 +77,7 @@ include_once('partials/header.php'); //should be last after all variables
 <section id="fz_product_list_feature">
     <div class="container">
         <div class="product_list_feature_head">
-            <h3>FinZShield</h3>
+            <h3>Zsafe</h3>
             <h4>Features</h4>
         </div>
         <div class="product_list_feature_cards spotlight-effect">
