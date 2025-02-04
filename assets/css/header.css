@@ -252,6 +252,9 @@ header .navbar-expand-lg .navbar-nav > li .submenu li > a:hover:after {
     border-width: unset;
   }
 }
+header .navbar-expand-lg .navbar-nav > li .submenu li:nth-child(5) > a:after, header .navbar-expand-lg .navbar-nav > li .submenu li:nth-child(6) > a:after, header .navbar-expand-lg .navbar-nav > li .submenu li:nth-child(7) > a:after, header .navbar-expand-lg .navbar-nav > li .submenu li:nth-child(8) > a:after {
+  border-width: 0;
+}
 header .navbar-expand-lg .navbar-nav > li .submenu .image-text {
   display: flex;
   align-items: center;
