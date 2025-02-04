@@ -1,6 +1,6 @@
 <?php
-$page_title = 'Internet Banking';
-$meta_lines = '<meta name="description" content="">';
+$page_title = 'WebVault:- Bank Anytime, Anywhere with Secure Internet Banking';
+$meta_lines = '<meta name="description" content="Take control of your finances with WebVault. Enjoy 24/7 access to secure payments, fund transfers, and seamless money management.">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";

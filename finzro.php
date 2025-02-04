@@ -1,6 +1,6 @@
 <?php
-$page_title = 'FinZro';
-$meta_lines = '<meta name="description" content="">';
+$page_title = 'Empowering Merchants with Smart, Scalable Payment Solutions for the Future to FinZro';
+$meta_lines = '<meta name="description" content="FinZro is Transform your business with cutting-edge merchant solutions, delivering fast, secure, and seamless payment experiences for a digital-first world.">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";

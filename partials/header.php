@@ -251,7 +251,7 @@
                                         </svg>
                                         </div>
                                         <div class="fz_text">
-                                            <h3>Zpulse</h3>
+                                            <h3>Finbridge</h3>
                                             <p>Connected Banking</p>
                                         </div>
                                         </div>
@@ -269,7 +269,7 @@
                                         </svg>
                                         </div>
                                         <div class="fz_text">
-                                            <h3>FinZShield</h3>
+                                            <h3>FinVigil</h3>
                                             <p>Fraud and Risk Management</p>
                                         </div>
                                         </div>

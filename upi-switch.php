@@ -1,6 +1,6 @@
 <?php
-$page_title = 'UPI Switch';
-$meta_lines = '<meta name="description" content="">';
+$page_title = 'FinzSwitch:- Optimize UPI Transactions with a Smart UPI Switch';
+$meta_lines = '<meta name="description" content="A smart UPI Switch ensures faster transaction processing and seamless integration for banks, PSPs, and fintechs.">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";

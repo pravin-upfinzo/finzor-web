@@ -1,6 +1,6 @@
 <?php
-$page_title = 'Contact Us';
-$meta_lines = '<meta name="description" content="">';
+$page_title = 'Contact Us | Finzor Payments: Reach Out for Advanced Payment Solutions';
+$meta_lines = '<meta name="description" content="Contact Finzor Payments today for assistance with our advanced fintech solutions, designed to provide fast, secure, and efficient payment processing">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/contact_us.css">' . "\n";

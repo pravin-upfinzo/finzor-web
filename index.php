@@ -1,7 +1,7 @@
 <!-- Include Header -->
 <?php
-$page_title = '';
-$meta_lines = '<meta name="description" content="Finzor Core Banking Services refers to the suite of services and solutions offered by Finzor to financial institutions.">';
+$page_title = 'Finzor-Innovative Fintech Solutions for Seamless Payment Processing';
+$meta_lines = '<meta name="description" content="Finzor Payments offers cutting-edge fintech solutions for secure, fast, and seamless payment processing, empowering businesses to streamline transactions and enhance customer experiences.">';
 // to include page specific CSS
 
 $pageStyles = '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.9/codemirror.min.css">' . "\n";
@@ -393,7 +393,7 @@ include_once('partials/header.php'); //should be last after all variables
                             </h3>
                         </div>
                         <div class="fz_bank">Transforming Data into Actionable Insights for Smarter, Data-Driven Decisions</div>
-                        <div class="fz_desc">Fueling Business Growth with Smart, Scalable Payment ToolsFINZOR’s Data & Analytics solutions empower businesses to transform data into actionable insights. With advanced analytics, real-time reporting, and predictive tools, we help optimize performance, identify trends, and drive informed decision-making. Our solutions enable businesses to unlock new opportunities and stay ahead in a data-driven world.</div>
+                        <div class="fz_desc">Connected banking revolutionizes financial services by integrating diverse platforms, services, and third-party applications. Leveraging advanced APIs, cloud technology, and data analytics, Finzor enables seamless interaction across various financial products, offering a unified experience. Consumers and businesses can access services like payments, transfers, loans, investments, and more, all through one interface or interconnected apps.</div>
                         <div class="fz_btn">
                             <a href="./connected-banking.php" class="buttons">
                                 <span class="text">Learn more</span>
@@ -423,8 +423,8 @@ include_once('partials/header.php'); //should be last after all variables
                                 <div class="fz_title">FinZShield</div>
                             </h3>
                         </div>
-                        <div class="fz_bank">Transforming Data into Actionable Insights for Smarter, Data-Driven Decisions</div>
-                        <div class="fz_desc">Fueling Business Growth with Smart, Scalable Payment ToolsFINZOR’s Data & Analytics solutions empower businesses to transform data into actionable insights. With advanced analytics, real-time reporting, and predictive tools, we help optimize performance, identify trends, and drive informed decision-making. Our solutions enable businesses to unlock new opportunities and stay ahead in a data-driven world.</div>
+                        <div class="fz_bank">AI-Powered Fraud and Risk Management at Finzor</div>
+                        <div class="fz_desc">Finzor leverages AI-driven innovations to enhance fraud detection and risk management, ensuring secure and intelligent financial operations. Our real-time fraud detection systems utilize behavioral biometrics, NLP for scam detection, and deep learning to identify anomalies and prevent fraudulent activities.</div>
                         <div class="fz_btn">
                             <a href="./fraud-and-risk-management.php" class="buttons">
                                 <span class="text">Learn more</span>

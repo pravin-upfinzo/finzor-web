@@ -1,6 +1,6 @@
 <?php
-$page_title = 'Neo banking';
-$meta_lines = '<meta name="description" content="">';
+$page_title = 'NeoPulse:- No Fees, No Hassle – Experience True Neo Banking';
+$meta_lines = '<meta name="description" content="Say goodbye to traditional banking! NeoPulse offers a 100% online, secure, and fee-free way to manage your finances. Get started in just minutes!">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";

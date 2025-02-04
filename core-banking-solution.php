@@ -1,6 +1,6 @@
 <?php
-$page_title = 'Core Banking Solution';
-$meta_lines = '<meta name="description" content="">';
+$page_title = 'Empower Your Bank with CoreNexus Advanced Core Banking Solutions';
+$meta_lines = '<meta name="description" content="Revolutionize your banking infrastructure with CoreNexus core banking solutions. Our secure and flexible platform helps streamline operations and accelerate growth">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";

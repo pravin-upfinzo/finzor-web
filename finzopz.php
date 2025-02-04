@@ -1,6 +1,6 @@
 <?php
-$page_title = 'FinzOpZ';
-$meta_lines = '<meta name="description" content="">';
+$page_title = 'The FinzOpZ 360 is Ultimate Business Engine';
+$meta_lines = '<meta name="description" content="FinzOpZ 360 is end-to-end description suite refers to a comprehensive set of documentation that describes every aspect of a product, system, or process from start to finish">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";

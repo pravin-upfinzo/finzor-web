@@ -1,6 +1,6 @@
 <?php
-$page_title = 'FinlyticZ';
-$meta_lines = '<meta name="description" content="">';
+$page_title = 'FinlyticZ is Accelerate Success with Data-Driven Strategies and Advanced Analytics';
+$meta_lines = '<meta name="description" content="Revolutionize your business with data-driven strategies that streamline processes, improve decision-making, and unlock hidden opportunities to FinlyticZ">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";

@@ -1,6 +1,6 @@
 <?php
-$page_title = 'UPI';
-$meta_lines = '<meta name="description" content="">';
+$page_title = 'PayUnity:- Make Instant Payments with UPI – No Bank Details Needed';
+$meta_lines = '<meta name="description" content="Enjoy seamless digital transactions with UPI. Link your bank account, pay securely, and transfer money with just a tap!">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";

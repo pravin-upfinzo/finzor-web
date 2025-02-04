@@ -1,6 +1,6 @@
 <?php
-$page_title = 'Investment Management';
-$meta_lines = '<meta name="description" content="">';
+$page_title = 'FinInvezt is Strategies for Growth and Stability';
+$meta_lines = '<meta name="description" content="Achieve your financial goals with our comprehensive investment management services, tailored to your needs to FinInvezt">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";
