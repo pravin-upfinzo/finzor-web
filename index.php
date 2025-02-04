@@ -388,8 +388,8 @@ include_once('partials/header.php'); //should be last after all variables
                         <div class="fz_title_content">
                             <div class="fz_subtitle">Connected Banking </div>
                             <h3>
-                                <div id="finlyticz-icon" class="product-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-                                <div class="fz_title">NexPulse</div>
+                                <div style="padding:12px" id="nexpulse-icon" class="product-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
+                                <div class="fz_title">Finbridge</div>
                             </h3>
                         </div>
                         <div class="fz_bank">Transforming Data into Actionable Insights for Smarter, Data-Driven Decisions</div>
@@ -419,8 +419,8 @@ include_once('partials/header.php'); //should be last after all variables
                         <div class="fz_title_content">
                             <div class="fz_subtitle">Fraud and Risk Management</div>
                             <h3>
-                                <div id="finlyticz-icon" class="product-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-                                <div class="fz_title">FinZShield</div>
+                                <div style="padding:14px" id="finzshield-icon" class="product-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
+                                <div class="fz_title">FinVigil</div>
                             </h3>
                         </div>
                         <div class="fz_bank">AI-Powered Fraud and Risk Management at Finzor</div>
