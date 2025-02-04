@@ -395,11 +395,8 @@ body {
 .fz_ai_enhance_sec{
   padding: 100px 0px;
   @media (max-width:1024px) {
-      padding: 60px 0px;
+      padding: 30px 0px;
      }
-  @media (max-width: 991px) {
-      padding: 60px 0px;
-  }
   .col-lg-5 {
     display: flex;
     align-items: center;
@@ -517,6 +514,9 @@ body {
       display: flex;
       align-items: center;
       padding-left: 80px;
+      @media screen and (min-width: 992px) and (max-width: 1199px) {
+       align-items: start;
+  }
       &.left-space{
         padding-right: 80px;
         padding-left: 0px;
@@ -527,7 +527,7 @@ body {
       }
 
       @media screen and (max-width: 991px) {
-             padding:0;
+             padding:20px;
       }
   }
   .fz_enhance_img_col{
