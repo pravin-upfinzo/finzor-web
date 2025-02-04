@@ -240,9 +240,6 @@ header {
               }
             }
             > a{
-              @media screen and (max-width: 991px) {
-                pointer-events: none;
-              }
               &:hover {
                 position: relative;
                 &:after {
@@ -269,6 +266,13 @@ header {
                 &:after {
                   border-width: 0;
                 }
+              }
+            }
+          }
+          > li{
+            > a{
+              @media screen and (max-width: 991px) {
+                pointer-events: none;
               }
             }
           }

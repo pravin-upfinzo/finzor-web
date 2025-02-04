@@ -1060,4 +1060,22 @@ document.addEventListener("DOMContentLoaded", function () {
       path: './assets/json/product-5.json' // Path to the Lottie JSON file
     });
   });
+  document.querySelectorAll('.nexpulse-product').forEach((container) => {
+    lottie.loadAnimation({
+      container: container, // HTML container for the animation
+      renderer: 'svg',      // Render as SVG
+      loop: true,           // Animation will loop continuously
+      autoplay: true,       // Animation will play automatically
+      path: './assets/json/product-6.json' // Path to the Lottie JSON file
+    });
+  });
+  document.querySelectorAll('.finzshield-product').forEach((container) => {
+    lottie.loadAnimation({
+      container: container, // HTML container for the animation
+      renderer: 'svg',      // Render as SVG
+      loop: true,           // Animation will loop continuously
+      autoplay: true,       // Animation will play automatically
+      path: './assets/json/product-7.json' // Path to the Lottie JSON file
+    });
+  });
 });
