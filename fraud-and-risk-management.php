@@ -413,7 +413,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="item">
                 <div class="fz_product-content">
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
-                    <h3>EaseMerchant</h3>
+                    <h3>FinZro</h3>
                     <p>Effortless merchant onboarding with automated workflows.</p>
                     <a class="cmn-btn" href="./finzro.php">
                         <span class="text"> View Product</span>
@@ -427,7 +427,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="item">
                 <div class="fz_product-content">
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
-                    <h3>DataVista</h3>
+                    <h3>FinlyticZ</h3>
                     <p>Unlock insights to drive smarter business decisions.</p>
                     <a class="cmn-btn" href="./finlyticz.php">
                         <span class="text"> View Product</span>
