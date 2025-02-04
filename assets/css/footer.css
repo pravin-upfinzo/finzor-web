@@ -198,6 +198,12 @@
 @media screen and (max-width: 991px) {
   .footer_section .fz_footer_container .subscribe .subscribe-form {
     margin: 0;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer_section .fz_footer_container .subscribe .subscribe-form {
+    width: 100%;
   }
 }
 .footer_section .fz_footer_container .subscribe .subscribe-form input {
