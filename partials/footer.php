@@ -68,7 +68,7 @@
               </div>
             </div>
               <div class="links-group subscribe">
-                <p>Stay updated by Subscribe</p>
+                <p>Stay updated by Subscribing</p>
                 <form class="subscribe-form" id="subscribe-form">
                   <input type="email" placeholder="Enter your email ID" name="subscribe_email" class="subscribe_email">
                   <div class="footer_arrow" role="button">
