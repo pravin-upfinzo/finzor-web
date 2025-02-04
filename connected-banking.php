@@ -1,6 +1,6 @@
 <?php
-$page_title = 'Maximizing Efficiency with Connected Banking Solutions for Today’s Digital Economy to NexPulse';
-$meta_lines = '<meta name="description" content="Connected banking is at the forefront of digital transformation, delivering innovative solutions that boost efficiency, streamline operations, and align with the latest fintech trends at NexPulse ">';
+$page_title = 'Maximizing Efficiency with Connected Banking Solutions for Today’s Digital Economy to Finbridge';
+$meta_lines = '<meta name="description" content="Connected banking is at the forefront of digital transformation, delivering innovative solutions that boost efficiency, streamline operations, and align with the latest fintech trends at Finbridge ">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";

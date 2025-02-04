@@ -177,7 +177,7 @@
                                             </svg>
                                         </div>
                                         <div class="fz_text">
-                                            <h3>FinzOpZ 360</h3>
+                                            <h3>FinzOpZ 360°</h3>
                                             <p>End to End Operational Suite</p>
                                         </div>
                                         </div>

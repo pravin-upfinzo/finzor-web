@@ -1151,7 +1151,7 @@ include_once('partials/header.php'); //should be last after all variables
           </div>
         </section> -->
 <!-- FAQ -->
-<section class="faq_section">
+<section class="faq_section" id="faq_part">
     <div class="container">
         <div class="row align-items-lg-start">
             <div class="col-lg-6">

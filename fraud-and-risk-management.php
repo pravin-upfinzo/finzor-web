@@ -1,6 +1,6 @@
 <?php
-$page_title = 'FinZShield: Optimize Fraud Protection with AI-Powered Risk Management Solutions';
-$meta_lines = '<meta name="description" content="FinZShield’s AI-powered fraud detection and risk management solutions help businesses stay secure. Detect threats in real-time, reduce fraud, and ensure operational safety with smart technology">';
+$page_title = 'FinVigil: Optimize Fraud Protection with AI-Powered Risk Management Solutions';
+$meta_lines = '<meta name="description" content="FinVigil AI-powered fraud detection and risk management solutions help businesses stay secure. Detect threats in real-time, reduce fraud, and ensure operational safety with smart technology">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";
