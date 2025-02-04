@@ -47,8 +47,8 @@
                   <li><a href="./finzopz.php">FinzOpZ</a></li>
                   <li><a href="./finzro.php">FinZro</a></li>
                   <li><a href="./finlyticz.php">FinlyticZ</a></li>
-                  <li><a href="./connected-banking.php">NexPulse</a></li>
-                  <li><a href="./fraud-and-risk-management.php">FinZShield</a></li>
+                  <li><a href="./connected-banking.php">Zpulse</a></li>
+                  <li><a href="./fraud-and-risk-management.php">Zsafe</a></li>
                 </ul>
               </div>
               <div class="links-group">
