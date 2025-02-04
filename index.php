@@ -377,6 +377,68 @@ include_once('partials/header.php'); //should be last after all variables
                     </div>
                 </div>
             </div>
+            <div class="fz_product_panel hash_tag_con item-5">
+                <div class="fz_sub_container">
+                    <div class="fz_content">
+                        <div class="fz_num">
+                            <div class="hash_content">
+                            </div>
+                            <h2>06</h2>
+                        </div>
+                        <div class="fz_title_content">
+                            <div class="fz_subtitle">Connected Banking </div>
+                            <h3>
+                                <div id="finlyticz-icon" class="product-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
+                                <div class="fz_title">NexPulse</div>
+                            </h3>
+                        </div>
+                        <div class="fz_bank">Transforming Data into Actionable Insights for Smarter, Data-Driven Decisions</div>
+                        <div class="fz_desc">Fueling Business Growth with Smart, Scalable Payment ToolsFINZOR’s Data & Analytics solutions empower businesses to transform data into actionable insights. With advanced analytics, real-time reporting, and predictive tools, we help optimize performance, identify trends, and drive informed decision-making. Our solutions enable businesses to unlock new opportunities and stay ahead in a data-driven world.</div>
+                        <div class="fz_btn">
+                            <a href="./connected-banking.php" class="buttons">
+                                <span class="text">Learn more</span>
+                                <div class="icon">
+                                    <img src="./assets/images/fz_button_arrow.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="fz_img">
+                        <div class="finlyticz-product"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="fz_product_panel hash_tag_con item-5">
+                <div class="fz_sub_container">
+                    <div class="fz_content">
+                        <div class="fz_num">
+                            <div class="hash_content">
+                            </div>
+                            <h2>07</h2>
+                        </div>
+                        <div class="fz_title_content">
+                            <div class="fz_subtitle">Fraud and Risk Management</div>
+                            <h3>
+                                <div id="finlyticz-icon" class="product-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
+                                <div class="fz_title">FinZShield</div>
+                            </h3>
+                        </div>
+                        <div class="fz_bank">Transforming Data into Actionable Insights for Smarter, Data-Driven Decisions</div>
+                        <div class="fz_desc">Fueling Business Growth with Smart, Scalable Payment ToolsFINZOR’s Data & Analytics solutions empower businesses to transform data into actionable insights. With advanced analytics, real-time reporting, and predictive tools, we help optimize performance, identify trends, and drive informed decision-making. Our solutions enable businesses to unlock new opportunities and stay ahead in a data-driven world.</div>
+                        <div class="fz_btn">
+                            <a href="./fraud-and-risk-management.php" class="buttons">
+                                <span class="text">Learn more</span>
+                                <div class="icon">
+                                    <img src="./assets/images/fz_button_arrow.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="fz_img">
+                        <div class="finlyticz-product"></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="fz_product_right">
             <div class="fz_product_images">
@@ -391,6 +453,12 @@ include_once('partials/header.php'); //should be last after all variables
                 </div>
                 <div class="fz_product_image">
                     <div class="finzro-product"></div>
+                </div>
+                <div class="fz_product_image">
+                    <div class="finlyticz-product"></div>
+                </div>
+                <div class="fz_product_image">
+                    <div class="finlyticz-product"></div>
                 </div>
                 <div class="fz_product_image">
                     <div class="finlyticz-product"></div>
@@ -916,14 +984,14 @@ include_once('partials/header.php'); //should be last after all variables
                     end-to-end encryption and multi-factor authentication, it ensures your data is protected. Powered by AI and
                     ML, it empowers leaders to monitor, manage, and strategize seamlessly.</p>
                 <div class="fz_btn">
-                <a href="core-banking-solution.php">
+                <!-- <a href="core-banking-solution.php">
                     <button class="fz_learmore active_btn">
                         <span class="text">Learn more</span>
                         <div class="icon">
                             <img src="./assets/images/fz_button_arrow.svg" alt="">
                         </div>
                     </button>
-                </a>
+                </a> -->
 
                 <a href="contact-us.php">
                     <button class="fz_learmore_btn">

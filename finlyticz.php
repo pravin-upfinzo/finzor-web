@@ -41,42 +41,6 @@ include_once('partials/header.php'); //should be last after all variables
     </div>
 </section>
 
-<!-- product_hero_section -->
-<section id="fin_bankz_sec" class="fin_bankz finbankz_bg_1">
-    <div class="container">
-        <div class="fin_bankz">
-            <div class="fin_bankz_content finbank_content border-0">
-                <div class="fin_bankz_title">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M8.04814 8.69861L7.16902 10.1659C7.16902 10.1659 7.16746 10.1685 7.16668 10.1695C7.15993 10.1811 7.15344 10.1926 7.14617 10.2041C6.93119 10.5518 6.54875 10.7839 6.11257 10.7839H3.01046L1.66867 13.0234L1.64634 13.0609C1.30336 13.6173 0.695041 13.9903 0 14L3.17559 8.69887L8.04814 8.69861Z"
-                            fill="#E4F1F2" />
-                        <path
-                            d="M8.5627 7.83958L8.18831 8.46463H3.31575L3.46063 8.22257L3.47621 8.19664C3.60914 7.98235 3.84567 7.83984 4.11491 7.83984L8.5627 7.83958Z"
-                            fill="#E4F1F2" />
-                        <path
-                            d="M11.7874 2.45719L9.49301 6.2866C9.48678 6.29708 9.48081 6.30782 9.47432 6.3183C9.26012 6.66933 8.8756 6.90353 8.43682 6.90353H4.25074L5.98873 4.00278C6.5485 3.07595 7.55952 2.45719 8.71359 2.45719H11.7874Z"
-                            fill="#E4F1F2" />
-                        <path
-                            d="M13.2595 0L13.2484 0.0185995C12.6837 0.921332 11.6861 1.52123 10.5497 1.52123H8.19043C7.04129 1.52123 6.03391 2.13476 5.47284 3.05504L0.842263 10.7838V8.38132C0.845379 8.00749 0.95079 7.65803 1.13176 7.36018L1.13461 7.35546L4.02512 2.53059C4.92709 1.01459 6.57239 0 8.4524 0H13.2595Z"
-                            fill="#E4F1F2" />
-                    </svg>
-
-                    Data Analytics
-                </div>
-                <h3 class="fin_bankz_subtitle">DataVista</h3>
-                <div class="fin_bankz_bank">
-                </div>
-                <p class="fin_bankz_desc">Use our data analytics to empower businesses with real-time insights. Finzor’s analytics tools help segment customers, identify market trends, and optimize financial strategies. Our risk analytics and credit scoring enable smarter decision-making for financial institutions.</p>
-                <p class="fin_bankz_desc">Finzor’s data analytics solutions improve operational efficiency through predictive modeling. With AI-driven insights, we enhance fraud detection and financial forecasting. Our cloud-based platform ensures accessibility, allowing businesses to leverage data-driven strategies.</p>
-            </div>
-            <div class="fin_bankz_img">
-                <div class="finbankz-product3"></div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Cloud Based Solutions -->
 <section class="fz_ai_enhance_sec cbs_sec">
     <div class="container">
@@ -110,7 +74,7 @@ include_once('partials/header.php'); //should be last after all variables
 <section id="fz_product_list_feature">
     <div class="container">
         <div class="product_list_feature_head">
-            <h3>DataVista</h3>
+            <h3>FinlyticZ</h3>
             <h4>Features</h4>
         </div>
         <div class="product_list_feature_cards spotlight-effect">
@@ -409,7 +373,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="item">
                 <div class="fz_product-content">
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
-                    <h3>ReconSphere</h3>
+                    <h3>FinzRec</h3>
                     <p>Automated reconciliation for accuracy and time savings.</p>
                     <a class="cmn-btn" href="./reconciliation.php">
                         <span class="text"> View Product</span>
@@ -423,7 +387,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="item">
                 <div class="fz_product-content">
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
-                    <h3>EaseMerchant</h3>
+                    <h3>FinZro</h3>
                     <p>Effortless merchant onboarding with automated workflows.</p>
                     <a class="cmn-btn" href="./finzro.php">
                         <span class="text"> View Product</span>
@@ -437,7 +401,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="item">
                 <div class="fz_product-content">
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
-                    <h3>DataVista</h3>
+                    <h3>FinlyticZ</h3>
                     <p>Unlock insights to drive smarter business decisions.</p>
                     <a class="cmn-btn" href="./finlyticz.php">
                         <span class="text"> View Product</span>

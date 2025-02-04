@@ -42,11 +42,13 @@
               <div class="links-group">
                 <h4>PRODUCTS</h4>
                 <ul>
-                  <li><a href="finbankz.php">FinbankZ</a></li>
-                  <li><a href="upizor.php">UPIZor</a></li>
-                  <li><a href="finzopz.php">FinzOpZ</a></li>
-                  <li><a href="finzro.php">FinZro</a></li>
-                  <li><a href="finlyticz.php">FinlyticZ</a></li>
+                  <li><a href="./finbankz.php">FinbankZ</a></li>
+                  <li><a href="./upizor.php">UPIZor</a></li>
+                  <li><a href="./finzopz.php">FinzOpZ</a></li>
+                  <li><a href="./finzro.php">FinZro</a></li>
+                  <li><a href="./finlyticz.php">FinlyticZ</a></li>
+                  <li><a href="./connected-banking.php">Zpulse</a></li>
+                  <li><a href="./fraud-and-risk-management.php">Zsafe</a></li>
                 </ul>
               </div>
               <div class="links-group">

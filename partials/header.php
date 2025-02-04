@@ -197,7 +197,7 @@
                                         </li>
                                         <li>
                                         <a href="./reconciliation.php">
-                                            <h3>ReconSphere</h3>
+                                            <h3>FinzRec</h3>
                                             <p>Reconciliation</p>
                                         </a>
                                         </li>
@@ -251,7 +251,7 @@
                                         </svg>
                                         </div>
                                         <div class="fz_text">
-                                            <h3>NexPulse</h3>
+                                            <h3>Zpulse</h3>
                                             <p>Connected Banking</p>
                                         </div>
                                         </div>
