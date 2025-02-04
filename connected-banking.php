@@ -1,5 +1,5 @@
 <?php
-$page_title = 'NexPulse';
+$page_title = 'Zpulse';
 $meta_lines = '<meta name="description" content="">';
 
 // to include page specific CSS
@@ -23,7 +23,7 @@ include_once('partials/header.php'); //should be last after all variables
     <canvas class="hero_sec_dot" id="hero_sec_dot"></canvas>
     <div class="container">
         <div class="product_list_hero">
-            <h2 class="product_list_hero_title"> Connecting technology and finance seamlessly from <span>NexPulse</span></h2>
+            <h2 class="product_list_hero_title"> Connecting technology and finance seamlessly from <span>Zpulse</span></h2>
             <a class="cmn-btn" href="contact-us.php">
                 <span class="text"> Let's connect</span>
                 <div class="icon">
@@ -76,7 +76,7 @@ include_once('partials/header.php'); //should be last after all variables
 <section id="fz_product_list_feature">
     <div class="container">
         <div class="product_list_feature_head">
-            <h3>NexPulse</h3>
+            <h3>Zpulse</h3>
             <h4>Features</h4>
         </div>
         <div class="product_list_feature_cards spotlight-effect">
