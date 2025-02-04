@@ -404,7 +404,7 @@ include_once('partials/header.php'); //should be last after all variables
                         </div>
                     </div>
                     <div class="fz_img">
-                        <div class="finlyticz-product"></div>
+                        <div class="nexpulse-product"></div>
                     </div>
                 </div>
             </div>
@@ -435,7 +435,7 @@ include_once('partials/header.php'); //should be last after all variables
                         </div>
                     </div>
                     <div class="fz_img">
-                        <div class="finlyticz-product"></div>
+                        <div class="finzshield-product"></div>
                     </div>
                 </div>
             </div>
@@ -458,10 +458,10 @@ include_once('partials/header.php'); //should be last after all variables
                     <div class="finlyticz-product"></div>
                 </div>
                 <div class="fz_product_image">
-                    <div class="finlyticz-product"></div>
+                    <div class="nexpulse-product"></div>
                 </div>
                 <div class="fz_product_image">
-                    <div class="finlyticz-product"></div>
+                    <div class="finzshield-product"></div>
                 </div>
             </div>
         </div>
