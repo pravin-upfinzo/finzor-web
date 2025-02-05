@@ -1265,6 +1265,10 @@ section {
 }
 #fin_bankz_sec .fin_bankz .fin_bankz_img {
   position: relative;
+  text-align: center;
+}
+#fin_bankz_sec .fin_bankz .fin_bankz_img svg {
+  width: 80% !important;
 }
 @media screen and (max-width: 991px) {
   #fin_bankz_sec .fin_bankz .fin_bankz_img {

@@ -941,6 +941,10 @@ body {
           }
           .fin_bankz_img {
             position: relative;
+            text-align: center;
+            svg{
+              width: 80% !important;
+            }
             @media screen and (max-width: 991px) {
               width:70%;
               margin: 20px auto;
