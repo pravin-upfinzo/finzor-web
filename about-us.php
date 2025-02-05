@@ -328,8 +328,7 @@ include_once('partials/header.php'); //should be last after all variables
                     <div class="container">
                         <div class="about_us_heading">
                         <h3 class="fade-up">We help every company become a fintech expert</h3>
-                            <p class="fade-up">Empowering Banks with Scalable So ware as a Service (SaaS) SoluAons for Banking,
-                            Payments, and Fintech InnovaAon.</p>
+                            <p class="fade-up">Empowering Banks with Scalable Software as a Service (SaaS) Solutions for Banking, Payments, and Fintech Innovation.</p>
                             <div class="about_us_banner_img">
                                 <img src="./assets/images/about.png" alt="about_bg">
                             </div>
@@ -360,7 +359,7 @@ include_once('partials/header.php'); //should be last after all variables
                                     </svg></span>
                                     <h4 class="fade-up">Impact</h4>
                                 </div>
-                                <p class="fade-up">We are here to enhance financial inclusion by unlocking access to a comprehensive suite of essential financial services for thriving enterprise businesses across Southeast Asia.</p>
+                                <p class="fade-up">We aim to empower enterprise businesses by unlocking access to a comprehensive suite of essential financial services, fostering greater financial inclusion.</p>
                             </div>
                         </div>
                     </div>
@@ -380,7 +379,7 @@ include_once('partials/header.php'); //should be last after all variables
                                     </svg></span>
                                     <h4 class="fade-up">Ownership</h4>
                                 </div>
-                                <p class="fade-up">It is a privilege for us to be a change maker in the fintech ecosystem, working alongside financial institutions with wide coverage and tech companies.</p>
+                                <p class="fade-up">With a strong sense of ownership, we are dedicated to responsibly shaping the future of financial services for businesses of all sizes.</p>
                             </div>
                         </div>
                     </div>
@@ -394,7 +393,7 @@ include_once('partials/header.php'); //should be last after all variables
                                     </svg></span>
                                     <h4 class="fade-up">Customer Centric</h4>
                                 </div>
-                                <p class="fade-up">We care about people, from our partners and clients to their end-users. We constantly focus on bringing value to the people we touch.</p>
+                                <p class="fade-up">Our commitment extends to everyone we work with, from partners and clients to their end-users, always striving to create lasting value at every touchpoint.</p>
                             </div>
                         </div>
                     </div>

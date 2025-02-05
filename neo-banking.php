@@ -95,14 +95,14 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="product_list_feature_card fade-right">
                 <div class="product_list_feature_cont">
                     <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4>Real-Time Data Insights</h4>
+                    <h4>Next-Gen Authentication & Fraud Prevention</h4>
                     <p>Employs advanced security measures to protect against unauthorized access and fraudulent activities</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-up">
                 <div class="product_list_feature_cont">
                     <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4>Fraud Prevention </h4>
+                    <h4>Real-Time Data Insights </h4>
                     <p>Provides users with up-to-date information on their financial activities, aiding in better financial management</p>
                 </div>
             </div>
