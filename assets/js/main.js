@@ -918,6 +918,20 @@ document.addEventListener("DOMContentLoaded", function () {
     path: './assets/json/finlyticz-icon.json' // Path to the Lottie JSON file
   });
   lottie.loadAnimation({
+    container: document.getElementById('nexpulse-icon'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/nexpulse-icon.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
+    container: document.getElementById('finzshield-icon'), // HTML container for the animation
+    renderer: 'svg',      // Render as SVG
+    loop: true,           // Animation will loop continuously
+    autoplay: true,       // Animation will play automatically
+    path: './assets/json/finzshield-icon.json' // Path to the Lottie JSON file
+  });
+  lottie.loadAnimation({
     container: document.getElementById('feature-core1-icon'), // HTML container for the animation
     renderer: 'svg',      // Render as SVG
     loop: true,           // Animation will loop continuously
@@ -1058,6 +1072,24 @@ document.addEventListener("DOMContentLoaded", function () {
       loop: true,           // Animation will loop continuously
       autoplay: true,       // Animation will play automatically
       path: './assets/json/product-5.json' // Path to the Lottie JSON file
+    });
+  });
+  document.querySelectorAll('.nexpulse-product').forEach((container) => {
+    lottie.loadAnimation({
+      container: container, // HTML container for the animation
+      renderer: 'svg',      // Render as SVG
+      loop: true,           // Animation will loop continuously
+      autoplay: true,       // Animation will play automatically
+      path: './assets/json/product-6.json' // Path to the Lottie JSON file
+    });
+  });
+  document.querySelectorAll('.finzshield-product').forEach((container) => {
+    lottie.loadAnimation({
+      container: container, // HTML container for the animation
+      renderer: 'svg',      // Render as SVG
+      loop: true,           // Animation will loop continuously
+      autoplay: true,       // Animation will play automatically
+      path: './assets/json/product-7.json' // Path to the Lottie JSON file
     });
   });
 });

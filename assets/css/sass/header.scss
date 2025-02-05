@@ -155,9 +155,13 @@ header {
             width:100%;
             transform: scaleX(0);
             transition: transform 500ms ease-in-out;
+            position: absolute;
+            bottom: -2px;
+            left: 0px;
             @media screen and (max-width: 991px) {
               border-bottom: none;
               transform: scale(none);
+              position: relative;
          }
           }
           &:hover {
@@ -165,6 +169,15 @@ header {
             &:after {
               transform: scaleX(1);
             }
+          }
+          &.active {
+            color: $secondary-color;
+            border-bottom: 2px solid transparent;
+            border-image: linear-gradient(0.25turn, rgba(0, 0, 0, 0), rgba(0, 178, 177, 1), rgba(0, 0, 0, 0));
+            border-image-slice: 1;
+            @media screen and (max-width: 991px) {
+              border-bottom: none;
+          }
           }
         }
         // @media (min-width: 992px) and (max-width: 1051px) {
@@ -200,6 +213,10 @@ header {
               transition: all 0.5s ease;
               &:hover {
                 background: rgba(0, 75, 75, 0.5);
+                .fz_header_svg {
+                  background: #04a5a7;
+                  border: 1px solid transparent;
+                }
                 .fz_text {
                   h3 {
                     color: #04a5a7;
@@ -240,9 +257,6 @@ header {
               }
             }
             > a{
-              @media screen and (max-width: 991px) {
-                pointer-events: none;
-              }
               &:hover {
                 position: relative;
                 &:after {
@@ -262,6 +276,20 @@ header {
                     border-width:unset;
                   }
                 }
+              }
+            }
+            &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8) {
+              > a {
+                &:after {
+                  border-width: 0;
+                }
+              }
+            }
+          }
+          > li{
+            > a{
+              @media screen and (max-width: 991px) {
+                pointer-events: none;
               }
             }
           }
@@ -292,7 +320,7 @@ header {
               }
               p {
                 font-size: 12px;margin: 0;
-                color: #DDDEDD;
+                color: #8d8d8d;
               }
             }
           }
@@ -310,8 +338,10 @@ header {
             width: 100%;
             display: flex;
             flex-direction: column;
+            border-left: 1px solid transparent;
             &:hover {
               background: rgba(0, 75, 75, 0.5);
+              border-left: 1px solid rgba(1, 251, 251, 0.202);
             }
             &:after {
               border-width: unset !important;
@@ -324,7 +354,7 @@ header {
               transition: all 0.5s ease;
             }
             p {
-              font-size: 12px;margin: 0;color: #DDDEDD;
+              font-size: 12px;margin: 0;color: #8d8d8d;
             }
           }
         }

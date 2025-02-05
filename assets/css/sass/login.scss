@@ -1,115 +1,121 @@
 @import "./variable.scss";
+
+@mixin border-focus{
+    --border-angle: 0turn;
+  --main-bg: conic-gradient(
+      from var(--border-angle),
+      #1A2C2A 0%,  
+      #1A2C2A 100%
+      );
+  border: solid 1px transparent;
+    --main-bg: conic-gradient(from var(--border-angle), #000 0%, rgb(0, 0, 0) 100%);
+    --gradient-border: conic-gradient(from var(--border-angle), transparent 10%, #05311d, #3EAB90 49%, transparent);
+    background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+    animation: bg-spin 2s linear infinite;
+    @keyframes bg-spin {
+        to {
+        --border-angle: 1turn;
+        }
+    }
+}
+
 .container-login {
     padding-top:120px; 
- }
- .intro {
-     color: white;
-     justify-content: center;
-     text-align: center;
- }
- 
- .signup-container {
-     background: white;
-     padding: 48px;
-     border-radius: 10px;
-     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-     text-align: center;
-     width: 350px;
-     margin: 30px auto;
-     
- }
- 
- h3 {
-     margin-bottom: 10px;
-     color: #999;
-     font-size: 12px;
- }
- 
- .social-buttons {
-     display: flex;
-     justify-content: center;
-     margin-bottom: 15px;
- 
-     button {
-         width: 48%;
-         padding: 10px;
-         border: none;
-         border-radius: 5px;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         cursor: pointer;
-     }
- 
-     .google {
-         background: hsl(0, 0%, 96%);
-         color:rgb(109, 141, 217);
-     }
- 
-     img {
-         width: 16px;
-         margin-right: 5px;
-     }
- }
- 
- .divider {
-     margin: 10px 0;
-     font-size: 12px;
-     color:#999;
- }
- 
- .input-group {
-     display: flex;
-     align-items: center;
-     background: #f0f0f5;
-     padding: 10px;
-     border-radius: 5px;
-     margin-bottom: 10px;
- }
- 
- .icon {
-     margin-right: 10px;
- }
- 
- input {
-     border: none;
-     background: transparent;
-     outline: none;
-     font-size: 14px;
- }
- 
- .password-strength {
-     text-align: left;
-     font-size: 12px;
-     color: gray;
-     margin-bottom: 10px;
-     
-     .strong {
-         color: green;
-     }
- }
- 
- .checkbox-container {
-     display: flex;
-     align-items: center;
-     font-size: 12px;
-     color: #666;
-     margin-bottom: 15px;
-     justify-content: flex-start;
+
+    .intro {
+        color: white;
+        justify-content: center;
+        text-align: center;
+   
+        h2{
+           font-size: 30px;
+           color: #949894;
+           width: 50%;
+          text-align: left;
+          margin: 0 auto;
+           
+           @media screen and (max-width: 991px) {
+            font-size: 20px;
+            width: 100%;
+            text-align: center;
+         }
+        }
+    }
+
+    .signup-container {
+        background: white;
+        padding: 48px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 50%;
+        margin: 30px auto;
+        border: solid 1px transparent;
+        @include border-focus;                   
+   
+   
+                           h3{
+                               font-size: 30px;
+                               color: #3eab90;
+                               text-align: left;
+                           }
+                          
+                           .form-group {
+                            margin: 40px 0px;
+
+                            label {
+                                display: block;
+                                text-align: left;
+                                font-size: 16px;
+                                color: #34b195;
+                                font-weight: 400;
+                                margin-bottom: 5px;
+                                .icon svg{
+                                    width:25px;
+                                    margin-right: 5px;
+                                }
+                              
+                            }
+
+                            input {
+                                width: 100%;
+                                height: 48px;
+                                font-size: 14px;
+                                padding: 0px 16px;
+                                background-color: #000000;
+                                border: 1px solid #2D4949;
+                                border-radius: 5px;
+                                color: #fff;
+                                outline: none; 
+                            
+                                &:focus {
+                                    @include border-focus;
+                                }
+                            
+                            
+                            }
+                        }  
+
+                        .text {
+                            width: 100%;
+                            padding: 10px;
+                            border: none;
+                            border-radius: 5px;
+                            cursor: pointer;
+                        }
+
+                        @media screen and (max-width: 991px) {
+                            width:90%;
+                            margin: 30px 20px;
+                         }
+        
+    }
+    
  }
  
- .submit-btn {
-     width: 153px;
-     height: 43px;
-     padding: 10px;
-     background:  #4950da;
-     color: white;
-     border: none;
-     border-radius: 10px;
-     cursor: pointer;
-     font-size: 12px;
+
  
-     &:hover {
-         background: #3b42b0;
-     }
- }
+
+
+
+ 
