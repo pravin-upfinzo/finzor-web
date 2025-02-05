@@ -229,21 +229,14 @@ header .navbar-expand-lg .navbar-nav > li a.nav-link:hover:after {
   transform: scaleX(1);
 }
 header .navbar-expand-lg .navbar-nav > li a.nav-link.active {
-  font-weight: 400;
   color: #f7c35f;
-  position: relative;
-  display: block;
-  text-align: center;
   border-bottom: 2px solid transparent;
   border-image: linear-gradient(0.25turn, rgba(0, 0, 0, 0), rgb(0, 178, 177), rgba(0, 0, 0, 0));
   border-image-slice: 1;
-  width: 100%;
 }
 @media screen and (max-width: 991px) {
   header .navbar-expand-lg .navbar-nav > li a.nav-link.active {
     border-bottom: none;
-    transform: scale(none);
-    text-align: left;
   }
 }
 @media screen and (max-width: 991px) {
@@ -274,6 +267,10 @@ header .navbar-expand-lg .navbar-nav > li .inner-submenu li a, header .navbar-ex
 }
 header .navbar-expand-lg .navbar-nav > li .inner-submenu li a:hover, header .navbar-expand-lg .navbar-nav > li .submenu-wrapper li a:hover {
   background: rgba(0, 75, 75, 0.5);
+}
+header .navbar-expand-lg .navbar-nav > li .inner-submenu li a:hover .fz_header_svg, header .navbar-expand-lg .navbar-nav > li .submenu-wrapper li a:hover .fz_header_svg {
+  background: #04a5a7;
+  border: 1px solid transparent;
 }
 header .navbar-expand-lg .navbar-nav > li .inner-submenu li a:hover .fz_text h3, header .navbar-expand-lg .navbar-nav > li .submenu-wrapper li a:hover .fz_text h3 {
   color: #04a5a7;
@@ -309,10 +306,7 @@ header .navbar-expand-lg .navbar-nav > li .submenu a {
 header .navbar-expand-lg .navbar-nav > li .submenu li.active-submenu > a {
   background: rgba(0, 75, 75, 0.5);
 }
-header .navbar-expand-lg .navbar-nav > li .submenu li > a:hover {
-  position: relative;
-}
-header .navbar-expand-lg .navbar-nav > li .submenu li > a:hover:after {
+header .navbar-expand-lg .navbar-nav > li .submenu li > a:after {
   border-color: transparent transparent transparent rgba(62, 171, 144, 0.2);
   border-style: solid;
   border-width: 8px 0 8px 8px;
@@ -327,9 +321,12 @@ header .navbar-expand-lg .navbar-nav > li .submenu li > a:hover:after {
   transition: all 0.5s ease;
 }
 @media screen and (max-width: 991px) {
-  header .navbar-expand-lg .navbar-nav > li .submenu li > a:hover:after {
+  header .navbar-expand-lg .navbar-nav > li .submenu li > a:after {
     border-width: unset;
   }
+}
+header .navbar-expand-lg .navbar-nav > li .submenu li > a:hover {
+  position: relative;
 }
 header .navbar-expand-lg .navbar-nav > li .submenu li:nth-child(5) > a:after, header .navbar-expand-lg .navbar-nav > li .submenu li:nth-child(6) > a:after, header .navbar-expand-lg .navbar-nav > li .submenu li:nth-child(7) > a:after, header .navbar-expand-lg .navbar-nav > li .submenu li:nth-child(8) > a:after {
   border-width: 0;
@@ -369,7 +366,7 @@ header .navbar-expand-lg .navbar-nav > li .submenu .image-text .fz_text h3 {
 header .navbar-expand-lg .navbar-nav > li .submenu .image-text .fz_text p {
   font-size: 12px;
   margin: 0;
-  color: #DDDEDD;
+  color: #8d8d8d;
 }
 header .navbar-expand-lg .navbar-nav > li .inner-submenu {
   background: rgba(6, 54, 50, 0.1);
@@ -385,9 +382,11 @@ header .navbar-expand-lg .navbar-nav > li .inner-submenu a {
   width: 100%;
   display: flex;
   flex-direction: column;
+  border-left: 1px solid transparent;
 }
 header .navbar-expand-lg .navbar-nav > li .inner-submenu a:hover {
   background: rgba(0, 75, 75, 0.5);
+  border-left: 1px solid rgba(1, 251, 251, 0.202);
 }
 header .navbar-expand-lg .navbar-nav > li .inner-submenu a:after {
   border-width: unset !important;
@@ -402,7 +401,7 @@ header .navbar-expand-lg .navbar-nav > li .inner-submenu a h3 {
 header .navbar-expand-lg .navbar-nav > li .inner-submenu a p {
   font-size: 12px;
   margin: 0;
-  color: #DDDEDD;
+  color: #8d8d8d;
 }
 @media screen and (max-width: 991px) {
   header .fz_sigin {
