@@ -25,7 +25,7 @@ include_once('partials/header.php'); //should be last after all variables
     </div>
 </section>
 <!-- product_hero_section -->
-<section id="fin_bankz_sec" class="fin_bankz finbankz_bg" class="section_start" active-menu="list-menu-service">
+<section id="fin_bankz_sec" class="fin_bankz finbankz_bg section_start"  active-menu="list-menu-service" active-submenu="upizor">
     <div class="container">
         <div class="fin_bankz">
             <div class="fin_bankz_content finbank_content">
