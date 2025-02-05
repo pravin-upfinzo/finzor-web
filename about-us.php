@@ -408,7 +408,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="row">
                 <div class="col-lg-6">
                     <div class="about_us_images">
-                        <img src="assets/images/arrow.png" alt="" class="mission_img">
+                        <img src="assets/images/our_mission.png" alt="" class="mission_img">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -449,7 +449,7 @@ include_once('partials/header.php'); //should be last after all variables
                 </div>
                 <div class="col-lg-6 about_us_center_col">
                     <div class="about_us_images">
-                        <img src="assets/images/vision.png" alt="">
+                        <img src="assets/images/our_vision.png" alt="">
                     </div>
                 </div>
             </div>
@@ -458,7 +458,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="row">
                 <div class="col-lg-6">
                     <div class="about_us_images">
-                        <img src="assets/images/core values.png" alt="">
+                        <img src="assets/images/our_values.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6">
