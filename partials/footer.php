@@ -44,7 +44,7 @@
                 <ul>
                   <li><a href="./finbankz.php">FinbankZ</a></li>
                   <li><a href="./upizor.php">UPIZor</a></li>
-                  <li><a href="./finzopz.php">FinzOpZ 360°</a></li>
+                  <li><a href="./finopz.php">FinOpZ 360°</a></li>
                   <li><a href="./finzro.php">FinZro</a></li>
                   <li><a href="./finlyticz.php">FinlyticZ</a></li>
                   <li><a href="./connected-banking.php">Finbridge</a></li>

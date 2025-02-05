@@ -45,24 +45,24 @@ include_once('partials/header.php'); //should be last after all variables
 <section class="fz_ai_enhance_sec cbs_sec">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 fz_enhance_col">
+            <div class="col-lg-7 fz_enhance_col left-space">
                 <div class="fz_ai_enhance_text">
                     <h2>Personalized Financial Solutions                    </h2>
                     <p class="fz_enhance_para">Finzor leverages data to create personalized financial solutions, enabling businesses to offer bespoke investment advice, tailored insurance policies, and customized credit and loan options.</p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">AI-Driven Fraud Detection for Smarter Decisions </span>Enhance security with AI-powered fraud analytics and risk management.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">AI-Driven Fraud Detection for Smarter Decisions </span>enhance security with AI-powered fraud analytics and risk management.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Real-Time Insights for Data-Driven Strategies </span>Empower businesses with real-time analytics for improved decisions.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Real-Time Insights for Data-Driven Strategies </span>empower businesses with real-time analytics for improved decisions.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Cloud-Based Platform for Accessible Data </span>Leverage secure cloud access for seamless, real-time data use.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Cloud-Based Platform for Accessible Data </span>leverage secure cloud access for seamless, real-time data use.</p>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-6 fz_enhance_img_col">
+            <div class="col-lg-5 fz_enhance_img_col">
                 <div class="fz_ai_enhance_img zoom-in-cbs">
                     <img src="./assets/images/cbs_image.png" alt="CBS">
                 </div>
@@ -192,13 +192,13 @@ include_once('partials/header.php'); //should be last after all variables
                     <p class="fz_enhance_para">Finzor combines real-time fraud prevention with cost efficiency through data analytics. Our solutions analyze transactional patterns, instantly identify anomalies, and enhance trust and security. Additionally, we optimize operations by automating data analysis, streamlining workflows, improving resource management, and providing scalable solutions for growth.</p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Real-Time Fraud Detection</span> Analyze patterns and spot anomalies.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Real-Time Fraud Detection</span> analyze patterns and spot anomalies.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Enhanced Trust & Security</span> Safeguard transactions and user data.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Enhanced Trust & Security</span> safeguard transactions and user data.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Cost-Efficient Operations</span> Automate workflows and scale seamlessly.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Cost-Efficient Operations</span> automate workflows and scale seamlessly.</p>
                         </li>
                     </ul>
                 </div>
@@ -240,181 +240,7 @@ include_once('partials/header.php'); //should be last after all variables
     </div>
 </section>
 <!-- Product Range -->
-<section id="fz_product_range">
-    <div class="container">
-        <h2>Take a look at our range of products</h2>
-        <div class="owl-carousel" id="product-range">
-            <div class="item">
-                <div class="fz_product-content">
-                    <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px; margin: 0 auto;" />
-                    <h3>CoreNexus</h3>
-                    <p>Seamless, integrated solutions for smarter banking</p>
-                    <a class="cmn-btn" href="./core-banking-solution.php">
-                        <span class="text"> View Product</span>
-                        <div class="icon">
-                            <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
-                        </div>
-                    </a>
-                </div>
-                <img src="./assets/images/product-glow.svg" alt="iconglow" />
-            </div>
-            <div class="item">
-                <div class="fz_product-content">
-                    <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px; margin: 0 auto;" />
-                    <h3>MobfinZ</h3>
-                    <p> Bank securely and conveniently, anytime, anywhere.</p>
-                    <a class="cmn-btn" href="./mobile-banking.php">
-                        <span class="text"> View Product</span>
-                        <div class="icon">
-                            <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
-                        </div>
-                    </a>
-                </div>
-                <img src="./assets/images/product-glow.svg" alt="iconglow" />
-            </div>
-            <div class="item">
-                <div class="fz_product-content">
-                    <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px; margin: 0 auto;" />
-                    <h3>NeoPulse</h3>
-                    <p>Next-gen digital banking for a modern financial experience.</p>
-                    <a class="cmn-btn" href="./neo-banking.php">
-                        <span class="text"> View Product</span>
-                        <div class="icon">
-                            <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
-                        </div>
-                    </a>
-                </div>
-                <img src="./assets/images/product-glow.svg" alt="iconglow" />
-            </div>
-            <div class="item">
-                <div class="fz_product-content">
-                    <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px; margin: 0 auto;" />
-                    <h3>WebVault</h3>
-                    <p>Effortless and secure banking, on any device.</p>
-                    <a class="cmn-btn" href="./internet-banking.php">
-                        <span class="text"> View Product</span>
-                        <div class="icon">
-                            <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
-                        </div>
-                    </a>
-                </div>
-                <img src="./assets/images/product-glow.svg" alt="iconglow" />
-            </div>
-            <div class="item">
-                <div class="fz_product-content">
-                    <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
-                    <h3>PayUnity</h3>
-                    <p>Instant, secure payments made simple with UPI.</p>
-                    <a class="cmn-btn" href="./upi.php">
-                        <span class="text"> View Product</span>
-                        <div class="icon">
-                            <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
-                        </div>
-                    </a>
-                </div>
-                <img src="./assets/images/product-glow.svg" alt="iconglow" />
-            </div>
-            <div class="item">
-                <div class="fz_product-content">
-                    <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
-                    <h3>FinzSwitch</h3>
-                    <p>Streamline payments with secure UPI solutions.</p>
-                    <a class="cmn-btn" href="./upi-switch.php">
-                        <span class="text"> View Product</span>
-                        <div class="icon">
-                            <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
-                        </div>
-                    </a>
-                </div>
-                <img src="./assets/images/product-glow.svg" alt="iconglow" />
-            </div>
-            <div class="item">
-                <div class="fz_product-content">
-                    <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
-                    <h3>FlowGate</h3>
-                    <p>Secure and seamless payments for businesses.</p>
-                    <a class="cmn-btn" href="./payment-gateways.php">
-                        <span class="text"> View Product</span>
-                        <div class="icon">
-                            <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
-                        </div>
-                    </a>
-                </div>
-                <img src="./assets/images/product-glow.svg" alt="iconglow" />
-            </div>
-            <div class="item">
-                <div class="fz_product-content">
-                    <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
-                    <h3>FinInvezt</h3>
-                    <p>AI-driven insights for smarter investment strategies.</p>
-                    <a class="cmn-btn" href="./investment-management.php">
-                        <span class="text"> View Product</span>
-                        <div class="icon">
-                            <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
-                        </div>
-                    </a>
-                </div>
-                <img src="./assets/images/product-glow.svg" alt="iconglow" />
-            </div>
-            <div class="item">
-                <div class="fz_product-content">
-                    <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
-                    <h3>Finalease</h3>
-                    <p>Accelerate secure fund transfers and streamline operations.</p>
-                    <a class="cmn-btn" href="./settlements.php">
-                        <span class="text"> View Product</span>
-                        <div class="icon">
-                            <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
-                        </div>
-                    </a>
-                </div>
-                <img src="./assets/images/product-glow.svg" alt="iconglow" />
-            </div>
-            <div class="item">
-                <div class="fz_product-content">
-                    <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
-                    <h3>FinzRec</h3>
-                    <p>Automated reconciliation for accuracy and time savings.</p>
-                    <a class="cmn-btn" href="./reconciliation.php">
-                        <span class="text"> View Product</span>
-                        <div class="icon">
-                            <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
-                        </div>
-                    </a>
-                </div>
-                <img src="./assets/images/product-glow.svg" alt="iconglow" />
-            </div>
-            <div class="item">
-                <div class="fz_product-content">
-                    <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
-                    <h3>FinZro</h3>
-                    <p>Effortless merchant onboarding with automated workflows.</p>
-                    <a class="cmn-btn" href="./finzro.php">
-                        <span class="text"> View Product</span>
-                        <div class="icon">
-                            <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
-                        </div>
-                    </a>
-                </div>
-                <img src="./assets/images/product-glow.svg" alt="iconglow" />
-            </div>
-            <div class="item">
-                <div class="fz_product-content">
-                    <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
-                    <h3>FinlyticZ</h3>
-                    <p>Unlock insights to drive smarter business decisions.</p>
-                    <a class="cmn-btn" href="./finlyticz.php">
-                        <span class="text"> View Product</span>
-                        <div class="icon">
-                            <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
-                        </div>
-                    </a>
-                </div>
-                <img src="./assets/images/product-glow.svg" alt="iconglow" />
-            </div>
-        </div>
-    </div>
-</section>
+<?php include_once('partials/product_range.php'); ?>
 
 <!-- Include footer -->
 <?php include_once('partials/footer.php'); ?>
