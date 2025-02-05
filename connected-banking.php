@@ -128,7 +128,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="product_list_feature_card fade-up">
                 <div class="product_list_feature_cont">
                     <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4>Automated Reconciliationk</h4>
+                    <h4>Automated Reconciliation</h4>
                     <p>Automate reconciliation to reduce errors and save time.</p>
                 </div>
             </div>

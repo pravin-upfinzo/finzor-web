@@ -398,7 +398,7 @@ include_once('partials/header.php'); //should be last after all variables
                                 <div class="fz_title">Finbridge</div>
                             </h3>
                         </div>
-                        <div class="fz_bank">Transforming data into actionable insights for smarter, data-driven decisions</div>
+                        <div class="fz_bank">Leverage API-driven transactions to boost efficiency and scalability</div>
                         <div class="fz_desc">Connected banking revolutionizes financial services by integrating diverse platforms, services, and third-party applications. Leveraging advanced APIs, cloud technology, and data analytics, Finzor enables seamless interaction across various financial products, offering a unified experience. Consumers and businesses can access services like payments, transfers, loans, investments, and more, all through one interface or interconnected apps.</div>
                         <div class="fz_btn">
                             <a href="./connected-banking.php" class="buttons">
