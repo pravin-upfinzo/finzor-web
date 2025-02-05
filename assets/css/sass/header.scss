@@ -155,9 +155,13 @@ header {
             width:100%;
             transform: scaleX(0);
             transition: transform 500ms ease-in-out;
+            position: absolute;
+            bottom: -2px;
+            left: 0px;
             @media screen and (max-width: 991px) {
               border-bottom: none;
               transform: scale(none);
+              position: relative;
          }
           }
           &:hover {
@@ -167,6 +171,24 @@ header {
             }
           }
         }
+        a.nav-link.active {
+            font-weight: 400;
+            color: $secondary-color;
+            position: relative;
+            display: block;
+              text-align:center;
+              border-bottom: 2px solid transparent;
+              border-image: linear-gradient(0.25turn, rgba(0, 0, 0, 0), rgba(0, 178, 177, 1), rgba(0, 0, 0, 0));
+              border-image-slice: 1;
+              width:100%;
+              
+             
+                @media screen and (max-width: 991px) {
+                    border-bottom: none;
+                    transform: scale(none);
+                    text-align: left;
+                }
+          }
         // @media (min-width: 992px) and (max-width: 1051px) {
         //   font-size: 12px;
         //   padding:0;

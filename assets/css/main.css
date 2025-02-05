@@ -210,11 +210,15 @@ header .navbar-expand-lg .navbar-nav > li a.nav-link::after {
   width: 100%;
   transform: scaleX(0);
   transition: transform 500ms ease-in-out;
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
 }
 @media screen and (max-width: 991px) {
   header .navbar-expand-lg .navbar-nav > li a.nav-link::after {
     border-bottom: none;
     transform: scale(none);
+    position: relative;
   }
 }
 header .navbar-expand-lg .navbar-nav > li a.nav-link:hover {
@@ -222,6 +226,24 @@ header .navbar-expand-lg .navbar-nav > li a.nav-link:hover {
 }
 header .navbar-expand-lg .navbar-nav > li a.nav-link:hover:after {
   transform: scaleX(1);
+}
+header .navbar-expand-lg .navbar-nav > li a.nav-link.active {
+  font-weight: 400;
+  color: #f7c35f;
+  position: relative;
+  display: block;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(0.25turn, rgba(0, 0, 0, 0), rgb(0, 178, 177), rgba(0, 0, 0, 0));
+  border-image-slice: 1;
+  width: 100%;
+}
+@media screen and (max-width: 991px) {
+  header .navbar-expand-lg .navbar-nav > li a.nav-link.active {
+    border-bottom: none;
+    transform: scale(none);
+    text-align: left;
+  }
 }
 @media screen and (max-width: 991px) {
   header .navbar-expand-lg .navbar-nav > li {
