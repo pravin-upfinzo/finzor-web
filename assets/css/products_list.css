@@ -286,7 +286,7 @@ section {
 }
 #fz_product_list_feature .product_list_feature_cards .product_list_feature_card .product_list_feature_cont h4 {
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 36px;
   /* letter-spacing: 1px; */
   text-align: left;
@@ -574,7 +574,7 @@ section {
   background-color: #0e1d20;
   margin-bottom: 12px;
   color: #ffffff;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: flex-start;
 }
@@ -586,7 +586,6 @@ section {
 }
 .fz_ai_enhance_sec .fz_ai_enhance_text ul li .fz_cbs_color {
   color: #3eab90;
-  padding-right: 5px;
 }
 .fz_ai_enhance_sec .fz_ai_enhance_text ul li img {
   width: 18px;
@@ -1266,6 +1265,10 @@ section {
 }
 #fin_bankz_sec .fin_bankz .fin_bankz_img {
   position: relative;
+  text-align: center;
+}
+#fin_bankz_sec .fin_bankz .fin_bankz_img svg {
+  width: 80% !important;
 }
 @media screen and (max-width: 991px) {
   #fin_bankz_sec .fin_bankz .fin_bankz_img {

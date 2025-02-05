@@ -19,7 +19,7 @@ include_once('partials/header.php'); //should be last after all variables
 
 
 <!-- contact-us content -->
-<section id="contact_us">
+<section id="contact_us" class="section_start" active-menu="list-menu-contact" >
     <div class="container">
         <div class="get-started">
             <h1 class="heading-2">Let’s Start a Conversation</h1>

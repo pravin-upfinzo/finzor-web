@@ -319,7 +319,7 @@ $pageScripts = '<script></script>';
 include_once('partials/header.php'); //should be last after all variables
 ?>
 
-<section class="about_us_section" style="background-color: #000;height: auto;">
+<section class="about_us_section section_start" active-menu="list-menu-about" style="background-color: #000;height: auto;" >
 
     <div class="about_us_banner_sec">
         <div class="row">
@@ -328,29 +328,16 @@ include_once('partials/header.php'); //should be last after all variables
                     <div class="container">
                         <div class="about_us_heading">
                         <h3 class="fade-up">We help every company become a fintech expert</h3>
-                            <p class="fade-up">Empowering Banks with Scalable Software as a Service (SaaS) Solutions for Banki
-                            Payments, and Fintech Innovation.</p>
+                            <p class="fade-up">Empowering Banks with Scalable Software as a Service (SaaS) Solutions for Banking, Payments, and Fintech Innovation.</p>
                             <div class="about_us_banner_img">
                                 <img src="./assets/images/about.png" alt="about_bg">
                             </div>
                         </div>
                         <div class="about_banner_content">
                             <h2 class="fade-up"> About Us</h2>
-                            <p class="fade-up">Finzor leads the way in digital banking soluAons, partnering with both established and
-                                emerging financial insAtuAons to meet the evolving needs of banking, payments, analyAcs,
-                                arAficial intelligence (AI), blockchain, and fraud prevenAon. Our suite of soluAons drives
-                                innovaAon, enhances operaAons, and enables seamless transformaAon through a flexible,
-                                decomposable architecture and a startup mentality.</p>
+                            <p class="fade-up">Finzor leads the way in digital banking solutions, partnering with both established and emerging financial institutions to meet the evolving needs of banking, payments, analytics, artificial intelligence (AI), blockchain, and fraud prevention. Our suite of solutions drives innovation, enhances operations, and enables seamless transformation through a flexible, decomposable architecture and a startup mentality.</p>
                                 <p class="fade-up">
-                                With So ware-as-a-Service (SaaS)-powered tools, we help banks innovate faster, enhance
-                                customer engagement, and scale eﬀortlessly. Our focus on user interface (UI) and user
-                                experience (UX) ensures intuiAve interfaces that improve workflows and customer journeys.
-                                We also provide Technical Service Provider (TSP) capabiliAes, applicaAon programming
-                                interfaces (APIs), and plugin soluAons for easy integraAon into exisAng systems, keeping
-                                banks agile. In an  ever&nbsp;changing financial landscape, Finzor's cuUng-edge Fraud and Risk
-                                Management (FRM) soluAons, AI-powered risk engines, and AnA-Money Laundering (AML)
-                                tools ensure security, compliance, and risk miAgaAon, empowering banks to stay ahead in a
-                                rapidly evolving industry.
+                                With Software-as-a-Service (SaaS)-powered tools, we help banks innovate faster, enhance customer engagement, and scale effortlessly. Our focus on user interface (UI) and user experience (UX) ensures intuitive interfaces that improve workflows and customer journeys. We also provide Technical Service Provider (TSP) capabilities, application programming interfaces (APIs), and plugin solutions for easy integration into existing systems, keeping banks agile. In an ever-changing financial landscape, Finzor's cutting-edge Fraud and Risk Management (FRM) solutions, AI-powered risk engines, and Anti-Money Laundering (AML) tools ensure security, compliance, and risk mitigation, empowering banks to stay ahead in a rapidly evolving industry.
                                 </p>
                         </div>
                     </div>
@@ -372,7 +359,7 @@ include_once('partials/header.php'); //should be last after all variables
                                     </svg></span>
                                     <h4 class="fade-up">Impact</h4>
                                 </div>
-                                <p class="fade-up">We are here to enhance financial inclusion by unlocking access to a comprehensive suite of essential financial services for thriving enterprise businesses across Southeast Asia.</p>
+                                <p class="fade-up">We aim to empower enterprise businesses by unlocking access to a comprehensive suite of essential financial services, fostering greater financial inclusion</p>
                             </div>
                         </div>
                     </div>
@@ -392,7 +379,7 @@ include_once('partials/header.php'); //should be last after all variables
                                     </svg></span>
                                     <h4 class="fade-up">Ownership</h4>
                                 </div>
-                                <p class="fade-up">It is a privilege for us to be a change maker in the fintech ecosystem, working alongside financial institutions with wide coverage and tech companies.</p>
+                                <p class="fade-up">With a strong sense of ownership, we are dedicated to responsibly shaping the future of financial services for businesses of all sizes.</p>
                             </div>
                         </div>
                     </div>
@@ -406,7 +393,7 @@ include_once('partials/header.php'); //should be last after all variables
                                     </svg></span>
                                     <h4 class="fade-up">Customer Centric</h4>
                                 </div>
-                                <p class="fade-up">We care about people, from our partners and clients to their end-users. We constantly focus on bringing value to the people we touch.</p>
+                                <p class="fade-up">Our commitment extends to everyone we work with, from partners and clients to their end-users, always striving to create lasting value at every touchpoint.</p>
                             </div>
                         </div>
                     </div>
@@ -426,9 +413,7 @@ include_once('partials/header.php'); //should be last after all variables
                     <div class="about_us_content">
                         <h5 class="fade-up">Our Mission</h5>
                         <p class="fade-up">
-                        To deliver advanced, reliable, and scalable payment and core banking systems that ensure
-                        secure, eﬃcient, and user-centric financial transacAons, fostering trust and supporAng the
-                        growth of the financial ecosystem.
+                        To deliver advanced, reliable, and scalable payment and core banking systems that ensure secure, efficient, and user-centric financial transactions, fostering trust and supporting the growth of the financial ecosystem.
                         </p>
                         <a href="./contact-us.php" class="buttons mt-4">
                             <span class="text">Get Started</span>
@@ -447,7 +432,10 @@ include_once('partials/header.php'); //should be last after all variables
                     <div class="about_us_content">
                         <h5 class="fade-up">Our Vision</h5>
                         <p class="fade-up">
-                        Finzor aims to revolutionize banking with advanced core banking and payment solutions that harness AI, blockchain, and cloud technologies. We empower financial institutions to optimize operations, enhance customer experiences, and drive growth through real-time insights, modular systems, and secure, scalable platforms.
+                        Finzor aims to revolutionize banking with advanced core banking and payment solutions that
+                        harness AI, blockchain, and cloud technologies. We empower financial institutions to
+                        optimize operations, enhance customer experiences, and drive growth through real-time
+                        insights, modular systems, and secure, scalable platforms.
                         </p>
                         <a href="./contact-us.php" class="buttons mt-4">
                             <span class="text">Get Started</span>
@@ -475,12 +463,8 @@ include_once('partials/header.php'); //should be last after all variables
                     <div class="about_us_content">
                         <h5 class="fade-up">Core Values</h5>
                         <p class="fade-up">
-                        With flexibility, scalability, and real-Ame processing, our Core Banking System (CBS)
-                        facilitates the smooth administraAon of accounts, transacAons, and client interacAons,
-                        resulAng in increased operaAonal eﬃciency and first-rate service.
-                        We increase consumer happiness and encourage digital adopAon by enabling safe, quick,
-                        and dependable digital transacAons across point-of-sale, web, and mobile plaXorms with
-                        Payment SoluAons.
+                        With flexibility, scalability, and real-time processing, our Core Banking System (CBS) facilitates the smooth administration of accounts, transactions, and client interactions, resulting in increased operational efficiency and first-rate service.
+We increase consumer happiness and encourage digital adoption by enabling safe, quick, and dependable digital transactions across point-of-sale, web, and mobile platforms with Payment Solutions.
                         </p>
                         <a href="./contact-us.php" class="buttons mt-4">
                             <span class="text">Get Started</span>

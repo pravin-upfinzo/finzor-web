@@ -226,7 +226,7 @@ body {
 
                 h4 {
                   font-size: 28px;
-                  font-weight: 600;
+                  font-weight: 500;
                   line-height: 36px;
                   /* letter-spacing: 1px; */
                   text-align: left;
@@ -478,7 +478,7 @@ body {
               background-color: #0e1d20;
               margin-bottom: 12px;
               color: $white;
-              display: flex;
+              display: inline-flex;
               align-items: center;
               justify-content: flex-start;
               @media (max-width: 1024px) {
@@ -491,7 +491,7 @@ body {
               // }
               .fz_cbs_color{
                   color: $primary-color;
-                  padding-right: 5px;
+                  // padding-right: 5px;
               }
               img{
                   width: 18px;
@@ -941,6 +941,10 @@ body {
           }
           .fin_bankz_img {
             position: relative;
+            text-align: center;
+            svg{
+              width: 80% !important;
+            }
             @media screen and (max-width: 991px) {
               width:70%;
               margin: 20px auto;
