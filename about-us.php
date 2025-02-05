@@ -359,7 +359,7 @@ include_once('partials/header.php'); //should be last after all variables
                                     </svg></span>
                                     <h4 class="fade-up">Impact</h4>
                                 </div>
-                                <p class="fade-up">We aim to empower enterprise businesses by unlocking access to a comprehensive suite of essential financial services, fostering greater financial inclusion.</p>
+                                <p class="fade-up">We aim to empower enterprise businesses by unlocking access to a comprehensive suite of essential financial services, fostering greater financial inclusion</p>
                             </div>
                         </div>
                     </div>
