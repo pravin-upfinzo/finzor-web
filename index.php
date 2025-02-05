@@ -298,13 +298,13 @@ include_once('partials/header.php'); //should be last after all variables
                             <div class="fz_subtitle">End to End Operational Suite</div>
                             <h3>
                                 <div id="finops360-icon" class="product-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-                                <div class="fz_title">FinzOpZ 360<sup>°</sup></div>
+                                <div class="fz_title">FinOpZ 360<sup>°</sup></div>
                             </h3>
                         </div>
                         <div class="fz_bank">Streamlining and optimizing processes to enhance efficiency and accuracy</div>
                         <div class="fz_desc">Finzor's End to End Operational solutions optimize and automate key financial processes, enhancing accuracy, efficiency, and control. Our platform integrates seamlessly to streamline transaction management, compliance reporting, and financial visibility, empowering businesses to reduce errors, improve decision-making, and drive operational excellence.</div>
                         <div class="fz_btns">
-                            <a href="./finzopz.php" class="buttons">
+                            <a href="./finopz.php" class="buttons">
                                 <span class="text">Learn more</span>
                                 <div class="icon">
                                     <img src="./assets/images/fz_button_arrow.svg" alt="">
