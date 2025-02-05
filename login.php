@@ -1,6 +1,6 @@
 <?php
-$page_title = 'Login';
-$meta_lines = '<meta name="description" content="">';
+$page_title = 'Onboard | Become a Part of Our Payment Network – Sign Up Today';
+$meta_lines = '<meta name="description" content="Unlock easy payment processing with Finzor. Sign up today to start accepting secure payments and improve your business operations">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/login.css">' . "\n";

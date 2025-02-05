@@ -1,6 +1,6 @@
 <?php
-$page_title = 'FinZShield';
-$meta_lines = '<meta name="description" content="">';
+$page_title = 'FinVigil: Optimize Fraud Protection with AI-Powered Risk Management Solutions';
+$meta_lines = '<meta name="description" content="FinVigil AI-powered fraud detection and risk management solutions help businesses stay secure. Detect threats in real-time, reduce fraud, and ensure operational safety with smart technology">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";
@@ -19,11 +19,11 @@ include_once('partials/header.php'); //should be last after all variables
 ?>
 
 <!-- product_hero_section -->
-<section id="fz_product_list_hero_sec">
+<section id="fz_product_list_hero_sec" class="section_start" active-menu="list-menu-service">
     <canvas class="hero_sec_dot" id="hero_sec_dot"></canvas>
     <div class="container">
         <div class="product_list_hero">
-            <h2 class="product_list_hero_title">AI-powered verification for secure compliance, <span>FinZShield</span></h2>
+            <h2 class="product_list_hero_title">AI-powered verification for secure compliance, <span>FinVigil</span></h2>
             <a class="cmn-btn" href="contact-us.php">
                 <span class="text"> Let's connect</span>
                 <div class="icon">
@@ -77,7 +77,7 @@ include_once('partials/header.php'); //should be last after all variables
 <section id="fz_product_list_feature">
     <div class="container">
         <div class="product_list_feature_head">
-            <h3>FinZShield</h3>
+            <h3>FinVigil</h3>
             <h4>Features</h4>
         </div>
         <div class="product_list_feature_cards spotlight-effect">
@@ -413,7 +413,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="item">
                 <div class="fz_product-content">
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
-                    <h3>EaseMerchant</h3>
+                    <h3>FinZro</h3>
                     <p>Effortless merchant onboarding with automated workflows.</p>
                     <a class="cmn-btn" href="./finzro.php">
                         <span class="text"> View Product</span>
@@ -427,7 +427,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="item">
                 <div class="fz_product-content">
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
-                    <h3>DataVista</h3>
+                    <h3>FinlyticZ</h3>
                     <p>Unlock insights to drive smarter business decisions.</p>
                     <a class="cmn-btn" href="./finlyticz.php">
                         <span class="text"> View Product</span>

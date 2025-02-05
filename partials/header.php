@@ -75,10 +75,10 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.php">Home</a>
+                                <a class="nav-link list-menu list-menu-home" href="index.php">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" id="menu1" role="button">What we offer</a>
+                                <a class="nav-link list-menu list-menu-service" href="#" id="menu1" role="button">What we offer</a>
                                 <div class="submenu-wrapper">
                                 <ul class="submenu">
                                 <div class="upward-arrow"></div>
@@ -177,7 +177,7 @@
                                             </svg>
                                         </div>
                                         <div class="fz_text">
-                                            <h3>FinzOpZ 360</h3>
+                                            <h3>FinzOpZ 360°</h3>
                                             <p>End to End Operational Suite</p>
                                         </div>
                                         </div>
@@ -251,7 +251,7 @@
                                         </svg>
                                         </div>
                                         <div class="fz_text">
-                                            <h3>NexPulse</h3>
+                                            <h3>Finbridge</h3>
                                             <p>Connected Banking</p>
                                         </div>
                                         </div>
@@ -269,7 +269,7 @@
                                         </svg>
                                         </div>
                                         <div class="fz_text">
-                                            <h3>FinZShield</h3>
+                                            <h3>FinVigil</h3>
                                             <p>Fraud and Risk Management</p>
                                         </div>
                                         </div>
@@ -281,10 +281,10 @@
                                 </li>
                            
                             <li class="nav-item">
-                                <a class="nav-link" href="about-us.php">Company</a>
+                                <a class="nav-link list-menu list-menu-about" href="about-us.php">Company</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact-us.php">Contact</a>
+                                <a class="nav-link list-menu list-menu-contact" href="contact-us.php">Contact</a>
                             </li>
                         </ul>
                         <div class="d-flex fz_sigin">

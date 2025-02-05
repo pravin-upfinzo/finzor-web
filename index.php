@@ -1,9 +1,9 @@
 <!-- Include Header -->
 <?php
-$page_title = '';
-$meta_lines = '<meta name="description" content="Finzor Core Banking Services refers to the suite of services and solutions offered by Finzor to financial institutions.">';
+$page_title = 'Finzor-Innovative Fintech Solutions for Seamless Payment Processing';
+$meta_lines = '<meta name="description" content="Finzor Payments offers cutting-edge fintech solutions for secure, fast, and seamless payment processing, empowering businesses to streamline transactions and enhance customer experiences.">';
+$meta_lines .= '';
 // to include page specific CSS
-
 $pageStyles = '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.9/codemirror.min.css">' . "\n";
 // $pageStyles .= '<link rel="stylesheet" href="./assets/css/extra.css">';
 $pageStyles .= '<style>
@@ -68,7 +68,7 @@ $pageScripts .= '<script></script>' . "\n";
 include_once('partials/header.php'); //should be last after all variables
 ?>
 
-<section id="fz-hero-bg">
+<section id="fz-hero-bg"  class="section_start" active-menu="list-menu-home" >
     <canvas></canvas>
     <img src="assets/images/signal-1.gif" class="hero" />
     <div class="container">
@@ -388,12 +388,12 @@ include_once('partials/header.php'); //should be last after all variables
                         <div class="fz_title_content">
                             <div class="fz_subtitle">Connected Banking </div>
                             <h3>
-                                <div id="finlyticz-icon" class="product-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-                                <div class="fz_title">NexPulse</div>
+                                <div style="padding:12px" id="nexpulse-icon" class="product-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
+                                <div class="fz_title">Finbridge</div>
                             </h3>
                         </div>
                         <div class="fz_bank">Transforming Data into Actionable Insights for Smarter, Data-Driven Decisions</div>
-                        <div class="fz_desc">Fueling Business Growth with Smart, Scalable Payment ToolsFINZOR’s Data & Analytics solutions empower businesses to transform data into actionable insights. With advanced analytics, real-time reporting, and predictive tools, we help optimize performance, identify trends, and drive informed decision-making. Our solutions enable businesses to unlock new opportunities and stay ahead in a data-driven world.</div>
+                        <div class="fz_desc">Connected banking revolutionizes financial services by integrating diverse platforms, services, and third-party applications. Leveraging advanced APIs, cloud technology, and data analytics, Finzor enables seamless interaction across various financial products, offering a unified experience. Consumers and businesses can access services like payments, transfers, loans, investments, and more, all through one interface or interconnected apps.</div>
                         <div class="fz_btn">
                             <a href="./connected-banking.php" class="buttons">
                                 <span class="text">Learn more</span>
@@ -404,7 +404,7 @@ include_once('partials/header.php'); //should be last after all variables
                         </div>
                     </div>
                     <div class="fz_img">
-                        <div class="finlyticz-product"></div>
+                        <div class="nexpulse-product"></div>
                     </div>
                 </div>
             </div>
@@ -419,12 +419,12 @@ include_once('partials/header.php'); //should be last after all variables
                         <div class="fz_title_content">
                             <div class="fz_subtitle">Fraud and Risk Management</div>
                             <h3>
-                                <div id="finlyticz-icon" class="product-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
-                                <div class="fz_title">FinZShield</div>
+                                <div style="padding:14px" id="finzshield-icon" class="product-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
+                                <div class="fz_title">FinVigil</div>
                             </h3>
                         </div>
-                        <div class="fz_bank">Transforming Data into Actionable Insights for Smarter, Data-Driven Decisions</div>
-                        <div class="fz_desc">Fueling Business Growth with Smart, Scalable Payment ToolsFINZOR’s Data & Analytics solutions empower businesses to transform data into actionable insights. With advanced analytics, real-time reporting, and predictive tools, we help optimize performance, identify trends, and drive informed decision-making. Our solutions enable businesses to unlock new opportunities and stay ahead in a data-driven world.</div>
+                        <div class="fz_bank">AI-Powered Fraud and Risk Management at Finzor</div>
+                        <div class="fz_desc">Finzor leverages AI-driven innovations to enhance fraud detection and risk management, ensuring secure and intelligent financial operations. Our real-time fraud detection systems utilize behavioral biometrics, NLP for scam detection, and deep learning to identify anomalies and prevent fraudulent activities.</div>
                         <div class="fz_btn">
                             <a href="./fraud-and-risk-management.php" class="buttons">
                                 <span class="text">Learn more</span>
@@ -435,7 +435,7 @@ include_once('partials/header.php'); //should be last after all variables
                         </div>
                     </div>
                     <div class="fz_img">
-                        <div class="finlyticz-product"></div>
+                        <div class="finzshield-product"></div>
                     </div>
                 </div>
             </div>
@@ -458,10 +458,10 @@ include_once('partials/header.php'); //should be last after all variables
                     <div class="finlyticz-product"></div>
                 </div>
                 <div class="fz_product_image">
-                    <div class="finlyticz-product"></div>
+                    <div class="nexpulse-product"></div>
                 </div>
                 <div class="fz_product_image">
-                    <div class="finlyticz-product"></div>
+                    <div class="finzshield-product"></div>
                 </div>
             </div>
         </div>
@@ -1151,7 +1151,7 @@ include_once('partials/header.php'); //should be last after all variables
           </div>
         </section> -->
 <!-- FAQ -->
-<section class="faq_section">
+<section class="faq_section" id="faq_part">
     <div class="container">
         <div class="row align-items-lg-start">
             <div class="col-lg-6">

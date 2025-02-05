@@ -1,6 +1,6 @@
 <?php
-$page_title = 'FinZro';
-$meta_lines = '<meta name="description" content="">';
+$page_title = 'Empowering Merchants with Smart, Scalable Payment Solutions for the Future to FinZro';
+$meta_lines = '<meta name="description" content="FinZro is Transform your business with cutting-edge merchant solutions, delivering fast, secure, and seamless payment experiences for a digital-first world.">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";
@@ -19,7 +19,7 @@ include_once('partials/header.php'); //should be last after all variables
 ?>
 
 <!-- product_hero_section -->
-<section id="fz_product_list_hero_sec">
+<section id="fz_product_list_hero_sec" class="section_start" active-menu="list-menu-service">
     <canvas class="hero_sec_dot" id="hero_sec_dot"></canvas>
     <div class="container">
         <div class="product_list_hero">
@@ -76,7 +76,7 @@ include_once('partials/header.php'); //should be last after all variables
 <section id="fz_product_list_feature">
     <div class="container">
         <div class="product_list_feature_head">
-            <h3>EaseMerchant</h3>
+            <h3>FinZro</h3>
             <h4>Features</h4>
         </div>
         <div class="product_list_feature_cards spotlight-effect">
@@ -390,7 +390,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="item">
                 <div class="fz_product-content">
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
-                    <h3>EaseMerchant</h3>
+                    <h3>FinZro</h3>
                     <p>Effortless merchant onboarding with automated workflows.</p>
                     <a class="cmn-btn" href="./finzro.php">
                         <span class="text"> View Product</span>
@@ -404,7 +404,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="item">
                 <div class="fz_product-content">
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
-                    <h3>DataVista</h3>
+                    <h3>FinlyticZ</h3>
                     <p>Unlock insights to drive smarter business decisions.</p>
                     <a class="cmn-btn" href="./finlyticz.php">
                         <span class="text"> View Product</span>

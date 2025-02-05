@@ -69,6 +69,7 @@
 @media screen and (max-width: 991px) {
   #contact_us .contact_sub_cont .form-wrapper {
     width: 100%;
+    margin-bottom: 40px;
   }
 }
 #contact_us .contact_sub_cont .form-wrapper .form_group {

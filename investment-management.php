@@ -1,6 +1,6 @@
 <?php
-$page_title = 'Investment Management';
-$meta_lines = '<meta name="description" content="">';
+$page_title = 'FinInvezt is Strategies for Growth and Stability';
+$meta_lines = '<meta name="description" content="Achieve your financial goals with our comprehensive investment management services, tailored to your needs to FinInvezt">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";
@@ -17,7 +17,7 @@ include_once('partials/header.php'); //should be last after all variables
 ?>
 
 <!-- product_hero_section -->
-<section id="fz_product_list_hero_sec">
+<section id="fz_product_list_hero_sec" class="section_start" active-menu="list-menu-service">
     <canvas class="hero_sec_dot" id="hero_sec_dot"></canvas>
     <div class="container">
         <div class="product_list_hero">
@@ -388,7 +388,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="item">
                 <div class="fz_product-content">
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
-                    <h3>EaseMerchant</h3>
+                    <h3>FinZro</h3>
                     <p>Effortless merchant onboarding with automated workflows.</p>
                     <a class="cmn-btn" href="./finzro.php">
                         <span class="text"> View Product</span>
@@ -402,7 +402,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="item">
                 <div class="fz_product-content">
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
-                    <h3>DataVista</h3>
+                    <h3>FinlyticZ</h3>
                     <p>Unlock insights to drive smarter business decisions.</p>
                     <a class="cmn-btn" href="./finlyticz.php">
                         <span class="text"> View Product</span>

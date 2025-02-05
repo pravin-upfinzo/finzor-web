@@ -149,11 +149,15 @@ header .navbar-expand-lg .navbar-nav > li a.nav-link::after {
   width: 100%;
   transform: scaleX(0);
   transition: transform 500ms ease-in-out;
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
 }
 @media screen and (max-width: 991px) {
   header .navbar-expand-lg .navbar-nav > li a.nav-link::after {
     border-bottom: none;
     transform: scale(none);
+    position: relative;
   }
 }
 header .navbar-expand-lg .navbar-nav > li a.nav-link:hover {
@@ -161,6 +165,24 @@ header .navbar-expand-lg .navbar-nav > li a.nav-link:hover {
 }
 header .navbar-expand-lg .navbar-nav > li a.nav-link:hover:after {
   transform: scaleX(1);
+}
+header .navbar-expand-lg .navbar-nav > li a.nav-link.active {
+  font-weight: 400;
+  color: #f7c35f;
+  position: relative;
+  display: block;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(0.25turn, rgba(0, 0, 0, 0), rgb(0, 178, 177), rgba(0, 0, 0, 0));
+  border-image-slice: 1;
+  width: 100%;
+}
+@media screen and (max-width: 991px) {
+  header .navbar-expand-lg .navbar-nav > li a.nav-link.active {
+    border-bottom: none;
+    transform: scale(none);
+    text-align: left;
+  }
 }
 @media screen and (max-width: 991px) {
   header .navbar-expand-lg .navbar-nav > li {
@@ -225,11 +247,6 @@ header .navbar-expand-lg .navbar-nav > li .submenu a {
 header .navbar-expand-lg .navbar-nav > li .submenu li.active-submenu > a {
   background: rgba(0, 75, 75, 0.5);
 }
-@media screen and (max-width: 991px) {
-  header .navbar-expand-lg .navbar-nav > li .submenu li > a {
-    pointer-events: none;
-  }
-}
 header .navbar-expand-lg .navbar-nav > li .submenu li > a:hover {
   position: relative;
 }
@@ -250,6 +267,14 @@ header .navbar-expand-lg .navbar-nav > li .submenu li > a:hover:after {
 @media screen and (max-width: 991px) {
   header .navbar-expand-lg .navbar-nav > li .submenu li > a:hover:after {
     border-width: unset;
+  }
+}
+header .navbar-expand-lg .navbar-nav > li .submenu li:nth-child(5) > a:after, header .navbar-expand-lg .navbar-nav > li .submenu li:nth-child(6) > a:after, header .navbar-expand-lg .navbar-nav > li .submenu li:nth-child(7) > a:after, header .navbar-expand-lg .navbar-nav > li .submenu li:nth-child(8) > a:after {
+  border-width: 0;
+}
+@media screen and (max-width: 991px) {
+  header .navbar-expand-lg .navbar-nav > li .submenu > li > a {
+    pointer-events: none;
   }
 }
 header .navbar-expand-lg .navbar-nav > li .submenu .image-text {
