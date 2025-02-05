@@ -1604,11 +1604,6 @@ header .fz_sigin ul .unlock a:hover svg path {
     height: 34rem;
   }
 }
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
-  .panel__stack .panel__card {
-    padding: 0px 20px;
-  }
-}
 
 @property --border-angle {
   syntax: "<angle>";
