@@ -1,5 +1,6 @@
 // Page loader
-$(window).on('load', function() {
+$( document ).ready(function() {
+    
      //Page Loader setup
      let lastLoadedDate = localStorage.getItem("lastLoadedDate");
      let today = new Date().toISOString().split("T")[0];
@@ -8,19 +9,21 @@ $(window).on('load', function() {
          localStorage.setItem("lastLoadedDate", today);
      }
  
-     function showLoader() {
+    function showLoader() {
         $("#page-loader").show();
         
         setTimeout(function() {
             $("#page-loader").fadeOut("slow");
             $('.hero').fadeIn();
         }, 2000);
-     }
+    }
+});
 
+$(window).on('load', function() {
     setTimeout(function() {
         $('.hero').fadeIn();
     }, 500);
-  }); 
+}); 
   var btn = $('#scroll_top');
   $(window).scroll(function() {
     if ($(window).scrollTop() > 300) {
