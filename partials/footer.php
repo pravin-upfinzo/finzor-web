@@ -161,6 +161,18 @@
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/logo_loader.js"></script>
 <script src="assets/js/form-submission.js"></script>
+<script>
+$(document).ready(function () {
+    var activemenu = $('.section_start').attr('active-menu')
+    $('.list-menu').removeClass('active');
+    if(activemenu !== 'null' || activemenu !== 'undefined'){
+        $('.'+activemenu).addClass('active')
+        
+    }else {
+        $('.list-menu-home').addClass('active');
+    }
+});
+</script>
 <?php
 // Include page-specific JS
 if (isset($pageScripts)) {

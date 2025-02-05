@@ -18,14 +18,14 @@ include_once('partials/header.php'); //should be last after all variables
 ?>
 
 
-<section id="fz_product_list_feature">
+<section id="fz_product_list_feature" >
     <div class="product_list_feature_head finbankz_heading">
         <h3>UPIZor</h3>
         <h4>Products</h4>
     </div>
 </section>
 <!-- product_hero_section -->
-<section id="fin_bankz_sec" class="fin_bankz finbankz_bg">
+<section id="fin_bankz_sec" class="fin_bankz finbankz_bg" class="section_start" active-menu="list-menu-service">
     <div class="container">
         <div class="fin_bankz">
             <div class="fin_bankz_content finbank_content">

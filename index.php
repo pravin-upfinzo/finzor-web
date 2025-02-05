@@ -2,8 +2,8 @@
 <?php
 $page_title = 'Finzor-Innovative Fintech Solutions for Seamless Payment Processing';
 $meta_lines = '<meta name="description" content="Finzor Payments offers cutting-edge fintech solutions for secure, fast, and seamless payment processing, empowering businesses to streamline transactions and enhance customer experiences.">';
+$meta_lines .= '';
 // to include page specific CSS
-
 $pageStyles = '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.9/codemirror.min.css">' . "\n";
 // $pageStyles .= '<link rel="stylesheet" href="./assets/css/extra.css">';
 $pageStyles .= '<style>
@@ -68,7 +68,7 @@ $pageScripts .= '<script></script>' . "\n";
 include_once('partials/header.php'); //should be last after all variables
 ?>
 
-<section id="fz-hero-bg">
+<section id="fz-hero-bg"  class="section_start" active-menu="list-menu-home" >
     <canvas></canvas>
     <img src="assets/images/signal-1.gif" class="hero" />
     <div class="container">
