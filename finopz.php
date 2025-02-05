@@ -18,7 +18,7 @@ include_once('partials/header.php'); //should be last after all variables
 ?>
 
 
-<section id="fz_product_list_feature" class="section_start" active-menu="list-menu-service" active-submenu="finzopz">
+<section id="fz_product_list_feature" class="section_start" active-menu="list-menu-service" active-submenu="finopz">
     <div class="product_list_feature_head finbankz_heading">
         <h3>
         FinOpZ 360°</h3>
