@@ -1,7 +1,7 @@
 <!-- Include Header -->
 <?php
-$page_title = '';
-$meta_lines = '<meta name="description" content="Finzor Core Banking Services refers to the suite of services and solutions offered by Finzor to financial institutions.">';
+$page_title = 'Finzor-Innovative Fintech Solutions for Seamless Payment Processing';
+$meta_lines = '<meta name="description" content="Finzor Payments offers cutting-edge fintech solutions for secure, fast, and seamless payment processing, empowering businesses to streamline transactions and enhance customer experiences.">';
 // to include page specific CSS
 
 $pageStyles = '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.9/codemirror.min.css">' . "\n";
@@ -238,7 +238,7 @@ include_once('partials/header.php'); //should be last after all variables
                             designed to modernize and streamline banking operations by providing a robust core banking
                             platform that integrates various functionalities.</div>
                         <div class="fz_btn">
-                            <a href="core-banking-solution.php" class="buttons">
+                            <a href="./finbankz.php" class="buttons">
                                 <span class="text">Learn more</span>
                                 <div class="icon">
                                     <img src="./assets/images/fz_button_arrow.svg" alt="">
@@ -269,7 +269,7 @@ include_once('partials/header.php'); //should be last after all variables
                         <div class="fz_bank">Empowering Seamless, Secure, and Instant Transactions for a Connected World </div>
                         <div class="fz_desc">FINZOR’s Digital Payment Solutions deliver secure, fast, and seamless transaction capabilities across platforms. With advanced encryption and fraud protection, our solution ensures a smooth payment experience for both merchants and customers. Designed for scalability, it integrates effortlessly into existing systems, empowering businesses to thrive in the digital economy with real-time, borderless payments.</div>
                         <div class="fz_btn">
-                            <a href="#" class="buttons">
+                            <a href="./upizor.php" class="buttons">
                                 <span class="text">Learn more</span>
                                 <div class="icon">
                                     <img src="./assets/images/fz_button_arrow.svg" alt="">
@@ -300,7 +300,7 @@ include_once('partials/header.php'); //should be last after all variables
                         <div class="fz_bank">Streamlining and Optimizing Processes to Enhance Efficiency and Accuracy</div>
                         <div class="fz_desc">FINZOR’s End to End Operational solutions optimize and automate key financial processes, enhancing accuracy, efficiency, and control. Our platform integrates seamlessly to streamline transaction management, compliance reporting, and financial visibility, empowering businesses to reduce errors, improve decision-making, and drive operational excellence.</div>
                         <div class="fz_btns">
-                            <a href="#" class="buttons">
+                            <a href="./finzopz.php" class="buttons">
                                 <span class="text">Learn more</span>
                                 <div class="icon">
                                     <img src="./assets/images/fz_button_arrow.svg" alt="">
@@ -333,7 +333,7 @@ include_once('partials/header.php'); //should be last after all variables
                         <div class="fz_desc">FINZOR’s Merchant Solutions offer secure, scalable payment tools that streamline transactions and fuel business growth. With seamless integration across online, in-store, and mobile payments, our platform enhances efficiency through real-time reporting, fraud protection, and customizable features, empowering merchants to optimize operations and improve customer experiences.
                         </div>
                         <div class="fz_btn">
-                            <a href="#" class="buttons">
+                            <a href="./FinZro.php" class="buttons">
                                 <span class="text">Learn more</span>
                                 <div class="icon">
                                     <img src="./assets/images/fz_button_arrow.svg" alt="">
@@ -364,7 +364,7 @@ include_once('partials/header.php'); //should be last after all variables
                         <div class="fz_bank">Transforming Data into Actionable Insights for Smarter, Data-Driven Decisions</div>
                         <div class="fz_desc">Fueling Business Growth with Smart, Scalable Payment ToolsFINZOR’s Data & Analytics solutions empower businesses to transform data into actionable insights. With advanced analytics, real-time reporting, and predictive tools, we help optimize performance, identify trends, and drive informed decision-making. Our solutions enable businesses to unlock new opportunities and stay ahead in a data-driven world.</div>
                         <div class="fz_btn">
-                            <a href="#" class="buttons">
+                            <a href="./finlyticz.php" class="buttons">
                                 <span class="text">Learn more</span>
                                 <div class="icon">
                                     <img src="./assets/images/fz_button_arrow.svg" alt="">
@@ -374,6 +374,68 @@ include_once('partials/header.php'); //should be last after all variables
                     </div>
                     <div class="fz_img">
                         <div class="finlyticz-product"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="fz_product_panel hash_tag_con item-5">
+                <div class="fz_sub_container">
+                    <div class="fz_content">
+                        <div class="fz_num">
+                            <div class="hash_content">
+                            </div>
+                            <h2>06</h2>
+                        </div>
+                        <div class="fz_title_content">
+                            <div class="fz_subtitle">Connected Banking </div>
+                            <h3>
+                                <div style="padding:12px" id="nexpulse-icon" class="product-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
+                                <div class="fz_title">Finbridge</div>
+                            </h3>
+                        </div>
+                        <div class="fz_bank">Transforming Data into Actionable Insights for Smarter, Data-Driven Decisions</div>
+                        <div class="fz_desc">Connected banking revolutionizes financial services by integrating diverse platforms, services, and third-party applications. Leveraging advanced APIs, cloud technology, and data analytics, Finzor enables seamless interaction across various financial products, offering a unified experience. Consumers and businesses can access services like payments, transfers, loans, investments, and more, all through one interface or interconnected apps.</div>
+                        <div class="fz_btn">
+                            <a href="./connected-banking.php" class="buttons">
+                                <span class="text">Learn more</span>
+                                <div class="icon">
+                                    <img src="./assets/images/fz_button_arrow.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="fz_img">
+                        <div class="nexpulse-product"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="fz_product_panel hash_tag_con item-5">
+                <div class="fz_sub_container">
+                    <div class="fz_content">
+                        <div class="fz_num">
+                            <div class="hash_content">
+                            </div>
+                            <h2>07</h2>
+                        </div>
+                        <div class="fz_title_content">
+                            <div class="fz_subtitle">Fraud and Risk Management</div>
+                            <h3>
+                                <div style="padding:14px" id="finzshield-icon" class="product-icon visual-desktop hidden lg:block w-1454 h-1258 relative z-[1]"></div>
+                                <div class="fz_title">FinVigil</div>
+                            </h3>
+                        </div>
+                        <div class="fz_bank">AI-Powered Fraud and Risk Management at Finzor</div>
+                        <div class="fz_desc">Finzor leverages AI-driven innovations to enhance fraud detection and risk management, ensuring secure and intelligent financial operations. Our real-time fraud detection systems utilize behavioral biometrics, NLP for scam detection, and deep learning to identify anomalies and prevent fraudulent activities.</div>
+                        <div class="fz_btn">
+                            <a href="./fraud-and-risk-management.php" class="buttons">
+                                <span class="text">Learn more</span>
+                                <div class="icon">
+                                    <img src="./assets/images/fz_button_arrow.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="fz_img">
+                        <div class="finzshield-product"></div>
                     </div>
                 </div>
             </div>
@@ -394,6 +456,12 @@ include_once('partials/header.php'); //should be last after all variables
                 </div>
                 <div class="fz_product_image">
                     <div class="finlyticz-product"></div>
+                </div>
+                <div class="fz_product_image">
+                    <div class="nexpulse-product"></div>
+                </div>
+                <div class="fz_product_image">
+                    <div class="finzshield-product"></div>
                 </div>
             </div>
         </div>
@@ -916,14 +984,14 @@ include_once('partials/header.php'); //should be last after all variables
                     end-to-end encryption and multi-factor authentication, it ensures your data is protected. Powered by AI and
                     ML, it empowers leaders to monitor, manage, and strategize seamlessly.</p>
                 <div class="fz_btn">
-                <a href="core-banking-solution.php">
+                <!-- <a href="core-banking-solution.php">
                     <button class="fz_learmore active_btn">
                         <span class="text">Learn more</span>
                         <div class="icon">
                             <img src="./assets/images/fz_button_arrow.svg" alt="">
                         </div>
                     </button>
-                </a>
+                </a> -->
 
                 <a href="contact-us.php">
                     <button class="fz_learmore_btn">
@@ -1083,7 +1151,7 @@ include_once('partials/header.php'); //should be last after all variables
           </div>
         </section> -->
 <!-- FAQ -->
-<section class="faq_section">
+<section class="faq_section" id="faq_part">
     <div class="container">
         <div class="row align-items-lg-start">
             <div class="col-lg-6">

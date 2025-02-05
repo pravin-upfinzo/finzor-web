@@ -1,6 +1,6 @@
 <?php
-$page_title = 'UPIZor';
-$meta_lines = '<meta name="description" content="">';
+$page_title = 'UPIZor:- Grow Your Business with Smart & Secure Payment Solutions';
+$meta_lines = '<meta name="description" content="Reliable and secure payment solutions for e-commerce, retail, and mobile apps. Accept global payments and boost your sales today.">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";
@@ -20,7 +20,7 @@ include_once('partials/header.php'); //should be last after all variables
 
 <section id="fz_product_list_feature">
     <div class="product_list_feature_head finbankz_heading">
-        <h3>FinbankZ’</h3>
+        <h3>UPIZor</h3>
         <h4>Products</h4>
     </div>
 </section>

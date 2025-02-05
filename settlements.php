@@ -1,6 +1,6 @@
 <?php
-$page_title = 'Settlements';
-$meta_lines = '<meta name="description" content="">';
+$page_title = 'Deep Dive into Transaction Finalization to Finalease';
+$meta_lines = '<meta name="description" content="Discover the intricacies of financial settlements, including their role in post-trade processes, clearing, and ensuring the accurate transfer of assets, while minimizing risks in investment markets at Finalease">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";
@@ -21,8 +21,7 @@ include_once('partials/header.php'); //should be last after all variables
     <canvas class="hero_sec_dot" id="hero_sec_dot"></canvas>
     <div class="container">
         <div class="product_list_hero">
-            <h2 class="product_list_hero_title">Elevating Your Business
-                with <span>Finalease</span> </h2>
+            <h2 class="product_list_hero_title"><span> Finlease</span> Effortless, secure, and timely settlements</h2>
             <a class="cmn-btn" href="contact-us.php">
                 <span class="text"> Let's connect</span>
                 <div class="icon">
@@ -375,7 +374,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="item">
                 <div class="fz_product-content">
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
-                    <h3>ReconSphere</h3>
+                    <h3>FinzRec</h3>
                     <p>Automated reconciliation for accuracy and time savings.</p>
                     <a class="cmn-btn" href="./reconciliation.php">
                         <span class="text"> View Product</span>
@@ -389,7 +388,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="item">
                 <div class="fz_product-content">
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
-                    <h3>EaseMerchant</h3>
+                    <h3>FinZro</h3>
                     <p>Effortless merchant onboarding with automated workflows.</p>
                     <a class="cmn-btn" href="./finzro.php">
                         <span class="text"> View Product</span>
@@ -403,7 +402,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="item">
                 <div class="fz_product-content">
                     <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
-                    <h3>DataVista</h3>
+                    <h3>FinlyticZ</h3>
                     <p>Unlock insights to drive smarter business decisions.</p>
                     <a class="cmn-btn" href="./finlyticz.php">
                         <span class="text"> View Product</span>

@@ -1,6 +1,6 @@
 <?php
-$page_title = 'Finbankz';
-$meta_lines = '<meta name="description" content="">';
+$page_title = 'FinbankZ: Secure, Scalable Core Banking & Digital Services for Banks';
+$meta_lines = '<meta name="description" content="Discover FinbankZ, the ultimate banking core and digital platform solution. Modernize your banking operations with secure, scalable, and innovative solutions.">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";
@@ -27,7 +27,7 @@ include_once('partials/header.php'); //should be last after all variables
 <!-- product_hero_section -->
 <section id="fin_bankz_sec" class="fin_bankz finbankz_bg">
     <div class="container">
-        <div class="fin_bankz">
+        <div class="fin_bankz fz_reverse">
             <div class="fin_bankz_content finbank_content">
                 <span class="finbank_count">01</span>
                 <div class="fin_bankz_title">
@@ -114,7 +114,7 @@ include_once('partials/header.php'); //should be last after all variables
 <!-- product_hero_section -->
 <section id="fin_bankz_sec" class="fin_bankz finbankz_bg_1">
     <div class="container">
-        <div class="fin_bankz">
+        <div class="fin_bankz fz_reverse">
             <div class="fin_bankz_content finbank_content">
                 <span class="finbank_count">03</span>
                 <div class="fin_bankz_title">

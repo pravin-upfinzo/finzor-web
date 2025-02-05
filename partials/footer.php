@@ -42,11 +42,13 @@
               <div class="links-group">
                 <h4>PRODUCTS</h4>
                 <ul>
-                  <li><a href="finbankz.php">FinbankZ</a></li>
-                  <li><a href="#">UPIZor</a></li>
-                  <li><a href="#">FinzOpZ</a></li>
-                  <li><a href="#">FinZro</a></li>
-                  <li><a href="#">FinlyticZ</a></li>
+                  <li><a href="./finbankz.php">FinbankZ</a></li>
+                  <li><a href="./upizor.php">UPIZor</a></li>
+                  <li><a href="./finzopz.php">FinzOpZ 360°</a></li>
+                  <li><a href="./finzro.php">FinZro</a></li>
+                  <li><a href="./finlyticz.php">FinlyticZ</a></li>
+                  <li><a href="./connected-banking.php">Finbridge</a></li>
+                  <li><a href="./fraud-and-risk-management.php">FinVigil</a></li>
                 </ul>
               </div>
               <div class="links-group">
@@ -54,7 +56,7 @@
                 <ul>
                   <li><a href="about-us.php">About us</a></li>
                   <li><a href="contact-us.php">Contact</a></li>
-                  <li><a href="#">FAQ</a></li>
+                  <li><a href="index.php#faq_part">FAQ</a></li>
                 </ul>
               </div>
               <div class="links-group">
@@ -66,7 +68,7 @@
               </div>
             </div>
               <div class="links-group subscribe">
-                <p>Stay updated by Subscribe</p>
+                <p>Stay updated by Subscribing</p>
                 <form class="subscribe-form" id="subscribe-form">
                   <input type="email" placeholder="Enter your email ID" name="subscribe_email" class="subscribe_email">
                   <div class="footer_arrow" role="button">

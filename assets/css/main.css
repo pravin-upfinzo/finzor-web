@@ -4,6 +4,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 ul,
@@ -308,11 +309,6 @@ header .navbar-expand-lg .navbar-nav > li .submenu a {
 header .navbar-expand-lg .navbar-nav > li .submenu li.active-submenu > a {
   background: rgba(0, 75, 75, 0.5);
 }
-@media screen and (max-width: 991px) {
-  header .navbar-expand-lg .navbar-nav > li .submenu li > a {
-    pointer-events: none;
-  }
-}
 header .navbar-expand-lg .navbar-nav > li .submenu li > a:hover {
   position: relative;
 }
@@ -333,6 +329,14 @@ header .navbar-expand-lg .navbar-nav > li .submenu li > a:hover:after {
 @media screen and (max-width: 991px) {
   header .navbar-expand-lg .navbar-nav > li .submenu li > a:hover:after {
     border-width: unset;
+  }
+}
+header .navbar-expand-lg .navbar-nav > li .submenu li:nth-child(5) > a:after, header .navbar-expand-lg .navbar-nav > li .submenu li:nth-child(6) > a:after, header .navbar-expand-lg .navbar-nav > li .submenu li:nth-child(7) > a:after, header .navbar-expand-lg .navbar-nav > li .submenu li:nth-child(8) > a:after {
+  border-width: 0;
+}
+@media screen and (max-width: 991px) {
+  header .navbar-expand-lg .navbar-nav > li .submenu > li > a {
+    pointer-events: none;
   }
 }
 header .navbar-expand-lg .navbar-nav > li .submenu .image-text {
@@ -4013,7 +4017,6 @@ div#faq-animate svg {
 }
 @media screen and (max-width: 991px) {
   .footer_section .fz_footer_container .footer_list_link .links-group h4 {
-    line-height: 10px;
     margin: 25px 0px 0px 0px;
   }
 }
@@ -4052,6 +4055,7 @@ div#faq-animate svg {
 @media screen and (max-width: 991px) {
   .footer_section .fz_footer_container .subscribe {
     margin: 30px 0px;
+    width: 100%;
   }
 }
 .footer_section .fz_footer_container .subscribe p {
@@ -4080,6 +4084,12 @@ div#faq-animate svg {
 @media screen and (max-width: 991px) {
   .footer_section .fz_footer_container .subscribe .subscribe-form {
     margin: 0;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer_section .fz_footer_container .subscribe .subscribe-form {
+    width: 100%;
   }
 }
 .footer_section .fz_footer_container .subscribe .subscribe-form input {

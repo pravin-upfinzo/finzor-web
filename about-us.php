@@ -1,7 +1,7 @@
 <!-- Include Header -->
 <?php
-$page_title = 'About Us - The Zor of Fintech Innovations';
-$meta_lines = '<meta name="description" content="">';
+$page_title = 'About Finzor Payments: Empowering Businesses with Advanced Payment Technologies';
+$meta_lines = '<meta name="description" content="Finzor Payments is dedicated to providing businesses with state-of-the-art payment solutions, combining security, innovation, and efficiency to streamline payment processing">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/about_us.css">';
@@ -430,13 +430,12 @@ include_once('partials/header.php'); //should be last after all variables
                         secure, eﬃcient, and user-centric financial transacAons, fostering trust and supporAng the
                         growth of the financial ecosystem.
                         </p>
-                        
-                        <button class="buttons mt-4">
+                        <a href="./contact-us.php" class="buttons mt-4">
                             <span class="text">Get Started</span>
                             <div class="icon">
                                 <img src="./assets/images/fz_button_arrow.svg" alt="">
                             </div>
-                        </button>
+                        </a>
                     </div>
 
                 </div>
@@ -450,13 +449,12 @@ include_once('partials/header.php'); //should be last after all variables
                         <p class="fade-up">
                         Finzor aims to revolutionize banking with advanced core banking and payment solutions that harness AI, blockchain, and cloud technologies. We empower financial institutions to optimize operations, enhance customer experiences, and drive growth through real-time insights, modular systems, and secure, scalable platforms.
                         </p>
-                       
-                        <button class="buttons mt-4">
+                        <a href="./contact-us.php" class="buttons mt-4">
                             <span class="text">Get Started</span>
                             <div class="icon">
                                 <img src="./assets/images/fz_button_arrow.svg" alt="">
                             </div>
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-6 about_us_center_col">
@@ -484,13 +482,12 @@ include_once('partials/header.php'); //should be last after all variables
                         and dependable digital transacAons across point-of-sale, web, and mobile plaXorms with
                         Payment SoluAons.
                         </p>
-                       
-                        <button class="buttons mt-4">
+                        <a href="./contact-us.php" class="buttons mt-4">
                             <span class="text">Get Started</span>
                             <div class="icon">
                                 <img src="./assets/images/fz_button_arrow.svg" alt="">
                             </div>
-                        </button>
+                        </a>
                     </div>
 
                 </div>

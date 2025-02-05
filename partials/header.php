@@ -177,7 +177,7 @@
                                             </svg>
                                         </div>
                                         <div class="fz_text">
-                                            <h3>FinzOpZ 360</h3>
+                                            <h3>FinzOpZ 360°</h3>
                                             <p>End to End Operational Suite</p>
                                         </div>
                                         </div>
@@ -197,7 +197,7 @@
                                         </li>
                                         <li>
                                         <a href="./reconciliation.php">
-                                            <h3>ReconSphere</h3>
+                                            <h3>FinzRec</h3>
                                             <p>Reconciliation</p>
                                         </a>
                                         </li>
@@ -251,7 +251,7 @@
                                         </svg>
                                         </div>
                                         <div class="fz_text">
-                                            <h3>NexPulse</h3>
+                                            <h3>Finbridge</h3>
                                             <p>Connected Banking</p>
                                         </div>
                                         </div>
@@ -269,7 +269,7 @@
                                         </svg>
                                         </div>
                                         <div class="fz_text">
-                                            <h3>FinZShield</h3>
+                                            <h3>FinVigil</h3>
                                             <p>Fraud and Risk Management</p>
                                         </div>
                                         </div>
