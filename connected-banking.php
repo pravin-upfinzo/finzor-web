@@ -45,7 +45,7 @@ include_once('partials/header.php'); //should be last after all variables
 <section class="fz_ai_enhance_sec cbs_sec">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 fz_enhance_col">
+            <div class="col-lg-7 fz_enhance_col left-space">
                 <div class="fz_ai_enhance_text">
                     <h2>Cloud-Based Solutions                    </h2>
                     <p class="fz_enhance_para">Cloud Computing delivers computing services over the internet, providing scalable resources like storage, servers, and software without the need for physical infrastructure. It offers flexibility, cost-efficiency, and easy access to data and applications from anywhere. With cloud computing, businesses can scale quickly, reduce IT costs, and improve collaboration, all while ensuring high levels of security and reliability for their data.
@@ -55,7 +55,7 @@ include_once('partials/header.php'); //should be last after all variables
                             <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Scalable computing resources </span>for business growth and flexibility</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Cost-effective solution</span>for computing power and storage needs</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Cost-effective solution </span>for computing power and storage needs</p>
                             </span>
                         </li>
                         <li>
@@ -64,7 +64,7 @@ include_once('partials/header.php'); //should be last after all variables
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-6 fz_enhance_img_col">
+            <div class="col-lg-5 fz_enhance_img_col">
                 <div class="fz_ai_enhance_img zoom-in-cbs">
                     <img src="./assets/images/cbs_image.png" alt="CBS">
                 </div>

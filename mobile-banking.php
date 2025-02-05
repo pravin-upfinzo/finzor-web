@@ -43,25 +43,25 @@ include_once('partials/header.php'); //should be last after all variables
 <section class="fz_ai_enhance_sec cbs_sec">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 fz_enhance_col">
+            <div class="col-lg-7 fz_enhance_col left-space">
                 <div class="fz_ai_enhance_text">
                     <h2>Secure and real-time transactions</h2>
                     <p class="fz_enhance_para">Mobile banking ensures secure, real-time transactions, providing users with instant payment processing and robust security features. This enhances trust and convenience for seamless financial management on the go
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Instant Payment Processing</span> Enjoy fast, secure transactions anytime</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Instant Payment Processing</span> enjoy fast, secure transactions anytime</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Multi-Layer Security</span>Protects data with advanced fraud prevention</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Multi-Layer Security </span>protects data with advanced fraud prevention</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Real-Time Transaction Updates</span>Stay informed with instant alerts</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Real-Time Transaction Updates </span>stay informed with instant alerts</p>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-6 fz_enhance_img_col">
+            <div class="col-lg-5 fz_enhance_img_col">
                 <div class="fz_ai_enhance_img zoom-in-cbs">
                     <img src="./assets/images/cbs_image.png" alt="CBS">
                 </div>
@@ -192,10 +192,10 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p></p><span class="fz_cbs_color"> Secure & convenient banking</span>anytime, anywhere on your mobile</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Secure & convenient banking </span> anytime, anywhere on your mobile</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Instant fund transfers & bill payments</span>with just a few taps</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Instant fund transfers & bill payments </span>with just a few taps</p>
                         </li>
                         <li>
                             <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Track expenses & manage accounts</span> with real-time updates</p>

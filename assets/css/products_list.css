@@ -255,9 +255,9 @@ section {
   right: 0%;
 }
 #fz_product_list_feature .product_list_feature_cards .product_list_feature_card .product_list_feature_cont h4 {
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 50.4px;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 46px;
   letter-spacing: 1px;
   text-align: left;
   color: #ffffff;
@@ -499,7 +499,7 @@ section {
   background-color: #0e1d20;
   margin-bottom: 12px;
   color: #ffffff;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: flex-start;
 }
@@ -511,7 +511,6 @@ section {
 }
 .fz_ai_enhance_sec .fz_ai_enhance_text ul li .fz_cbs_color {
   color: #3eab90;
-  padding-right: 5px;
 }
 .fz_ai_enhance_sec .fz_ai_enhance_text ul li img {
   width: 18px;

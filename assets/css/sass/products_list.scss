@@ -204,9 +204,9 @@ body {
                 }
 
                 h4 {
-                    font-size: 36px;
-                    font-weight: 600;
-                    line-height: 50.4px;
+                    font-size: 34px;
+                    font-weight: 500;
+                    line-height: 46px;
                     letter-spacing: 1px;
                     text-align: left;
                     color: $white;
@@ -421,7 +421,7 @@ body {
               background-color: #0e1d20;
               margin-bottom: 12px;
               color: $white;
-              display: flex;
+              display: inline-flex;
               align-items: center;
               justify-content: flex-start;
               @media (max-width: 1024px) {
@@ -434,7 +434,7 @@ body {
               // }
               .fz_cbs_color{
                   color: $primary-color;
-                  padding-right: 5px;
+                  // padding-right: 5px;
               }
               img{
                   width: 18px;

@@ -43,25 +43,25 @@ include_once('partials/header.php'); //should be last after all variables
 <section class="fz_ai_enhance_sec cbs_sec">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 fz_enhance_col">
+            <div class="col-lg-7 fz_enhance_col left-space">
                 <div class="fz_ai_enhance_text">
                     <h2>Unified UPI</h2>
                     <p class="fz_enhance_para">An all-in-one UPI solution powers multiple bank accounts within a single mobile application, enabling seamless payments and transactions across various banks. This integration streamlines fund management and simplifies user experience by consolidating banking services in one platform.
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Unified UPI: Multiple Accounts in One App </span>Manage multiple bank accounts in one app easily.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Unified UPI: Multiple Accounts in One App </span>manage multiple bank accounts in one app easily.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Seamless Transactions for All Needs </span>Simplify transactions with seamless P2P, P2M, and scheduled payments.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Seamless Transactions for All Needs </span>simplify transactions with seamless P2P, P2M, and scheduled payments.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Advanced Security for Safe Payments </span>Enhance security and convenience with advanced fraud protection tools.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Advanced Security for Safe Payments </span>enhance security and convenience with advanced fraud protection tools.</p>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-6 fz_enhance_img_col">
+            <div class="col-lg-5 fz_enhance_img_col">
                 <div class="fz_ai_enhance_img zoom-in-cbs">
                     <img src="./assets/images/cbs_image.png" alt="CBS">
                 </div>

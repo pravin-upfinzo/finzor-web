@@ -43,25 +43,25 @@ include_once('partials/header.php'); //should be last after all variables
 <section class="fz_ai_enhance_sec cbs_sec">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 fz_enhance_col">
+            <div class="col-lg-7 fz_enhance_col left-space">
                 <div class="fz_ai_enhance_text">
                     <h2>Accept and optimise payments</h2>
                     <p class="fz_enhance_para">Increase authorisation rates, optimise your checkout conversion, and offer local payment methods in every market.
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Increase Authorization Rates</span> Boost payment success with optimized authorization processes.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Increase Authorization Rates</span> boost payment success with optimized authorization processes.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Improve Checkout Conversion</span> Enhance user experience to increase checkout completion rates.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Improve Checkout Conversion</span> enhance user experience to increase checkout completion rates.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Support Local Payment Methods</span> Offer tailored payment options to suit every market’s needs.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Support Local Payment Methods</span> offer tailored payment options to suit every market’s needs.</p>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-6 fz_enhance_img_col">
+            <div class="col-lg-5 fz_enhance_img_col">
                 <div class="fz_ai_enhance_img zoom-in-cbs">
                     <img src="./assets/images/cbs_image.png" alt="CBS">
                 </div>

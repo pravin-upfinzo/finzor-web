@@ -43,25 +43,25 @@ include_once('partials/header.php'); //should be last after all variables
 <section class="fz_ai_enhance_sec cbs_sec">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 fz_enhance_col">
+            <div class="col-lg-7 fz_enhance_col left-space">
                 <div class="fz_ai_enhance_text">
                     <h2>AI-Driven Support & Seamless Digital Services </h2>
                     <p class="fz_enhance_para">Finzor enables seamless customer support through advanced AI chatbots available around the clock. All banking services are fully digital, offering effortless transactions and service access via apps or websites, ensuring an enhanced user experience and optimized performance
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">24/7 AI-Powered Support</span>Get instant help anytime, anywhere</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">24/7 AI-Powered Support </span>get instant help anytime, anywhere</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Fully Digital Services</span>Access banking anytime via app or web</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Fully Digital Services </span>access banking anytime via app or web</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Seamless User Experience</span>Enjoy fast, hassle-free banking</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Seamless User Experience </span>enjoy fast, hassle-free banking</p>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-6 fz_enhance_img_col">
+            <div class="col-lg-5 fz_enhance_img_col">
                 <div class="fz_ai_enhance_img zoom-in-cbs">
                     <img src="./assets/images/cbs_image.png" alt="CBS">
                 </div>
@@ -192,10 +192,10 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> 100% digital banking</span>with no branches & seamless experience</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> 100% digital banking </span>with no branches & seamless experience</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Quick account setup</span>with instant access to financial tools</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Quick account setup </span>with instant access to financial tools</p>
                         </li>
                         <li>
                             <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Smart money management</span> with AI-driven insights & analytics</p>

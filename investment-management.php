@@ -43,25 +43,25 @@ include_once('partials/header.php'); //should be last after all variables
 <section class="fz_ai_enhance_sec cbs_sec">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 fz_enhance_col">
+            <div class="col-lg-7 fz_enhance_col left-space">
                 <div class="fz_ai_enhance_text">
                     <h2>Personalized Investment Strategies</h2>
                     <p class="fz_enhance_para">Say goodbye to generic solutions. Gen AI evaluates clients’ risk tolerance, goals, and preferences to craft tailored investment strategies. It continuously updates recommendations as markets and client needs evolve, making personalized strategies accessible to a wider audience.
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Tailored Investment Plans for Every Client</span>Gen AI customizes strategies based on risk, goals, and preferences.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Tailored Investment Plans for Every Client </span>gen AI customizes strategies based on risk, goals, and preferences.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Dynamic Recommendations with Market Updates</span> Continuously adjusts strategies as market conditions evolve.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Dynamic Recommendations with Market Updates</span> continuously adjusts strategies as market conditions evolve.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Accessible Personalized Financial Guidance</span>Offers tailored strategies to a wider audience, beyond just experts.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Accessible Personalized Financial Guidance </span>Offers tailored strategies to a wider audience, beyond just experts.</p>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-6 fz_enhance_img_col">
+            <div class="col-lg-5 fz_enhance_img_col">
                 <div class="fz_ai_enhance_img zoom-in-cbs">
                     <img src="./assets/images/cbs_image.png" alt="CBS">
                 </div>
@@ -198,7 +198,7 @@ include_once('partials/header.php'); //should be last after all variables
                             <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Diversify your portfolio </span>for better risk management.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Track & manage investments</span>with real-time insights.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Track & manage investments </span>with real-time insights.</p>
                             
                         </li>
                     </ul>

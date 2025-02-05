@@ -45,7 +45,7 @@ include_once('partials/header.php'); //should be last after all variables
 <section class="fz_ai_enhance_sec cbs_sec">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 fz_enhance_col">
+            <div class="col-lg-7 fz_enhance_col left-space">
                 <div class="fz_ai_enhance_text">
                     <h2>Next-Gen AI in Fraud Management: Secure & Proactive</h2>
                     <p class="fz_enhance_para">Advanced fraud management leverages AI-driven technologies to analyze user behavior, detect threats in real-time, and prevent fraudulent activities. By continuously monitoring behavioral patterns, AI can identify anomalies, detect inconsistencies, and mitigate risks proactively. Integrating multiple AI models enhances security, ensuring robust fraud prevention.
@@ -65,7 +65,7 @@ include_once('partials/header.php'); //should be last after all variables
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-6 fz_enhance_img_col">
+            <div class="col-lg-5 fz_enhance_img_col">
                 <div class="fz_ai_enhance_img zoom-in-cbs">
                     <img src="./assets/images/cbs_image.png" alt="CBS">
                 </div>

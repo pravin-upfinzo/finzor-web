@@ -43,26 +43,26 @@ include_once('partials/header.php'); //should be last after all variables
 <section class="fz_ai_enhance_sec cbs_sec">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 fz_enhance_col">
+            <div class="col-lg-7 fz_enhance_col left-space">
                 <div class="fz_ai_enhance_text">
                     <h2>AI-Powered Payment Reconciliation Solution</h2>
                     <p class="fz_enhance_para">Finzor’s Generative AI enhances payment reconciliation with improved accuracy, eliminating manual errors. It processes data quickly, saving time and reducing costs. Proactive fraud detection minimizes risks while scaling effortlessly with your business. Unlock valuable insights to stay competitive and drive growth.
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Boost Accuracy with AI Precision</span> Eliminate manual errors and ensure precise financial reconciliation.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Boost Accuracy with AI Precision</span> eliminate manual errors and ensure precise financial reconciliation.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Save Time with Lightning-Fast Processing</span> Process vast data volumes in minutes, reducing costs and delays.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Save Time with Lightning-Fast Processing</span> process vast data volumes in minutes, reducing costs and delays.</p>
 
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p>Instant Fraud Detection for Risk Mitigation <span class="fz_cbs_color">Identify and address unusual transaction patterns in real-time.</span></p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p>Instant Fraud Detection for Risk Mitigation <span class="fz_cbs_color">identify and address unusual transaction patterns in real-time.</span></p>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-6 fz_enhance_img_col">
+            <div class="col-lg-5 fz_enhance_img_col">
                 <div class="fz_ai_enhance_img zoom-in-cbs">
                     <img src="./assets/images/cbs_image.png" alt="CBS">
                 </div>

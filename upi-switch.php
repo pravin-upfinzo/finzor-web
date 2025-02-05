@@ -43,25 +43,25 @@ include_once('partials/header.php'); //should be last after all variables
 <section class="fz_ai_enhance_sec cbs_sec">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 fz_enhance_col">
+            <div class="col-lg-7 fz_enhance_col left-space">
                 <div class="fz_ai_enhance_text">
                     <h2>Supercharged Performance</h2>
                     <p class="fz_enhance_para">Experience a 4-5% boost in success rates as our UPI switch reduces latency to under 100 milliseconds and ensures 99.99% uptime, promising uninterrupted, reliable payment services.
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Boosted Success Rates for Payments </span>Experience a 4-5% increase in success rates with UPI Switch.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Boosted Success Rates for Payments </span>experience a 4-5% increase in success rates with UPI Switch.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Low Latency for Fast Transactions </span>Reduce payment latency to under 100 milliseconds for speed.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Low Latency for Fast Transactions </span>reduce payment latency to under 100 milliseconds for speed.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Uninterrupted, Reliable Service </span>Achieve 99.99% uptime, ensuring consistent payment performance.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Uninterrupted, Reliable Service </span>achieve 99.99% uptime, ensuring consistent payment performance.</p>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-6 fz_enhance_img_col">
+            <div class="col-lg-5 fz_enhance_img_col">
                 <div class="fz_ai_enhance_img zoom-in-cbs">
                     <img src="./assets/images/cbs_image.png" alt="CBS">
                 </div>

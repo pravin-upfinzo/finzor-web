@@ -45,26 +45,26 @@ include_once('partials/header.php'); //should be last after all variables
 <section class="fz_ai_enhance_sec cbs_sec">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 fz_enhance_col">
+            <div class="col-lg-7 fz_enhance_col left-space">
                 <div class="fz_ai_enhance_text">
                     <h2>Security and Trust</h2>
                     <p class="fz_enhance_para">Digital payment platforms offer robust security features. Businesses can rest assured that their transactions are encrypted.
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Robust Security for Digital Transactions </span>Ensure encrypted transactions for secure business operations.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Robust Security for Digital Transactions </span>ensure encrypted transactions for secure business operations.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">AI-Driven Fraud Prevention </span>Leverage AI to detect and prevent fraud during merchant onboarding.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">AI-Driven Fraud Prevention </span>leverage AI to detect and prevent fraud during merchant onboarding.</p>
                             </span>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Compliance and Trust Assurance </span>Maintain regulatory compliance to build trust with merchants.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Compliance and Trust Assurance </span>maintain regulatory compliance to build trust with merchants.</p>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-6 fz_enhance_img_col">
+            <div class="col-lg-5 fz_enhance_img_col">
                 <div class="fz_ai_enhance_img zoom-in-cbs">
                     <img src="./assets/images/cbs_image.png" alt="CBS">
                 </div>
