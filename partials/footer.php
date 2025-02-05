@@ -171,6 +171,24 @@ $(document).ready(function () {
     }else {
         $('.list-menu-home').addClass('active');
     }
+
+    $(document).on('mouseenter', '.navbar-nav .nav-item.dropdown', function(e) { 
+
+        var active_submenu = $('.section_start').attr('active-submenu');
+        if(active_submenu !== 'null' || active_submenu !== 'undefined'){
+            $('.nav-item .submenu #'+active_submenu).addClass('active-submenu');
+            $('.nav-item .submenu #'+active_submenu+' > ul.inner-submenu').show();
+        
+        }
+    });
+
+    $(document).on('mouseover', '.navbar-nav .nav-item.dropdown .submenu li', function(e) { 
+        $('.submenu li').removeClass('active-submenu');
+        $('.submenu li ul.inner-submenu').hide();
+
+        $(this).addClass('active-submenu');
+        $(this).find('ul.inner-submenu').show();
+    });
 });
 </script>
 <?php

@@ -82,7 +82,7 @@
                                 <div class="submenu-wrapper">
                                 <ul class="submenu">
                                 <div class="upward-arrow"></div>
-                                    <li>
+                                    <li id="finbankz">
                                     <a href="./finbankz.php">
                                         <div class="image-text">
                                         <div class="fz_header_svg">
@@ -127,7 +127,7 @@
                                         </li>
                                     </ul>
                                     </li>
-                                    <li>
+                                    <li id="upizor">
                                     <a href="./upizor.php">
                                         <div class="image-text">
                                         <div class="fz_header_svg">
@@ -164,8 +164,8 @@
                                         </li>
                                     </ul>
                                     </li>
-                                    <li>
-                                    <a href="./finopz.php">
+                                    <li id="finzopz">
+                                    <a href="./finzopz.php">
                                         <div class="image-text">
                                         <div class="fz_header_svg">
                                             <svg class="normal__svg" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
