@@ -304,7 +304,27 @@ header .navbar-expand-lg .navbar-nav > li .submenu a {
   }
 }
 header .navbar-expand-lg .navbar-nav > li .submenu li.active-submenu > a {
+  position: relative;
   background: rgba(0, 75, 75, 0.5);
+}
+header .navbar-expand-lg .navbar-nav > li .submenu li.active-submenu > a:after {
+  border-color: transparent transparent transparent rgba(62, 171, 144, 0.2);
+  border-style: solid;
+  border-width: 8px 0 8px 8px;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  z-index: 100;
+  transition: all 0.5s ease;
+}
+@media screen and (max-width: 991px) {
+  header .navbar-expand-lg .navbar-nav > li .submenu li.active-submenu > a:after {
+    border-width: unset;
+  }
 }
 header .navbar-expand-lg .navbar-nav > li .submenu li > a:hover {
   position: relative;
@@ -402,6 +422,9 @@ header .navbar-expand-lg .navbar-nav > li .inner-submenu a p {
   font-size: 12px;
   margin: 0;
   color: #8d8d8d;
+}
+header .navbar-expand-lg .navbar-nav > li .inner-submenu .active-submenu-l2 a {
+  background: rgba(0, 75, 75, 0.5);
 }
 @media screen and (max-width: 991px) {
   header .fz_sigin {
