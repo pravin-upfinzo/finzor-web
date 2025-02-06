@@ -75,7 +75,7 @@ include_once('partials/header.php'); //should be last after all variables
 <span class="section_start" active-menu="list-menu-home"></span>
 
 <section id="fz-hero-bg">
-    <canvas></canvas>
+    <canvas class="hero_sec_dot"></canvas>
     <img src="assets/images/signal-1.gif" class="hero" />
     <div class="container">
         <div class="row">
