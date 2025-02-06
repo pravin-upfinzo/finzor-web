@@ -1,7 +1,8 @@
 <!-- Include Header -->
 <?php
-$page_title = 'About Finzor Payments: Empowering Businesses with Advanced Payment Technologies';
+$page_title = 'About Finzor Payments Empowering Businesses with Advanced Payment Technologies';
 $meta_lines = '<meta name="description" content="Finzor Payments is dedicated to providing businesses with state-of-the-art payment solutions, combining security, innovation, and efficiency to streamline payment processing">';
+$meta_lines .= '<meta name="keywords" content="Digital payment solutions, Digital payments, Payment gateway, Fast payment Solutions, Fintech innovation,CBS,Corporate banking solutions">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/about_us.css">';

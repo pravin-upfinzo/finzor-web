@@ -1,8 +1,8 @@
 <!-- Include Header -->
 <?php
-$page_title = 'Finzor-Innovative Fintech Solutions for Seamless Payment Processing';
+$page_title = 'Finzor Innovative Fintech Solutions for Seamless Payment Processing';
 $meta_lines = '<meta name="description" content="Finzor Payments offers cutting-edge fintech solutions for secure, fast, and seamless payment processing, empowering businesses to streamline transactions and enhance customer experiences.">';
-$meta_lines .= '<meta name="keywords" content="Finzor Payments offers cutting-edge fintech solutions for secure, fast, and seamless payment processing, empowering businesses to streamline transactions and enhance customer experiences.">';
+$meta_lines .= '<meta name="keywords" content="Payments, Fintech solutions, Payment processing, Secure payments, Seamless transactions, Digital payments, Payment gateway, Online Payment solutions, Payment technology, Business payments.">';
 $meta_lines .= '<meta property="og:title" content="Finzor Innovative Fintech Solutions for Seamless Payment Processing">';
 $meta_lines .= '<meta property="og:description" content="Finzor Payments offers cutting-edge fintech solutions for secure, fast, and seamless payment processing, empowering businesses to streamline transactions and enhance customer experiences.">';
 $meta_lines .= '<meta property="og:image" content="./assets/images/opengraphic.jpg">';

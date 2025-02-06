@@ -1,6 +1,7 @@
 <?php
 $page_title = 'Empowering Merchants with Smart, Scalable Payment Solutions for the Future to FinZro';
 $meta_lines = '<meta name="description" content="FinZro is Transform your business with cutting-edge merchant solutions, delivering fast, secure, and seamless payment experiences for a digital-first world.">';
+$meta_lines .= '<meta name="keywords" content="Merchant services, Payment processing, Merchant account solutions, E-commerce payment gateways, Online payment solutions, Merchant payment systems, Point of sale solutions, Merchant service providers, Digital payment systems, Payment gateway integration, Merchant payment solutions for small business">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";

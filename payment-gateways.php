@@ -1,6 +1,7 @@
 <?php
-$page_title = 'FlowGate:- Payment Gateway API | Seamless Checkout & Secure Payments';
+$page_title = 'FlowGate Payment Gateway API Seamless Checkout & Secure Payments';
 $meta_lines = '<meta name="description" content="Scale your business with a secure FlowGate. Process online payments globally with multi-currency support and fraud protection.">';
+$meta_lines .= '<meta name="keywords" content="Instant settlements, Payment gateway for businesses, PCI-DSS compliant gateway, payment gateway integration, API payment solutions">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";

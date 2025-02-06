@@ -1,6 +1,7 @@
 <?php
 $page_title = 'Deep Dive into Transaction Finalization to Finalease';
 $meta_lines = '<meta name="description" content="Discover the intricacies of financial settlements, including their role in post-trade processes, clearing, and ensuring the accurate transfer of assets, while minimizing risks in investment markets at Finalease">';
+$meta_lines .= '<meta name="keywords" content="Real time settlement, multi asset settlement, settlement services, settlement clearing systems,Settlement">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";

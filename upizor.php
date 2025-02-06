@@ -1,6 +1,7 @@
 <?php
-$page_title = 'UPIZor:- Grow Your Business with Smart & Secure Payment Solutions';
+$page_title = 'UPIZor Grow Your Business with Smart & Secure Payment Solutions';
 $meta_lines = '<meta name="description" content="Reliable and secure payment solutions for e-commerce, retail, and mobile apps. Accept global payments and boost your sales today.">';
+$meta_lines .= '<meta name="keywords" content="Business payment solutions, POS payments, Instant payments, peer-to-peer payments, Automated billing, Recurring payments">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";

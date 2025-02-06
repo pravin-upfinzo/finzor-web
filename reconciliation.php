@@ -1,6 +1,7 @@
 <?php
-$page_title = 'FinzRec is unlocking the Power of Reconciliation in Today’s Fast-Paced Financial World';
+$page_title = 'FinzRec is unlocking the Power of Reconciliation in Today’s Fast Paced Financial World';
 $meta_lines = '<meta name="description" content="Embrace the future of reconciliation with advanced tools and automation, FinzRec is improving accuracy and efficiency in managing financial records.">';
+$meta_lines .= '<meta name="keywords" content="Manual reconciliation, financial recordkeeping, End to end reconciliation, Data integrity in reconciliation, Cross platform reconciliation, Realtime financial tracking">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";

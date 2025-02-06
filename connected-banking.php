@@ -1,6 +1,7 @@
 <?php
 $page_title = 'Maximizing Efficiency with Connected Banking Solutions for Today’s Digital Economy to Finbridge';
-$meta_lines = '<meta name="description" content="Connected banking is at the forefront of digital transformation, delivering innovative solutions that boost efficiency, streamline operations, and align with the latest fintech trends at Finbridge ">';
+$meta_lines = '<meta name="description" content="Connected banking is at the forefront of digital transformation, delivering innovative solutions that boost efficiency, streamline operations, and align with the latest fintech trends at Finbridge">';
+$meta_lines .= '<meta name="keywords" content="Digital banking, Seamless financial integration, Real time payments, Mobile banking, Open banking, Fintech innovation, Secure banking platforms, Banking efficiency, Cloud banking.">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";

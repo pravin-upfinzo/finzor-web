@@ -1,6 +1,7 @@
 <?php
 $page_title = 'FinInvezt is Strategies for Growth and Stability';
 $meta_lines = '<meta name="description" content="Achieve your financial goals with our comprehensive investment management services, tailored to your needs to FinInvezt">';
+$meta_lines .= '<meta name="keywords" content="Sustainable investment strategies, Impact investing,  AI-driven investment management, Digital wealth management, Fintech investment solutions, Smart beta strategies, Cryptocurrency investment management, Blockchain investments, Digital asset management">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";

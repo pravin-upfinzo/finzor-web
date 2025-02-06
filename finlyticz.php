@@ -1,6 +1,7 @@
 <?php
 $page_title = 'FinlyticZ is Accelerate Success with Data-Driven Strategies and Advanced Analytics';
 $meta_lines = '<meta name="description" content="Revolutionize your business with data-driven strategies that streamline processes, improve decision-making, and unlock hidden opportunities to FinlyticZ">';
+$meta_lines .= '<meta name="keywords" content="AI powered analytics, Data automation tools,Real time data processing, Cloud based analytics platforms, Data driven decision making, Advanced machine learning analytics, Smart data analytics, Interactive data visualization, Next gen analytics tools">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";
