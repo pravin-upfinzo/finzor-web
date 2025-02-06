@@ -1,7 +1,7 @@
 <?php
 header("Content-Type: application/json");
 session_start();
-$canSaveOnDB = 0;
+$canSaveOnDB = 0; //configure this to 1 if DB is ready
 
 if ($canSaveOnDB == 1) {
     require_once __DIR__ . '/config/db.php';
@@ -158,6 +158,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 echo json_encode(['status' => 'error', 'message' => 'Error: ' . $e->getMessage()]);
             }
 
+            break;
+        
+        case 'sign_up_form':
+            // $canSaveOnDB = 0;
+            $name = $_POST['name'] ?? '';
+            $email = $_POST['email'] ?? '';
+            $phone = $_POST['mobile'] ?? '';
+
+            if (empty($name) || empty($email) || empty($phone)) {
+                echo json_encode(['status' => 'error', 'message' => 'All fields are required.']);
+                exit;
+            }
+
+            try {
+                $db_saved = false;
+                if ($canSaveOnDB == 1) {
+                    $stmt = $pdo->prepare("SELECT COUNT(id) FROM registered_users WHERE email = ?");
+                    $stmt->execute([$email]);
+                    $emailExists = $stmt->fetchColumn();
+
+                    if ($emailExists) {
+                        $response = ['status' => 'error', 'message' => 'Your Email Address has been already registered !'];
+                        echo json_encode($response);
+                        exit;
+                    } else {
+                        $stmt1 = $pdo->prepare("INSERT INTO registered_users (`name`, `email`, `phone`) VALUES (?, ?, ?)");
+                        $db_saved = $stmt1->execute([$name, $email, $phone]);
+                    }
+                   
+                }
+
+               // if ($db_saved || $canSaveOnDB == 0) {
+                if ($db_saved) {
+                    $response = ['status' => 'success', 'message' => 'Thank you!! Registered Successfully.'];
+                } else {
+                    if($canSaveOnDB == 0){
+                        $response = ['status' => 'error', 'message' => 'Sorry! Error on saving your details'];
+                        echo json_encode($response);
+                        exit;
+                    }
+                    $response = ['status' => 'error', 'message' => 'Sorry! Please Try again later'];
+                }
+            } catch (Exception $e) {
+                echo json_encode(['status' => 'error', 'message' => 'Error: ' . $e->getMessage()]);
+            }
             break;
 
 

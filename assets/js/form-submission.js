@@ -249,6 +249,41 @@ $(document).ready(function () {
       // If any field is invalid, prevent form submission
       if (!isValid) {
         event.preventDefault();
+      } else {
+        $.ajax({
+            url: "routes/ajax.php",
+            type: "POST",
+            data: $(this).serialize() + "&action=sign_up_form",
+            dataType: "json",
+            success: function (response) {
+                alert(response.message);
+                if (response.status === "success") {
+                    if ($("#signupForm").length) {
+                        $("#signupForm")[0].reset();
+                    }
+                }
+            },
+            error: function (xhr) {
+                let errorMessage = "An error occurred while submitting the form.";
+        
+                // Check if response contains a JSON error message
+                if (xhr.responseText) {
+                    try {
+                        let jsonResponse = JSON.parse(xhr.responseText);
+                        if (jsonResponse.message) {
+                            errorMessage = jsonResponse.message;
+                        }
+                    } catch (e) {
+                        console.log("Error parsing JSON response:", e);
+                    }
+                }
+        
+                alert(errorMessage);
+                if ($("#signupForm").length) {
+                    $("#signupForm")[0].reset();
+                }
+            }
+        });
       }
     });
 
