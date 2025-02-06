@@ -127,7 +127,6 @@
 }
 .about_us_section .about_part {
   height: auto;
-  padding: 50px 0px;
 }
 .about_us_section .about_part h5 {
   color: #3eab90;
@@ -140,6 +139,10 @@
     padding-bottom: 20px;
     text-align: center;
   }
+}
+.about_us_section .about_part .about_us_images {
+  width: 500px;
+  height: 500px;
 }
 @media screen and (max-width: 991px) {
   .about_us_section .about_part .about_us_images {
