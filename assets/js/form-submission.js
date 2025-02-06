@@ -89,6 +89,8 @@ $(document).ready(function () {
         if (!isValid) {
             event.preventDefault();
         } else {
+            $("#book-demoform .button-loader").show(); 
+
             let fullUrl = window.location.protocol + "//" + window.location.host + window.location.pathname + window.location.search + window.location.hash;
             
             let formDataArray = $(this).serializeArray(); 
@@ -100,12 +102,22 @@ $(document).ready(function () {
                 data: formData + "&action=submit_book_demo",
                 dataType: "json",
                 success: function (response) {
-                    alert(response.message);
+                    //alert(response.message);
                     if (response.status === "success") {
+                        Swal.fire({
+                            position: "center",
+                            icon: "success",
+                            title: "Thankyou!",
+                            text: response.message,
+                            showConfirmButton: false,
+                            timer: 5000
+                        });
                         if ($("#book-demoform").length) {
                             $("#book-demoform")[0].reset();
                             $('#myModal').modal('hide');
                         }
+                    } else {
+                        alert(response.message);
                     }
                 },
                 error: function (xhr) {
@@ -124,6 +136,9 @@ $(document).ready(function () {
                     }
             
                     alert(errorMessage);
+                },
+                complete: function () {
+                    $("#book-demoform .button-loader").hide();  
                 }
             });
         }
@@ -147,6 +162,7 @@ $(document).ready(function () {
          if (!isValid) {
             event.preventDefault();
         } else {
+            $(".subscribe .button-loader").show(); 
             let fullUrl = window.location.protocol + "//" + window.location.host + window.location.pathname + window.location.search + window.location.hash;
             
            
@@ -156,11 +172,22 @@ $(document).ready(function () {
                 data: {'action' : "subscribe", 'subs_email' : subs_email, 'ref_url' : fullUrl},
                 dataType: "json",
                 success: function (response) {
-                    alert(response.message);
+                  //  alert(response.message);
+                    
                     if (response.status === "success") {
+                        Swal.fire({
+                            position: "center",
+                            icon: "success",
+                            title: "Thankyou!",
+                            text: response.message,
+                            showConfirmButton: false,
+                            timer: 4000
+                        });
                         if ($("#subscribe-form").length) {
                             $("#subscribe-form")[0].reset();
                         }
+                    } else {
+                        alert(response.message);
                     }
                 },
                 error: function (xhr) {
@@ -179,6 +206,9 @@ $(document).ready(function () {
                     }
             
                     alert(errorMessage);
+                },
+                complete: function () {
+                    $(".subscribe .button-loader").hide();  
                 }
             });
         }
@@ -250,17 +280,29 @@ $(document).ready(function () {
       if (!isValid) {
         event.preventDefault();
       } else {
+        $("#signupForm .button-loader").show();  
         $.ajax({
             url: "routes/ajax.php",
             type: "POST",
             data: $(this).serialize() + "&action=sign_up_form",
             dataType: "json",
             success: function (response) {
-                alert(response.message);
+                //alert(response.message);
                 if (response.status === "success") {
+                    Swal.fire({
+                        position: "center",
+                        icon: "success",
+                        title: "Thankyou!",
+                        text: response.message,
+                        showConfirmButton: false,
+                        timer: 4000
+                    });
+
                     if ($("#signupForm").length) {
                         $("#signupForm")[0].reset();
                     }
+                } else {
+                    alert(response.message);
                 }
             },
             error: function (xhr) {
@@ -279,9 +321,12 @@ $(document).ready(function () {
                 }
         
                 alert(errorMessage);
+                
                 if ($("#signupForm").length) {
                     $("#signupForm")[0].reset();
                 }
+            }, complete: function () {
+                $("#signupForm .button-loader").hide();  
             }
         });
       }

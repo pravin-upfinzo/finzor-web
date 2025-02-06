@@ -59,6 +59,7 @@ include_once('partials/header.php'); //should be last after all variables
                 </div>
                 <!-- <button class="buttons" type="submit" onclick="validateForm()"> -->
                 <button class="buttons" type="submit">
+                    <div class="button-loader"></div>
                     <span class="text">Submit</span>
                       <div class="icon">
                             <img src="./assets/images/telegram.svg" alt="" class="tele_img">

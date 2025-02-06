@@ -4079,6 +4079,7 @@ div#faq-animate svg {
   font-size: 18px;
   color: #C7DAD9;
   font-weight: 400;
+  margin: 0;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .footer_section .fz_footer_container .subscribe p {

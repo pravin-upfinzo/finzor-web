@@ -76,18 +76,28 @@ $(document).ready(function () {
         if (!isValid) {
             event.preventDefault();
         } else {
-
+            $("#form .button-loader").show(); 
             $.ajax({
                 url: "routes/ajax.php",
                 type: "POST",
                 data: $(this).serialize() + "&action=submit_contact_form",
                 dataType: "json",
                 success: function (response) {
-                    alert(response.message);
+                    //alert(response.message);
                     if (response.status === "success") {
+                        Swal.fire({
+                            position: "center",
+                            icon: "success",
+                            title: "Thankyou!",
+                            text: response.message,
+                            showConfirmButton: false,
+                            timer: 4000
+                        });
                         if ($("#form").length) {
                             $("#form")[0].reset();
                         }
+                    } else {
+                        alert(response.message);
                     }
                 },
                 error: function (xhr) {
@@ -106,6 +116,9 @@ $(document).ready(function () {
                     }
             
                     alert(errorMessage);
+                },
+                complete: function () {
+                    $("#form .button-loader").hide();  
                 }
             });
         }

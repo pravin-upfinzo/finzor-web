@@ -47,9 +47,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $body = contactus_mail_body($type="admin_mail",$data);
 
                     if (sendEmail($to_email, $to_name, $subject, $body)) {
-                        $response = ['status' => 'success', 'message' => 'Thank you!! We will reachout to you in a while.'];
+                        $response = ['status' => 'success', 'message' => 'We will reachout to you in a while.'];
                     } else {
-                        $response = ['status' => 'error', 'message' => 'Thank you. Email could not be sent.'];
+                        $response = ['status' => 'error', 'message' => 'Email could not be sent.'];
                     }
                 } else {
                     $response = ['status' => 'error', 'message' => 'Sorry! Please Try again later'];
@@ -91,9 +91,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         $body = book_demo_mail_body($type="admin_mail", $data);
     
                         if (sendEmail($to_email, $to_name, $subject, $body)) {
-                            $response = ['status' => 'success', 'message' => 'Thank you!! Your demo request was received. We will reachout to you in a while.'];
+                            $response = ['status' => 'success', 'message' => 'Your demo request was received. We will reachout to you in a while.'];
                         } else {
-                            $response = ['status' => 'error', 'message' => 'Thank you. Email could not be sent.'];
+                            $response = ['status' => 'error', 'message' => 'Email could not be sent.'];
                         }
                     } else {
                         $response = ['status' => 'error', 'message' => 'Sorry! Please Try again later'];
@@ -147,9 +147,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $subs_thanx_body = subscribe_mail_body('user_thank_mail', $data);
 
                     if (sendEmail($to_email, $to_name, $subject, $body) && sendEmail($email, "", $subs_thanx_subject, $subs_thanx_body)) {
-                        $response = ['status' => 'success', 'message' => 'Thank you!! Subscribed successfully.'];
+                        $response = ['status' => 'success', 'message' => 'Subscribed successfully.'];
                     } else {
-                        $response = ['status' => 'error', 'message' => 'Thank you. Email could not be sent.'];
+                        $response = ['status' => 'error', 'message' => 'Email could not be sent.'];
                     }
                 } else {
                     $response = ['status' => 'error', 'message' => 'Sorry! Please Try again later'];
@@ -191,7 +191,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                // if ($db_saved || $canSaveOnDB == 0) {
                 if ($db_saved) {
-                    $response = ['status' => 'success', 'message' => 'Thank you!! Registered Successfully.'];
+                    $response = ['status' => 'success', 'message' => 'Registered Successfully.'];
                 } else {
                     if($canSaveOnDB == 0){
                         $response = ['status' => 'error', 'message' => 'Sorry! Error on saving your details'];
