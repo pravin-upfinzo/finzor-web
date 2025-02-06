@@ -50,14 +50,14 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Boost Accuracy with AI Precision</span> eliminate manual errors and ensure precise financial reconciliation.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Eliminate Manual Errors</span> achieve precise reconciliation with AI</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Save Time with Lightning-Fast Processing</span> process vast data volumes in minutes, reducing costs and delays.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Fast Data Processing</span> accelerate data handling and minimize expenses</p>
 
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p>Instant Fraud Detection for Risk Mitigation <span class="fz_cbs_color">identify and address unusual transaction patterns in real-time.</span></p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Real-Time Fraud Detection </span>identify and mitigate risks instantly</p>
                         </li>
                     </ul>
                 </div>
@@ -193,13 +193,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Match transactions accurately </span> to avoid discrepancies.</span></p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Match transactions accurately </span> to avoid discrepancies</span></p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Automate reports & tracking </span> for seamless reconciliation.</span></p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Automate reports & tracking </span> for seamless reconciliation</span></p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Ensure financial accuracy</span> with real-time data insights.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Ensure financial accuracy</span> with real-time data insights</p>
                             
                         </li>
                     </ul>

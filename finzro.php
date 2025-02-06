@@ -52,14 +52,14 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Robust Security for Digital Transactions </span>ensure encrypted transactions for secure business operations.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Enhanced Security </span>encrypt transactions to secure business operations</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">AI-Driven Fraud Prevention </span>leverage AI to detect and prevent fraud during merchant onboarding.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">AI Fraud Detection </span>detect and prevent fraud during onboarding</p>
                             </span>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Compliance and Trust Assurance </span>maintain regulatory compliance to build trust with merchants.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Regulatory Compliance </span>build trust with merchants through assurance</p>
                         </li>
                     </ul>
                 </div>
