@@ -53,7 +53,7 @@ include_once('partials/header.php'); //should be last after all variables
                 </div>
                 <p class="fin_bankz_desc">Finzor’s UPI solutions offer a real-time payment system that enables P2P and P2M transactions with ease. Our platform supports multiple bank accounts in a single app, simplifying digital transactions. With scheduled payments and payment link generation, Finzor enhances financial accessibility. </p>
                 <p class="fin_bankz_desc">We ensure seamless merchant and business payments, catering to various industry needs. Finzor’s UPI integrates with advanced security measures to prevent fraud and unauthorized access. Our user-friendly interface and instant transaction capabilities make digital payments more convenient.</p>
-                <a class="cmn-btn" href="upi.php">
+                <a class="cmn-btn" href="upi">
                     <span class="text">View Product</span>
                     <div class="icon">
                         <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
@@ -99,7 +99,7 @@ include_once('partials/header.php'); //should be last after all variables
                 </div>
                 <p class="fin_bankz_desc">UPI Switch by Finzor enables the seamless routing of UPI transactions between banks and fintechs. Our solution integrates with accounting and ERP systems, ensuring smooth financial operations. With advanced security protocols, including two-factor authentication, we enhance transaction safety.</p>
                 <p class="fin_bankz_desc"> Finzor’s UPI Switch supports smart payment routing and flexible refund management. Our fraud detection system proactively identifies and prevents suspicious transactions. By leveraging AI-powered insights, we help businesses optimize their payment workflows.</p>
-                <a class="cmn-btn" href="upi-switch.php">
+                <a class="cmn-btn" href="upi-switch">
                     <span class="text">View Product</span>
                     <div class="icon">
                         <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
@@ -140,7 +140,7 @@ include_once('partials/header.php'); //should be last after all variables
                 </div>
                 <p class="fin_bankz_desc">Finzor’s Payment Gateway simplifies online payments by supporting multiple payment methods, including cards, UPI, and wallets. Our platform ensures secure transactions with encryption, protecting customer data. With AI-powered fraud detection, we provide real-time risk analysis and prevention.</p>
                 <p class="fin_bankz_desc"> At Finzor, we offer customizable payment gateway fees, allowing businesses to optimize costs. Our seamless refund process enhances customer trust, ensuring quick dispute resolution. The real-time analytics dashboard enables merchants to track payments and gain valuable insights.</p>
-                <a class="cmn-btn" href="payment-gateways.php">
+                <a class="cmn-btn" href="payment-gateways">
                     <span class="text">View Product</span>
                     <div class="icon">
                         <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
@@ -173,7 +173,7 @@ include_once('partials/header.php'); //should be last after all variables
                         <p>We help banks to Engage Better with their customers, employees, <br>and partners to drive
                             purposeful growth.</p>
                         <div class="get_touch_btn">
-                            <a class="cmn-btn" href="contact-us.php">
+                            <a class="cmn-btn" href="contact-us">
                                 <span class="text">Let's Connect</span>
                                 <div class="icon">
                                     <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">

@@ -42,28 +42,28 @@
               <div class="links-group">
                 <h4>PRODUCTS</h4>
                 <ul>
-                  <li><a href="./finbankz.php">FinbankZ</a></li>
-                  <li><a href="./upizor.php">UPIZor</a></li>
-                  <li><a href="./finopz.php">FinOpZ 360°</a></li>
-                  <li><a href="./finzro.php">FinZro</a></li>
-                  <li><a href="./finlyticz.php">FinlyticZ</a></li>
-                  <li><a href="./connected-banking.php">Finbridge</a></li>
-                  <li><a href="./fraud-and-risk-management.php">FinVigil</a></li>
+                  <li><a href="./finbankz">FinbankZ</a></li>
+                  <li><a href="./upizor">UPIZor</a></li>
+                  <li><a href="./finopz">FinOpZ 360°</a></li>
+                  <li><a href="./finzro">FinZro</a></li>
+                  <li><a href="./finlyticz">FinlyticZ</a></li>
+                  <li><a href="./connected-banking">Finbridge</a></li>
+                  <li><a href="./fraud-and-risk-management">FinVigil</a></li>
                 </ul>
               </div>
               <div class="links-group">
                 <h4>COMPANY</h4>
                 <ul>
-                  <li><a href="about-us.php">About us</a></li>
-                  <li><a href="contact-us.php">Contact</a></li>
-                  <li><a href="index.php#faq_part">FAQ</a></li>
+                  <li><a href="about-us">About us</a></li>
+                  <li><a href="contact-us">Contact</a></li>
+                  <li><a href="index#faq_part">FAQ</a></li>
                 </ul>
               </div>
               <div class="links-group">
                 <h4>LEGAL</h4>
                 <ul>
-                  <li><a href="terms-and-condition.php">Terms & Conditions</a></li>
-                  <li><a href="privacy-policy.php">Privacy Policy</a></li>
+                  <li><a href="terms-and-condition">Terms & Conditions</a></li>
+                  <li><a href="privacy-policy">Privacy Policy</a></li>
                 </ul>
               </div>
             </div>

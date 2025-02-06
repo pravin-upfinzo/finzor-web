@@ -54,7 +54,7 @@ include_once('partials/header.php'); //should be last after all variables
                 </div>
                 <p class="fin_bankz_desc">Finzor's investment management solutions provide AI-driven insights to help customers make informed financial decisions. Our platform supports portfolio management, tax planning, and budgeting tools for effective wealth management. With automated risk assessment, we help users optimize their investments.</p>
                 <p class="fin_bankz_desc">Our investment solutions are designed for both individuals and businesses, offering smart financial guidance. Finzor enables seamless fund allocation, ensuring diversification and stability. With our intuitive interface and real-time updates, we simplify investment tracking and management.</p>
-                <a class="cmn-btn" href="investment-management.php">
+                <a class="cmn-btn" href="investment-management">
                     <span class="text">View Product</span>
                     <div class="icon">
                         <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
@@ -100,7 +100,7 @@ include_once('partials/header.php'); //should be last after all variables
                 </div>
                 <p class="fin_bankz_desc">At Finzor, we ensure smooth and timely settlements by automating payment processing. Our customizable settlement thresholds allow businesses to optimize cash flow and minimize risks. With tax calculation and reporting features, we help merchants stay compliant with regulations.</p>
                 <p class="fin_bankz_desc"> Finzor’s settlement solutions integrate with APIs, providing seamless financial reconciliation. Our instant dispute resolution and chargeback management enhance transparency. By leveraging AI-driven insights, we help businesses make data-backed financial decisions.</p>
-                <a class="cmn-btn" href="settlements.php">
+                <a class="cmn-btn" href="settlements">
                     <span class="text">View Product</span>
                     <div class="icon">
                         <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
@@ -141,7 +141,7 @@ include_once('partials/header.php'); //should be last after all variables
                 </div>
                 <p class="fin_bankz_desc">The reconciliation process at Finzor ensures real-time tracking of financial transactions. Our AI-driven insights help businesses manage receivables efficiently, reducing discrepancies. With automated alerts, we notify users of any inconsistencies in transaction records.</p>
                 <p class="fin_bankz_desc"> Finzor’s reconciliation solutions provide cloud-based access, enabling cross-platform synchronization. Our system ensures seamless financial reporting, helping businesses maintain accuracy. By integrating real-time analytics, we optimize financial management and reduce reconciliation errors.</p>
-                <a class="cmn-btn" href="reconciliation.php">
+                <a class="cmn-btn" href="reconciliation">
                     <span class="text">View Product</span>
                     <div class="icon">
                         <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
@@ -174,7 +174,7 @@ include_once('partials/header.php'); //should be last after all variables
                         <p>We help banks to Engage Better with their customers, employees, <br>and partners to drive
                             purposeful growth.</p>
                         <div class="get_touch_btn">
-                            <a class="cmn-btn" href="contact-us.php">
+                            <a class="cmn-btn" href="contact-us">
                                 <span class="text">Let's Connect</span>
                                 <div class="icon">
                                     <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">

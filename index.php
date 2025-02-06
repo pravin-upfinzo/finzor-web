@@ -102,7 +102,7 @@ include_once('partials/header.php'); //should be last after all variables
                         <p>Finzor Core Banking Services refers to the suite of services <br class="mobile-break">and solutions offered by Finzor to
                             financial institutions.</p>
                         <div class="hero-section-button">
-                        <a href="core-banking-solution.php">
+                        <a href="core-banking-solution">
                             <button class="section-button-one active_btn">
                                 <span class="text">Explore</span>
                                 <div class="icon">
@@ -111,7 +111,7 @@ include_once('partials/header.php'); //should be last after all variables
                             </button>
                             </a>
 
-                            <a href="contact-us.php">
+                            <a href="contact-us">
                             <button class="section-button-two">
                                 <span class="text">Connect</span>
                                 <div class="icon">
@@ -162,7 +162,7 @@ include_once('partials/header.php'); //should be last after all variables
                 <p><span class="circle-ripple"><img src="assets/images/finance-icon.svg" alt="finacne" /></span>At Finzor, we strive to be a digital leader in Core Banking Solutions, delivering security and efficiency through multi-factor authentication, encryption, automated workflows, and seamless third-party integration with our plug-in modules. Our innovative solutions simplify financial management with real-time communication and enhanced functionality</p>
                 <div>
 
-                <a href="core-banking-solution.php">
+                <a href="core-banking-solution">
                     <button class="fz_learmore active_btn">
                         <span class="text">Learn more</span>
                         <div class="icon">
@@ -170,7 +170,7 @@ include_once('partials/header.php'); //should be last after all variables
                         </div>
                     </button>
                 </a>
-                <a href="contact-us.php">
+                <a href="contact-us">
                     <button class="fz_learmore_btn">
                         <span class="text">Get Started</span>
                         <div class="icon">
@@ -244,7 +244,7 @@ include_once('partials/header.php'); //should be last after all variables
                             designed to modernize and streamline banking operations by providing a robust core banking
                             platform that integrates various functionalities.</div>
                         <div class="fz_btn">
-                            <a href="./finbankz.php" class="buttons">
+                            <a href="./finbankz" class="buttons">
                                 <span class="text">Learn more</span>
                                 <div class="icon">
                                     <img src="./assets/images/fz_button_arrow.svg" alt="">
@@ -275,7 +275,7 @@ include_once('partials/header.php'); //should be last after all variables
                         <div class="fz_bank">Empowering seamless, secure, and instant transactions for a connected world </div>
                         <div class="fz_desc">Finzor's Digital Payment Solutions deliver secure, fast, and seamless transaction capabilities across platforms. With advanced encryption and fraud protection, our solution ensures a smooth payment experience for both merchants and customers. Designed for scalability, it integrates effortlessly into existing systems, empowering businesses to thrive in the digital economy with real-time, borderless payments.</div>
                         <div class="fz_btn">
-                            <a href="./upizor.php" class="buttons">
+                            <a href="./upizor" class="buttons">
                                 <span class="text">Learn more</span>
                                 <div class="icon">
                                     <img src="./assets/images/fz_button_arrow.svg" alt="">
@@ -306,7 +306,7 @@ include_once('partials/header.php'); //should be last after all variables
                         <div class="fz_bank">Streamlining and optimizing processes to enhance efficiency and accuracy</div>
                         <div class="fz_desc">Finzor's End to End Operational solutions optimize and automate key financial processes, enhancing accuracy, efficiency, and control. Our platform integrates seamlessly to streamline transaction management, compliance reporting, and financial visibility, empowering businesses to reduce errors, improve decision-making, and drive operational excellence.</div>
                         <div class="fz_btns">
-                            <a href="./finopz.php" class="buttons">
+                            <a href="./finopz" class="buttons">
                                 <span class="text">Learn more</span>
                                 <div class="icon">
                                     <img src="./assets/images/fz_button_arrow.svg" alt="">
@@ -339,7 +339,7 @@ include_once('partials/header.php'); //should be last after all variables
                         <div class="fz_desc">FINZOR’s Merchant Solutions offer secure, scalable payment tools that streamline transactions and fuel business growth. With seamless integration across online, in-store, and mobile payments, our platform enhances efficiency through real-time reporting, fraud protection, and customizable features, empowering merchants to optimize operations and improve customer experiences.
                         </div>
                         <div class="fz_btn">
-                            <a href="./Finzro.php" class="buttons">
+                            <a href="./Finzro" class="buttons">
                                 <span class="text">Learn more</span>
                                 <div class="icon">
                                     <img src="./assets/images/fz_button_arrow.svg" alt="">
@@ -370,7 +370,7 @@ include_once('partials/header.php'); //should be last after all variables
                         <div class="fz_bank">Transforming data into actionable insights for smarter, data-driven decisions</div>
                         <div class="fz_desc">Fueling Business Growth with Smart, Scalable Payment Tools Finzor's Data & Analytics solutions empower businesses to transform data into actionable insights. With advanced analytics, real-time reporting, and predictive tools, we help optimize performance, identify trends, and drive informed decision-making. Our solutions enable businesses to unlock new opportunities and stay ahead in a data-driven world.</div>
                         <div class="fz_btn">
-                            <a href="./finlyticz.php" class="buttons">
+                            <a href="./finlyticz" class="buttons">
                                 <span class="text">Learn more</span>
                                 <div class="icon">
                                     <img src="./assets/images/fz_button_arrow.svg" alt="">
@@ -401,7 +401,7 @@ include_once('partials/header.php'); //should be last after all variables
                         <div class="fz_bank">Transforming data into actionable insights for smarter, data-driven decisions</div>
                         <div class="fz_desc">Connected banking revolutionizes financial services by integrating diverse platforms, services, and third-party applications. Leveraging advanced APIs, cloud technology, and data analytics, Finzor enables seamless interaction across various financial products, offering a unified experience. Consumers and businesses can access services like payments, transfers, loans, investments, and more, all through one interface or interconnected apps.</div>
                         <div class="fz_btn">
-                            <a href="./connected-banking.php" class="buttons">
+                            <a href="./connected-banking" class="buttons">
                                 <span class="text">Learn more</span>
                                 <div class="icon">
                                     <img src="./assets/images/fz_button_arrow.svg" alt="">
@@ -432,7 +432,7 @@ include_once('partials/header.php'); //should be last after all variables
                         <div class="fz_bank">AI-powered fraud and risk management at Finzor</div>
                         <div class="fz_desc">Finzor leverages AI-driven innovations to enhance fraud detection and risk management, ensuring secure and intelligent financial operations. Our real-time fraud detection systems utilize behavioral biometrics, NLP for scam detection, and deep learning to identify anomalies and prevent fraudulent activities.</div>
                         <div class="fz_btn">
-                            <a href="./fraud-and-risk-management.php" class="buttons">
+                            <a href="./fraud-and-risk-management" class="buttons">
                                 <span class="text">Learn more</span>
                                 <div class="icon">
                                     <img src="./assets/images/fz_button_arrow.svg" alt="">
@@ -990,7 +990,7 @@ include_once('partials/header.php'); //should be last after all variables
                     end-to-end encryption and multi-factor authentication, it ensures your data is protected. Powered by AI and
                     ML, it empowers leaders to monitor, manage, and strategize seamlessly.</p>
                 <div class="fz_btn">
-                <!-- <a href="core-banking-solution.php">
+                <!-- <a href="core-banking-solution">
                     <button class="fz_learmore active_btn">
                         <span class="text">Learn more</span>
                         <div class="icon">
@@ -999,7 +999,7 @@ include_once('partials/header.php'); //should be last after all variables
                     </button>
                 </a> -->
 
-                <a href="contact-us.php">
+                <a href="contact-us">
                     <button class="fz_learmore_btn">
                         <span class="text">Get Started</span>
                         <div class="icon">

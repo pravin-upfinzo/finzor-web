@@ -417,7 +417,7 @@ include_once('partials/header.php'); //should be last after all variables
                         <p class="fade-up">
                         To deliver advanced, reliable, and scalable payment and core banking systems that ensure secure, efficient, and user-centric financial transactions, fostering trust and supporting the growth of the financial ecosystem.
                         </p>
-                        <a href="./contact-us.php" class="buttons mt-4">
+                        <a href="./contact-us" class="buttons mt-4">
                             <span class="text">Get Started</span>
                             <div class="icon">
                                 <img src="./assets/images/fz_button_arrow.svg" alt="">
@@ -439,7 +439,7 @@ include_once('partials/header.php'); //should be last after all variables
                         optimize operations, enhance customer experiences, and drive growth through real-time
                         insights, modular systems, and secure, scalable platforms.
                         </p>
-                        <a href="./contact-us.php" class="buttons mt-4">
+                        <a href="./contact-us" class="buttons mt-4">
                             <span class="text">Get Started</span>
                             <div class="icon">
                                 <img src="./assets/images/fz_button_arrow.svg" alt="">
@@ -468,7 +468,7 @@ include_once('partials/header.php'); //should be last after all variables
                         With flexibility, scalability, and real-time processing, our Core Banking System (CBS) facilitates the smooth administration of accounts, transactions, and client interactions, resulting in increased operational efficiency and first-rate service.
 We increase consumer happiness and encourage digital adoption by enabling safe, quick, and dependable digital transactions across point-of-sale, web, and mobile platforms with Payment Solutions.
                         </p>
-                        <a href="./contact-us.php" class="buttons mt-4">
+                        <a href="./contact-us" class="buttons mt-4">
                             <span class="text">Get Started</span>
                             <div class="icon">
                                 <img src="./assets/images/fz_button_arrow.svg" alt="">

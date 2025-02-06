@@ -22,7 +22,7 @@ include_once('partials/header.php'); //should be last after all variables
     <div class="container">
         <div class="product_list_hero">
             <h2 class="product_list_hero_title"><span> NeoPulse </span> Your Bank, Anywhere, Anytime</h2>
-            <a class="cmn-btn" href="contact-us.php">
+            <a class="cmn-btn" href="contact-us">
                 <span class="text"> Let's connect</span>
                 <div class="icon">
                     <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
@@ -226,7 +226,7 @@ include_once('partials/header.php'); //should be last after all variables
                         <h2>Get in touch</h2>
                         <p>We help banks to Engage Better with their customers, employees, <br>and partners to drive purposeful growth.</p>
                         <div class="get_touch_btn">
-                            <a class="cmn-btn" href="contact-us.php">
+                            <a class="cmn-btn" href="contact-us">
                                 <span class="text"> Let's connect</span>
                                 <div class="icon">
                                     <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">

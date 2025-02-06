@@ -53,7 +53,7 @@ include_once('partials/header.php'); //should be last after all variables
                 </div>
                 <p class="fin_bankz_desc">Finzor Core Banking Services provides a robust and scalable banking infrastructure that ensures seamless financial operations. Our solutions empower banks with real-time processing, regulatory compliance, and enhanced digital banking capabilities. With cloud integration and AI-powered insights, Finzor enables banks to optimize efficiency. </p>
                 <p class="fin_bankz_desc">At Finzor, we understand the importance of security, compliance, and automation in modern banking. Our CBS supports cash management, regulatory reporting, and open APIs for easy third-party integrations. By leveraging Finzor’s CBS, financial institutions can enhance customer experience and operational agility.</p>
-                <a class="cmn-btn" href="core-banking-solution.php">
+                <a class="cmn-btn" href="core-banking-solution">
                     <span class="text">View Product</span>
                     <div class="icon">
                         <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
@@ -99,7 +99,7 @@ include_once('partials/header.php'); //should be last after all variables
                 </div>
                 <p class="fin_bankz_desc">Finzor’s Mobile Banking is designed to provide customers with a seamless and secure banking experience on the go. Our platform supports real-time transactions, personalized alerts, and AI-driven customer support for enhanced engagement. With multi-layer security, we ensure data protection and fraud prevention. </p>
                 <p class="fin_bankz_desc"> At Finzor, we enable banks and financial institutions to offer a next-gen mobile banking experience. Our solutions integrate with open REST APIs, allowing seamless connectivity with fintech ecosystems. With AI-driven analytics, Finzor’s mobile banking enhances decision-making and customer insights.</p>
-                <a class="cmn-btn" href="mobile-banking.php">
+                <a class="cmn-btn" href="mobile-banking">
                     <span class="text">View Product</span>
                     <div class="icon">
                         <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
@@ -140,7 +140,7 @@ include_once('partials/header.php'); //should be last after all variables
                 </div>
                 <p class="fin_bankz_desc">At Finzor, we are redefining the financial landscape with our advanced Neo Banking solutions. Our digital-first approach eliminates traditional banking barriers, offering real-time payments, deposits, and seamless financial management. With API-driven connectivity, businesses can create customized banking experiences.</p>
                 <p class="fin_bankz_desc">Finzor’s Neo Banking ensures enhanced security with next-gen authentication and fraud prevention measures. We provide real-time data insights to help customers make informed financial decisions. Our platform empowers fintech startups and enterprises to deliver cutting-edge banking services efficiently.</p>
-                <a class="cmn-btn" href="neo-banking.php">
+                <a class="cmn-btn" href="neo-banking">
                     <span class="text">View Product</span>
                     <div class="icon">
                         <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
@@ -186,7 +186,7 @@ include_once('partials/header.php'); //should be last after all variables
                 </div>
                 <p class="fin_bankz_desc">At Finzor, we offer a secure, intuitive, and feature-rich Internet Banking platform for individuals and businesses. Our solution provides a comprehensive payout dashboard, automated payment analytics, and seamless integration with e-commerce. With blockchain-based security, we ensure safe and transparent transactions. </p>
                 <p class="fin_bankz_desc">Finzor’s Internet Banking enables users to access banking services anytime, anywhere, with a user-friendly interface. Our real-time analytics help businesses track financial activities efficiently. With AI-powered insights and predictive analytics, we optimize banking interactions for improved customer satisfaction.</p>
-                <a class="cmn-btn" href="internet-banking.php">
+                <a class="cmn-btn" href="internet-banking">
                     <span class="text">View Product</span>
                     <div class="icon">
                         <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
@@ -216,7 +216,7 @@ include_once('partials/header.php'); //should be last after all variables
                         <p>We help banks to Engage Better with their customers, employees, <br>and partners to drive
                             purposeful growth.</p>
                         <div class="get_touch_btn">
-                            <a class="cmn-btn" href="contact-us.php">
+                            <a class="cmn-btn" href="contact-us">
                                 <span class="text">Let's Connect</span>
                                 <div class="icon">
                                     <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
