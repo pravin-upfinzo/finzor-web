@@ -401,6 +401,11 @@ header {
           height: 20px;
           object-fit: contain;
           padding-left: 3px;
+          transition: all 0.2s ease;
+          &:last-child {
+            position: absolute;
+            top: 35px;
+          }
         }
         a {
           span{
@@ -442,41 +447,7 @@ header {
             margin-left: 0; // Remove margin-left
             padding-left: 10px; // Minimal padding instead
            }
-
-          // a {
-          //   background-color: $tertiary-color;
-          //   padding: 10px 15px;
-          //   border-radius: 35px;
-          //   border: 1px solid $white;
-          //   --border-angle: 0turn;
-
-          //   // --main-bg: conic-gradient(
-          //   //   from var(--border-angle),
-          //   //   #1a2c2a 0%,
-          //   //   #1a2c2a 100%
-          //   // );
-          //   --main-bg:conic-gradient(from var(--border-angle), #007164 0%, #007264 100%);
-          //   border: solid 1px transparent;
-
-          //   --gradient-border: conic-gradient(
-          //     from var(--border-angle),
-          //     transparent 50%,
-          //     #f7c35f,
-          //     #3eab90 99%,
-          //     transparent
-          //   );
-          //   background: var(--main-bg) padding-box,
-          //     var(--gradient-border) border-box, var(--main-bg) border-box;
-          //   background-position: center center;
-
-          //   animation: bg-spin 4s linear infinite;
-
-          //   @keyframes bg-spin {
-          //     to {
-          //       --border-angle: 1turn;
-          //     }
-          //   }
-          // }
+         
         }
       }
       .unlock{
@@ -566,6 +537,7 @@ header {
   .buttons:hover,
   .buttons:active {
     box-shadow: none !important;
+
   }
   .buttons:hover::before,
   .buttons:active::before {
@@ -579,6 +551,18 @@ header {
   }
   .buttons:hover .text{
    left: 10px !important;
+  }
+  .buttons{
+    &:hover {
+      .tele_img {
+        &:first-child {
+          margin-top: -55px;
+        }
+        &:last-child {
+          top: 3px;
+        }
+      }
+    }
   }
 }
 // .buttons {

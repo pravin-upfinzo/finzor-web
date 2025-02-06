@@ -443,6 +443,11 @@ header .fz_sigin ul li .tele_img {
   height: 20px;
   object-fit: contain;
   padding-left: 3px;
+  transition: all 0.2s ease;
+}
+header .fz_sigin ul li .tele_img:last-child {
+  position: absolute;
+  top: 35px;
 }
 header .fz_sigin ul li a {
   color: #ffffff;
@@ -629,6 +634,12 @@ header .fz_sigin ul .unlock a:hover svg path {
 }
 .onboard_btn .buttons:hover .text {
   left: 10px !important;
+}
+.onboard_btn .buttons:hover .tele_img:first-child {
+  margin-top: -55px;
+}
+.onboard_btn .buttons:hover .tele_img:last-child {
+  top: 3px;
 }
 
 #lottie-animation {
