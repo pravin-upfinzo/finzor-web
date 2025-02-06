@@ -333,7 +333,7 @@ include_once('partials/header.php'); //should be last after all variables
                         <h3 class="fade-up">We help every company become a fintech expert</h3>
                             <p class="fade-up">Empowering Banks with Scalable Software as a Service (SaaS) Solutions for Banking, Payments, and Fintech Innovation.</p>
                             <div class="about_us_banner_img">
-                                <img src="./assets/images/about.png" alt="about_bg">
+                                <img src="./assets/images/about.jpg" alt="about_bg">
                             </div>
                         </div>
                         <div class="about_banner_content">
@@ -414,7 +414,7 @@ include_once('partials/header.php'); //should be last after all variables
                 </div>
                 <div class="col-lg-6">
                     <div class="about_us_content">
-                        <h5 class="fade-up">Our Mission</h5>
+                        <!-- <h5 class="fade-up">Our Mission</h5> -->
                         <p class="fade-up">
                         To deliver advanced, reliable, and scalable payment and core banking systems that ensure secure, efficient, and user-centric financial transactions, fostering trust and supporting the growth of the financial ecosystem.
                         </p>
@@ -433,7 +433,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="row">
                 <div class="col-lg-6">
                     <div class="about_us_content">
-                        <h5 class="fade-up">Our Vision</h5>
+                        <!-- <h5 class="fade-up">Our Vision</h5> -->
                         <p class="fade-up">
                         Finzor aims to revolutionize banking with advanced core banking and payment solutions that
                         harness AI, blockchain, and cloud technologies. We empower financial institutions to
@@ -464,7 +464,7 @@ include_once('partials/header.php'); //should be last after all variables
                 </div>
                 <div class="col-lg-6">
                     <div class="about_us_content">
-                        <h5 class="fade-up">Core Values</h5>
+                        <!-- <h5 class="fade-up">Core Values</h5> -->
                         <p class="fade-up">
                         With flexibility, scalability, and real-time processing, our Core Banking System (CBS) facilitates the smooth administration of accounts, transactions, and client interactions, resulting in increased operational efficiency and first-rate service.
 We increase consumer happiness and encourage digital adoption by enabling safe, quick, and dependable digital transactions across point-of-sale, web, and mobile platforms with Payment Solutions.
