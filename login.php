@@ -54,7 +54,7 @@ include_once('partials/header.php'); //should be last after all variables
   <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
 </svg>
 </span>Mobile Number <span class="mandatory">*</span></label>
-                    <input type="tel" placeholder="Enter your mobile number"  pattern="[0-9]{10}" type="phone" id="phone" name="mobile" onkeypress='return event.charCode >= 48 && event.charCode <= 57' >
+<input class="text-field-3" maxlength="256" name="phone" data-name="phone" placeholder="Enter Your Phone Num" type="phone" id="phone" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
                     <span class="error" id="phoneError"></span>
                 </div>
                 <!-- <button class="buttons" type="submit" onclick="validateForm()"> -->
