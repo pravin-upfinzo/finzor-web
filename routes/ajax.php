@@ -164,7 +164,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // $canSaveOnDB = 0;
             $name = $_POST['name'] ?? '';
             $email = $_POST['email'] ?? '';
-            $phone = $_POST['mobile'] ?? '';
+            $phone = $_POST['phone'] ?? '';
 
             if (empty($name) || empty($email) || empty($phone)) {
                 echo json_encode(['status' => 'error', 'message' => 'All fields are required.']);
