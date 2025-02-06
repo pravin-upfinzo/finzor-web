@@ -1,4 +1,5 @@
 const CANVAS = document.getElementsByTagName("canvas")[0],
+
     CTX = CANVAS.getContext("2d"),
     W = window.innerWidth,
     H = window.innerHeight,

@@ -1,6 +1,7 @@
 <?php
 $page_title = 'Empowering Merchants with Smart, Scalable Payment Solutions for the Future to FinZro';
 $meta_lines = '<meta name="description" content="FinZro is Transform your business with cutting-edge merchant solutions, delivering fast, secure, and seamless payment experiences for a digital-first world.">';
+$meta_lines .= '<meta name="keywords" content="Merchant services, Payment processing, Merchant account solutions, E-commerce payment gateways, Online payment solutions, Merchant payment systems, Point of sale solutions, Merchant service providers, Digital payment systems, Payment gateway integration, Merchant payment solutions for small business">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";
@@ -52,14 +53,14 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Robust Security for Digital Transactions </span>ensure encrypted transactions for secure business operations.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Enhanced Security </span>encrypt transactions to secure business operations</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">AI-Driven Fraud Prevention </span>leverage AI to detect and prevent fraud during merchant onboarding.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">AI Fraud Detection </span>detect and prevent fraud during onboarding</p>
                             </span>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Compliance and Trust Assurance </span>maintain regulatory compliance to build trust with merchants.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Regulatory Compliance </span>build trust with merchants through assurance</p>
                         </li>
                     </ul>
                 </div>

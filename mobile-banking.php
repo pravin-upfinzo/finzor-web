@@ -1,6 +1,7 @@
 <?php
-$page_title = 'MobfinZ:- Bank Smarter with Mobile Banking – Safe & Convenient';
+$page_title = 'MobfinZ Bank Smarter with Mobile Banking – Safe & Convenient';
 $meta_lines = '<meta name="description" content="MobfinZ puts your bank in your pocket. Securely send money, pay bills, and check balances anytime, anywhere. Get started today!">';
+$meta_lines .= '<meta name="keywords" content="AI banking, Open banking, API banking, Automated payments, 24/7 banking, Hassle free banking">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";

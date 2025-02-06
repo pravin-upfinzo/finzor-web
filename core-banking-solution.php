@@ -1,6 +1,7 @@
 <?php
 $page_title = 'Empower Your Bank with CoreNexus Advanced Core Banking Solutions';
 $meta_lines = '<meta name="description" content="Revolutionize your banking infrastructure with CoreNexus core banking solutions. Our secure and flexible platform helps streamline operations and accelerate growth">';
+$meta_lines .= '<meta name="keywords" content="Banking solutions,Payments bank,Core banking solutions,Cloud platform,Branch banking,Banking,Banking Software solutions,Core banking software">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";
@@ -54,10 +55,10 @@ include_once('partials/header.php'); //should be last after all variables
                             <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p>Personalized engagements tailor products with <span class="fz_cbs_color">real-time data</span></p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Customer-Centric Design </span>enhance UX with smart insights.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Customer-Centric Design </span>enhance UX with smart insights</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Seamless Digital Adoption </span>drive growth with AI-driven analytics.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Seamless Digital Adoption </span>drive growth with AI-driven analytics</p>
                         </li>
                     </ul>
                 </div>
@@ -220,7 +221,7 @@ include_once('partials/header.php'); //should be last after all variables
                             <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p>Utilize best practices to <span class="fz_cbs_color"> enhance customer experience </span>across touchpoints</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Adopt agile delivery</span> or gradual transformation at every interaction.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Adopt agile delivery</span> or gradual transformation at every interaction</p>
                         </li>
                     </ul>
                 </div>

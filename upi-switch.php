@@ -1,6 +1,7 @@
 <?php
-$page_title = 'FinzSwitch:- Optimize UPI Transactions with a Smart UPI Switch';
+$page_title = 'FinzSwitch Optimize UPI Transactions with a Smart UPI Switch';
 $meta_lines = '<meta name="description" content="A smart UPI Switch ensures faster transaction processing and seamless integration for banks, PSPs, and fintechs.">';
+$meta_lines .= '<meta name="keywords" content="UPI integration, API-based payments, Multi-bank UPI Switch, Transaction Optimization, UPI success rate, UPI reconciliation, Banking technology, Next gen payments">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";
@@ -50,13 +51,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Boosted Success Rates for Payments </span>experience a 4-5% increase in success rates with UPI Switch.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Experience improved payment </span>success efficiency boosting through switch</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Low Latency for Fast Transactions </span>reduce payment latency to under 100 milliseconds for speed.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Optimized Transactions </span>ensure under 100ms latency for quicker transactions</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Uninterrupted, Reliable Service </span>achieve 99.99% uptime, ensuring consistent payment performance.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Uninterrupted Service </span>achieve 99.99% uptime performance</p>
                         </li>
                     </ul>
                 </div>
@@ -215,13 +216,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Seamless routing of UPI </span> transactions for better reliability.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Seamless routing of UPI </span> transactions for better reliability</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Smart load balancing </span> across multiple banks & networks.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Smart load balancing </span> across multiple banks & networks</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Ensures high success rates </span> with faster & secure payments.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Ensures high success rates </span> with faster & secure payments</p>
                         </li>
                     </ul>
                 </div>

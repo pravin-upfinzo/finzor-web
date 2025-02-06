@@ -1,6 +1,7 @@
 <?php
 $page_title = 'Deep Dive into Transaction Finalization to Finalease';
 $meta_lines = '<meta name="description" content="Discover the intricacies of financial settlements, including their role in post-trade processes, clearing, and ensuring the accurate transfer of assets, while minimizing risks in investment markets at Finalease">';
+$meta_lines .= '<meta name="keywords" content="Real time settlement, multi asset settlement, settlement services, settlement clearing systems,Settlement">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";
@@ -43,20 +44,20 @@ include_once('partials/header.php'); //should be last after all variables
 <section class="fz_ai_enhance_sec cbs_sec">
     <div class="container">
         <div class="row">
-            <div class="col-lg-7 fz_enhance_col">
+            <div class="col-lg-7 fz_enhance_col left-space">
                 <div class="fz_ai_enhance_text">
                     <h2>Optimize Your Payment Process with Finzor</h2>
                     <p class="fz_enhance_para">At Finzor, we help businesses simplify and optimize every stage of the payment settlement process.  
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Simplified Payment Integration </span>connect PSPs for seamless transactions.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Simplified Payment Integration </span>connect PSPs for seamless transactions</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Maximize Efficiency with Routing </span>ensure cost-effective, faster processing.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Maximize Efficiency with Routing </span>ensure cost-effective, faster processing</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Automate Reconciliation </span>eliminate errors and streamline settlement.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Automate Reconciliation </span>eliminate errors and streamline settlement</p>
                         </li>
                     </ul>
                 </div>
@@ -185,20 +186,20 @@ include_once('partials/header.php'); //should be last after all variables
                     <img src="./assets/images/ai_enhance_img.webp" alt="">
                 </div>
             </div>
-            <div class="col-lg-7 fz_enhance_col left-space">
+            <div class="col-lg-7 fz_enhance_col">
                 <div class="fz_ai_enhance_text">
                     <h2>Role of Payment Orchestration in Modern Settlement</h2>
                     <p class="fz_enhance_para">Finzor’s payment orchestration platform transforms how businesses manage settlements with:
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Fast & secure fund settlements </span> for smooth transactions.</span></p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Fast & secure fund settlements </span> for smooth transactions</span></p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Automated reconciliation </span> enhance customer experience to ensure accurate payouts.</span></p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Automated reconciliation </span> to enhance accurate payouts</span></p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">eal-time tracking </span> of settlement status & reports.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Real-time tracking </span> of settlement status & reports</p>
                             
                         </li>
                     </ul>

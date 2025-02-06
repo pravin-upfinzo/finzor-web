@@ -61,7 +61,7 @@
                            }
                           
                            .form-group {
-                            margin: 40px 0px;
+                            margin: 20px 0px;
 
                             label {
                                 display: block;
@@ -69,7 +69,7 @@
                                 font-size: 16px;
                                 color: #34b195;
                                 font-weight: 400;
-                                margin-bottom: 5px;
+                                margin-bottom: 10px;
                                 .icon svg{
                                     width:25px;
                                     margin-right: 5px;
@@ -114,8 +114,17 @@
  }
  
 
- 
-
+.error {
+    color: red;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    padding: 5px 0px;
+    font-size: 12px;
+}
+.mandatory {
+    color: red;
+}
 
 
  

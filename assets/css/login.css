@@ -65,7 +65,7 @@
   text-align: left;
 }
 .container-login .signup-container .form-group {
-  margin: 40px 0px;
+  margin: 20px 0px;
 }
 .container-login .signup-container .form-group label {
   display: block;
@@ -73,7 +73,7 @@
   font-size: 16px;
   color: #34b195;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .container-login .signup-container .form-group label .icon svg {
   width: 25px;
@@ -120,4 +120,17 @@
     width: 90%;
     margin: 30px 20px;
   }
+}
+
+.error {
+  color: red;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  padding: 5px 0px;
+  font-size: 12px;
+}
+
+.mandatory {
+  color: red;
 }

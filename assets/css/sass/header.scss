@@ -253,7 +253,25 @@ header {
           li {
             &.active-submenu {
               > a {
+                position: relative;
                   background: rgba(0, 75, 75, 0.5);
+                  &:after {
+                    border-color: transparent transparent transparent rgb(62 171 144 / 20%);
+                    border-style: solid;
+                    border-width: 8px 0 8px 8px;
+                    content: "";
+                    height: 0;
+                    position: absolute;
+                    right: -8px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 0;
+                    z-index: 100;
+                    transition: all 0.5s ease;
+                    @media screen and (max-width: 991px) {
+                      border-width:unset;
+                    }
+                  }
               }
             }
             > a{
@@ -355,6 +373,11 @@ header {
             }
             p {
               font-size: 12px;margin: 0;color: #8d8d8d;
+            }
+          }
+          .active-submenu-l2 {
+            a {
+              background: rgba(0, 75, 75, 0.5);
             }
           }
         }
