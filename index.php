@@ -72,7 +72,9 @@ $pageScripts .= '<script></script>' . "\n";
 include_once('partials/header.php'); //should be last after all variables
 ?>
 
-<section id="fz-hero-bg"  class="section_start" active-menu="list-menu-home" >
+<span class="section_start" active-menu="list-menu-home"></span>
+
+<section id="fz-hero-bg">
     <canvas></canvas>
     <img src="assets/images/signal-1.gif" class="hero" />
     <div class="container">
@@ -337,7 +339,7 @@ include_once('partials/header.php'); //should be last after all variables
                         <div class="fz_desc">FINZOR’s Merchant Solutions offer secure, scalable payment tools that streamline transactions and fuel business growth. With seamless integration across online, in-store, and mobile payments, our platform enhances efficiency through real-time reporting, fraud protection, and customizable features, empowering merchants to optimize operations and improve customer experiences.
                         </div>
                         <div class="fz_btn">
-                            <a href="./FinZro.php" class="buttons">
+                            <a href="./Finzro.php" class="buttons">
                                 <span class="text">Learn more</span>
                                 <div class="icon">
                                     <img src="./assets/images/fz_button_arrow.svg" alt="">
