@@ -240,5 +240,13 @@ $(document).ready(function () {
             },
         },
     });
+    
+    $('.fz_features_sec .nav-link').on('click', function(event) {  
+        event.preventDefault();
+        var target = $(this).attr('aria-controls'); 
+        $('html, body').animate({ 
+            scrollTop: $('#' + target).offset().top - 220
+        }, 500);
+      });
 });
 
