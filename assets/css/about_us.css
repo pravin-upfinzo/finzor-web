@@ -82,7 +82,8 @@
   font-size: 18px;
   color: #ffffff;
   font-weight: 300;
-  padding: 20px 0px;
+  padding: 27px 0px 10px;
+  margin-bottom: 0px;
 }
 @media screen and (max-width: 991px) {
   .about_us_banner_sec p {
@@ -91,7 +92,7 @@
 }
 .about_us_banner_sec .about_us_banner_img {
   position: relative;
-  margin: 50px auto;
+  margin: 50px auto 0px;
 }
 @media screen and (max-width: 991px) {
   .about_us_banner_sec .about_us_banner_img {

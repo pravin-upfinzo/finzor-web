@@ -333,7 +333,7 @@ include_once('partials/header.php'); //should be last after all variables
                         <h3 class="fade-up">We help every company become a fintech expert</h3>
                             <p class="fade-up">Empowering Banks with Scalable Software as a Service (SaaS) Solutions for Banking, Payments, and Fintech Innovation.</p>
                             <div class="about_us_banner_img">
-                                <img src="./assets/images/about.png" alt="about_bg">
+                                <img src="./assets/images/about.jpg" alt="about_bg">
                             </div>
                         </div>
                         <div class="about_banner_content">
