@@ -270,11 +270,11 @@ body {
 .fz_features_sec{
   padding: 100px 0px;
   @media (max-width:1024px) {
-      padding: 60px 0px;
+      padding: 60px 20px;
      }
-  @media (max-width: 991px) {
-     padding: 60px 0px;
-    }
+  // @media (max-width: 991px) {
+  //    padding: 60px 20px;
+  //   }
   h2{
       font-size: 48px;
       font-weight: 600;
@@ -395,7 +395,7 @@ body {
 .fz_ai_enhance_sec{
   padding: 100px 0px;
   @media (max-width:1024px) {
-      padding: 30px 0px;
+      padding: 30px 20px;
      }
   .col-lg-5 {
     display: flex;
@@ -435,9 +435,9 @@ body {
               margin-bottom: 10px;
          }
           @media (max-width: 991px) {
-              text-align: center;
+              // text-align: center;
               font-size: 26px;
-              padding-bottom: 20px;
+              // padding-bottom: 20px;
              }
       }
       h3 {
@@ -459,7 +459,8 @@ body {
              font-size: 14px;
        }
           @media (max-width: 991px) {
-              text-align: center;
+              // text-align: center;
+              padding-bottom: 10px;
           }
       }
       ul{
@@ -941,6 +942,10 @@ body {
           }
           .fin_bankz_img {
             position: relative;
+            text-align: center;
+            svg{
+              width: 80% !important;
+            }
             @media screen and (max-width: 991px) {
               width:70%;
               margin: 20px auto;

@@ -1,6 +1,7 @@
 <?php
-$page_title = 'UPIZor:- Grow Your Business with Smart & Secure Payment Solutions';
+$page_title = 'UPIZor Grow Your Business with Smart & Secure Payment Solutions';
 $meta_lines = '<meta name="description" content="Reliable and secure payment solutions for e-commerce, retail, and mobile apps. Accept global payments and boost your sales today.">';
+$meta_lines .= '<meta name="keywords" content="Business payment solutions, POS payments, Instant payments, peer-to-peer payments, Automated billing, Recurring payments">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";
@@ -25,7 +26,7 @@ include_once('partials/header.php'); //should be last after all variables
     </div>
 </section>
 <!-- product_hero_section -->
-<section id="fin_bankz_sec" class="fin_bankz finbankz_bg" class="section_start" active-menu="list-menu-service">
+<section id="fin_bankz_sec" class="fin_bankz finbankz_bg section_start"  active-menu="list-menu-service" active-submenu="upizor">
     <div class="container">
         <div class="fin_bankz">
             <div class="fin_bankz_content finbank_content">

@@ -1,6 +1,7 @@
 <?php
-$page_title = 'FinbankZ: Secure, Scalable Core Banking & Digital Services for Banks';
+$page_title = 'FinbankZ Secure, Scalable Core Banking & Digital Services for Banks';
 $meta_lines = '<meta name="description" content="Discover FinbankZ, the ultimate banking core and digital platform solution. Modernize your banking operations with secure, scalable, and innovative solutions.">';
+$meta_lines .= '<meta name="keywords" content="Core banking Solutions,Digital banking platform,Cloud banking platform,Banking software solutions,Secure banking solutions,Banking core systems,Fintech banking,Payments banking ">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";
@@ -18,7 +19,7 @@ include_once('partials/header.php'); //should be last after all variables
 ?>
 
 
-<section id="fz_product_list_feature" class="section_start" active-menu="list-menu-service">
+<section id="fz_product_list_feature" class="section_start" active-menu="list-menu-service" active-submenu="finbankz">
     <div class="product_list_feature_head finbankz_heading">
         <h3>FinbankZ’</h3>
         <h4>Products</h4>
