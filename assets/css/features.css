@@ -87,6 +87,11 @@
     background: transparent;
   }
 }
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .panel__stack .panel__card {
+    padding: 0px 20px;
+  }
+}
 @media screen and (max-width: 1600px) {
   .panel__stack .panel__card {
     height: 34rem;
@@ -414,9 +419,9 @@
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
-@media screen and (min-width: 390px) and (max-width: 420px) {
+@media screen and (max-width: 767px) {
   .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text {
-    padding: 0 12px;
+    padding: 0px 14px;
   }
 }
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text h3 {
@@ -425,7 +430,7 @@
   font-weight: 500;
   line-height: 36px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1399px) {
   .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text h3 {
     font-size: 16px;
     line-height: 18px;

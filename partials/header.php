@@ -327,6 +327,7 @@
                                             <span class="text">Onboard</span>
                                             <div class="icon">
                                                 <img src="./assets/images/telegram.svg" alt="" class="tele_img">
+                                                <img src="./assets/images/telegram.svg" alt="" class="tele_img">
                                             </div>
                                         </button>
                                     </a>
