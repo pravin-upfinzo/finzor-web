@@ -493,7 +493,7 @@ We increase consumer happiness and encourage digital adoption by enabling safe, 
                             <div class="container">
                                 <h3>Innovate with us</h3>
                                 <h5>Let&rsquo;s connect</h5>
-                                <p>We help banks to Engage Better with their customers, employees, and partners to drive purposeful growth.</p>
+                                <p>Finzor: Revolutionizing digital engagement for banks, fintechs, and merchants in the evolving digital landscape</p>
                                 <!-- <div class="input-group input-group-lg">
                                     <input type="text" class="form-control" placeholder="Enter email address
                                       " aria-label="Username" aria-describedby="basic-addon1">
