@@ -50,7 +50,6 @@ $(window).on('load', function() {
     if ($(window).width() <= 991) {
       $(".menu > li").off("mouseenter mouseleave").click(function (e) {
         e.stopPropagation();
-        console.log('Menu clicked');
         $(this).children(".submenu-wrapper").stop(true, true).slideToggle();
       });
   
@@ -65,26 +64,26 @@ $(window).on('load', function() {
           if ($('#menu-blur-bg').length === 0) {
             $('body').append('<div id="menu-blur-bg"></div>');
           }
-          $("#menu-blur-bg").fadeIn(200);
+          $("#menu-blur-bg").fadeIn(0);
           
-          $(this).children(".submenu-wrapper").stop(true, true).fadeIn(200);
+          $(this).children(".submenu-wrapper").stop(true, true).fadeIn(0);
         },
         function () {
-          $("#menu-blur-bg").fadeOut(200, function () {
+          $("#menu-blur-bg").fadeOut(0, function () {
             $(this).remove(); // Remove after fade out
           });
           
-          $(this).children(".submenu-wrapper").stop(true, true).fadeOut(200);
+          $(this).children(".submenu-wrapper").stop(true, true).fadeOut(0);
         }
       );
   
       $(".submenu-wrapper .submenu > li").hover(
         function () {
-          $(this).children(".inner-submenu").stop(true, true).fadeIn(200);
+          $(this).children(".inner-submenu").stop(true, true).fadeIn(0);
           $(this).addClass("active-submenu");
         },
         function () {
-          $(this).children(".inner-submenu").stop(true, true).fadeOut(200);
+          $(this).children(".inner-submenu").stop(true, true).fadeOut(0);
           $(this).removeClass("active-submenu");
         }
       );
