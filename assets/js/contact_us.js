@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     $('form').on('submit', function (event) {
       let isValid = true;
 

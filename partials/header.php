@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.9/codemirror.min.css"> -->
 
+    
+    <?php
+        // Include page-header-specific JS
+        if (isset($pageHeaderScripts)) {
+            echo $pageHeaderScripts;
+        }
+    ?>
+
     <style>
         #subsEmailError{
             font-size: 11px;
@@ -101,25 +109,25 @@
                                         </div>
                                     </a>
                                     <ul class="inner-submenu">
-                                        <li>
+                                        <li id="finbankz-corebanking">
                                         <a href="./core-banking-solution.php">
                                             <h3>CoreNexus</h3>
                                             <p>Core Banking Solution</p>
                                         </a>
                                         </li>
-                                        <li>
+                                        <li id="finbankz-mobbanking">
                                         <a href="./mobile-banking.php">
                                             <h3>MobfinZ</h3>
                                             <p>Mobile Banking</p>
                                         </a>
                                         </li>
-                                        <li>
+                                        <li id="finbankz-neobanking">
                                         <a href="./neo-banking.php">
                                             <h3>NeoPulse</h3>
                                             <p>Neo Banking</p>
                                         </a>
                                         </li>
-                                        <li>
+                                        <li id="finbankz-intbanking">
                                         <a href="./internet-banking.php">
                                             <h3>WebVault</h3>
                                             <p>Internet Banking</p>
@@ -144,19 +152,19 @@
                                         </div>
                                     </a>
                                     <ul class="inner-submenu">
-                                        <li>
+                                        <li id="upizor-upi">
                                         <a href="./upi.php">
                                             <h3>PayUnity</h3>
                                             <p>UPI</p>
                                         </a>
                                         </li>
-                                        <li>
+                                        <li id="upizor-switch">
                                         <a href="./upi-switch.php">
                                             <h3>FinzSwitch</h3>
                                             <p>UPI Switch</p>
                                         </a>
                                         </li>
-                                        <li>
+                                        <li id="payment-gateway">
                                         <a href="./payment-gateways.php">
                                             <h3>FlowGate</h3>
                                             <p>Payment Gateways</p>
@@ -164,7 +172,7 @@
                                         </li>
                                     </ul>
                                     </li>
-                                    <li id="finzopz">
+                                    <li id="finopz">
                                     <a href="./finopz.php">
                                         <div class="image-text">
                                         <div class="fz_header_svg">
@@ -183,27 +191,27 @@
                                         </div>
                                     </a>
                                     <ul class="inner-submenu">
-                                        <li>
+                                        <li id="finopz-invest">
                                         <a href="./investment-management.php">
                                             <h3>FinInvezt</h3>
                                             <p>Investment Management</p>
                                         </a>
                                         </li>
-                                        <li>
+                                        <li id="finopz-settlement">
                                         <a href="./settlements.php">
                                             <h3>Finalease</h3>
                                             <p>Settlements</p>
                                         </a>
                                         </li>
-                                        <li>
-                                        <a href="./reconciliation.php">
+                                        <li id="finopz-reconciliation">
+                                        <a href="./reconciliation.php" >
                                             <h3>FinzRec</h3>
                                             <p>Reconciliation</p>
                                         </a>
                                         </li>
                                     </ul>
                                     </li>
-                                    <li>
+                                    <li id="finzro">
                                     <a href="./finzro.php">
                                         <div class="image-text">
                                         <div class="fz_header_svg">
@@ -221,7 +229,7 @@
                                         </div>
                                     </a>
                                     </li>
-                                    <li>
+                                    <li id="finlyticz">
                                     <a href="./finlyticz.php">
                                         <div class="image-text">
                                         <div class="fz_header_svg">
@@ -239,7 +247,7 @@
                                         </div>
                                     </a>
                                     </li>
-                                    <li>
+                                    <li id="finbridge">
                                     <a href="./connected-banking.php">
                                         <div class="image-text">
                                         <div class="fz_header_svg">
@@ -254,7 +262,7 @@
                                         </div>
                                     </a>
                                     </li>
-                                    <li>
+                                    <li id="finvigil">
                                     <a href="./fraud-and-risk-management.php">
                                         <div class="image-text">
                                         <div class="fz_header_svg">
@@ -290,6 +298,7 @@
                                         <button class="buttons">
                                             <span class="text">Onboard</span>
                                             <div class="icon">
+                                                <img src="./assets/images/telegram.svg" alt="" class="tele_img">
                                                 <img src="./assets/images/telegram.svg" alt="" class="tele_img">
                                             </div>
                                         </button>

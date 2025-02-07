@@ -304,7 +304,27 @@ header .navbar-expand-lg .navbar-nav > li .submenu a {
   }
 }
 header .navbar-expand-lg .navbar-nav > li .submenu li.active-submenu > a {
+  position: relative;
   background: rgba(0, 75, 75, 0.5);
+}
+header .navbar-expand-lg .navbar-nav > li .submenu li.active-submenu > a:after {
+  border-color: transparent transparent transparent rgba(62, 171, 144, 0.2);
+  border-style: solid;
+  border-width: 8px 0 8px 8px;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  z-index: 100;
+  transition: all 0.5s ease;
+}
+@media screen and (max-width: 991px) {
+  header .navbar-expand-lg .navbar-nav > li .submenu li.active-submenu > a:after {
+    border-width: unset;
+  }
 }
 header .navbar-expand-lg .navbar-nav > li .submenu li > a:hover {
   position: relative;
@@ -403,6 +423,9 @@ header .navbar-expand-lg .navbar-nav > li .inner-submenu a p {
   margin: 0;
   color: #8d8d8d;
 }
+header .navbar-expand-lg .navbar-nav > li .inner-submenu .active-submenu-l2 a {
+  background: rgba(0, 75, 75, 0.5);
+}
 @media screen and (max-width: 991px) {
   header .fz_sigin {
     justify-content: center;
@@ -420,6 +443,11 @@ header .fz_sigin ul li .tele_img {
   height: 20px;
   object-fit: contain;
   padding-left: 3px;
+  transition: all 0.2s ease;
+}
+header .fz_sigin ul li .tele_img:last-child {
+  position: absolute;
+  top: 35px;
 }
 header .fz_sigin ul li a {
   color: #ffffff;
@@ -606,6 +634,12 @@ header .fz_sigin ul .unlock a:hover svg path {
 }
 .onboard_btn .buttons:hover .text {
   left: 10px !important;
+}
+.onboard_btn .buttons:hover .tele_img:first-child {
+  margin-top: -55px;
+}
+.onboard_btn .buttons:hover .tele_img:last-child {
+  top: 3px;
 }
 
 #lottie-animation {
@@ -1620,6 +1654,11 @@ header .fz_sigin ul .unlock a:hover svg path {
     background: transparent;
   }
 }
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .panel__stack .panel__card {
+    padding: 0px 20px;
+  }
+}
 @media screen and (max-width: 1600px) {
   .panel__stack .panel__card {
     height: 34rem;
@@ -1947,9 +1986,9 @@ header .fz_sigin ul .unlock a:hover svg path {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
-@media screen and (min-width: 390px) and (max-width: 420px) {
+@media screen and (max-width: 767px) {
   .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text {
-    padding: 0 12px;
+    padding: 0px 14px;
   }
 }
 .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text h3 {
@@ -1958,7 +1997,7 @@ header .fz_sigin ul .unlock a:hover svg path {
   font-weight: 500;
   line-height: 36px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1399px) {
   .panel .panel__stack .panel__card .tab-content .fz-tab-card .item-pay .item-pay-text h3 {
     font-size: 16px;
     line-height: 18px;

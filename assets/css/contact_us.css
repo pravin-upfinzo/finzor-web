@@ -198,7 +198,7 @@
   }
 }
 #contact_us .contact_sub_cont .error {
-  color: #ED5B43;
+  color: red;
   font-size: 12px;
   padding: 0px;
   margin-bottom: -5px;

@@ -1,6 +1,7 @@
 <?php
-$page_title = 'MobfinZ:- Bank Smarter with Mobile Banking – Safe & Convenient';
+$page_title = 'MobfinZ Bank Smarter with Mobile Banking – Safe & Convenient';
 $meta_lines = '<meta name="description" content="MobfinZ puts your bank in your pocket. Securely send money, pay bills, and check balances anytime, anywhere. Get started today!">';
+$meta_lines .= '<meta name="keywords" content="AI banking, Open banking, API banking, Automated payments, 24/7 banking, Hassle free banking">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";
@@ -17,7 +18,7 @@ include_once('partials/header.php'); //should be last after all variables
 ?>
 
 <!-- product_hero_section -->
-<section id="fz_product_list_hero_sec" class="section_start" active-menu="list-menu-service" active-submenu="finbankz">
+<section id="fz_product_list_hero_sec" class="section_start" active-menu="list-menu-service" active-submenu="finbankz" active-submenu-l2="finbankz-mobbanking">
     <canvas class="hero_sec_dot" id="hero_sec_dot"></canvas>
     <div class="container">
         <div class="product_list_hero">

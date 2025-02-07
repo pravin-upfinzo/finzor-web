@@ -1,6 +1,7 @@
 <?php
 $page_title = 'FinlyticZ is Accelerate Success with Data-Driven Strategies and Advanced Analytics';
 $meta_lines = '<meta name="description" content="Revolutionize your business with data-driven strategies that streamline processes, improve decision-making, and unlock hidden opportunities to FinlyticZ">';
+$meta_lines .= '<meta name="keywords" content="AI powered analytics, Data automation tools,Real time data processing, Cloud based analytics platforms, Data driven decision making, Advanced machine learning analytics, Smart data analytics, Interactive data visualization, Next gen analytics tools">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";
@@ -19,7 +20,7 @@ include_once('partials/header.php'); //should be last after all variables
 ?>
 
 <!-- product_hero_section -->
-<section id="fz_product_list_hero_sec" class="section_start" active-menu="list-menu-service">
+<section id="fz_product_list_hero_sec" class="section_start" active-menu="list-menu-service" active-submenu="finlyticz">
     <canvas class="hero_sec_dot" id="hero_sec_dot"></canvas>
     <div class="container">
         <div class="product_list_hero">
@@ -51,13 +52,13 @@ include_once('partials/header.php'); //should be last after all variables
                     <p class="fz_enhance_para">Finzor leverages data to create personalized financial solutions, enabling businesses to offer bespoke investment advice, tailored insurance policies, and customized credit and loan options.</p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">AI-Driven Fraud Detection for Smarter Decisions </span>enhance security with AI-powered fraud analytics and risk management.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">AI-Driven Fraud Detection for Smarter Decisions </span>enhance security with AI-powered fraud analytics and risk management</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Real-Time Insights for Data-Driven Strategies </span>empower businesses with real-time analytics for improved decisions.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Real-Time Insights for Data-Driven Strategies </span>empower businesses with real-time analytics for improved decisions</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Cloud-Based Platform for Accessible Data </span>leverage secure cloud access for seamless, real-time data use.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Cloud-Based Platform for Accessible Data </span>leverage secure cloud access for seamless, real-time data use</p>
                         </li>
                     </ul>
                 </div>
@@ -192,13 +193,13 @@ include_once('partials/header.php'); //should be last after all variables
                     <p class="fz_enhance_para">Finzor combines real-time fraud prevention with cost efficiency through data analytics. Our solutions analyze transactional patterns, instantly identify anomalies, and enhance trust and security. Additionally, we optimize operations by automating data analysis, streamlining workflows, improving resource management, and providing scalable solutions for growth.</p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Real-Time Fraud Detection</span> analyze patterns and spot anomalies.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Real-Time Fraud Detection</span> analyze patterns and spot anomalies</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Enhanced Trust & Security</span> safeguard transactions and user data.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Enhanced Trust & Security</span> safeguard transactions and user data</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Cost-Efficient Operations</span> automate workflows and scale seamlessly.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Cost-Efficient Operations</span> automate workflows and scale seamlessly</p>
                         </li>
                     </ul>
                 </div>

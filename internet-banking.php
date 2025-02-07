@@ -1,6 +1,7 @@
 <?php
-$page_title = 'WebVault:- Bank Anytime, Anywhere with Secure Internet Banking';
+$page_title = 'WebVault Bank Anytime, Anywhere with Secure Internet Banking';
 $meta_lines = '<meta name="description" content="Take control of your finances with WebVault. Enjoy 24/7 access to secure payments, fund transfers, and seamless money management.">';
+$meta_lines .= '<meta name="keywords" content="Banking innovation, Fast banking, 24/7 banking, API banking, open banking, automated payments, web banking">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";
@@ -17,7 +18,7 @@ include_once('partials/header.php'); //should be last after all variables
 ?>
 
 <!-- product_hero_section -->
-<section id="fz_product_list_hero_sec" class="section_start" active-menu="list-menu-service" active-submenu="finbankz">
+<section id="fz_product_list_hero_sec" class="section_start" active-menu="list-menu-service" active-submenu="finbankz" active-submenu-l2="finbankz-intbanking">
     <canvas class="hero_sec_dot" id="hero_sec_dot"></canvas>
     <div class="container">
         <div class="product_list_hero">

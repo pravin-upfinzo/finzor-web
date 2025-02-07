@@ -1,6 +1,7 @@
 <?php
 $page_title = 'The FinOpZ 360 is Ultimate Business Engine';
 $meta_lines = '<meta name="description" content="FinOpZ 360 is end-to-end description suite refers to a comprehensive set of documentation that describes every aspect of a product, system, or process from start to finish">';
+$meta_lines .= '<meta name="keywords" content="End to end workflow solutions, Integrated business management, Business process, Management suite, Operational suite software, Total operational solution, Business automation suite, Real time business operations Scalable operational solutions, Business transformation tools">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";
@@ -18,7 +19,7 @@ include_once('partials/header.php'); //should be last after all variables
 ?>
 
 
-<section id="fz_product_list_feature" class="section_start" active-menu="list-menu-service" active-submenu="finzopz">
+<section id="fz_product_list_feature" class="section_start" active-menu="list-menu-service" active-submenu="finopz">
     <div class="product_list_feature_head finbankz_heading">
         <h3>
         FinOpZ 360°</h3>

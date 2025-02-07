@@ -1,6 +1,7 @@
 <?php
-$page_title = 'NeoPulse:- No Fees, No Hassle – Experience True Neo Banking';
+$page_title = 'NeoPulse No Fees, No Hassle – Experience True Neo Banking';
 $meta_lines = '<meta name="description" content="Say goodbye to traditional banking! NeoPulse offers a 100% online, secure, and fee-free way to manage your finances. Get started in just minutes!">';
+$meta_lines .= '<meta name="keywords" content="Bank account access,mobile money transfer, contactless payments, realtime banking, financial management">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";
@@ -17,7 +18,7 @@ include_once('partials/header.php'); //should be last after all variables
 ?>
 
 <!-- product_hero_section -->
-<section id="fz_product_list_hero_sec" class="section_start" active-menu="list-menu-service" active-submenu="finbankz">
+<section id="fz_product_list_hero_sec" class="section_start" active-menu="list-menu-service" active-submenu="finbankz" active-submenu-l2="finbankz-neobanking">
     <canvas class="hero_sec_dot" id="hero_sec_dot"></canvas>
     <div class="container">
         <div class="product_list_hero">

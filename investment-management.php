@@ -1,6 +1,7 @@
 <?php
 $page_title = 'FinInvezt is Strategies for Growth and Stability';
 $meta_lines = '<meta name="description" content="Achieve your financial goals with our comprehensive investment management services, tailored to your needs to FinInvezt">';
+$meta_lines .= '<meta name="keywords" content="Sustainable investment strategies, Impact investing,  AI-driven investment management, Digital wealth management, Fintech investment solutions, Smart beta strategies, Cryptocurrency investment management, Blockchain investments, Digital asset management">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";
@@ -17,7 +18,7 @@ include_once('partials/header.php'); //should be last after all variables
 ?>
 
 <!-- product_hero_section -->
-<section id="fz_product_list_hero_sec" class="section_start" active-menu="list-menu-service" active-submenu="finzopz">
+<section id="fz_product_list_hero_sec" class="section_start" active-menu="list-menu-service" active-submenu="finopz" active-submenu-l2="finopz-invest">
     <canvas class="hero_sec_dot" id="hero_sec_dot"></canvas>
     <div class="container">
         <div class="product_list_hero">
@@ -50,13 +51,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Tailored Investment Plans for Every Client </span>gen AI customizes strategies based on risk, goals, and preferences.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Gen AI customizes strategies</span> based on risk, goals, and preferences</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Dynamic Recommendations with Market Updates</span> continuously adjusts strategies as market conditions evolve.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Dynamic Recommendations</span> respond to change on the market trends</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Accessible Personalized Financial Guidance </span>Offers tailored strategies to a wider audience, beyond just experts.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Personalized Financial Guidance </span>accessible strategies for all audiences</p>
                         </li>
                     </ul>
                 </div>
@@ -192,13 +193,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Grow your wealth smartly </span>with expert investment strategies.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Grow your wealth smartly </span>with expert investment strategies</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Diversify your portfolio </span>for better risk management.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Diversify your portfolio </span>for better risk management</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Track & manage investments </span>with real-time insights.</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Track & manage investments </span>with real-time insights</p>
                             
                         </li>
                     </ul>

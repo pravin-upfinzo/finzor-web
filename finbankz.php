@@ -1,6 +1,7 @@
 <?php
-$page_title = 'FinbankZ: Secure, Scalable Core Banking & Digital Services for Banks';
+$page_title = 'FinbankZ Secure, Scalable Core Banking & Digital Services for Banks';
 $meta_lines = '<meta name="description" content="Discover FinbankZ, the ultimate banking core and digital platform solution. Modernize your banking operations with secure, scalable, and innovative solutions.">';
+$meta_lines .= '<meta name="keywords" content="Core banking Solutions,Digital banking platform,Cloud banking platform,Banking software solutions,Secure banking solutions,Banking core systems,Fintech banking,Payments banking ">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";

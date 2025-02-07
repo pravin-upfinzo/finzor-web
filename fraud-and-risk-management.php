@@ -1,6 +1,7 @@
 <?php
-$page_title = 'FinVigil: Optimize Fraud Protection with AI-Powered Risk Management Solutions';
+$page_title = 'FinVigil Optimize Fraud Protection with AI-Powered Risk Management Solutions';
 $meta_lines = '<meta name="description" content="FinVigil AI-powered fraud detection and risk management solutions help businesses stay secure. Detect threats in real-time, reduce fraud, and ensure operational safety with smart technology">';
+$meta_lines .= '<meta name="keywords" content="AI fraud detection, fraud prevention technology, risk management solution,fraud risk management, AI security platform, real time fraud detection,fraud risk management">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";
@@ -19,7 +20,7 @@ include_once('partials/header.php'); //should be last after all variables
 ?>
 
 <!-- product_hero_section -->
-<section id="fz_product_list_hero_sec" class="section_start" active-menu="list-menu-service">
+<section id="fz_product_list_hero_sec" class="section_start" active-menu="list-menu-service" active-submenu="finvigil">
     <canvas class="hero_sec_dot" id="hero_sec_dot"></canvas>
     <div class="container">
         <div class="product_list_hero">

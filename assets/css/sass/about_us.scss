@@ -20,7 +20,8 @@
         font-size: 18px;
         color: $white;
         font-weight: 300;
-        padding: 20px 0px;
+        padding: 27px 0px 10px;
+        margin-bottom: 0px;
         @media screen and (max-width: 991px) {
             text-align: center;
         }
@@ -29,7 +30,7 @@
         // width: 400px;
         // height: 400px;
         position: relative;
-        margin: 50px auto;
+        margin: 50px auto 0px;
         @media screen and (max-width: 991px) {
             width: auto;
             height: auto;
@@ -66,7 +67,7 @@
    
     .about_part{
         height: auto;
-        padding:50px 0px;
+        // padding:50px 0px;
         h5{
             color: $primary-color;
             font-size: 35px;
@@ -78,8 +79,8 @@
             }
         }
         .about_us_images{
-            // width: 400px;
-            // height: 400px;
+            width: 500px;
+            height: 500px;
             @media screen and (max-width: 991px) {
                 width: auto;
                 height: auto;

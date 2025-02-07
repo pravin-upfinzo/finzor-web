@@ -1,6 +1,7 @@
 <?php
 $page_title = 'Maximizing Efficiency with Connected Banking Solutions for Today’s Digital Economy to Finbridge';
-$meta_lines = '<meta name="description" content="Connected banking is at the forefront of digital transformation, delivering innovative solutions that boost efficiency, streamline operations, and align with the latest fintech trends at Finbridge ">';
+$meta_lines = '<meta name="description" content="Connected banking is at the forefront of digital transformation, delivering innovative solutions that boost efficiency, streamline operations, and align with the latest fintech trends at Finbridge">';
+$meta_lines .= '<meta name="keywords" content="Digital banking, Seamless financial integration, Real time payments, Mobile banking, Open banking, Fintech innovation, Secure banking platforms, Banking efficiency, Cloud banking.">';
 
 // to include page specific CSS
 $pageStyles = '<link rel="stylesheet" href="./assets/css/products_list.css">' . "\n";
@@ -19,7 +20,7 @@ include_once('partials/header.php'); //should be last after all variables
 ?>
 
 <!-- product_hero_section -->
-<section id="fz_product_list_hero_sec" class="section_start" active-menu="list-menu-service">
+<section id="fz_product_list_hero_sec" class="section_start" active-menu="list-menu-service" active-submenu="finbridge">
     <canvas class="hero_sec_dot" id="hero_sec_dot"></canvas>
     <div class="container">
         <div class="product_list_hero">
@@ -47,7 +48,7 @@ include_once('partials/header.php'); //should be last after all variables
         <div class="row">
             <div class="col-lg-7 fz_enhance_col left-space">
                 <div class="fz_ai_enhance_text">
-                    <h2>Cloud-Based Solutions                    </h2>
+                    <h2>Cloud-Based Solutions</h2>
                     <p class="fz_enhance_para">Cloud Computing delivers computing services over the internet, providing scalable resources like storage, servers, and software without the need for physical infrastructure. It offers flexibility, cost-efficiency, and easy access to data and applications from anywhere. With cloud computing, businesses can scale quickly, reduce IT costs, and improve collaboration, all while ensuring high levels of security and reliability for their data.
                     </p>
                     <ul>
