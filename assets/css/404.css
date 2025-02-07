@@ -1,0 +1,56 @@
+@keyframes moveAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+.error-page {
+  padding: 160px 20px 0px;
+  text-align: center;
+  /* Glitch Effect */
+}
+.error-page h1 {
+  font-size: 120px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  color: #C3F53C;
+  text-shadow: 0 0 10px rgba(195, 245, 60, 0.8);
+}
+.error-page p {
+  font-size: 20px;
+  color: rgb(160, 160, 160);
+  margin: 20px 0;
+}
+.error-page h1::before, .error-page h1::after {
+  content: "404";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+.error-page h1::before {
+  color: #ff0000;
+  transform: translateX(-3px);
+  animation: glitch 0.3s infinite alternate;
+}
+.error-page h1::after {
+  color: #00ffff;
+  transform: translateX(3px);
+  animation: glitch 0.3s infinite alternate-reverse;
+}
+@keyframes glitch {
+  0% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(-3px);
+  }
+}

@@ -414,8 +414,7 @@ body {
       @media (max-width: 991px) {
           width: auto;
           height: auto;
-          margin: 0 auto;
-          margin-bottom: 30px;
+        
           }
          
       img{
@@ -537,6 +536,9 @@ body {
   .fz_enhance_img_col{
       display: flex;
       justify-content: end;
+      @media screen and (max-width: 991px) {
+        justify-content: start;
+ }
   }
 }
 
@@ -818,10 +820,18 @@ body {
           .owl-next {
             right: 25px;
             transform: translate(50%, -50%);
+            @media screen and (min-width: 600px) and (max-width: 991px) {
+              right:0px;
+        }
           }
           .owl-prev {
             left: 25px;
             transform: translate(-50%, -50%);
+
+            @media screen and (min-width: 600px) and (max-width: 991px) {
+              left:0px;
+        }
+
             svg {
               transform: rotate(180deg);
             }

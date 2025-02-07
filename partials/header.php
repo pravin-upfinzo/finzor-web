@@ -21,14 +21,6 @@
         }
     ?>
 
-    <style>
-        #subsEmailError{
-            font-size: 11px;
-            color: red;
-            margin-left: 15px;
-        }
-    </style>
-
     <?php
     // Include page-specific CSS
     if (isset($pageStyles)) {
