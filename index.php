@@ -72,7 +72,7 @@ $pageScripts .= '<script></script>' . "\n";
 include_once('partials/header.php'); //should be last after all variables
 ?>
 
-<span class="section_start" active-menu="list-menu-home"></span>
+<span id="home_page" class="section_start" active-menu="list-menu-home"></span>
 
 <section id="fz-hero-bg">
     <canvas class="hero_sec_dot"></canvas>

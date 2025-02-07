@@ -82,7 +82,7 @@
           </div>
           <div class="footer-bottom">
             <hr class="horizontal-line" />
-            <p>Copyright © 2025 Finzor. All rights reserved</p>
+            <p>Copyright © <?php echo date('Y'); ?> Finzor. All rights reserved</p>
           </div>
         </footer>
 
