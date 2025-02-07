@@ -267,6 +267,9 @@ section {
   overflow: hidden;
   border-radius: 32px;
   padding: 72px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: linear-gradient(216deg, rgba(1, 86, 86, 0.86) 0%, rgba(0, 53, 53, 0.85) 30%, rgba(0, 17, 17, 0.83) 70%);
 }
 @media screen and (max-width: 1199px) {
