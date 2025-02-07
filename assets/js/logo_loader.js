@@ -2,11 +2,21 @@
 $( document ).ready(function() {
     
      //Page Loader setup
+     var page_id = $('.section_start').attr('id');
+     var page_name = (typeof page_id !== "undefined" && page_id !== null) ? page_id : "";
+
+     let lastHomeLoadedDate = localStorage.getItem("lastHomeLoadedDate");
      let lastLoadedDate = localStorage.getItem("lastLoadedDate");
      let today = new Date().toISOString().split("T")[0];
      if (lastLoadedDate !== today) {
          showLoader();
          localStorage.setItem("lastLoadedDate", today);
+     } else if(page_name === "home_page"){
+
+        if(lastHomeLoadedDate == null || lastHomeLoadedDate !== today){
+            showLoader();
+            localStorage.setItem("lastHomeLoadedDate", today);
+        }
      }
  
     function showLoader() {
@@ -15,7 +25,7 @@ $( document ).ready(function() {
         setTimeout(function() {
             $("#page-loader").fadeOut("slow");
             $('.hero').fadeIn();
-        }, 2000);
+        }, 2500);
     }
 });
 
