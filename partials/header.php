@@ -104,7 +104,7 @@
                                         </div>
                                         <div class="fz_text">
                                             <h3>FinbankZ</h3>
-                                            <p>Banking Core and Digital Platform</p>
+                                            <p>Core Banking and Digital Platform</p>
                                         </div>
                                         </div>
                                     </a>
