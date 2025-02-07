@@ -21,19 +21,6 @@
         }
     ?>
 
-    <style>
-        #subsEmailError{
-            font-size: 11px;
-            color: red;
-            margin-left: 15px;
-        }
-        
-        #signup_btns{ display: flex; gap: 10px; justify-content: end; }
-        @media screen and (max-width: 500px) {
-            #signup_btns{ flex-direction: column-reverse; }
-        }
-    </style>
-
     <?php
     // Include page-specific CSS
     if (isset($pageStyles)) {

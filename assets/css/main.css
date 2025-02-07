@@ -4448,3 +4448,9 @@ div#faq-animate svg {
   backdrop-filter: blur(20px);
   background: rgba(13, 116, 101, 0.08);
 }
+
+#subsEmailError {
+  font-size: 11px;
+  color: #FF0000;
+  margin-left: 15px;
+}
