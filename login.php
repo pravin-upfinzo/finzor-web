@@ -58,13 +58,21 @@ include_once('partials/header.php'); //should be last after all variables
                     <span class="error" id="phoneError"></span>
                 </div>
                 <!-- <button class="buttons" type="submit" onclick="validateForm()"> -->
-                <button class="buttons" type="submit">
-                    <div class="button-loader"></div>
-                    <span class="text">Submit</span>
-                      <div class="icon">
-                            <img src="./assets/images/telegram.svg" alt="" class="tele_img">
-                             </div>
-                        </button>
+                <div id="signup_btns">
+                    <button class="buttons" type="reset" onclick="document.querySelectorAll('.error').forEach(e => e.innerHTML = '');">
+                        <span class="text">Cancel</span>
+                            <div class="icon">
+                                <img src="./assets/images/fz_button_arrow.svg" alt="" >
+                            </div>
+                    </button>
+                    <button class="buttons" type="submit">
+                        <span class="text">Submit</span>
+                            <div class="icon">
+                                <img src="./assets/images/telegram.svg" alt="" class="tele_img">
+                            </div>
+                    </button>
+                </div>
+                
                         
             </form>
 

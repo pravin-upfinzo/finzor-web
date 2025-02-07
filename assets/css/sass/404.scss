@@ -1,0 +1,43 @@
+@import './variable.scss';
+.error-page{
+ padding:160px 20px 0px;
+ text-align: center;
+
+h1 {
+    font-size: 120px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    color: #C3F53C;
+    text-shadow: 0 0 10px rgba(195, 245, 60, 0.8);
+}
+p {
+    font-size: 20px;
+    color: rgb(160, 160, 160);
+    margin: 20px 0;
+}
+
+/* Glitch Effect */
+h1::before, h1::after {
+    content: "404";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+h1::before {
+    color: #ff0000;
+    transform: translateX(-3px);
+    animation: glitch 0.3s infinite alternate;
+}
+h1::after {
+    color: #00ffff;
+    transform: translateX(3px);
+    animation: glitch 0.3s infinite alternate-reverse;
+}
+@keyframes glitch {
+    0% { transform: translateX(3px); }
+    100% { transform: translateX(-3px); }
+}
+
+}
