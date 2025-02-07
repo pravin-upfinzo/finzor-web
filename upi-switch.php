@@ -110,7 +110,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="product_list_feature_card fade-left">
                 <div class="product_list_feature_cont">
                     <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4>Payment Fraud Detection</h4>
+                    <h4>Payment Fraud Detection and Alerts</h4>
                     <p>Monitors transactions for fraudulent activities and alerts users in real-time.</p>
                 </div>
             </div>
