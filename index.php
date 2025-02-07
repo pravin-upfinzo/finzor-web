@@ -230,7 +230,7 @@ include_once('partials/header.php'); //should be last after all variables
                             <h2>01</h2>
                         </div>
                         <div class="fz_title_content">
-                            <div class="fz_subtitle">Banking Core and Digital Platform</div>
+                            <div class="fz_subtitle">Core Banking and Digital Platform</div>
                             <h3>
                                 <img src="./assets/images/bank.gif" alt="cbs" style="width: 40px; height: 40px;
                                 margin-right: 10px;" />
@@ -430,7 +430,7 @@ include_once('partials/header.php'); //should be last after all variables
                             </h3>
                         </div>
                         <div class="fz_bank">AI-powered fraud and risk management at Finzor</div>
-                        <div class="fz_desc">Finzor leverages AI-driven innovations to enhance fraud detection and risk management, ensuring secure and intelligent financial operations. Our real-time fraud detection systems utilize behavioral biometrics, NLP for scam detection, and deep learning to identify anomalies and prevent fraudulent activities.</div>
+                        <div class="fz_desc">Finzor leverages AI-driven innovations to enhance fraud detection and risk management, ensuring secure and intelligent financial operations. Our real-time fraud detection systems utilize behavioral biometrics, Natural Language Processing for scam detection, and deep learning to identify anomalies and prevent fraudulent activities.</div>
                         <div class="fz_btn">
                             <a href="./fraud-and-risk-management.php" class="buttons">
                                 <span class="text">Learn more</span>
@@ -1297,7 +1297,7 @@ include_once('partials/header.php'); //should be last after all variables
                             <div class="container">
                                 <h3>Innovate with us</h3>
                                 <h5>Let&rsquo;s connect</h5>
-                                <p>We help banks to Engage Better with their customers, employees, and partners to drive purposeful growth.</p>
+                                <p>Finzor: Revolutionizing digital engagement for banks, fintechs, and merchants in the evolving digital landscape</p>
                                 <!-- <div class="input-group input-group-lg">
                                     <input type="text" class="form-control" placeholder="Enter email address
                                       " aria-label="Username" aria-describedby="basic-addon1">

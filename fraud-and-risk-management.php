@@ -56,7 +56,7 @@ include_once('partials/header.php'); //should be last after all variables
                             <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">AI-Powered Fraud Detection </span>with Behavioral Insights</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">NLP-Driven Scam Detection </span>for Enhanced Security</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Natural Language Processing-Driven Scam Detection </span>for Enhanced Security</p>
                             </span>
                         </li>
                         <li>
