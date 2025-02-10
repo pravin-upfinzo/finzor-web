@@ -11,46 +11,100 @@
   inherits: true;
   initial-value: 0turn;
 }
-.error-page {
-  padding: 160px 20px 0px;
+.error-page-section {
+  display: flex;
   text-align: center;
-  /* Glitch Effect */
+  justify-content: center;
+  align-items: center;
+  background: url("../images/error-bg-img.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 100% 30%;
+  height: 100vh;
 }
-.error-page h1 {
-  font-size: 120px;
-  font-weight: bold;
-  position: relative;
-  display: inline-block;
-  color: #C3F53C;
-  text-shadow: 0 0 10px rgba(195, 245, 60, 0.8);
+@media screen and (max-width: 991px) {
+  .error-page-section {
+    background-image: none;
+  }
 }
-.error-page p {
-  font-size: 20px;
-  color: rgb(160, 160, 160);
-  margin: 20px 0;
-}
-.error-page h1::before, .error-page h1::after {
-  content: "404";
+.error-page-section canvas {
   position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.8;
+  width: 100%;
+  display: flex;
 }
-.error-page h1::before {
-  color: #ff0000;
-  transform: translateX(-3px);
-  animation: glitch 0.3s infinite alternate;
+.error-page-section .error-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 2;
+  position: relative;
 }
-.error-page h1::after {
-  color: #00ffff;
-  transform: translateX(3px);
-  animation: glitch 0.3s infinite alternate-reverse;
+@media screen and (max-width: 991px) {
+  .error-page-section .error-page {
+    display: block;
+  }
 }
-@keyframes glitch {
+.error-page-section .error-page .error-left-page img {
+  width: 50%;
+  padding-bottom: 24px;
+}
+.error-page-section .error-page .error-left-page h2 {
+  font-size: 44px;
+  line-height: 75px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+.error-page-section .error-page .error-left-page h3 {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+.error-page-section .error-page .error-left-page p {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #A1A1AA;
+}
+.error-page-section .error-page .error-left-page .buttons {
+  width: 188px;
+  margin: 0 auto;
+  border: 1px solid linear-gradient(98.24deg, #6DDCFF 0%, #7F60F9 100%);
+}
+@media screen and (max-width: 991px) {
+  .error-page-section .error-page .error-right-page {
+    margin-top: 50px;
+  }
+}
+.error-page-section .error-page .error-right-page svg .star {
+  animation: float 3s ease-in-out infinite;
+}
+.error-page-section .error-page .error-right-page svg .rotate {
+  animation: float 4s ease-in-out infinite;
+}
+@keyframes float {
   0% {
-    transform: translateX(3px);
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
   }
   100% {
-    transform: translateX(-3px);
+    transform: translateY(0);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(10px, -10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.7;
   }
 }
