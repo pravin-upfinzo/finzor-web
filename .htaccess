@@ -10,10 +10,15 @@ RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
 
 # Redirect old page to new page
-Redirect 301 /old-page.html https://www.finzor.com/new-page.html
+Redirect 301 /old-page.php https://www.finzor.com/new-page.php
 
-# Custom 404 Error Page
+# Custom 404 Error Page Handling
 ErrorDocument 404 /404.php
+
+# Ensure All Non-Existing URLs Redirect to 404 Page
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /404.php [L]
 
 # Protect .htaccess file
 <Files .htaccess>
