@@ -33,6 +33,7 @@ function sendEmail($toEmail, $toName="", $subject, $body)
 
         $mail->setFrom($config['from_email'], $config['from_name']);
         $mail->addAddress($toEmail, $toName);
+        
 
         $mail->isHTML(true);
         // $mail->msgHTML(file_get_contents('contents.html'), __DIR__);
