@@ -68,7 +68,11 @@
               </div>
             </div>
               <div class="links-group subscribe">
-                <p>Stay updated by Subscribing</p>
+                <div class="subscribe-title">
+                    <p>Stay updated by Subscribing</p>
+                    <div class="button-loader"></div>
+                </div>
+                
                 <form class="subscribe-form" id="subscribe-form">
                   <input type="email" placeholder="Enter your email ID" name="subscribe_email" class="subscribe_email">
                   <div class="footer_arrow" role="button">
@@ -117,7 +121,7 @@
       </div>
       <!-- Modal body -->
       <div class="modal-body">
-        <form id="book-demoform" class="form-wrapper">
+        <form method="POST" id="book-demoform" class="form-wrapper">
           <div class="contact-wrapper form_group">
               <label for="name" class="field-label">Name</label>
               <input class="text-field-3" maxlength="256" name="name" data-name="Name" placeholder="Enter Your Name" type="text" id="Name" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)">
@@ -144,10 +148,11 @@
               <span class="error" id="messageError"></span>
           </div>
           <button type="submit" class="fz_submit active_btn">
-              <span class="text">Send Message</span>
-                  <div class="icon">
-                  <img src="./assets/images/fz_button_arrow.svg" alt="">
-                  </div>
+                <div class="button-loader"></div>
+                <span class="text">Send Message</span>
+                <div class="icon">
+                <img src="./assets/images/fz_button_arrow.svg" alt="">
+                </div>
           </button>
         </form>
       </div>
@@ -161,6 +166,7 @@
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/logo_loader.js"></script>
 <script src="assets/js/form-submission.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.10/dist/sweetalert2.all.min.js"></script>
 <script>
 $(document).ready(function () {
     var activemenu = $('.section_start').attr('active-menu')
