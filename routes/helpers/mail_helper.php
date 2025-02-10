@@ -8,7 +8,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
-function sendEmail($toEmail, $toName="", $subject, $body)
+function sendEmail(array $toGroupEmails, $subject, $body)
 {
     $config = require __DIR__ . '/../config/mail.php'; // Load mail configuration
 
@@ -22,7 +22,7 @@ function sendEmail($toEmail, $toName="", $subject, $body)
         $mail = new PHPMailer(true);
         $mail->isSMTP();
         //   $mail->SMTPDebug = SMTP::DEBUG_SERVER;
-        $mail->SMTPDebug = false; //2
+        $mail->SMTPDebug = false; //2 - debug
         $mail->Host = $config['host'];
         $mail->SMTPAuth = true;
         $mail->Username = $config['username'];
@@ -32,8 +32,21 @@ function sendEmail($toEmail, $toName="", $subject, $body)
         $mail->smtpConnect($options);
 
         $mail->setFrom($config['from_email'], $config['from_name']);
-        $mail->addAddress($toEmail, $toName);
-        
+        //$mail->addAddress($toEmail, $toName);
+
+        if(is_array($toGroupEmails) && !empty($toGroupEmails)){
+            $recipientsAdded = addRecipientsToMail($mail, $toGroupEmails);  //group emails
+            if (!$recipientsAdded) {
+                $error_message = CURRENT_DATETIME ." :- Error: Issue in constructing group emails. "."\n";
+                //die($error_message);
+                createDirectoryIfNotExists(__DIR__ . '/../logs/');
+                error_log($error_message, 3, __DIR__ . '/../logs/email_template_errors.log');
+                return false;
+            }
+        } else {
+            $mail->addAddress(ADMIN_EMAIL, ADMIN_NAME);
+        }
+       
 
         $mail->isHTML(true);
         // $mail->msgHTML(file_get_contents('contents.html'), __DIR__);
@@ -46,6 +59,38 @@ function sendEmail($toEmail, $toName="", $subject, $body)
         return $mail->send();
     } catch (Exception $e) {
         return false;
+    }
+}
+
+// Function to add recipients (To, CC, BCC) to PHPMailer
+function addRecipientsToMail(PHPMailer $mail, array $email_name_constant) {
+    // Check if the specific email array is valid and not empty
+    if (!empty($email_name_constant)) {
+
+        // Add "To" recipients
+        if (!empty($email_name_constant['to'])) {
+            foreach ($email_name_constant['to'] as $email => $name) {
+                $mail->addAddress($email, $name);
+            }
+        }
+
+        // Add "CC" recipients
+        if (!empty($email_name_constant['cc'])) {
+            foreach ($email_name_constant['cc'] as $email => $name) {
+                $mail->addCC($email, $name);
+            }
+        }
+
+        // Add "BCC" recipients
+        if (!empty($email_name_constant['bcc'])) {
+            foreach ($email_name_constant['bcc'] as $email => $name) {
+                $mail->addBCC($email, $name);
+            }
+        }
+
+        return true; // Return true if recipients are added successfully
+    } else {
+        return false; // Return false if the array is invalid or empty
     }
 }
 

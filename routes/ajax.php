@@ -40,13 +40,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 if ($db_saved || $canSaveOnDB == 0) {
                     // Send contact us email
-                    $to_email = ADMIN_EMAIL; //setup reqd
-                    $to_name  = ADMIN_NAME; //setup reqd
+                    $toGroupEmails = CONTACT_ADMIN_EMAILS;
                     $subject = 'New Contact received from Finzor';
                     $data = ['name' => $name, 'email' => $email,'phone' => $phone,'message' => $message];
                     $body = contactus_mail_body($type="admin_mail",$data);
 
-                    if (sendEmail($to_email, $to_name, $subject, $body)) {
+                    if (sendEmail($toGroupEmails, $subject, $body)) {
                         $response = ['status' => 'success', 'message' => 'We will reachout to you in a while.'];
                     } else {
                         $response = ['status' => 'error', 'message' => 'Email could not be sent.'];
@@ -82,15 +81,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     }
     
                     if ($db_saved || $canSaveOnDB == 0) {
-                        // Send contact us email
-                        $to_email = ADMIN_EMAIL; //setup reqd
-                        $to_name  = ADMIN_NAME; //setup reqd
+                        // Send book demo email
+                        $toGroupEmails = BOOK_DEMO_ADMIN_EMAILS;
                         $subject = 'New Demo Request received from Finzor';
 
                         $data = ['name' => $name,'Companyname' => $Companyname, 'email' => $email,'phone' => $phone,'message' => $message, 'ref_url' => $ref_url ];
                         $body = book_demo_mail_body($type="admin_mail", $data);
     
-                        if (sendEmail($to_email, $to_name, $subject, $body)) {
+                        if (sendEmail($toGroupEmails, $subject, $body)) {
                             $response = ['status' => 'success', 'message' => 'Your demo request was received. We will reachout to you in a while.'];
                         } else {
                             $response = ['status' => 'error', 'message' => 'Email could not be sent.'];
@@ -134,8 +132,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 if ($db_saved || $canSaveOnDB == 0) {
                    
                     $created_on = date('Y-m-d H:i:s');
-                    $to_email = ADMIN_EMAIL; //setup reqd
-                    $to_name  = ADMIN_NAME; //setup reqd
+                    $toGroupEmails = SUBSCRIBERS_ADMIN_EMAILS;
 
                     $subject = 'New Subscriber Alert - Finzor';
                     $data = ['email' => $email, 'ref_url' => $ref_url, 'created_on' => $created_on, ];
@@ -145,8 +142,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $subs_thanx_subject = 'Finzor - Thanks for Subscribing us!';
                     $data = [];
                     $subs_thanx_body = subscribe_mail_body('user_thank_mail', $data);
+                    $subs_thanx_email = ['to' => [$email => 'Finzor Subscriber']];
 
-                    if (sendEmail($to_email, $to_name, $subject, $body) && sendEmail($email, "", $subs_thanx_subject, $subs_thanx_body)) {
+
+                    if (sendEmail($toGroupEmails, $subject, $body) && sendEmail($subs_thanx_email, $subs_thanx_subject, $subs_thanx_body)) {
                         $response = ['status' => 'success', 'message' => 'Subscribed successfully.'];
                     } else {
                         $response = ['status' => 'error', 'message' => 'Email could not be sent.'];
