@@ -7,7 +7,7 @@ if ($canSaveOnDB == 1) {
     require_once __DIR__ . '/config/db.php';
 }
 require_once __DIR__ . '/helpers/mail_helper.php';
-require __DIR__ . '/config/constant.php';
+require_once __DIR__ . '/config/constant.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;

@@ -3,8 +3,8 @@
 return [
     //'host' => 'smtp.gmail.com',
     'host' => 'tls://smtp.gmail.com',
-    'username' => 'jothivijay4716@gmail.com',
-    'password' => 'voli vqwx bdiy vydk',
+    'username' => 'jothivijay4716@gmail.com', //SMTP username config
+    'password' => 'voli vqwx bdiy vydk',      //SMTP password config
     'encryption' => PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS,
     'port' => 587,
     //'port' => 465,
