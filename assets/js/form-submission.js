@@ -24,7 +24,7 @@ $(document).ready(function () {
         const email = $('#email').val().trim();
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (email === '') {
-            $('#emailError').text('Email is required.');
+            $('#emailError').text('Company Email is required.');
             isValid = false;
         } else if (!emailRegex.test(email)) {
             $('#emailError').text('Please enter a valid email address.');
@@ -35,7 +35,7 @@ $(document).ready(function () {
         const phone = $('#phone').val().trim();
         const phoneRegex = /^[0-9]{10}$/; // Example: 10-digit phone number
         if (phone === '') {
-            $('#phoneError').text('Phone number is required.');
+            $('#phoneError').text('Company Phone number is required.');
             isValid = false;
         } else if (!phoneRegex.test(phone)) {
             $('#phoneError').text('Please enter a valid 10-digit phone number.');
