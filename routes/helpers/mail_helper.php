@@ -41,6 +41,7 @@ function sendEmail(array $toGroupEmails, $subject, $body)
                 //die($error_message);
                 createDirectoryIfNotExists(__DIR__ . '/../logs/');
                 error_log($error_message, 3, __DIR__ . '/../logs/email_template_errors.log');
+                return false;
             }
         } else {
             $mail->addAddress(ADMIN_EMAIL, ADMIN_NAME);
