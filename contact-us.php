@@ -53,6 +53,7 @@ include_once('partials/header.php'); //should be last after all variables
                     <span class="error" id="messageError"></span>
                 </div>
                 <button type="submit" class="fz_submit active_btn">
+                    <div class="button-loader"></div>
                     <span class="text">Send Message</span>
                     <div class="icon">
                         <img src="./assets/images/fz_button_arrow.svg" alt="">

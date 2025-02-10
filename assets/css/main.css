@@ -4095,6 +4095,7 @@ div#faq-animate svg {
   font-size: 18px;
   color: #C7DAD9;
   font-weight: 400;
+  margin: 0;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .footer_section .fz_footer_container .subscribe p {
@@ -4447,4 +4448,10 @@ div#faq-animate svg {
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   background: rgba(13, 116, 101, 0.08);
+}
+
+#subsEmailError {
+  font-size: 11px;
+  color: #FF0000;
+  margin-left: 15px;
 }

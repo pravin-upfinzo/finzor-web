@@ -222,3 +222,20 @@
     height: 325px;
   }
 }
+
+#subsEmailError {
+  font-size: 11px;
+  color: #FF0000;
+  margin-left: 15px;
+}
+
+#signup_btns {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+}
+@media screen and (max-width: 767px) {
+  #signup_btns #signup_btns {
+    flex-direction: column-reverse;
+  }
+}

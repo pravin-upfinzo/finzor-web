@@ -31,14 +31,15 @@ include_once('partials/header.php'); //should be last after all variables
             </a>
         </div>
     </div>
+    <!-- Banner Section -->
+    <section id="fz_product_list_banner_sec">
+        <div class="container">
+            <img src="./assets/images/product_banner/investment_management.svg" alt="product-banner" class="fz_product_list_banner_img">
+        </div>
+    </section>
 </section>
 
-<!-- Banner Section -->
-<section id="fz_product_list_banner_sec">
-    <div class="container">
-        <img src="./assets/images/Investment Management.svg" alt="product-banner" class="fz_product_list_banner_img">
-    </div>
-</section>
+
 
 <!-- Cloud Based Solutions -->
 <section class="fz_ai_enhance_sec cbs_sec">
@@ -96,7 +97,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="product_list_feature_card fade-right">
                 <div class="product_list_feature_cont">
                     <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4>Budgeting and Expense Management</h4>
+                    <h4>Budgeting and Forecasting</h4>
                     <p>Helps in tracking expenses and creating budgets to align with investment goals.</p>
                 </div>
             </div>

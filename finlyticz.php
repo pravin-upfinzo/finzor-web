@@ -33,14 +33,15 @@ include_once('partials/header.php'); //should be last after all variables
             </a>
         </div>
     </div>
+    <!-- Banner Section -->
+    <section id="fz_product_list_banner_sec">
+        <div class="container">
+            <img src="./assets/images/product_banner/data_analytics.svg" alt="product-banner" class="fz_product_list_banner_img">
+        </div>
+    </section>
 </section>
 
-<!-- Banner Section -->
-<section id="fz_product_list_banner_sec">
-    <div class="container">
-        <img src="./assets/images/Data Analytics 1.svg" alt="product-banner" class="fz_product_list_banner_img">
-    </div>
-</section>
+
 
 <!-- Cloud Based Solutions -->
 <section class="fz_ai_enhance_sec cbs_sec">
@@ -52,13 +53,13 @@ include_once('partials/header.php'); //should be last after all variables
                     <p class="fz_enhance_para">Finzor leverages data to create personalized financial solutions, enabling businesses to offer bespoke investment advice, tailored insurance policies, and customized credit and loan options.</p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">AI-Driven Fraud Detection for Smarter Decisions </span>enhance security with AI-powered fraud analytics and risk management</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">AI-driven fraud detection </span>for enhanced security</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Real-Time Insights for Data-Driven Strategies </span>empower businesses with real-time analytics for improved decisions</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Enable data-driven strategies </span>with real-time analytics</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Cloud-Based Platform for Accessible Data </span>leverage secure cloud access for seamless, real-time data use</p>
+                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Streamline secure, </span>real-time cloud data access</p>
                         </li>
                     </ul>
                 </div>
@@ -104,7 +105,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="product_list_feature_card fade-up">
                 <div class="product_list_feature_cont">
                     <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4>Improving operational efficiency</h4>
+                    <h4>Process Optimization</h4>
                     <p>Analyses processes to identify areas for cost reduction and efficiency gains.</p>
                 </div>
             </div>
