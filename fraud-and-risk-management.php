@@ -107,7 +107,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="product_list_feature_card zoom-in product_center">
                 <div class="product_list_feature_cont">
                     <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4>Deep Learning for Anomaly Detection</h4>
+                    <h4>Deep Anomaly Detection</h4>
                     <p>Recognizes hidden fraud patterns</p>
                 </div>
             </div>

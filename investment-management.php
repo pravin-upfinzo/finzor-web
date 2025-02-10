@@ -96,7 +96,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="product_list_feature_card fade-right">
                 <div class="product_list_feature_cont">
                     <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4>Budgeting and Expense Management</h4>
+                    <h4>Budgeting and Forecasting</h4>
                     <p>Helps in tracking expenses and creating budgets to align with investment goals.</p>
                 </div>
             </div>

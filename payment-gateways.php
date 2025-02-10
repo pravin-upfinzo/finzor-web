@@ -89,7 +89,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div class="product_list_feature_card fade-left">
                 <div class="product_list_feature_cont">
                     <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4>Secure Transactions with Encryption</h4>
+                    <h4>Secure Transactions</h4>
                     <p>Protects payment data with advanced encryption, ensuring secure fund transfers.</p>
                 </div>
             </div>
