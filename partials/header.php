@@ -55,6 +55,24 @@
             animation: l3 1s infinite linear;
         }
         @keyframes l3 {to{transform: rotate(1turn)}}
+
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(50%); /* Change color (adjust as needed) */
+            opacity: 1;
+            position: relative;
+            left: -10px; 
+            top: 0px; 
+            cursor:pointer
+        }
+
+        input[type="time"]::-webkit-calendar-picker-indicator {
+            filter: invert(50%); /* Change color (adjust as needed) */
+            opacity: 1;
+            position: relative;
+            left: -10px; 
+            top: 0px; 
+            cursor:pointer
+        }
     </style>
 
     <?php

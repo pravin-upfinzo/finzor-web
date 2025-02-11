@@ -10,6 +10,9 @@ li {
   margin: 0;
   padding: 0;
 }
+.mandatory {
+    color: #FF0000;
+}
 @import "./font.scss";
 @import "./header.scss";
 @import "./banner.scss";

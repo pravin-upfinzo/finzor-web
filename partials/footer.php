@@ -123,27 +123,37 @@
       <div class="modal-body">
         <form method="POST" id="book-demoform" class="form-wrapper">
           <div class="contact-wrapper form_group">
-              <label for="name" class="field-label">Name</label>
+              <label for="name" class="field-label">Name <span class="mandatory">*</span></label>
               <input class="text-field-3" maxlength="256" name="name" data-name="Name" placeholder="Enter Your Name" type="text" id="Name" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)">
               <span class="error" id="NameError"></span>
           </div>
           <div class="contact-wrapper form_group">
-            <label for="name" class="field-label">Company Name</label>
+            <label for="name" class="field-label">Company Name <span class="mandatory">*</span></label>
             <input class="text-field-3" name="Companyname" placeholder="Enter Your Name" type="text" id="Companyname">
             <span class="error" id="CompanyNameError"></span>
         </div>
           <div class="email-wrapper form_group">
-              <label for="email" class="field-label">Company Email</label>
+              <label for="email" class="field-label">Company Email <span class="mandatory">*</span></label>
               <input class="text-field-3" maxlength="256" name="email" data-name="Email" placeholder="Enter Your Company Email" type="email" id="email">
               <span class="error" id="emailError"></span>
           </div>
           <div class="phone-wrapper form_group">
-              <label for="phone" class="field-label">Company phone</label>
+              <label for="phone" class="field-label">Company phone <span class="mandatory">*</span></label>
               <input class="text-field-3" maxlength="256" name="phone" data-name="phone" placeholder="Enter Your Company Phone" type="phone" id="phone" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
               <span class="error" id="phoneError"></span>
           </div>
+          <div class="email-wrapper form_group">
+              <label for="demo_date" class="field-label">Exp. Demo Date <span class="mandatory">*</span></label>
+              <input class="text-field-3 picker" name="demo_date" data-name="demo_date" type="date" id="demo_date">
+              <span class="error" id="demoDateError"></span>
+          </div>
+          <div class="phone-wrapper form_group">
+              <label for="demo_time" class="field-label">Exp. Demo Time</label>
+              <input class="text-field-3 picker" name="demo_time" data-name="demo_time" type="time" id="demo_time" >
+              
+          </div>
           <div class="comment-wrapper form_group">
-              <label for="message" class="field-label">Message</label>
+              <label for="message" class="field-label">Message <span class="mandatory">*</span></label>
               <textarea id="message" name="message" maxlength="5000" rows="4" cols="50" data-name="Field 3" placeholder="Enter Your Message" class="texteria"></textarea>
               <span class="error" id="messageError"></span>
           </div>
@@ -176,6 +186,39 @@ $(document).ready(function () {
         
     }else {
         $('.list-menu-home').addClass('active');
+    }
+
+    //prevent manual typing on date & time picker
+    document.querySelectorAll(".picker").forEach((element) => {
+        element.addEventListener("keydown", function(e) {
+            // Allow only Delete key (key code 46)
+            if (e.key !== "Delete") {
+                e.preventDefault();  
+            }
+        });
+    });
+
+   // Check if the date and time input elements exist
+    const dateInput = document.getElementById("demo_date");
+    const timeInput = document.getElementById("demo_time");
+
+    if (dateInput && timeInput) {
+        const todayDate = new Date().toISOString().split("T")[0];
+        dateInput.setAttribute("min", todayDate);
+        let currentTime = new Date().toTimeString().split(" ")[0].slice(0, 5);
+        timeInput.setAttribute("min", currentTime);
+
+        dateInput.addEventListener("change", function() {
+            const selectedDate = new Date(dateInput.value);
+            const currentDate = new Date();
+
+            if (selectedDate > currentDate) {
+                timeInput.removeAttribute("min");  // No time restriction for future dates
+            } else {
+                // If the selected date is today, apply the current time as min time
+                timeInput.setAttribute("min", currentTime);
+            }
+        });
     }
 
     $(document).on('mouseenter', '.navbar-nav .nav-item.dropdown', function(e) { 
