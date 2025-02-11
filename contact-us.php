@@ -33,22 +33,22 @@ include_once('partials/header.php'); //should be last after all variables
             </div>
             <form method="POST" id="form" class="form-wrapper">
                 <div class="contact-wrapper form_group">
-                    <label for="name" class="field-label">Name</label>
+                    <label for="name" class="field-label">Name <span class="mandatory">*</span></label>
                     <input class="text-field-3" maxlength="256" name="name" data-name="Name" placeholder="Enter Your Name" type="text" id="Name" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)">
                     <span class="error" id="NameError"></span>
                 </div>
                 <div class="email-wrapper form_group">
-                    <label for="email" class="field-label">Email</label>
+                    <label for="email" class="field-label">Email <span class="mandatory">*</span></label>
                     <input class="text-field-3" maxlength="256" name="email" data-name="Email" placeholder="Enter Your Email" type="email" id="email">
                     <span class="error" id="emailError"></span>
                 </div>
                 <div class="phone-wrapper form_group">
-                    <label for="phone" class="field-label">phone</label>
+                    <label for="phone" class="field-label">Phone <span class="mandatory">*</span></label>
                     <input class="text-field-3" maxlength="256" name="phone" data-name="phone" placeholder="Enter Your Phone Num" type="phone" id="phone" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
                     <span class="error" id="phoneError"></span>
                 </div>
                 <div class="comment-wrapper form_group">
-                    <label for="message" class="field-label">Message</label>
+                    <label for="message" class="field-label">Message <span class="mandatory">*</span></label>
                     <textarea id="message" name="message" maxlength="5000" rows="4" cols="50" data-name="Field 3" placeholder="Enter Your Message" class="texteria"></textarea>
                     <span class="error" id="messageError"></span>
                 </div>

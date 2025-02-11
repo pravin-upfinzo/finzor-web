@@ -174,6 +174,34 @@
                 </div>
                 <img src="./assets/images/product-glow.svg" alt="iconglow" />
             </div>
+            <div class="item">
+                <div class="fz_product-content">
+                    <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
+                    <h3>Finbridge</h3>
+                    <p>Revolutionizing Banking Through Seamless Integration.                    </p>
+                    <a class="cmn-btn" href="./connected-banking.php">
+                        <span class="text"> View Product</span>
+                        <div class="icon">
+                            <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
+                        </div>
+                    </a>
+                </div>
+                <img src="./assets/images/product-glow.svg" alt="iconglow" />
+            </div>
+            <div class="item">
+                <div class="fz_product-content">
+                    <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" />
+                    <h3>FinVigil</h3>
+                    <p>Smarter Fraud Detection, Stronger Financial Protection.</p>
+                    <a class="cmn-btn" href="./fraud-and-risk-management.php">
+                        <span class="text"> View Product</span>
+                        <div class="icon">
+                            <img src="./assets/images/right_arrow.svg" alt="Button Arrow" class="tele_img">
+                        </div>
+                    </a>
+                </div>
+                <img src="./assets/images/product-glow.svg" alt="iconglow" />
+            </div>
         </div>
     </div>
 </section>

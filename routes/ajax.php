@@ -67,8 +67,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $phone = $_POST['phone'] ?? '';
                 $message = $_POST['message'] ?? ''; 
                 $ref_url =  $_POST['ref_url'] ?? '';
+                $demo_date =  $_POST['demo_date'] ?? '';
+                $demo_time =  $_POST['demo_time'] ?? '';
+
+                if (empty($demo_time) || !strtotime($demo_time)) {
+                    $demo_time = null;
+                }
     
-                if (empty($name) || empty($Companyname) || empty($email) || empty($phone) || empty($message)) {
+                if (empty($name) || empty($Companyname) || empty($email) || empty($phone) || empty($message) || empty($demo_date)) {
                     echo json_encode(['status' => 'error', 'message' => 'All fields are required.']);
                     exit;
                 }
@@ -76,8 +82,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 try {
                     $db_saved = false;
                     if ($canSaveOnDB == 1) {
-                        $stmt = $pdo->prepare("INSERT INTO book_demo (`name`,`company_name`, `company_email`, `company_phone`,`message`,`ref_url`) VALUES (?, ?, ?, ?, ?, ?)");
-                        $db_saved = $stmt->execute([$name, $Companyname, $email, $phone, $message, $ref_url]);
+                        $stmt = $pdo->prepare("INSERT INTO book_demo (`name`,`company_name`, `company_email`, `company_phone`,`message`,`ref_url`,`demo_date`,`demo_time`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+                        $db_saved = $stmt->execute([$name, $Companyname, $email, $phone, $message, $ref_url, $demo_date, $demo_time]);
                     }
     
                     if ($db_saved || $canSaveOnDB == 0) {
@@ -85,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         $toGroupEmails = BOOK_DEMO_ADMIN_EMAILS;
                         $subject = 'New Demo Request received from Finzor';
 
-                        $data = ['name' => $name,'Companyname' => $Companyname, 'email' => $email,'phone' => $phone,'message' => $message, 'ref_url' => $ref_url ];
+                        $data = ['name' => $name,'Companyname' => $Companyname, 'email' => $email,'phone' => $phone,'message' => $message, 'ref_url' => $ref_url , 'demo_date' => $demo_date, 'demo_time' => $demo_time];
                         $body = book_demo_mail_body($type="admin_mail", $data);
     
                         if (sendEmail($toGroupEmails, $subject, $body)) {

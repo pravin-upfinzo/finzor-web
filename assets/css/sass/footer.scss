@@ -140,11 +140,11 @@
           text-decoration: none;
           font-size: 14px;
           font-weight: 400;
+          transition: all 0.5s ease;
          
           &:hover {
             color: #00B2B1;
             letter-spacing: 0.4px;
-            transition: all 1s ease;
           }
         }
       }

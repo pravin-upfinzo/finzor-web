@@ -42,6 +42,13 @@ $(document).ready(function () {
             isValid = false;
         }
 
+        // Demo date Validation
+        const demoDate = $('#demo_date').val().trim();
+        if (demoDate === '') {
+            $('#demoDateError').text('Demo date is required.');
+            isValid = false;
+        }
+
         // Message Validation
         const message = $('#message').val().trim();
         if (message === '') {
@@ -63,7 +70,11 @@ $(document).ready(function () {
             }
         });
 
-
+        $('#demo_date').on('input', function () {
+            if ($(this).val().trim() !== '') {
+                $('#demoDateError').text('');
+            }
+        });
 
         $('#email').on('input', function () {
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

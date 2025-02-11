@@ -55,6 +55,24 @@
             animation: l3 1s infinite linear;
         }
         @keyframes l3 {to{transform: rotate(1turn)}}
+
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(50%); /* Change color (adjust as needed) */
+            opacity: 1;
+            position: relative;
+            left: -10px; 
+            top: 0px; 
+            cursor:pointer
+        }
+
+        input[type="time"]::-webkit-calendar-picker-indicator {
+            filter: invert(50%); /* Change color (adjust as needed) */
+            opacity: 1;
+            position: relative;
+            left: -10px; 
+            top: 0px; 
+            cursor:pointer
+        }
     </style>
 
     <?php
@@ -114,7 +132,7 @@
                                 <a class="nav-link list-menu list-menu-home" href="index.php">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link list-menu list-menu-service" href="#" id="menu1" role="button">What we offer</a>
+                                <a class="nav-link list-menu list-menu-service" href="#" id="menu1" role="button">What we offer <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="white" width="15px"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg></a>
                                 <div class="submenu-wrapper">
                                 <ul class="submenu">
                                 <div class="upward-arrow"></div>
