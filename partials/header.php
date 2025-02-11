@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.10/dist/sweetalert2.min.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.9/codemirror.min.css"> -->
 
     
@@ -20,6 +21,59 @@
             echo $pageHeaderScripts;
         }
     ?>
+
+    <style>
+        #subsEmailError{
+            font-size: 11px;
+            color: red;
+            margin-left: 15px;
+        }
+
+        .subscribe .subscribe-title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .button-loader {
+            display: none;
+            width: 18px;
+            height: 18px;
+            padding: 2px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background: #11eac9;
+                margin-right:5px;
+            --_m: 
+                conic-gradient(#0000 10%,#000),
+                linear-gradient(#000 0 0) content-box;
+            -webkit-mask: var(--_m);
+                    mask: var(--_m);
+            -webkit-mask-composite: source-out;
+                    mask-composite: subtract;
+            animation: l3 1s infinite linear;
+        }
+        @keyframes l3 {to{transform: rotate(1turn)}}
+
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(50%); /* Change color (adjust as needed) */
+            opacity: 1;
+            position: relative;
+            left: -10px; 
+            top: 0px; 
+            cursor:pointer
+        }
+
+        input[type="time"]::-webkit-calendar-picker-indicator {
+            filter: invert(50%); /* Change color (adjust as needed) */
+            opacity: 1;
+            position: relative;
+            left: -10px; 
+            top: 0px; 
+            cursor:pointer
+        }
+    </style>
 
     <?php
     // Include page-specific CSS
@@ -78,7 +132,7 @@
                                 <a class="nav-link list-menu list-menu-home" href="index.php">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link list-menu list-menu-service" href="#" id="menu1" role="button">What we offer</a>
+                                <a class="nav-link list-menu list-menu-service" href="#" id="menu1" role="button">What we offer <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="white" width="15px"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg></a>
                                 <div class="submenu-wrapper">
                                 <ul class="submenu">
                                 <div class="upward-arrow"></div>

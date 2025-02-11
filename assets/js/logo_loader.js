@@ -63,6 +63,7 @@ $(window).on('load', function() {
           // Append blur background
           if ($('#menu-blur-bg').length === 0) {
             $('body').append('<div id="menu-blur-bg"></div>');
+            $('.menu > li.dropdown').addClass("arrow-active");
           }
           $("#menu-blur-bg").fadeIn(0);
           
@@ -72,7 +73,7 @@ $(window).on('load', function() {
           $("#menu-blur-bg").fadeOut(0, function () {
             $(this).remove(); // Remove after fade out
           });
-          
+          $('.menu > li.dropdown').removeClass("arrow-active");
           $(this).children(".submenu-wrapper").stop(true, true).fadeOut(0);
         }
       );

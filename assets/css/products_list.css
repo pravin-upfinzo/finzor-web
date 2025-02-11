@@ -30,13 +30,13 @@ section {
 }
 #fz_product_list_hero_sec {
   position: relative;
-  padding-bottom: 96px;
 }
 #fz_product_list_hero_sec canvas {
   position: absolute;
   width: 100%;
   display: flex;
   height: 100%;
+  opacity: 0.7;
 }
 #fz_product_list_hero_sec .product_list_hero {
   display: flex;
@@ -45,6 +45,12 @@ section {
   flex-direction: column;
   position: relative;
   z-index: 9;
+  padding-bottom: 100px;
+}
+@media screen and (max-width: 991px) {
+  #fz_product_list_hero_sec .product_list_hero {
+    padding-bottom: 55px;
+  }
 }
 #fz_product_list_hero_sec .product_list_hero .product_list_hero_title {
   font-size: 64px;
