@@ -239,6 +239,27 @@ header .navbar-expand-lg .navbar-nav > li a.nav-link.active {
     border-bottom: none;
   }
 }
+header .navbar-expand-lg .navbar-nav > li a.nav-link.list-menu svg {
+  transition: all 0.5s ease;
+  margin-left: 10px;
+}
+@media screen and (max-width: 767px) {
+  header .navbar-expand-lg .navbar-nav > li a.nav-link.list-menu svg {
+    float: right;
+  }
+}
+header .navbar-expand-lg .navbar-nav > li a.nav-link.list-menu:hover svg {
+  transform: rotate(180deg);
+  fill: #f7c35f;
+}
+@media screen and (max-width: 991px) {
+  header .navbar-expand-lg .navbar-nav > li a.nav-link.list-menu:hover svg {
+    transform: unset;
+  }
+}
+header .navbar-expand-lg .navbar-nav > li a.nav-link.active svg {
+  fill: #f7c35f;
+}
 @media screen and (max-width: 991px) {
   header .navbar-expand-lg .navbar-nav > li {
     padding: 10px 5px;
@@ -425,6 +446,14 @@ header .navbar-expand-lg .navbar-nav > li .inner-submenu a p {
 }
 header .navbar-expand-lg .navbar-nav > li .inner-submenu .active-submenu-l2 a {
   background: rgba(0, 75, 75, 0.5);
+}
+header .navbar-expand-lg .navbar-nav .arrow-active > a svg {
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 991px) {
+  header .navbar-expand-lg .navbar-nav .arrow-active > a svg {
+    transform: unset;
+  }
 }
 @media screen and (max-width: 991px) {
   header .fz_sigin {

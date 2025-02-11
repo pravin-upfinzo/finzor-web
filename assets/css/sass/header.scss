@@ -179,6 +179,29 @@ header {
               border-bottom: none;
           }
           }
+          &.list-menu {
+            svg {
+              transition: all 0.5s ease;
+              margin-left: 10px;
+              @media screen and (max-width: 767px){
+                float: right;
+              }
+            }
+            &:hover {
+              svg {
+                transform: rotate(180deg);
+                fill: $secondary-color;
+                @media screen and (max-width: 991px) {
+                  transform: unset;
+                }
+              }
+            }
+          }
+          &.active {
+            svg {
+              fill: $secondary-color;
+            }
+          }
         }
         // @media (min-width: 992px) and (max-width: 1051px) {
         //   font-size: 12px;
@@ -382,6 +405,16 @@ header {
           }
         }
 
+      }
+      .arrow-active {
+        > a{
+          svg {
+            transform: rotate(180deg);
+            @media screen and (max-width: 991px) {
+              transform: unset;
+            }
+          }
+        }
       }
     }
   }
