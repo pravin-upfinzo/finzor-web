@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 11, 2025 at 08:28 AM
+-- Generation Time: Feb 10, 2025 at 08:11 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -33,8 +33,6 @@ CREATE TABLE `book_demo` (
   `company_name` varchar(100) DEFAULT NULL,
   `company_email` varchar(100) DEFAULT NULL,
   `company_phone` varchar(50) DEFAULT NULL,
-  `demo_date` date DEFAULT NULL,
-  `demo_time` time DEFAULT NULL,
   `message` text DEFAULT NULL,
   `ref_url` varchar(100) DEFAULT NULL,
   `status` int(11) NOT NULL DEFAULT 1,

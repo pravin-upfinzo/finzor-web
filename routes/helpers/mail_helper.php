@@ -139,12 +139,23 @@ function book_demo_mail_body($type="admin_mail",$data=[]){
     if($type == "admin_mail"){ 
         $template_name = "book-demo";
         $email_template = getEmailTemplate($template_name);
+
+        if ($data['demo_time'] !== null && $data['demo_time'] !== '') {
+            // Proceed with conversion
+            $demoDateTime = DateTime::createFromFormat('H:i', $data['demo_time']);
+            $demo_time = $demoDateTime->format('h:i A');
+        } else {
+            $demo_time = "";
+        }
+
+        $demo_date_time = date('d-M-Y',strtotime($data['demo_date']))." ".$demo_time;
+
         if ($email_template) {
             $email_content = "You have received a new Demo request through Finzor website";
            // echo "Before Replacement:<br><pre>" . htmlspecialchars($email_template) . "</pre><br>"; die();
             $updated_template = str_replace(
-                ['{{name}}', '{{email}}', '{{phone}}', '{{message}}','{{ref_url}}', '{{current_year}}', '{{email_content}}' ],
-                [$data['name'], $data['email'], $data['phone'], $data['message'], $data['ref_url'] ,CURRENT_YEAR, $email_content ],
+                ['{{name}}', '{{email}}', '{{phone}}', '{{message}}','{{ref_url}}', '{{demo_date_time}}', '{{current_year}}', '{{email_content}}' ],
+                [$data['name'], $data['email'], $data['phone'], $data['message'], $data['ref_url'] , $demo_date_time ,CURRENT_YEAR, $email_content ],
                 $email_template
             );
             //echo "After Replacement:<br><pre>" . htmlspecialchars($updated_template) . "</pre><br>"; die();
@@ -158,6 +169,8 @@ function book_demo_mail_body($type="admin_mail",$data=[]){
                             <tr><td style='border:1px solid #000;padding: 5px;'>Company Name</td><td style='border:1px solid #000;padding: 5px;'>".$data['Companyname']."</td></tr>
                             <tr><td style='border:1px solid #000;padding: 5px;'>Email</td><td style='border:1px solid #000;padding: 5px;'>".$data['email']."</td></tr>
                             <tr><td style='border:1px solid #000;padding: 5px;'>Phone</td><td style='border:1px solid #000;padding: 5px;'>".$data['phone']."</td></tr>
+                            <tr><td style='border:1px solid #000;padding: 5px;'>Exp. Demo Date</td><td style='border:1px solid #000;padding: 5px;'>".$demo_date_time."</td></tr>
+                            <tr><td style='border:1px solid #000;padding: 5px;'>Demo Time</td><td style='border:1px solid #000;padding: 5px;'>".$demo_time."</td></tr>
                             <tr><td style='border:1px solid #000;padding: 5px;'>Message</td><td style='border:1px solid #000;padding: 5px;'>".$data['message']."</td><tr>
                             <tr><td style='border:1px solid #000;padding: 5px;'>Ref.Page</td><td style='border:1px solid #000;padding: 5px;'>".$data['ref_url']."</td><tr>
                             </tbody>
