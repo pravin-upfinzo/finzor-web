@@ -2,7 +2,8 @@
     date_default_timezone_set('Asia/Kolkata');
     define('CURRENT_YEAR', date('Y'));
     define('CURRENT_DATETIME', date('Y-m-d H:i:s'));
-    
+    define('ROOT_PATH', dirname(__DIR__,2));
+
     define('ADMIN_EMAIL', 'support@finzor.com'); //for to_mail backup
     define('ADMIN_NAME', 'Finzor Admin'); //for to_mail backup
 
