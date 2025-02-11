@@ -170,7 +170,6 @@ function book_demo_mail_body($type="admin_mail",$data=[]){
                             <tr><td style='border:1px solid #000;padding: 5px;'>Email</td><td style='border:1px solid #000;padding: 5px;'>".$data['email']."</td></tr>
                             <tr><td style='border:1px solid #000;padding: 5px;'>Phone</td><td style='border:1px solid #000;padding: 5px;'>".$data['phone']."</td></tr>
                             <tr><td style='border:1px solid #000;padding: 5px;'>Exp. Demo Date</td><td style='border:1px solid #000;padding: 5px;'>".$demo_date_time."</td></tr>
-                            <tr><td style='border:1px solid #000;padding: 5px;'>Demo Time</td><td style='border:1px solid #000;padding: 5px;'>".$demo_time."</td></tr>
                             <tr><td style='border:1px solid #000;padding: 5px;'>Message</td><td style='border:1px solid #000;padding: 5px;'>".$data['message']."</td><tr>
                             <tr><td style='border:1px solid #000;padding: 5px;'>Ref.Page</td><td style='border:1px solid #000;padding: 5px;'>".$data['ref_url']."</td><tr>
                             </tbody>
