@@ -102,7 +102,7 @@ document.querySelectorAll('.hero_sec_dot').forEach((container) => {
   NUM_PARTICLES = 400,
   MAX_Z = 2,
   MAX_R = 1,
-  Z_SPD = 1,
+  Z_SPD = container.id == 'landing_page' ? 1.5 : 0.2,
   PARTICLES = [];
 
 class Particle {

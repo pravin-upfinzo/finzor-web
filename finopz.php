@@ -63,7 +63,7 @@ include_once('partials/header.php'); //should be last after all variables
                 </a>
             </div>
             <div class="fin_bankz_img">
-                <div class="finbankz-product"></div>
+                <div class="finopz-fininvezt"></div>
             </div>
         </div>
     </div>
@@ -74,7 +74,7 @@ include_once('partials/header.php'); //should be last after all variables
     <div class="container">
         <div class="fin_bankz">
             <div class="fin_bankz_img">
-                <div class="finbankz-product2"></div>
+                <div class="finopz-finalease"></div>
             </div>
             <div class="fin_bankz_content finbank_content">
                 <span class="finbank_count">02</span>
@@ -150,7 +150,7 @@ include_once('partials/header.php'); //should be last after all variables
                 </a>
             </div>
             <div class="fin_bankz_img">
-                <div class="finbankz-product3"></div>
+                <div class="finopz-finzrec"></div>
             </div>
         </div>
     </div>

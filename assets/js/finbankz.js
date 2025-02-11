@@ -2,43 +2,53 @@
 // Json Lottie
 document.addEventListener("DOMContentLoaded", function () {
     // Load the Lottie animation
-    document.querySelectorAll(".finbankz-product").forEach((container) => {
+    document.querySelectorAll(".upizor-payunity").forEach((container) => {
         lottie.loadAnimation({
             container: container, // HTML container for the animation
             renderer: "svg", // Render as SVG
             loop: true, // Animation will loop continuously
             autoplay: true, // Animation will play automatically
-            path: "./assets/json/fin-pro1.json", // Path to the Lottie JSON file
+            path: "./assets/json/product-inner-page/upizor-payunity.json", // Path to the Lottie JSON file
         });
     });
     // Load the Lottie animation
-    document.querySelectorAll(".finbankz-product2").forEach((container) => {
+    document.querySelectorAll(".upizor-upi-switch").forEach((container) => {
         lottie.loadAnimation({
             container: container, // HTML container for the animation
             renderer: "svg", // Render as SVG
             loop: true, // Animation will loop continuously
             autoplay: true, // Animation will play automatically
-            path: "./assets/json/fin-pro2.json", // Path to the Lottie JSON file
+            path: "./assets/json/product-inner-page/upizor-upi-switch.json", // Path to the Lottie JSON file
         });
     });
     // Load the Lottie animation
-    document.querySelectorAll(".finbankz-product3").forEach((container) => {
+    document.querySelectorAll(".finopz-fininvezt").forEach((container) => {
         lottie.loadAnimation({
             container: container, // HTML container for the animation
             renderer: "svg", // Render as SVG
             loop: true, // Animation will loop continuously
             autoplay: true, // Animation will play automatically
-            path: "./assets/json/fin-pro3.json", // Path to the Lottie JSON file
+            path: "./assets/json/product-inner-page/finopz-fininvezt.json", // Path to the Lottie JSON file
         });
     });
     // Load the Lottie animation
-    document.querySelectorAll(".finbankz-product4").forEach((container) => {
+    document.querySelectorAll(".finopz-finalease").forEach((container) => {
         lottie.loadAnimation({
             container: container, // HTML container for the animation
             renderer: "svg", // Render as SVG
             loop: true, // Animation will loop continuously
             autoplay: true, // Animation will play automatically
-            path: "./assets/json/fin-pro4.json", // Path to the Lottie JSON file
+            path: "./assets/json/product-inner-page/finopz-finalease.json", // Path to the Lottie JSON file
+        });
+    });
+    // Load the Lottie animation
+    document.querySelectorAll(".finopz-finzrec").forEach((container) => {
+        lottie.loadAnimation({
+            container: container, // HTML container for the animation
+            renderer: "svg", // Render as SVG
+            loop: true, // Animation will loop continuously
+            autoplay: true, // Animation will play automatically
+            path: "./assets/json/product-inner-page/finopz-finzrec.json", // Path to the Lottie JSON file
         });
     });
 });
