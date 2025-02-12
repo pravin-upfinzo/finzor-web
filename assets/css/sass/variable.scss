@@ -174,55 +174,60 @@ $ternary-color: #2d4949;
   }
   @media screen and (max-width:375px) {
     font-size: 13px;
-}
-&:before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:#0d1918;
-  border-radius: var(--h);
-  z-index: 1;
-  transition: transform 500ms ease;
-}
-.text,.icon {
-  z-index: 2;
-  margin-left: 0px !important;
   }
-.text {
-  transform: translateX(-15%);
-  transition: transform 500ms ease;
-}
-.icon {
-  position: absolute;
-  width: var(--icon-size);
-  height: var(--icon-size);
-  left: 0;
-  transform: translateX(calc((var(--w)) / 2 + 36px));
-  transition: transform 500ms ease, color 500ms ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-img {
-  opacity: 1 !important;
-}
-&:hover,
-&:active {
-  box-shadow: none !important;
-}
-&:hover::before,
-&:active::before {
-  transform: translateX(0%);
-  box-shadow: inset 0 0px 0px 0 transparent;
-}
-&::before,
-&:active::before {
-  transform: translateX(76%);
-  box-shadow: inset 0 0px 0px 0 transparent;
-}
-&:hover .text{
- left: 10px !important;
-}
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:#0d1918;
+    border-radius: var(--h);
+    z-index: 1;
+    transition: transform 500ms ease;
+  }
+  .text,.icon {
+    z-index: 2;
+    margin-left: 0px !important;
+    }
+  .text {
+    transform: translateX(-15%);
+    transition: transform 500ms ease;
+  }
+  .icon {
+    position: absolute;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    left: 0;
+    transform: translateX(calc((var(--w)) / 2 + 36px));
+    transition: transform 500ms ease, color 500ms ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    opacity: 1 !important;
+  }
+  &:hover,
+  &:active {
+    box-shadow: none !important;
+  }
+  &:hover::before,
+  &:active::before {
+    transform: translateX(0%);
+    box-shadow: inset 0 0px 0px 0 transparent;
+  }
+  &::before,
+  &:active::before {
+    transform: translateX(76%);
+    box-shadow: inset 0 0px 0px 0 transparent;
+  }
+  &:hover .text{
+  left: 10px !important;
+  }
+  &:hover .icon{
+      opacity:0.4;
+      transform: translateX(calc((var(--w)) / 2 + 70px));
+      animation: slide-right .6s ease-out both;
+  }
 } 
 
 @mixin text-field-3 {
