@@ -145,6 +145,11 @@ section {
 #fz_product_list_hero_sec .product_list_hero .cmn-btn:hover .text {
   left: 10px !important;
 }
+#fz_product_list_hero_sec .product_list_hero .cmn-btn:hover .icon {
+  opacity: 0.4;
+  transform: translateX(calc((var(--w)) / 2 + 70px));
+  animation: slide-right 0.6s ease-out both;
+}
 
 #fz_product_list_banner_sec .fz_product_list_banner_img, #fz_product_list_banner_sec svg {
   width: 100%;
@@ -884,6 +889,11 @@ section {
 .fz_get_in_touch .get_in_touch .get_touch_in_content .get_touch_btn a:hover .text {
   left: 10px !important;
 }
+.fz_get_in_touch .get_in_touch .get_touch_in_content .get_touch_btn a:hover .icon {
+  opacity: 0.4;
+  transform: translateX(calc((var(--w)) / 2 + 70px));
+  animation: slide-right 0.6s ease-out both;
+}
 @media (max-width: 991px) {
   .fz_get_in_touch .get_in_touch .get_touch_in_content .get_touch_btn {
     display: flex;
@@ -1053,6 +1063,11 @@ section {
 }
 #fz_product_range #product-range .fz_product-content .cmn-btn:hover .text {
   left: 10px !important;
+}
+#fz_product_range #product-range .fz_product-content .cmn-btn:hover .icon {
+  opacity: 0.4;
+  transform: translateX(calc((var(--w)) / 2 + 70px));
+  animation: slide-right 0.6s ease-out both;
 }
 #fz_product_range .owl-carousel .owl-nav .owl-prev,
 #fz_product_range .owl-carousel .owl-nav .owl-next {
@@ -1314,6 +1329,11 @@ section {
 #fin_bankz_sec .fin_bankz .fin_bankz_content .cmn-btn:hover .text {
   left: 10px !important;
 }
+#fin_bankz_sec .fin_bankz .fin_bankz_content .cmn-btn:hover .icon {
+  opacity: 0.4;
+  transform: translateX(calc((var(--w)) / 2 + 70px));
+  animation: slide-right 0.6s ease-out both;
+}
 #fin_bankz_sec .fin_bankz .fin_bankz_img {
   position: relative;
   text-align: center;
@@ -1400,4 +1420,31 @@ section {
 
 .finbankz_bg_1 {
   background: linear-gradient(359.22deg, rgba(0, 17, 21, 0) 2.97%, rgba(4, 46, 39, 0.5) 51.23%) !important;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(135px);
+    opacity: 0.5;
+  }
+  20% {
+    transform: translateX(145px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateX(155px);
+    opacity: 0.1;
+  }
+  65% {
+    transform: translateX(-125px);
+    opacity: 0.2;
+  }
+  85% {
+    transform: translateX(110px);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateX(130px);
+    opacity: 1;
+  }
 }
