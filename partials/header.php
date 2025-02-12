@@ -84,7 +84,7 @@
 </head>
 
 <body>
-    <div id="page-loader" style="display: none;"></div>
+    <span id="page-loader-span"><div id="page-loader"></div></span>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
