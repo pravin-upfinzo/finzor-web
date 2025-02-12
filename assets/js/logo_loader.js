@@ -1,29 +1,38 @@
 // Page loader
-$( document ).ready(function() {
+$(document).ready(function() {
     
-     //Page Loader setup
-     var page_id = $('.section_start').attr('id');
-     var page_name = (typeof page_id !== "undefined" && page_id !== null) ? page_id : "";
+    //Page Loader setup
+    var page_id = $('.section_start').attr('id');
+    var page_name = (typeof page_id !== "undefined" && page_id !== null) ? page_id : "";
 
-     let lastHomeLoadedDate = localStorage.getItem("lastHomeLoadedDate");
-     let lastLoadedDate = localStorage.getItem("lastLoadedDate");
-     let today = new Date().toISOString().split("T")[0];
-     if (lastLoadedDate !== today) {
-         showLoader();
-         localStorage.setItem("lastLoadedDate", today);
-     } else if(page_name === "home_page"){
+    let lastLoadedDate = localStorage.getItem("lastLoadedDate");
+    let today = new Date().toISOString().split("T")[0];
 
-        if(lastHomeLoadedDate == null || lastHomeLoadedDate !== today){
-            showLoader();
-            localStorage.setItem("lastHomeLoadedDate", today);
+    if(page_name === "home_page"){
+        $("#page-loader-span").html('<div id="page-loader" class="index-page-loader"></div>');
+        showLoader(page_name);
+        localStorage.setItem("lastLoadedDate", today);
+    } else { //for other pages
+        if (lastLoadedDate !== today) { //check for localstorage to run once
+            $("#page-loader-span").html('<div id="page-loader"></div>');
+            showLoader(page_name);
+            localStorage.setItem("lastLoadedDate", today);
+        } else {
+            $("#page-loader").hide();
+            $('.hero').fadeIn();
+            $("#page-loader-span").html("");
         }
-     }
+    }
  
-    function showLoader() {
-        $("#page-loader").show();
-        
+    function showLoader(page_name) {
         setTimeout(function() {
             $("#page-loader").fadeOut("slow");
+            $(".index-page-loader").fadeOut("slow");
+
+            if(page_name !== "home_page"){
+                $("#page-loader-span").html("");
+            }
+            
             $('.hero').fadeIn();
         }, 2500);
     }
@@ -217,3 +226,41 @@ function init() {
 }
 init();
   });
+
+
+// SVG script append in product range section
+const product_className = document.querySelectorAll(".product_glow_svg")
+async function loadSVG(url, containerId) {
+    try {
+        const response = await fetch(url);
+        const svgText = await response.text();
+        try {
+            document.getElementById(containerId).innerHTML = svgText;
+        } catch {
+            product_className.forEach((container) => {
+                container.innerHTML = svgText;
+            })
+        }
+    } catch (error) {
+        console.error("Error loading SVG:", error);
+    }
+}
+// Product range
+loadSVG("./assets/images/product-icon.svg", "product_range_1_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_2_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_3_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_4_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_5_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_6_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_7_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_8_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_9_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_10_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_11_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_12_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_13_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_14_svg");
+// glow img
+product_className.forEach((container) => {
+    loadSVG("./assets/images/product-glow.svg", container.className);
+});

@@ -71,7 +71,7 @@ $pageScripts .= '<script></script>' . "\n";
 
 include_once('partials/header.php'); //should be last after all variables
 ?>
-
+<!-- <div id="page-loader" class="index-page-loader"></div> -->
 <span id="home_page" class="section_start" active-menu="list-menu-home"></span>
 
 <section id="fz-hero-bg">

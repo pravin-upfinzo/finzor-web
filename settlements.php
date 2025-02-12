@@ -52,13 +52,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Simplified Payment Integration </span>connect PSPs for seamless transactions</p>
+                            <p><span class="fz_cbs_color">Simplified Payment Integration </span>connect PSPs for seamless transactions</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Maximize Efficiency with Routing </span>ensure cost-effective, faster processing</p>
+                            <p><span class="fz_cbs_color">Maximize Efficiency with Routing </span>ensure cost-effective, faster processing</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Automate Reconciliation </span>eliminate errors and streamline settlement</p>
+                            <p><span class="fz_cbs_color">Automate Reconciliation </span>eliminate errors and streamline settlement</p>
                         </li>
                     </ul>
                 </div>
@@ -194,13 +194,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Fast & secure fund settlements </span> for smooth transactions</span></p>
+                            <p><span class="fz_cbs_color">Fast & secure fund settlements </span> for smooth transactions</span></p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Automated reconciliation </span> to enhance accurate payouts</span></p>
+                            <p><span class="fz_cbs_color">Automated reconciliation </span> to enhance accurate payouts</span></p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Real-time tracking </span> of settlement status & reports</p>
+                            <p><span class="fz_cbs_color">Real-time tracking </span> of settlement status & reports</p>
                             
                         </li>
                     </ul>

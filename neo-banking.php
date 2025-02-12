@@ -52,13 +52,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">24/7 AI-Powered Support </span>get instant help anytime, anywhere</p>
+                            <p><span class="fz_cbs_color">24/7 AI-Powered Support </span>get instant help anytime, anywhere</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Fully Digital Services </span>access banking anytime via app or web</p>
+                            <p><span class="fz_cbs_color">Fully Digital Services </span>access banking anytime via app or web</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Seamless User Experience </span>enjoy fast, hassle-free banking</p>
+                            <p><span class="fz_cbs_color">Seamless User Experience </span>enjoy fast, hassle-free banking</p>
                         </li>
                     </ul>
                 </div>
@@ -194,13 +194,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> 100% digital banking </span>with no branches & seamless experience</p>
+                            <p><span class="fz_cbs_color"> 100% digital banking </span>with no branches & seamless experience</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Quick account setup </span>with instant access to financial tools</p>
+                            <p><span class="fz_cbs_color"> Quick account setup </span>with instant access to financial tools</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Smart money management</span> with AI-driven insights & analytics</p>
+                            <p><span class="fz_cbs_color">Smart money management</span> with AI-driven insights & analytics</p>
                             
                         </li>
                     </ul>

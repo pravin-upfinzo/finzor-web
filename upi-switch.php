@@ -52,13 +52,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Experience improved payment </span>success efficiency boosting through switch</p>
+                            <p><span class="fz_cbs_color">Experience improved payment </span>success efficiency boosting through switch</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Optimized Transactions </span>ensure under 100ms latency for quicker transactions</p>
+                            <p><span class="fz_cbs_color">Optimized Transactions </span>ensure under 100ms latency for quicker transactions</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Uninterrupted Service </span>achieve 99.99% uptime performance</p>
+                            <p><span class="fz_cbs_color">Uninterrupted Service </span>achieve 99.99% uptime performance</p>
                         </li>
                     </ul>
                 </div>
@@ -217,13 +217,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Seamless routing of UPI </span> transactions for better reliability</p>
+                            <p><span class="fz_cbs_color"> Seamless routing of UPI </span> transactions for better reliability</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Smart load balancing </span> across multiple banks & networks</p>
+                            <p><span class="fz_cbs_color"> Smart load balancing </span> across multiple banks & networks</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Ensures high success rates </span> with faster & secure payments</p>
+                            <p><span class="fz_cbs_color">Ensures high success rates </span> with faster & secure payments</p>
                         </li>
                     </ul>
                 </div>

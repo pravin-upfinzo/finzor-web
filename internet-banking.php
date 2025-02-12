@@ -52,13 +52,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Multi-Factor Authentication </span>enhanced login security for users</p>
+                            <p><span class="fz_cbs_color">Multi-Factor Authentication </span>enhanced login security for users</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Biometric Verification </span>secure access with fingerprint or face scan</p>
+                            <p><span class="fz_cbs_color">Biometric Verification </span>secure access with fingerprint or face scan</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Real-Time Fraud Monitoring </span>detect and prevent fraudulent activities</p>
+                            <p><span class="fz_cbs_color">Real-Time Fraud Monitoring </span>detect and prevent fraudulent activities</p>
                         </li>
                     </ul>
                 </div>
@@ -194,13 +194,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Access your bank account </span>anytime, anywhere with full security</p>
+                            <p><span class="fz_cbs_color"> Access your bank account </span>anytime, anywhere with full security</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Pay bills & transfer funds </span>instantly with just a few clicks</p>
+                            <p><span class="fz_cbs_color"> Pay bills & transfer funds </span>instantly with just a few clicks</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Manage finances online</span> with real-time tracking & insights</p>
+                            <p><span class="fz_cbs_color">Manage finances online</span> with real-time tracking & insights</p>
                         </li>
                     </ul>
                 </div>

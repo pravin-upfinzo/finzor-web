@@ -54,14 +54,14 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Enhanced Security </span>encrypt transactions to secure business operations</p>
+                            <p><span class="fz_cbs_color">Enhanced Security </span>encrypt transactions to secure business operations</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">AI Fraud Detection </span>detect and prevent fraud during onboarding</p>
+                            <p><span class="fz_cbs_color">AI Fraud Detection </span>detect and prevent fraud during onboarding</p>
                             </span>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Regulatory Compliance </span>build trust with merchants through assurance</p>
+                            <p><span class="fz_cbs_color">Regulatory Compliance </span>build trust with merchants through assurance</p>
                         </li>
                     </ul>
                 </div>
@@ -197,13 +197,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Quick & hassle-free onboarding </span>with minimal documentation.</p>
+                            <p><span class="fz_cbs_color">Quick & hassle-free onboarding </span>with minimal documentation.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Seamless integration</span> for instant payment acceptance.</p>
+                            <p><span class="fz_cbs_color">Seamless integration</span> for instant payment acceptance.</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Verify & activate merchants</span> with fast processing.</p>
+                            <p><span class="fz_cbs_color">Verify & activate merchants</span> with fast processing.</p>
                         </li>
                     </ul>
                 </div>
