@@ -54,14 +54,14 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">AI-Powered Fraud Detection </span>with Behavioral Insights</p>
+                            <p><span class="fz_cbs_color">AI-Powered Fraud Detection </span>with Behavioral Insights</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Natural Language Processing-Driven Scam Detection </span>for Enhanced Security</p>
+                            <p><span class="fz_cbs_color">Natural Language Processing-Driven Scam Detection </span>for Enhanced Security</p>
                             </span>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Anomaly Detection </span>using Deep Learning for Fraud Prevention
+                            <p><span class="fz_cbs_color">Anomaly Detection </span>using Deep Learning for Fraud Prevention
                             </p>
                         </li>
                     </ul>
@@ -220,13 +220,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Market Risk Prediction </span>helps assess financial uncertainties</p>
+                            <p><span class="fz_cbs_color">Market Risk Prediction </span>helps assess financial uncertainties</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Stress Testing</span> evaluates stability under extreme conditions</p>
+                            <p><span class="fz_cbs_color">Stress Testing</span> evaluates stability under extreme conditions</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Scenario Analysis</span> forecasts risks with data-driven insights</p>
+                            <p><span class="fz_cbs_color">Scenario Analysis</span> forecasts risks with data-driven insights</p>
                         </li>
                     </ul>
                 </div>

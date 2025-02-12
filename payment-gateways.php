@@ -52,13 +52,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Optimized Authorization</span> optimize process for improved payment success</p>
+                            <p><span class="fz_cbs_color">Optimized Authorization</span> optimize process for improved payment success</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Streamlined Checkout Process</span> increase completion and conversions                            </p>
+                            <p><span class="fz_cbs_color">Streamlined Checkout Process</span> increase completion and conversions                            </p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Customized Payment Options</span> tailor options for market demands</p>
+                            <p><span class="fz_cbs_color">Customized Payment Options</span> tailor options for market demands</p>
                         </li>
                     </ul>
                 </div>
@@ -194,13 +194,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Secure online payments </span> with multiple payment options</p>
+                            <p><span class="fz_cbs_color"> Secure online payments </span> with multiple payment options</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Fast transaction processing </span> for seamless user experience</p>
+                            <p><span class="fz_cbs_color">Fast transaction processing </span> for seamless user experience</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Supports cards, UPI, & wallets</span> for easy checkout</p>
+                            <p><span class="fz_cbs_color">Supports cards, UPI, & wallets</span> for easy checkout</p>
                         </li>
                     </ul>
                 </div>

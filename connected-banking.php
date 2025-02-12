@@ -54,14 +54,14 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Scalable computing resources </span>for business growth and flexibility</p>
+                            <p><span class="fz_cbs_color">Scalable computing resources </span>for business growth and flexibility</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Cost-effective solution </span>for computing power and storage needs</p>
+                            <p><span class="fz_cbs_color">Cost-effective solution </span>for computing power and storage needs</p>
                             </span>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Provides real-time data access </span>and collaboration across platforms</p>
+                            <p><span class="fz_cbs_color">Provides real-time data access </span>and collaboration across platforms</p>
                         </li>
                     </ul>
                 </div>
@@ -220,13 +220,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Automated Reconciliation </span>simplifies transaction matching in real time</p>
+                            <p><span class="fz_cbs_color">Automated Reconciliation </span>simplifies transaction matching in real time</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Virtual Account Numbers </span> improve payment tracking and transparency</p>
+                            <p><span class="fz_cbs_color">Virtual Account Numbers </span> improve payment tracking and transparency</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">UPI Integration </span> enables instant, secure, and seamless payments</p>
+                            <p><span class="fz_cbs_color">UPI Integration </span> enables instant, secure, and seamless payments</p>
                         </li>
                     </ul>
                 </div>

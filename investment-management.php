@@ -52,13 +52,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Gen AI customizes strategies</span> based on risk, goals, and preferences</p>
+                            <p><span class="fz_cbs_color">Gen AI customizes strategies</span> based on risk, goals, and preferences</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Dynamic Recommendations</span> respond to change on the market trends</p>
+                            <p><span class="fz_cbs_color">Dynamic Recommendations</span> respond to change on the market trends</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Personalized Financial Guidance </span>accessible strategies for all audiences</p>
+                            <p><span class="fz_cbs_color">Personalized Financial Guidance </span>accessible strategies for all audiences</p>
                         </li>
                     </ul>
                 </div>
@@ -194,13 +194,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Grow your wealth smartly </span>with expert investment strategies</p>
+                            <p><span class="fz_cbs_color">Grow your wealth smartly </span>with expert investment strategies</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Diversify your portfolio </span>for better risk management</p>
+                            <p><span class="fz_cbs_color">Diversify your portfolio </span>for better risk management</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Track & manage investments </span>with real-time insights</p>
+                            <p><span class="fz_cbs_color">Track & manage investments </span>with real-time insights</p>
                             
                         </li>
                     </ul>

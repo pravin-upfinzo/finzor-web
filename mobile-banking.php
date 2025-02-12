@@ -52,13 +52,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Instant Payment Processing</span> enjoy fast, secure transactions anytime</p>
+                            <p><span class="fz_cbs_color">Instant Payment Processing</span> enjoy fast, secure transactions anytime</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Multi-Layer Security </span>protects data with advanced fraud prevention</p>
+                            <p><span class="fz_cbs_color">Multi-Layer Security </span>protects data with advanced fraud prevention</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Real-Time Transaction Updates </span>stay informed with instant alerts</p>
+                            <p><span class="fz_cbs_color">Real-Time Transaction Updates </span>stay informed with instant alerts</p>
                         </li>
                     </ul>
                 </div>
@@ -194,13 +194,13 @@ include_once('partials/header.php'); //should be last after all variables
                     </p>
                     <ul>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Secure & convenient banking </span> anytime, anywhere on your mobile</p>
+                            <p><span class="fz_cbs_color"> Secure & convenient banking </span> anytime, anywhere on your mobile</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color"> Instant fund transfers & bill payments </span>with just a few taps</p>
+                            <p><span class="fz_cbs_color"> Instant fund transfers & bill payments </span>with just a few taps</p>
                         </li>
                         <li>
-                            <img src="./assets/images/Tick mark.svg" alt="Tick Mark"><p><span class="fz_cbs_color">Track expenses & manage accounts</span> with real-time updates</p>
+                            <p><span class="fz_cbs_color">Track expenses & manage accounts</span> with real-time updates</p>
                             
                         </li>
                     </ul>

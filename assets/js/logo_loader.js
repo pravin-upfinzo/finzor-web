@@ -217,3 +217,41 @@ function init() {
 }
 init();
   });
+
+
+// SVG script append in product range section
+const product_className = document.querySelectorAll(".product_glow_svg")
+async function loadSVG(url, containerId) {
+    try {
+        const response = await fetch(url);
+        const svgText = await response.text();
+        try {
+            document.getElementById(containerId).innerHTML = svgText;
+        } catch {
+            product_className.forEach((container) => {
+                container.innerHTML = svgText;
+            })
+        }
+    } catch (error) {
+        console.error("Error loading SVG:", error);
+    }
+}
+// Product range
+loadSVG("./assets/images/product-icon.svg", "product_range_1_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_2_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_3_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_4_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_5_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_6_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_7_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_8_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_9_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_10_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_11_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_12_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_13_svg");
+loadSVG("./assets/images/product-icon.svg", "product_range_14_svg");
+// glow img
+product_className.forEach((container) => {
+    loadSVG("./assets/images/product-glow.svg", container.className);
+});
