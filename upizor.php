@@ -149,7 +149,7 @@ include_once('partials/header.php'); //should be last after all variables
                 </a>
             </div>
             <div class="fin_bankz_img">
-                <div class="finbankz-product3"></div>
+                <div class="upizor-flowgate"></div>
             </div>
         </div>
     </div>

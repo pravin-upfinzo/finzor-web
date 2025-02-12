@@ -82,28 +82,28 @@ include_once('partials/header.php'); //should be last after all variables
             <div></div>
             <div class="product_list_feature_card fade-down product_center">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/neopulse/payments-and-ransfers.svg" alt="digital payment">
+                    <img src="./assets/images/neopulse-feature-card-icons/payments-and-ransfers.svg" alt="digital payment">
                     <h4>Payments and Transfers</h4>
                     <p>Offers a full suite of banking services digitally, including real-time notifications and seamless transactions</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-left">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/neopulse/api-driven-connectivity.svg" alt="digital payment">
+                    <img src="./assets/images/neopulse-feature-card-icons/api-driven-connectivity.svg" alt="digital payment">
                     <h4> API-Driven Connectivity</h4>
                     <p>Allows integration with various financial services, providing a cohesive user experience</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-right">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/neopulse/next-gen.svg" alt="digital payment">
+                    <img src="./assets/images/neopulse-feature-card-icons/next-gen.svg" alt="digital payment">
                     <h4>Next-Gen Authentication & Fraud Prevention</h4>
                     <p>Employs advanced security measures to protect against unauthorized access and fraudulent activities</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-up">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/neopulse/real-time-data-insights.svg" alt="digital payment">
+                    <img src="./assets/images/neopulse-feature-card-icons/real-time-data-insights.svg" alt="digital payment">
                     <h4>Real-Time Data Insights </h4>
                     <p>Provides users with up-to-date information on their financial activities, aiding in better financial management</p>
                 </div>
