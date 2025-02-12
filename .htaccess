@@ -26,6 +26,11 @@ RewriteRule . /404.php [L]
     Deny from all
 </Files>
 
+<Files ".env">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
 # Enable Gzip Compression
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
