@@ -1,29 +1,38 @@
 // Page loader
-$( document ).ready(function() {
+$(document).ready(function() {
     
-     //Page Loader setup
-     var page_id = $('.section_start').attr('id');
-     var page_name = (typeof page_id !== "undefined" && page_id !== null) ? page_id : "";
+    //Page Loader setup
+    var page_id = $('.section_start').attr('id');
+    var page_name = (typeof page_id !== "undefined" && page_id !== null) ? page_id : "";
 
-     let lastHomeLoadedDate = localStorage.getItem("lastHomeLoadedDate");
-     let lastLoadedDate = localStorage.getItem("lastLoadedDate");
-     let today = new Date().toISOString().split("T")[0];
-     if (lastLoadedDate !== today) {
-         showLoader();
-         localStorage.setItem("lastLoadedDate", today);
-     } else if(page_name === "home_page"){
+    let lastLoadedDate = localStorage.getItem("lastLoadedDate");
+    let today = new Date().toISOString().split("T")[0];
 
-        if(lastHomeLoadedDate == null || lastHomeLoadedDate !== today){
-            showLoader();
-            localStorage.setItem("lastHomeLoadedDate", today);
+    if(page_name === "home_page"){
+        $("#page-loader-span").html('<div id="page-loader" class="index-page-loader"></div>');
+        showLoader(page_name);
+        localStorage.setItem("lastLoadedDate", today);
+    } else { //for other pages
+        if (lastLoadedDate !== today) { //check for localstorage to run once
+            $("#page-loader-span").html('<div id="page-loader"></div>');
+            showLoader(page_name);
+            localStorage.setItem("lastLoadedDate", today);
+        } else {
+            $("#page-loader").hide();
+            $('.hero').fadeIn();
+            $("#page-loader-span").html("");
         }
-     }
+    }
  
-    function showLoader() {
-        $("#page-loader").show();
-        
+    function showLoader(page_name) {
         setTimeout(function() {
             $("#page-loader").fadeOut("slow");
+            $(".index-page-loader").fadeOut("slow");
+
+            if(page_name !== "home_page"){
+                $("#page-loader-span").html("");
+            }
+            
             $('.hero').fadeIn();
         }, 2500);
     }
