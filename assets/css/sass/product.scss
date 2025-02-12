@@ -118,6 +118,11 @@
             padding-bottom: 15px;
             line-height: 30px;
             letter-spacing: 0.25px;
+
+            @media screen and (max-width: 991px) {
+              margin-top: 10px;
+              line-height: 26px;
+            }
           }
 
           .fz_desc {
@@ -127,6 +132,10 @@
             padding-bottom: 26px;
             line-height: 26px;
             letter-spacing: 0.25px;
+            @media screen and (max-width: 991px) {
+             
+              line-height: 22px;
+            }
           }
           .buttons {
             width: 168px;
