@@ -244,6 +244,9 @@ header {
                   h3 {
                     color: #04a5a7;
                   }
+                  p {
+                    color: $white;
+                  }
                 }
               }
             }
@@ -293,6 +296,14 @@ header {
                     transition: all 0.5s ease;
                     @media screen and (max-width: 991px) {
                       border-width:unset;
+                    }
+                  }
+                  .fz_text {
+                    h3 {
+                      color: #04a5a7;
+                    }
+                    p {
+                      color: $white;
                     }
                   }
               }
@@ -361,7 +372,7 @@ header {
               }
               p {
                 font-size: 12px;margin: 0;
-                color: #8d8d8d;
+                color: #8d8d8d;transition: all 0.5s ease;
               }
             }
           }
@@ -383,6 +394,12 @@ header {
             &:hover {
               background: rgba(0, 75, 75, 0.5);
               border-left: 1px solid rgba(1, 251, 251, 0.202);
+              h3 {
+                color: #04a5a7;
+              }
+              p {
+                color: $white;
+              }
             }
             &:after {
               border-width: unset !important;
@@ -395,12 +412,18 @@ header {
               transition: all 0.5s ease;
             }
             p {
-              font-size: 12px;margin: 0;color: #8d8d8d;
+              font-size: 12px;margin: 0;color: #8d8d8d;transition: all 0.5s ease;
             }
           }
           .active-submenu-l2 {
             a {
               background: rgba(0, 75, 75, 0.5);
+                h3 {
+                  color: #04a5a7;
+                }
+                p {
+                  color: $white;
+                }
             }
           }
         }

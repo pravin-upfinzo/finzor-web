@@ -300,6 +300,9 @@ header .navbar-expand-lg .navbar-nav > li .inner-submenu li a:hover .fz_header_s
 header .navbar-expand-lg .navbar-nav > li .inner-submenu li a:hover .fz_text h3, header .navbar-expand-lg .navbar-nav > li .submenu-wrapper li a:hover .fz_text h3 {
   color: #04a5a7;
 }
+header .navbar-expand-lg .navbar-nav > li .inner-submenu li a:hover .fz_text p, header .navbar-expand-lg .navbar-nav > li .submenu-wrapper li a:hover .fz_text p {
+  color: #ffffff;
+}
 header .navbar-expand-lg .navbar-nav > li .submenu {
   list-style: none;
 }
@@ -350,6 +353,12 @@ header .navbar-expand-lg .navbar-nav > li .submenu li.active-submenu > a:after {
   header .navbar-expand-lg .navbar-nav > li .submenu li.active-submenu > a:after {
     border-width: unset;
   }
+}
+header .navbar-expand-lg .navbar-nav > li .submenu li.active-submenu > a .fz_text h3 {
+  color: #04a5a7;
+}
+header .navbar-expand-lg .navbar-nav > li .submenu li.active-submenu > a .fz_text p {
+  color: #ffffff;
 }
 header .navbar-expand-lg .navbar-nav > li .submenu li > a:hover {
   position: relative;
@@ -412,6 +421,7 @@ header .navbar-expand-lg .navbar-nav > li .submenu .image-text .fz_text p {
   font-size: 12px;
   margin: 0;
   color: #8d8d8d;
+  transition: all 0.5s ease;
 }
 header .navbar-expand-lg .navbar-nav > li .inner-submenu {
   background: rgba(6, 54, 50, 0.1);
@@ -433,6 +443,12 @@ header .navbar-expand-lg .navbar-nav > li .inner-submenu a:hover {
   background: rgba(0, 75, 75, 0.5);
   border-left: 1px solid rgba(1, 251, 251, 0.202);
 }
+header .navbar-expand-lg .navbar-nav > li .inner-submenu a:hover h3 {
+  color: #04a5a7;
+}
+header .navbar-expand-lg .navbar-nav > li .inner-submenu a:hover p {
+  color: #ffffff;
+}
 header .navbar-expand-lg .navbar-nav > li .inner-submenu a:after {
   border-width: unset !important;
 }
@@ -447,9 +463,16 @@ header .navbar-expand-lg .navbar-nav > li .inner-submenu a p {
   font-size: 12px;
   margin: 0;
   color: #8d8d8d;
+  transition: all 0.5s ease;
 }
 header .navbar-expand-lg .navbar-nav > li .inner-submenu .active-submenu-l2 a {
   background: rgba(0, 75, 75, 0.5);
+}
+header .navbar-expand-lg .navbar-nav > li .inner-submenu .active-submenu-l2 a h3 {
+  color: #04a5a7;
+}
+header .navbar-expand-lg .navbar-nav > li .inner-submenu .active-submenu-l2 a p {
+  color: #ffffff;
 }
 header .navbar-expand-lg .navbar-nav .arrow-active > a svg {
   transform: rotate(180deg);
