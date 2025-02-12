@@ -154,6 +154,7 @@
 @media screen and (max-width: 767px) {
   #fz_core_nexus .fz_core_text_right h2 {
     margin-top: 45px;
+    line-height: 36px;
   }
 }
 #fz_core_nexus .fz_core_text_right h5 {

@@ -2,9 +2,6 @@
 #fz_core_nexus {
   padding: 80px 0;
 
- 
-  
-  
   .fz_core_bg {
     width: 500px;
     background-color: $tertiary-color;
@@ -130,6 +127,7 @@
       }
       @media screen and (max-width: 767px) {
          margin-top: 45px;
+         line-height: 36px;
       }
     }
     h5 {

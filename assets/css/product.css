@@ -137,6 +137,12 @@
   line-height: 30px;
   letter-spacing: 0.25px;
 }
+@media screen and (max-width: 991px) {
+  .fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .fz_bank {
+    margin-top: 10px;
+    line-height: 26px;
+  }
+}
 .fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .fz_desc {
   font-size: 14px;
   font-weight: 300;
@@ -144,6 +150,11 @@
   padding-bottom: 26px;
   line-height: 26px;
   letter-spacing: 0.25px;
+}
+@media screen and (max-width: 991px) {
+  .fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .fz_desc {
+    line-height: 22px;
+  }
 }
 .fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .buttons {
   width: 168px;
