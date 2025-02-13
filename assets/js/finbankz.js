@@ -2,6 +2,46 @@
 // Json Lottie
 document.addEventListener("DOMContentLoaded", function () {
     // Load the Lottie animation
+    document.querySelectorAll(".finbankz-corenexus").forEach((container) => {
+        lottie.loadAnimation({
+            container: container, // HTML container for the animation
+            renderer: "svg", // Render as SVG
+            loop: true, // Animation will loop continuously
+            autoplay: true, // Animation will play automatically
+            path: "./assets/json/product-inner-page/finbankz-corenexus.json", // Path to the Lottie JSON file
+        });
+    });
+    // Load the Lottie animation
+    document.querySelectorAll(".finbankz-mobfinz").forEach((container) => {
+        lottie.loadAnimation({
+            container: container, // HTML container for the animation
+            renderer: "svg", // Render as SVG
+            loop: true, // Animation will loop continuously
+            autoplay: true, // Animation will play automatically
+            path: "./assets/json/product-inner-page/finbankz-mobfinz.json", // Path to the Lottie JSON file
+        });
+    });
+    // Load the Lottie animation
+    document.querySelectorAll(".finbankz-neo").forEach((container) => {
+        lottie.loadAnimation({
+            container: container, // HTML container for the animation
+            renderer: "svg", // Render as SVG
+            loop: true, // Animation will loop continuously
+            autoplay: true, // Animation will play automatically
+            path: "./assets/json/product-inner-page/finbankz-neo.json", // Path to the Lottie JSON file
+        });
+    });
+    // Load the Lottie animation
+    document.querySelectorAll(".finbankz-webvault").forEach((container) => {
+        lottie.loadAnimation({
+            container: container, // HTML container for the animation
+            renderer: "svg", // Render as SVG
+            loop: true, // Animation will loop continuously
+            autoplay: true, // Animation will play automatically
+            path: "./assets/json/product-inner-page/finbankz-webvault.json", // Path to the Lottie JSON file
+        });
+    });
+    // Load the Lottie animation
     document.querySelectorAll(".upizor-payunity").forEach((container) => {
         lottie.loadAnimation({
             container: container, // HTML container for the animation
@@ -19,6 +59,16 @@ document.addEventListener("DOMContentLoaded", function () {
             loop: true, // Animation will loop continuously
             autoplay: true, // Animation will play automatically
             path: "./assets/json/product-inner-page/upizor-upi-switch.json", // Path to the Lottie JSON file
+        });
+    });
+    // Load the Lottie animation
+    document.querySelectorAll(".upizor-flowgate").forEach((container) => {
+        lottie.loadAnimation({
+            container: container, // HTML container for the animation
+            renderer: "svg", // Render as SVG
+            loop: true, // Animation will loop continuously
+            autoplay: true, // Animation will play automatically
+            path: "./assets/json/product-inner-page/upizor-flowgate.json", // Path to the Lottie JSON file
         });
     });
     // Load the Lottie animation

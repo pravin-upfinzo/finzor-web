@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 if ($db_saved || $canSaveOnDB == 0) {
                     // Send contact us email
                     $toGroupEmails = CONTACT_ADMIN_EMAILS;
-                    $subject = 'New Contact received from Finzor';
+                    $subject = "New Contact received from Finzor @ ".CURRENT_DATETIME;
                     $data = ['name' => $name, 'email' => $email,'phone' => $phone,'message' => $message];
                     $body = contactus_mail_body($type="admin_mail",$data);
 
@@ -89,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     if ($db_saved || $canSaveOnDB == 0) {
                         // Send book demo email
                         $toGroupEmails = BOOK_DEMO_ADMIN_EMAILS;
-                        $subject = 'New Demo Request received from Finzor';
+                        $subject = "New Demo Request received from Finzor @ ".CURRENT_DATETIME;
 
                         $data = ['name' => $name,'Companyname' => $Companyname, 'email' => $email,'phone' => $phone,'message' => $message, 'ref_url' => $ref_url , 'demo_date' => $demo_date, 'demo_time' => $demo_time];
                         $body = book_demo_mail_body($type="admin_mail", $data);
@@ -140,7 +140,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $created_on = date('Y-m-d H:i:s');
                     $toGroupEmails = SUBSCRIBERS_ADMIN_EMAILS;
 
-                    $subject = 'New Subscriber Alert - Finzor';
+                    $subject = "New Subscriber Alert - Finzor @ ".CURRENT_DATETIME;
                     $data = ['email' => $email, 'ref_url' => $ref_url, 'created_on' => $created_on, ];
                     $body = subscribe_mail_body('admin_mail', $data);
 
