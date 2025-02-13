@@ -27,6 +27,9 @@ if ($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['SERVER_NAME'] == 'localhos
 try {
     $pdo = new PDO("mysql:host=$db_host;dbname=$db_name;charset=utf8mb4", $db_user, $db_password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    if($_GET['debug']){
+        echo "Database connected successfully (Host: ".$db_host.")";
+    }
 } catch (PDOException $e) {
     die("Database connection failed: " . $e->getMessage());
 }
