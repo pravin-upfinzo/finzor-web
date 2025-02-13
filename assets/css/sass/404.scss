@@ -13,6 +13,7 @@ height:100vh;
 
 @media screen and (max-width: 991px) {
    background-image: none;
+   margin-top: 165px;
      }
 
  canvas {
@@ -40,9 +41,10 @@ height:100vh;
 
     .error-left-page{
 
-        img{
+     .error-img {
             width:50%;
             padding-bottom: 24px;
+           
         }
         
         h2{
@@ -50,6 +52,9 @@ height:100vh;
             line-height: 75px;
             font-weight: 500;
             color:#FFFFFF;
+            @media screen and (max-width: 991px) {
+                line-height: 50px;
+                    }
         }
 
         h3{
@@ -63,10 +68,13 @@ height:100vh;
             line-height: 28px;
             font-weight: 400;
             color: #A1A1AA;
-
+            @media screen and (max-width: 991px) {
+              font-size: 14px;
+              line-height: 18px;
+                    }
         }
         .buttons{
-            width: 188px;
+            width: 186px;
             margin: 0 auto;
          border: 1px solid linear-gradient(98.24deg, #6DDCFF 0%, #7F60F9 100%); 
         }
@@ -74,11 +82,13 @@ height:100vh;
 
     .error-right-page{
         @media screen and (max-width: 991px) {
-           margin-top: 50px;
+           margin-top: 12px;
             }
     svg{
        
-        // animation: float 3s ease-in-out infinite;
+        @media screen and (max-width: 991px) {
+              width:100%;
+            }
 
         .star{
             animation: float 3s ease-in-out infinite;

@@ -245,7 +245,7 @@
                                         </li>
                                         <li id="finopz-settlement">
                                         <a href="./settlements.php">
-                                            <h3>Finalease</h3>
+                                            <h3>Finlease</h3>
                                             <p>Settlements</p>
                                         </a>
                                         </li>
