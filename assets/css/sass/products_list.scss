@@ -152,6 +152,8 @@ body {
             overflow: hidden;
             @media screen and (max-width: 991px) {
               margin: 30px 10px;
+              border: none;
+              padding: 0;
             }
 
             &:nth-child(4) {
@@ -194,6 +196,10 @@ body {
                 transition-duration: 500ms;
                 opacity: 1;
                 pointer-events: none;
+
+                @media screen and (max-width: 991px) {
+                 display: none;
+                }
             }
             // &::after {
             //     content: "";
@@ -230,7 +236,7 @@ body {
                 background: linear-gradient(216deg, rgba(1, 86, 86, 0.86) 0%, rgba(0, 53, 53, 0.85) 30%, rgb(0 17 17 / 83%) 70%);
                 // background: linear-gradient(0deg, rgb(0, 29, 31) 0%, rgba(0, 23, 21, 0.8) 90%);
                 @media screen and (max-width: 1199px) {
-                  padding: 20px 30px 20px 20px;
+                  padding: 30px 30px 30px 20px;
                   border-radius: 8px;
                 }
                 img, svg {
@@ -241,6 +247,7 @@ body {
                     @media screen and (max-width: 1199px) {
                       height: 35px;
                       right: 0%;
+                      width:20%;
                     }
                 }
 
@@ -262,6 +269,7 @@ body {
                  }
                     @media screen and (max-width: 991px) {
                       font-size: 16px;
+                      line-height: 22px;
                       padding-bottom: 4px;
                     }
                 }
@@ -708,10 +716,10 @@ body {
           h2{
               font-size: 48px;
               color: $white;
-              font-weight: 300;
+              font-weight: 600;
               @media (max-width: 991px) {
                  text-align: center;
-                 font-size: 30px;
+                 font-size: 22px;
                  margin-top: 130px;
                 }
           }
@@ -719,6 +727,7 @@ body {
               color: $white;
               padding: 20px 0px;
               font-size: 16px;
+              font-weight: 300;
               // width:80%;
               br{
                 @media screen and (max-width:1399px) {
@@ -735,6 +744,7 @@ body {
                }
               @media (max-width: 991px) {
                   text-align: center;
+                  font-size: 14px;
                  }
           }
           .get_touch_btn{
@@ -768,7 +778,7 @@ body {
         color: $white;
         font-size: 48px;
         line-height: 68px;
-        font-weight: 400;
+        font-weight: 600;
 
         @media (min-width: 992px) and (max-width: 1199px) {
              font-size: 30px;
@@ -797,6 +807,12 @@ body {
             background: rgba(0, 30, 32, 0.8);
             background:linear-gradient(216deg, rgba(1, 86, 86, 0.86) 0%, rgba(0, 53, 53, 0.85) 30%, rgba(0, 17, 17, 0.83) 70%);
             margin-bottom: 32px;
+            transition: border-color 0.6s ease, box-shadow 0.6s ease;
+            &:hover {
+              border: 1px solid ;
+              border-color: #104f32; /* Light green border */
+              box-shadow: 0 0 10px rgba(8, 69, 41, 0.6); /* Glow effect */
+            }
             @media screen and (max-width:1199px) {
               margin-bottom: 0px;
            }
@@ -952,7 +968,7 @@ body {
             position: relative;
             width: 620px;
        @media only screen and (max-width: 991px) {
-              margin: 50px 0px 0px 0px;
+              margin: 20px 0px 0px 0px;
               width:100%;
            }
           
@@ -987,6 +1003,9 @@ body {
               @media screen and (max-width: 1200px) {
                 line-height: 40px;
               }
+              @media screen and (max-width: 1200px) {
+                padding:0px 16px;
+              }
             }
   
             .fin_bankz_subtitle {
@@ -997,16 +1016,23 @@ body {
               @media screen and (max-width: 1200px) {
                font-size: 36px;
               }
+              @media screen and (max-width: 991px) {
+                font-size: 22px;
+               }
             }
   
             .fin_bankz_desc {
               font-size: 20px;
-              font-weight: 400;
+              font-weight: 300;
               color: #ffffff;
               padding-bottom: 24px;
               line-height: 28px;
               letter-spacing: 0.25px;
               margin: 0;
+              @media screen and (max-width: 991px) {
+                font-size: 14px !important;
+                line-height: 22px;
+               }
             }
   
             &::before {
@@ -1033,11 +1059,11 @@ body {
             position: relative;
             text-align: center;
             svg{
-              width: 80% !important;
+              width: 75% !important;
             }
             @media screen and (max-width: 991px) {
-              width:70%;
-              margin: 20px auto;
+              width:100%;
+              margin: 60px auto 0 auto;
             }
             .finbankz-product {
                 width: 625px;
@@ -1087,12 +1113,18 @@ body {
       border-left: 1px solid #fff;
       padding-left:25px;
       position: relative;
+      @media screen and (max-width: 991px) {
+         padding-left: 15px;
+        }
       .finbank_count{
     position: absolute;
     top: -25px;
     left: -8px;
     color: $white;
     font-size: 18px;
+    @media screen and (max-width: 991px) {
+      font-size: 14px;
+     }
       }
       .fin_bankz_desc{
         font-size: 16px !important;
