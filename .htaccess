@@ -9,11 +9,21 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
 
+#resolve .php file for extensionless php urls
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Redirect index.php to the root URL without "index.php"
+RewriteCond %{REQUEST_URI} ^/([^/]+)/index$ [NC]
+RewriteRule ^index$ /%1/ [R=301,L]
+
 # Redirect old page to new page
-Redirect 301 /old-page.php https://www.finzor.com/new-page.php
+#Redirect 301 /old-url  https://www.finzor.com/new-url
 
 # Custom 404 Error Page Handling
 ErrorDocument 404 /404.php
+RewriteCond %{REQUEST_URI} !\.(jpg|jpeg|png|gif|css|js|ico|svg|woff|woff2|eot|ttf|otf)$ [NC]
 
 # Ensure All Non-Existing URLs Redirect to 404 Page
 RewriteCond %{REQUEST_FILENAME} !-f
