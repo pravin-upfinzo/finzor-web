@@ -41,7 +41,7 @@ $(document).ready(function() {
 $(window).on('load', function() {
     setTimeout(function() {
         $('.hero').fadeIn();
-    }, 500);
+    }, 2000);
 }); 
   var btn = $('#scroll_top');
   $(window).scroll(function() {
