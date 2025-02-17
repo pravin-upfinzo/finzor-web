@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.10/dist/sweetalert2.min.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.9/codemirror.min.css"> -->
-
-    
     <?php
         // Include page-header-specific JS
         if (isset($pageHeaderScripts)) {
