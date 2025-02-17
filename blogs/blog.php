@@ -30,7 +30,7 @@ if ($path) {
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/css/styles.css">
+  <link rel="stylesheet" href="<?php echo $baseUrl; ?>assets/css/styles.css">
 </head>
 
 <body>
@@ -63,16 +63,49 @@ if ($path) {
 
     <div class = "row row-custom">
     
-
       <!-- new content -->
-    <?php if ($slug && $postContent): ?>
+    <?php //print_r($postContent);
+    if ($slug && $postContent): ?>
 
-        <article>
+        <!-- <article>
             <h2><?php echo htmlspecialchars($postContent['title']); ?></h2>
             <p><small>Posted on: <?php echo htmlspecialchars($postContent['date']); ?></small></p>
             <p><?php echo htmlspecialchars($postContent['short_description']); ?></p>
             <div><?php echo $postContent['content']; ?></div>
-        </article>
+        </article> -->
+
+    <article class="article-container">
+        <div class="article-header">
+            
+            <h1 class="article-heading"><?php echo htmlspecialchars($postContent['title']); ?></h1>
+        </div>
+        <section class="article-content">
+            <img src="<?php echo $baseUrl.ltrim($postContent['banner'] , "./"); ?>" alt='large-image' class="poster-image">
+            <div class="blog-real-content">
+                <p class="article-subheading">Subheading for the Page</p>
+                <?php echo $postContent['content']; ?>
+            </div>
+            
+        </section>
+        <aside class="article-aside">
+            <h4 class="article-heading">Other Related Articles</h4>
+            <div class="article-card">
+                <img src='https://images.unsplash.com/photo-1457269315919-3cfc794943cd?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=2c42c1cac3092204f4c1afdca4d44e99' alt=''>
+                <div>
+                <p class="article-heading title">The big subtext</p>
+                <p class="author">Mathews</p>
+                </div>
+            </div>
+            <div class="article-card">
+                <img src='https://images.unsplash.com/photo-1528640936814-4460bc015292?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=66812b5fda04c80ff762c8a920f562f3' alt=''>
+                <div>
+                <p class="article-heading title">The bug subtext</p>
+                <p class="author">Harsha</p>
+                </div>
+            </div>
+        </aside>
+    
+    </article>
      
         
     <?php else: ?>
@@ -260,10 +293,13 @@ var showItemsCount=3;
 showItems('all');
 
 // Event Listener for Select Change
-selectList.addEventListener('change', function() {
-    var selectedCategory = this.value;
-    showItems(selectedCategory);
-});
+if(selectList!==null){
+    selectList.addEventListener('change', function() {
+        var selectedCategory = this.value;
+        showItems(selectedCategory);
+    });
+}
+
 
 
 // Function to Show/Hide Blog Items
