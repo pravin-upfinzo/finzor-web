@@ -28,8 +28,10 @@
                 <h3 class="secondary-title"> Filter by Category: </h3>
                 <select id="category-select" class="filter-select-list">
                     <option value="all">All</option>
-                    <?php foreach ($categoriesData as $categoryKey => $categoryDetails) : ?>
-                        <option value="<?= $categoryKey; ?>"><?= ucfirst($categoryKey); ?></option>
+                    <?php 
+                   
+                    foreach ($categoriesData as $categoryKey => $categoryDetails) : ?>
+                        <option value="<?= $categoryKey; ?>"><?= ucfirst($categoryDetails['filter_box_title']); ?></option>
                     <?php endforeach; ?>
                 </select>
             </div>
@@ -55,7 +57,7 @@
                     <section class="article-content">
                         <img src="<?php echo BASE_URL.'blogs/'.ltrim($postContent['banner'] , "./"); ?>" alt='large-image' class="poster-image">
                         <div class="blog-real-content">
-                            <p class="article-subheading">Subheading for the Page</p>
+                            <p class="article-subheading"><span>Category: <b><?php echo htmlspecialchars($postContent['category_name']); ?></b></span><span>Posted on:  <b><?php echo ($postContent['date'] != "") ? date("d M Y", strtotime($postContent['date'])) : "N/A" ; ?></b></span></p>
                             <?php echo $postContent['content']; ?>
                         </div>
                         
@@ -87,11 +89,11 @@
                 foreach ($posts as $cate_key => $ind_post): ?>
                     <?php foreach ($ind_post as $post): ?>
                         <div class = "col-sm-12 col-md-6 col-lg-4 post-column <?= $cate_key; ?>">
-                            <?php if ($post['banner'] != ""): ?>
-                                <img class="post-column__image"  src="<?php echo $post['banner']; ?>" alt="" style="max-width:100%;">
+                            <?php if ($post['thumbnail'] != ""): ?>
+                                <img class="post-column__image"  src="<?php echo $post['thumbnail']; ?>" alt="blog-thumbnail" style="max-width:100%;">
                             <?php endif; ?>
                             <div class="meta-data">
-                                <p class="meta-data__date-category truncate-1-line" ><?php echo date("d M Y", strtotime($post['date'])); ?>   |   <span ><b><?php echo ucwords(htmlspecialchars($cate_key)); ?></b></span></p>
+                                <p class="meta-data__date-category truncate-1-line" ><?php echo date("d M Y", strtotime($post['date'])); ?>   |   <span ><b><?php echo ucwords(htmlspecialchars($post['category_name'])); ?></b></span></p>
                                 
                                 <a href="./<?php echo htmlspecialchars($cate_key . '/' . $post['slug']); ?>">
                                     <h3 class="meta-data__title truncate-1-line"><?php echo htmlspecialchars($post['title']); ?></h3>

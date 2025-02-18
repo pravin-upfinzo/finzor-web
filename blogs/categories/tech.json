@@ -1,8 +1,8 @@
 {
     "title": "Tech Category",
     "description": "All about the latest in tech.",
-    "banner": "./descriptions/tech/assets/tech-blog-banner.jpeg",
-    "thumbnail": "./descriptions/tech/assets/tech-blog-banner.jpeg",
+    "banner": "./descriptions/tech/assets/images/tech-blog-banner.jpeg",
+    "thumbnail": "./descriptions/tech/assets/images/tech-blog-thumbnail.jpeg",
     "posts": [
       {
         "title": "Latest Tech Trends",
@@ -20,7 +20,8 @@
         "short_description": "Exploring the future of AI.",
         "date": "2025-02-10",
         "content": "Exploring the future of AI with machine learning and deep learning.",
-        "banner": "./descriptions/general/assets/general-blog-banners.jpeg"
+        "banner": "./descriptions/tech/assets/images/tech-blog-banners.jpeg",
+        "thumbnail": "./descriptions/tech/assets/images/tech-blog-thumbnails.jpeg"
       },
       {
         "title": "AI Innovations - 2",

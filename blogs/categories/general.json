@@ -1,8 +1,8 @@
 {
     "title": "General Category",
     "description": "Covering a wide range of topics and discussions.",
-    "banner": "./descriptions/general/assets/general-blog-banner.jpeg",
-    "thumbnail": "./descriptions/general/assets/general-blog-banner.jpeg",
+    "banner": "./descriptions/general/assets/images/general-blog-banner.jpeg",
+    "thumbnail": "./descriptions/general/assets/images/general-blog-thumbnail.jpeg",
     "posts": [
       {
         "title": "Work-Life Balance Tips",

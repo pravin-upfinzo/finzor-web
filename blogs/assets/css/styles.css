@@ -150,90 +150,98 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
 .article-container {
-font-family: Lato, sans-serif;
-display: grid;
-grid-template-columns: 1rem 3fr 1fr 1rem;
-margin-top: 2rem;
-grid-column-gap: 2rem;
+    font-family: Lato, sans-serif;
+    display: grid;
+    grid-template-columns: 1rem 3fr 1fr 1rem;
+    margin-top: 2rem;
+    grid-column-gap: 2rem;
 }
 
 .article-header {
-grid-column: 2 / 5;
+    grid-column: 2 / 5;
 }
 
 .article-heading {
-font-family: Montserrat, sans-serif;
-color: #fff;
+    font-family: Montserrat, sans-serif;
+    color: #fff;
 }
 
 .article-subheading {
-text-transform: uppercase;
-letter-spacing: 0.1rem;
-font-size: smaller;
-color: #979797;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.1rem;
+    font-size: smaller;
+    color: #979797;
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width: 800px) {
+        flex-direction: column;
+        gap: 14px;
+    }
+    
 }
 
 .article-content {
-grid-column: 2 / 3;
-text-align: justify;
-font-size: 1.1rem;
-line-height: 1.4;
+    grid-column: 2 / 3;
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.4;
 }
 
 .article-content .blog-real-content{
-margin: 20px 10px;
-color: #dedede;
+    margin: 20px 10px;
+    color: #dedede;
 }
 
 .article-content .poster-image {
-width: 100%;
-object-fit: cover;
-height: 400px;
+    width: 100%;
+    object-fit: cover;
+    height: 400px;
 }
 
 .article-aside .article-heading {
-margin: 0;
-font-weight: 600;
+    margin: 0;
+    font-weight: 600;
 }
 
 
 @media only screen and (max-width: 600px) {
-.article-container {
-grid-template-columns: 2rem 3fr 1fr 2rem;
-}
-.article-content {
-grid-column: 2 / 4;
-}
-.article-aside {
-grid-column: 2 / 4;
-}
+    .article-container {
+        grid-template-columns: 2rem 3fr 1fr 2rem;
+    }
+    .article-content {
+        grid-column: 2 / 4;
+    }
+    .article-aside {
+        grid-column: 2 / 4;
+    }
 }
 
 .article-card {
-height: 5rem;
-display: flex;
-align-items: center;
-text-transform: capitalize;
-margin: 1rem 0;
-cursor: pointer;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    margin: 1rem 0;
+    cursor: pointer;
 }
 
 .article-card img {
-height: 100%;
-width: 40%;
-margin-right: 0.5rem;
+    height: 100%;
+    width: 40%;
+    margin-right: 0.5rem;
 }
 
 .article-card p {
-margin: 0;
+    margin: 0;
 }
 
 .article-card .title {
-font-size: 0.8rem;
+    font-size: 0.8rem;
 }
 
 .article-card .author {
-font-size: small;
+    font-size: small;
 }
 
 /* Details page css END*/

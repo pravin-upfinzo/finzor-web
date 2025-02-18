@@ -116,24 +116,31 @@ if ($categoryDatas) {
         if (isset($categoryDetails['posts'])) {
             
             foreach ($categoryDetails['posts'] as $postKey => $post) {
-                // If banner or thumbnail are not set or empty, assign the category-level images
+
+                $categoryDetails['posts'][$postKey]['category_name'] = $categoryDetails['title'];
+
+                // If banner is not set or empty, assign the category-level images
                 if (!isset($post['banner']) || empty($post['banner'])) {
                     $categoryDetails['posts'][$postKey]['banner'] = $banner_image;
                 } else {
-                   
                     $post_banner_path = $categoryDetails['posts'][$postKey]['banner'];
-                   
                     $post_banner_abs_Path = __DIR__ . '/' . ltrim($post_banner_path, './');
-                   
                     $new_post_banner_path =  ($post_banner_path && file_exists($post_banner_abs_Path)) ? $post_banner_path : $def_image;
-                    //echo "new_post_banner_path => ".$new_post_banner_path;
                     $categoryDetails['posts'][$postKey]['banner'] = $new_post_banner_path;
                 }
     
+                // If thumbnail is not set or empty, assign the category-level images
                 if (!isset($post['thumbnail']) || empty($post['thumbnail'])) {
                     $categoryDetails['posts'][$postKey]['thumbnail'] = $thumbnail_image;
+                } else {
+                    $post_tmb_nil_path = $categoryDetails['posts'][$postKey]['thumbnail'];
+                    $post_tmb_nil_abs_Path = __DIR__ . '/' . ltrim($post_tmb_nil_path, './');     
+                    $new_post_tmb_nil_path =  ($post_tmb_nil_path && file_exists($post_tmb_nil_abs_Path)) ? $post_tmb_nil_path : $def_image;   
+                    $categoryDetails['posts'][$postKey]['thumbnail'] = $new_post_tmb_nil_path;
                 }
             }
+            
+           
             $posts[$category] = $categoryDetails['posts']; // Store posts
         }
     } else {
@@ -154,7 +161,6 @@ if ($categoryDatas) {
             $def_image = "./assets/images/default-blog-img.jpg";
             $banner_abs_Path = __DIR__ . '/' . ltrim($categoryDetails['banner'], './');
             $thmnail_abs_Path = __DIR__ . '/' . ltrim($categoryDetails['thumbnail'], './');
-            //echo "banner_abs_Path => ".$banner_abs_Path; exit;
     
             $banner_image = ($categoryDetails['banner'] && file_exists($banner_abs_Path)) ? $categoryDetails['banner'] : $def_image;
             $thumbnail_image = ($categoryDetails['thumbnail']  && file_exists($thmnail_abs_Path)) ? $categoryDetails['thumbnail'] : $def_image;
@@ -162,7 +168,9 @@ if ($categoryDatas) {
             // Fetch posts if they exist
             if (isset($categoryDetails['posts'])) { 
                 foreach ($categoryDetails['posts'] as $postKey => $post) {
-                    // If banner or thumbnail are not set or empty, assign the category-level images
+                    $categoryDetails['posts'][$postKey]['category_name'] = $categoryDetails['title'];
+                    
+                    // If banner is not set or empty, assign the category-level images
                     if (!isset($post['banner']) || empty($post['banner'])) {
                         $categoryDetails['posts'][$postKey]['banner'] = $banner_image;
                     } else {
@@ -172,8 +180,14 @@ if ($categoryDatas) {
                         $categoryDetails['posts'][$postKey]['banner'] = $new_post_banner_path;
                     }
         
+                    // If thumbnail is not set or empty, assign the category-level images
                     if (!isset($post['thumbnail']) || empty($post['thumbnail'])) {
                         $categoryDetails['posts'][$postKey]['thumbnail'] = $thumbnail_image;
+                    } else {
+                        $post_tmbnail_path = $categoryDetails['posts'][$postKey]['thumbnail'];
+                        $post_tmbnail_abs_Path = __DIR__ . '/' . ltrim($post_tmbnail_path, './');
+                        $new_post_tmbnail_path =  ($post_tmbnail_path && file_exists($post_tmbnail_abs_Path)) ? $post_tmbnail_path : $def_image;
+                        $categoryDetails['posts'][$postKey]['thumbnail'] = $new_post_tmbnail_path;
                     }
                 }
                 $posts[$key] = $categoryDetails['posts']; // Store posts by category key
