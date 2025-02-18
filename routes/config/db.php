@@ -1,14 +1,6 @@
 <?php
 require_once __DIR__ . '/constant.php';
 
-$dotenv_paths = ROOT_PATH. '/.env';
-if (file_exists($dotenv_paths)) {
-    $liness = file($dotenv_paths, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-    foreach ($liness as $line) {
-        putenv(trim($line)); // Set env variables
-    }
-}
-
 if ($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['SERVER_NAME'] == 'localhost') {
     // Local environment
     $db_host = getenv('LOCAL_DB_HOST');
@@ -27,7 +19,7 @@ if ($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['SERVER_NAME'] == 'localhos
 try {
     $pdo = new PDO("mysql:host=$db_host;dbname=$db_name;charset=utf8mb4", $db_user, $db_password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    if($_GET['debug']){
+    if(isset($_GET['debug'])){
         echo "Database connected successfully (Host: ".$db_host.")";
     }
 } catch (PDOException $e) {
