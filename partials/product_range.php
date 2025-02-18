@@ -138,7 +138,7 @@
                 <div class="fz_product-content">
                     <!-- <img src="./assets/images/product-icon.svg" alt="icon" style="width: 94px;margin: 0 auto;" /> -->
                      <div id="product_range_9_svg"></div>
-                    <h3>Finalease</h3>
+                    <h3>Finlease</h3>
                     <p>Accelerate secure fund transfers and streamline operations.</p>
                     <a class="cmn-btn" href="./settlements.php">
                         <span class="text"> View Product</span>

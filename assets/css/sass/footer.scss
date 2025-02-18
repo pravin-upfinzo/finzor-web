@@ -52,17 +52,25 @@
   p {
     color: #949894;
     font-size: 14px;
+    font-weight: 300;
     width: 315px;
     text-decoration: none;
     @media (min-width: 992px) and (max-width: 1199px) {
        text-align: center;
   }
+  @media screen and (max-width: 991px) {
+   margin-bottom: 0;
+   }
   }
 }
 
 .social-links {
   display: flex;
   gap: 1.5rem;
+
+  @media screen and (max-width: 991px) {
+    gap:1rem;
+   }
 
   .icon {
     padding: 4px 10px;
@@ -139,6 +147,7 @@
           color: #949894;
           text-decoration: none;
           font-size: 14px;
+          line-height: 16px;
           font-weight: 400;
           transition: all 0.5s ease;
          
@@ -242,8 +251,10 @@ p{
   p {
     color: #949894;
     text-align: center;
+    font-size: 14px;
     padding: 10px 0px 50px 0px;
     text-decoration: none;
+    margin: 0;
   }
 }
 }

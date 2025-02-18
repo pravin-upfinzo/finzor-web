@@ -26,6 +26,7 @@
 @media screen and (max-width: 991px) {
   .error-page-section {
     background-image: none;
+    margin-top: 165px;
   }
 }
 .error-page-section canvas {
@@ -45,7 +46,7 @@
     display: block;
   }
 }
-.error-page-section .error-page .error-left-page img {
+.error-page-section .error-page .error-left-page .error-img {
   width: 50%;
   padding-bottom: 24px;
 }
@@ -54,6 +55,11 @@
   line-height: 75px;
   font-weight: 500;
   color: #FFFFFF;
+}
+@media screen and (max-width: 991px) {
+  .error-page-section .error-page .error-left-page h2 {
+    line-height: 50px;
+  }
 }
 .error-page-section .error-page .error-left-page h3 {
   font-size: 30px;
@@ -67,14 +73,25 @@
   font-weight: 400;
   color: #A1A1AA;
 }
+@media screen and (max-width: 991px) {
+  .error-page-section .error-page .error-left-page p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
 .error-page-section .error-page .error-left-page .buttons {
-  width: 188px;
+  width: 186px;
   margin: 0 auto;
   border: 1px solid linear-gradient(98.24deg, #6DDCFF 0%, #7F60F9 100%);
 }
 @media screen and (max-width: 991px) {
   .error-page-section .error-page .error-right-page {
-    margin-top: 50px;
+    margin-top: 12px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .error-page-section .error-page .error-right-page svg {
+    width: 100%;
   }
 }
 .error-page-section .error-page .error-right-page svg .star {

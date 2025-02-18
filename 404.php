@@ -23,7 +23,7 @@ include_once('partials/header.php'); //should be last after all variables
     <div class="error-page">
 
     <div class="error-left-page">
-    <img src="./assets/images/404.svg" alt="404-heading">
+    <img src="./assets/images/404.svg" alt="404-heading" class="error-img">
         <h2>OOPS!</h2>
         <h3>PAGE NOT FOUND </h3>
         <p>Hey captain! Looks like you're heading to a wrong place...</p>

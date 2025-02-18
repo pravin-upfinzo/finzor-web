@@ -61,7 +61,7 @@
 }
 .container-login .signup-container h3 {
   font-size: 30px;
-  color: #3eab90;
+  color: #fff;
   text-align: left;
 }
 .container-login .signup-container .form-group {
@@ -129,10 +129,6 @@
   display: inline-block;
   width: 100%;
   text-align: left;
-}
-
-.mandatory {
-  color: #FF0000;
 }
 
 #signup_btns {

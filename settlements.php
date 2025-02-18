@@ -75,7 +75,7 @@ include_once('partials/header.php'); //should be last after all variables
 <section id="fz_product_list_feature">
     <div class="container">
         <div class="product_list_feature_head">
-            <h3>Finalease</h3>
+            <h3>Finlease</h3>
             <h4>Features</h4>
         </div>
         <div class="product_list_feature_cards spotlight-effect">

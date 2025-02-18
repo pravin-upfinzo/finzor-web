@@ -96,7 +96,7 @@ include_once('partials/header.php'); //should be last after all variables
 
                     Settlements
                 </div>
-                <h3 class="fin_bankz_subtitle">Finalease</h3>
+                <h3 class="fin_bankz_subtitle">Finlease</h3>
                 <div class="fin_bankz_bank">
                 </div>
                 <p class="fin_bankz_desc">At Finzor, we ensure smooth and timely settlements by automating payment processing. Our customizable settlement thresholds allow businesses to optimize cash flow and minimize risks. With tax calculation and reporting features, we help merchants stay compliant with regulations.</p>
