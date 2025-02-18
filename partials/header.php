@@ -1,3 +1,6 @@
+<?php
+    require_once __DIR__ . '/../routes/config/constant.php';
+?>
 <!DOCTYPE html>
 <html>
 
@@ -7,10 +10,10 @@
     <title><?php echo (isset($page_title) && $page_title != '') ? $page_title : 'Finzor - The Zor of Fintech Innovations'; ?></title>
     <?php echo isset($meta_lines) ? $meta_lines . "\n" : ''; ?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="assets/images/finzor-fav.png" type="image/png">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="<?= BASE_URL; ?>assets/images/finzor-fav.png" type="image/png">
+    <link rel="stylesheet" href="<?= BASE_URL; ?>assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?= BASE_URL; ?>assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?= BASE_URL; ?>assets/css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.10/dist/sweetalert2.min.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.9/codemirror.min.css"> -->
     <?php
@@ -18,6 +21,7 @@
         if (isset($pageHeaderScripts)) {
             echo $pageHeaderScripts;
         }
+       
     ?>
 
     <style>
@@ -86,7 +90,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.php">
+                <a class="navbar-brand" href="<?= BASE_URL; ?>">
                     <svg xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="0 0 120 40" fill="none">
                         <path d="M117.062 30.2616H113.239L110.065 24.7143H107.902V30.2616H104.344V14.4773H111.196C114.754 14.4773 116.942 16.4165 116.942 19.5737C116.942 21.8511 115.74 23.5877 113.648 24.3319V24.3547L117.062 30.2623L117.062 30.2616ZM110.763 21.6699C112.47 21.6699 113.383 20.9258 113.383 19.5502C113.383 18.1746 112.517 17.5204 110.763 17.5204H107.902V21.6693H110.763V21.6699Z" fill="#2D4949"></path>
                         <path d="M38.1836 14.4766H49.0263V17.5431H41.7415V21.3988H48.5213V24.3304H41.7415V30.2609H38.1836V14.4766Z" fill="#2D4949"></path>
@@ -107,7 +111,7 @@
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <a class="navbar-brand-mobile" href="index.php">
+                        <a class="navbar-brand-mobile" href="<?= BASE_URL; ?>">
                             <svg xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="0 0 120 40" fill="none">
                                 <path d="M117.062 30.2616H113.239L110.065 24.7143H107.902V30.2616H104.344V14.4773H111.196C114.754 14.4773 116.942 16.4165 116.942 19.5737C116.942 21.8511 115.74 23.5877 113.648 24.3319V24.3547L117.062 30.2623L117.062 30.2616ZM110.763 21.6699C112.47 21.6699 113.383 20.9258 113.383 19.5502C113.383 18.1746 112.517 17.5204 110.763 17.5204H107.902V21.6693H110.763V21.6699Z" fill="#2D4949"></path>
                                 <path d="M38.1836 14.4766H49.0263V17.5431H41.7415V21.3988H48.5213V24.3304H41.7415V30.2609H38.1836V14.4766Z" fill="#2D4949"></path>
@@ -127,7 +131,7 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
                             <li class="nav-item">
-                                <a class="nav-link list-menu list-menu-home" href="index.php">Home</a>
+                                <a class="nav-link list-menu list-menu-home" href="<?= BASE_URL; ?>">Home</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link list-menu list-menu-service" href="#" id="menu1" role="button">What we offer <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="white" width="15px"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg></a>
@@ -135,7 +139,7 @@
                                 <ul class="submenu">
                                 <div class="upward-arrow"></div>
                                     <li id="finbankz">
-                                    <a href="./finbankz.php">
+                                    <a href="<?= BASE_URL; ?>finbankz">
                                         <div class="image-text">
                                         <div class="fz_header_svg">
                                             <svg class="normal__svg" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -154,25 +158,25 @@
                                     </a>
                                     <ul class="inner-submenu">
                                         <li id="finbankz-corebanking">
-                                        <a href="./core-banking-solution.php">
+                                        <a href="<?= BASE_URL; ?>core-banking-solution">
                                             <h3>CoreNexus</h3>
                                             <p>Core Banking Solution</p>
                                         </a>
                                         </li>
                                         <li id="finbankz-mobbanking">
-                                        <a href="./mobile-banking.php">
+                                        <a href="<?= BASE_URL; ?>mobile-banking">
                                             <h3>MobfinZ</h3>
                                             <p>Mobile Banking</p>
                                         </a>
                                         </li>
                                         <li id="finbankz-neobanking">
-                                        <a href="./neo-banking.php">
+                                        <a href="<?= BASE_URL; ?>neo-banking">
                                             <h3>NeoPulse</h3>
                                             <p>Neo Banking</p>
                                         </a>
                                         </li>
                                         <li id="finbankz-intbanking">
-                                        <a href="./internet-banking.php">
+                                        <a href="<?= BASE_URL; ?>internet-banking">
                                             <h3>WebVault</h3>
                                             <p>Internet Banking</p>
                                         </a>
@@ -180,7 +184,7 @@
                                     </ul>
                                     </li>
                                     <li id="upizor">
-                                    <a href="./upizor.php">
+                                    <a href="<?= BASE_URL; ?>upizor">
                                         <div class="image-text">
                                         <div class="fz_header_svg">
                                             <svg class="normal__svg" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -197,19 +201,19 @@
                                     </a>
                                     <ul class="inner-submenu">
                                         <li id="upizor-upi">
-                                        <a href="./upi.php">
+                                        <a href="<?= BASE_URL; ?>upi">
                                             <h3>PayUnity</h3>
                                             <p>UPI</p>
                                         </a>
                                         </li>
                                         <li id="upizor-switch">
-                                        <a href="./upi-switch.php">
+                                        <a href="<?= BASE_URL; ?>upi-switch">
                                             <h3>FinzSwitch</h3>
                                             <p>UPI Switch</p>
                                         </a>
                                         </li>
                                         <li id="payment-gateway">
-                                        <a href="./payment-gateways.php">
+                                        <a href="<?= BASE_URL; ?>payment-gateways">
                                             <h3>FlowGate</h3>
                                             <p>Payment Gateways</p>
                                         </a>
@@ -217,7 +221,7 @@
                                     </ul>
                                     </li>
                                     <li id="finopz">
-                                    <a href="./finopz.php">
+                                    <a href="<?= BASE_URL; ?>finopz">
                                         <div class="image-text">
                                         <div class="fz_header_svg">
                                             <svg class="normal__svg" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -236,19 +240,19 @@
                                     </a>
                                     <ul class="inner-submenu">
                                         <li id="finopz-invest">
-                                        <a href="./investment-management.php">
+                                        <a href="<?= BASE_URL; ?>investment-management">
                                             <h3>FinInvezt</h3>
                                             <p>Investment Management</p>
                                         </a>
                                         </li>
                                         <li id="finopz-settlement">
-                                        <a href="./settlements.php">
+                                        <a href="<?= BASE_URL; ?>settlements">
                                             <h3>Finlease</h3>
                                             <p>Settlements</p>
                                         </a>
                                         </li>
                                         <li id="finopz-reconciliation">
-                                        <a href="./reconciliation.php" >
+                                        <a href="<?= BASE_URL; ?>reconciliation" >
                                             <h3>FinzRec</h3>
                                             <p>Reconciliation</p>
                                         </a>
@@ -256,7 +260,7 @@
                                     </ul>
                                     </li>
                                     <li id="finzro">
-                                    <a href="./finzro.php">
+                                    <a href="<?= BASE_URL; ?>finzro">
                                         <div class="image-text">
                                         <div class="fz_header_svg">
                                             <svg class="normal__svg" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -274,7 +278,7 @@
                                     </a>
                                     </li>
                                     <li id="finlyticz">
-                                    <a href="./finlyticz.php">
+                                    <a href="<?= BASE_URL; ?>finlyticz">
                                         <div class="image-text">
                                         <div class="fz_header_svg">
                                             <svg class="normal__svg" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -292,7 +296,7 @@
                                     </a>
                                     </li>
                                     <li id="finbridge">
-                                    <a href="./connected-banking.php">
+                                    <a href="<?= BASE_URL; ?>connected-banking">
                                         <div class="image-text">
                                         <div class="fz_header_svg">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="normal__svg">
@@ -307,7 +311,7 @@
                                     </a>
                                     </li>
                                     <li id="finvigil">
-                                    <a href="./fraud-and-risk-management.php">
+                                    <a href="<?= BASE_URL; ?>fraud-and-risk-management">
                                         <div class="image-text">
                                         <div class="fz_header_svg">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="normal__svg" viewBox="0 0 32 32"><title></title><g data-name="Layer 2" id="Layer_2"><path d="M26.08,7S22,6.28,20.84,5.88A12.85,12.85,0,0,1,16.33,3.6.5.5,0,0,0,16,3.46h0a.51.51,0,0,0-.36.14,12.38,12.38,0,0,1-4.49,2.28C10,6.28,6,7,5.92,7a.5.5,0,0,0-.42.49c0,8.1.1,11.84,2.58,15.65,2.12,3.26,7.5,5.24,7.73,5.33a.47.47,0,0,0,.17,0l.17,0c.23-.09,5.65-2.07,7.77-5.33,2.48-3.81,2.58-7.55,2.58-15.65A.5.5,0,0,0,26.08,7Zm-3,15.6c-1.74,2.67-6.18,4.5-7.1,4.86-.92-.36-5.32-2.19-7.06-4.86-2.2-3.38-2.41-6.4-2.42-14.69a47.94,47.94,0,0,0,5-1A16,16,0,0,0,16,4.61a16.1,16.1,0,0,0,4.53,2.22h0a48,48,0,0,0,5,1C25.49,16.16,25.28,19.18,23.08,22.56Z" style="
@@ -327,23 +331,23 @@
                                 </li>
                            
                             <li class="nav-item">
-                                <a class="nav-link list-menu list-menu-about" href="about-us.php">Company</a>
+                                <a class="nav-link list-menu list-menu-about" href="<?= BASE_URL; ?>about-us">Company</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link list-menu list-menu-contact" href="contact-us.php">Contact</a>
+                                <a class="nav-link list-menu list-menu-contact" href="<?= BASE_URL; ?>contact-us">Contact</a>
                             </li>
                         </ul>
                         <div class="d-flex fz_sigin">
                             <ul>
-                                <li><a href="#"><img class="flag-img" src="assets/images/flag.gif" alt="Country" width="40px"></a></li>
+                                <li><a href="#"><img class="flag-img" src="<?= BASE_URL; ?>assets/images/flag.gif" alt="Country" width="40px"></a></li>
                                
                                 <li>
-                                    <a href="login.php" class="onboard_btn">
+                                    <a href="<?= BASE_URL; ?>login" class="onboard_btn">
                                         <button class="buttons">
                                             <span class="text">Onboard</span>
                                             <div class="icon">
-                                                <img src="./assets/images/telegram.svg" alt="" class="tele_img">
-                                                <img src="./assets/images/telegram.svg" alt="" class="tele_img">
+                                                <img src="<?= BASE_URL; ?>assets/images/telegram.svg" alt="" class="tele_img">
+                                                <img src="<?= BASE_URL; ?>assets/images/telegram.svg" alt="" class="tele_img">
                                             </div>
                                         </button>
                                     </a>
