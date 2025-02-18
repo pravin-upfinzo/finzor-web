@@ -24,6 +24,7 @@ $path = parse_url($requestUri, PHP_URL_PATH); // Get the path
 
 // Remove the leading '/blogs/' part of the URL
 $path = str_replace('blog.php', '', $path);
+$path = str_replace('index.php', '', $path);
 $path = str_replace('/finzor-web', '', $path);
 $path = str_replace('/blogs/', '', $path);
 
