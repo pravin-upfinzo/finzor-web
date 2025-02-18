@@ -6,25 +6,8 @@
 
     include_once('data-handler.php'); // Include the data handler to fetch category and posts
 
-    // // Get the current URL
-    // $currentUrl = "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-    // $parsedUrl = parse_url($currentUrl);
-    // // Construct the base URL
-    // $baseUrls = $parsedUrl['scheme'] . '://' . $parsedUrl['host'];
-
-    // //echo "baseUrls => ".$baseUrls; exit;
-    // // If using a subdirectory, add the path up to the base
-    // $path = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-    // if ($path) {
-    //     $baseUrls .= $path . '/';
-    // } else {
-    //     $baseUrls .= '/';
-    // }
-    // echo "baseUrls 2=> ".$baseUrls;
-
     // to include page specific CSS
     $pageStyles = '<link rel="stylesheet" href="'.BASE_URL.'blogs/assets/css/styles.css">';
-    //$pageStyles .= '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">';
     $pageStyles .= '<style></style>';
 
     // to include page specific JS
@@ -54,14 +37,14 @@
     
 
     <div class = "row row-custom">
-        <?php //print_r($postContent);
+        <?php 
         if ($slug && $postContent): ?>
 
             <!-- <article>
-                <h2><?php echo htmlspecialchars($postContent['title']); ?></h2>
-                <p><small>Posted on: <?php echo htmlspecialchars($postContent['date']); ?></small></p>
-                <p><?php echo htmlspecialchars($postContent['short_description']); ?></p>
-                <div><?php echo $postContent['content']; ?></div>
+                <h2><?php //echo htmlspecialchars($postContent['title']); ?></h2>
+                <p><small>Posted on: <?php //echo htmlspecialchars($postContent['date']); ?></small></p>
+                <p><?php //echo htmlspecialchars($postContent['short_description']); ?></p>
+                <div><?php //echo $postContent['content']; ?></div>
             </article> -->
 
                 <article class="article-container">
@@ -100,7 +83,7 @@
         <?php else: ?>
             <?php if (!empty($posts)): ?>
 
-                <?php //echo "<pre>"; print_r($posts); 
+                <?php  
                 foreach ($posts as $cate_key => $ind_post): ?>
                     <?php foreach ($ind_post as $post): ?>
                         <div class = "col-sm-12 col-md-6 col-lg-4 post-column <?= $cate_key; ?>">
