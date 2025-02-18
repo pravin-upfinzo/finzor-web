@@ -21,10 +21,6 @@ RewriteRule ^index$ /%1/ [R=301,L]
 # Redirect old page to new page
 #Redirect 301 /old-url  https://www.finzor.com/new-url
 
-# for Blog Page Handling
-RewriteRule ^blogs/([a-zA-Z0-9_-]+)/?$ blogs/index.php?category=$1 [L,QSA]
-RewriteRule ^blogs/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/?$ blogs/index.php?category=$1&slug=$2 [L,QSA]
-
 # Custom 404 Error Page Handling
 ErrorDocument 404 /404.php
 RewriteCond %{REQUEST_URI} !\.(jpg|jpeg|png|gif|css|js|ico|svg|woff|woff2|eot|ttf|otf)$ [NC]
