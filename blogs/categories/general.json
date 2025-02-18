@@ -1,0 +1,25 @@
+{
+    "title": "General Category",
+    "description": "Covering a wide range of topics and discussions.",
+    "banner": "./descriptions/general/assets/general-blog-banner.jpeg",
+    "thumbnail": "./descriptions/general/assets/general-blog-banner.jpeg",
+    "posts": [
+      {
+        "title": "Work-Life Balance Tips",
+        "slug": "work-life-balance-tips",
+        "author": "Author Name - Gen - 1",
+        "short_description": "Effective tips for maintaining work-life balance.",
+        "date": "2025-02-12",
+        "content": "html-file",
+        "content_file": "work-life-balance-tips.html"
+      },
+      {
+        "title": "Travel on a Budget",
+        "slug": "travel-on-a-budget",
+        "author": "Author Name - Gen - 2",
+        "short_description": "How to travel the world without breaking the bank.",
+        "date": "2025-02-08",
+        "content": "How to travel the world without breaking the bank."
+      }
+    ]
+  }

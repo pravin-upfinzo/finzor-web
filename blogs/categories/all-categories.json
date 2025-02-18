@@ -1,0 +1,12 @@
+{
+    "tech": {
+      "file": "tech.json",
+      "titlex": "Tech Category",
+      "descriptionx": "All about the latest in tech."
+    },
+    "general": {
+      "file": "general.json",
+      "titlex": "General Category",
+      "descriptionx": "Covering a wide range of topics and discussions."
+    }
+  }
