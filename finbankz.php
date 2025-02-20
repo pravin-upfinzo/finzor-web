@@ -26,7 +26,7 @@ include_once('partials/header.php'); //should be last after all variables
     </div>
 </section>
 <!-- product_hero_section -->
-<section id="fin_bankz_sec" class="fin_bankz finbankz_bg">
+<section id="fin_bankz_sec" class="fin_bankz finbankz_bg finbankz-lottie">
     <div class="container">
         <div class="fin_bankz fz_reverse">
             <div class="fin_bankz_content finbank_content">
@@ -62,18 +62,20 @@ include_once('partials/header.php'); //should be last after all variables
                 </a>
             </div>
             <div class="fin_bankz_img">
-                <div class="finbankz-corenexus"></div>
+            <div class="finbankz-lottie-animation"></div>
+                <!-- <div class="finbankz-corenexus"></div> -->
             </div>
         </div>
     </div>
 </section>
 
 <!-- product_hero_section -->
-<section id="fin_bankz_sec" class="fin_bankz">
+<section id="fin_bankz_sec" class="fin_bankz finbankz-lottie">
     <div class="container">
         <div class="fin_bankz">
             <div class="fin_bankz_img">
-                <div class="finbankz-mobfinz"></div>
+                <!-- <div class="finbankz-mobfinz"></div> -->
+                <div class="finbankz-lottie-animation"></div>
             </div>
             <div class="fin_bankz_content finbank_content">
                 <span class="finbank_count">02</span>
@@ -113,7 +115,7 @@ include_once('partials/header.php'); //should be last after all variables
 </section>
 
 <!-- product_hero_section -->
-<section id="fin_bankz_sec" class="fin_bankz finbankz_bg_1">
+<section id="fin_bankz_sec" class="fin_bankz finbankz_bg_1 finbankz-lottie">
     <div class="container">
         <div class="fin_bankz fz_reverse">
             <div class="fin_bankz_content finbank_content">
@@ -149,18 +151,20 @@ include_once('partials/header.php'); //should be last after all variables
                 </a>
             </div>
             <div class="fin_bankz_img">
-                <div class="finbankz-neo"></div>
+            <div class="finbankz-lottie-animation"></div>
+                <!-- <div class="finbankz-neo"></div> -->
             </div>
         </div>
     </div>
 </section>
 
 <!-- product_hero_section -->
-<section id="fin_bankz_sec" class="fin_bankz">
+<section id="fin_bankz_sec" class="fin_bankz finbankz-lottie">
     <div class="container">
         <div class="fin_bankz">
             <div class="fin_bankz_img">
-                <div class="finbankz-webvault"></div>
+            <div class="finbankz-lottie-animation"></div>
+                <!-- <div class="finbankz-webvault"></div> -->
             </div>
             <div class="fin_bankz_content finbank_content">
                 <span class="finbank_count">04</span>

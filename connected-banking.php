@@ -186,17 +186,17 @@ include_once('partials/header.php'); //should be last after all variables
                 <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                         <div class="fz_features_img zoom-in-fe">
-                            <img src="./assets/images/features.svg" alt="">
+                            <img src="./assets/images/product_tab_images/finbridge_01.svg" alt="finbridge">
                         </div>
                     </div>
                     <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                         <div class="fz_features_img zoom-in-fe">
-                            <img src="./assets/images/features.svg" alt="">
+                            <img src="./assets/images/product_tab_images/finbridge_02.svg" alt="finbridge">
                         </div>
                     </div>
                     <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                         <div class="fz_features_img zoom-in-fe">
-                            <img src="./assets/images/features.svg" alt="">
+                            <img src="./assets/images/product_tab_images/finbridge_03.svg" alt="finbridge">
                         </div>
                     </div>
                 </div>

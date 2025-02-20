@@ -1,4 +1,6 @@
-
+<?php
+    require_once __DIR__ . '/../routes/config/constant.php';
+?>
 <footer class="footer_section">
           <div class="container">
             <div class="fz_footer_container">
@@ -42,28 +44,28 @@
               <div class="links-group">
                 <h4>PRODUCTS</h4>
                 <ul>
-                  <li><a href="./finbankz.php">FinbankZ</a></li>
-                  <li><a href="./upizor.php">UPIZor</a></li>
-                  <li><a href="./finopz.php">FinOpZ 360°</a></li>
-                  <li><a href="./finzro.php">FinZro</a></li>
-                  <li><a href="./finlyticz.php">FinlyticZ</a></li>
-                  <li><a href="./connected-banking.php">Finbridge</a></li>
-                  <li><a href="./fraud-and-risk-management.php">FinVigil</a></li>
+                  <li><a href="<?= BASE_URL; ?>finbankz">FinbankZ</a></li>
+                  <li><a href="<?= BASE_URL; ?>upizor">UPIZor</a></li>
+                  <li><a href="<?= BASE_URL; ?>finopz">FinOpZ 360°</a></li>
+                  <li><a href="<?= BASE_URL; ?>finzro">FinZro</a></li>
+                  <li><a href="<?= BASE_URL; ?>finlyticz">FinlyticZ</a></li>
+                  <li><a href="<?= BASE_URL; ?>connected-banking">Finbridge</a></li>
+                  <li><a href="<?= BASE_URL; ?>fraud-and-risk-management">FinVigil</a></li>
                 </ul>
               </div>
               <div class="links-group">
                 <h4>COMPANY</h4>
                 <ul>
-                  <li><a href="about-us.php">About us</a></li>
-                  <li><a href="contact-us.php">Contact</a></li>
-                  <li><a href="index.php#faq_part">FAQ</a></li>
+                  <li><a href="<?= BASE_URL; ?>about-us">About us</a></li>
+                  <li><a href="<?= BASE_URL; ?>contact-us">Contact</a></li>
+                  <li><a href="<?= BASE_URL; ?>#faq_part">FAQ</a></li>
                 </ul>
               </div>
               <div class="links-group">
                 <h4>LEGAL</h4>
                 <ul>
-                  <li><a href="terms-and-condition.php">Terms & Conditions</a></li>
-                  <li><a href="privacy-policy.php">Privacy Policy</a></li>
+                  <li><a href="<?= BASE_URL; ?>terms-and-condition">Terms & Conditions</a></li>
+                  <li><a href="<?= BASE_URL; ?>privacy-policy">Privacy Policy</a></li>
                 </ul>
               </div>
             </div>
@@ -76,7 +78,7 @@
                 <form class="subscribe-form" id="subscribe-form">
                   <input type="email" placeholder="Enter your email ID" name="subscribe_email" class="subscribe_email">
                   <div class="footer_arrow" role="button">
-                    <img src="./assets/images/footer_arrow.svg" alt="" class="">
+                    <img src="<?= BASE_URL; ?>assets/images/footer_arrow.svg" alt="" class="">
                  </div>
                 </form>
                 <span class="error" id="subsEmailError"></span>
@@ -92,10 +94,10 @@
 
         
 <div class="footer-bg">
-    <img src="./assets/images/footer-bg.gif" alt="footer-bg" />
+    <img src="<?= BASE_URL; ?>assets/images/footer-bg.gif" alt="footer-bg" />
 </div>
 <div class="chat-bot">
-    <img src="assets/images/FinzorchatBot.gif" alt="chat-bot">
+    <img src="<?= BASE_URL; ?>assets/images/FinzorchatBot.gif" alt="chat-bot">
 </div>
 <a id="scroll_top">
     <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg" class="black_arrow">
@@ -161,7 +163,7 @@
                 <div class="button-loader"></div>
                 <span class="text">Send Message</span>
                 <div class="icon">
-                <img src="./assets/images/fz_button_arrow.svg" alt="">
+                <img src="<?= BASE_URL; ?>assets/images/fz_button_arrow.svg" alt="">
                 </div>
           </button>
         </form>
@@ -169,13 +171,13 @@
     </div>
   </div>
 </div>
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/gsap.min.js"></script>
-<script src="assets/js/ScrollTrigger.min.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/logo_loader.js"></script>
-<script src="assets/js/form-submission.js"></script>
+<script src="<?= BASE_URL; ?>assets/js/jquery.js"></script>
+<script src="<?= BASE_URL; ?>assets/js/bootstrap.bundle.min.js"></script>
+<script src="<?= BASE_URL; ?>assets/js/gsap.min.js"></script>
+<script src="<?= BASE_URL; ?>assets/js/ScrollTrigger.min.js"></script>
+<script src="<?= BASE_URL; ?>assets/js/owl.carousel.min.js"></script>
+<script src="<?= BASE_URL; ?>assets/js/logo_loader.js"></script>
+<script src="<?= BASE_URL; ?>assets/js/form-submission.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.10/dist/sweetalert2.all.min.js"></script>
 <script>
 $(document).ready(function () {
