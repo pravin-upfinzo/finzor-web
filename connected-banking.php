@@ -85,28 +85,28 @@ include_once('partials/header.php'); //should be last after all variables
             <div></div>
             <div class="product_list_feature_card fade-down">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finbridge_real-time-transactions.svg" alt="digital payment">
                     <h4>Real-Time Transactions</h4>
                     <p>Instantly process PayIn & PayOut for seamless cash flow.</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-left">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4> Unified Banking Management</h4>
+                    <img src="./assets/images/feature-card-icons/flowgate_secure-transaction.svg" alt="digital payment">
+                    <h4>Unified Banking Management</h4>
                     <p>Manage multiple bank accounts in one real-time dashboard</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-right">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finbridge_virtual-account.svg" alt="digital payment">
                     <h4>Virtual Account Numbers</h4>
                     <p>Use VANs for easy payment tracking and transparency</p>
                 </div>
             </div>
             <div class="product_list_feature_card zoom-in product_center">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finbridge_upi-integration.svg" alt="digital payment">
                     <h4>UPI Integration</h4>
                     <p>Enable secure, instant fund transfers with UPI integration.
                     </p>
@@ -114,7 +114,7 @@ include_once('partials/header.php'); //should be last after all variables
             </div>
             <div class="product_list_feature_card fade-left">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finbridge_api-suite.svg" alt="digital payment">
                     <h4>Comprehensive API Suite</h4>
                     <p>Integrate APIs to automate workflows and boost efficiency.
                     </p>
@@ -122,14 +122,14 @@ include_once('partials/header.php'); //should be last after all variables
             </div>
             <div class="product_list_feature_card fade-right">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finbridge_cloud-computing.svg" alt="digital payment">
                     <h4>Cloud Computing</h4>
                     <p>Leverage cloud banking for scalability, security, and cost-efficiency.</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-up">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finbridge_automated-reconciliation.svg" alt="digital payment">
                     <h4>Automated Reconciliation</h4>
                     <p>Automate reconciliation to reduce errors and save time.</p>
                 </div>

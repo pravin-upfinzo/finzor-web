@@ -82,42 +82,42 @@ include_once('partials/header.php'); //should be last after all variables
             <div></div>
             <div class="product_list_feature_card fade-down">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finzswitch_erp.svg" alt="digital payment">
                     <h4>Integration with Accounting and ERP Systems</h4>
                     <p>Connects UPI services with accounting software, streamlining financial management for businesses.                    </p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-left">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finzswitch_recurring-payment.svg" alt="digital payment">
                     <h4> Recurring Payment Setup</h4>
                     <p>Allows businesses to set up and manage recurring payments efficiently.</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-right">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finzswitch_two-factor-authentication.svg" alt="digital payment">
                     <h4>Security with Two-Factor Authentication</h4>
                     <p>Enhances security by requiring two forms of verification for transactions.</p>
                 </div>
             </div>
             <div class="product_list_feature_card zoom-in product_center">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finzswitch_flexible-dispute.svg" alt="digital payment">
                     <h4>Flexible Dispute Management</h4>
                     <p>Provides mechanisms to handle refunds and disputes effectively, improving customer satisfaction.</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-left">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finzswitch_fraud-detection.svg" alt="digital payment">
                     <h4>Payment Fraud Detection and Alerts</h4>
                     <p>Monitors transactions for fraudulent activities and alerts users in real-time.</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-right">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finzswitch_smart-payment.svg" alt="digital payment">
                     <h4>Smart Payment Routing </h4>
                     <p>Optimizes the path of transactions to ensure speed and cost-efficiency.
                     </p>
@@ -125,7 +125,7 @@ include_once('partials/header.php'); //should be last after all variables
             </div>
             <div class="product_list_feature_card fade-up">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finzswitch_securable-token.svg" alt="digital payment">
                     <h4>Securable Tokenization</h4>
                     <p>Replaces sensitive data with unique tokens, reducing the risk of data breaches.
                     </p>

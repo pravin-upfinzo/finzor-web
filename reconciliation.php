@@ -83,28 +83,28 @@ include_once('partials/header.php'); //should be last after all variables
             <div></div>
             <div class="product_list_feature_card fade-down product_center">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finzrec_ai-driven-insights.svg" alt="digital payment">
                     <h4>AI Driven insights on Receivable</h4>
                     <p>Uses AI to analyze and predict receivables, improving cash flow management.</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-left">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finzrec_real-time-reconciliation.svg" alt="digital payment">
                     <h4> Real-Time Reconciliation</h4>
                     <p>Matches transactions instantly, reducing discrepancies.</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-right">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finzrec_cloud-based-access.svg" alt="digital payment">
                     <h4>Cloud-Based Access</h4>
                     <p>Offers reconciliation services accessible from anywhere, promoting flexibility.</p>
                 </div>
             </div>
             <div class="product_list_feature_card zoom-in">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finzrec_cross-platform-synchronization.svg" alt="digital payment">
                     <h4>Cross-Platform Synchronization </h4>
                     <p>Ensures data consistency across various platforms and devices.</p>
                 </div>

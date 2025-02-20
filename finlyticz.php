@@ -83,28 +83,28 @@ include_once('partials/header.php'); //should be last after all variables
             <div></div>
             <div class="product_list_feature_card fade-down product_center">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finlyticz_customer-section.svg" alt="digital payment">
                     <h4>Customer Segmentation</h4>
                     <p>Divides customers into groups based on behavior for targeted marketing.</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-left">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finlyticz_market-trend.svg" alt="digital payment">
                     <h4>Market Trend Analysis</h4>
                     <p>Examines market data to identify emerging trends and opportunities.                    </p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-right">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finlyticz_risk-analytics.svg" alt="digital payment">
                     <h4>Risk analytics and credit scoring</h4>
                     <p>Assesses the risk profile and creditworthiness of customers.</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-up">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finlyticz_process-optimization.svg" alt="digital payment">
                     <h4>Process Optimization</h4>
                     <p>Analyses processes to identify areas for cost reduction and efficiency gains.</p>
                 </div>

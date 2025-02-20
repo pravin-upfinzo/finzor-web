@@ -82,28 +82,28 @@ include_once('partials/header.php'); //should be last after all variables
             <div></div>
             <div class="product_list_feature_card fade-down product_center">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finlease_customizable.svg" alt="digital payment">
                     <h4>Customizable Settlement Thresholds</h4>
                     <p>Allows businesses to set specific criteria for settling transactions.</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-left">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finlease_settlement-api.svg" alt="digital payment">
                     <h4>Settlement API Integration</h4>
                     <p>Integrates settlement processes with existing systems through APIs.</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-right">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finlease_instant-dispute.svg" alt="digital payment">
                     <h4>Instant Dispute Resolution</h4>
                     <p>Provides tools to handle disputes and chargebacks promptly.</p>
                 </div>
             </div>
             <div class="product_list_feature_card zoom-in">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finlease_scheduled-settlements.svg" alt="digital payment">
                     <h4>Scheduled Settlements </h4>
                     <p>Enables setting up of predetermined times for settling transactions.</p>
                 </div>

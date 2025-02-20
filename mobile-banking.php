@@ -65,7 +65,7 @@ include_once('partials/header.php'); //should be last after all variables
             </div>
             <div class="col-lg-5 fz_enhance_img_col">
                 <div class="fz_ai_enhance_img zoom-in-cbs">
-                    <img src="./assets/images/cbs_image.png" alt="CBS">
+                    <img src="./assets/images/CBS - Card 03 - User Name.svg" alt="CBS">
                 </div>
             </div>
         </div>
@@ -82,28 +82,28 @@ include_once('partials/header.php'); //should be last after all variables
             <div></div>
             <div class="product_list_feature_card fade-down product_center">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/rest api.svg" alt="digital payment">
                     <h4>Open Rest API`s</h4>
                     <p>Enables integration with various services, providing users with a comprehensive mobile banking experience</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-left">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/ckyc.svg" alt="digital payment">
                     <h4> KYC & AML</h4>
                     <p>Ensures secure and compliant onboarding of customers through mobile platforms</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-right">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/ai-enhancement.svg" alt="digital payment">
                     <h4>AI Tools</h4>
                     <p>Incorporates AI for payments reconciliation, predictive analysis, and enhanced customer service</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-up">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/cbs.svg" alt="digital payment">
                     <h4>Cloud Based Solutions</h4>
                     <p>Provides mobile banking services through cloud infrastructure, ensuring accessibility and scalability</p>
                 </div>

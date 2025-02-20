@@ -82,28 +82,28 @@ include_once('partials/header.php'); //should be last after all variables
             <div></div>
             <div class="product_list_feature_card fade-down product_center">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/fininvezt_ai-driven-insights.svg" alt="digital payment">
                     <h4>AI Driven Insights</h4>
                     <p>Leverages artificial intelligence to provide personalized investment recommendations.</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-left">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4> Portfolio Management </h4>
+                    <img src="./assets/images/feature-card-icons/fininvezt_portfolio-management.svg" alt="digital payment">
+                    <h4>Portfolio Management </h4>
                     <p>Assists in creating and managing a diversified investment portfolio.</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-right">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/fininvezt_budgeting.svg" alt="digital payment">
                     <h4>Budgeting and Forecasting</h4>
                     <p>Helps in tracking expenses and creating budgets to align with investment goals.</p>
                 </div>
             </div>
             <div class="product_list_feature_card zoom-in">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/fininvezt_risk-management.svg" alt="digital payment">
                     <h4>Risk Management</h4>
                     <p>Identifies and mitigates potential risks in investment strategies.</p>
                 </div>

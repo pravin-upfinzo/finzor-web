@@ -86,49 +86,49 @@ include_once('partials/header.php'); //should be last after all variables
             <div></div>
             <div class="product_list_feature_card fade-down">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finvigil_real-time-fraud-detection.svg" alt="digital payment">
                     <h4>Real-Time Fraud Detection</h4>
                     <p>Instantly identifies and blocks suspicious transactions</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-left">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
-                    <h4> Behavioral Biometrics</h4>
+                    <img src="./assets/images/feature-card-icons/finvigil_behaviour-biometric.svg" alt="digital payment">
+                    <h4>Behavioral Biometrics</h4>
                     <p>Analyzes user behavior to detect anomalies</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-right">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finvigil_NLP-for-scam-detection.svg" alt="digital payment">
                     <h4>NLP for Scam Detection</h4>
                     <p>Uses AI to flag fraudulent activities in payments.</p>
                 </div>
             </div>
             <div class="product_list_feature_card zoom-in product_center">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finvigil_deep-anomaly-detection.svg" alt="digital payment">
                     <h4>Deep Anomaly Detection</h4>
                     <p>Recognizes hidden fraud patterns</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-left">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finvigil_credit-risk-assessment.svg" alt="digital payment">
                     <h4>Credit Risk Assessment </h4>
                     <p>Evaluates creditworthiness using alternative data.</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-right">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finvigil_market-risk-prediction.svg" alt="digital payment">
                     <h4>Market Risk Prediction</h4>
                     <p>Forecasts financial fluctuations using AI models</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-up">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/finvigil_stress-testing-scenario-analysis.svg" alt="digital payment">
                     <h4>Stress Testing & Scenario Analysis</h4>
                     <p>Simulates extreme market conditions to assess risk exposure.</p>
                 </div>

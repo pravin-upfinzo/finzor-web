@@ -82,28 +82,28 @@ include_once('partials/header.php'); //should be last after all variables
             <div></div>
             <div class="product_list_feature_card fade-down product_center">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/payunity_p2p.svg" alt="digital payment">
                     <h4>P2P and P2M Transactions</h4>
                     <p>Enables peer-to-peer and peer-to-merchant transactions, promoting a cashless economy.</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-left">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/payunity_multiple-bank-acc.svg" alt="digital payment">
                     <h4> Multiple Bank Accounts on One App</h4>
                     <p>Allows users to manage multiple bank accounts through a single application.</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-right">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/payunity_merchant.svg" alt="digital payment">
                     <h4>Merchants and Business Payments</h4>
                     <p>Facilitates business transactions, supporting various payment needs of merchants.</p>
                 </div>
             </div>
             <div class="product_list_feature_card zoom-in">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/payunity_payment-link.svg" alt="digital payment">
                     <h4>Payment Link Generation</h4>
                     <p>Generates links for payments, simplifying the process of receiving funds.</p>
                 </div>

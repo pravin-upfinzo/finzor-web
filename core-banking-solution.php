@@ -84,7 +84,7 @@ include_once('partials/header.php'); //should be last after all variables
             <div></div>
             <div class="product_list_feature_card fade-down">
                 <div class="product_list_feature_cont">
-                    <!-- <img src="./assets/images/corenexus-feature-card-icons/open-api.svg" alt="digital payment"> -->
+                    <img src="./assets/images/feature-card-icons/open-api.svg" alt="digital payment">
                     <div id="feature_card_1_svg"></div>
                     <h4>Open Rest API</h4>
                     <p>Allows seamless integration with third-party applications, enabling extended functionalities and services</p>
@@ -92,7 +92,7 @@ include_once('partials/header.php'); //should be last after all variables
             </div>
             <div class="product_list_feature_card fade-left">
                 <div class="product_list_feature_cont">
-                    <!-- <img src="./assets/images/corenexus-feature-card-icons/ckyc.svg" alt="digital payment"> -->
+                    <img src="./assets/images/feature-card-icons/ckyc.svg" alt="digital payment">
                     <div id="feature_card_2_svg"></div>
                     <h4> CKYC and AML</h4>
                     <p>Centralized Know Your Customer and Anti-Money Laundering protocols ensure compliance with regulatory standards</p>
@@ -100,7 +100,7 @@ include_once('partials/header.php'); //should be last after all variables
             </div>
             <div class="product_list_feature_card fade-right">
                 <div class="product_list_feature_cont">
-                    <!-- <img src="./assets/images/corenexus-feature-card-icons/cash-management.svg" alt="digital payment"> -->
+                    <img src="./assets/images/feature-card-icons/cash-management.svg" alt="digital payment">
                     <div id="feature_card_3_svg"></div>
                     <h4>Cash Management</h4>
                     <p>Tools that help businesses manage their cash flow efficiently, including monitoring and optimizing liquidity</p>
@@ -108,7 +108,7 @@ include_once('partials/header.php'); //should be last after all variables
             </div>
             <div class="product_list_feature_card zoom-in product_center">
                 <div class="product_list_feature_cont">
-                    <!-- <img src="./assets/images/corenexus-feature-card-icons/digital-payments.svg" alt="digital payment"> -->
+                    <img src="./assets/images/feature-card-icons/digital-payments.svg" alt="digital payment">
                     <div id="feature_card_4_svg"></div>
                     <h4>Digital Payments</h4>
                     <p>Facilitates electronic transactions, reducing reliance on cash and enhancing transaction speed</p>
@@ -116,7 +116,7 @@ include_once('partials/header.php'); //should be last after all variables
             </div>
             <div class="product_list_feature_card fade-left">
                 <div class="product_list_feature_cont">
-                    <!-- <img src="./assets/images/corenexus-feature-card-icons/cbs.svg" alt="digital payment"> -->
+                    <img src="./assets/images/feature-card-icons/cbs.svg" alt="digital payment">
                     <div id="feature_card_5_svg"></div>
                     <h4>Cloud Based Solutions </h4>
                     <p>Offers scalable and flexible banking services accessible over the internet, reducing infrastructure costs</p>
@@ -124,7 +124,7 @@ include_once('partials/header.php'); //should be last after all variables
             </div>
             <div class="product_list_feature_card fade-right">
                 <div class="product_list_feature_cont">
-                    <!-- <img src="./assets/images/corenexus-feature-card-icons/ai-enhancement.svg" alt="digital payment"> -->
+                    <img src="./assets/images/feature-card-icons/ai-enhancement.svg" alt="digital payment">
                     <div id="feature_card_6_svg"></div>
                     <h4>AI enhancement </h4>
                     <p>Utilizes artificial intelligence to improve decision-making processes and operational efficiency</p>
@@ -132,7 +132,7 @@ include_once('partials/header.php'); //should be last after all variables
             </div>
             <div class="product_list_feature_card fade-up">
                 <div class="product_list_feature_cont">
-                    <!-- <img src="./assets/images/corenexus-feature-card-icons/regulatory.svg" alt="digital payment"> -->
+                    <img src="./assets/images/feature-card-icons/regulatory.svg" alt="digital payment">
                     <div id="feature_card_7_svg"></div>
                     <h4>Regulatory Risk</h4>
                     <p>Tools to identify, assess, and mitigate risks associated with regulatory compliance</p>

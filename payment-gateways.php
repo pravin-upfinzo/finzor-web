@@ -82,28 +82,28 @@ include_once('partials/header.php'); //should be last after all variables
             <div></div>
             <div class="product_list_feature_card fade-down product_center">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/flowgate_multiple-payment.svg" alt="digital payment">
                     <h4>Multiple Payment Methods Support</h4>
                     <p>Enables transactions through various payment options like credit/debit cards, UPI, net banking, and wallets.</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-left">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/flowgate_secure-transaction.svg" alt="digital payment">
                     <h4>Secure Transactions</h4>
                     <p>Protects payment data with advanced encryption, ensuring secure fund transfers.</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-right">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/flowgate_real-time-analytics.svg" alt="digital payment">
                     <h4>Real-Time Analytics Dashboard</h4>
                     <p>Provides merchants with real-time insights on transactions, trends, and payment performance.</p>
                 </div>
             </div>
             <div class="product_list_feature_card zoom-in">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/flowgate_ai-powered.svg" alt="digital payment">
                     <h4>AI-Powered Fraud Detection</h4>
                     <p>Uses artificial intelligence to identify and prevent fraudulent transactions in real time.                    </p>
                 </div>

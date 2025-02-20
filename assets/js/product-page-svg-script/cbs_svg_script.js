@@ -32,14 +32,14 @@ loadSVG("./assets/images/innovate_icon_2.svg", "section_3_icon_2_svg");
 loadSVG("./assets/images/innovate_icon_3.svg", "section_3_icon_3_svg");
 
 
-// Feature card icon
-loadSVG("./assets/images/corenexus-feature-card-icons/open-api.svg", "feature_card_1_svg");
-loadSVG("./assets/images/corenexus-feature-card-icons/ckyc.svg", "feature_card_2_svg");
-loadSVG("./assets/images/corenexus-feature-card-icons/cash-management.svg", "feature_card_3_svg");
-loadSVG("./assets/images/corenexus-feature-card-icons/digital-payments.svg", "feature_card_4_svg");
-loadSVG("./assets/images/corenexus-feature-card-icons/cbs.svg", "feature_card_5_svg");
-loadSVG("./assets/images/corenexus-feature-card-icons/ai-enhancement.svg", "feature_card_6_svg");
-loadSVG("./assets/images/corenexus-feature-card-icons/regulatory.svg", "feature_card_7_svg");
+// // Feature card icon
+// loadSVG("./assets/images/corenexus-feature-card-icons/open-api.svg", "feature_card_1_svg");
+// loadSVG("./assets/images/corenexus-feature-card-icons/ckyc.svg", "feature_card_2_svg");
+// loadSVG("./assets/images/corenexus-feature-card-icons/cash-management.svg", "feature_card_3_svg");
+// loadSVG("./assets/images/corenexus-feature-card-icons/digital-payments.svg", "feature_card_4_svg");
+// loadSVG("./assets/images/corenexus-feature-card-icons/cbs.svg", "feature_card_5_svg");
+// loadSVG("./assets/images/corenexus-feature-card-icons/ai-enhancement.svg", "feature_card_6_svg");
+// loadSVG("./assets/images/corenexus-feature-card-icons/regulatory.svg", "feature_card_7_svg");
 
 
 // Get in touch

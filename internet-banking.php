@@ -82,28 +82,28 @@ include_once('partials/header.php'); //should be last after all variables
             <div></div>
             <div class="product_list_feature_card fade-down product_center">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/webvault_dashboard.svg" alt="digital payment">
                     <h4>Payout dashboard</h4>
                     <p>Offers detailed views of transactions and payouts, assisting in financial tracking and reporting</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-left">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/webvault_auto-payment.svg" alt="digital payment">
                     <h4> Automated Payment Analytics </h4>
                     <p>Analyzes payment data to provide actionable insights for better financial decision-making</p>
                 </div>
             </div>
             <div class="product_list_feature_card fade-right">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/webvault_blockchain.svg" alt="digital payment">
                     <h4>Blockchain-Based Payment Security</h4>
                     <p>Utilizes blockchain technology to secure transactions, ensuring data integrity and transparency</p>
                 </div>
             </div>
             <div class="product_list_feature_card zoom-in">
                 <div class="product_list_feature_cont">
-                    <img src="./assets/images/product_feature_digital.svg" alt="digital payment">
+                    <img src="./assets/images/feature-card-icons/webvault_e-commerce.svg" alt="digital payment">
                     <h4>Seamless E-commerce Integration</h4>
                     <p>Integrates with online shopping platforms, facilitating smooth financial transactions for e-commerce</p>
                 </div>
