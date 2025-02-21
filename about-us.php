@@ -325,7 +325,7 @@ include_once('partials/header.php'); //should be last after all variables
 <section class="about_us_section" style="background-color: #000;height: auto;" >
 
     <div class="about_us_banner_sec">
-        <div class="row">
+        <!-- <div class="row"> -->
             <div class="col-lg-12">
                     <!-- <img src="assets/images/about.svg" alt=""> -->
                     <div class="container">
@@ -345,7 +345,7 @@ include_once('partials/header.php'); //should be last after all variables
                         </div>
                     </div>
             </div>
-        </div>
+        <!-- </div> -->
     </div>
     <div class="container">
         <div class="developer_section about_card_sec">
