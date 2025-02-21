@@ -25,7 +25,7 @@ loadSVG("./assets/images/features.svg", "section_2_card_3_svg");
 
 
 // Section 3
-loadSVG("./assets/images/ai_enhance_img.svg", "section_3_svg");
+// loadSVG("./assets/images/ai_enhance_img.svg", "section_3_svg");
 // icons
 loadSVG("./assets/images/innovate_icon_1.svg", "section_3_icon_1_svg");
 loadSVG("./assets/images/innovate_icon_2.svg", "section_3_icon_2_svg");
