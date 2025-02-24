@@ -65,7 +65,7 @@ include_once('partials/header.php'); //should be last after all variables
             </div>
             <div class="col-lg-5 fz_enhance_img_col">
                 <div class="fz_ai_enhance_img zoom-in-cbs">
-                    <img src="./assets/images/cbs_image.png" alt="CBS">
+                    <img src="./assets/images/internet_banking_sec1.svg" alt="CBS">
                 </div>
             </div>
         </div>
