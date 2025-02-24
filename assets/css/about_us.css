@@ -75,7 +75,7 @@
 @media screen and (max-width: 991px) {
   .about_us_banner_sec h2 {
     font-size: 35px;
-    text-align: center;
+    text-align: left;
   }
 }
 .about_us_banner_sec p {
@@ -87,7 +87,9 @@
 }
 @media screen and (max-width: 991px) {
   .about_us_banner_sec p {
-    text-align: center;
+    text-align: left;
+    font-size: 14px;
+    padding-top: 10px;
   }
 }
 .about_us_banner_sec .about_us_banner_img {
@@ -99,6 +101,7 @@
     width: auto;
     height: auto;
     object-fit: contain;
+    margin-top: 25px;
   }
 }
 .about_us_banner_sec .about_us_banner_img img {
@@ -125,8 +128,19 @@
   font-weight: 300;
   margin-bottom: 0px;
 }
+@media screen and (max-width: 991px) {
+  .about_us_section .about_us_heading h3 {
+    text-align: left;
+    font-size: 30px;
+  }
+}
 .about_us_section .about_part {
   height: auto;
+}
+@media screen and (max-width: 991px) {
+  .about_us_section .about_part .fz-reverse {
+    flex-direction: column-reverse;
+  }
 }
 .about_us_section .about_part h5 {
   color: #3eab90;
@@ -156,8 +170,19 @@
   height: 100%;
   object-fit: contain;
 }
+@media screen and (max-width: 991px) {
+  .about_us_section .about_part .about_us_images img {
+    height: auto;
+    width: 200px;
+  }
+}
 .about_us_section .about_part .about_us_images .mission_img {
   height: 400px;
+}
+@media screen and (max-width: 991px) {
+  .about_us_section .about_part .about_us_images .mission_img {
+    height: auto;
+  }
 }
 .about_us_section .about_part .col-lg-6 {
   display: flex;
@@ -175,7 +200,7 @@
 }
 @media screen and (max-width: 991px) {
   .about_us_section .about_part .about_us_content {
-    text-align: center;
+    font-size: 14px;
   }
 }
 .about_us_section .about_part .about_us_content .buttons {

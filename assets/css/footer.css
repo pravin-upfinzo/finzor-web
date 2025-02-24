@@ -56,6 +56,7 @@
 @media screen and (max-width: 991px) {
   .footer_section .fz_footer_container .footer-brand {
     padding-bottom: 30px;
+    width: 100%;
   }
 }
 .footer_section .fz_footer_container .footer-brand .logo {
@@ -79,6 +80,7 @@
 @media screen and (max-width: 991px) {
   .footer_section .fz_footer_container .footer-brand p {
     margin-bottom: 0;
+    width: 100%;
   }
 }
 .footer_section .fz_footer_container .social-links {

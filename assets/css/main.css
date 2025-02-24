@@ -138,6 +138,12 @@ header .navbar-brand-mobile svg path {
     border: none;
     opacity: 1;
   }
+  header .navbar .btn-close:focus {
+    box-shadow: none;
+  }
+  header .navbar .btn-close:focus-visible {
+    outline: none;
+  }
   header .navbar .btn-close::before {
     content: "✕";
     color: #3eab90;
@@ -180,6 +186,9 @@ header .navbar-brand-mobile svg path {
   }
   header .navbar .navbar-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  header .navbar .navbar-toggler:focus-visible {
+    outline: none;
   }
   header .navbar #offcanvasNavbar {
     background-color: #000000;
@@ -2263,7 +2272,8 @@ header .fz_sigin ul .unlock a:hover svg path {
 }
 @media screen and (max-width: 1199px) {
   .fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .fz_subtitle {
-    line-height: 40px;
+    line-height: 30px;
+    border-radius: 30px;
   }
 }
 .fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .fz_bank {
@@ -3560,6 +3570,8 @@ div#faq-animate svg {
   .newsletter_section h5 {
     font-size: 30px;
     line-height: 40px;
+    padding-top: 5px;
+    margin-bottom: 5px;
   }
 }
 .newsletter_section .input-group {
@@ -3667,6 +3679,11 @@ div#faq-animate svg {
   transform: translate3d(0, 0, 0);
   z-index: 1;
 }
+@media screen and (max-width: 991px) {
+  .play_store_section .play_store_container:after {
+    display: none;
+  }
+}
 .play_store_section .play_store_container::before {
   content: "";
   position: absolute;
@@ -3679,6 +3696,11 @@ div#faq-animate svg {
   filter: blur(152px);
   transform: translate3d(0, 0, 0);
   z-index: 1;
+}
+@media screen and (max-width: 991px) {
+  .play_store_section .play_store_container::before {
+    display: none;
+  }
 }
 .play_store_section .play_store_container .play_flex {
   justify-content: center;
@@ -4074,6 +4096,7 @@ div#faq-animate svg {
 @media screen and (max-width: 991px) {
   .footer_section .fz_footer_container .footer-brand {
     padding-bottom: 30px;
+    width: 100%;
   }
 }
 .footer_section .fz_footer_container .footer-brand .logo {
@@ -4097,6 +4120,7 @@ div#faq-animate svg {
 @media screen and (max-width: 991px) {
   .footer_section .fz_footer_container .footer-brand p {
     margin-bottom: 0;
+    width: 100%;
   }
 }
 .footer_section .fz_footer_container .social-links {

@@ -72,6 +72,12 @@ header .navbar-brand-mobile svg path {
     border: none;
     opacity: 1;
   }
+  header .navbar .btn-close:focus {
+    box-shadow: none;
+  }
+  header .navbar .btn-close:focus-visible {
+    outline: none;
+  }
   header .navbar .btn-close::before {
     content: "✕";
     color: #3eab90;
@@ -114,6 +120,9 @@ header .navbar-brand-mobile svg path {
   }
   header .navbar .navbar-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  header .navbar .navbar-toggler:focus-visible {
+    outline: none;
   }
   header .navbar #offcanvasNavbar {
     background-color: #000000;
