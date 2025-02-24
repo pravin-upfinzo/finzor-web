@@ -64,6 +64,11 @@
   transform: translate3d(0, 0, 0);
   z-index: 1;
 }
+@media screen and (max-width: 991px) {
+  .play_store_section .play_store_container:after {
+    display: none;
+  }
+}
 .play_store_section .play_store_container::before {
   content: "";
   position: absolute;
@@ -76,6 +81,11 @@
   filter: blur(152px);
   transform: translate3d(0, 0, 0);
   z-index: 1;
+}
+@media screen and (max-width: 991px) {
+  .play_store_section .play_store_container::before {
+    display: none;
+  }
 }
 .play_store_section .play_store_container .play_flex {
   justify-content: center;

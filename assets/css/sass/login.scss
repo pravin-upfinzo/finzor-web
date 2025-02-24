@@ -19,7 +19,7 @@
     }
 }
 
-.container-login {
+.container{
     padding-top:120px; 
 
     .intro {
@@ -35,7 +35,7 @@
           margin: 0 auto;
            
            @media screen and (max-width: 991px) {
-            font-size: 20px;
+            font-size: 16px;
             width: 100%;
             text-align: center;
          }
@@ -105,8 +105,8 @@
                         }
 
                         @media screen and (max-width: 991px) {
-                            width:90%;
-                            margin: 30px 20px;
+                            width:100%;
+                            padding: 20px;
                          }
         
     }
@@ -130,6 +130,25 @@
     @media screen and (max-width: 767px) {
         #signup_btns{ flex-direction: column-reverse; }
     }
+
+    @media screen and (max-width: 767px) {
+        .buttons{
+            padding:0px 5px;
+            height: 40px;
+            font-size: 12px;
+            border-radius: 16px;
+
+            &:hover .icon{
+               margin-left: 0;
+               img{
+                width:12px;
+                margin-right: 10px;
+              }
+            }
+
+       }
+    }
+    
 }
 
  

@@ -11,15 +11,15 @@
   inherits: true;
   initial-value: 0turn;
 }
-.container-login {
+.container {
   padding-top: 120px;
 }
-.container-login .intro {
+.container .intro {
   color: white;
   justify-content: center;
   text-align: center;
 }
-.container-login .intro h2 {
+.container .intro h2 {
   font-size: 30px;
   color: #949894;
   width: 50%;
@@ -27,13 +27,13 @@
   margin: 0 auto;
 }
 @media screen and (max-width: 991px) {
-  .container-login .intro h2 {
-    font-size: 20px;
+  .container .intro h2 {
+    font-size: 16px;
     width: 100%;
     text-align: center;
   }
 }
-.container-login .signup-container {
+.container .signup-container {
   background: white;
   padding: 48px;
   border-radius: 10px;
@@ -59,15 +59,15 @@
     --border-angle: 1turn;
   }
 }
-.container-login .signup-container h3 {
+.container .signup-container h3 {
   font-size: 30px;
   color: #fff;
   text-align: left;
 }
-.container-login .signup-container .form-group {
+.container .signup-container .form-group {
   margin: 20px 0px;
 }
-.container-login .signup-container .form-group label {
+.container .signup-container .form-group label {
   display: block;
   text-align: left;
   font-size: 16px;
@@ -75,11 +75,11 @@
   font-weight: 400;
   margin-bottom: 10px;
 }
-.container-login .signup-container .form-group label .icon svg {
+.container .signup-container .form-group label .icon svg {
   width: 25px;
   margin-right: 5px;
 }
-.container-login .signup-container .form-group input {
+.container .signup-container .form-group input {
   width: 100%;
   height: 48px;
   font-size: 14px;
@@ -90,7 +90,7 @@
   color: #fff;
   outline: none;
 }
-.container-login .signup-container .form-group input:focus {
+.container .signup-container .form-group input:focus {
   --border-angle: 0turn;
   --main-bg: conic-gradient(
       from var(--border-angle),
@@ -108,7 +108,7 @@
     --border-angle: 1turn;
   }
 }
-.container-login .signup-container .text {
+.container .signup-container .text {
   width: 100%;
   padding: 10px;
   border: none;
@@ -116,9 +116,9 @@
   cursor: pointer;
 }
 @media screen and (max-width: 991px) {
-  .container-login .signup-container {
-    width: 90%;
-    margin: 30px 20px;
+  .container .signup-container {
+    width: 100%;
+    padding: 20px;
   }
 }
 
@@ -139,5 +139,20 @@
 @media screen and (max-width: 767px) {
   #signup_btns #signup_btns {
     flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 767px) {
+  #signup_btns .buttons {
+    padding: 0px 5px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 16px;
+  }
+  #signup_btns .buttons:hover .icon {
+    margin-left: 0;
+  }
+  #signup_btns .buttons:hover .icon img {
+    width: 12px;
+    margin-right: 10px;
   }
 }

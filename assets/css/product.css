@@ -126,7 +126,8 @@
 }
 @media screen and (max-width: 1199px) {
   .fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .fz_subtitle {
-    line-height: 40px;
+    line-height: 30px;
+    border-radius: 30px;
   }
 }
 .fz_product_sec .container .fz_product_left .fz_sub_container .fz_content .fz_bank {

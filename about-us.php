@@ -430,7 +430,7 @@ include_once('partials/header.php'); //should be last after all variables
             </div>
         </div>
         <div class="about_part">
-            <div class="row">
+            <div class="row fz-reverse">
                 <div class="col-lg-6">
                     <div class="about_us_content">
                         <!-- <h5 class="fade-up">Our Vision</h5> -->

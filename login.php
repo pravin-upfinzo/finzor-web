@@ -16,7 +16,7 @@ include_once('partials/header.php'); //should be last after all variables
 ?>
 
 
-<div class="container-login">
+<div class="container">
     <div class="intro"> 
         <h2> Let’s make fintech
         work for you! </h2>

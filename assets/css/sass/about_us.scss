@@ -13,7 +13,7 @@
         color: $primary-color;
         @media screen and (max-width: 991px) {
             font-size: 35px;
-            text-align: center;
+            text-align: left;
         }
     }
     p{
@@ -23,7 +23,9 @@
         padding: 27px 0px 10px;
         margin-bottom: 0px;
         @media screen and (max-width: 991px) {
-            text-align: center;
+            text-align: left;
+            font-size: 14px;
+            padding-top:10px;
         }
     }
     .about_us_banner_img{
@@ -35,6 +37,7 @@
             width: auto;
             height: auto;
             object-fit: contain;
+            margin-top: 25px;
         }
        
         img{
@@ -62,12 +65,22 @@
             color: $white;
             font-weight: 300;
             margin-bottom: 0px;
+            @media screen and (max-width: 991px) {
+                text-align: left;
+                font-size: 30px;
+            }
         }
     }
    
     .about_part{
         height: auto;
         // padding:50px 0px;
+        @media screen and (max-width: 991px) {
+            .fz-reverse{
+                flex-direction: column-reverse;
+       }
+        }
+       
         h5{
             color: $primary-color;
             font-size: 35px;
@@ -90,9 +103,17 @@
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
+
+                @media screen and (max-width: 991px) {
+                    height: auto;
+                    width: 200px;
+                  }
             }
             .mission_img{
                 height:400px;
+                @media screen and (max-width: 991px) {
+                    height: auto;
+                  }
             }
         }
         .col-lg-6{
@@ -109,7 +130,7 @@
             color: $white;
             font-size: 16px;
             @media screen and (max-width: 991px) {
-                text-align: center;
+               font-size: 14px;
             }
             .buttons{
                 width: 172px;
