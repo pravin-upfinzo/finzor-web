@@ -184,7 +184,7 @@ include_once('partials/header.php'); //should be last after all variables
         <div class="row">
             <div class="col-lg-5">
                 <div class="fz_ai_enhance_img zoom-in_ai_enhance">
-                    <img src="./assets/images/ai_enhance_img.webp" alt="">
+                    <img src="./assets/images/product_sec_3_images/webvault.svg" alt="">
                 </div>
             </div>
             <div class="col-lg-7 fz_enhance_col">
