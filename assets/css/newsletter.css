@@ -23,9 +23,9 @@
   line-height: 96px;
   margin-bottom: 0px;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1399px) {
   .newsletter_section h3 {
-    font-size: 44px;
+    font-size: 30px;
     line-height: 42px;
   }
 }
@@ -39,8 +39,8 @@
 }
 @media screen and (max-width: 991px) {
   .newsletter_section h5 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
     padding-top: 5px;
     margin-bottom: 5px;
   }

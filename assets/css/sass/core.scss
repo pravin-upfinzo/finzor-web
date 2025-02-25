@@ -199,11 +199,49 @@
       .fz_learmore {
         @include btn-effect;
         @include  active_btn;
+
+        @media screen and (max-width: 375px) {
+         
+          padding:0px 10px 0px 15px !important;
+          height: 40px;
+          font-size: 12px;
+          border-radius: 16px;
+
+           .icon{
+        
+            img{
+             width:12px;
+            
+           }
+         }
+   
+  }
+        
       }
       .fz_learmore_btn {
         @include btn-effect;
         margin-left: 20px;
         z-index: 2;
+        @media screen and (max-width: 375px) {
+         
+          padding:0px 10px 0px 15px;
+          height: 40px;
+          font-size: 12px;
+          border-radius: 16px;
+
+          &:hover{
+            padding:0px 10px 0px 15px;
+
+            &:hover .icon{
+        
+              img{
+               width:12px;
+              
+             }
+           }
+          }
+   
+  }
       }
     }
   }

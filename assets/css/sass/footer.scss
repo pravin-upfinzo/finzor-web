@@ -349,6 +349,9 @@ p{
 #myModal {
   z-index: 99991;
   --bs-modal-width: 650px;
+   .modal-dialog{
+    padding:40px 20px;
+ 
   .modal-content {
       border: solid 1px transparent;
       --main-bg: conic-gradient(from var(--border-angle), #000 0%, rgb(0, 0, 0) 100%);
@@ -367,9 +370,13 @@ p{
               background-color: $white;
               opacity: 1;
               position: absolute;
-              right: -8px;
-              top: -8px;
+              // right: -8px;
+              // top: -8px;
+              right: 20px;
+              top: 18px;
               border-radius: 50%;
+
+
           }
       }
       .modal-body {
@@ -436,6 +443,7 @@ p{
   
   }
 }
+ }
 .modal-backdrop.show {
   z-index: 9999;
   opacity: 1;

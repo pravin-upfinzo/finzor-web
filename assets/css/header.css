@@ -71,6 +71,7 @@ header .navbar-brand-mobile svg path {
     background-color: transparent;
     border: none;
     opacity: 1;
+    margin: 0;
   }
   header .navbar .btn-close:focus {
     box-shadow: none;
@@ -129,7 +130,27 @@ header .navbar-brand-mobile svg path {
     width: 100%;
   }
   header .navbar #offcanvasNavbar .offcanvas-header {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #1b3431;
+    justify-content: space-between;
+  }
+  header .navbar #offcanvasNavbar .offcanvas-header .top-mobile-view {
+    display: flex;
+    gap: 20px;
+  }
+  header .navbar #offcanvasNavbar .offcanvas-header .top-mobile-view .top-buttons {
+    font-size: 12px;
+    border: 1px solid rgba(62, 171, 144, 0.568627451);
+    display: flex;
+    border-radius: 34px;
+    align-items: center;
+    height: 35px;
+    color: #fff;
+    gap: 6px;
+    padding: 0px 10px !important;
+    background: transparent;
+  }
+  header .navbar #offcanvasNavbar .offcanvas-header .top-mobile-view .icon img {
+    width: 13px;
   }
 }
 header .navbar-expand-lg .navbar-nav {
@@ -253,6 +274,13 @@ header .navbar-expand-lg .navbar-nav > li .inner-submenu li a:hover .fz_text p, 
 }
 header .navbar-expand-lg .navbar-nav > li .submenu {
   list-style: none;
+}
+@media screen and (max-width: 991px) {
+  header .navbar-expand-lg .navbar-nav > li .submenu {
+    height: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 }
 header .navbar-expand-lg .navbar-nav > li .submenu .upward-arrow {
   border-color: transparent transparent rgba(62, 171, 144, 0.2);
@@ -448,6 +476,11 @@ header .navbar-expand-lg .navbar-nav .arrow-active > a svg {
 @media screen and (max-width: 991px) {
   header .fz_sigin {
     justify-content: center;
+  }
+}
+@media screen and (max-width: 991px) {
+  header .fz_sigin .desktop_btn {
+    display: none;
   }
 }
 header .fz_sigin ul {

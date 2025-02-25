@@ -137,6 +137,7 @@ header .navbar-brand-mobile svg path {
     background-color: transparent;
     border: none;
     opacity: 1;
+    margin: 0;
   }
   header .navbar .btn-close:focus {
     box-shadow: none;
@@ -195,7 +196,27 @@ header .navbar-brand-mobile svg path {
     width: 100%;
   }
   header .navbar #offcanvasNavbar .offcanvas-header {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #1b3431;
+    justify-content: space-between;
+  }
+  header .navbar #offcanvasNavbar .offcanvas-header .top-mobile-view {
+    display: flex;
+    gap: 20px;
+  }
+  header .navbar #offcanvasNavbar .offcanvas-header .top-mobile-view .top-buttons {
+    font-size: 12px;
+    border: 1px solid rgba(62, 171, 144, 0.568627451);
+    display: flex;
+    border-radius: 34px;
+    align-items: center;
+    height: 35px;
+    color: #fff;
+    gap: 6px;
+    padding: 0px 10px !important;
+    background: transparent;
+  }
+  header .navbar #offcanvasNavbar .offcanvas-header .top-mobile-view .icon img {
+    width: 13px;
   }
 }
 header .navbar-expand-lg .navbar-nav {
@@ -319,6 +340,13 @@ header .navbar-expand-lg .navbar-nav > li .inner-submenu li a:hover .fz_text p, 
 }
 header .navbar-expand-lg .navbar-nav > li .submenu {
   list-style: none;
+}
+@media screen and (max-width: 991px) {
+  header .navbar-expand-lg .navbar-nav > li .submenu {
+    height: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 }
 header .navbar-expand-lg .navbar-nav > li .submenu .upward-arrow {
   border-color: transparent transparent rgba(62, 171, 144, 0.2);
@@ -514,6 +542,11 @@ header .navbar-expand-lg .navbar-nav .arrow-active > a svg {
 @media screen and (max-width: 991px) {
   header .fz_sigin {
     justify-content: center;
+  }
+}
+@media screen and (max-width: 991px) {
+  header .fz_sigin .desktop_btn {
+    display: none;
   }
 }
 header .fz_sigin ul {
@@ -1364,6 +1397,17 @@ header .fz_sigin ul .unlock a:hover svg path {
     font-size: 13px;
   }
 }
+@media screen and (max-width: 375px) {
+  #fz_core_nexus .fz_core_text_right div .fz_learmore {
+    padding: 0px 10px 0px 15px !important;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 16px;
+  }
+  #fz_core_nexus .fz_core_text_right div .fz_learmore .icon img {
+    width: 12px;
+  }
+}
 #fz_core_nexus .fz_core_text_right div .fz_learmore_btn {
   height: 50px;
   border-radius: 32px;
@@ -1422,6 +1466,20 @@ header .fz_sigin ul .unlock a:hover svg path {
 @media screen and (max-width: 375px) {
   #fz_core_nexus .fz_core_text_right div .fz_learmore_btn:hover {
     font-size: 13px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #fz_core_nexus .fz_core_text_right div .fz_learmore_btn {
+    padding: 0px 10px 0px 15px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 16px;
+  }
+  #fz_core_nexus .fz_core_text_right div .fz_learmore_btn:hover {
+    padding: 0px 10px 0px 15px;
+  }
+  #fz_core_nexus .fz_core_text_right div .fz_learmore_btn:hover:hover .icon img {
+    width: 12px;
   }
 }
 
@@ -3496,11 +3554,12 @@ div#faq-animate {
   justify-content: start;
 }
 div#faq-animate svg {
-  width: auto !important;
+  width: 300px !important;
 }
 @media screen and (max-width: 991px) {
   div#faq-animate {
     display: block;
+    height: auto;
   }
 }
 
@@ -3552,9 +3611,9 @@ div#faq-animate svg {
   line-height: 96px;
   margin-bottom: 0px;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1399px) {
   .newsletter_section h3 {
-    font-size: 44px;
+    font-size: 30px;
     line-height: 42px;
   }
 }
@@ -3568,8 +3627,8 @@ div#faq-animate svg {
 }
 @media screen and (max-width: 991px) {
   .newsletter_section h5 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
     padding-top: 5px;
     margin-bottom: 5px;
   }
@@ -4407,51 +4466,54 @@ div#faq-animate svg {
   z-index: 99991;
   --bs-modal-width: 650px;
 }
-#myModal .modal-content {
+#myModal .modal-dialog {
+  padding: 40px 20px;
+}
+#myModal .modal-dialog .modal-content {
   border: solid 1px transparent;
   --main-bg: conic-gradient(from var(--border-angle), #000 0%, rgb(0, 0, 0) 100%);
   --gradient-border: conic-gradient(from var(--border-angle), transparent 10%, #05311d, #3EAB90 49%, transparent);
   background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
   animation: bg-spin 2s linear infinite;
 }
-#myModal .modal-content .modal-header {
+#myModal .modal-dialog .modal-content .modal-header {
   padding: 30px 30px 10px;
   border: 0;
   flex-direction: column;
   align-items: start;
 }
-#myModal .modal-content .modal-header h4, #myModal .modal-content .modal-header p {
+#myModal .modal-dialog .modal-content .modal-header h4, #myModal .modal-dialog .modal-content .modal-header p {
   color: #ffffff;
 }
-#myModal .modal-content .modal-header .btn-close {
+#myModal .modal-dialog .modal-content .modal-header .btn-close {
   background-color: #ffffff;
   opacity: 1;
   position: absolute;
-  right: -8px;
-  top: -8px;
+  right: 20px;
+  top: 18px;
   border-radius: 50%;
 }
-#myModal .modal-content .modal-body {
+#myModal .modal-dialog .modal-content .modal-body {
   padding: 0px 30px 20px;
 }
-#myModal .form-wrapper {
+#myModal .modal-dialog .form-wrapper {
   color: #ffffff;
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
 }
-#myModal .form-wrapper .form_group {
+#myModal .modal-dialog .form-wrapper .form_group {
   position: relative;
   margin-bottom: 20px;
   width: 48%;
 }
 @media screen and (max-width: 767px) {
-  #myModal .form-wrapper .form_group {
+  #myModal .modal-dialog .form-wrapper .form_group {
     width: 100%;
   }
 }
-#myModal .form-wrapper .form_group .field-label {
+#myModal .modal-dialog .form-wrapper .form_group .field-label {
   color: #34b195;
   text-transform: uppercase;
   margin-bottom: 8px;
@@ -4459,7 +4521,7 @@ div#faq-animate svg {
   font-size: 14px;
   line-height: 18.2px;
 }
-#myModal .form-wrapper .form_group input:focus, #myModal .form-wrapper .form_group textarea:focus {
+#myModal .modal-dialog .form-wrapper .form_group input:focus, #myModal .modal-dialog .form-wrapper .form_group textarea:focus {
   border: solid 1px transparent;
   --main-bg: conic-gradient(from var(--border-angle), #000 0%, rgb(0, 0, 0) 100%);
   --gradient-border: conic-gradient(from var(--border-angle), transparent 10%, #05311d, #3EAB90 49%, transparent);
@@ -4471,7 +4533,7 @@ div#faq-animate svg {
     --border-angle: 1turn;
   }
 }
-#myModal .form-wrapper .form_group .text-field-3 {
+#myModal .modal-dialog .form-wrapper .form_group .text-field-3 {
   width: 100%;
   height: 58px;
   font-size: 14px;
@@ -4486,17 +4548,17 @@ div#faq-animate svg {
   outline: none;
   height: 50px;
 }
-#myModal .form-wrapper .form_group span.error {
+#myModal .modal-dialog .form-wrapper .form_group span.error {
   font-size: 10px;
   color: #cb0909;
 }
-#myModal .form-wrapper .comment-wrapper {
+#myModal .modal-dialog .form-wrapper .comment-wrapper {
   position: relative;
   height: 146px;
   margin-bottom: 30px;
   width: 100%;
 }
-#myModal .form-wrapper .comment-wrapper .field-label {
+#myModal .modal-dialog .form-wrapper .comment-wrapper .field-label {
   color: #34b195;
   text-transform: uppercase;
   margin-bottom: 8px;
@@ -4504,7 +4566,7 @@ div#faq-animate svg {
   font-size: 14px;
   line-height: 18.2px;
 }
-#myModal .form-wrapper .comment-wrapper .texteria {
+#myModal .modal-dialog .form-wrapper .comment-wrapper .texteria {
   resize: none;
   height: auto !important;
   width: 100%;
@@ -4520,7 +4582,7 @@ div#faq-animate svg {
   padding-left: 15px;
   outline: none;
 }
-#myModal .form-wrapper .fz_submit {
+#myModal .modal-dialog .form-wrapper .fz_submit {
   height: 50px;
   border-radius: 32px;
   background-color: transparent;
@@ -4535,19 +4597,19 @@ div#faq-animate svg {
   transition: all 1s ease;
   padding: 0px 20px 0 25px;
 }
-#myModal .form-wrapper .fz_submit .text {
+#myModal .modal-dialog .form-wrapper .fz_submit .text {
   position: relative;
   left: 10px;
   transition: all 1s ease;
 }
-#myModal .form-wrapper .fz_submit img {
+#myModal .modal-dialog .form-wrapper .fz_submit img {
   opacity: 0;
   transition: all 1s ease;
 }
-#myModal .form-wrapper .fz_submit .icon {
+#myModal .modal-dialog .form-wrapper .fz_submit .icon {
   margin-left: 10px;
 }
-#myModal .form-wrapper .fz_submit:hover {
+#myModal .modal-dialog .form-wrapper .fz_submit:hover {
   padding: 0px 20px 0 25px;
   --text-color: rgb(210 210 240);
   --box-glow-color: transparent;
@@ -4563,18 +4625,18 @@ div#faq-animate svg {
   border: 1px solid rgba(62, 171, 144, 0.568627451);
   background: linear-gradient(0deg, rgb(45, 73, 73) 0%, rgb(49, 178, 178) 100%);
 }
-#myModal .form-wrapper .fz_submit:hover img {
+#myModal .modal-dialog .form-wrapper .fz_submit:hover img {
   opacity: 1;
 }
-#myModal .form-wrapper .fz_submit:hover .icon {
+#myModal .modal-dialog .form-wrapper .fz_submit:hover .icon {
   margin-left: 10px;
 }
-#myModal .form-wrapper .fz_submit:hover .text {
+#myModal .modal-dialog .form-wrapper .fz_submit:hover .text {
   position: relative;
   left: 0px;
 }
 @media screen and (max-width: 375px) {
-  #myModal .form-wrapper .fz_submit:hover {
+  #myModal .modal-dialog .form-wrapper .fz_submit:hover {
     font-size: 13px;
   }
 }

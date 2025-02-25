@@ -136,10 +136,11 @@ div#faq-animate {
   justify-content: start;
 }
 div#faq-animate svg {
-  width: auto !important;
+  width: 300px !important;
 }
 @media screen and (max-width: 991px) {
   div#faq-animate {
     display: block;
+    height: auto;
   }
 }

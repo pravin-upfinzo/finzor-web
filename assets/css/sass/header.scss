@@ -60,6 +60,7 @@ header {
         background-color: transparent;
         border: none;
         opacity: 1;
+        margin: 0;
 
         &:focus {
             box-shadow: none;
@@ -127,7 +128,31 @@ header {
         background-color: $black;
         width: 100%;
         .offcanvas-header {
-          border-bottom: 1px solid #ddd;
+          border-bottom: 1px solid #1b3431;
+          justify-content: space-between;
+
+          .top-mobile-view{
+                display: flex;
+                gap:20px;
+
+                .top-buttons{
+                  
+                  font-size: 12px;
+                  border: 1px solid rgba(62, 171, 144, 0.568627451);
+                  display: flex;
+                  border-radius: 34px;
+                  align-items: center;
+                  height: 35px;
+                  color: #fff;
+                  gap:6px;
+                  padding: 0px 10px !important;
+                  background: transparent;
+                }
+
+                .icon img{
+                  width:13px;
+                }
+          }
         } 
       }
     }
@@ -245,6 +270,7 @@ header {
             position: unset;
             width: 100% !important;
             transform: unset;
+            
           }
           li {
             a {
@@ -270,6 +296,11 @@ header {
         .submenu {
           // background: rgba(6, 54, 50, 0.6);
           list-style: none;
+          @media screen and (max-width: 991px) {
+           height:250px;
+           overflow-y: scroll;
+           overflow-x: hidden;
+          }
           .upward-arrow {
             border-color: transparent transparent rgb(62 171 144 / 20%);
             border-style: solid;
@@ -472,6 +503,13 @@ header {
     @media screen and (max-width: 991px) {
      justify-content: center;
   }
+
+  @media screen and (max-width: 991px) {
+    .desktop_btn{
+      display: none;
+    }
+   
+  }
     ul {
       display: flex;
       align-items: center;
@@ -646,6 +684,9 @@ header {
       }
     }
   }
+  
+ 
+
 }
 // .buttons {
 // 	--w: 180px;

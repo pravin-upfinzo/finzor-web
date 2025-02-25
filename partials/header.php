@@ -126,8 +126,25 @@
                                 <path d="M35.4469 2.46265L35.4196 2.51029C34.038 4.82261 31.5974 6.35924 28.817 6.35924H23.0447C20.2332 6.35924 17.7685 7.93077 16.3957 10.288L5.06641 30.0851V23.9312C5.07403 22.9736 5.33193 22.0785 5.77469 21.3155L5.78168 21.3035L12.8537 8.94467C15.0605 5.0615 19.0859 2.46265 23.6856 2.46265H35.4475H35.4469Z" fill="#2D4949"></path>
                             </svg>
                         </a>
+                        
+                        <div class="top-mobile-view">
+                        <div class="top-button">
+                        <a href="<?= BASE_URL; ?>login" class="onboard_btn desktop_btn">
+                                        <button class="top-buttons">
+                                            Onboard
+                                            <div class="icon">
+                                                <img src="<?= BASE_URL; ?>assets/images/telegram.svg" alt="" class="tele_img">
+                                            </div>
+                                        </button>
+                                    </a>
+
+                        </div>
+
+
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
+               </div>
+
                     <div class="offcanvas-body">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
                             <li class="nav-item">
@@ -342,7 +359,7 @@
                                 <li><a href="#"><img class="flag-img" src="<?= BASE_URL; ?>assets/images/flag.gif" alt="Country" width="40px"></a></li>
                                
                                 <li>
-                                    <a href="<?= BASE_URL; ?>login" class="onboard_btn">
+                                    <a href="<?= BASE_URL; ?>login" class="onboard_btn desktop_btn">
                                         <button class="buttons">
                                             <span class="text">Onboard</span>
                                             <div class="icon">
