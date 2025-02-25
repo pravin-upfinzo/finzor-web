@@ -176,7 +176,7 @@
 <script src="<?= BASE_URL; ?>assets/js/gsap.min.js"></script>
 <script src="<?= BASE_URL; ?>assets/js/ScrollTrigger.min.js"></script>
 <script src="<?= BASE_URL; ?>assets/js/owl.carousel.min.js"></script>
-<script src="<?= BASE_URL; ?>assets/js/logo_loader.js"></script>
+<script src="<?= BASE_URL; ?>assets/js/common.js"></script>
 <script src="<?= BASE_URL; ?>assets/js/form-submission.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.10/dist/sweetalert2.all.min.js"></script>
 <script>
