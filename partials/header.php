@@ -76,6 +76,14 @@
             cursor:pointer
         }
     </style>
+<link rel="manifest" href="<?= BASE_URL; ?>manifest.json">
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js")
+      .then((registration) => console.log("Service Worker Registered", registration))
+      .catch((error) => console.error("Service Worker Registration Failed", error));
+  }
+</script>
 
     <?php
     // Include page-specific CSS
@@ -86,6 +94,7 @@
 </head>
 
 <body>
+<button id="install-button" style="display: none;">Install App</button>
     <span id="page-loader-span"><div id="page-loader"></div></span>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
