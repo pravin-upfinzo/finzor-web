@@ -121,7 +121,7 @@ sm1.add("(min-width: 1200px)", () => {
     );
     // Zoom in
     gsap.fromTo(
-        ".zoom-in_ai_enhance",
+        ".zoom-in-sec3",
         {
             opacity: 0.5,
             scale: 0.7,
@@ -134,7 +134,7 @@ sm1.add("(min-width: 1200px)", () => {
             rotateX: "0deg",
             x: "0vw", // Move to original position (center)
             scrollTrigger: {
-                trigger: ".fz_ai_enhance_sec",
+                trigger: ".fz_sec3",
                 start: "top bottom", // Starts when the section top reaches the bottom of the viewport
                 end: "bottom bottom-=10%", // Ends when the section bottom is 10% before the bottom
                 scrub: 1, // Syncs animation with scroll position

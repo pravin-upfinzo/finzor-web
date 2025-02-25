@@ -15,7 +15,7 @@ loadSVG("./assets/images/product_banner/core_banking_solutions.svg", "banner_svg
 
 
 // Section 1
-loadSVG("./assets/images/cbs_image.svg", "section_1_svg");
+loadSVG("./assets/images/product_sec_1_images/cbs_sec1.svg", "section_1_svg");
 
 
 // Section 2
