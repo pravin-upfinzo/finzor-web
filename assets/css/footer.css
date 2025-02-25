@@ -353,6 +353,11 @@
   width: 120px;
   z-index: 99;
 }
+@media screen and (max-width: 767px) {
+  .chat-bot {
+    width: 80px;
+  }
+}
 .chat-bot img {
   width: 100%;
   height: 100%;
