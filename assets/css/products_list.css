@@ -1485,9 +1485,18 @@ section {
   background: transparent !important;
 }
 .fin_bankz .finbank_content {
-  border-left: 1px solid #fff;
   padding-left: 25px;
   position: relative;
+}
+.fin_bankz .finbank_content:after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 1.5px;
+  height: 100%;
+  border-radius: 80px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #3EAB90 0%, rgba(0, 0, 0, 0) 100%);
 }
 @media screen and (max-width: 991px) {
   .fin_bankz .finbank_content {
@@ -1496,7 +1505,7 @@ section {
 }
 .fin_bankz .finbank_content .finbank_count {
   position: absolute;
-  top: -25px;
+  top: 0;
   left: -8px;
   color: #ffffff;
   font-size: 18px;

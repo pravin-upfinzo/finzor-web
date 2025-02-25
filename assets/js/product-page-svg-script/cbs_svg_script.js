@@ -15,21 +15,22 @@ loadSVG("./assets/images/product_banner/core_banking_solutions.svg", "banner_svg
 
 
 // Section 1
-loadSVG("./assets/images/cbs_image.svg", "section_1_svg");
+loadSVG("./assets/images/product_sec_1_images/cbs_sec1.svg", "section_1_svg");
 
 
 // Section 2
 loadSVG("./assets/images/features.svg", "section_2_card_1_svg");
 loadSVG("./assets/images/features.svg", "section_2_card_2_svg");
 loadSVG("./assets/images/features.svg", "section_2_card_3_svg");
-
-
-// Section 3
-// loadSVG("./assets/images/ai_enhance_img.svg", "section_3_svg");
 // icons
 loadSVG("./assets/images/innovate_icon_1.svg", "section_3_icon_1_svg");
 loadSVG("./assets/images/innovate_icon_2.svg", "section_3_icon_2_svg");
 loadSVG("./assets/images/innovate_icon_3.svg", "section_3_icon_3_svg");
+
+
+// Section 3
+loadSVG("./assets/images/product_sec_3_images/corenexus.svg", "section_3_svg");
+
 
 
 // // Feature card icon

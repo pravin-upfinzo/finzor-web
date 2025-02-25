@@ -40,7 +40,9 @@ RewriteRule . /404.php [L]
     Order Allow,Deny
     Deny from all
 </Files>
-
+<Files "service-worker.js">
+    Header set Service-Worker-Allowed "/"
+</Files>
 # Enable Gzip Compression
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript

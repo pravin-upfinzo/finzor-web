@@ -68,7 +68,7 @@ include_once('partials/header.php'); //should be last after all variables
             </div>
             <div class="col-lg-5 fz_enhance_img_col">
                 <div class="fz_ai_enhance_img zoom-in-cbs">
-                    <img src="./assets/images/connected_banking_sec1.svg" alt="CBS">
+                    <img src="./assets/images/product_sec_1_images/connected_banking_sec1.svg" alt="CBS">
                 </div>
             </div>
         </div>
@@ -205,12 +205,12 @@ include_once('partials/header.php'); //should be last after all variables
     </div>
 </section>
 <!-- Work Seamless -->
-<section class="fz_ai_enhance_sec">
+<section class="fz_ai_enhance_sec fz_sec3">
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
-                <div class="fz_ai_enhance_img zoom-in_ai_enhance">
-                    <img src="./assets/images/ai_enhance_img.webp" alt="">
+                <div class="fz_ai_enhance_img zoom-in-sec3">
+                    <img src="./assets/images//product_sec_3_images/finbridge.svg" alt="">
                 </div>
             </div>
             <div class="col-lg-7 fz_enhance_col">
